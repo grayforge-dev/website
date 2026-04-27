@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DashLog - Privacy Policy</title>
+  <meta name="description"
+    content="DashLog Privacy Policy. DashLog stores drive records on your device and uses Firebase only for analytics, diagnostics, crash reports, and remote configuration." />
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #050b14;
+      --surface: #0d1624;
+      --surface2: #111c2b;
+      --border: #223149;
+      --border2: #2d4261;
+      --blue: #3d8bff;
+      --blue2: #65a5ff;
+      --green: #31d158;
+      --orange: #ff6a1a;
+      --txt: #f5f7fb;
+      --txt2: #a7b3c7;
+      --txt3: #6d7b92;
+      --shadow: rgba(0, 0, 0, 0.36);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 20% -10%, rgba(61, 139, 255, 0.18), transparent 34rem),
+        radial-gradient(circle at 100% 20%, rgba(255, 106, 26, 0.08), transparent 28rem),
+        var(--bg);
+      color: var(--txt);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--blue2);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header,
+    main,
+    footer {
+      width: min(860px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 56px 0 28px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border: 1px solid rgba(61, 139, 255, 0.28);
+      border-radius: 999px;
+      background: rgba(61, 139, 255, 0.12);
+      color: var(--blue2);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .badge::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 18px rgba(49, 209, 88, 0.85);
+    }
+
+    h1 {
+      margin-top: 18px;
+      font-size: clamp(34px, 7vw, 58px);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .lede {
+      max-width: 680px;
+      margin-top: 16px;
+      color: var(--txt2);
+      font-size: 17px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .meta span {
+      padding: 7px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(13, 22, 36, 0.72);
+      color: var(--txt2);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    nav {
+      margin-top: 22px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: rgba(13, 22, 36, 0.78);
+      box-shadow: 0 18px 40px var(--shadow);
+    }
+
+    nav strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--txt3);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    nav ol {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px 22px;
+      padding-left: 20px;
+      color: var(--txt2);
+    }
+
+    @media (max-width: 640px) {
+      nav ol {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    section {
+      margin-top: 34px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: rgba(13, 22, 36, 0.66);
+      box-shadow: 0 18px 40px var(--shadow);
+      scroll-margin-top: 24px;
+    }
+
+    h2 {
+      margin-bottom: 14px;
+      font-size: 22px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      color: var(--txt);
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: var(--txt2);
+    }
+
+    p+p {
+      margin-top: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: var(--txt2);
+    }
+
+    li+li {
+      margin-top: 6px;
+    }
+
+    strong {
+      color: var(--txt);
+    }
+
+    table {
+      width: 100%;
+      margin-top: 14px;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-size: 13px;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th {
+      color: var(--txt3);
+      background: rgba(255, 255, 255, 0.03);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    td {
+      color: var(--txt2);
+    }
+
+    td:first-child {
+      color: var(--txt);
+      font-weight: 700;
+    }
+
+    .callout {
+      margin-top: 14px;
+      padding: 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(61, 139, 255, 0.24);
+      background: rgba(61, 139, 255, 0.09);
+      color: var(--txt2);
+    }
+
+    .good {
+      border-color: rgba(49, 209, 88, 0.22);
+      background: rgba(49, 209, 88, 0.07);
+    }
+
+    .warn {
+      border-color: rgba(255, 106, 26, 0.25);
+      background: rgba(255, 106, 26, 0.07);
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 32px 0 56px;
+      color: var(--txt3);
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="badge">DashLog Privacy Policy</div>
+    <h1>Your drives stay on your device.</h1>
+    <p class="lede">DashLog stores drive records locally. We do not operate a server that receives your routes or
+      precise location history. We only use limited third-party analytics and diagnostic services to keep the app
+      stable.</p>
+    <div class="meta">
+      <span>Effective: April 27, 2026</span>
+      <span>Applies to iOS and Android</span>
+      <span>No DashLog account required</span>
+    </div>
+    <nav aria-label="Table of contents">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#local-data">Data stored on your device</a></li>
+        <li><a href="#diagnostics">Analytics and diagnostics</a></li>
+        <li><a href="#not-collected">Data not sent to DashLog</a></li>
+        <li><a href="#third-parties">Third-party services</a></li>
+        <li><a href="#retention">Retention and deletion</a></li>
+        <li><a href="#rights">Your choices and rights</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main>
+    <section id="overview">
+      <h2>1. Overview</h2>
+      <div class="callout good">
+        <strong>Local-first by design.</strong> Drive routes, speed records, distance, time, and address labels are
+        stored on your device and are not sent to a DashLog server.
+      </div>
+      <div class="callout warn">
+        <strong>Limited diagnostics are collected.</strong> DashLog uses Google Firebase services for analytics, crash
+        reporting, and remote configuration. These services may collect app usage and diagnostic data, but DashLog does
+        not intentionally include precise GPS routes in those events.
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Data type</th>
+            <th>Where it is stored / processed</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Drive records and routes</td>
+            <td>Your device</td>
+            <td>Core drive log, route display, and statistics</td>
+          </tr>
+          <tr>
+            <td>Analytics events</td>
+            <td>Google Firebase Analytics</td>
+            <td>Understand feature usage and improve app quality</td>
+          </tr>
+          <tr>
+            <td>Crash reports</td>
+            <td>Google Firebase Crashlytics</td>
+            <td>Diagnose crashes and fix bugs</td>
+          </tr>
+          <tr>
+            <td>Remote configuration</td>
+            <td>Google Firebase Remote Config</td>
+            <td>Safely adjust app configuration such as export defaults</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="local-data">
+      <h2>2. Data stored on your device</h2>
+      <p>DashLog stores the following data locally so the app can show your driving history and statistics:</p>
+      <ul>
+        <li>Drive start and end time</li>
+        <li>Distance, duration, average speed, and maximum speed</li>
+        <li>GPS route points, including latitude, longitude, timestamp, and speed</li>
+        <li>Start and end address labels when reverse geocoding is available</li>
+        <li>App preferences and locally cached premium status</li>
+      </ul>
+      <p>This local data is not uploaded to DashLog. If you delete a drive in the app or remove the app from your
+        device, local data may be deleted and may not be recoverable unless you separately backed it up.</p>
+    </section>
+
+    <section id="diagnostics">
+      <h2>3. Analytics and diagnostics</h2>
+      <h3>Firebase Analytics</h3>
+      <p>DashLog may log app events such as app launch, screen navigation, feature usage, paywall display, purchase flow
+        events, and export actions. Events may include app version, build number, premium status, device and operating
+        system information, approximate region, app instance or installation identifiers, and event parameters needed to
+        understand app behavior.</p>
+      <p>DashLog does not intentionally include your precise location, drive route, name, email address, or contacts in
+        Firebase Analytics events.</p>
+
+      <h3>Firebase Crashlytics</h3>
+      <p>If the app crashes or encounters an unexpected error, Crashlytics may collect crash stack traces, error
+        messages, app version, build number, package name, device and operating system information, custom diagnostic
+        keys, and recent app state relevant to the crash.</p>
+      <p>DashLog uses crash reports to find and fix stability issues. We do not intentionally attach precise GPS routes
+        to crash reports.</p>
+
+      <h3>Firebase Remote Config</h3>
+      <p>DashLog may use Remote Config to fetch app configuration values such as export defaults. This helps us tune
+        behavior without requiring an app update.</p>
+    </section>
+
+    <section id="not-collected">
+      <h2>4. Data not sent to DashLog</h2>
+      <p>DashLog does not operate a backend server that receives your personal drive archive. In particular, DashLog
+        does not intentionally send these items to DashLog:</p>
+      <ul>
+        <li>Precise GPS route history</li>
+        <li>Your contacts, messages, or photos</li>
+        <li>Your name, email address, or phone number, unless you later contact us directly through a support channel
+        </li>
+      </ul>
+    </section>
+
+    <section id="third-parties">
+      <h2>5. Third-party services</h2>
+      <p>DashLog uses third-party SDKs and platform services. Their processing is subject to their own terms and privacy
+        practices.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Use</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google Firebase Analytics</td>
+            <td>App usage analytics and event measurement</td>
+            <td><a href="https://support.google.com/firebase/answer/6318039" target="_blank" rel="noopener">Firebase
+                data collection</a></td>
+          </tr>
+          <tr>
+            <td>Google Firebase Crashlytics</td>
+            <td>Crash and error diagnostics</td>
+            <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy
+                and security</a></td>
+          </tr>
+          <tr>
+            <td>Google Firebase Remote Config</td>
+            <td>Remote app configuration</td>
+            <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy
+                and security</a></td>
+          </tr>
+          <tr>
+            <td>Google Maps SDK</td>
+            <td>Display maps and route previews in the app</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+            </td>
+          </tr>
+          <tr>
+            <td>RevenueCat</td>
+            <td>Premium subscription entitlement management, when premium features are enabled</td>
+            <td><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy
+                Policy</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>DashLog does not sell personal information. We do not share personal information for cross-context behavioral
+        advertising.</p>
+    </section>
+
+    <section id="retention">
+      <h2>6. Retention and deletion</h2>
+      <ul>
+        <li><strong>Local drive data:</strong> remains on your device until you delete it in the app, clear app data, or
+          uninstall the app.</li>
+        <li><strong>Analytics and crash data:</strong> retained according to the relevant Firebase project settings and
+          Google's service policies.</li>
+        <li><strong>Support messages:</strong> if you contact us directly, we may retain the message as needed to
+          respond and keep support records.</li>
+      </ul>
+      <p>Because DashLog does not maintain user accounts or a server copy of your drive archive, deleting local app data
+        from your device is the main way to delete your drive records.</p>
+    </section>
+
+    <section id="rights">
+      <h2>7. Your choices and rights</h2>
+      <ul>
+        <li>You can delete individual drive records in the app where deletion is available.</li>
+        <li>You can revoke location and notification permissions in your device settings.</li>
+        <li>You can uninstall the app to remove local app data from the device, subject to your operating system backup
+          settings.</li>
+        <li>You can contact us to ask privacy questions or request information about data associated with a support
+          request.</li>
+      </ul>
+      <p>Depending on where you live, you may have additional legal rights to access, correct, delete, restrict, or
+        object to certain processing of personal data.</p>
+    </section>
+
+    <section id="children">
+      <h2>8. Children's privacy</h2>
+      <p>DashLog is not directed to children. We do not knowingly collect personal information from children. If you
+        believe a child has provided personal information through a support channel, please contact us and we will take
+        appropriate action.</p>
+    </section>
+
+    <section id="changes">
+      <h2>9. Changes to this policy</h2>
+      <p>We may update this Privacy Policy as the app changes or as legal requirements change. When we update it, we
+        will revise the effective date and make the updated policy available through the app or distribution page.</p>
+    </section>
+
+    <section id="contact">
+      <h2>10. Contact</h2>
+      <p>For privacy questions, data deletion requests, or any other inquiries about how DashLog handles your
+        information, contact us at <a href="mailto:grayforge.dev+dashlog@gmail.com">grayforge-dev+dashlog@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 DashLog. All rights reserved.</span>
+    <span class="footer-links">
+      <a href="privacy_policy.html">Privacy Policy</a>
+      <a href="terms_of_service.html">Terms of Service</a>
+    </span>
+  </footer>
+</body>
+
+</html>
