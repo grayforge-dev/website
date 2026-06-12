@@ -29,7 +29,8 @@ jobs:
               "urlList": [
                 "https://grayforge.app/",
                 "https://grayforge.app/dashlog/",
-                "https://grayforge.app/noisyno/"
+                "https://grayforge.app/noisyno/",
+                "https://grayforge.app/ko/offline-no-account-apps/"
               ]
             }' \
             https://api.indexnow.org/indexnow
