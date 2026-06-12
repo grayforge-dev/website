@@ -31,12 +31,65 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "GrayForge",
-    "description": "Independent one-person software studio forging privacy-first, offline-first tools for niche needs.",
-    "url": "https://grayforge.app/",
-    "email": "grayforge.dev@gmail.com",
-    "foundingDate": "2025"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://grayforge.app/#organization",
+        "name": "GrayForge",
+        "description": "Independent one-person software studio building privacy-first, offline-first mobile apps.",
+        "url": "https://grayforge.app/",
+        "email": "grayforge.dev@gmail.com",
+        "foundingDate": "2025",
+        "knowsAbout": [
+          "Privacy-first mobile apps",
+          "Offline-first mobile apps",
+          "On-device processing",
+          "GPS drive logging",
+          "On-device audio noise removal"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://grayforge.app/#website",
+        "name": "GrayForge",
+        "url": "https://grayforge.app/",
+        "publisher": {
+          "@id": "https://grayforge.app/#organization"
+        },
+        "about": [
+          {"@id": "https://grayforge.app/dashlog/#app"},
+          {"@id": "https://grayforge.app/noisyno/#app"}
+        ]
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://grayforge.app/dashlog/#app",
+        "name": "DashLog",
+        "url": "https://grayforge.app/dashlog/",
+        "description": "A free GPS drive tracker and mileage logbook for iOS and Android.",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": ["iOS", "Android"],
+        "publisher": {"@id": "https://grayforge.app/#organization"},
+        "sameAs": [
+          "https://apps.apple.com/app/id6769706684",
+          "https://play.google.com/store/apps/details?id=com.grayforge.dashlog"
+        ]
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://grayforge.app/noisyno/#app",
+        "name": "NoisyNo",
+        "url": "https://grayforge.app/noisyno/",
+        "description": "A free on-device audio and video noise remover for iOS and Android.",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": ["iOS", "Android"],
+        "publisher": {"@id": "https://grayforge.app/#organization"},
+        "sameAs": [
+          "https://apps.apple.com/app/id6772728543",
+          "https://play.google.com/store/apps/details?id=com.grayforge.noisyno"
+        ]
+      }
+    ]
   }
   </script>
 

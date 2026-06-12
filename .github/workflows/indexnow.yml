@@ -1,0 +1,35 @@
+name: Notify IndexNow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for IndexNow key deployment
+        run: |
+          curl --fail \
+            --retry 12 \
+            --retry-all-errors \
+            --retry-delay 10 \
+            https://grayforge.app/grayforge-indexnow-20260612.txt
+
+      - name: Submit primary pages to IndexNow
+        run: |
+          curl --fail-with-body \
+            --request POST \
+            --header "Content-Type: application/json; charset=utf-8" \
+            --data '{
+              "host": "grayforge.app",
+              "key": "grayforge-indexnow-20260612",
+              "keyLocation": "https://grayforge.app/grayforge-indexnow-20260612.txt",
+              "urlList": [
+                "https://grayforge.app/",
+                "https://grayforge.app/dashlog/",
+                "https://grayforge.app/noisyno/"
+              ]
+            }' \
+            https://api.indexnow.org/indexnow

@@ -38,17 +38,111 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MobileApplication",
-    "name": "DashLog: GPS Drive Tracker",
-    "alternateName": "DashLog",
-    "description": "DashLog automatically records your drives with one tap. GPS route, distance, time, speed, altitude, and driving stats saved as a clean mileage logbook. No account needed.",
-    "applicationCategory": "TravelApplication",
-    "operatingSystem": "iOS, Android",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "@id": "https://grayforge.app/dashlog/#app",
+        "name": "DashLog: GPS Drive Tracker",
+        "alternateName": "DashLog",
+        "url": "https://grayforge.app/dashlog/",
+        "image": "https://grayforge.app/dashlog/og-image.png",
+        "description": "DashLog records GPS route, distance, time, speed, altitude, and driving statistics in a local mileage logbook. No account is required.",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": ["iOS", "Android"],
+        "isAccessibleForFree": true,
+        "featureList": [
+          "One-tap GPS drive recording",
+          "Route, distance, time, speed, and altitude logging",
+          "Drive history and route replay",
+          "Weekly, monthly, and all-time driving statistics",
+          "Local data storage",
+          "No account required"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://grayforge.app/#organization",
+          "name": "GrayForge",
+          "url": "https://grayforge.app/"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "downloadUrl": [
+          "https://apps.apple.com/app/id6769706684",
+          "https://play.google.com/store/apps/details?id=com.grayforge.dashlog"
+        ],
+        "sameAs": [
+          "https://apps.apple.com/app/id6769706684",
+          "https://play.google.com/store/apps/details?id=com.grayforge.dashlog"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://grayforge.app/dashlog/#webpage",
+        "url": "https://grayforge.app/dashlog/",
+        "name": "DashLog: GPS Drive Tracker — Mileage Logbook & Trip Stats",
+        "description": "Official product page for DashLog, a free GPS drive tracker and mileage logbook.",
+        "dateModified": "2026-06-12",
+        "about": {"@id": "https://grayforge.app/dashlog/#app"},
+        "publisher": {"@id": "https://grayforge.app/#organization"}
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://grayforge.app/dashlog/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is DashLog?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DashLog is a free GPS drive tracker and mileage logbook for iOS and Android. It records a drive after the user taps Start and saves the route and driving statistics after the user taps Stop."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does DashLog require an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. DashLog does not require an account or sign-up."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What data does DashLog record?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DashLog records the GPS route, distance, duration, speed, altitude, and related drive statistics for each recorded trip."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does DashLog store drive records?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DashLog stores drive records locally on the user's device."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does DashLog automatically detect every drive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Recording begins when the user taps Start and ends when the user taps Stop."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is DashLog available for iPhone and Android?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. DashLog is available on the Apple App Store and Google Play."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -719,6 +813,66 @@
       line-height: 1.65;
     }
 
+    /* ===== PRODUCT FACTS & FAQ ===== */
+    .facts-grid {
+      max-width: 920px;
+      margin: 48px auto 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .fact {
+      padding: 22px;
+      background: var(--surface1);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .fact dt {
+      margin-bottom: 7px;
+      color: var(--txt3);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .fact dd {
+      color: var(--txt);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .faq-list {
+      max-width: 820px;
+      margin: 48px auto 0;
+      text-align: left;
+    }
+
+    .faq-list details {
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-list details:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-list summary {
+      padding: 22px 4px;
+      color: var(--txt);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .faq-list p {
+      padding: 0 4px 22px;
+      color: var(--txt2);
+      font-size: 0.94rem;
+      line-height: 1.75;
+    }
+
     /* ===== SCREENSHOTS ===== */
     .screenshots-scroll {
       display: flex;
@@ -1114,6 +1268,7 @@
       }
 
       .steps-wrap::before { display: none; }
+      .facts-grid { grid-template-columns: 1fr 1fr; }
 
       .cta-banner {
         padding: 60px 32px;
@@ -1123,6 +1278,7 @@
     @media (max-width: 600px) {
       .hero h1 { font-size: 2.2rem; }
       .stats-grid { grid-template-columns: 1fr 1fr; }
+      .facts-grid { grid-template-columns: 1fr; }
       .trust-divider { display: none; }
       footer {
         flex-direction: column;
@@ -1143,6 +1299,7 @@
     <ul class="nav-links">
       <li><a href="#features">Features</a></li>
       <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#download" class="nav-cta">Get DashLog</a></li>
     </ul>
   </nav>
@@ -1324,6 +1481,74 @@
     </div>
   </section>
 
+  <!-- ===== PRODUCT FACTS ===== -->
+  <section id="facts" style="text-align:center;">
+    <div class="section-label" style="text-align:center;">Product Facts</div>
+    <h2 class="section-title" style="margin:0 auto 16px;">DashLog at a glance.</h2>
+    <p class="section-sub" style="margin:0 auto;">The essential details about the app, stated plainly.</p>
+
+    <dl class="facts-grid">
+      <div class="fact">
+        <dt>Core purpose</dt>
+        <dd>GPS drive tracking and a mileage logbook for recorded trips.</dd>
+      </div>
+      <div class="fact">
+        <dt>Platforms</dt>
+        <dd>Available for iOS and Android.</dd>
+      </div>
+      <div class="fact">
+        <dt>Price</dt>
+        <dd>Free to download and use.</dd>
+      </div>
+      <div class="fact">
+        <dt>Account</dt>
+        <dd>No account or sign-up is required.</dd>
+      </div>
+      <div class="fact">
+        <dt>Recorded data</dt>
+        <dd>GPS route, distance, duration, speed, altitude, and drive statistics.</dd>
+      </div>
+      <div class="fact">
+        <dt>Storage</dt>
+        <dd>Drive records are stored locally on the device.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" style="text-align:center;">
+    <div class="section-label" style="text-align:center;">FAQ</div>
+    <h2 class="section-title" style="margin:0 auto 16px;">Questions about DashLog.</h2>
+    <p class="section-sub" style="margin:0 auto;">Direct answers about recording, privacy, and availability.</p>
+
+    <div class="faq-list">
+      <details>
+        <summary>What is DashLog?</summary>
+        <p>DashLog is a free GPS drive tracker and mileage logbook for iOS and Android. Tap Start before a drive and Stop afterward to save the route and driving statistics.</p>
+      </details>
+      <details>
+        <summary>Does DashLog require an account?</summary>
+        <p>No. DashLog does not require an account or sign-up. You can open the app and begin recording a drive.</p>
+      </details>
+      <details>
+        <summary>What data does DashLog record?</summary>
+        <p>For each recorded trip, DashLog saves the GPS route, distance, duration, speed, altitude, and related drive statistics.</p>
+      </details>
+      <details>
+        <summary>Where does DashLog store drive records?</summary>
+        <p>Drive records are stored locally on your device. Read the <a href="privacy_policy.html">DashLog Privacy Policy</a> for details about app data and diagnostics.</p>
+      </details>
+      <details>
+        <summary>Does DashLog automatically detect every drive?</summary>
+        <p>No. Recording begins when you tap Start and ends when you tap Stop, so you control which drives are added to the logbook.</p>
+      </details>
+      <details>
+        <summary>Is DashLog available for iPhone and Android?</summary>
+        <p>Yes. DashLog is available on both the Apple App Store and Google Play.</p>
+      </details>
+    </div>
+  </section>
+
   <!-- ===== SUPPORT ===== -->
   <section id="support" style="text-align:center;">
     <div class="section-label" style="text-align:center;">Support</div>
@@ -1370,6 +1595,7 @@
       <span>· © 2025</span>
     </div>
     <ul class="footer-links">
+      <li><a href="../">GrayForge</a></li>
       <li><a href="privacy_policy.html">Privacy Policy</a></li>
       <li><a href="terms_of_service.html">Terms of Service</a></li>
       <li><a href="mailto:grayforge.dev+dashlog@gmail.com">Contact</a></li>

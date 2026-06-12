@@ -48,27 +48,119 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "NoisyNo",
-    "alternateName": "NoisyNo — Noise Remover",
-    "operatingSystem": ["iOS", "Android"],
-    "applicationCategory": "MultimediaApplication",
-    "description": "On-device noise remover for audio and video. No uploads, no accounts.",
-    "url": "https://grayforge.app/noisyno/",
-    "image": "https://grayforge.app/noisyno/assets/og-image.png",
-    "publisher": {
-      "@type": "Organization",
-      "name": "grayforge",
-      "email": "grayforge.dev+noisyno@gmail.com"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "downloadUrl": [
-      "https://apps.apple.com/app/id6772728543",
-      "https://play.google.com/store/apps/details?id=com.grayforge.noisyno"
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "@id": "https://grayforge.app/noisyno/#app",
+        "name": "NoisyNo",
+        "alternateName": "NoisyNo — Noise Remover",
+        "operatingSystem": ["iOS", "Android"],
+        "applicationCategory": "MultimediaApplication",
+        "description": "NoisyNo removes background noise from audio and video files using an on-device neural network. No uploads or accounts are required.",
+        "url": "https://grayforge.app/noisyno/",
+        "image": "https://grayforge.app/noisyno/assets/og-image.png",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "On-device speech noise removal",
+          "Offline processing",
+          "Audio and video input",
+          "Original and cleaned audio comparison",
+          "Native share sheet",
+          "No account required"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://grayforge.app/#organization",
+          "name": "GrayForge",
+          "url": "https://grayforge.app/",
+          "email": "grayforge.dev+noisyno@gmail.com"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "downloadUrl": [
+          "https://apps.apple.com/app/id6772728543",
+          "https://play.google.com/store/apps/details?id=com.grayforge.noisyno"
+        ],
+        "sameAs": [
+          "https://apps.apple.com/app/id6772728543",
+          "https://play.google.com/store/apps/details?id=com.grayforge.noisyno"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://grayforge.app/noisyno/#webpage",
+        "url": "https://grayforge.app/noisyno/",
+        "name": "NoisyNo — On-device noise remover for audio & video",
+        "description": "Official product page for NoisyNo, a free on-device noise remover for audio and video files.",
+        "dateModified": "2026-06-12",
+        "about": {"@id": "https://grayforge.app/noisyno/#app"},
+        "publisher": {"@id": "https://grayforge.app/#organization"}
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://grayforge.app/noisyno/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does NoisyNo upload audio to the cloud?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. NoisyNo processes files locally on the user's phone using an on-device neural network."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does NoisyNo work without internet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The noise-removal model is bundled with the app, so processing works offline after the app is installed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What file formats does NoisyNo support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NoisyNo supports WAV, MP3, M4A, FLAC, MP4, MOV, and M4V. Android also supports OGG, Opus, 3GP, and 3GPP input."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can NoisyNo clean video files?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. NoisyNo extracts and cleans the audio track from supported video files, then lets the user save or share the cleaned audio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can users hear the difference before sharing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. NoisyNo provides an Original and Cleaned toggle so users can compare the same moment before saving or sharing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does NoisyNo processing take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Processing time depends on the length of the clip and the device. Processing runs locally with no upload wait."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What languages does NoisyNo support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The denoiser is language-agnostic and works on speech in any language."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -1012,6 +1104,7 @@
         <span>NoisyNo</span>
       </div>
       <div class="footer-links">
+        <a href="../">GrayForge</a>
         <a href="privacy_policy.html">Privacy</a>
         <a href="mailto:grayforge.dev+noisyno@gmail.com">Support</a>
       </div>
