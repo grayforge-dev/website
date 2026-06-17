@@ -899,12 +899,12 @@
       <div class="hero-video">
         <video
           src="assets/comparison_v2.mp4"
-          autoplay
           muted
           loop
           playsinline
           preload="metadata"
           controls
+          data-visible-autoplay
           aria-label="Before and after audio noise removal comparison"
         ></video>
       </div>
@@ -1210,5 +1210,73 @@
     </div>
   </footer>
 
+  <script>
+    (() => {
+      const video = document.querySelector("video[data-visible-autoplay]");
+      if (!video) return;
+
+      let visible = false;
+      let userPaused = false;
+      let automated = false;
+
+      const runAutomated = (action) => {
+        automated = true;
+        action();
+        window.setTimeout(() => { automated = false; }, 150);
+      };
+
+      const pauseVideo = () => {
+        if (!video.paused) {
+          runAutomated(() => video.pause());
+        }
+      };
+
+      const playVideo = () => {
+        if (!visible || document.hidden || userPaused) return;
+
+        automated = true;
+        const playPromise = video.play();
+        if (playPromise && typeof playPromise.finally === "function") {
+          playPromise.finally(() => { automated = false; }).catch(() => {});
+        } else {
+          window.setTimeout(() => { automated = false; }, 150);
+        }
+      };
+
+      video.addEventListener("pause", () => {
+        if (!automated && visible) userPaused = true;
+      });
+
+      video.addEventListener("play", () => {
+        if (!automated) userPaused = false;
+      });
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          pauseVideo();
+        } else {
+          playVideo();
+        }
+      });
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries) => {
+          const entry = entries[0];
+          visible = entry.isIntersecting && entry.intersectionRatio >= 0.55;
+
+          if (visible) {
+            playVideo();
+          } else {
+            pauseVideo();
+          }
+        }, { threshold: [0, 0.25, 0.55, 0.8] });
+
+        observer.observe(video);
+      } else {
+        visible = true;
+        playVideo();
+      }
+    })();
+  </script>
 </body>
 </html>
