@@ -37,12 +37,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://grayforge.app/ko/offline-no-account-apps/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://grayforge.app/blog/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
