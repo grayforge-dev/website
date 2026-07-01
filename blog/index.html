@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GrayForge Blog | Privacy-first app guides</title>
+  <meta name="description" content="GrayForge 블로그. NoisyNo, DashLog 같은 프라이버시 우선·오프라인 우선 앱의 사용법, 제품 가이드, 검색 가능한 설명을 모아둡니다." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="GrayForge" />
+  <meta name="theme-color" content="#ECEDEA" />
+  <link rel="canonical" href="https://grayforge.app/blog/" />
+  <link rel="alternate" hreflang="ko" href="https://grayforge.app/blog/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GrayForge" />
+  <meta property="og:url" content="https://grayforge.app/blog/" />
+  <meta property="og:title" content="GrayForge Blog" />
+  <meta property="og:description" content="NoisyNo와 DashLog의 사용법, 프라이버시, 오프라인 앱 가이드를 모아둔 GrayForge 블로그." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "@id": "https://grayforge.app/blog/#blog",
+        "name": "GrayForge Blog",
+        "description": "NoisyNo와 DashLog의 사용법, 프라이버시, 오프라인 앱 가이드를 모아둔 GrayForge 블로그.",
+        "url": "https://grayforge.app/blog/",
+        "inLanguage": "ko",
+        "publisher": {"@id": "https://grayforge.app/#organization"},
+        "blogPost": [
+          {"@id": "https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/#article"}
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://grayforge.app/blog/#webpage",
+        "url": "https://grayforge.app/blog/",
+        "name": "GrayForge Blog",
+        "description": "GrayForge 제품 가이드와 블로그 글 모음.",
+        "isPartOf": {"@id": "https://grayforge.app/#website"},
+        "about": [
+          {"@id": "https://grayforge.app/noisyno/#app"},
+          {"@id": "https://grayforge.app/dashlog/#app"}
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://grayforge.app/blog/#posts",
+        "name": "GrayForge blog posts",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "서버에 업로드하지 않고 녹음 파일 소음 제거하는 방법",
+            "url": "https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    :root {
+      --paper: #ECEDEA;
+      --paper-2: #E3E4E0;
+      --ink: #151719;
+      --muted: #6D7377;
+      --line: #D5D8D2;
+      --card: #F8F7F2;
+      --accent: #D9531E;
+      --accent-soft: #F5D7C9;
+      --max: 1120px;
+    }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .wrap {
+      width: min(var(--max), calc(100% - 48px));
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(236, 237, 234, 0.86);
+      backdrop-filter: blur(18px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 0;
+      gap: 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+    .mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      background: #16181A;
+      display: grid;
+      place-items: center;
+      color: #E8743F;
+      font-weight: 900;
+    }
+    nav {
+      display: flex;
+      gap: 24px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+    }
+    nav a:hover { color: var(--ink); }
+    .hero {
+      padding: 88px 0 54px;
+    }
+    .label {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 20px;
+      font-size: clamp(44px, 8vw, 92px);
+      line-height: 0.96;
+      letter-spacing: -0.065em;
+      max-width: 900px;
+    }
+    .lede {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: clamp(18px, 2vw, 22px);
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 22px;
+      padding: 18px 0 96px;
+    }
+    .post {
+      display: grid;
+      gap: 18px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--card);
+      box-shadow: 0 20px 70px rgba(21, 23, 25, 0.08);
+    }
+    .post:hover h2 { color: var(--accent); }
+    .post-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: var(--paper);
+      color: var(--ink);
+    }
+    h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+      transition: color 0.18s ease;
+    }
+    .post p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 750;
+    }
+    .meta span {
+      border-radius: 999px;
+      background: var(--paper-2);
+      padding: 8px 11px;
+    }
+    .side {
+      display: grid;
+      gap: 18px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: rgba(248, 247, 242, 0.72);
+      padding: 24px;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .product-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .product-links a {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 11px;
+      font-size: 14px;
+      font-weight: 800;
+      background: var(--paper);
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0 48px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 760px) {
+      .wrap { width: min(var(--max), calc(100% - 36px)); }
+      nav a:not(:last-child) { display: none; }
+      .hero { padding-top: 56px; }
+      .grid { grid-template-columns: 1fr; padding-bottom: 64px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="../">
+        <span class="mark">G</span>
+        <span>GrayForge Blog</span>
+      </a>
+      <nav aria-label="상단 탐색">
+        <a href="../#work">Products</a>
+        <a href="../noisyno/">NoisyNo</a>
+        <a href="../dashlog/">DashLog</a>
+        <a href="../#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="label">Blog</div>
+      <h1>Guides for small, privacy-first tools.</h1>
+      <p class="lede">
+        NoisyNo와 DashLog를 중심으로, 오프라인 처리, 계정 없는 사용, 데이터가 어디에 남는지 같은 질문에 답하는 글을 모읍니다.
+      </p>
+    </section>
+
+    <section class="wrap grid" aria-label="블로그 글 목록">
+      <a class="post" href="noisyno/remove-audio-noise-without-upload/">
+        <div class="post-top">
+          <span>NoisyNo Guide</span>
+          <span class="pill">2026.07.01</span>
+        </div>
+        <h2>서버에 업로드하지 않고 녹음 파일 소음 제거하는 방법</h2>
+        <p>
+          회의, 강의, 인터뷰, 영상 오디오를 클라우드에 올리지 않고 스마트폰 안에서 정리하는 방법과 NoisyNo의 처리 범위를 설명합니다.
+        </p>
+        <div class="meta">
+          <span>오프라인 노이즈 제거</span>
+          <span>계정 없음</span>
+          <span>파일 업로드 없음</span>
+        </div>
+      </a>
+
+      <aside class="side" aria-label="제품별 글 모음">
+        <div class="card">
+          <h3>NoisyNo</h3>
+          <p>음성 노이즈 제거, 오프라인 처리, 파일 업로드 없는 오디오 정리 가이드.</p>
+          <div class="product-links">
+            <a href="../noisyno/">제품 보기</a>
+            <a href="noisyno/remove-audio-noise-without-upload/">첫 글 보기</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>DashLog</h3>
+          <p>주행기록, 계정 없는 GPS 로그, 로컬 저장 방식에 대한 글을 이 블로그에 추가할 예정입니다.</p>
+          <div class="product-links">
+            <a href="../dashlog/">제품 보기</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 GrayForge · Blog index</div>
+  </footer>
+</body>
+</html>
