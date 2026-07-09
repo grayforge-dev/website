@@ -317,9 +317,22 @@
       font-size: 14.5px;
       font-weight: 500;
     }
-    @media (max-width: 640px) {
-      .nav-links { display: none; }
+    /* Discord — kept quiet so it reads as one of the nav links rather than
+       a loud CTA. Inherits the nav's muted text color and only warms to the
+       amber accent on hover, matching the rest of the bar. */
+    .nav-discord {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
+    .nav-discord svg {
+      width: 17px;
+      height: 17px;
+      fill: currentColor;
+      display: block;
+      opacity: 0.85;
+    }
+    .nav-links a.nav-discord:hover { color: var(--accent); }
 
     /* ─── Hero ───────────────────────────────────────────── */
     .hero {
@@ -862,6 +875,10 @@
         <a href="#download">Download</a>
         <a href="#faq">FAQ</a>
         <a href="#support">Support</a>
+        <a href="https://discord.com/invite/RsZWnuaQgT" class="nav-discord" target="_blank" rel="noopener" aria-label="Join our Discord">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3a13.87 13.87 0 0 0-.617 1.27 18.27 18.27 0 0 0-5.535 0A13.77 13.77 0 0 0 9.11 3a19.74 19.74 0 0 0-4.435 1.37C1.87 8.577 1.11 12.68 1.49 16.724a19.9 19.9 0 0 0 6.075 3.077 14.7 14.7 0 0 0 1.302-2.117 12.9 12.9 0 0 1-2.05-.987c.172-.126.34-.257.502-.392a14.2 14.2 0 0 0 12.16 0c.164.14.332.27.503.392a12.9 12.9 0 0 1-2.053.988 14.5 14.5 0 0 0 1.302 2.116 19.85 19.85 0 0 0 6.078-3.077c.447-4.687-.762-8.752-3.19-12.355ZM8.02 14.235c-1.183 0-2.157-1.086-2.157-2.42 0-1.333.955-2.42 2.157-2.42 1.21 0 2.176 1.096 2.157 2.42 0 1.334-.955 2.42-2.157 2.42Zm7.96 0c-1.183 0-2.157-1.086-2.157-2.42 0-1.333.955-2.42 2.157-2.42 1.21 0 2.176 1.096 2.157 2.42 0 1.334-.946 2.42-2.157 2.42Z"/></svg>
+          Discord
+        </a>
       </div>
     </div>
   </nav>
