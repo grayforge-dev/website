@@ -49,7 +49,7 @@
         "inLanguage": "en",
         "datePublished": "2026-07-01",
         "dateModified": "2026-07-01",
-        "wordCount": 1900,
+        "wordCount": 1050,
         "articleSection": "NoisyNo Guide",
         "keywords": "remove noise from recording, offline noise removal, voice noise remover app, without uploading, on-device audio processing, NoisyNo",
         "mainEntityOfPage": "https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/",
@@ -173,14 +173,6 @@
           },
           {
             "@type": "Question",
-            "name": "Does that mean it uses no servers at all?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Your recordings and result files are not uploaded to a GrayForge server. For app stability, limited Firebase-based diagnostics and usage events may be processed — these do not include file names or audio content."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "What audio and video formats does it support?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -193,38 +185,6 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Yes. NoisyNo is free to use with no accounts, no ads, and no file uploads. You can check current details on the App Store or Google Play listing."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does noise removal reduce the audio quality?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "NoisyNo targets the background noise around a voice, not the voice itself. Very aggressive cleanup can make speech sound thinner, which is why the app lets you A/B the result against the original before you keep it. Your source file is never overwritten."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long a recording can it handle?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It depends on your phone. A few minutes of audio usually finishes in seconds to a minute; longer recordings take more time and memory. Keeping the app in the foreground while it processes helps it finish without pausing."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does it work with any language?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. The cleanup works on the sound of a voice, so it isn't tied to a specific language — it helps whether the speech is in English, Korean, or anything else."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is it available for both iPhone and Android?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. NoisyNo is available on the App Store for iPhone and on Google Play for Android."
             }
           }
         ]
@@ -603,7 +563,7 @@
         <div class="metabar">
           <span class="m">Published 2026.07.01</span>
           <span class="dot"></span>
-          <span class="m">~5 min read</span>
+          <span class="m">~4 min read</span>
           <span class="dot"></span>
           <span class="m">Topic · Offline denoising</span>
         </div>
@@ -646,21 +606,17 @@
 
         <!-- WHY -->
         <section id="why" class="read reveal">
-          <h2>Why a no-upload approach to noise removal matters</h2>
+          <h2>Why a no-upload approach matters</h2>
           <p>
-            Online noise-removal tools are convenient. Many work by uploading a file in the browser, letting a server process it,
-            and handing back the result. But a recording can carry more sensitive information than you'd expect — meeting contents,
-            client names, lecture material, an unreleased interview, even the background of your home or office.
-          </p>
-          <p>
-            So even a simple task like "remove the noise" comes down to <strong>where the file is processed</strong>.
-            These situations especially are worth reaching for a no-upload approach first:
+            Most online noise removers upload your file to a server before processing it. But a recording can carry more
+            than you'd expect — meeting contents, client names, an unreleased interview — so even "remove the noise" comes
+            down to <strong>where the file is processed</strong>. A no-upload approach is worth reaching for first when:
           </p>
           <ul>
-            <li>Company meetings, classes, or interviews where sharing outside is sensitive</li>
-            <li>An <strong>unreleased video draft or podcast master</strong></li>
-            <li>Flaky Wi-Fi, or a plane, subway, or on-site spot with a weak connection</li>
-            <li>When you just want it cleaned up fast, with no sign-up, subscription, or upload step</li>
+            <li>Company meetings, classes, or interviews are sensitive to share</li>
+            <li>It's an <strong>unreleased video draft or podcast master</strong></li>
+            <li>Wi-Fi is flaky — a plane, subway, or on-site spot</li>
+            <li>You just want it cleaned fast, with no sign-up or upload step</li>
           </ul>
 
           <div class="compare" aria-label="Online vs on-device comparison">
@@ -694,14 +650,10 @@
                 <div class="num">Step 01</div>
                 <h3>Pick a recording or video file</h3>
                 <p>
-                  Open the app and your recent files are right there, so there's no folder digging.
-                  In the <strong>Files</strong> tab you can search by filename or pick a voice memo, interview,
-                  meeting or lecture recording, or a video file. The app only touches the file you choose.
-                </p>
-                <p>
-                  Common formats work out of the box — <strong>M4A, MP3, WAV, AAC, and CAF</strong> for audio, and
-                  the audio track of MP4 and MOV video. You don't have to convert anything first; just point NoisyNo at
-                  the recording you already have.
+                  Recent files are right there — no folder digging. In the <strong>Files</strong> tab, search by name or
+                  pick a voice memo, interview, meeting, lecture, or video; the app only touches the file you choose.
+                  Common formats work out of the box (<strong>M4A, MP3, WAV, AAC, CAF</strong>, plus MP4/MOV video), so
+                  there's nothing to convert first.
                 </p>
               </div>
               <div class="wshot">
@@ -716,14 +668,10 @@
                 <div class="num">Step 02</div>
                 <h3>Preview the original</h3>
                 <p>
-                  Before you clean anything, scrub the waveform and play it back to confirm it's the right clip.
-                  It saves you from processing the wrong file, and lets you hear what kind of noise is mixed in first —
-                  a steady fan hum behaves differently from sudden street noise.
-                </p>
-                <p>
-                  Listening first also sets your expectations. If the voice is buried very deep under noise, cleanup will
-                  help but won't work miracles; if the voice is already clear and you just want to shave off background hiss,
-                  the result usually sounds close to a studio take.
+                  Scrub the waveform and play it back to confirm it's the right clip and hear what noise is mixed in — a
+                  steady fan hum behaves differently from sudden street noise. It also sets expectations: a voice buried
+                  deep under noise gets helped but not rescued, while shaving hiss off already-clear speech lands close to
+                  a studio take.
                 </p>
               </div>
               <div class="wshot">
@@ -738,14 +686,10 @@
                 <div class="num">Step 03</div>
                 <h3>Run the cleanup (100% on-device)</h3>
                 <p>
-                  Tap <strong>Clean</strong> and the model bundled in the app reduces background noise around the voice.
-                  The progress bar tracks the audio frames it actually processes, and there's <strong>no upload wait</strong> —
-                  the processing happens inside the device, without internet.
-                </p>
-                <p>
-                  Time depends on how long the recording is and how fast your phone is; a few minutes of audio usually finishes
-                  in seconds to a minute. Keep the app open while it works — if you lock the screen or switch apps, processing
-                  can pause in the background.
+                  Tap <strong>Clean</strong> and the bundled model reduces the background noise around the voice —
+                  <strong>no upload wait</strong>, all inside the device, without internet. A few minutes of audio usually
+                  finishes in seconds to a minute; keep the app open, since locking the screen or switching apps can pause
+                  processing.
                 </p>
               </div>
               <div class="wshot">
@@ -760,14 +704,10 @@
                 <div class="num">Step 04</div>
                 <h3>A/B the original against the result</h3>
                 <p>
-                  Use the <strong>Original / Cleaned</strong> toggle at the top to switch between the same spot instantly.
-                  Before you share, you can hear whether the voice still sounds alive and the noise dropped naturally,
-                  and adjust the playback speed to check a specific line closely.
-                </p>
-                <p>
-                  This A/B check matters because aggressive noise removal can make a voice sound thin or underwater.
-                  If the cleaned version loses too much warmth, the original is still untouched — nothing you do here
-                  overwrites your source file.
+                  The <strong>Original / Cleaned</strong> toggle switches between the same spot instantly, so you can hear
+                  whether the voice still sounds alive and the noise dropped naturally. It matters because aggressive
+                  removal can make a voice thin or underwater — and if the cleaned version loses too much, the original is
+                  untouched, since nothing here overwrites your source file.
                 </p>
               </div>
               <div class="wshot">
@@ -782,14 +722,10 @@
                 <div class="num">Step 05</div>
                 <h3>Save or share</h3>
                 <p>
-                  When you're happy with the result, tap share and send it to whichever app you want.
-                  <strong>Where it goes is entirely your choice</strong> — notes, messages, an editing app, a cloud drive —
-                  it only reaches the destination you pick.
-                </p>
-                <p>
-                  From here you can drop the cleaned audio straight into a video editor, a podcast host, or a transcription
-                  app. And because there's no account, there's nothing to log into on another device and no library sitting
-                  on someone else's server — the file lives where you put it.
+                  Tap share and send the result to whichever app you want — notes, messages, a video editor, a podcast
+                  host, a transcription app. <strong>Where it goes is entirely your choice.</strong> Because there's no
+                  account, there's nothing to log into elsewhere and no library on someone else's server; the file lives
+                  where you put it.
                 </p>
               </div>
               <div class="wshot">
@@ -825,8 +761,8 @@
         <section id="fit" class="read reveal">
           <h2>What it fits especially well</h2>
           <p>
-            NoisyNo isn't a full editor for music mixing — it focuses on <strong>making a voice easier to listen to</strong>.
-            It fits files where you want to "keep the speech and cut the background."
+            NoisyNo focuses on <strong>making a voice easier to listen to</strong> — files where you want to keep the
+            speech and cut the background:
           </p>
           <ul>
             <li>Interviews recorded in a cafe, office, or classroom</li>
@@ -836,8 +772,8 @@
             <li>First-pass voice cleanup for a podcast or short-form video</li>
           </ul>
           <p>
-            On the other hand, if you need to fine-tune the timbre of music, mix multiple tracks, or do professional mastering,
-            a dedicated audio-editing tool is a better fit.
+            For fine-tuning music timbre, mixing multiple tracks, or professional mastering, a dedicated audio editor is a
+            better fit.
           </p>
         </section>
 
@@ -845,24 +781,23 @@
         <section id="noise" class="read reveal">
           <h2>What kinds of noise it can reduce</h2>
           <p>
-            Most everyday recordings are ruined by <strong>steady background noise</strong> — the constant sounds that sit
-            under a voice the whole time. That's exactly the kind of noise on-device denoising is best at. Common examples
-            people bring to NoisyNo:
+            On-device denoising is best at <strong>steady background noise</strong> — the constant sounds that sit under a
+            voice the whole time. Common examples people bring to NoisyNo:
           </p>
           <ul>
-            <li><strong>Fan and computer hum</strong> — laptop fans, desktop towers, projectors</li>
-            <li><strong>Air conditioning and HVAC</strong> — the low drone of vents and ducts</li>
-            <li><strong>Hiss and white noise</strong> — cheap mics, high gain, old cassette or phone recordings</li>
-            <li><strong>Wind</strong> — outdoor clips and phone video shot on a breezy day</li>
-            <li><strong>Room tone and echo</strong> — hollow, boxy rooms and reverberant halls</li>
-            <li><strong>Electrical hum and buzz</strong> — 50/60&nbsp;Hz mains, ground-loop whine</li>
-            <li><strong>Street and crowd noise</strong> — traffic, cafe chatter, distant murmur</li>
-            <li><strong>Keyboard and handling noise</strong> — typing, taps, and bumps against the mic</li>
+            <li><strong>Fan and computer hum</strong> — laptops, towers, projectors</li>
+            <li><strong>Air conditioning and HVAC</strong> drone</li>
+            <li><strong>Hiss and white noise</strong> — cheap mics, high gain</li>
+            <li><strong>Wind</strong> — outdoor clips and breezy-day video</li>
+            <li><strong>Room tone and echo</strong> — hollow, boxy rooms</li>
+            <li><strong>Electrical hum and buzz</strong> — 50/60&nbsp;Hz mains</li>
+            <li><strong>Street and crowd noise</strong> — traffic, cafe chatter</li>
+            <li><strong>Keyboard and handling noise</strong> — typing, taps, bumps</li>
           </ul>
           <p>
-            Sudden, sharp sounds — a door slam, a single cough, a phone notification — are harder for any noise remover to
-            catch because they aren't constant. NoisyNo focuses on the steady layer that makes a voice sound "noisy," which
-            is what most meeting, interview, and lecture recordings actually need.
+            Sudden, sharp sounds — a door slam, a cough, a notification — are harder for any remover because they aren't
+            constant. NoisyNo focuses on the steady layer that makes a voice sound "noisy," which is what most meeting,
+            interview, and lecture recordings actually need.
           </p>
         </section>
 
@@ -870,8 +805,8 @@
         <section id="tips" class="read reveal">
           <h2>Tips for the cleanest result</h2>
           <p>
-            You'll get a better result from a better starting point. None of this is required — NoisyNo works on whatever you
-            already have — but these habits make the cleanup easier and the voice more natural.
+            None of this is required — NoisyNo works on whatever you have — but a better starting point makes the voice
+            more natural:
           </p>
           <ul>
             <li><strong>Record closer to the speaker.</strong> A voice that's louder than the room is far easier to separate from noise.</li>
@@ -880,31 +815,22 @@
             <li><strong>Don't over-clean.</strong> If the cleaned voice starts to sound thin or metallic, the original is still there — sometimes a lighter touch sounds more human.</li>
             <li><strong>Keep the original.</strong> Save the cleaned copy alongside the source so you can always go back.</li>
           </ul>
-          <p>
-            For voice work — interviews, meetings, lectures, voice memos, podcast and short-form drafts — this is usually
-            enough to turn a distracting recording into something clear and easy to listen to.
-          </p>
         </section>
 
         <!-- LIMITS -->
         <section id="limits" class="read reveal">
           <h2>Worth knowing: "no file upload" and "no network" are different</h2>
           <p>
-            The key point here is that <strong>your recording and the result file are not uploaded to a GrayForge server</strong>.
-            According to NoisyNo's <a class="inline" href="../../../noisyno/privacy_policy.html">privacy policy</a>,
-            the audio and video files you pick are processed inside the device, and NoisyNo itself does not send the files anywhere.
-          </p>
-          <p>
-            That said, to improve app quality, <strong>limited diagnostic services</strong> such as Firebase Crashlytics,
-            Firebase Analytics, and Firebase Remote Config may be used. These diagnostics are designed not to include
-            file names or audio content. If you handle sensitive files, it's worth understanding this distinction precisely.
+            Your recording and the result file are <strong>not uploaded to a GrayForge server</strong> — per NoisyNo's
+            <a class="inline" href="../../../noisyno/privacy_policy.html">privacy policy</a>, files are processed on the
+            device. That's not the same as never touching the network: limited diagnostics (Firebase Crashlytics,
+            Analytics, Remote Config) may run for app quality, and these don't include file names or audio content.
           </p>
           <div class="callout">
             <span class="label">In short</span>
             <p>
-              NoisyNo is not "an app that uploads your recording to a server to process it."
-              But it's also not accurate to say the limited diagnostic data for stability is literally zero.
-              It's best to look at <strong>file processing</strong> and <strong>diagnostic data</strong> as two separate scopes.
+              NoisyNo doesn't upload your recording to process it, but the diagnostic data for stability isn't literally
+              zero. Treat <strong>file processing</strong> and <strong>diagnostic data</strong> as two separate scopes.
             </p>
           </div>
         </section>
@@ -948,32 +874,12 @@
               <p>For supported video files, it can extract the audio, remove noise, and let you save or share the resulting audio.</p>
             </details>
             <details>
-              <summary>Does that mean it uses no servers at all?</summary>
-              <p>Your recordings and result files are not uploaded to a GrayForge server. For app stability, limited Firebase-based diagnostics and usage events may be processed, and these do not include file names or audio content.</p>
-            </details>
-            <details>
               <summary>What audio and video formats does it support?</summary>
               <p>Common audio formats such as M4A, MP3, WAV, AAC, and CAF work directly, and NoisyNo can take the audio from MP4 and MOV video. You don't need to convert the file first.</p>
             </details>
             <details>
               <summary>Is NoisyNo free?</summary>
               <p>Yes. NoisyNo is free to use with no accounts, no ads, and no file uploads. You can check current details on the App Store or Google Play listing.</p>
-            </details>
-            <details>
-              <summary>Does noise removal reduce the audio quality?</summary>
-              <p>NoisyNo targets the background noise around a voice, not the voice itself. Very aggressive cleanup can make speech sound thinner, which is why the app lets you A/B the result against the original before you keep it. Your source file is never overwritten.</p>
-            </details>
-            <details>
-              <summary>How long a recording can it handle?</summary>
-              <p>It depends on your phone. A few minutes of audio usually finishes in seconds to a minute; longer recordings take more time and memory. Keeping the app in the foreground while it processes helps it finish without pausing.</p>
-            </details>
-            <details>
-              <summary>Does it work with any language?</summary>
-              <p>Yes. The cleanup works on the sound of a voice, so it isn't tied to a specific language — it helps whether the speech is in English, Korean, or anything else.</p>
-            </details>
-            <details>
-              <summary>Is it available for both iPhone and Android?</summary>
-              <p>Yes. NoisyNo is available on the App Store for iPhone and on Google Play for Android.</p>
             </details>
           </div>
         </section>

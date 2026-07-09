@@ -49,7 +49,7 @@
         "inLanguage": "en",
         "datePublished": "2026-07-09",
         "dateModified": "2026-07-09",
-        "wordCount": 2000,
+        "wordCount": 1100,
         "articleSection": "NoisyNo Guide",
         "keywords": "remove background noise from meeting recording, clean up zoom recording audio, teams recording noise removal, meeting audio cleanup, on-device noise removal, NoisyNo",
         "mainEntityOfPage": "https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/",
@@ -165,14 +165,6 @@
           },
           {
             "@type": "Question",
-            "name": "Will it help a recording where the speaker is far from the mic?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It helps, but it can't invent detail that wasn't captured. If a remote speaker is faint and buried under room noise, cleanup makes the voice clearer without fully restoring a close-mic sound. The A/B toggle lets you check whether the result is worth keeping."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "Can I clean the audio of the meeting video, not just an audio file?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -185,30 +177,6 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "The recording and result files are not uploaded to a GrayForge server, and no account is required. For app stability, limited Firebase-based diagnostics may be processed, and these do not include file names or audio content. Always follow your organization's own recording and data policies."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does cleaning the audio make transcription more accurate?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Often, yes. Removing steady background noise gives a transcription or note-taking tool a clearer voice signal to work from, which tends to reduce errors — though results depend on the tool and how buried the speech was."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long a meeting can it handle?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It depends on your phone. Short clips finish in seconds to a minute; a long meeting takes more time and memory. Keeping the app in the foreground while it processes helps it finish without pausing."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does it work in any language?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. The cleanup works on the sound of a voice, so it isn't tied to a specific language — it helps whether the meeting was in English, Korean, or anything else."
             }
           },
           {
@@ -595,7 +563,7 @@
         <div class="metabar">
           <span class="m">Published 2026.07.09</span>
           <span class="dot"></span>
-          <span class="m">~6 min read</span>
+          <span class="m">~4 min read</span>
           <span class="dot"></span>
           <span class="m">Topic · Meeting audio</span>
         </div>
@@ -638,24 +606,13 @@
 
         <!-- WHY -->
         <section id="why" class="read reveal">
-          <h2>Why meeting audio is worth keeping on your device</h2>
+          <h2>Why keep meeting audio on your device</h2>
           <p>
-            A meeting recording is one of the most sensitive files most people ever create. It can carry deal terms,
-            client names, salary talk, unreleased plans, legal discussion, or simply colleagues speaking candidly because
-            they assumed the room was private. Running that file through a random "free online noise remover" means
-            <strong>uploading the entire conversation to someone else's server</strong> — and then trusting how they store,
-            log, and delete it.
+            A meeting recording is one of the most sensitive files you'll ever make — deal terms, client names, salary
+            talk, legal or HR discussion. A "free online noise remover" uploads that whole conversation to someone else's
+            server. An on-device tool never sends it anywhere, which matters most for internal strategy calls, meetings
+            under an <strong>NDA</strong>, and legal, medical, or HR conversations.
           </p>
-          <p>
-            An on-device tool sidesteps that question entirely. The noise removal happens inside your phone, so the
-            recording never has to leave it. These are the meetings where that matters most:
-          </p>
-          <ul>
-            <li>Internal strategy, hiring, or finance calls that shouldn't be shared outside the company</li>
-            <li>Client or partner meetings under an <strong>NDA or confidentiality agreement</strong></li>
-            <li>Legal, medical, or HR conversations with a duty of privacy</li>
-            <li>Any recording you'd be uncomfortable seeing sit in an unknown company's upload folder</li>
-          </ul>
 
           <div class="compare" aria-label="Online vs on-device comparison">
             <div class="compare-card">
@@ -688,13 +645,9 @@
                 <div class="num">Step 01</div>
                 <h3>Get the recording onto your phone</h3>
                 <p>
-                  Export the meeting from wherever it lives. Zoom and Teams let you download the recording as an
-                  <strong>MP4 video or an M4A/MP3 audio file</strong>; a phone or voice recorder already saves it locally.
-                  Save that file to your phone — Files, Downloads, or your recordings folder is fine.
-                </p>
-                <p>
-                  You don't have to convert anything. NoisyNo reads common audio formats directly and can also pull the
-                  audio track straight out of the meeting video, so whichever export you have will work.
+                  Export the meeting — Zoom and Teams give you an <strong>MP4 video or M4A/MP3 audio</strong>; a recorder
+                  already saves it locally. Save it to your phone. No converting needed: NoisyNo reads common audio
+                  formats and can pull the audio straight out of the meeting video.
                 </p>
               </div>
               <div class="wshot">
@@ -709,14 +662,9 @@
                 <div class="num">Step 02</div>
                 <h3>Pick the meeting file</h3>
                 <p>
-                  In the <strong>Files</strong> tab, search by name or scroll your recent recordings and choose the meeting.
-                  Whether it's a two-person 1:1 or a full conference-room capture, you point NoisyNo at the one file —
-                  it only touches what you select.
-                </p>
-                <p>
-                  It helps to preview a few seconds first to hear what's actually in there. A steady laptop-fan drone
-                  cleans up differently than a room with echo, and knowing which one you're dealing with sets your
-                  expectations for the result.
+                  In the <strong>Files</strong> tab, search by name or scroll recent recordings and choose the meeting —
+                  it only touches the one file you select. Preview a few seconds first; a steady fan drone cleans up
+                  differently than a room with echo, so it sets your expectations for the result.
                 </p>
               </div>
               <div class="wshot">
@@ -731,13 +679,9 @@
                 <div class="num">Step 03</div>
                 <h3>Run the cleanup (100% on-device)</h3>
                 <p>
-                  Tap <strong>Clean</strong> and the model bundled in the app reduces the steady background noise sitting
-                  under the voices. There's <strong>no upload wait</strong> — the processing happens inside the device,
-                  so a private meeting stays on your phone the whole time.
-                </p>
-                <p>
-                  A long meeting takes longer than a short clip, and a fast phone finishes sooner. Keep the app in the
-                  foreground while it works; if you lock the screen or switch away, processing can pause in the background.
+                  Tap <strong>Clean</strong> and the bundled model reduces the steady noise under the voices — <strong>no
+                  upload wait</strong>, all inside the device. Longer meetings take longer; keep the app in the foreground
+                  while it works, since switching away can pause processing.
                 </p>
               </div>
               <div class="wshot">
@@ -752,13 +696,9 @@
                 <div class="num">Step 04</div>
                 <h3>Compare before you send it around</h3>
                 <p>
-                  Use the <strong>Original / Cleaned</strong> toggle to switch between the same moment instantly. For a
-                  meeting, listen to a spot where someone speaks quietly or over the fan — that's where you'll hear whether
-                  the cleanup helped without making voices sound thin or underwater.
-                </p>
-                <p>
-                  This check matters before you share a recording with a team or paste it into meeting notes. If the cleaned
-                  version loses too much, your original is untouched — <strong>nothing here overwrites the source file</strong>.
+                  Use the <strong>Original / Cleaned</strong> toggle to A/B the same moment — listen to a spot where
+                  someone speaks quietly or over the fan to hear whether voices stay natural. If the cleaned version loses
+                  too much, your original is untouched: <strong>nothing here overwrites the source file</strong>.
                 </p>
               </div>
               <div class="wshot">
@@ -773,13 +713,9 @@
                 <div class="num">Step 05</div>
                 <h3>Share to notes or transcription</h3>
                 <p>
-                  When it sounds right, tap share and send the cleaned audio wherever it needs to go — a notes app, a
-                  transcription service, a summary tool, or the team channel. <strong>The destination is your choice</strong>,
-                  and it only reaches the app you pick.
-                </p>
-                <p>
-                  Because there's no account, there's no meeting library sitting on someone else's server and nothing to log
-                  into elsewhere. The cleaned file lives where you put it, and you decide who ever sees it.
+                  Tap share and send the cleaned audio wherever it needs to go — notes, a transcription service, a summary
+                  tool, the team channel. There's no account, so nothing sits in a meeting library on someone else's
+                  server; <strong>the file lives where you put it, and you decide who sees it</strong>.
                 </p>
               </div>
               <div class="wshot">
@@ -815,23 +751,20 @@
         <section id="noise" class="read reveal">
           <h2>What meeting noise it can actually remove</h2>
           <p>
-            Meeting recordings are dominated by <strong>steady background noise</strong> — the constant sounds that sit
-            under everyone's voice for the whole call. That's exactly what on-device denoising handles best. The usual
-            culprits people bring to NoisyNo from meetings:
+            On-device denoising is best at <strong>steady background noise</strong> — the constant sounds sitting under
+            every voice. The usual meeting culprits:
           </p>
           <ul>
-            <li><strong>Laptop and computer fans</strong> — the machine running the call is often the loudest thing in the room</li>
-            <li><strong>Air conditioning and HVAC</strong> — the low drone of vents in a conference room or home office</li>
-            <li><strong>Room hum and echo</strong> — hard-walled meeting rooms that sound hollow or boxy</li>
-            <li><strong>Mic hiss</strong> — cheap headset or laptop mics recording at high gain</li>
-            <li><strong>Electrical hum</strong> — 50/60&nbsp;Hz mains buzz and ground-loop whine</li>
-            <li><strong>Steady street or office noise</strong> — traffic outside, distant chatter, an open-plan floor</li>
+            <li><strong>Laptop and computer fans</strong></li>
+            <li><strong>Air conditioning and HVAC</strong> drone</li>
+            <li><strong>Room hum and echo</strong> in hard-walled rooms</li>
+            <li><strong>Mic hiss</strong> from cheap headset or laptop mics</li>
+            <li><strong>Electrical hum</strong> — 50/60&nbsp;Hz mains buzz</li>
+            <li><strong>Steady street or office noise</strong></li>
           </ul>
           <p>
-            What no noise remover fully fixes are <strong>sudden, one-off sounds</strong> — a door slam, a cough, a
-            notification chime, or two people talking over each other. Those aren't constant, so they're much harder to
-            separate. NoisyNo targets the steady layer that makes a meeting sound "noisy," which is what most calls
-            actually need.
+            What it can't fully fix is <strong>sudden, one-off sound</strong> — a door slam, a cough, people talking over
+            each other. Those aren't constant, so they're much harder to separate.
           </p>
         </section>
 
@@ -839,28 +772,18 @@
         <section id="transcribe" class="read reveal">
           <h2>Cleaner audio usually means better transcripts</h2>
           <p>
-            A lot of meeting recordings exist only to be transcribed or summarized. Auto-transcription tools lean on a
-            clear voice signal, and steady background noise is exactly what trips them up — it's why a fan-heavy recording
-            comes back full of <em>[inaudible]</em> gaps and mangled names.
+            Auto-transcription tools lean on a clear voice signal, and steady noise is what trips them up — the cause of
+            <em>[inaudible]</em> gaps and mangled names. Cleaning the recording first gives the transcriber a clearer
+            voice, which <strong>tends to cut errors</strong> for the common case of decent speech under a drone. Clean in
+            NoisyNo, A/B to confirm, share into your transcription tool — and keep the original as a fallback.
           </p>
-          <p>
-            Running the recording through NoisyNo first gives the transcriber a cleaner voice to work from. It won't rescue
-            a hopeless recording, but for the common case — decent speech buried under a constant drone — <strong>removing
-            that drone tends to cut transcription errors</strong>. A quick sequence that works well:
-          </p>
-          <ul>
-            <li>Clean the meeting audio in NoisyNo and A/B it to confirm the voices are clearer</li>
-            <li>Share the cleaned file into your transcription or notes tool</li>
-            <li>Keep the original too, in case you ever need to re-check a moment against the raw audio</li>
-          </ul>
         </section>
 
         <!-- TIPS -->
         <section id="tips" class="read reveal">
           <h2>Tips for cleaner meeting recordings</h2>
           <p>
-            The cleanup works on whatever you already have, but a better recording makes for a more natural result. If you
-            know a meeting is being recorded, a few small habits help a lot:
+            The cleanup works on whatever you have, but a better recording gives a more natural result:
           </p>
           <ul>
             <li><strong>Put the mic near the talkers.</strong> A phone in the middle of the table beats one at the far end — voices louder than the room are far easier to separate from noise.</li>
@@ -875,22 +798,16 @@
         <section id="limits" class="read reveal">
           <h2>Worth knowing: "no file upload" and "no network" are different</h2>
           <p>
-            The important point is that <strong>your meeting recording and the cleaned result are not uploaded to a
-            GrayForge server</strong>. Per NoisyNo's <a class="inline" href="../../../noisyno/privacy_policy.html">privacy policy</a>,
-            the audio and video files you pick are processed inside the device, and NoisyNo itself does not send those files anywhere.
-          </p>
-          <p>
-            That's not the same as the app never touching the network. To improve stability, <strong>limited diagnostic
-            services</strong> such as Firebase Crashlytics, Analytics, and Remote Config may be used. These are designed not to
-            include file names or audio content. If you record meetings under a strict policy, it's worth understanding this
-            distinction — and following whatever rules your organization sets for recordings.
+            Your meeting recording and the cleaned result are <strong>not uploaded to a GrayForge server</strong> — per
+            NoisyNo's <a class="inline" href="../../../noisyno/privacy_policy.html">privacy policy</a>, files are processed
+            on the device. That's not the same as the app never touching the network: limited diagnostics (Firebase
+            Crashlytics, Analytics, Remote Config) may run for stability, and these don't include file names or audio.
           </p>
           <div class="callout">
             <span class="label">In short</span>
             <p>
-              NoisyNo does not upload your meeting to a server to process it. But it isn't accurate to say the limited
-              diagnostic data for app stability is literally zero. Treat <strong>file processing</strong> and
-              <strong>diagnostic data</strong> as two separate scopes.
+              NoisyNo doesn't upload your meeting to process it, but the diagnostic data for stability isn't literally
+              zero. Treat <strong>file processing</strong> and <strong>diagnostic data</strong> as two separate scopes.
             </p>
           </div>
         </section>
@@ -935,28 +852,12 @@
               <p>It's best at steady background noise — laptop fans, air conditioning and HVAC drone, room hum, and low hiss. Sudden sounds like a door slam or a single cough are harder for any noise remover because they aren't constant.</p>
             </details>
             <details>
-              <summary>Will it help a recording where the speaker is far from the mic?</summary>
-              <p>It helps, but it can't invent detail that wasn't captured. If a remote speaker is faint and buried under room noise, cleanup makes the voice clearer without fully restoring a close-mic sound. The A/B toggle lets you check whether the result is worth keeping.</p>
-            </details>
-            <details>
               <summary>Can I clean the audio of the meeting video, not just an audio file?</summary>
               <p>Yes. For supported video files, NoisyNo extracts the audio track, removes noise, and lets you save or share the cleaned audio.</p>
             </details>
             <details>
               <summary>Is it safe for confidential or internal meetings?</summary>
               <p>The recording and result files are not uploaded to a GrayForge server, and no account is required. For app stability, limited Firebase-based diagnostics may be processed, and these do not include file names or audio content. Always follow your organization's own recording and data policies.</p>
-            </details>
-            <details>
-              <summary>Does cleaning the audio make transcription more accurate?</summary>
-              <p>Often, yes. Removing steady background noise gives a transcription or note-taking tool a clearer voice signal to work from, which tends to reduce errors — though results depend on the tool and how buried the speech was.</p>
-            </details>
-            <details>
-              <summary>How long a meeting can it handle?</summary>
-              <p>It depends on your phone. Short clips finish in seconds to a minute; a long meeting takes more time and memory. Keeping the app in the foreground while it processes helps it finish without pausing.</p>
-            </details>
-            <details>
-              <summary>Does it work in any language?</summary>
-              <p>Yes. The cleanup works on the sound of a voice, so it isn't tied to a specific language — it helps whether the meeting was in English, Korean, or anything else.</p>
             </details>
             <details>
               <summary>Is NoisyNo free, and is it on iPhone and Android?</summary>
