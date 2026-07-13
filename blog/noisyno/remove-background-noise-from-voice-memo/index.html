@@ -88,16 +88,16 @@
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "Find the voice memo file",
-            "text": "On iPhone, Voice Memos recordings are M4A files you can reach from a file picker; on Android, recorder apps save M4A or WAV files. No conversion or export dance needed.",
-            "url": "https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/#step-find"
+            "name": "iPhone: share the memo from Voice Memos",
+            "text": "In the Voice Memos app, open the recording, tap the more (…) button, choose Share, and pick NoisyNo in the share sheet. If NoisyNo doesn't appear, tap Save to Files instead and pick the memo from NoisyNo's Files tab.",
+            "url": "https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/#step-iphone"
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "Pick it in NoisyNo",
-            "text": "Open NoisyNo and choose the memo in the Files tab — recent recordings are listed first.",
-            "url": "https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/#step-pick",
+            "name": "Android: share it from your recorder app",
+            "text": "In your recorder app (Samsung Voice Recorder, Google Recorder, and similar), long-press or open the recording, tap Share, and choose NoisyNo. If your recorder only exports to storage, save the file and pick it in NoisyNo's Files tab.",
+            "url": "https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/#step-android",
             "image": "https://grayforge.app/noisyno/assets/screenshots/02_files.png"
           },
           {
@@ -144,7 +144,15 @@
             "name": "How do I remove background noise from an iPhone voice memo?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "iPhone Voice Memos recordings are M4A files. Open NoisyNo, pick the memo in the file picker, tap Clean, and compare the result — the whole flow runs on the phone in about three minutes, with no upload and no account."
+              "text": "In the Voice Memos app, open the recording, tap the more (…) button, choose Share, and pick NoisyNo. Then tap Clean and compare the result — the whole flow runs on the phone in about three minutes, with no upload and no account."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get a voice memo out of the Voice Memos app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the share sheet: open the memo, tap the more (…) button, then Share. From there you can send it straight to NoisyNo, or choose Save to Files to put the M4A file somewhere any app can reach."
             }
           },
           {
@@ -524,22 +532,25 @@
             <h2>How to clean a voice memo in NoisyNo — 5 steps</h2>
             <p>
               A voice memo is already a normal audio file — iPhone's Voice Memos records <strong>M4A</strong>, and most
-              Android recorder apps save <strong>M4A or WAV</strong>. NoisyNo takes those directly, so the whole flow is:
-              <strong>find the memo → pick it → clean → compare → share</strong>. No conversion, no account, no upload.
+              Android recorder apps save <strong>M4A or WAV</strong>. The fastest way to get it into NoisyNo is the
+              <strong>share button inside the recorder app itself</strong>, so the flow is:
+              <strong>share the memo to NoisyNo → clean → compare → share the result</strong>. No conversion, no
+              account, no upload. Steps 1 and 2 below cover iPhone and Android; from step 3 on, both are the same.
             </p>
           </div>
 
           <div class="walk">
 
-            <div class="wstep" id="step-find">
+            <div class="wstep" id="step-iphone">
               <div class="wtext">
-                <div class="num">Step 01</div>
-                <h3>Find the memo — it's already a file</h3>
+                <div class="num">Step 01 · iPhone</div>
+                <h3>Share it straight out of Voice Memos</h3>
                 <p>
-                  You don't need to export or convert anything. On iPhone, every Voice Memos recording is an
-                  <strong>M4A file</strong> reachable from a standard file picker. On Android, recorder apps save
-                  M4A or WAV into your storage. If you recorded in another app — a call recorder, a lecture app —
-                  its output almost certainly works too (<strong>M4A, MP3, WAV, AAC, CAF</strong>).
+                  In the <strong>Voice Memos</strong> app, tap the recording, tap the <strong>more (…) button</strong>,
+                  and choose <strong>Share</strong>. In the share sheet, pick <strong>NoisyNo</strong> — the memo opens
+                  in the app, ready to clean. If NoisyNo isn't in the app row, scroll right and tap <strong>More</strong>
+                  to find it. Prefer not to use the share sheet? Choose <strong>Save to Files</strong> instead, then pick
+                  the memo from NoisyNo's Files tab — every Voice Memos recording is a plain M4A file.
                 </p>
               </div>
               <div class="wshot">
@@ -549,14 +560,17 @@
               </div>
             </div>
 
-            <div class="wstep" id="step-pick">
+            <div class="wstep" id="step-android">
               <div class="wtext">
-                <div class="num">Step 02</div>
-                <h3>Pick it in NoisyNo</h3>
+                <div class="num">Step 02 · Android</div>
+                <h3>Share it from your recorder app</h3>
                 <p>
-                  Open NoisyNo and choose the memo in the <strong>Files</strong> tab — recent recordings sit at the top,
-                  so the memo you just made is usually one tap away. Search by name if it's older. The app only touches
-                  the file you choose; it doesn't scan or index your library.
+                  Recorder apps differ by manufacturer, but the share flow is the same idea everywhere. In
+                  <strong>Samsung Voice Recorder</strong>, long-press the recording and tap <strong>Share</strong>; in
+                  <strong>Google Recorder</strong>, open the recording, tap the three-dot menu, and choose
+                  <strong>Share → Audio (.m4a)</strong>. Pick <strong>NoisyNo</strong> in the share sheet. If your
+                  recorder only exports to storage, save the file there and grab it from NoisyNo's <strong>Files</strong>
+                  tab — recent recordings sit at the top.
                 </p>
               </div>
               <div class="wshot">
@@ -719,7 +733,11 @@
           <div class="faq-list">
             <details>
               <summary>How do I remove background noise from an iPhone voice memo?</summary>
-              <p>iPhone Voice Memos recordings are M4A files. Open NoisyNo, pick the memo in the file picker, tap Clean, and compare the result — the whole flow runs on the phone in about three minutes, with no upload and no account.</p>
+              <p>In the Voice Memos app, open the recording, tap the more (…) button, choose Share, and pick NoisyNo. Then tap Clean and compare the result — the whole flow runs on the phone in about three minutes, with no upload and no account.</p>
+            </details>
+            <details>
+              <summary>How do I get a voice memo out of the Voice Memos app?</summary>
+              <p>Use the share sheet: open the memo, tap the more (…) button, then Share. From there you can send it straight to NoisyNo, or choose Save to Files to put the M4A file somewhere any app can reach.</p>
             </details>
             <details>
               <summary>Can I clean up a voice memo without uploading it to a website?</summary>
