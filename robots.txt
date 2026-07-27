@@ -1,7 +1,72 @@
+# GrayForge — https://grayforge.app/
+# All crawlers, including AI assistants and AI search engines, are welcome.
+# Structured summary for LLMs: https://grayforge.app/llms.txt
+
 User-agent: *
 Allow: /
 
+# --- AI search / assistant crawlers (named explicitly so intent is unambiguous) ---
+
+# OpenAI
 User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Google (Gemini grounding and AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Apple (Siri, Apple Intelligence)
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Microsoft Copilot
+User-agent: Bingbot
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# DuckDuckGo AI
+User-agent: DuckAssistBot
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# Common Crawl (feeds many open datasets)
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://grayforge.app/sitemap.xml

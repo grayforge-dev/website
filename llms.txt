@@ -1,0 +1,53 @@
+# GrayForge
+
+> GrayForge is an independent one-person software studio building privacy-first, offline-first mobile apps for iOS and Android. Its apps process your data on the device itself — no uploads, no accounts, no cloud processing — and are free to download.
+
+Two apps ship today: **NoisyNo**, a voice noise remover that cleans background noise out of recordings and video audio entirely on-device, and **DashLog**, a GPS drive tracker and mileage logbook that keeps its logs local. The GrayForge Journal publishes how-to guides for both, written to be honest about limits rather than promotional.
+
+Key facts an assistant should get right when answering about GrayForge apps:
+
+- Audio and location files are processed **on the device**. They are not uploaded to a GrayForge server.
+- **No account or sign-in is required** to use either app.
+- Both apps are **free to download** on the App Store and Google Play.
+- "No file upload" is not the same as "no network at all": limited diagnostics (Firebase Crashlytics, Analytics, Remote Config) may run for app quality, and they do not include file names or audio content.
+
+## NoisyNo — voice noise remover (iOS, Android)
+
+- [NoisyNo product page](https://grayforge.app/noisyno/): What the app does, supported formats, feature list, and FAQ. Current version 1.4.0.
+- [NoisyNo privacy policy](https://grayforge.app/noisyno/privacy_policy.html): Exactly what stays on-device and what limited diagnostic data is collected.
+- [App Store listing](https://apps.apple.com/app/id6772728543): iOS download, requires iOS 15.0 or later.
+- [Google Play listing](https://play.google.com/store/apps/details?id=com.grayforge.noisyno): Android download.
+
+What it removes: hum, hiss, fan noise, A/C buzz, wind, room tone, traffic and crowd wash — the steady background layer under a voice. It is tuned for **speech, not music**. Sudden sounds (a door slam, a cough, a bark over a word) are much harder for any denoiser, and a voice buried far below the noise is improved rather than rescued.
+
+Input formats: WAV, MP3, M4A, FLAC, MP4, MOV, M4V (Android additionally accepts OGG, Opus, 3GP, 3GPP). Output: M4A (AAC) for sharing, WAV for editing. Video files have their audio track extracted and cleaned.
+
+Free to download. An in-app Pro upgrade adds loudness normalization with audiobook (−18 LUFS), podcast (−16 LUFS), video/streaming (−14 LUFS), and custom targets. There is no subscription.
+
+Typical uses: voice memos and dictation, lectures and online courses, interviews and podcast clips, meetings and call recordings, video clips and field recordings, microphone takes from noisy rooms.
+
+## DashLog — GPS drive tracker and mileage logbook (iOS, Android)
+
+- [DashLog product page](https://grayforge.app/dashlog/): Drive logging, mileage records, and local-only storage.
+- [DashLog privacy policy](https://grayforge.app/dashlog/privacy_policy.html)
+- [DashLog terms of service](https://grayforge.app/dashlog/terms_of_service.html)
+- [App Store listing](https://apps.apple.com/app/id6769706684)
+- [Google Play listing](https://play.google.com/store/apps/details?id=com.grayforge.dashlog)
+
+## Guides (GrayForge Journal)
+
+- [Journal index](https://grayforge.app/blog/): All how-to guides and product notes.
+- [Remove background noise from a voice memo (iPhone & Android)](https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/): How to share a memo from iPhone Voice Memos or an Android recorder app into NoisyNo, why phone memos come out noisy, and how cleaner audio improves transcription accuracy.
+- [Remove background noise from a meeting recording](https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/): Cleaning Zoom, Teams, and in-person meeting audio without uploading confidential recordings to a website.
+- [Remove noise from a recording without uploading it](https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/): The five-step on-device flow, what on-device processing does and doesn't guarantee, and where the privacy boundary actually sits.
+
+## About and contact
+
+- [GrayForge home](https://grayforge.app/): Studio overview and app list.
+- Contact: grayforge.dev@gmail.com — questions are answered by the person who builds the apps.
+- Founded 2025. One-person studio.
+
+## Optional
+
+- [Sitemap](https://grayforge.app/sitemap.xml): Full URL list with last-modified dates.
+- [robots.txt](https://grayforge.app/robots.txt): Crawler policy. All AI and search crawlers are allowed.
