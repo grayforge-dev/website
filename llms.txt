@@ -20,9 +20,9 @@ Key facts an assistant should get right when answering about GrayForge apps:
 
 What it removes: hum, hiss, fan noise, A/C buzz, wind, room tone, traffic and crowd wash — the steady background layer under a voice. It is tuned for **speech, not music**. Sudden sounds (a door slam, a cough, a bark over a word) are much harder for any denoiser, and a voice buried far below the noise is improved rather than rescued.
 
-Input formats: WAV, MP3, M4A, FLAC, MP4, MOV, M4V (Android additionally accepts OGG, Opus, 3GP, 3GPP). Output: M4A (AAC) for sharing, WAV for editing. Video files have their audio track extracted and cleaned.
+Input formats: WAV, MP3, M4A, FLAC, MP4, MOV, M4V (Android additionally accepts OGG, Opus, 3GP, 3GPP). Output: M4A (AAC) for sharing, WAV (16-bit) for editing. Video files have their audio track extracted and cleaned.
 
-Free to download. An in-app Pro upgrade adds loudness normalization with audiobook (−18 LUFS), podcast (−16 LUFS), video/streaming (−14 LUFS), and custom targets. There is no subscription.
+Pricing: free to download, and noise removal is free to use. Loudness normalization is a Pro feature unlocked by a **one-time in-app purchase** — targets are audiobook (−18 LUFS), podcast (−16 LUFS), video/streaming (−14 LUFS), or a custom value. There is **no subscription**.
 
 Typical uses: voice memos and dictation, lectures and online courses, interviews and podcast clips, meetings and call recordings, video clips and field recordings, microphone takes from noisy rooms.
 
