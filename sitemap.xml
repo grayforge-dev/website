@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://grayforge.app/</loc>
     <lastmod>2026-07-01</lastmod>
@@ -29,12 +30,18 @@
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
   </url>
   <url>
     <loc>https://grayforge.app/ko/noisyno/</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
   </url>
   <url>
     <loc>https://grayforge.app/noisyno/privacy_policy.html</loc>
