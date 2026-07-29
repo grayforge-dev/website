@@ -32,6 +32,15 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
   </url>
   <url>
@@ -41,6 +50,177 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/noisyno/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/noisyno/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/noisyno/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/noisyno/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/noisyno/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/noisyno/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/hi/noisyno/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ar/noisyno/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/th/noisyno/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
   </url>
   <url>

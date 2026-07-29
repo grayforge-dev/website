@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#C77F1F" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="grayforge" />
+
+  <title>NoisyNo: आवाज़ से शोर हटाने वाला ऐप — ऑफ़लाइन ऑडियो क्लीनअप</title>
+  <meta name="description" content="NoisyNo वॉइस रिकॉर्डिंग, मीटिंग रिकॉर्डिंग, इंटरव्यू और वीडियो ऑडियो का बैकग्राउंड शोर सीधे आपके फ़ोन में हटाता है। कोई फ़ाइल अपलोड नहीं, कोई अकाउंट नहीं, कोई सब्सक्रिप्शन नहीं। iPhone और Android के लिए।" />
+  <meta name="keywords" content="आवाज़ से शोर हटाने वाला ऐप, बैकग्राउंड नॉइज़ हटाना, रिकॉर्डिंग ऑडियो साफ़ करना, ऑफ़लाइन नॉइज़ रिमूवल, मीटिंग रिकॉर्डिंग शोर, NoisyNo" />
+
+  <link rel="canonical" href="https://grayforge.app/hi/noisyno/" />
+  <link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+  <link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+  <link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+  <link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+  <link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+  <link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+  <link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+  <link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+  <link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+  <link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+  <link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
+  <link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;rect width='64' height='64' rx='14' fill='%23C77F1F'/&gt;&lt;g fill='%23FAF6EE'&gt;&lt;rect x='14' y='24' width='5' height='16' rx='2.5'/&gt;&lt;rect x='22' y='18' width='5' height='28' rx='2.5'/&gt;&lt;rect x='30' y='14' width='5' height='36' rx='2.5'/&gt;&lt;rect x='38' y='22' width='5' height='20' rx='2.5'/&gt;&lt;rect x='46' y='26' width='5' height='12' rx='2.5'/&gt;&lt;/g&gt;&lt;/svg&gt;" />
+  <link rel="apple-touch-icon" href="../../noisyno/assets/app-icon-180.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NoisyNo" />
+  <meta property="og:url" content="https://grayforge.app/hi/noisyno/" />
+  <meta property="og:title" content="NoisyNo: आवाज़ से शोर हटाने वाला ऐप" />
+  <meta property="og:description" content="रिकॉर्डिंग और वीडियो ऑडियो का बैकग्राउंड शोर अपने फ़ोन में ही हटाएँ। कोई अपलोड नहीं, कोई अकाउंट नहीं, कोई सब्सक्रिप्शन नहीं।" />
+  <meta property="og:image" content="https://grayforge.app/noisyno/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="hi_IN" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NoisyNo: आवाज़ से शोर हटाने वाला ऐप" />
+  <meta name="twitter:description" content="ऑफ़लाइन वॉइस नॉइज़ रिमूवल। कोई फ़ाइल अपलोड नहीं, कोई अकाउंट नहीं।" />
+  <meta name="twitter:image" content="https://grayforge.app/noisyno/assets/og-image.png" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://grayforge.app/noisyno/#app",
+      "name": "NoisyNo: आवाज़ से शोर हटाने वाला ऐप",
+      "alternateName": [
+        "NoisyNo",
+        "आवाज़ से शोर हटाने वाला ऐप"
+      ],
+      "operatingSystem": [
+        "iOS",
+        "Android"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Music",
+      "description": "NoisyNo एक ऐसा ऐप है जो वॉइस रिकॉर्डिंग, मीटिंग रिकॉर्डिंग, इंटरव्यू, लेक्चर और वीडियो ऑडियो का बैकग्राउंड शोर सीधे आपके फ़ोन में हटाता है। फ़ाइलें GrayForge सर्वर पर अपलोड नहीं होतीं, अकाउंट के बिना इस्तेमाल होता है और सब्सक्रिप्शन की ज़रूरत नहीं।",
+      "url": "https://grayforge.app/noisyno/",
+      "image": "https://grayforge.app/noisyno/assets/og-image.png",
+      "isAccessibleForFree": true,
+      "softwareVersion": "1.4.0",
+      "datePublished": "2026-06-02",
+      "dateModified": "2026-07-29",
+      "contentRating": "4+",
+      "availableLanguage": [
+        "en",
+        "ko",
+        "ja",
+        "zh",
+        "es",
+        "pt",
+        "fr",
+        "de",
+        "hi",
+        "ar",
+        "th"
+      ],
+      "featureList": [
+        "वॉइस रिकॉर्डिंग से बैकग्राउंड शोर हटाना",
+        "ऑफ़लाइन ऑन-डिवाइस प्रोसेसिंग",
+        "सर्वर अपलोड के बिना ऑडियो क्लीनअप",
+        "मीटिंग, इंटरव्यू, लेक्चर और वीडियो ऑडियो सपोर्ट",
+        "ओरिजिनल और साफ़ किए गए ऑडियो की तुलना",
+        "लाउडनेस नॉर्मलाइज़ेशन",
+        "M4A और WAV आउटपुट",
+        "कोई अकाउंट नहीं",
+        "कोई सब्सक्रिप्शन नहीं"
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://grayforge.app/#organization",
+        "name": "GrayForge",
+        "url": "https://grayforge.app/",
+        "email": "grayforge.dev+noisyno@gmail.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": [
+        "https://apps.apple.com/app/id6772728543",
+        "https://play.google.com/store/apps/details?id=com.grayforge.noisyno"
+      ],
+      "sameAs": [
+        "https://apps.apple.com/app/id6772728543",
+        "https://play.google.com/store/apps/details?id=com.grayforge.noisyno"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://grayforge.app/hi/noisyno/#webpage",
+      "url": "https://grayforge.app/hi/noisyno/",
+      "name": "NoisyNo: आवाज़ से शोर हटाने वाला ऐप — ऑफ़लाइन ऑडियो क्लीनअप",
+      "description": "NoisyNo हिन्दी प्रोडक्ट पेज। रिकॉर्डिंग और वीडियो ऑडियो का बैकग्राउंड शोर फ़ोन में ही हटाने वाला ऐप।",
+      "inLanguage": "hi",
+      "dateModified": "2026-07-29",
+      "about": {
+        "@id": "https://grayforge.app/noisyno/#app"
+      },
+      "publisher": {
+        "@id": "https://grayforge.app/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://grayforge.app/hi/noisyno/#faq",
+      "inLanguage": "hi",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "क्या NoisyNo मेरी ऑडियो फ़ाइलें सर्वर पर अपलोड करता है?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "नहीं। NoisyNo की प्रोसेसिंग आपके फ़ोन के अंदर चलती है। चुनी गई फ़ाइलें और नतीजे GrayForge सर्वर पर अपलोड नहीं होते।"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "क्या इंटरनेट के बिना ऑफ़लाइन इस्तेमाल कर सकते हैं?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "हाँ। ऐप इंस्टॉल होने के बाद नॉइज़ रिमूवल मॉडल डिवाइस में चलता है, इसलिए इंटरनेट के बिना भी रिकॉर्डिंग साफ़ की जा सकती है।"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "क्या अकाउंट बनाए बिना इस्तेमाल कर सकते हैं?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "हाँ। NoisyNo बिना रजिस्ट्रेशन या लॉगिन के काम करता है।"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "क्या सब्सक्रिप्शन ज़रूरी है?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "नहीं। नॉइज़ रिमूवल मुफ़्त है और कोई सब्सक्रिप्शन नहीं है। लाउडनेस नॉर्मलाइज़ेशन एक Pro फ़ीचर है, जो सब्सक्रिप्शन नहीं बल्कि एक बार की इन-ऐप खरीद से खुलता है।"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "कौन-कौन से फ़ाइल फ़ॉर्मेट सपोर्टेड हैं?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "इनपुट: WAV, MP3, M4A, FLAC, MP4, MOV, M4V। Android पर OGG, Opus, 3GP, 3GPP भी। आउटपुट: M4A (AAC) और WAV (16-bit)।"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "क्या कोई भी निजी या डायग्नोस्टिक डेटा नहीं जाता?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ऑडियो फ़ाइलें अपलोड नहीं होतीं। हालाँकि ऐप की स्थिरता और उपयोग समझने के लिए सीमित अनाम एनालिटिक्स और क्रैश डायग्नोस्टिक्स का उपयोग होता है, जैसा प्राइवेसी पॉलिसी में बताया गया है।"
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <style>
+    :root {
+      --bg: #FAF6EE;
+      --bg-soft: #F5F0E5;
+      --surface: #FFFFFF;
+      --text: #1A1410;
+      --muted: #756B5F;
+      --hairline: #E8E2D5;
+      --accent: #C77F1F;
+      --accent-dark: #8E5712;
+      --accent-soft: #FBE9CC;
+      --radius: 22px;
+      --shadow: 0 24px 70px rgba(26, 20, 16, 0.10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans Devanagari", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      word-break: normal;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(250, 246, 238, 0.88);
+      border-bottom: 1px solid var(--hairline);
+      backdrop-filter: blur(14px);
+    }
+    .nav-inner {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand, .brand-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+    }
+    .mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      background: var(--accent);
+      color: #fffaf1;
+      font-weight: 900;
+      box-shadow: 0 8px 18px rgba(199, 127, 31, 0.22);
+    }
+    .nav-links { display: flex; align-items: center; gap: 22px; color: var(--muted); font-weight: 700; }
+    .nav-links a:hover { color: var(--text); }
+    .hero {
+      padding: 92px 0 64px;
+      border-bottom: 1px solid var(--hairline);
+    }
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--accent-dark);
+      background: var(--accent-soft);
+      border: 1px solid rgba(199, 127, 31, 0.22);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+    h1 {
+      max-width: 900px;
+      margin: 28px 0 18px;
+      font-size: clamp(44px, 7vw, 84px);
+      line-height: 1.04;
+      letter-spacing: -0.06em;
+    }
+    h1 span, .accent { color: var(--accent); }
+    .lede {
+      max-width: 760px;
+      margin: 0;
+      color: #3c3329;
+      font-size: clamp(18px, 2.2vw, 24px);
+    }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 22px;
+      border-radius: 999px;
+      font-weight: 850;
+      border: 1px solid var(--hairline);
+      background: var(--surface);
+      box-shadow: 0 10px 26px rgba(26, 20, 16, 0.08);
+    }
+    .btn.primary { background: var(--text); color: #fff; border-color: var(--text); }
+    .micro { margin-top: 18px; color: var(--muted); font-size: 14px; }
+    .trust {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 44px;
+    }
+    .pill {
+      border: 1px solid var(--hairline);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.62);
+      padding: 16px;
+      font-weight: 800;
+    }
+    section { padding: 72px 0; }
+    .section-head { max-width: 780px; margin-bottom: 28px; }
+    h2 {
+      margin: 10px 0 10px;
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+    }
+    .section-head p, .copy { color: var(--muted); font-size: 18px; margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: 0 1px 2px rgba(26, 20, 16, 0.04);
+    }
+    .card h3 { margin: 0 0 10px; font-size: 20px; }
+    .card p, .card li { color: var(--muted); margin: 0; }
+    .card ul { margin: 0; padding-left: 20px; }
+    .soft { background: var(--bg-soft); border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+    .steps { counter-reset: step; display: grid; gap: 14px; }
+    .step {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 18px;
+      align-items: start;
+      padding: 22px;
+      border-radius: var(--radius);
+      border: 1px solid var(--hairline);
+      background: var(--surface);
+    }
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      font-weight: 900;
+    }
+    .step h3 { margin: 0 0 6px; }
+    .step p { margin: 0; color: var(--muted); }
+    .compare {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: center;
+    }
+    .phone {
+      background: #151515;
+      border-radius: 36px;
+      padding: 14px;
+      box-shadow: var(--shadow);
+    }
+    .phone img { width: 100%; display: block; border-radius: 25px; }
+    details {
+      background: var(--surface);
+      border: 1px solid var(--hairline);
+      border-radius: 18px;
+      padding: 18px 20px;
+      margin-bottom: 12px;
+    }
+    summary { cursor: pointer; font-weight: 850; }
+    details p { color: var(--muted); margin: 10px 0 0; }
+    footer {
+      border-top: 1px solid var(--hairline);
+      padding: 34px 0;
+      color: var(--muted);
+    }
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .footer-links { display: flex; gap: 18px; flex-wrap: wrap; font-weight: 700; }
+    .footer-links a:hover { color: var(--text); }
+    @media (max-width: 820px) {
+      .nav-links { gap: 14px; font-size: 14px; }
+      .trust, .grid, .compare { grid-template-columns: 1fr; }
+      .hero { padding-top: 64px; }
+      section { padding: 54px 0; }
+    }
+    @media (max-width: 560px) {
+      .nav-links a:nth-child(2), .nav-links a:nth-child(3) { display: none; }
+      .wrap, .nav-inner { width: min(100% - 28px, 1120px); }
+      .step { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="NoisyNo">
+        <span class="mark">N</span>
+        <span>NoisyNo</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">फ़ीचर</a>
+        <a href="#faq">FAQ</a>
+        <a href="../../noisyno/" hreflang="en">English</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">आवाज़ से शोर हटाने वाला ऐप · iPhone & Android</span>
+        <h1>रिकॉर्डिंग का शोर हटाएँ<br /><span>बिना सर्वर पर भेजे।</span></h1>
+        <p class="lede">
+          NoisyNo वॉइस मेमो, मीटिंग रिकॉर्डिंग, इंटरव्यू, लेक्चर और वीडियो ऑडियो का बैकग्राउंड शोर सीधे आपके फ़ोन में साफ़ करता है। बिना अकाउंट खोलें, ऑफ़लाइन भी प्रोसेस करें, और सिर्फ़ नतीजे वाली फ़ाइल सेव या शेयर करें।
+        </p>
+        <p class="micro">मेट्रो, हवाई जहाज़ — जहाँ इंटरनेट न हो, वहाँ भी वैसे ही चलता है।</p>
+        <div class="cta-row">
+          <a class="btn primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web_hi&amp;mt=8" rel="noopener">App Store से डाउनलोड करें</a>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dreferral%26utm_campaign%3Dnoisyno_hi_landing" rel="noopener">Google Play से डाउनलोड करें</a>
+        </div>
+        <p class="micro">मुफ़्त डाउनलोड · नॉइज़ रिमूवल मुफ़्त · कोई सब्सक्रिप्शन नहीं · Pro लाउडनेस नॉर्मलाइज़ेशन एक बार की खरीद</p>
+        <div class="trust" aria-label="NoisyNo की मुख्य खूबियाँ">
+          <div class="pill">ऑफ़लाइन चलता है</div>
+          <div class="pill">कोई फ़ाइल अपलोड नहीं</div>
+          <div class="pill">कोई अकाउंट/लॉगिन नहीं</div>
+          <div class="pill">iOS और Android</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">NoisyNo ही क्यों?</span>
+          <h2>सबसे ज़रूरी सवाल: आपकी रिकॉर्डिंग जाती कहाँ है।</h2>
+          <p>
+            कई नॉइज़ रिमूवल टूल आपकी फ़ाइल किसी वेबसाइट या सर्वर पर भेजकर प्रोसेस करते हैं। NoisyNo ने इसका उल्टा किया — प्रोसेसिंग मॉडल ऐप के अंदर ही रखा। इसलिए मीटिंग, इंटरव्यू या निजी मेमो जैसी बाहर भेजने में असहज करने वाली रिकॉर्डिंग भी फ़ोन के अंदर ही साफ़ हो जाती हैं।
+          </p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>बिना सर्वर, ऑफ़लाइन प्रोसेसिंग</h3>
+            <p>इंस्टॉल के बाद नॉइज़ रिमूवल मॉडल डिवाइस में चलता है। मेट्रो, हवाई जहाज़ या कमज़ोर नेटवर्क में भी प्रोसेस कर सकते हैं।</p>
+          </article>
+          <article class="card">
+            <h3>अकाउंट के बिना तुरंत इस्तेमाल</h3>
+            <p>रजिस्ट्रेशन, लॉगिन या वर्कस्पेस बनाए बिना फ़ाइल चुनें और साफ़ करें। रिकॉर्डिंग साफ़ करने के लिए अकाउंट बनाने की ज़रूरत नहीं।</p>
+          </article>
+          <article class="card">
+            <h3>कोई सब्सक्रिप्शन नहीं</h3>
+            <p>नॉइज़ रिमूवल मुफ़्त है और कोई सब्सक्रिप्शन नहीं। लाउडनेस नॉर्मलाइज़ेशन चाहिए तो Pro को एक बार की इन-ऐप खरीद से खोलें।</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft">
+      <div class="wrap compare">
+        <div>
+          <span class="eyebrow">कब काम आता है</span>
+          <h2>जब आवाज़ ठीक हो पर बैकग्राउंड का शोर खटके।</h2>
+          <p class="copy">
+            यह लगातार बने रहने वाले शोर को कम करने पर केंद्रित है: कैफ़े की भीड़, एयर कंडीशनर, लैपटॉप का फ़ैन, कमरे की गूँज, हवा की आवाज़। यह बर्बाद रिकॉर्डिंग को जादू से ठीक करने वाला ऐप नहीं है, बल्कि सुनाई देने लायक मगर गंदी आवाज़ को और साफ़ बनाने का औज़ार है।
+          </p>
+        </div>
+        <div class="phone">
+          <img src="../../noisyno/assets/screenshots/04_compare.png" alt="NoisyNo में ओरिजिनल और साफ़ किए गए ऑडियो की तुलना की स्क्रीन" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">आसान तरीका</span>
+          <h2>फ़ाइल चुनें, साफ़ करें, तुलना करें, शेयर करें।</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div>
+              <h3>रिकॉर्डिंग या वीडियो फ़ाइल चुनें</h3>
+              <p>WAV, MP3, M4A, FLAC, MP4, MOV, M4V सपोर्टेड। Android पर OGG, Opus, 3GP, 3GPP भी।</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>Clean दबाएँ</h3>
+              <p>नॉइज़ रिमूवल आपके फ़ोन में चलता है। न अपलोड का इंतज़ार, न सर्वर की कतार।</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>ओरिजिनल और नतीजे की तुलना कर सेव करें</h3>
+              <p>एक ही जगह Original/Cleaned बदलकर सुनें, और नतीजा M4A (AAC) या WAV (16-bit) में सेव या शेयर करें।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">इन स्थितियों के लिए</span>
+          <h2>जिन्हें ऑफ़लाइन, बिना अकाउंट, बिना सब्सक्रिप्शन चाहिए।</h2>
+          <p>
+            संवेदनशील मीटिंग रिकॉर्डिंग, बाहर न भेजने लायक निजी मेमो और बिना इंटरनेट वाले माहौल के काम के लिए बनाया गया — हर वह स्थिति जहाँ फ़ाइल अपलोड करना विकल्प नहीं है।
+          </p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>मीटिंग रिकॉर्डिंग</h3>
+            <p>संवेदनशील सामग्री हो तो वेब पर अपलोड करने की बजाय फ़ोन में प्रोसेस करें।</p>
+          </article>
+          <article class="card">
+            <h3>इंटरव्यू और लेक्चर</h3>
+            <p>कैफ़े, क्लासरूम या बाहर रिकॉर्ड की गई आवाज़ को सुनने में आसान बनाएँ।</p>
+          </article>
+          <article class="card">
+            <h3>वीडियो ऑडियो</h3>
+            <p>सपोर्टेड वीडियो फ़ाइलों से ऑडियो निकालें, शोर हटाएँ और ऑडियो फ़ाइल के रूप में सेव करें।</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">और विस्तृत गाइड</span>
+          <h2>अंग्रेज़ी उपयोग गाइड भी उपलब्ध हैं।</h2>
+          <p>हिन्दी गाइड तैयार हो रही हैं। फ़िलहाल नीचे दी गई अंग्रेज़ी गाइड में वही उपयोग प्रवाह देखा जा सकता है।</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>बिना अपलोड के रिकॉर्डिंग का शोर हटाएँ</h3>
+            <p><a href="../../blog/noisyno/remove-audio-noise-without-upload/">NoisyNo की ऑन-डिवाइस प्रोसेसिंग देखें</a></p>
+          </article>
+          <article class="card">
+            <h3>मीटिंग रिकॉर्डिंग साफ़ करें</h3>
+            <p><a href="../../blog/noisyno/clean-up-meeting-recording-audio/">मीटिंग के बैकग्राउंड शोर घटाने का तरीका देखें</a></p>
+          </article>
+          <article class="card">
+            <h3>वॉइस मेमो साफ़ करें</h3>
+            <p><a href="../../blog/noisyno/remove-background-noise-from-voice-memo/">iPhone और Android वॉइस मेमो गाइड देखें</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>अक्सर पूछे जाने वाले सवाल</h2>
+        </div>
+        <details>
+          <summary>क्या NoisyNo मेरी ऑडियो फ़ाइलें सर्वर पर अपलोड करता है?</summary>
+          <p>नहीं। NoisyNo की प्रोसेसिंग आपके फ़ोन के अंदर चलती है। चुनी गई फ़ाइलें और नतीजे GrayForge सर्वर पर अपलोड नहीं होते।</p>
+        </details>
+        <details>
+          <summary>क्या इंटरनेट के बिना ऑफ़लाइन इस्तेमाल कर सकते हैं?</summary>
+          <p>हाँ। ऐप इंस्टॉल होने के बाद नॉइज़ रिमूवल मॉडल डिवाइस में चलता है, इसलिए इंटरनेट के बिना भी रिकॉर्डिंग साफ़ की जा सकती है।</p>
+        </details>
+        <details>
+          <summary>क्या अकाउंट बनाए बिना इस्तेमाल कर सकते हैं?</summary>
+          <p>हाँ। NoisyNo बिना रजिस्ट्रेशन या लॉगिन के काम करता है।</p>
+        </details>
+        <details>
+          <summary>क्या सब्सक्रिप्शन ज़रूरी है?</summary>
+          <p>नहीं। नॉइज़ रिमूवल मुफ़्त है और कोई सब्सक्रिप्शन नहीं है। लाउडनेस नॉर्मलाइज़ेशन एक Pro फ़ीचर है, जो सब्सक्रिप्शन नहीं बल्कि एक बार की इन-ऐप खरीद से खुलता है।</p>
+        </details>
+        <details>
+          <summary>कौन-कौन से फ़ाइल फ़ॉर्मेट सपोर्टेड हैं?</summary>
+          <p>इनपुट: WAV, MP3, M4A, FLAC, MP4, MOV, M4V। Android पर OGG, Opus, 3GP, 3GPP भी। आउटपुट: M4A (AAC) और WAV (16-bit)।</p>
+        </details>
+        <details>
+          <summary>क्या कोई भी निजी या डायग्नोस्टिक डेटा नहीं जाता?</summary>
+          <p>ऑडियो फ़ाइलें अपलोड नहीं होतीं। हालाँकि ऐप की स्थिरता और उपयोग समझने के लिए सीमित अनाम एनालिटिक्स और क्रैश डायग्नोस्टिक्स का उपयोग होता है, जैसा प्राइवेसी पॉलिसी में बताया गया है।</p>
+        </details>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">डाउनलोड</span>
+          <h2>अगली रिकॉर्डिंग से ही शोर घटाइए।</h2>
+          <p>NoisyNo iPhone और Android पर उपलब्ध है।</p>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web_hi_footer&amp;mt=8" rel="noopener">App Store</a>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dreferral%26utm_campaign%3Dnoisyno_hi_footer" rel="noopener">Google Play</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div class="brand-row">
+        <span class="mark">N</span>
+        <span>NoisyNo</span>
+      </div>
+      <div class="footer-links">
+        <a href="../../">GrayForge</a>
+        <a href="../../noisyno/" hreflang="en">English</a>
+        <a href="../../ko/noisyno/" hreflang="ko">한국어</a>
+        <a href="../../ja/noisyno/" hreflang="ja">日本語</a>
+        <a href="../../zh/noisyno/" hreflang="zh">中文</a>
+        <a href="../../es/noisyno/" hreflang="es">Español</a>
+        <a href="../../pt/noisyno/" hreflang="pt">Português</a>
+        <a href="../../fr/noisyno/" hreflang="fr">Français</a>
+        <a href="../../de/noisyno/" hreflang="de">Deutsch</a>
+        <a href="../../ar/noisyno/" hreflang="ar">العربية</a>
+        <a href="../../th/noisyno/" hreflang="th">ไทย</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../noisyno/privacy_policy.html">Privacy</a>
+        <a href="mailto:grayforge.dev+noisyno@gmail.com?subject=NoisyNo%20Support">Support</a>
+      </div>
+      <span>&copy; 2026 grayforge</span>
+    </div>
+  </footer>
+</body>
+</html>

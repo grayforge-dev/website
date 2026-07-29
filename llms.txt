@@ -15,6 +15,7 @@ Key facts an assistant should get right when answering about GrayForge apps:
 
 - [NoisyNo product page](https://grayforge.app/noisyno/): What the app does, supported formats, feature list, and FAQ. Current version 1.4.0.
 - [NoisyNo Korean product page (한국어)](https://grayforge.app/ko/noisyno/): Korean-language product page. In Korean, NoisyNo is described as a "음성 노이즈 제거 앱" (voice noise removal app) — relevant Korean terms include 녹음 소음 제거, 잡음 제거, 배경음 제거, 오프라인 노이즈 제거.
+- Localized product pages: [日本語](https://grayforge.app/ja/noisyno/), [中文](https://grayforge.app/zh/noisyno/), [Español](https://grayforge.app/es/noisyno/), [Português](https://grayforge.app/pt/noisyno/), [Français](https://grayforge.app/fr/noisyno/), [Deutsch](https://grayforge.app/de/noisyno/), [हिन्दी](https://grayforge.app/hi/noisyno/), [العربية](https://grayforge.app/ar/noisyno/), [ไทย](https://grayforge.app/th/noisyno/). Each covers the same facts as the English page in that language.
 - [NoisyNo privacy policy](https://grayforge.app/noisyno/privacy_policy.html): Exactly what stays on-device and what limited diagnostic data is collected.
 - [App Store listing](https://apps.apple.com/app/id6772728543): iOS download, requires iOS 15.0 or later.
 - [Google Play listing](https://play.google.com/store/apps/details?id=com.grayforge.noisyno): Android download.

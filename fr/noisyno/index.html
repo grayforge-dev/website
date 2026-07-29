@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#C77F1F" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="grayforge" />
+
+  <title>NoisyNo : application de suppression de bruit vocal — nettoyage audio hors ligne</title>
+  <meta name="description" content="NoisyNo supprime le bruit de fond des enregistrements vocaux, réunions, interviews et pistes audio de vidéos, directement sur votre téléphone. Aucun envoi de fichier, aucun compte, aucun abonnement. Pour iPhone et Android." />
+  <meta name="keywords" content="application suppression bruit voix, enlever bruit de fond, nettoyer audio enregistrement, réduction de bruit hors ligne, bruit réunion enregistrée, NoisyNo" />
+
+  <link rel="canonical" href="https://grayforge.app/fr/noisyno/" />
+  <link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
+  <link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/noisyno/" />
+  <link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/noisyno/" />
+  <link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/noisyno/" />
+  <link rel="alternate" hreflang="es" href="https://grayforge.app/es/noisyno/" />
+  <link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/noisyno/" />
+  <link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/noisyno/" />
+  <link rel="alternate" hreflang="de" href="https://grayforge.app/de/noisyno/" />
+  <link rel="alternate" hreflang="hi" href="https://grayforge.app/hi/noisyno/" />
+  <link rel="alternate" hreflang="ar" href="https://grayforge.app/ar/noisyno/" />
+  <link rel="alternate" hreflang="th" href="https://grayforge.app/th/noisyno/" />
+  <link rel="alternate" hreflang="x-default" href="https://grayforge.app/noisyno/" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;rect width='64' height='64' rx='14' fill='%23C77F1F'/&gt;&lt;g fill='%23FAF6EE'&gt;&lt;rect x='14' y='24' width='5' height='16' rx='2.5'/&gt;&lt;rect x='22' y='18' width='5' height='28' rx='2.5'/&gt;&lt;rect x='30' y='14' width='5' height='36' rx='2.5'/&gt;&lt;rect x='38' y='22' width='5' height='20' rx='2.5'/&gt;&lt;rect x='46' y='26' width='5' height='12' rx='2.5'/&gt;&lt;/g&gt;&lt;/svg&gt;" />
+  <link rel="apple-touch-icon" href="../../noisyno/assets/app-icon-180.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NoisyNo" />
+  <meta property="og:url" content="https://grayforge.app/fr/noisyno/" />
+  <meta property="og:title" content="NoisyNo : application de suppression de bruit vocal" />
+  <meta property="og:description" content="Supprimez le bruit de fond des enregistrements et de l'audio des vidéos sur votre téléphone. Aucun envoi, aucun compte, aucun abonnement." />
+  <meta property="og:image" content="https://grayforge.app/noisyno/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NoisyNo : application de suppression de bruit vocal" />
+  <meta name="twitter:description" content="Suppression du bruit vocal hors ligne. Aucun envoi de fichier, aucun compte." />
+  <meta name="twitter:image" content="https://grayforge.app/noisyno/assets/og-image.png" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://grayforge.app/noisyno/#app",
+      "name": "NoisyNo : application de suppression de bruit vocal",
+      "alternateName": [
+        "NoisyNo",
+        "application de suppression de bruit vocal"
+      ],
+      "operatingSystem": [
+        "iOS",
+        "Android"
+      ],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Music",
+      "description": "NoisyNo est une application qui supprime le bruit de fond des enregistrements vocaux, réunions, interviews, cours et pistes audio de vidéos, directement sur votre téléphone. Elle n'envoie pas vos fichiers aux serveurs de GrayForge, fonctionne sans compte et ne demande aucun abonnement.",
+      "url": "https://grayforge.app/noisyno/",
+      "image": "https://grayforge.app/noisyno/assets/og-image.png",
+      "isAccessibleForFree": true,
+      "softwareVersion": "1.4.0",
+      "datePublished": "2026-06-02",
+      "dateModified": "2026-07-29",
+      "contentRating": "4+",
+      "availableLanguage": [
+        "en",
+        "ko",
+        "ja",
+        "zh",
+        "es",
+        "pt",
+        "fr",
+        "de",
+        "hi",
+        "ar",
+        "th"
+      ],
+      "featureList": [
+        "Suppression du bruit de fond des enregistrements vocaux",
+        "Traitement hors ligne sur l'appareil",
+        "Nettoyage audio sans envoi vers des serveurs",
+        "Compatible réunions, interviews, cours et audio de vidéos",
+        "Comparaison entre audio original et audio nettoyé",
+        "Normalisation du loudness",
+        "Export en M4A et WAV",
+        "Sans compte",
+        "Sans abonnement"
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://grayforge.app/#organization",
+        "name": "GrayForge",
+        "url": "https://grayforge.app/",
+        "email": "grayforge.dev+noisyno@gmail.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": [
+        "https://apps.apple.com/app/id6772728543",
+        "https://play.google.com/store/apps/details?id=com.grayforge.noisyno"
+      ],
+      "sameAs": [
+        "https://apps.apple.com/app/id6772728543",
+        "https://play.google.com/store/apps/details?id=com.grayforge.noisyno"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://grayforge.app/fr/noisyno/#webpage",
+      "url": "https://grayforge.app/fr/noisyno/",
+      "name": "NoisyNo : application de suppression de bruit vocal — nettoyage audio hors ligne",
+      "description": "Page produit NoisyNo en français. Une application qui supprime le bruit de fond des enregistrements et de l'audio des vidéos sur votre téléphone.",
+      "inLanguage": "fr",
+      "dateModified": "2026-07-29",
+      "about": {
+        "@id": "https://grayforge.app/noisyno/#app"
+      },
+      "publisher": {
+        "@id": "https://grayforge.app/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://grayforge.app/fr/noisyno/#faq",
+      "inLanguage": "fr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "NoisyNo envoie-t-il mes fichiers audio vers un serveur ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Le traitement de NoisyNo s'exécute dans votre téléphone. Les fichiers sélectionnés et les résultats ne sont pas envoyés aux serveurs de GrayForge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je l'utiliser hors ligne, sans internet ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Une fois l'application installée, le modèle de réduction de bruit tourne sur l'appareil : vous pouvez nettoyer vos enregistrements sans connexion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je l'utiliser sans créer de compte ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. NoisyNo fonctionne sans inscription ni connexion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il un abonnement ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. La suppression de bruit est gratuite et il n'y a pas d'abonnement. La normalisation du loudness est une fonction Pro, débloquée par un achat unique dans l'application."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels formats de fichiers sont pris en charge ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entrée : WAV, MP3, M4A, FLAC, MP4, MOV et M4V. Sur Android, également OGG, Opus, 3GP et 3GPP. Sortie : M4A (AAC) et WAV (16 bits)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Aucune donnée personnelle ou de diagnostic n'est-elle collectée ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les fichiers audio ne sont pas envoyés. Toutefois, pour la stabilité de l'application et la compréhension de son usage, des analyses anonymes limitées et des diagnostics de plantage sont utilisés, dans le cadre décrit par la politique de confidentialité."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <style>
+    :root {
+      --bg: #FAF6EE;
+      --bg-soft: #F5F0E5;
+      --surface: #FFFFFF;
+      --text: #1A1410;
+      --muted: #756B5F;
+      --hairline: #E8E2D5;
+      --accent: #C77F1F;
+      --accent-dark: #8E5712;
+      --accent-soft: #FBE9CC;
+      --radius: 22px;
+      --shadow: 0 24px 70px rgba(26, 20, 16, 0.10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      word-break: normal;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(250, 246, 238, 0.88);
+      border-bottom: 1px solid var(--hairline);
+      backdrop-filter: blur(14px);
+    }
+    .nav-inner {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand, .brand-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+    }
+    .mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      background: var(--accent);
+      color: #fffaf1;
+      font-weight: 900;
+      box-shadow: 0 8px 18px rgba(199, 127, 31, 0.22);
+    }
+    .nav-links { display: flex; align-items: center; gap: 22px; color: var(--muted); font-weight: 700; }
+    .nav-links a:hover { color: var(--text); }
+    .hero {
+      padding: 92px 0 64px;
+      border-bottom: 1px solid var(--hairline);
+    }
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--accent-dark);
+      background: var(--accent-soft);
+      border: 1px solid rgba(199, 127, 31, 0.22);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+    h1 {
+      max-width: 900px;
+      margin: 28px 0 18px;
+      font-size: clamp(44px, 7vw, 84px);
+      line-height: 1.04;
+      letter-spacing: -0.06em;
+    }
+    h1 span, .accent { color: var(--accent); }
+    .lede {
+      max-width: 760px;
+      margin: 0;
+      color: #3c3329;
+      font-size: clamp(18px, 2.2vw, 24px);
+    }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 22px;
+      border-radius: 999px;
+      font-weight: 850;
+      border: 1px solid var(--hairline);
+      background: var(--surface);
+      box-shadow: 0 10px 26px rgba(26, 20, 16, 0.08);
+    }
+    .btn.primary { background: var(--text); color: #fff; border-color: var(--text); }
+    .micro { margin-top: 18px; color: var(--muted); font-size: 14px; }
+    .trust {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 44px;
+    }
+    .pill {
+      border: 1px solid var(--hairline);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.62);
+      padding: 16px;
+      font-weight: 800;
+    }
+    section { padding: 72px 0; }
+    .section-head { max-width: 780px; margin-bottom: 28px; }
+    h2 {
+      margin: 10px 0 10px;
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+    }
+    .section-head p, .copy { color: var(--muted); font-size: 18px; margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: 0 1px 2px rgba(26, 20, 16, 0.04);
+    }
+    .card h3 { margin: 0 0 10px; font-size: 20px; }
+    .card p, .card li { color: var(--muted); margin: 0; }
+    .card ul { margin: 0; padding-left: 20px; }
+    .soft { background: var(--bg-soft); border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+    .steps { counter-reset: step; display: grid; gap: 14px; }
+    .step {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 18px;
+      align-items: start;
+      padding: 22px;
+      border-radius: var(--radius);
+      border: 1px solid var(--hairline);
+      background: var(--surface);
+    }
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      font-weight: 900;
+    }
+    .step h3 { margin: 0 0 6px; }
+    .step p { margin: 0; color: var(--muted); }
+    .compare {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: center;
+    }
+    .phone {
+      background: #151515;
+      border-radius: 36px;
+      padding: 14px;
+      box-shadow: var(--shadow);
+    }
+    .phone img { width: 100%; display: block; border-radius: 25px; }
+    details {
+      background: var(--surface);
+      border: 1px solid var(--hairline);
+      border-radius: 18px;
+      padding: 18px 20px;
+      margin-bottom: 12px;
+    }
+    summary { cursor: pointer; font-weight: 850; }
+    details p { color: var(--muted); margin: 10px 0 0; }
+    footer {
+      border-top: 1px solid var(--hairline);
+      padding: 34px 0;
+      color: var(--muted);
+    }
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .footer-links { display: flex; gap: 18px; flex-wrap: wrap; font-weight: 700; }
+    .footer-links a:hover { color: var(--text); }
+    @media (max-width: 820px) {
+      .nav-links { gap: 14px; font-size: 14px; }
+      .trust, .grid, .compare { grid-template-columns: 1fr; }
+      .hero { padding-top: 64px; }
+      section { padding: 54px 0; }
+    }
+    @media (max-width: 560px) {
+      .nav-links a:nth-child(2), .nav-links a:nth-child(3) { display: none; }
+      .wrap, .nav-inner { width: min(100% - 28px, 1120px); }
+      .step { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="NoisyNo">
+        <span class="mark">N</span>
+        <span>NoisyNo</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Fonctions</a>
+        <a href="#faq">FAQ</a>
+        <a href="../../noisyno/" hreflang="en">English</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Application de suppression de bruit vocal · iPhone & Android</span>
+        <h1>Supprimez le bruit de vos enregistrements<br /><span>sans les envoyer sur un serveur.</span></h1>
+        <p class="lede">
+          NoisyNo nettoie le bruit de fond des mémos vocaux, réunions enregistrées, interviews, cours et pistes audio de vidéos, directement sur votre téléphone. Ouvrez-la sans compte, traitez même hors ligne, et n'enregistrez ou ne partagez que le résultat.
+        </p>
+        <p class="micro">Fonctionne aussi bien dans le métro, en avion ou partout où il n'y a pas d'internet.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web_fr&amp;mt=8" rel="noopener">Télécharger sur l'App Store</a>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dreferral%26utm_campaign%3Dnoisyno_fr_landing" rel="noopener">Télécharger sur Google Play</a>
+        </div>
+        <p class="micro">Téléchargement gratuit · Suppression de bruit gratuite · Sans abonnement · La normalisation Pro est un achat unique</p>
+        <div class="trust" aria-label="Points forts de NoisyNo">
+          <div class="pill">Fonctionne hors ligne</div>
+          <div class="pill">Aucun envoi de fichier</div>
+          <div class="pill">Sans compte ni connexion</div>
+          <div class="pill">Pour iOS et Android</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Pourquoi NoisyNo ?</span>
+          <h2>Le critère essentiel : où va votre enregistrement.</h2>
+          <p>
+            Beaucoup d'outils de suppression de bruit envoient votre fichier vers un site ou un serveur avant de le traiter. NoisyNo fait l'inverse : le modèle de traitement est embarqué dans l'application. Les enregistrements difficiles à partager — réunions, interviews, mémos personnels — sont ainsi nettoyés sans quitter votre téléphone.
+          </p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Traitement hors ligne, sans serveur</h3>
+            <p>Après l'installation, le modèle tourne sur l'appareil. Vous pouvez traiter dans le métro, en avion ou là où le signal est faible.</p>
+          </article>
+          <article class="card">
+            <h3>Sans compte, prête à l'emploi</h3>
+            <p>Choisissez un fichier et nettoyez-le sans inscription, connexion ni espace de travail. Pas besoin de créer un compte pour nettoyer un enregistrement.</p>
+          </article>
+          <article class="card">
+            <h3>Sans abonnement</h3>
+            <p>La suppression de bruit est gratuite et il n'y a pas d'abonnement. Pour la normalisation du loudness, débloquez Pro par un achat unique.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft">
+      <div class="wrap compare">
+        <div>
+          <span class="eyebrow">Quand elle aide</span>
+          <h2>Pour quand la voix est bonne mais le fond sonore gêne.</h2>
+          <p class="copy">
+            L'application se concentre sur les bruits constants : brouhaha de café, climatisation, ventilateur d'ordinateur, bourdonnement de la pièce, vent. Ce n'est pas une application qui ressuscite par magie un enregistrement détruit, mais un outil qui rend plus propre une voix audible mais encombrée.
+          </p>
+        </div>
+        <div class="phone">
+          <img src="../../noisyno/assets/screenshots/04_compare.png" alt="Écran de NoisyNo comparant l'audio original et l'audio nettoyé" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Un flux simple</span>
+          <h2>Choisir, nettoyer, comparer, partager.</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div>
+              <h3>Sélectionnez un enregistrement ou une vidéo</h3>
+              <p>Prend en charge WAV, MP3, M4A, FLAC, MP4, MOV et M4V. Sur Android, également OGG, Opus, 3GP et 3GPP.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>Touchez Clean</h3>
+              <p>La suppression de bruit s'exécute sur votre téléphone. Pas d'attente d'envoi ni de file de serveur.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>Comparez l'original au résultat, puis enregistrez</h3>
+              <p>Basculez entre Original et Cleaned au même endroit, puis enregistrez ou partagez le résultat en M4A (AAC) ou WAV (16 bits).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Idéale dans ces situations</span>
+          <h2>Pour ceux qui tiennent au hors ligne, sans compte, sans abonnement.</h2>
+          <p>
+            Conçue pour les réunions sensibles, les mémos personnels que vous préférez ne pas envoyer, et le travail dans des environnements sans internet — toutes les situations où envoyer le fichier n'est pas une option.
+          </p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Réunions enregistrées</h3>
+            <p>Quand le contenu est sensible, traitez sur le téléphone plutôt que de l'envoyer sur un site.</p>
+          </article>
+          <article class="card">
+            <h3>Interviews et cours</h3>
+            <p>Rendez plus intelligible une voix enregistrée en café, en classe ou en extérieur.</p>
+          </article>
+          <article class="card">
+            <h3>Audio de vidéos</h3>
+            <p>Extrayez l'audio des vidéos compatibles, supprimez le bruit et enregistrez-le comme fichier audio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Guides détaillés</span>
+          <h2>Des guides d'utilisation en anglais sont aussi disponibles.</h2>
+          <p>Les guides en français sont en préparation. En attendant, les guides en anglais présentent le même flux d'utilisation.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Supprimer le bruit sans envoyer le fichier</h3>
+            <p><a href="../../blog/noisyno/remove-audio-noise-without-upload/">Voir le traitement sur l'appareil</a></p>
+          </article>
+          <article class="card">
+            <h3>Nettoyer une réunion enregistrée</h3>
+            <p><a href="../../blog/noisyno/clean-up-meeting-recording-audio/">Voir comment réduire le bruit de fond d'une réunion</a></p>
+          </article>
+          <article class="card">
+            <h3>Nettoyer un mémo vocal</h3>
+            <p><a href="../../blog/noisyno/remove-background-noise-from-voice-memo/">Voir le guide des mémos vocaux iPhone et Android</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions fréquentes</h2>
+        </div>
+        <details>
+          <summary>NoisyNo envoie-t-il mes fichiers audio vers un serveur ?</summary>
+          <p>Non. Le traitement de NoisyNo s'exécute dans votre téléphone. Les fichiers sélectionnés et les résultats ne sont pas envoyés aux serveurs de GrayForge.</p>
+        </details>
+        <details>
+          <summary>Puis-je l'utiliser hors ligne, sans internet ?</summary>
+          <p>Oui. Une fois l'application installée, le modèle de réduction de bruit tourne sur l'appareil : vous pouvez nettoyer vos enregistrements sans connexion.</p>
+        </details>
+        <details>
+          <summary>Puis-je l'utiliser sans créer de compte ?</summary>
+          <p>Oui. NoisyNo fonctionne sans inscription ni connexion.</p>
+        </details>
+        <details>
+          <summary>Faut-il un abonnement ?</summary>
+          <p>Non. La suppression de bruit est gratuite et il n'y a pas d'abonnement. La normalisation du loudness est une fonction Pro, débloquée par un achat unique dans l'application.</p>
+        </details>
+        <details>
+          <summary>Quels formats de fichiers sont pris en charge ?</summary>
+          <p>Entrée : WAV, MP3, M4A, FLAC, MP4, MOV et M4V. Sur Android, également OGG, Opus, 3GP et 3GPP. Sortie : M4A (AAC) et WAV (16 bits).</p>
+        </details>
+        <details>
+          <summary>Aucune donnée personnelle ou de diagnostic n'est-elle collectée ?</summary>
+          <p>Les fichiers audio ne sont pas envoyés. Toutefois, pour la stabilité de l'application et la compréhension de son usage, des analyses anonymes limitées et des diagnostics de plantage sont utilisés, dans le cadre décrit par la politique de confidentialité.</p>
+        </details>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Télécharger</span>
+          <h2>Réduisez le bruit dès votre prochain enregistrement.</h2>
+          <p>NoisyNo est disponible sur iPhone et Android.</p>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web_fr_footer&amp;mt=8" rel="noopener">App Store</a>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dreferral%26utm_campaign%3Dnoisyno_fr_footer" rel="noopener">Google Play</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div class="brand-row">
+        <span class="mark">N</span>
+        <span>NoisyNo</span>
+      </div>
+      <div class="footer-links">
+        <a href="../../">GrayForge</a>
+        <a href="../../noisyno/" hreflang="en">English</a>
+        <a href="../../ko/noisyno/" hreflang="ko">한국어</a>
+        <a href="../../ja/noisyno/" hreflang="ja">日本語</a>
+        <a href="../../zh/noisyno/" hreflang="zh">中文</a>
+        <a href="../../es/noisyno/" hreflang="es">Español</a>
+        <a href="../../pt/noisyno/" hreflang="pt">Português</a>
+        <a href="../../de/noisyno/" hreflang="de">Deutsch</a>
+        <a href="../../hi/noisyno/" hreflang="hi">हिन्दी</a>
+        <a href="../../ar/noisyno/" hreflang="ar">العربية</a>
+        <a href="../../th/noisyno/" hreflang="th">ไทย</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../noisyno/privacy_policy.html">Privacy</a>
+        <a href="mailto:grayforge.dev+noisyno@gmail.com?subject=NoisyNo%20Support">Support</a>
+      </div>
+      <span>&copy; 2026 grayforge</span>
+    </div>
+  </footer>
+</body>
+</html>
