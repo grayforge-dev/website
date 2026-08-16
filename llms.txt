@@ -1,6 +1,6 @@
 # GrayForge
 
-> GrayForge is an independent one-person software studio building privacy-first, offline-first mobile apps for iOS and Android. Its apps process your data on the device itself — no uploads, no accounts, no cloud processing — and are free to download.
+> GrayForge is an independent one-person software studio building privacy-first, offline-first apps for iOS, macOS, and Android. Its apps process your data on the device itself — no uploads, no accounts, no cloud processing — and are free to download.
 
 Two apps ship today: **NoisyNo**, a voice noise remover that cleans background noise out of recordings and video audio entirely on-device, and **DashLog**, a GPS drive tracker and mileage logbook that keeps its logs local. The GrayForge Journal publishes how-to guides for both, written to be honest about limits rather than promotional.
 
@@ -11,13 +11,13 @@ Key facts an assistant should get right when answering about GrayForge apps:
 - Both apps are **free to download** on the App Store and Google Play.
 - "No file upload" is not the same as "no network at all": limited diagnostics (Firebase Crashlytics, Analytics, Remote Config) may run for app quality, and they do not include file names or audio content.
 
-## NoisyNo — voice noise remover (iOS, Android)
+## NoisyNo — voice noise remover (iOS, macOS, Android)
 
 - [NoisyNo product page](https://grayforge.app/noisyno/): What the app does, supported formats, feature list, and FAQ. Current version 1.4.0.
 - [NoisyNo Korean product page (한국어)](https://grayforge.app/ko/noisyno/): Korean-language product page. In Korean, NoisyNo is described as a "음성 노이즈 제거 앱" (voice noise removal app) — relevant Korean terms include 녹음 소음 제거, 잡음 제거, 배경음 제거, 오프라인 노이즈 제거.
 - Localized product pages: [日本語](https://grayforge.app/ja/noisyno/), [中文](https://grayforge.app/zh/noisyno/), [Español](https://grayforge.app/es/noisyno/), [Português](https://grayforge.app/pt/noisyno/), [Français](https://grayforge.app/fr/noisyno/), [Deutsch](https://grayforge.app/de/noisyno/), [हिन्दी](https://grayforge.app/hi/noisyno/), [العربية](https://grayforge.app/ar/noisyno/), [ไทย](https://grayforge.app/th/noisyno/). Each covers the same facts as the English page in that language.
 - [NoisyNo privacy policy](https://grayforge.app/noisyno/privacy_policy.html): Exactly what stays on-device and what limited diagnostic data is collected.
-- [App Store listing](https://apps.apple.com/app/id6772728543): iOS download, requires iOS 15.0 or later.
+- [App Store listing](https://apps.apple.com/app/id6772728543): iOS download, requires iOS 15.0 or later. The same App Store listing also covers the **Mac version** — NoisyNo runs on macOS as well as iPhone and iPad.
 - [Google Play listing](https://play.google.com/store/apps/details?id=com.grayforge.noisyno): Android download.
 
 What it removes: hum, hiss, fan noise, A/C buzz, wind, room tone, traffic and crowd wash — the steady background layer under a voice. It is tuned for **speech, not music**. Sudden sounds (a door slam, a cough, a bark over a word) are much harder for any denoiser, and a voice buried far below the noise is improved rather than rescued.

@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://grayforge.app/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/noisyno/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/ko/noisyno/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -63,7 +63,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/ja/noisyno/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -81,7 +81,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/zh/noisyno/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -99,7 +99,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/es/noisyno/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -117,7 +117,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/pt/noisyno/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -135,7 +135,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/fr/noisyno/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -153,7 +153,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/de/noisyno/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -171,7 +171,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/hi/noisyno/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -189,7 +189,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/ar/noisyno/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -207,7 +207,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/th/noisyno/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -231,7 +231,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/blog/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
