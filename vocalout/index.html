@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VocalOut — Remove vocals from any song, fully offline</title>
+<meta name="description" content="Turn any song on your phone into a clean backing track. The AI runs on your device — no upload, no account, no sign-up. Your music never leaves your phone. Unlimited free processing.">
+<meta property="og:title" content="VocalOut — Remove vocals from any song">
+<meta property="og:description" content="Everything runs on your device. No upload, no account, unlimited free processing.">
+<meta property="og:type" content="website">
+<meta name="apple-itunes-app" content="app-id=PLACEHOLDER">
+<link rel="canonical" href="https://grayforge.app/vocalout/">
+<meta property="og:url" content="https://grayforge.app/vocalout/">
+<meta property="og:site_name" content="VocalOut">
+<meta name="theme-color" content="#0C0E11">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* 앱의 토큰을 그대로 쓴다. 랜딩과 첫 실행 화면이 다른 물건처럼 보이면
+   안 된다. 원본은 docs/design-tokens.html. */
+:root{
+  --bg:#0C0E11; --surface:#15181C; --surface-2:#1C2026;
+  --line:#333944; --line-2:#434A57;
+  --text:#ECEEF1; --text-2:#A2AAB4; --text-3:#848B95;
+  --accent:#E9A93A; --on-accent:#100C04; --ok:#6FBF9B;
+  --sans:Inter,Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --mono:"SFMono-Regular",Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
+
+/* ------------------------------------------------------------ 기기 프레임 */
+/* 스크린샷은 shots/web/ 의 축소본을 쓴다. 스토어에 올리는 원본
+   1320x2868은 shots/ 에 그대로 둔다 — 프레임 안에서는 303px로 보이므로
+   원본을 그대로 실으면 이미지에만 3/4 MB를 쓰게 된다. 비율은 9:19.5. */
+.device{
+  position:relative;aspect-ratio:9/19.5;border-radius:11.5%;padding:2.6%;
+  background:linear-gradient(158deg,#333944,#15181C 62%);
+  box-shadow:0 44px 90px -34px rgba(0,0,0,.95),0 0 0 1px rgba(255,255,255,.05) inset;
+}
+.device .shot{
+  height:100%;border-radius:9.4%;overflow:hidden;background:var(--surface);
+  display:flex;align-items:center;justify-content:center;position:relative;
+}
+.device .shot img{width:100%;height:100%;object-fit:cover;display:block}
+.device .ph{
+  font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--text-3);
+  text-align:center;padding:16px;line-height:1.9;
+}
+.device .notch{
+  position:absolute;top:2.6%;left:50%;translate:-50% 0;z-index:2;
+  width:30%;height:2.6%;min-height:16px;border-radius:99px;background:#0A0C0E;
+}
+
+/* --------------------------------------------------------------- nav */
+nav{position:sticky;top:0;z-index:30;background:rgba(12,14,17,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:11px;height:60px}
+.mark{width:25px;height:25px;flex:none}
+.wordmark{font-size:16.5px;font-weight:600;letter-spacing:-.01em}
+nav .spacer{flex:1}
+.mini{
+  display:inline-flex;align-items:center;height:36px;padding:0 15px;border-radius:9px;
+  background:var(--accent);color:var(--on-accent);font-size:13.5px;font-weight:600;text-decoration:none;
+}
+
+/* --------------------------------------------------------------- hero */
+header{padding:74px 0 0;position:relative;overflow:hidden}
+header::before{
+  content:"";position:absolute;left:50%;top:-180px;translate:-50% 0;
+  width:900px;height:520px;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(233,169,58,.14),transparent 70%);
+}
+.hero{display:grid;grid-template-columns:1fr 320px;gap:64px;align-items:center;position:relative}
+h1{font-size:clamp(40px,5.4vw,58px);line-height:1.06;font-weight:700;letter-spacing:-.037em;margin-top:18px;max-width:13ch}
+h1 em{font-style:normal;color:var(--accent)}
+.lede{margin-top:20px;max-width:40ch;font-size:17.5px;color:var(--text-2)}
+.badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.store{
+  display:flex;align-items:center;gap:10px;height:54px;padding:0 20px;border-radius:12px;
+  background:var(--surface);border:1px solid var(--line-2);text-decoration:none;color:var(--text);
+}
+button.store{appearance:none;font:inherit;text-align:left;cursor:pointer}
+button.store:hover{border-color:rgba(233,169,58,.45)}
+button.store:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.store .small{display:block;font-size:10.5px;color:var(--text-3);line-height:1.15}
+.store .big{display:block;font-size:15.5px;font-weight:600;line-height:1.25}
+.free-line{margin-top:16px;font-size:13.5px;color:var(--text-3)}
+.hero .device{width:100%}
+
+/* ------------------------------------------------------------- 오프라인 */
+.claim{margin-top:88px;border-top:1px solid var(--line);padding-top:56px;padding-bottom:56px}
+.claim h2{font-size:clamp(24px,3.2vw,31px);line-height:1.25;font-weight:600;letter-spacing:-.025em;max-width:19ch}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.pill{
+  display:flex;align-items:center;gap:9px;padding:9px 15px;border-radius:99px;
+  border:1px solid var(--line);background:var(--surface);font-size:14px;color:var(--text-2);
+}
+.pill.no{color:var(--text-3)}
+.pill svg{flex:none}
+
+/* -------------------------------------------------------------- 기능 */
+.feature{
+  display:grid;grid-template-columns:280px 1fr;gap:64px;align-items:center;
+  padding:64px 0;border-top:1px solid var(--line);
+}
+.feature:nth-child(even){grid-template-columns:1fr 280px}
+.feature:nth-child(even) .copy{order:-1}
+.feature h3{font-size:clamp(22px,2.8vw,28px);line-height:1.24;font-weight:600;letter-spacing:-.022em;margin-top:12px;max-width:17ch}
+.feature p{margin-top:14px;font-size:15.5px;color:var(--text-2);max-width:44ch}
+.wave{height:52px;margin-top:24px;max-width:340px}
+
+/* ------------------------------------------------------------- 가격 한 줄 */
+.pricing{border-top:1px solid var(--line);padding-top:56px;padding-bottom:56px}
+.pricing .box{
+  border:1px solid rgba(233,169,58,.4);border-radius:18px;padding:32px;
+  background:linear-gradient(180deg,rgba(233,169,58,.07),transparent 62%);
+  display:flex;gap:32px;align-items:center;flex-wrap:wrap;
+}
+.pricing .box .lhs{flex:1 1 320px}
+.pricing h2{font-size:clamp(22px,2.9vw,28px);font-weight:600;letter-spacing:-.022em;line-height:1.25}
+.pricing p{margin-top:12px;font-size:15px;color:var(--text-2);max-width:52ch}
+.tag{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--accent);
+}
+.amount{font-size:40px;font-weight:600;letter-spacing:-.03em;line-height:1}
+.amount small{font-size:15px;font-weight:400;color:var(--text-3);letter-spacing:0}
+
+/* --------------------------------------------------------------- faq */
+.faq{border-top:1px solid var(--line);padding-top:56px;padding-bottom:56px}
+.faq h2{font-size:clamp(22px,2.9vw,28px);font-weight:600;letter-spacing:-.022em}
+.qa{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:28px 48px}
+.qa h4{font-size:15.5px;font-weight:600}
+.qa p{margin-top:8px;font-size:14.5px;color:var(--text-2)}
+
+/* ------------------------------------------------------------ 마지막 CTA */
+.tail{border-top:1px solid var(--line);padding:76px 0;text-align:center}
+.tail h2{font-size:clamp(26px,3.6vw,36px);font-weight:600;letter-spacing:-.028em;line-height:1.18;max-width:17ch;margin:0 auto}
+.tail .badges{justify-content:center;margin-top:30px}
+
+footer{border-top:1px solid var(--line);padding:40px 0 60px;color:var(--text-3);font-size:13px}
+footer .row{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+footer a{color:var(--text-2);text-decoration:none}
+footer a:hover{color:var(--text)}
+footer .fine{margin-top:22px;max-width:68ch;line-height:1.75}
+
+/* ------------------------------------------------------- 출시 예정 안내 */
+.toast{
+  position:fixed;left:50%;bottom:28px;translate:-50% 0;z-index:20;
+  max-width:min(92vw,430px);padding:13px 18px;border-radius:12px;
+  background:var(--surface-2);border:1px solid var(--line-2);
+  color:var(--text);font-size:14px;line-height:1.5;text-align:center;
+  box-shadow:0 14px 34px rgba(0,0,0,.5);
+  opacity:0;transform:translateY(8px);
+  transition:opacity .18s ease,transform .18s ease;
+}
+.toast.on{opacity:1;transform:translateY(0)}
+@media (prefers-reduced-motion:reduce){.toast{transition-duration:0s}}
+
+@media (max-width:880px){
+  .hero{grid-template-columns:1fr;gap:44px}
+  .hero .device{max-width:270px;margin:0 auto}
+  h1{max-width:none}
+  .feature,.feature:nth-child(even){grid-template-columns:1fr;gap:32px}
+  .feature .device{max-width:240px;margin:0 auto}
+  .feature:nth-child(even) .copy{order:0}
+  .qa{grid-template-columns:1fr}
+  header{padding-top:52px}
+  .claim{margin-top:64px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 1024 1024" aria-hidden="true">
+      <defs>
+        <linearGradient id="up" x1="0" y1="166" x2="0" y2="486" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F7C24B"/><stop offset="1" stop-color="#E9A93A"/></linearGradient>
+        <linearGradient id="lo" x1="0" y1="538" x2="0" y2="858" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C8CED7"/><stop offset="1" stop-color="#7D8796"/></linearGradient>
+      </defs>
+      <g fill="url(#up)"><path d="M160 486v-60a40 40 0 0 1 80 0v60z"/><path d="M260 486V356a40 40 0 0 1 80 0v130z"/><path d="M360 486V276a40 40 0 0 1 80 0v210z"/><path d="M460 486V206a40 40 0 0 1 80 0v280z"/><path d="M560 486V276a40 40 0 0 1 80 0v210z"/><path d="M660 486V356a40 40 0 0 1 80 0v130z"/><path d="M760 486v-60a40 40 0 0 1 80 0v60z"/></g>
+      <g fill="url(#lo)"><path d="M160 538h80v60a40 40 0 0 1-80 0z"/><path d="M260 538h80v130a40 40 0 0 1-80 0z"/><path d="M360 538h80v210a40 40 0 0 1-80 0z"/><path d="M460 538h80v280a40 40 0 0 1-80 0z"/><path d="M560 538h80v210a40 40 0 0 1-80 0z"/><path d="M660 538h80v130a40 40 0 0 1-80 0z"/><path d="M760 538h80v60a40 40 0 0 1-80 0z"/></g>
+    </svg>
+    <span class="wordmark">VocalOut</span>
+    <span class="spacer"></span>
+    <a class="mini" href="#get">Get the app</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">iPhone · Android</p>
+      <h1>Remove vocals from <em>any song</em></h1>
+      <p class="lede">
+        The AI runs on your phone. No upload, no account, no sign-up — and no
+        limit on how many songs you run.
+      </p>
+      <!-- 아직 갈 곳이 없으므로 링크가 아니라 버튼이다. href="#"로 두면
+           눌렀을 때 페이지 맨 위로 튀고, 사용자는 무엇이 잘못됐는지 모른다.
+           심사를 통과하면 이 둘을 스토어 URL을 가진 <a>로 되돌린다. -->
+      <div class="badges" id="get">
+        <button type="button" class="store" data-store="the App Store" aria-label="Download on the App Store (coming soon)">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.5 2.1-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.1 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1 2.6-2.1.8-1.2 1.2-2.4 1.2-2.4s-2.3-.9-2.3-3.2zM14.2 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.6-.9 2.6 1 .1 2-.5 2.6-1.2z"/></svg>
+          <span><span class="small">Coming soon to</span><span class="big">App Store</span></span>
+        </button>
+        <button type="button" class="store" data-store="Google Play" aria-label="Get it on Google Play (coming soon)">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.7 2.2l-.1.1zm12.5 6.2L13.6 6l-9 5.1v.1l9 5.1 2.5-2.5-2.4-2.7 2.4-2.6zm1 1L14 12l3.1 2.5 3.1-1.8c.9-.5.9-1.4 0-1.9l-3.1-1.8z"/></svg>
+          <span><span class="small">Coming soon to</span><span class="big">Google Play</span></span>
+        </button>
+      </div>
+      <p class="free-line">Free with no song limit · In-app purchase to export</p>
+    </div>
+
+    <div class="device">
+      <div class="notch"></div>
+      <div class="shot"><img src="assets/screenshots/01-home.png" alt="The VocalOut home screen: a recently separated song and a Choose a song button."
+             width="303" height="660" loading="lazy" decoding="async"></div>
+    </div>
+  </div>
+
+  <div class="wrap claim">
+    <p class="eyebrow">Why it is different</p>
+    <h2>Your music never leaves your phone</h2>
+    <div class="pills">
+      <span class="pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--ok)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Runs offline</span>
+      <span class="pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--ok)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Unlimited songs</span>
+      <span class="pill no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>No upload</span>
+      <span class="pill no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>No account</span>
+      <span class="pill no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>No credits</span>
+      <span class="pill no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>No subscription</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="feature">
+    <div class="device">
+      <div class="notch"></div>
+      <div class="shot"><img src="assets/screenshots/02-file-mode.png" alt="The imported file with its waveform, length and format, and the two separation modes to pick from."
+             width="303" height="660" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="copy">
+      <p class="eyebrow">One tap</p>
+      <h3>A clean backing track, nothing to configure</h3>
+      <p>
+        No quality sliders, no stem count, no settings to get wrong. Choose a
+        song and the model trained for this one job does the rest.
+      </p>
+      <div class="wave" style="color:var(--accent)"><div class="wf" data-wf="60,1,3" data-stem="inst"></div></div>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="device">
+      <div class="notch"></div>
+      <div class="shot"><img src="assets/screenshots/03-processing.png" alt="Separation running on the device, the waveform filling in behind a large percentage counter."
+             width="303" height="660" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="copy">
+      <p class="eyebrow">While it works</p>
+      <h3>No queue, no waiting on a server</h3>
+      <p>
+        Separation happens on your phone's own processor, so there is nothing to
+        upload and nothing to wait in line for. On a plane, in a rehearsal room,
+        in a basement with no bars — it behaves exactly the same.
+      </p>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="device">
+      <div class="notch"></div>
+      <div class="shot"><img src="assets/screenshots/04-result.png" alt="The finished instrumental track, saved to the library and playing back in the app."
+             width="303" height="660" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="copy">
+      <p class="eyebrow">Then listen</p>
+      <h3>Play it back before you pay anything</h3>
+      <p>
+        Every result lands in your library and plays right there — scrub the
+        waveform, skip around, listen as many times as you like. You know
+        whether it is good enough long before you are asked for money.
+      </p>
+    </div>
+  </section>
+</main>
+
+<div class="wrap pricing">
+  <div class="box">
+    <div class="lhs">
+      <p class="tag">VocalOut Pro</p>
+      <h2>Free to use. Pay once to take it out.</h2>
+      <p>
+        Processing and playback are unlimited and free, forever. Pro unlocks
+        export to Files or any other app, at the full 32-bit quality the engine
+        produced. One payment — not a subscription, no auto-renewal.
+      </p>
+    </div>
+    <div>
+      <div class="amount">$14.99 <small>once</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap faq">
+  <h2>Questions</h2>
+  <div class="qa">
+    <div>
+      <h4>Does my music get uploaded?</h4>
+      <p>No. The model ships inside the app and runs on your phone. There is no server step at all.</p>
+    </div>
+    <div>
+      <h4>Is there a limit on songs?</h4>
+      <p>No. Processing and listening are unlimited and free. Pro only unlocks taking results out of the app.</p>
+    </div>
+    <div>
+      <h4>How long does a song take?</h4>
+      <p>It depends on your device — this is real work, not a download. Progress is shown while it runs.</p>
+    </div>
+    <div>
+      <h4>Where do the songs come from?</h4>
+      <p>Files already on your device. VocalOut does not provide, download, or stream music of any kind.</p>
+    </div>
+  </div>
+</div>
+
+<div class="tail">
+  <div class="wrap">
+    <h2>Try it on a song you already have</h2>
+    <div class="badges">
+      <button type="button" class="store" data-store="the App Store" aria-label="Download on the App Store (coming soon)">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.5 2.1-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.1 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1 2.6-2.1.8-1.2 1.2-2.4 1.2-2.4s-2.3-.9-2.3-3.2zM14.2 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.6-.9 2.6 1 .1 2-.5 2.6-1.2z"/></svg>
+        <span><span class="small">Coming soon to</span><span class="big">App Store</span></span>
+      </button>
+      <button type="button" class="store" data-store="Google Play" aria-label="Get it on Google Play (coming soon)">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.7 2.2l-.1.1zm12.5 6.2L13.6 6l-9 5.1v.1l9 5.1 2.5-2.5-2.4-2.7 2.4-2.6zm1 1L14 12l3.1 2.5 3.1-1.8c.9-.5.9-1.4 0-1.9l-3.1-1.8z"/></svg>
+        <span><span class="small">Coming soon to</span><span class="big">Google Play</span></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span class="wordmark" style="font-size:14.5px">VocalOut</span>
+      <span style="flex:1"></span>
+      <a href="privacy_policy.html">Privacy</a>
+      <a href="terms_of_service.html">Terms</a>
+      <!-- TODO: 지원 이메일이 정해지면 채운다. -->
+      <a href="mailto:grayforge.dev@gmail.com">Support</a>
+    </div>
+    <p class="fine">
+      VocalOut processes audio files that are already on your device. It does not
+      provide, download, or stream music. You are responsible for having the
+      rights to the music you process.
+    </p>
+  </div>
+</footer>
+
+<script>
+/* 스토어 배지를 누르면 왜 아무 일도 일어나지 않는지 말해 준다.
+   누를 수 있게 생긴 것이 눌러도 조용하면, 사용자는 앱이 아니라 이 페이지가
+   고장 났다고 생각한다. */
+(function(){
+  var toast = document.getElementById('toast');
+  var hide;
+  document.querySelectorAll('[data-store]').forEach(function(button){
+    button.addEventListener('click', function(){
+      toast.textContent = 'Not on ' + button.dataset.store +
+        ' yet — VocalOut is coming soon.';
+      toast.hidden = false;
+      /* 이미 떠 있는 상태에서 다시 눌러도 나타나는 동작이 보이도록
+         클래스는 다음 프레임에 붙인다. */
+      requestAnimationFrame(function(){ toast.classList.add('on'); });
+      clearTimeout(hide);
+      hide = setTimeout(function(){ toast.classList.remove('on'); }, 3400);
+    });
+  });
+  toast.addEventListener('transitionend', function(){
+    if (!toast.classList.contains('on')) toast.hidden = true;
+  });
+})();
+
+/* 앱과 같은 시드 고정 PRNG. 새로고침해도 같은 파형이 나온다. */
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+document.querySelectorAll('[data-wf]').forEach(function(el){
+  var p=el.dataset.wf.split(',').map(Number),n=p[0],peak=p[1],seed=p[2];
+  var stem=el.dataset.stem||null,rnd=mulberry32(seed*7919+13),html='';
+  function vocal(t){
+    var segs=[[0.16,0.42,0.72],[0.50,0.86,1.0]],v=0;
+    for(var k=0;k<segs.length;k++){
+      var a=segs[k][0],b=segs[k][1],lv=segs[k][2],f=0.045;
+      if(t>a-f&&t<b+f){
+        var g=Math.min(1,Math.min((t-(a-f))/(2*f),((b+f)-t)/(2*f)));
+        v=Math.max(v,lv*Math.max(0,Math.min(1,g)));
+      }
+    }
+    return v;
+  }
+  for(var i=0;i<n;i++){
+    var t=n>1?i/(n-1):0;
+    var env=0.38+0.62*Math.pow(Math.sin(Math.PI*t),0.42);
+    var macro=0.72+0.28*Math.sin(t*8.7+seed*0.7)+0.12*Math.sin(t*23.1+seed);
+    var base=env*macro*(0.42+0.58*rnd())*peak;
+    var v=vocal(t),h=base;
+    if(stem==='inst') h=base*(1-0.30*v);
+    else if(stem==='voc') h=base*v*0.88;
+    h=Math.max(stem==='voc'?0.012:0.07,Math.min(1,h));
+    html+='<i style="height:'+(h*100).toFixed(1)+'%"></i>';
+  }
+  el.innerHTML=html;
+});
+</script>
+<style>
+.wf{display:flex;align-items:center;gap:3px;height:100%;width:100%}
+.wf i{flex:1 1 0;border-radius:2px;min-width:2px;background:currentColor}
+</style>
+</body>
+</html>

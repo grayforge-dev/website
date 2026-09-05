@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — VocalOut</title>
+<meta name="description" content="VocalOut processes audio entirely on your device. Your music never leaves it. This policy describes the anonymous diagnostics the app does send.">
+<meta name="theme-color" content="#0C0E11">
+<link rel="alternate" hreflang="ko" href="privacy_policy.ko.html">
+<link rel="alternate" hreflang="en" href="privacy_policy.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* 랜딩과 같은 토큰. 법적 문서라고 다른 물건처럼 보일 이유는 없다.
+   원본은 docs/design-tokens.html. */
+:root{
+  --bg:#0C0E11; --surface:#15181C; --surface-2:#1C2026;
+  --line:#333944; --line-2:#434A57;
+  --text:#ECEEF1; --text-2:#A2AAB4; --text-3:#848B95;
+  --accent:#E9A93A; --on-accent:#100C04; --ok:#6FBF9B;
+  --sans:Inter,Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --mono:"SFMono-Regular",Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+
+nav{position:sticky;top:0;z-index:30;background:rgba(12,14,17,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{max-width:1040px;display:flex;align-items:center;gap:11px;height:60px}
+nav .mark{width:23px;height:23px;flex:none}
+.wordmark{font-size:16.5px;font-weight:600;letter-spacing:-.01em}
+nav .spacer{flex:1}
+nav a{color:var(--text-2);text-decoration:none;font-size:13.5px}
+nav a:hover{color:var(--text)}
+nav .lang{
+  display:inline-flex;align-items:center;height:32px;padding:0 12px;border-radius:8px;
+  border:1px solid var(--line-2);color:var(--text-2);
+}
+nav .lang:hover{border-color:var(--accent);color:var(--text)}
+
+article{padding:56px 0 40px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
+h1{font-size:clamp(30px,4.6vw,40px);line-height:1.14;font-weight:700;letter-spacing:-.032em;margin-top:14px}
+.meta{
+  margin-top:26px;padding:18px 20px;border:1px solid var(--line);border-radius:12px;
+  background:var(--surface);font-size:13.5px;color:var(--text-2);
+}
+.meta dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px}
+.meta dt{color:var(--text-3)}
+.meta dd{color:var(--text-2)}
+.todo{
+  font-family:var(--mono);font-size:12px;color:var(--accent);
+  background:rgba(233,169,58,.1);border:1px solid rgba(233,169,58,.3);
+  border-radius:6px;padding:1px 7px;
+}
+
+.lede{
+  margin-top:32px;padding:26px 26px 24px;border-radius:16px;
+  border:1px solid rgba(111,191,155,.32);
+  background:linear-gradient(180deg,rgba(111,191,155,.08),transparent 70%);
+}
+.lede h2{margin-top:0;font-size:20px;font-weight:600;letter-spacing:-.02em;line-height:1.35}
+.lede p{margin-top:12px;font-size:15px;color:var(--text-2)}
+
+h2{margin-top:52px;font-size:22px;font-weight:600;letter-spacing:-.022em;line-height:1.32}
+h2 .num{font-family:var(--mono);font-size:13px;color:var(--accent);margin-right:9px;letter-spacing:.04em}
+h3{margin-top:28px;font-size:15.5px;font-weight:600;color:var(--text)}
+p{margin-top:14px;font-size:15.5px;color:var(--text-2)}
+ul{margin-top:14px;padding-left:20px}
+li{margin-top:8px;font-size:15.5px;color:var(--text-2)}
+li::marker{color:var(--text-3)}
+strong{color:var(--text);font-weight:600}
+a{color:var(--accent)}
+code{font-family:var(--mono);font-size:13.5px;color:var(--text)}
+
+table{width:100%;border-collapse:collapse;margin-top:18px;font-size:14.5px}
+th,td{text-align:left;vertical-align:top;padding:11px 14px;border-bottom:1px solid var(--line)}
+th{color:var(--text-3);font-weight:500;font-family:var(--mono);font-size:11.5px;letter-spacing:.09em;text-transform:uppercase}
+td{color:var(--text-2)}
+td:first-child{color:var(--text);width:34%}
+.scroller{overflow-x:auto}
+
+footer{border-top:1px solid var(--line);margin-top:64px;padding:34px 0 64px;color:var(--text-3);font-size:13px}
+footer .wrap{max-width:1040px}
+footer .row{display:flex;gap:22px;flex-wrap:wrap;align-items:center}
+footer a{color:var(--text-2);text-decoration:none}
+footer a:hover{color:var(--text)}
+
+@media (max-width:620px){
+  .meta dl{grid-template-columns:1fr;gap:2px}
+  .meta dt{margin-top:10px}
+  td:first-child{width:auto}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 1024 1024" aria-hidden="true">
+      <defs>
+        <linearGradient id="up" x1="0" y1="166" x2="0" y2="486" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F7C24B"/><stop offset="1" stop-color="#E9A93A"/></linearGradient>
+        <linearGradient id="lo" x1="0" y1="538" x2="0" y2="858" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C8CED7"/><stop offset="1" stop-color="#7D8796"/></linearGradient>
+      </defs>
+      <g fill="url(#up)"><path d="M160 486v-60a40 40 0 0 1 80 0v60z"/><path d="M260 486V356a40 40 0 0 1 80 0v130z"/><path d="M360 486V276a40 40 0 0 1 80 0v210z"/><path d="M460 486V206a40 40 0 0 1 80 0v280z"/><path d="M560 486V276a40 40 0 0 1 80 0v210z"/><path d="M660 486V356a40 40 0 0 1 80 0v130z"/><path d="M760 486v-60a40 40 0 0 1 80 0v60z"/></g>
+      <g fill="url(#lo)"><path d="M160 538h80v60a40 40 0 0 1-80 0z"/><path d="M260 538h80v130a40 40 0 0 1-80 0z"/><path d="M360 538h80v210a40 40 0 0 1-80 0z"/><path d="M460 538h80v280a40 40 0 0 1-80 0z"/><path d="M560 538h80v210a40 40 0 0 1-80 0z"/><path d="M660 538h80v130a40 40 0 0 1-80 0z"/><path d="M760 538h80v60a40 40 0 0 1-80 0z"/></g>
+    </svg>
+    <a class="wordmark" href="./" style="color:var(--text);text-decoration:none;font-size:16.5px">VocalOut</a>
+    <span class="spacer"></span>
+    <a class="lang" href="privacy_policy.ko.html" hreflang="ko">한국어</a>
+  </div>
+</nav>
+
+<article>
+  <div class="wrap">
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+
+    <div class="meta">
+      <dl>
+        <dt>Effective</dt><dd>2026-09-05</dd>
+        <dt>Last updated</dt><dd>2026-09-05</dd>
+        <dt>Developer</dt><dd>GrayForge</dd>
+        <dt>Contact</dt><dd>grayforge.dev@gmail.com</dd>
+      </dl>
+    </div>
+
+    <div class="lede">
+      <h2>Your music never leaves your device.</h2>
+      <p>
+        VocalOut separates vocals from music entirely on your phone. There is no
+        account, no upload, and no server that receives your audio. We cannot
+        hear, store, or access the files you process, because they never reach
+        us.
+      </p>
+      <p>
+        What the app does send is anonymous diagnostic data — timings, error
+        codes, and numbers about how your device performed. Never audio, and
+        never anything taken from your files.
+      </p>
+    </div>
+
+    <h2><span class="num">01</span>What we never collect</h2>
+    <p>The app does not transmit, and we never receive:</p>
+    <ul>
+      <li>Audio, or any part of the content of a file</li>
+      <li>File names, file paths, song titles, artist names, or any other metadata read from your files</li>
+      <li>Your name, email address, phone number, or contacts</li>
+      <li>Precise location</li>
+      <li>Advertising identifiers. Ad identifier collection and ad personalization signals are explicitly disabled in the app's build configuration</li>
+      <li>A list of your music library or media collection</li>
+    </ul>
+    <p>
+      VocalOut shows no advertising and contains no advertising SDK. We do not
+      set a user ID, so the diagnostics described below are not tied to you as a
+      person.
+    </p>
+
+    <h2><span class="num">02</span>What the app sends</h2>
+    <p>
+      <strong>Diagnostics are on by default, and the app has no switch to turn
+      them off.</strong> We rely on them to find the failures we cannot
+      reproduce — a phone running out of memory on a long song, a model failing
+      on a particular chip. Section 6 describes how you can stop the collection.
+    </p>
+
+    <h3>App and device context</h3>
+    <ul>
+      <li>App version and build number, and the app version you first installed</li>
+      <li>Operating system version</li>
+      <li>Device hardware model (for example <code>iPhone16,1</code>), total memory, and processor count</li>
+      <li>A performance tier derived from the above, used to group results</li>
+      <li>Language, and an approximate region derived by our processor from your IP address. We do not receive or store your IP address itself</li>
+      <li>An installation identifier generated by Firebase. It is not linked to you, is not shared with other apps, and is removed when you uninstall the app</li>
+    </ul>
+
+    <h3>Usage and processing events</h3>
+    <ul>
+      <li>Which separation mode was run, whether it succeeded, failed, or was cancelled, and how long each stage took</li>
+      <li>The length of the source file <strong>as a range</strong>, never an exact value: for example "4–6 minutes"</li>
+      <li>Error codes and the pipeline stage a failure happened in</li>
+      <li>Whether a result was played and for how long, whether stems were switched, and whether a result was deleted and how long after it was made</li>
+      <li>Whether the purchase screen was shown, what led to it, and whether a purchase was made</li>
+      <li>Identifiers for the song and the job. These are generated on your device, are not derived from the file or its contents, and mean nothing outside your installation. We use them only to connect the events of one job to each other</li>
+    </ul>
+
+    <h3>Stability and performance</h3>
+    <ul>
+      <li>Crash reports, including stack traces</li>
+      <li>The state of the app when something went wrong: which processing stage was running, how far it had gone, how much memory the app was using, how much free storage was left, and the device's thermal state</li>
+      <li>Start-up time and the duration of each processing stage</li>
+    </ul>
+    <p>
+      Crash logs are written by us and contain stage names and numbers only. No
+      file name, path, or song title is ever placed in them.
+    </p>
+
+    <h2><span class="num">03</span>Who processes this data</h2>
+    <p>
+      The data in Section 2 is processed on our behalf by <strong>Google
+      LLC</strong> through Firebase Analytics, Firebase Crashlytics, Firebase
+      Performance Monitoring, and Firebase Remote Config. Remote Config also
+      lets us change certain settings — such as switching off the purchase
+      screen if the store has a problem — without shipping a new build.
+    </p>
+    <p>
+      Google's handling of this data is described in the
+      <a href="https://firebase.google.com/support/privacy">Firebase Privacy and
+      Security</a> documentation and in Google's Privacy Policy. We share this
+      data with no one else, and we do not sell data.
+    </p>
+
+    <h2><span class="num">04</span>Files on your device</h2>
+    <p>
+      When you choose a song, the system grants VocalOut access to that specific
+      file and <strong>the app copies it into its own private storage.</strong>
+      It has to: the original may live in a location the app cannot reach again
+      later, and the copy is what lets you run a second mode on the same song
+      without picking the file all over again.
+    </p>
+    <p>
+      That copy, and every separated result, stays in the app's private storage
+      on your device until you delete it. You can delete an imported copy while
+      keeping its results, from the song's screen in your library. Uninstalling
+      the app removes all of it.
+    </p>
+    <p>
+      Working files left behind by an interrupted job are cleaned up the next
+      time you open the app. Exported files go wherever you send them with the
+      system share sheet — after that they are outside the app and outside this
+      policy.
+    </p>
+
+    <h2><span class="num">05</span>Purchases</h2>
+    <p>
+      VocalOut Pro is a one-time purchase handled by the App Store or Google
+      Play. <strong>We never receive or store your payment details.</strong> The
+      store tells the app only whether a purchase exists for your store account.
+      Refunds are handled by the store under its own policies, not by us.
+    </p>
+
+    <h2><span class="num">06</span>Your choices</h2>
+    <div class="scroller">
+      <table>
+        <thead><tr><th>What you want</th><th>How</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Stop the collection</td>
+            <td>Uninstall the app. This deletes the installation identifier permanently and nothing further is sent. On iOS, <em>Settings → Privacy &amp; Security → Analytics &amp; Improvements</em> and on Android <em>Settings → Google → Ads</em> also limit what apps may collect and share.</td>
+          </tr>
+          <tr>
+            <td>Delete what was already collected</td>
+            <td>Write to grayforge.dev@gmail.com. We will delete the diagnostic data associated with your installation. Because we hold no account, please send the message from a device that still has the app installed, or tell us the approximate dates you used it, so we can find the right records.</td>
+          </tr>
+          <tr>
+            <td>Ask what is held about you</td>
+            <td>Write to grayforge.dev@gmail.com. The same limitation applies: without an account there may be no way for us to connect a request to a specific installation.</td>
+          </tr>
+          <tr>
+            <td>Delete your audio and results</td>
+            <td>Do it in the app, from your library. Nothing needs to reach us, because we never had it.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Diagnostics never gate a feature. Everything in the app behaves the same
+      regardless of what we receive.
+    </p>
+
+    <h2><span class="num">07</span>How long data is kept</h2>
+    <p>
+      Diagnostic events are retained for up to 14 months and are then deleted
+      automatically. Crash reports are retained for up to 90 days, following
+      Firebase Crashlytics defaults.
+    </p>
+    <p>
+      Your audio and your results are never retained by us for any length of
+      time, because we never receive them.
+    </p>
+
+    <h2><span class="num">08</span>International transfers</h2>
+    <p>
+      The diagnostic data described above may be processed on servers outside
+      your country, including in the United States, by our processor. Your audio
+      files are never transferred anywhere.
+    </p>
+
+    <h2><span class="num">09</span>Children</h2>
+    <p>
+      VocalOut is not directed at children under 13, and we do not knowingly
+      collect information from them. If you believe a child has provided us with
+      information, write to grayforge.dev@gmail.com and we will
+      delete it.
+    </p>
+
+    <h2><span class="num">10</span>Changes to this policy</h2>
+    <p>
+      If this policy changes we will update the dates at the top of this page.
+      For a change that meaningfully affects what we collect or why, we will say
+      so inside the app before it takes effect.
+    </p>
+
+    <h2><span class="num">11</span>Contact</h2>
+    <p>
+      Questions about this policy: grayforge.dev@gmail.com<br>
+      GrayForge, <span class="todo">[REGISTERED ADDRESS]</span>
+    </p>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span class="wordmark" style="font-size:14.5px">VocalOut</span>
+      <span style="flex:1"></span>
+      <a href="./">Home</a>
+      <a href="privacy_policy.ko.html">개인정보처리방침</a>
+      <a href="terms_of_service.html">Terms</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

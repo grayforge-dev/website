@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FFmpeg source and relinking — VocalOut</title>
+<meta name="description" content="Where to obtain the FFmpeg source, configure options, and object files VocalOut uses, as required by the LGPL.">
+<meta name="theme-color" content="#0C0E11">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* 랜딩과 같은 토큰. 법적 문서라고 다른 물건처럼 보일 이유는 없다.
+   원본은 docs/design-tokens.html. */
+:root{
+  --bg:#0C0E11; --surface:#15181C; --surface-2:#1C2026;
+  --line:#333944; --line-2:#434A57;
+  --text:#ECEEF1; --text-2:#A2AAB4; --text-3:#848B95;
+  --accent:#E9A93A; --on-accent:#100C04; --ok:#6FBF9B;
+  --sans:Inter,Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --mono:"SFMono-Regular",Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+
+nav{position:sticky;top:0;z-index:30;background:rgba(12,14,17,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{max-width:1040px;display:flex;align-items:center;gap:11px;height:60px}
+nav .mark{width:23px;height:23px;flex:none}
+.wordmark{font-size:16.5px;font-weight:600;letter-spacing:-.01em}
+nav .spacer{flex:1}
+nav a{color:var(--text-2);text-decoration:none;font-size:13.5px}
+nav a:hover{color:var(--text)}
+nav .lang{
+  display:inline-flex;align-items:center;height:32px;padding:0 12px;border-radius:8px;
+  border:1px solid var(--line-2);color:var(--text-2);
+}
+nav .lang:hover{border-color:var(--accent);color:var(--text)}
+
+article{padding:56px 0 40px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
+h1{font-size:clamp(30px,4.6vw,40px);line-height:1.14;font-weight:700;letter-spacing:-.032em;margin-top:14px}
+.meta{
+  margin-top:26px;padding:18px 20px;border:1px solid var(--line);border-radius:12px;
+  background:var(--surface);font-size:13.5px;color:var(--text-2);
+}
+.meta dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px}
+.meta dt{color:var(--text-3)}
+.meta dd{color:var(--text-2)}
+.todo{
+  font-family:var(--mono);font-size:12px;color:var(--accent);
+  background:rgba(233,169,58,.1);border:1px solid rgba(233,169,58,.3);
+  border-radius:6px;padding:1px 7px;
+}
+
+.lede{
+  margin-top:32px;padding:26px 26px 24px;border-radius:16px;
+  border:1px solid rgba(111,191,155,.32);
+  background:linear-gradient(180deg,rgba(111,191,155,.08),transparent 70%);
+}
+.lede h2{margin-top:0;font-size:20px;font-weight:600;letter-spacing:-.02em;line-height:1.35}
+.lede p{margin-top:12px;font-size:15px;color:var(--text-2)}
+
+h2{margin-top:52px;font-size:22px;font-weight:600;letter-spacing:-.022em;line-height:1.32}
+h2 .num{font-family:var(--mono);font-size:13px;color:var(--accent);margin-right:9px;letter-spacing:.04em}
+h3{margin-top:28px;font-size:15.5px;font-weight:600;color:var(--text)}
+p{margin-top:14px;font-size:15.5px;color:var(--text-2)}
+ul{margin-top:14px;padding-left:20px}
+li{margin-top:8px;font-size:15.5px;color:var(--text-2)}
+li::marker{color:var(--text-3)}
+strong{color:var(--text);font-weight:600}
+a{color:var(--accent)}
+code{font-family:var(--mono);font-size:13.5px;color:var(--text)}
+
+table{width:100%;border-collapse:collapse;margin-top:18px;font-size:14.5px}
+th,td{text-align:left;vertical-align:top;padding:11px 14px;border-bottom:1px solid var(--line)}
+th{color:var(--text-3);font-weight:500;font-family:var(--mono);font-size:11.5px;letter-spacing:.09em;text-transform:uppercase}
+td{color:var(--text-2)}
+td:first-child{color:var(--text);width:34%}
+.scroller{overflow-x:auto}
+
+footer{border-top:1px solid var(--line);margin-top:64px;padding:34px 0 64px;color:var(--text-3);font-size:13px}
+footer .wrap{max-width:1040px}
+footer .row{display:flex;gap:22px;flex-wrap:wrap;align-items:center}
+footer a{color:var(--text-2);text-decoration:none}
+footer a:hover{color:var(--text)}
+
+@media (max-width:620px){
+  .meta dl{grid-template-columns:1fr;gap:2px}
+  .meta dt{margin-top:10px}
+  td:first-child{width:auto}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 1024 1024" aria-hidden="true">
+      <defs>
+        <linearGradient id="up" x1="0" y1="166" x2="0" y2="486" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F7C24B"/><stop offset="1" stop-color="#E9A93A"/></linearGradient>
+        <linearGradient id="lo" x1="0" y1="538" x2="0" y2="858" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C8CED7"/><stop offset="1" stop-color="#7D8796"/></linearGradient>
+      </defs>
+      <g fill="url(#up)"><path d="M160 486v-60a40 40 0 0 1 80 0v60z"/><path d="M260 486V356a40 40 0 0 1 80 0v130z"/><path d="M360 486V276a40 40 0 0 1 80 0v210z"/><path d="M460 486V206a40 40 0 0 1 80 0v280z"/><path d="M560 486V276a40 40 0 0 1 80 0v210z"/><path d="M660 486V356a40 40 0 0 1 80 0v130z"/><path d="M760 486v-60a40 40 0 0 1 80 0v60z"/></g>
+      <g fill="url(#lo)"><path d="M160 538h80v60a40 40 0 0 1-80 0z"/><path d="M260 538h80v130a40 40 0 0 1-80 0z"/><path d="M360 538h80v210a40 40 0 0 1-80 0z"/><path d="M460 538h80v280a40 40 0 0 1-80 0z"/><path d="M560 538h80v210a40 40 0 0 1-80 0z"/><path d="M660 538h80v130a40 40 0 0 1-80 0z"/><path d="M760 538h80v60a40 40 0 0 1-80 0z"/></g>
+    </svg>
+    <a class="wordmark" href="./" style="color:var(--text);text-decoration:none;font-size:16.5px">VocalOut</a>
+    <span class="spacer"></span>
+  </div>
+</nav>
+
+<article>
+  <div class="wrap">
+    <p class="eyebrow">Legal · Open source</p>
+    <h1>FFmpeg source and relinking</h1>
+
+    <div class="meta">
+      <dl>
+        <dt>Component</dt><dd>FFmpeg</dd>
+        <dt>License</dt><dd>LGPL-2.1-or-later</dd>
+        <dt>Copyright</dt><dd>Copyright (c) 2000&ndash;2024 the FFmpeg developers</dd>
+        <dt>Upstream</dt><dd><a href="https://ffmpeg.org/">ffmpeg.org</a></dd>
+      </dl>
+    </div>
+
+    <div class="lede">
+      <h2>What this page is for</h2>
+      <p>
+        VocalOut uses FFmpeg to decode the songs you import and to encode the
+        tracks it produces. FFmpeg is free software, and its license gives you
+        the right to modify it and to run VocalOut against your modified copy.
+        This page exists so you can actually do that.
+      </p>
+    </div>
+
+    <h2><span class="num">1</span>What is in the app</h2>
+    <p>
+      VocalOut links only the LGPL parts of FFmpeg. The build is configured
+      <strong>without</strong> <code>--enable-gpl</code> and
+      <strong>without</strong> <code>--enable-nonfree</code>, so no GPL-only or
+      non-redistributable component is present. Only the modules the app
+      actually needs are enabled:
+      <code>avformat</code>, <code>avcodec</code>, <code>avutil</code> and
+      <code>swresample</code>, with networking, filters and command-line
+      programs all disabled.
+    </p>
+
+    <h2><span class="num">2</span>Android &mdash; replace the libraries</h2>
+    <p>
+      On Android, FFmpeg is built as separate shared libraries
+      (<code>--enable-shared --disable-static</code>) and loaded at run time.
+      You can build your own FFmpeg with the same soname and ABI and replace
+      the <code>lib*.so</code> files inside the APK. Nothing further is needed
+      from us for this platform.
+    </p>
+
+    <h2><span class="num">3</span>iOS &mdash; written offer to relink</h2>
+    <p>
+      On iOS, FFmpeg is linked statically. To be precise about why: iOS does
+      let an app embed and load its own dynamic frameworks, so a shared build
+      is technically possible. It would not help you, though. An installed iOS
+      app is code-signed as a unit, so you cannot drop a modified
+      <code>libavcodec</code> into it &mdash; the signature no longer matches
+      and the app refuses to launch. A shared library mechanism therefore
+      cannot satisfy the second condition of LGPL section 6(b), which requires
+      that the program <em>&ldquo;operate properly with a modified version of
+      the library, if the user installs one&rdquo;</em>.
+    </p>
+    <p>
+      What does work on this platform is relinking, so we take the option the
+      LGPL gives in subsection 6(c):
+    </p>
+    <p>
+      <strong>
+        For three years from the release date of any published version of
+        VocalOut, we will supply, to anyone who asks, the complete
+        machine-readable FFmpeg source we used, the exact
+        <code>configure</code> options we passed, and the VocalOut application
+        object files needed to relink the app against a modified FFmpeg.
+      </strong>
+      We charge no more than the cost of performing the distribution.
+    </p>
+    <p>
+      Write to
+      <a href="mailto:grayforge.dev@gmail.com">grayforge.dev@gmail.com</a> and
+      say which version of the app you are asking about. The archive for each
+      released version is built and kept at release time, so naming the version
+      is all we need to send you the right one.
+    </p>
+    <p>
+      With those materials you can build your own FFmpeg, link it against the
+      supplied object files, and sign the result with your own Apple developer
+      account &mdash; which is the only way anyone, including us, can install a
+      modified build on an iOS device.
+    </p>
+
+    <h2><span class="num">4</span>Build recipe</h2>
+    <p>
+      The archive we send includes the scripts that produced these libraries,
+      so you can reproduce the build rather than reconstruct it from a
+      description:
+    </p>
+    <ul>
+      <li><code>bootstrap_ios.sh</code> &mdash; iOS, static</li>
+      <li><code>bootstrap_android.sh</code> &mdash; Android, shared</li>
+      <li><code>config.log</code> &mdash; FFmpeg's own record of the configuration,
+          which is authoritative if it ever disagrees with the scripts</li>
+    </ul>
+
+    <h2><span class="num">5</span>License text</h2>
+    <p>
+      The full text of the GNU Lesser General Public License, version 2.1, is
+      published at
+      <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">gnu.org</a>
+      and is included in the FFmpeg source referenced above.
+    </p>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span class="wordmark" style="font-size:14.5px">VocalOut</span>
+      <span style="flex:1"></span>
+      <a href="./">Home</a>
+      <a href="privacy_policy.html">Privacy</a>
+      <a href="terms_of_service.html">Terms</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

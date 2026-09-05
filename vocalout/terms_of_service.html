@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service — VocalOut</title>
+<meta name="description" content="The terms you agree to when you use VocalOut, including what you are responsible for when you separate a recording you did not create.">
+<meta name="theme-color" content="#0C0E11">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* 랜딩과 같은 토큰. 법적 문서라고 다른 물건처럼 보일 이유는 없다.
+   원본은 docs/design-tokens.html. */
+:root{
+  --bg:#0C0E11; --surface:#15181C; --surface-2:#1C2026;
+  --line:#333944; --line-2:#434A57;
+  --text:#ECEEF1; --text-2:#A2AAB4; --text-3:#848B95;
+  --accent:#E9A93A; --on-accent:#100C04; --ok:#6FBF9B;
+  --sans:Inter,Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --mono:"SFMono-Regular",Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+
+nav{position:sticky;top:0;z-index:30;background:rgba(12,14,17,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{max-width:1040px;display:flex;align-items:center;gap:11px;height:60px}
+nav .mark{width:23px;height:23px;flex:none}
+.wordmark{font-size:16.5px;font-weight:600;letter-spacing:-.01em}
+nav .spacer{flex:1}
+nav a{color:var(--text-2);text-decoration:none;font-size:13.5px}
+nav a:hover{color:var(--text)}
+nav .lang{
+  display:inline-flex;align-items:center;height:32px;padding:0 12px;border-radius:8px;
+  border:1px solid var(--line-2);color:var(--text-2);
+}
+nav .lang:hover{border-color:var(--accent);color:var(--text)}
+
+article{padding:56px 0 40px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
+h1{font-size:clamp(30px,4.6vw,40px);line-height:1.14;font-weight:700;letter-spacing:-.032em;margin-top:14px}
+.meta{
+  margin-top:26px;padding:18px 20px;border:1px solid var(--line);border-radius:12px;
+  background:var(--surface);font-size:13.5px;color:var(--text-2);
+}
+.meta dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px}
+.meta dt{color:var(--text-3)}
+.meta dd{color:var(--text-2)}
+.todo{
+  font-family:var(--mono);font-size:12px;color:var(--accent);
+  background:rgba(233,169,58,.1);border:1px solid rgba(233,169,58,.3);
+  border-radius:6px;padding:1px 7px;
+}
+
+.lede{
+  margin-top:32px;padding:26px 26px 24px;border-radius:16px;
+  border:1px solid rgba(111,191,155,.32);
+  background:linear-gradient(180deg,rgba(111,191,155,.08),transparent 70%);
+}
+.lede h2{margin-top:0;font-size:20px;font-weight:600;letter-spacing:-.02em;line-height:1.35}
+.lede p{margin-top:12px;font-size:15px;color:var(--text-2)}
+
+h2{margin-top:52px;font-size:22px;font-weight:600;letter-spacing:-.022em;line-height:1.32}
+h2 .num{font-family:var(--mono);font-size:13px;color:var(--accent);margin-right:9px;letter-spacing:.04em}
+h3{margin-top:28px;font-size:15.5px;font-weight:600;color:var(--text)}
+p{margin-top:14px;font-size:15.5px;color:var(--text-2)}
+ul{margin-top:14px;padding-left:20px}
+li{margin-top:8px;font-size:15.5px;color:var(--text-2)}
+li::marker{color:var(--text-3)}
+strong{color:var(--text);font-weight:600}
+a{color:var(--accent)}
+code{font-family:var(--mono);font-size:13.5px;color:var(--text)}
+
+table{width:100%;border-collapse:collapse;margin-top:18px;font-size:14.5px}
+th,td{text-align:left;vertical-align:top;padding:11px 14px;border-bottom:1px solid var(--line)}
+th{color:var(--text-3);font-weight:500;font-family:var(--mono);font-size:11.5px;letter-spacing:.09em;text-transform:uppercase}
+td{color:var(--text-2)}
+td:first-child{color:var(--text);width:34%}
+.scroller{overflow-x:auto}
+
+footer{border-top:1px solid var(--line);margin-top:64px;padding:34px 0 64px;color:var(--text-3);font-size:13px}
+footer .wrap{max-width:1040px}
+footer .row{display:flex;gap:22px;flex-wrap:wrap;align-items:center}
+footer a{color:var(--text-2);text-decoration:none}
+footer a:hover{color:var(--text)}
+
+@media (max-width:620px){
+  .meta dl{grid-template-columns:1fr;gap:2px}
+  .meta dt{margin-top:10px}
+  td:first-child{width:auto}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 1024 1024" aria-hidden="true">
+      <defs>
+        <linearGradient id="up" x1="0" y1="166" x2="0" y2="486" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F7C24B"/><stop offset="1" stop-color="#E9A93A"/></linearGradient>
+        <linearGradient id="lo" x1="0" y1="538" x2="0" y2="858" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C8CED7"/><stop offset="1" stop-color="#7D8796"/></linearGradient>
+      </defs>
+      <g fill="url(#up)"><path d="M160 486v-60a40 40 0 0 1 80 0v60z"/><path d="M260 486V356a40 40 0 0 1 80 0v130z"/><path d="M360 486V276a40 40 0 0 1 80 0v210z"/><path d="M460 486V206a40 40 0 0 1 80 0v280z"/><path d="M560 486V276a40 40 0 0 1 80 0v210z"/><path d="M660 486V356a40 40 0 0 1 80 0v130z"/><path d="M760 486v-60a40 40 0 0 1 80 0v60z"/></g>
+      <g fill="url(#lo)"><path d="M160 538h80v60a40 40 0 0 1-80 0z"/><path d="M260 538h80v130a40 40 0 0 1-80 0z"/><path d="M360 538h80v210a40 40 0 0 1-80 0z"/><path d="M460 538h80v280a40 40 0 0 1-80 0z"/><path d="M560 538h80v210a40 40 0 0 1-80 0z"/><path d="M660 538h80v130a40 40 0 0 1-80 0z"/><path d="M760 538h80v60a40 40 0 0 1-80 0z"/></g>
+    </svg>
+    <a class="wordmark" href="./" style="color:var(--text);text-decoration:none;font-size:16.5px">VocalOut</a>
+    <span class="spacer"></span>
+  </div>
+</nav>
+
+<article>
+  <div class="wrap">
+    <p class="eyebrow">Legal</p>
+    <h1>Terms of Service</h1>
+
+    <div class="meta">
+      <dl>
+        <dt>Effective</dt><dd>2026-09-05</dd>
+        <dt>Last updated</dt><dd>2026-09-05</dd>
+        <dt>Developer</dt><dd>GrayForge</dd>
+        <dt>Contact</dt><dd><a href="mailto:grayforge.dev@gmail.com">grayforge.dev@gmail.com</a></dd>
+      </dl>
+    </div>
+
+    <h2><span class="num">1</span>Agreement</h2>
+    <p>By downloading or using VocalOut ("the app"), you agree to these Terms. If you do not agree, do not use the app.</p>
+    <h2><span class="num">2</span>What the app does</h2>
+    <p>VocalOut separates a music file you already have on your device into an instrumental track and a vocal track. All processing happens on your device.</p>
+    <p><strong>VocalOut does not provide, host, sell, stream, or help you obtain any music.</strong> It has no connection to any streaming or music service, and it cannot download audio from the internet. You supply the file; the app processes it.</p>
+    <h2><span class="num">3</span>Your content and your responsibility</h2>
+    <p>You are solely responsible for the files you process.</p>
+    <p>By using the app you confirm that, for every file you process, you <strong>own it or otherwise have the right to make a copy of it and to create a derivative version of it</strong> for your intended use.</p>
+    <p>Separating a recording creates a derivative work. Owning a copy of a recording does not by itself grant you the right to publish, distribute, perform publicly, monetize, or otherwise exploit a separated version of it. Those rights normally belong to the rights holders of the recording and the underlying composition. <strong>If you intend to use a result publicly or commercially, it is your responsibility to obtain the necessary permissions.</strong></p>
+    <p>We do not review, monitor, or have any access to what you process, because the files never leave your device.</p>
+    <h2><span class="num">4</span>License to use the app</h2>
+    <p>We grant you a personal, non-transferable, non-exclusive license to use the app on devices you own or control, in accordance with the rules of the store you obtained it from.</p>
+    <p>You may not reverse engineer, decompile, or attempt to extract the machine learning model or other components of the app, except to the extent this restriction is prohibited by applicable law.</p>
+    <h2><span class="num">5</span>VocalOut Pro</h2>
+    <p>VocalOut is free to use for processing and playback without limits. <strong>VocalOut Pro</strong> is a one-time purchase that unlocks exporting results out of the app, additional export formats and settings, and batch processing.</p>
+    <ul>
+      <li>Pro is <strong>not a subscription</strong>. It does not renew and is not billed again.</li>
+      <li>Pro is tied to the store account used to purchase it, and can be restored on your other devices signed in to that account.</li>
+      <li>Purchases and refunds are handled entirely by the App Store or Google Play under their policies. We cannot issue refunds directly.</li>
+      <li>We may add new capabilities to Pro over time, and we may also release separate paid add-ons that are not included in Pro.</li>
+    </ul>
+    <h2><span class="num">6</span>No warranty on separation quality</h2>
+    <p>Vocal separation is performed by a machine learning model. <strong>Results vary depending on the recording</strong>, and some material — dense mixes, live recordings, heavy reverb, unusual production — may produce audible artifacts, leftover vocals, or damage to instruments.</p>
+    <p>The app is provided "as is". We do not warrant that a result will meet your expectations, be free of artifacts, or be suitable for any particular purpose. <strong>You can process and listen to as many files as you like before purchasing, and we recommend doing so.</strong></p>
+    <h2><span class="num">7</span>Device requirements and availability</h2>
+    <p>Processing is computationally demanding. Performance, processing time, and the maximum length of a file that can be processed depend on your device. Some older devices may not be supported.</p>
+    <p>We may change, suspend, or discontinue features of the app. We will not remove access to a capability you have already purchased except where required by law or by a store or platform requirement outside our control.</p>
+    <h2><span class="num">8</span>Limitation of liability</h2>
+    <p>To the maximum extent permitted by applicable law, we are not liable for any indirect, incidental, special, or consequential damages, or for loss of data, arising from your use of the app.</p>
+    <p>Nothing in these Terms limits liability that cannot be limited under applicable law, including your statutory consumer rights.</p>
+    <h2><span class="num">9</span>Privacy</h2>
+    <p>Our handling of data is described in the <a href="privacy_policy.html">Privacy Policy</a>, which forms part of these Terms.</p>
+    <h2><span class="num">10</span>Changes to these Terms</h2>
+    <p>We may update these Terms. If we do, we will update the date above and, for significant changes, notify you inside the app. Continuing to use the app after a change means you accept the updated Terms.</p>
+    <h2><span class="num">11</span>Governing law</h2>
+    <p>These Terms are governed by the laws of the Republic of Korea, without regard to conflict of law rules. This does not deprive you of the protection of mandatory consumer law in your country of residence.</p>
+    <h2><span class="num">12</span>Contact</h2>
+    <p>grayforge.dev@gmail.com</p>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span class="wordmark" style="font-size:14.5px">VocalOut</span>
+      <span style="flex:1"></span>
+      <a href="./">Home</a>
+      <a href="privacy_policy.html">Privacy</a>
+      <a href="ffmpeg.html">FFmpeg source</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
