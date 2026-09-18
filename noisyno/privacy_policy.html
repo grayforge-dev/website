@@ -6,7 +6,6 @@
   <meta name="robots" content="index,follow" />
   <title>Privacy Policy — NoisyNo</title>
   <meta name="description" content="Privacy Policy for the NoisyNo mobile app by grayforge. On-device audio noise removal with minimal data collection." />
-  <link rel="canonical" href="https://grayforge.app/noisyno/privacy_policy.html" />
   <style>
     :root {
       --bg: #ffffff;
@@ -168,7 +167,7 @@
       <p class="meta">
         <strong>Developer:</strong> grayforge ·
         <strong>Contact:</strong> <a href="mailto:grayforge.dev+noisyno@gmail.com">grayforge.dev+noisyno@gmail.com</a><br />
-        <strong>Last updated:</strong> May 28, 2026 · <strong>Effective:</strong> May 28, 2026
+        <strong>Last updated:</strong> September 18, 2026 · <strong>Effective:</strong> May 28, 2026
       </p>
     </header>
 
@@ -261,6 +260,13 @@
         <tr><td><code>file_renamed</code></td><td>(no parameters beyond the standard event metadata)</td></tr>
         <tr><td><code>feedback_email_copied</code></td><td>(no parameters)</td></tr>
         <tr><td><code>app_review_*</code></td><td>(in-app review prompt outcome, no identifying data)</td></tr>
+        <tr><td><code>turbo_option_tapped</code></td><td>screen the processing-mode picker was opened from (settings / preview / batch), whether you have Pro, and whether Turbo was selected or the speed test was opened</td></tr>
+        <tr><td><code>turbo_compare_opened</code></td><td>where the Turbo speed test was opened from</td></tr>
+        <tr><td><code>turbo_compare_started</code> / <code>turbo_compare_cancelled</code></td><td>whether it is a repeat test, the order the two modes ran in / the step it was stopped at</td></tr>
+        <tr><td><code>turbo_compare_completed</code></td><td>processing time of the bundled sample in each mode (milliseconds), the order they ran in, whether a saved result existed, and the result category (faster / about the same / slower) with the percentage of time saved</td></tr>
+        <tr><td><code>turbo_compare_failed</code></td><td><code>error_kind</code></td></tr>
+        <tr><td><code>turbo_compare_listened</code></td><td>which version of the bundled sample was played (original / Standard / Turbo)</td></tr>
+        <tr><td><code>turbo_turned_on</code></td><td>where Turbo was turned on</td></tr>
       </tbody>
     </table>
     <p>
