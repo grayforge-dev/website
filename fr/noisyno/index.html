@@ -67,9 +67,9 @@
       "url": "https://grayforge.app/noisyno/",
       "image": "https://grayforge.app/noisyno/assets/og-image.png",
       "isAccessibleForFree": true,
-      "softwareVersion": "1.4.0",
+      "softwareVersion": "1.6.2",
       "datePublished": "2026-06-02",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-09-28",
       "contentRating": "4+",
       "availableLanguage": [
         "en",
@@ -91,7 +91,9 @@
         "Compatible réunions, interviews, cours et audio de vidéos",
         "Comparaison entre audio original et audio nettoyé",
         "Normalisation du loudness",
-        "Export en M4A et WAV",
+        "Export de la vidéo nettoyée (Pro)",
+        "Traitement par lots (Pro)",
+        "Sortie M4A, WAV sans perte avec Pro",
         "Sans compte",
         "Sans abonnement"
       ],
@@ -123,7 +125,7 @@
       "name": "NoisyNo : application de suppression de bruit vocal — nettoyage audio hors ligne",
       "description": "Page produit NoisyNo en français. Une application qui supprime le bruit de fond des enregistrements et de l'audio des vidéos sur votre téléphone.",
       "inLanguage": "fr",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-09-29",
       "about": {
         "@id": "https://grayforge.app/noisyno/#app"
       },
@@ -165,7 +167,7 @@
           "name": "Faut-il un abonnement ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Non. La suppression de bruit est gratuite et il n'y a pas d'abonnement. La normalisation du loudness est une fonction Pro, débloquée par un achat unique dans l'application."
+            "text": "Non. La suppression de bruit est gratuite et il n'y a pas d'abonnement. Pro est un achat unique dans l'application qui ajoute l'export de la vidéo nettoyée, le traitement par lots, la normalisation du loudness, l'export WAV sans perte et le découpage avant nettoyage."
           }
         },
         {
@@ -173,7 +175,7 @@
           "name": "Quels formats de fichiers sont pris en charge ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Entrée : WAV, MP3, M4A, FLAC, MP4, MOV et M4V. Sur Android, également OGG, Opus, 3GP et 3GPP. Sortie : M4A (AAC) et WAV (16 bits)."
+            "text": "En entrée : WAV, MP3, M4A, FLAC, MP4, MOV et M4V, ainsi que OGG, Opus, 3GP et 3GPP sur Android. L'audio nettoyé est enregistré en M4A (AAC) ; Pro ajoute le WAV sans perte (16 bits) et la vidéo nettoyée."
           }
         },
         {
@@ -369,7 +371,7 @@
       padding: 14px;
       box-shadow: var(--shadow);
     }
-    .phone img { width: 100%; display: block; border-radius: 25px; }
+    .phone img { width: 100%; height: auto; display: block; border-radius: 25px; }
     details {
       background: var(--surface);
       border: 1px solid var(--hairline);
@@ -404,6 +406,16 @@
       .wrap, .nav-inner { width: min(100% - 28px, 1120px); }
       .step { grid-template-columns: 1fr; }
     }
+    /* 15 s preview film: portrait iPhone cut on phones, landscape Mac cut on
+       wide screens. <source media> picks once at load, the box follows. */
+    .preview { text-align: center; }
+    .preview-inner { display: flex; flex-direction: column; align-items: center; }
+    .preview h2 { margin-bottom: 28px; }
+    .preview-video { width: 100%; max-width: 340px; aspect-ratio: 886 / 1920; border-radius: 28px;
+      overflow: hidden; background: #15100b; border: 1px solid var(--hairline); box-shadow: var(--shadow); }
+    .preview-video video { width: 100%; height: 100%; display: block; object-fit: cover; }
+    @media (min-width: 900px) { .preview-video { max-width: 960px; aspect-ratio: 16 / 9; border-radius: 22px; } }
+    .preview-hint { margin: 14px 0 0; color: var(--muted); font-size: 14px; }
   </style>
 </head>
 <body>
@@ -434,13 +446,30 @@
           <a class="btn primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web_fr&amp;mt=8" rel="noopener">Télécharger sur l'App Store</a>
           <a class="btn" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dreferral%26utm_campaign%3Dnoisyno_fr_landing" rel="noopener">Télécharger sur Google Play</a>
         </div>
-        <p class="micro">Téléchargement gratuit · Suppression de bruit gratuite · Sans abonnement · La normalisation Pro est un achat unique</p>
+        <p class="micro">Téléchargement gratuit · Suppression de bruit gratuite · Sans abonnement · Pro est un achat unique</p>
         <div class="trust" aria-label="Points forts de NoisyNo">
           <div class="pill">Fonctionne hors ligne</div>
           <div class="pill">Aucun envoi de fichier</div>
           <div class="pill">Sans compte ni connexion</div>
           <div class="pill">Pour iOS, macOS et Android</div>
         </div>
+      </div>
+    </section>
+
+    <section class="preview">
+      <div class="wrap preview-inner">
+        <span class="eyebrow">Aperçu de 15 secondes</span>
+        <h2>Le bruit part. La voix reste.</h2>
+        <div class="preview-video">
+          <video muted loop playsinline preload="metadata" controls data-visible-autoplay
+                 data-poster-wide="../../noisyno/assets/preview/noisyno-preview-mac.jpg"
+                 data-poster-narrow="../../noisyno/assets/preview/noisyno-preview-iphone.jpg"
+                 aria-label="Vidéo d'aperçu de NoisyNo">
+            <source src="../../noisyno/assets/preview/noisyno-preview-mac.mp4" type="video/mp4" media="(min-width: 900px)" />
+            <source src="../../noisyno/assets/preview/noisyno-preview-iphone.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <p class="preview-hint">Activez le son pour entendre disparaître le bruit du café.</p>
       </div>
     </section>
 
@@ -464,7 +493,7 @@
           </article>
           <article class="card">
             <h3>Sans abonnement</h3>
-            <p>La suppression de bruit est gratuite et il n'y a pas d'abonnement. Pour la normalisation du loudness, débloquez Pro par un achat unique.</p>
+            <p>La suppression de bruit est gratuite et il n'y a pas d'abonnement. Avec Pro, un achat unique, vous exportez la vidéo nettoyée, traitez par lots et normalisez le loudness.</p>
           </article>
         </div>
       </div>
@@ -480,7 +509,7 @@
           </p>
         </div>
         <div class="phone">
-          <img src="../../noisyno/assets/screenshots/04_compare.png" alt="Écran de NoisyNo comparant l'audio original et l'audio nettoyé" loading="lazy" />
+          <img src="../../noisyno/assets/screenshots/app/fr/01_compare.webp" width="660" height="1434" alt="Écran de NoisyNo avec le sélecteur Original / Cleaned au-dessus de la forme d'onde pour comparer l'audio original et nettoyé" loading="lazy" />
         </div>
       </div>
     </section>
@@ -507,7 +536,7 @@
           <div class="step">
             <div>
               <h3>Comparez l'original au résultat, puis enregistrez</h3>
-              <p>Basculez entre Original et Cleaned au même endroit, puis enregistrez ou partagez le résultat en M4A (AAC) ou WAV (16 bits).</p>
+              <p>Passez d'Original à Cleaned au même endroit, puis enregistrez ou partagez le résultat en M4A (AAC). Avec Pro, enregistrez en WAV sans perte ou directement la vidéo nettoyée.</p>
             </div>
           </div>
         </div>
@@ -534,7 +563,7 @@
           </article>
           <article class="card">
             <h3>Audio de vidéos</h3>
-            <p>Extrayez l'audio des vidéos compatibles, supprimez le bruit et enregistrez-le comme fichier audio.</p>
+            <p>Déposez un MP4 ou un MOV : le son est nettoyé sur l'appareil. Avec Pro, vous récupérez le même clip en vidéo ; sinon, vous gardez l'audio nettoyé.</p>
           </article>
         </div>
       </div>
@@ -584,11 +613,11 @@
         </details>
         <details>
           <summary>Faut-il un abonnement ?</summary>
-          <p>Non. La suppression de bruit est gratuite et il n'y a pas d'abonnement. La normalisation du loudness est une fonction Pro, débloquée par un achat unique dans l'application.</p>
+          <p>Non. La suppression de bruit est gratuite et il n'y a pas d'abonnement. Pro est un achat unique dans l'application qui ajoute l'export de la vidéo nettoyée, le traitement par lots, la normalisation du loudness, l'export WAV sans perte et le découpage avant nettoyage.</p>
         </details>
         <details>
           <summary>Quels formats de fichiers sont pris en charge ?</summary>
-          <p>Entrée : WAV, MP3, M4A, FLAC, MP4, MOV et M4V. Sur Android, également OGG, Opus, 3GP et 3GPP. Sortie : M4A (AAC) et WAV (16 bits).</p>
+          <p>En entrée : WAV, MP3, M4A, FLAC, MP4, MOV et M4V, ainsi que OGG, Opus, 3GP et 3GPP sur Android. L'audio nettoyé est enregistré en M4A (AAC) ; Pro ajoute le WAV sans perte (16 bits) et la vidéo nettoyée.</p>
         </details>
         <details>
           <summary>Aucune donnée personnelle ou de diagnostic n'est-elle collectée ?</summary>
@@ -637,5 +666,29 @@
       <span>&copy; 2026 grayforge</span>
     </div>
   </footer>
+  <script>
+    (() => {
+      const video = document.querySelector("video[data-visible-autoplay]");
+      if (!video) return;
+      const wide = window.matchMedia("(min-width: 900px)").matches;
+      video.poster = wide ? video.dataset.posterWide : video.dataset.posterNarrow;
+      let userPaused = false, automated = false, visible = false;
+      const play = () => {
+        if (!visible || document.hidden || userPaused) return;
+        automated = true;
+        Promise.resolve(video.play()).catch(() => {}).finally(() => { automated = false; });
+      };
+      const pause = () => { if (!video.paused) { automated = true; video.pause(); setTimeout(() => { automated = false; }, 150); } };
+      video.addEventListener("pause", () => { if (!automated && visible) userPaused = true; });
+      video.addEventListener("play", () => { if (!automated) userPaused = false; });
+      document.addEventListener("visibilitychange", () => (document.hidden ? pause() : play()));
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(([e]) => {
+          visible = e.isIntersecting && e.intersectionRatio >= 0.55;
+          visible ? play() : pause();
+        }, { threshold: [0, 0.25, 0.55, 0.8] }).observe(video);
+      } else { visible = true; play(); }
+    })();
+  </script>
 </body>
 </html>

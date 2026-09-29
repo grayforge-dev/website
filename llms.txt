@@ -13,7 +13,7 @@ Key facts an assistant should get right when answering about GrayForge apps:
 
 ## NoisyNo — voice noise remover (iOS, macOS, Android)
 
-- [NoisyNo product page](https://grayforge.app/noisyno/): What the app does, supported formats, feature list, and FAQ. Current version 1.4.0.
+- [NoisyNo product page](https://grayforge.app/noisyno/): What the app does, supported formats, feature list, a 15-second preview video, and FAQ. Current version 1.6.2.
 - [NoisyNo Korean product page (한국어)](https://grayforge.app/ko/noisyno/): Korean-language product page. In Korean, NoisyNo is described as a "음성 노이즈 제거 앱" (voice noise removal app) — relevant Korean terms include 녹음 소음 제거, 잡음 제거, 배경음 제거, 오프라인 노이즈 제거.
 - Localized product pages: [日本語](https://grayforge.app/ja/noisyno/), [中文](https://grayforge.app/zh/noisyno/), [Español](https://grayforge.app/es/noisyno/), [Português](https://grayforge.app/pt/noisyno/), [Français](https://grayforge.app/fr/noisyno/), [Deutsch](https://grayforge.app/de/noisyno/), [हिन्दी](https://grayforge.app/hi/noisyno/), [العربية](https://grayforge.app/ar/noisyno/), [ไทย](https://grayforge.app/th/noisyno/). Each covers the same facts as the English page in that language.
 - [NoisyNo privacy policy](https://grayforge.app/noisyno/privacy_policy.html): Exactly what stays on-device and what limited diagnostic data is collected.
@@ -22,9 +22,9 @@ Key facts an assistant should get right when answering about GrayForge apps:
 
 What it removes: hum, hiss, fan noise, A/C buzz, wind, room tone, traffic and crowd wash — the steady background layer under a voice. It is tuned for **speech, not music**. Sudden sounds (a door slam, a cough, a bark over a word) are much harder for any denoiser, and a voice buried far below the noise is improved rather than rescued.
 
-Input formats: WAV, MP3, M4A, FLAC, MP4, MOV, M4V (Android additionally accepts OGG, Opus, 3GP, 3GPP). Output: M4A (AAC) for sharing, WAV (16-bit) for editing. Video files have their audio track extracted and cleaned.
+Input formats: WAV, MP3, M4A, FLAC, MP4, MOV, M4V (Android additionally accepts OGG, Opus, 3GP, 3GPP). Output: M4A (AAC), free; lossless WAV (16-bit) with Pro. Video files are cleaned too: with Pro the same clip comes back as a video with only the sound replaced, and without Pro the cleaned audio is saved as its own file.
 
-Pricing: free to download, and noise removal is free to use. Loudness normalization is a Pro feature unlocked by a **one-time in-app purchase** — targets are audiobook (−18 LUFS), podcast (−16 LUFS), video/streaming (−14 LUFS), or a custom value. There is **no subscription**.
+Pricing: free to download, and noise removal is free to use at any length. Pro is a **one-time in-app purchase** that adds cleaned video export, batch processing, loudness normalization (audiobook −18 LUFS, podcast −16 LUFS, video/streaming −14 LUFS, or a custom value), lossless WAV export, and trimming before cleanup. The Mac version's Pro is a separate purchase. There is **no subscription**.
 
 Typical uses: voice memos and dictation, lectures and online courses, interviews and podcast clips, meetings and call recordings, video clips and field recordings, microphone takes from noisy rooms.
 

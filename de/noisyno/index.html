@@ -67,9 +67,9 @@
       "url": "https://grayforge.app/noisyno/",
       "image": "https://grayforge.app/noisyno/assets/og-image.png",
       "isAccessibleForFree": true,
-      "softwareVersion": "1.4.0",
+      "softwareVersion": "1.6.2",
       "datePublished": "2026-06-02",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-09-28",
       "contentRating": "4+",
       "availableLanguage": [
         "en",
@@ -91,7 +91,9 @@
         "Geeignet für Meetings, Interviews, Vorlesungen und Video-Audio",
         "Vergleich von Original und bereinigtem Audio",
         "Loudness-Normalisierung",
-        "Ausgabe als M4A und WAV",
+        "Export des bereinigten Videos (Pro)",
+        "Stapelverarbeitung (Pro)",
+        "M4A-Ausgabe, verlustfreies WAV mit Pro",
         "Kein Konto",
         "Kein Abo"
       ],
@@ -123,7 +125,7 @@
       "name": "NoisyNo: App zum Entfernen von Stimmrauschen — Audio-Bereinigung offline",
       "description": "NoisyNo-Produktseite auf Deutsch. Eine App, die Hintergrundgeräusche aus Aufnahmen und Video-Audio direkt auf dem Smartphone entfernt.",
       "inLanguage": "de",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-09-29",
       "about": {
         "@id": "https://grayforge.app/noisyno/#app"
       },
@@ -165,7 +167,7 @@
           "name": "Braucht es ein Abo?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nein. Die Rauschentfernung ist kostenlos, ein Abo gibt es nicht. Die Loudness-Normalisierung ist eine Pro-Funktion, die per einmaligem In-App-Kauf freigeschaltet wird."
+            "text": "Nein. Die Rauschentfernung ist kostenlos, ein Abo gibt es nicht. Pro ist ein einmaliger In-App-Kauf und bringt den Export des bereinigten Videos, Stapelverarbeitung, Loudness-Normalisierung, verlustfreien WAV-Export und Zuschneiden vor der Bereinigung."
           }
         },
         {
@@ -173,7 +175,7 @@
           "name": "Welche Dateiformate werden unterstützt?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Eingabe: WAV, MP3, M4A, FLAC, MP4, MOV und M4V. Unter Android zusätzlich OGG, Opus, 3GP und 3GPP. Ausgabe: M4A (AAC) und WAV (16 Bit)."
+            "text": "Eingabe: WAV, MP3, M4A, FLAC, MP4, MOV und M4V, unter Android zusätzlich OGG, Opus, 3GP und 3GPP. Bereinigtes Audio wird als M4A (AAC) gespeichert; mit Pro auch verlustfrei als WAV (16 Bit) und als bereinigtes Video."
           }
         },
         {
@@ -369,7 +371,7 @@
       padding: 14px;
       box-shadow: var(--shadow);
     }
-    .phone img { width: 100%; display: block; border-radius: 25px; }
+    .phone img { width: 100%; height: auto; display: block; border-radius: 25px; }
     details {
       background: var(--surface);
       border: 1px solid var(--hairline);
@@ -404,6 +406,16 @@
       .wrap, .nav-inner { width: min(100% - 28px, 1120px); }
       .step { grid-template-columns: 1fr; }
     }
+    /* 15 s preview film: portrait iPhone cut on phones, landscape Mac cut on
+       wide screens. <source media> picks once at load, the box follows. */
+    .preview { text-align: center; }
+    .preview-inner { display: flex; flex-direction: column; align-items: center; }
+    .preview h2 { margin-bottom: 28px; }
+    .preview-video { width: 100%; max-width: 340px; aspect-ratio: 886 / 1920; border-radius: 28px;
+      overflow: hidden; background: #15100b; border: 1px solid var(--hairline); box-shadow: var(--shadow); }
+    .preview-video video { width: 100%; height: 100%; display: block; object-fit: cover; }
+    @media (min-width: 900px) { .preview-video { max-width: 960px; aspect-ratio: 16 / 9; border-radius: 22px; } }
+    .preview-hint { margin: 14px 0 0; color: var(--muted); font-size: 14px; }
   </style>
 </head>
 <body>
@@ -434,13 +446,30 @@
           <a class="btn primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web_de&amp;mt=8" rel="noopener">Im App Store laden</a>
           <a class="btn" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dreferral%26utm_campaign%3Dnoisyno_de_landing" rel="noopener">Bei Google Play laden</a>
         </div>
-        <p class="micro">Kostenloser Download · Rauschentfernung kostenlos · Kein Abo · Pro-Loudness-Normalisierung als Einmalkauf</p>
+        <p class="micro">Kostenloser Download · Rauschentfernung kostenlos · Kein Abo · Pro als Einmalkauf</p>
         <div class="trust" aria-label="Wichtigste Vorteile von NoisyNo">
           <div class="pill">Funktioniert offline</div>
           <div class="pill">Kein Datei-Upload</div>
           <div class="pill">Kein Konto, kein Login</div>
           <div class="pill">Für iOS, macOS & Android</div>
         </div>
+      </div>
+    </section>
+
+    <section class="preview">
+      <div class="wrap preview-inner">
+        <span class="eyebrow">15 Sekunden Vorschau</span>
+        <h2>Rauschen weg. Stimme intakt.</h2>
+        <div class="preview-video">
+          <video muted loop playsinline preload="metadata" controls data-visible-autoplay
+                 data-poster-wide="../../noisyno/assets/preview/noisyno-preview-mac.jpg"
+                 data-poster-narrow="../../noisyno/assets/preview/noisyno-preview-iphone.jpg"
+                 aria-label="NoisyNo-Vorschauvideo">
+            <source src="../../noisyno/assets/preview/noisyno-preview-mac.mp4" type="video/mp4" media="(min-width: 900px)" />
+            <source src="../../noisyno/assets/preview/noisyno-preview-iphone.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <p class="preview-hint">Mit Ton abspielen und hören, wie der Café-Lärm verschwindet.</p>
       </div>
     </section>
 
@@ -464,7 +493,7 @@
           </article>
           <article class="card">
             <h3>Kein Abo</h3>
-            <p>Die Rauschentfernung ist kostenlos, ein Abo gibt es nicht. Wer Loudness-Normalisierung braucht, schaltet Pro per Einmalkauf frei.</p>
+            <p>Die Rauschentfernung ist kostenlos, ein Abo gibt es nicht. Pro, ein Einmalkauf, schaltet den Export des bereinigten Videos, Stapelverarbeitung und Loudness-Normalisierung frei.</p>
           </article>
         </div>
       </div>
@@ -480,7 +509,7 @@
           </p>
         </div>
         <div class="phone">
-          <img src="../../noisyno/assets/screenshots/04_compare.png" alt="NoisyNo-Bildschirm mit Vergleich von Original und bereinigtem Audio" loading="lazy" />
+          <img src="../../noisyno/assets/screenshots/app/de/01_compare.webp" width="660" height="1434" alt="NoisyNo-Bildschirm mit dem Umschalter Original / Cleaned über der Wellenform zum Vergleich von Original und bereinigtem Audio" loading="lazy" />
         </div>
       </div>
     </section>
@@ -507,7 +536,7 @@
           <div class="step">
             <div>
               <h3>Original und Ergebnis vergleichen, dann speichern</h3>
-              <p>An derselben Stelle zwischen Original und Cleaned umschalten und das Ergebnis als M4A (AAC) oder WAV (16 Bit) speichern oder teilen.</p>
+              <p>An derselben Stelle zwischen Original und Cleaned wechseln, dann das Ergebnis als M4A (AAC) speichern oder teilen. Mit Pro geht das auch als verlustfreies WAV oder direkt als bereinigtes Video.</p>
             </div>
           </div>
         </div>
@@ -534,7 +563,7 @@
           </article>
           <article class="card">
             <h3>Video-Audio</h3>
-            <p>Audio aus unterstützten Videodateien extrahieren, entrauschen und als Audiodatei speichern.</p>
+            <p>MP4 oder MOV hineingeben, der Ton wird auf dem Gerät bereinigt. Mit Pro kommt derselbe Clip als Video zurück, ohne Pro bleibt das bereinigte Audio.</p>
           </article>
         </div>
       </div>
@@ -584,11 +613,11 @@
         </details>
         <details>
           <summary>Braucht es ein Abo?</summary>
-          <p>Nein. Die Rauschentfernung ist kostenlos, ein Abo gibt es nicht. Die Loudness-Normalisierung ist eine Pro-Funktion, die per einmaligem In-App-Kauf freigeschaltet wird.</p>
+          <p>Nein. Die Rauschentfernung ist kostenlos, ein Abo gibt es nicht. Pro ist ein einmaliger In-App-Kauf und bringt den Export des bereinigten Videos, Stapelverarbeitung, Loudness-Normalisierung, verlustfreien WAV-Export und Zuschneiden vor der Bereinigung.</p>
         </details>
         <details>
           <summary>Welche Dateiformate werden unterstützt?</summary>
-          <p>Eingabe: WAV, MP3, M4A, FLAC, MP4, MOV und M4V. Unter Android zusätzlich OGG, Opus, 3GP und 3GPP. Ausgabe: M4A (AAC) und WAV (16 Bit).</p>
+          <p>Eingabe: WAV, MP3, M4A, FLAC, MP4, MOV und M4V, unter Android zusätzlich OGG, Opus, 3GP und 3GPP. Bereinigtes Audio wird als M4A (AAC) gespeichert; mit Pro auch verlustfrei als WAV (16 Bit) und als bereinigtes Video.</p>
         </details>
         <details>
           <summary>Werden wirklich keine persönlichen oder Diagnosedaten erfasst?</summary>
@@ -637,5 +666,29 @@
       <span>&copy; 2026 grayforge</span>
     </div>
   </footer>
+  <script>
+    (() => {
+      const video = document.querySelector("video[data-visible-autoplay]");
+      if (!video) return;
+      const wide = window.matchMedia("(min-width: 900px)").matches;
+      video.poster = wide ? video.dataset.posterWide : video.dataset.posterNarrow;
+      let userPaused = false, automated = false, visible = false;
+      const play = () => {
+        if (!visible || document.hidden || userPaused) return;
+        automated = true;
+        Promise.resolve(video.play()).catch(() => {}).finally(() => { automated = false; });
+      };
+      const pause = () => { if (!video.paused) { automated = true; video.pause(); setTimeout(() => { automated = false; }, 150); } };
+      video.addEventListener("pause", () => { if (!automated && visible) userPaused = true; });
+      video.addEventListener("play", () => { if (!automated) userPaused = false; });
+      document.addEventListener("visibilitychange", () => (document.hidden ? pause() : play()));
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(([e]) => {
+          visible = e.isIntersecting && e.intersectionRatio >= 0.55;
+          visible ? play() : pause();
+        }, { threshold: [0, 0.25, 0.55, 0.8] }).observe(video);
+      } else { visible = true; play(); }
+    })();
+  </script>
 </body>
 </html>

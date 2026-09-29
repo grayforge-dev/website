@@ -67,9 +67,9 @@
       "url": "https://grayforge.app/noisyno/",
       "image": "https://grayforge.app/noisyno/assets/og-image.png",
       "isAccessibleForFree": true,
-      "softwareVersion": "1.4.0",
+      "softwareVersion": "1.6.2",
       "datePublished": "2026-06-02",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-09-28",
       "contentRating": "4+",
       "availableLanguage": [
         "en",
@@ -91,7 +91,9 @@
         "会議録音・インタビュー・講義録音・動画音声に対応",
         "元の音声と処理後の音声を比較",
         "ラウドネス正規化",
-        "M4AとWAVで出力",
+        "処理済み動画の書き出し（Pro）",
+        "一括処理（Pro）",
+        "M4Aで出力、ProではロスレスWAV",
         "アカウント不要",
         "サブスクリプション不要"
       ],
@@ -123,7 +125,7 @@
       "name": "NoisyNo: 音声ノイズ除去アプリ — オフラインで録音ノイズを除去",
       "description": "NoisyNo日本語プロダクトページ。録音ファイルや動画音声の背景ノイズをスマートフォンの中で除去するアプリです。",
       "inLanguage": "ja",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-09-29",
       "about": {
         "@id": "https://grayforge.app/noisyno/#app"
       },
@@ -165,7 +167,7 @@
           "name": "サブスクリプションは必要ですか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "いいえ。ノイズ除去機能は無料で使え、サブスクリプションはありません。ラウドネス正規化はPro機能で、サブスクではなく1回限りのアプリ内購入で提供されます。"
+            "text": "いいえ。ノイズ除去は無料で、サブスクリプションはありません。Proは1回限りのアプリ内購入で、処理済み動画の書き出し、一括処理、ラウドネス正規化、ロスレスWAV書き出し、処理前のトリミングが加わります。"
           }
         },
         {
@@ -173,7 +175,7 @@
           "name": "どのファイル形式に対応していますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "入力はWAV、MP3、M4A、FLAC、MP4、MOV、M4Vに対応。AndroidではOGG、Opus、3GP、3GPPにも対応します。出力はM4A（AAC）とWAV（16-bit）です。"
+            "text": "入力はWAV、MP3、M4A、FLAC、MP4、MOV、M4Vに対応。AndroidではOGG、Opus、3GP、3GPPにも対応します。処理後の音声はM4A（AAC）で保存され、ProではロスレスのWAV（16-bit）と処理済み動画も書き出せます。"
           }
         },
         {
@@ -369,7 +371,7 @@
       padding: 14px;
       box-shadow: var(--shadow);
     }
-    .phone img { width: 100%; display: block; border-radius: 25px; }
+    .phone img { width: 100%; height: auto; display: block; border-radius: 25px; }
     details {
       background: var(--surface);
       border: 1px solid var(--hairline);
@@ -404,6 +406,16 @@
       .wrap, .nav-inner { width: min(100% - 28px, 1120px); }
       .step { grid-template-columns: 1fr; }
     }
+    /* 15 s preview film: portrait iPhone cut on phones, landscape Mac cut on
+       wide screens. <source media> picks once at load, the box follows. */
+    .preview { text-align: center; }
+    .preview-inner { display: flex; flex-direction: column; align-items: center; }
+    .preview h2 { margin-bottom: 28px; }
+    .preview-video { width: 100%; max-width: 340px; aspect-ratio: 886 / 1920; border-radius: 28px;
+      overflow: hidden; background: #15100b; border: 1px solid var(--hairline); box-shadow: var(--shadow); }
+    .preview-video video { width: 100%; height: 100%; display: block; object-fit: cover; }
+    @media (min-width: 900px) { .preview-video { max-width: 960px; aspect-ratio: 16 / 9; border-radius: 22px; } }
+    .preview-hint { margin: 14px 0 0; color: var(--muted); font-size: 14px; }
   </style>
 </head>
 <body>
@@ -434,13 +446,30 @@
           <a class="btn primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web_ja&amp;mt=8" rel="noopener">App Storeでダウンロード</a>
           <a class="btn" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dreferral%26utm_campaign%3Dnoisyno_ja_landing" rel="noopener">Google Playでダウンロード</a>
         </div>
-        <p class="micro">無料ダウンロード · ノイズ除去は無料 · サブスクなし · Proのラウドネス正規化は1回限りのアプリ内購入</p>
+        <p class="micro">無料ダウンロード · ノイズ除去は無料 · サブスクなし · Proは1回限りのアプリ内購入</p>
         <div class="trust" aria-label="NoisyNoの主な利点">
           <div class="pill">オフラインで使える</div>
           <div class="pill">ファイルのアップロードなし</div>
           <div class="pill">アカウント／ログイン不要</div>
           <div class="pill">iOS · macOS · Android対応</div>
         </div>
+      </div>
+    </section>
+
+    <section class="preview">
+      <div class="wrap preview-inner">
+        <span class="eyebrow">15秒のプレビュー</span>
+        <h2>ノイズは消え、声はそのまま。</h2>
+        <div class="preview-video">
+          <video muted loop playsinline preload="metadata" controls data-visible-autoplay
+                 data-poster-wide="../../noisyno/assets/preview/noisyno-preview-mac.jpg"
+                 data-poster-narrow="../../noisyno/assets/preview/noisyno-preview-iphone.jpg"
+                 aria-label="NoisyNoのプレビュー動画">
+            <source src="../../noisyno/assets/preview/noisyno-preview-mac.mp4" type="video/mp4" media="(min-width: 900px)" />
+            <source src="../../noisyno/assets/preview/noisyno-preview-iphone.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <p class="preview-hint">音をオンにすると、カフェの雑音が消える瞬間が聞こえます。</p>
       </div>
     </section>
 
@@ -464,7 +493,7 @@
           </article>
           <article class="card">
             <h3>サブスクなし</h3>
-            <p>ノイズ除去は無料で使え、サブスクリプションはありません。ラウドネス正規化が必要ならProを1回限りのアプリ内購入で解放できます。</p>
+            <p>ノイズ除去は無料で、サブスクリプションはありません。1回限りのアプリ内購入でProを解放すると、処理済み動画の書き出し、一括処理、ラウドネス正規化が使えます。</p>
           </article>
         </div>
       </div>
@@ -480,7 +509,7 @@
           </p>
         </div>
         <div class="phone">
-          <img src="../../noisyno/assets/screenshots/04_compare.png" alt="NoisyNoで元の音声と処理後の音声を比較する画面" loading="lazy" />
+          <img src="../../noisyno/assets/screenshots/app/ja/01_compare.webp" width="660" height="1434" alt="NoisyNoで波形の上のOriginal / Cleanedを切り替えて元の音声と処理後の音声を比較する画面" loading="lazy" />
         </div>
       </div>
     </section>
@@ -507,7 +536,7 @@
           <div class="step">
             <div>
               <h3>元の音声と結果を比べて保存します</h3>
-              <p>同じ位置でOriginal/Cleanedを切り替えて聴き比べ、結果をM4A（AAC）またはWAV（16-bit）で保存・共有できます。</p>
+              <p>同じ位置でOriginal/Cleanedを切り替えて聴き比べ、結果をM4A（AAC）で保存・共有します。ProならロスレスのWAVや、処理済みの動画そのものも保存できます。</p>
             </div>
           </div>
         </div>
@@ -534,7 +563,7 @@
           </article>
           <article class="card">
             <h3>動画の音声</h3>
-            <p>対応する動画ファイルから音声を取り出し、ノイズ除去してオーディオファイルとして保存します。</p>
+            <p>MP4やMOVを入れると、端末内で音声だけをきれいにします。Proなら同じ動画のまま受け取れ、Proがなくても処理済みの音声ファイルとして保存できます。</p>
           </article>
         </div>
       </div>
@@ -584,11 +613,11 @@
         </details>
         <details>
           <summary>サブスクリプションは必要ですか？</summary>
-          <p>いいえ。ノイズ除去機能は無料で使え、サブスクリプションはありません。ラウドネス正規化はPro機能で、サブスクではなく1回限りのアプリ内購入で提供されます。</p>
+          <p>いいえ。ノイズ除去は無料で、サブスクリプションはありません。Proは1回限りのアプリ内購入で、処理済み動画の書き出し、一括処理、ラウドネス正規化、ロスレスWAV書き出し、処理前のトリミングが加わります。</p>
         </details>
         <details>
           <summary>どのファイル形式に対応していますか？</summary>
-          <p>入力はWAV、MP3、M4A、FLAC、MP4、MOV、M4Vに対応。AndroidではOGG、Opus、3GP、3GPPにも対応します。出力はM4A（AAC）とWAV（16-bit）です。</p>
+          <p>入力はWAV、MP3、M4A、FLAC、MP4、MOV、M4Vに対応。AndroidではOGG、Opus、3GP、3GPPにも対応します。処理後の音声はM4A（AAC）で保存され、ProではロスレスのWAV（16-bit）と処理済み動画も書き出せます。</p>
         </details>
         <details>
           <summary>個人情報や診断データはまったく送られませんか？</summary>
@@ -637,5 +666,29 @@
       <span>&copy; 2026 grayforge</span>
     </div>
   </footer>
+  <script>
+    (() => {
+      const video = document.querySelector("video[data-visible-autoplay]");
+      if (!video) return;
+      const wide = window.matchMedia("(min-width: 900px)").matches;
+      video.poster = wide ? video.dataset.posterWide : video.dataset.posterNarrow;
+      let userPaused = false, automated = false, visible = false;
+      const play = () => {
+        if (!visible || document.hidden || userPaused) return;
+        automated = true;
+        Promise.resolve(video.play()).catch(() => {}).finally(() => { automated = false; });
+      };
+      const pause = () => { if (!video.paused) { automated = true; video.pause(); setTimeout(() => { automated = false; }, 150); } };
+      video.addEventListener("pause", () => { if (!automated && visible) userPaused = true; });
+      video.addEventListener("play", () => { if (!automated) userPaused = false; });
+      document.addEventListener("visibilitychange", () => (document.hidden ? pause() : play()));
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(([e]) => {
+          visible = e.isIntersecting && e.intersectionRatio >= 0.55;
+          visible ? play() : pause();
+        }, { threshold: [0, 0.25, 0.55, 0.8] }).observe(video);
+      } else { visible = true; play(); }
+    })();
+  </script>
 </body>
 </html>

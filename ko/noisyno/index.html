@@ -60,9 +60,9 @@
         "url": "https://grayforge.app/noisyno/",
         "image": "https://grayforge.app/noisyno/assets/og-image.png",
         "isAccessibleForFree": true,
-        "softwareVersion": "1.4.0",
+        "softwareVersion": "1.6.2",
         "datePublished": "2026-06-02",
-        "dateModified": "2026-07-29",
+        "dateModified": "2026-09-28",
         "contentRating": "4+",
         "availableLanguage": ["en", "ko", "ja", "zh", "es", "pt", "fr", "de", "hi", "ar", "th"],
         "featureList": [
@@ -72,7 +72,9 @@
           "회의 녹음, 인터뷰, 강의 녹음, 영상 오디오 지원",
           "원본과 정리된 오디오 비교",
           "라우드니스 정규화",
-          "M4A와 WAV 출력",
+          "정리된 영상 저장 (Pro)",
+          "일괄 처리 (Pro)",
+          "M4A 출력, Pro에서 무손실 WAV",
           "계정 없이 사용",
           "구독 없이 사용"
         ],
@@ -104,7 +106,7 @@
         "name": "NoisyNo: 음성 노이즈 제거 앱 — 오프라인 녹음 소음 제거",
         "description": "NoisyNo 한국어 제품 페이지. 녹음 파일과 영상 오디오의 배경 소음을 스마트폰 안에서 제거하는 앱입니다.",
         "inLanguage": "ko",
-        "dateModified": "2026-07-29",
+        "dateModified": "2026-09-29",
         "about": {"@id": "https://grayforge.app/noisyno/#app"},
         "publisher": {"@id": "https://grayforge.app/#organization"}
       },
@@ -142,7 +144,7 @@
             "name": "구독이 필요한가요?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "아니요. NoisyNo는 무료로 다운로드할 수 있고 노이즈 제거 기능은 무료로 사용할 수 있습니다. 라우드니스 정규화는 Pro 기능이며, 구독이 아니라 1회성 인앱 구매로 제공됩니다."
+              "text": "아니요. 노이즈 제거는 무료이고 구독은 없습니다. Pro는 1회성 인앱 구매로, 정리된 영상 저장, 일괄 처리, 라우드니스 정규화, 무손실 WAV 저장, 처리 전 구간 자르기를 추가합니다."
             }
           },
           {
@@ -150,7 +152,7 @@
             "name": "어떤 파일 형식을 지원하나요?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "WAV, MP3, M4A, FLAC, MP4, MOV, M4V 입력을 지원합니다. Android에서는 OGG, Opus, 3GP, 3GPP도 지원합니다. 출력은 M4A(AAC)와 WAV(16-bit)를 지원합니다."
+              "text": "입력은 WAV, MP3, M4A, FLAC, MP4, MOV, M4V를 지원하며, Android에서는 OGG, Opus, 3GP, 3GPP도 지원합니다. 정리된 오디오는 M4A(AAC)로 저장되고, Pro에서는 무손실 WAV(16-bit)와 정리된 영상도 저장할 수 있습니다."
             }
           },
           {
@@ -346,7 +348,7 @@
       padding: 14px;
       box-shadow: var(--shadow);
     }
-    .phone img { width: 100%; display: block; border-radius: 25px; }
+    .phone img { width: 100%; height: auto; display: block; border-radius: 25px; }
     details {
       background: var(--surface);
       border: 1px solid var(--hairline);
@@ -381,6 +383,16 @@
       .wrap, .nav-inner { width: min(100% - 28px, 1120px); }
       .step { grid-template-columns: 1fr; }
     }
+    /* 15 s preview film: portrait iPhone cut on phones, landscape Mac cut on
+       wide screens. <source media> picks once at load, the box follows. */
+    .preview { text-align: center; }
+    .preview-inner { display: flex; flex-direction: column; align-items: center; }
+    .preview h2 { margin-bottom: 28px; }
+    .preview-video { width: 100%; max-width: 340px; aspect-ratio: 886 / 1920; border-radius: 28px;
+      overflow: hidden; background: #15100b; border: 1px solid var(--hairline); box-shadow: var(--shadow); }
+    .preview-video video { width: 100%; height: 100%; display: block; object-fit: cover; }
+    @media (min-width: 900px) { .preview-video { max-width: 960px; aspect-ratio: 16 / 9; border-radius: 22px; } }
+    .preview-hint { margin: 14px 0 0; color: var(--muted); font-size: 14px; }
   </style>
 </head>
 <body>
@@ -413,13 +425,30 @@
           <a class="btn primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web_ko&amp;mt=8" rel="noopener">App Store에서 받기</a>
           <a class="btn" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dreferral%26utm_campaign%3Dnoisyno_ko_landing" rel="noopener">Google Play에서 받기</a>
         </div>
-        <p class="micro">무료 다운로드 · 노이즈 제거 무료 · 구독 없음 · Pro 라우드니스 정규화는 1회성 인앱 구매</p>
+        <p class="micro">무료 다운로드 · 노이즈 제거 무료 · 구독 없음 · Pro는 1회성 인앱 구매</p>
         <div class="trust" aria-label="NoisyNo 핵심 장점">
           <div class="pill">오프라인 사용 가능</div>
           <div class="pill">파일 업로드 없음</div>
           <div class="pill">계정/로그인 없음</div>
           <div class="pill">iOS · macOS · Android</div>
         </div>
+      </div>
+    </section>
+
+    <section class="preview">
+      <div class="wrap preview-inner">
+        <span class="eyebrow">15초 미리보기</span>
+        <h2>소음만 걷어내고 목소리는 그대로.</h2>
+        <div class="preview-video">
+          <video muted loop playsinline preload="metadata" controls data-visible-autoplay
+                 data-poster-wide="../../noisyno/assets/preview/noisyno-preview-mac.jpg"
+                 data-poster-narrow="../../noisyno/assets/preview/noisyno-preview-iphone.jpg"
+                 aria-label="NoisyNo 미리보기 영상">
+            <source src="../../noisyno/assets/preview/noisyno-preview-mac.mp4" type="video/mp4" media="(min-width: 900px)" />
+            <source src="../../noisyno/assets/preview/noisyno-preview-iphone.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <p class="preview-hint">소리를 켜면 카페 소음이 사라지는 순간이 들립니다.</p>
       </div>
     </section>
 
@@ -445,7 +474,7 @@
           </article>
           <article class="card">
             <h3>구독 없음</h3>
-            <p>노이즈 제거는 무료로 사용할 수 있고 구독은 없습니다. 라우드니스 정규화가 필요하면 Pro를 1회성 인앱 구매로 열 수 있습니다.</p>
+            <p>노이즈 제거는 무료이고 구독은 없습니다. 1회성 인앱 구매인 Pro를 열면 정리된 영상 저장, 일괄 처리, 라우드니스 정규화를 쓸 수 있습니다.</p>
           </article>
         </div>
       </div>
@@ -463,7 +492,7 @@
           </p>
         </div>
         <div class="phone">
-          <img src="../../noisyno/assets/screenshots/04_compare.png" alt="NoisyNo에서 원본과 정리된 오디오를 비교하는 화면" loading="lazy" />
+          <img src="../../noisyno/assets/screenshots/app/ko/01_compare.webp" width="660" height="1434" alt="NoisyNo에서 파형 위의 Original / Cleaned를 바꿔 원본과 정리된 오디오를 비교하는 화면" loading="lazy" />
         </div>
       </div>
     </section>
@@ -490,7 +519,7 @@
           <div class="step">
             <div>
               <h3>원본과 결과를 비교한 뒤 저장합니다</h3>
-              <p>같은 위치에서 Original/Cleaned를 바꿔 들어보고, 결과를 M4A(AAC) 또는 WAV(16-bit)로 저장하거나 공유할 수 있습니다.</p>
+              <p>같은 위치에서 Original/Cleaned를 바꿔 들어본 뒤, 결과를 M4A(AAC)로 저장하거나 공유합니다. Pro에서는 무손실 WAV나 정리된 영상 그대로 저장할 수 있습니다.</p>
             </div>
           </div>
         </div>
@@ -518,7 +547,7 @@
           </article>
           <article class="card">
             <h3>영상 오디오</h3>
-            <p>지원되는 영상 파일에서 오디오를 뽑아 노이즈 제거 후 오디오 파일로 저장합니다.</p>
+            <p>MP4나 MOV를 넣으면 기기 안에서 소리만 정리합니다. Pro에서는 같은 영상을 그대로 돌려받고, Pro가 없으면 정리된 오디오 파일로 저장합니다.</p>
           </article>
         </div>
       </div>
@@ -568,11 +597,11 @@
         </details>
         <details>
           <summary>구독이 필요한가요?</summary>
-          <p>아니요. 노이즈 제거 기능은 무료로 사용할 수 있고 구독은 없습니다. 라우드니스 정규화는 Pro 기능이며 1회성 인앱 구매로 제공됩니다.</p>
+          <p>아니요. 노이즈 제거는 무료이고 구독은 없습니다. Pro는 1회성 인앱 구매로, 정리된 영상 저장, 일괄 처리, 라우드니스 정규화, 무손실 WAV 저장, 처리 전 구간 자르기를 추가합니다.</p>
         </details>
         <details>
           <summary>어떤 파일 형식을 지원하나요?</summary>
-          <p>WAV, MP3, M4A, FLAC, MP4, MOV, M4V 입력을 지원합니다. Android에서는 OGG, Opus, 3GP, 3GPP도 지원합니다. 출력은 M4A(AAC)와 WAV(16-bit)를 지원합니다.</p>
+          <p>입력은 WAV, MP3, M4A, FLAC, MP4, MOV, M4V를 지원하며, Android에서는 OGG, Opus, 3GP, 3GPP도 지원합니다. 정리된 오디오는 M4A(AAC)로 저장되고, Pro에서는 무손실 WAV(16-bit)와 정리된 영상도 저장할 수 있습니다.</p>
         </details>
         <details>
           <summary>개인정보나 진단 데이터는 전혀 없나요?</summary>
@@ -621,5 +650,29 @@
       <span>&copy; 2026 grayforge</span>
     </div>
   </footer>
+  <script>
+    (() => {
+      const video = document.querySelector("video[data-visible-autoplay]");
+      if (!video) return;
+      const wide = window.matchMedia("(min-width: 900px)").matches;
+      video.poster = wide ? video.dataset.posterWide : video.dataset.posterNarrow;
+      let userPaused = false, automated = false, visible = false;
+      const play = () => {
+        if (!visible || document.hidden || userPaused) return;
+        automated = true;
+        Promise.resolve(video.play()).catch(() => {}).finally(() => { automated = false; });
+      };
+      const pause = () => { if (!video.paused) { automated = true; video.pause(); setTimeout(() => { automated = false; }, 150); } };
+      video.addEventListener("pause", () => { if (!automated && visible) userPaused = true; });
+      video.addEventListener("play", () => { if (!automated) userPaused = false; });
+      document.addEventListener("visibilitychange", () => (document.hidden ? pause() : play()));
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(([e]) => {
+          visible = e.isIntersecting && e.intersectionRatio >= 0.55;
+          visible ? play() : pause();
+        }, { threshold: [0, 0.25, 0.55, 0.8] }).observe(video);
+      } else { visible = true; play(); }
+    })();
+  </script>
 </body>
 </html>

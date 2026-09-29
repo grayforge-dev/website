@@ -67,9 +67,9 @@
       "url": "https://grayforge.app/noisyno/",
       "image": "https://grayforge.app/noisyno/assets/og-image.png",
       "isAccessibleForFree": true,
-      "softwareVersion": "1.4.0",
+      "softwareVersion": "1.6.2",
       "datePublished": "2026-06-02",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-09-28",
       "contentRating": "4+",
       "availableLanguage": [
         "en",
@@ -91,7 +91,9 @@
         "يدعم تسجيلات الاجتماعات والمقابلات والمحاضرات وصوت الفيديو",
         "مقارنة الصوت الأصلي بالصوت المنظّف",
         "تسوية مستوى الصوت (Loudness)",
-        "إخراج بصيغتي M4A وWAV",
+        "تصدير الفيديو المنظّف (Pro)",
+        "المعالجة الدفعية (Pro)",
+        "إخراج M4A، وWAV بلا فقدان مع Pro",
         "بلا حساب",
         "بلا اشتراك"
       ],
@@ -123,7 +125,7 @@
       "name": "NoisyNo: تطبيق إزالة ضوضاء الصوت — تنظيف الصوت دون اتصال",
       "description": "صفحة منتج NoisyNo بالعربية. تطبيق يزيل الضوضاء الخلفية من التسجيلات وصوت الفيديو داخل هاتفك.",
       "inLanguage": "ar",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-09-29",
       "about": {
         "@id": "https://grayforge.app/noisyno/#app"
       },
@@ -165,7 +167,7 @@
           "name": "هل يتطلب اشتراكًا؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "لا. إزالة الضوضاء مجانية ولا توجد اشتراكات. تسوية مستوى الصوت ميزة Pro تُفتح بعملية شراء واحدة داخل التطبيق، وليست اشتراكًا."
+            "text": "لا. إزالة الضوضاء مجانية ولا توجد اشتراكات. أما Pro فهو شراء لمرة واحدة داخل التطبيق يضيف تصدير الفيديو المنظّف، والمعالجة الدفعية، وتسوية مستوى الصوت، وتصدير WAV بلا فقدان، والقص قبل التنظيف."
           }
         },
         {
@@ -173,7 +175,7 @@
           "name": "ما صيغ الملفات المدعومة؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "الإدخال: WAV وMP3 وM4A وFLAC وMP4 وMOV وM4V. وعلى Android أيضًا OGG وOpus و3GP و3GPP. الإخراج: M4A ‏(AAC) وWAV ‏(16-bit)."
+            "text": "الإدخال: WAV وMP3 وM4A وFLAC وMP4 وMOV وM4V، وعلى Android أيضًا OGG وOpus و3GP و3GPP. يُحفظ الصوت المنظّف بصيغة M4A (AAC)، ومع Pro يمكنك أيضًا تصدير WAV بلا فقدان (16-bit) والفيديو المنظّف."
           }
         },
         {
@@ -369,7 +371,7 @@
       padding: 14px;
       box-shadow: var(--shadow);
     }
-    .phone img { width: 100%; display: block; border-radius: 25px; }
+    .phone img { width: 100%; height: auto; display: block; border-radius: 25px; }
     details {
       background: var(--surface);
       border: 1px solid var(--hairline);
@@ -405,6 +407,16 @@
       .step { grid-template-columns: 1fr; }
     }
     [dir="rtl"] .card ul { padding-left: 0; padding-right: 20px; }
+    /* 15 s preview film: portrait iPhone cut on phones, landscape Mac cut on
+       wide screens. <source media> picks once at load, the box follows. */
+    .preview { text-align: center; }
+    .preview-inner { display: flex; flex-direction: column; align-items: center; }
+    .preview h2 { margin-bottom: 28px; }
+    .preview-video { width: 100%; max-width: 340px; aspect-ratio: 886 / 1920; border-radius: 28px;
+      overflow: hidden; background: #15100b; border: 1px solid var(--hairline); box-shadow: var(--shadow); }
+    .preview-video video { width: 100%; height: 100%; display: block; object-fit: cover; }
+    @media (min-width: 900px) { .preview-video { max-width: 960px; aspect-ratio: 16 / 9; border-radius: 22px; } }
+    .preview-hint { margin: 14px 0 0; color: var(--muted); font-size: 14px; }
   </style>
 </head>
 <body>
@@ -435,13 +447,30 @@
           <a class="btn primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web_ar&amp;mt=8" rel="noopener">التنزيل من App Store</a>
           <a class="btn" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dreferral%26utm_campaign%3Dnoisyno_ar_landing" rel="noopener">التنزيل من Google Play</a>
         </div>
-        <p class="micro">تنزيل مجاني · إزالة الضوضاء مجانية · بلا اشتراك · تسوية مستوى الصوت في Pro شراء لمرة واحدة</p>
+        <p class="micro">تنزيل مجاني · إزالة الضوضاء مجانية · بلا اشتراك · Pro شراء لمرة واحدة</p>
         <div class="trust" aria-label="أهم مزايا NoisyNo">
           <div class="pill">يعمل دون اتصال</div>
           <div class="pill">لا رفع للملفات</div>
           <div class="pill">بلا حساب أو تسجيل دخول</div>
           <div class="pill">لأجهزة iOS وmacOS وAndroid</div>
         </div>
+      </div>
+    </section>
+
+    <section class="preview">
+      <div class="wrap preview-inner">
+        <span class="eyebrow">معاينة في 15 ثانية</span>
+        <h2>الضجيج اختفى. الصوت سليم.</h2>
+        <div class="preview-video">
+          <video muted loop playsinline preload="metadata" controls data-visible-autoplay
+                 data-poster-wide="../../noisyno/assets/preview/noisyno-preview-mac.jpg"
+                 data-poster-narrow="../../noisyno/assets/preview/noisyno-preview-iphone.jpg"
+                 aria-label="فيديو معاينة NoisyNo">
+            <source src="../../noisyno/assets/preview/noisyno-preview-mac.mp4" type="video/mp4" media="(min-width: 900px)" />
+            <source src="../../noisyno/assets/preview/noisyno-preview-iphone.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <p class="preview-hint">شغّل الصوت لتسمع ضجيج المقهى وهو يختفي.</p>
       </div>
     </section>
 
@@ -465,7 +494,7 @@
           </article>
           <article class="card">
             <h3>بلا اشتراك</h3>
-            <p>إزالة الضوضاء مجانية ولا توجد اشتراكات. إن احتجت إلى تسوية مستوى الصوت، فافتح Pro بشراء لمرة واحدة.</p>
+            <p>إزالة الضوضاء مجانية ولا توجد اشتراكات. ومع Pro، وهو شراء لمرة واحدة، يمكنك تصدير الفيديو المنظّف والمعالجة الدفعية وتسوية مستوى الصوت.</p>
           </article>
         </div>
       </div>
@@ -481,7 +510,7 @@
           </p>
         </div>
         <div class="phone">
-          <img src="../../noisyno/assets/screenshots/04_compare.png" alt="شاشة NoisyNo لمقارنة الصوت الأصلي بالصوت المنظّف" loading="lazy" />
+          <img src="../../noisyno/assets/screenshots/app/ar/01_compare.webp" width="660" height="1434" alt="شاشة NoisyNo مع مفتاح Original / Cleaned فوق الموجة الصوتية لمقارنة الصوت الأصلي بالمنظّف" loading="lazy" />
         </div>
       </div>
     </section>
@@ -508,7 +537,7 @@
           <div class="step">
             <div>
               <h3>قارن الأصل بالنتيجة ثم احفظ</h3>
-              <p>بدّل بين Original وCleaned عند الموضع نفسه، واحفظ النتيجة أو شاركها بصيغة M4A ‏(AAC) أو WAV ‏(16-bit).</p>
+              <p>بدّل بين Original وCleaned في الموضع نفسه، ثم احفظ النتيجة أو شاركها بصيغة M4A (AAC). ومع Pro يمكنك حفظها بصيغة WAV بلا فقدان أو حفظ الفيديو المنظّف نفسه.</p>
             </div>
           </div>
         </div>
@@ -535,7 +564,7 @@
           </article>
           <article class="card">
             <h3>صوت الفيديو</h3>
-            <p>استخرج الصوت من ملفات الفيديو المدعومة، وأزل الضوضاء، واحفظه كملف صوتي.</p>
+            <p>أضف ملف MP4 أو MOV ليُنظَّف الصوت على الجهاز. مع Pro تستعيد المقطع نفسه كفيديو، ومن دونه تحتفظ بالصوت المنظّف.</p>
           </article>
         </div>
       </div>
@@ -585,11 +614,11 @@
         </details>
         <details>
           <summary>هل يتطلب اشتراكًا؟</summary>
-          <p>لا. إزالة الضوضاء مجانية ولا توجد اشتراكات. تسوية مستوى الصوت ميزة Pro تُفتح بعملية شراء واحدة داخل التطبيق، وليست اشتراكًا.</p>
+          <p>لا. إزالة الضوضاء مجانية ولا توجد اشتراكات. أما Pro فهو شراء لمرة واحدة داخل التطبيق يضيف تصدير الفيديو المنظّف، والمعالجة الدفعية، وتسوية مستوى الصوت، وتصدير WAV بلا فقدان، والقص قبل التنظيف.</p>
         </details>
         <details>
           <summary>ما صيغ الملفات المدعومة؟</summary>
-          <p>الإدخال: WAV وMP3 وM4A وFLAC وMP4 وMOV وM4V. وعلى Android أيضًا OGG وOpus و3GP و3GPP. الإخراج: M4A ‏(AAC) وWAV ‏(16-bit).</p>
+          <p>الإدخال: WAV وMP3 وM4A وFLAC وMP4 وMOV وM4V، وعلى Android أيضًا OGG وOpus و3GP و3GPP. يُحفظ الصوت المنظّف بصيغة M4A (AAC)، ومع Pro يمكنك أيضًا تصدير WAV بلا فقدان (16-bit) والفيديو المنظّف.</p>
         </details>
         <details>
           <summary>هل لا تُجمع أي بيانات شخصية أو تشخيصية إطلاقًا؟</summary>
@@ -638,5 +667,29 @@
       <span>&copy; 2026 grayforge</span>
     </div>
   </footer>
+  <script>
+    (() => {
+      const video = document.querySelector("video[data-visible-autoplay]");
+      if (!video) return;
+      const wide = window.matchMedia("(min-width: 900px)").matches;
+      video.poster = wide ? video.dataset.posterWide : video.dataset.posterNarrow;
+      let userPaused = false, automated = false, visible = false;
+      const play = () => {
+        if (!visible || document.hidden || userPaused) return;
+        automated = true;
+        Promise.resolve(video.play()).catch(() => {}).finally(() => { automated = false; });
+      };
+      const pause = () => { if (!video.paused) { automated = true; video.pause(); setTimeout(() => { automated = false; }, 150); } };
+      video.addEventListener("pause", () => { if (!automated && visible) userPaused = true; });
+      video.addEventListener("play", () => { if (!automated) userPaused = false; });
+      document.addEventListener("visibilitychange", () => (document.hidden ? pause() : play()));
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(([e]) => {
+          visible = e.isIntersecting && e.intersectionRatio >= 0.55;
+          visible ? play() : pause();
+        }, { threshold: [0, 0.25, 0.55, 0.8] }).observe(video);
+      } else { visible = true; play(); }
+    })();
+  </script>
 </body>
 </html>

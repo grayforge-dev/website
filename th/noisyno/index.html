@@ -67,9 +67,9 @@
       "url": "https://grayforge.app/noisyno/",
       "image": "https://grayforge.app/noisyno/assets/og-image.png",
       "isAccessibleForFree": true,
-      "softwareVersion": "1.4.0",
+      "softwareVersion": "1.6.2",
       "datePublished": "2026-06-02",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-09-28",
       "contentRating": "4+",
       "availableLanguage": [
         "en",
@@ -91,7 +91,9 @@
         "รองรับบันทึกการประชุม สัมภาษณ์ การบรรยาย และเสียงในวิดีโอ",
         "เปรียบเทียบเสียงต้นฉบับกับเสียงที่ทำความสะอาดแล้ว",
         "ปรับมาตรฐานความดัง (Loudness)",
-        "ส่งออกเป็น M4A และ WAV",
+        "ส่งออกวิดีโอที่ทำความสะอาดแล้ว (Pro)",
+        "ประมวลผลเป็นชุด (Pro)",
+        "ส่งออก M4A และ WAV แบบไม่สูญเสียคุณภาพใน Pro",
         "ไม่ต้องมีบัญชี",
         "ไม่มีค่าสมาชิกรายเดือน"
       ],
@@ -123,7 +125,7 @@
       "name": "NoisyNo: แอปลบเสียงรบกวน — ทำความสะอาดเสียงแบบออฟไลน์",
       "description": "หน้าผลิตภัณฑ์ NoisyNo ภาษาไทย แอปที่ลบเสียงรบกวนพื้นหลังจากไฟล์บันทึกและเสียงในวิดีโอได้ในโทรศัพท์ของคุณ",
       "inLanguage": "th",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-09-29",
       "about": {
         "@id": "https://grayforge.app/noisyno/#app"
       },
@@ -165,7 +167,7 @@
           "name": "ต้องสมัครสมาชิกรายเดือนไหม",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ไม่ ฟีเจอร์ลบเสียงรบกวนใช้ฟรีและไม่มีค่าสมาชิกรายเดือน การปรับมาตรฐานความดังเป็นฟีเจอร์ Pro ที่ปลดล็อกด้วยการซื้อในแอปครั้งเดียว ไม่ใช่การสมัครสมาชิก"
+            "text": "ไม่ ฟีเจอร์ลบเสียงรบกวนใช้ฟรีและไม่มีการสมัครสมาชิก Pro เป็นการซื้อในแอปครั้งเดียว ที่เพิ่มการส่งออกวิดีโอที่ทำความสะอาดแล้ว การประมวลผลเป็นชุด การปรับมาตรฐานความดัง การส่งออก WAV แบบไม่สูญเสียคุณภาพ และการตัดช่วงก่อนทำความสะอาด"
           }
         },
         {
@@ -173,7 +175,7 @@
           "name": "รองรับไฟล์รูปแบบใดบ้าง",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "อินพุต: WAV, MP3, M4A, FLAC, MP4, MOV, M4V ส่วน Android รองรับ OGG, Opus, 3GP, 3GPP เพิ่มเติม เอาต์พุต: M4A (AAC) และ WAV (16-bit)"
+            "text": "รองรับไฟล์นำเข้า WAV, MP3, M4A, FLAC, MP4, MOV และ M4V และบน Android ยังรองรับ OGG, Opus, 3GP และ 3GPP เสียงที่ทำความสะอาดแล้วจะบันทึกเป็น M4A (AAC) และใน Pro ยังส่งออก WAV แบบไม่สูญเสียคุณภาพ (16-bit) และวิดีโอที่ทำความสะอาดแล้วได้"
           }
         },
         {
@@ -369,7 +371,7 @@
       padding: 14px;
       box-shadow: var(--shadow);
     }
-    .phone img { width: 100%; display: block; border-radius: 25px; }
+    .phone img { width: 100%; height: auto; display: block; border-radius: 25px; }
     details {
       background: var(--surface);
       border: 1px solid var(--hairline);
@@ -404,6 +406,16 @@
       .wrap, .nav-inner { width: min(100% - 28px, 1120px); }
       .step { grid-template-columns: 1fr; }
     }
+    /* 15 s preview film: portrait iPhone cut on phones, landscape Mac cut on
+       wide screens. <source media> picks once at load, the box follows. */
+    .preview { text-align: center; }
+    .preview-inner { display: flex; flex-direction: column; align-items: center; }
+    .preview h2 { margin-bottom: 28px; }
+    .preview-video { width: 100%; max-width: 340px; aspect-ratio: 886 / 1920; border-radius: 28px;
+      overflow: hidden; background: #15100b; border: 1px solid var(--hairline); box-shadow: var(--shadow); }
+    .preview-video video { width: 100%; height: 100%; display: block; object-fit: cover; }
+    @media (min-width: 900px) { .preview-video { max-width: 960px; aspect-ratio: 16 / 9; border-radius: 22px; } }
+    .preview-hint { margin: 14px 0 0; color: var(--muted); font-size: 14px; }
   </style>
 </head>
 <body>
@@ -434,13 +446,30 @@
           <a class="btn primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web_th&amp;mt=8" rel="noopener">ดาวน์โหลดจาก App Store</a>
           <a class="btn" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dreferral%26utm_campaign%3Dnoisyno_th_landing" rel="noopener">ดาวน์โหลดจาก Google Play</a>
         </div>
-        <p class="micro">ดาวน์โหลดฟรี · ลบเสียงรบกวนฟรี · ไม่มีค่าสมาชิก · การปรับความดัง Pro เป็นการซื้อครั้งเดียว</p>
+        <p class="micro">ดาวน์โหลดฟรี · ลบเสียงรบกวนฟรี · ไม่มีค่าสมาชิก · Pro เป็นการซื้อครั้งเดียว</p>
         <div class="trust" aria-label="จุดเด่นหลักของ NoisyNo">
           <div class="pill">ใช้แบบออฟไลน์ได้</div>
           <div class="pill">ไม่อัปโหลดไฟล์</div>
           <div class="pill">ไม่ต้องมีบัญชี/เข้าสู่ระบบ</div>
           <div class="pill">รองรับ iOS, macOS และ Android</div>
         </div>
+      </div>
+    </section>
+
+    <section class="preview">
+      <div class="wrap preview-inner">
+        <span class="eyebrow">ตัวอย่าง 15 วินาที</span>
+        <h2>เสียงรบกวนหาย เสียงพูดยังอยู่</h2>
+        <div class="preview-video">
+          <video muted loop playsinline preload="metadata" controls data-visible-autoplay
+                 data-poster-wide="../../noisyno/assets/preview/noisyno-preview-mac.jpg"
+                 data-poster-narrow="../../noisyno/assets/preview/noisyno-preview-iphone.jpg"
+                 aria-label="วิดีโอตัวอย่าง NoisyNo">
+            <source src="../../noisyno/assets/preview/noisyno-preview-mac.mp4" type="video/mp4" media="(min-width: 900px)" />
+            <source src="../../noisyno/assets/preview/noisyno-preview-iphone.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <p class="preview-hint">เปิดเสียงเพื่อฟังเสียงจอแจในร้านกาแฟหายไป</p>
       </div>
     </section>
 
@@ -464,7 +493,7 @@
           </article>
           <article class="card">
             <h3>ไม่มีค่าสมาชิกรายเดือน</h3>
-            <p>ลบเสียงรบกวนใช้ฟรีและไม่มีการสมัครสมาชิก หากต้องการปรับมาตรฐานความดัง ปลดล็อก Pro ด้วยการซื้อในแอปครั้งเดียว</p>
+            <p>ลบเสียงรบกวนใช้ฟรีและไม่มีการสมัครสมาชิก เมื่อปลดล็อก Pro ด้วยการซื้อครั้งเดียว จะส่งออกวิดีโอที่ทำความสะอาดแล้ว ประมวลผลเป็นชุด และปรับมาตรฐานความดังได้</p>
           </article>
         </div>
       </div>
@@ -480,7 +509,7 @@
           </p>
         </div>
         <div class="phone">
-          <img src="../../noisyno/assets/screenshots/04_compare.png" alt="หน้าจอ NoisyNo เปรียบเทียบเสียงต้นฉบับกับเสียงที่ทำความสะอาดแล้ว" loading="lazy" />
+          <img src="../../noisyno/assets/screenshots/app/th/01_compare.webp" width="660" height="1434" alt="หน้าจอ NoisyNo ที่มีปุ่มสลับ Original / Cleaned เหนือคลื่นเสียง เพื่อเทียบเสียงต้นฉบับกับเสียงที่ทำความสะอาดแล้ว" loading="lazy" />
         </div>
       </div>
     </section>
@@ -507,7 +536,7 @@
           <div class="step">
             <div>
               <h3>เปรียบเทียบต้นฉบับกับผลลัพธ์แล้วบันทึก</h3>
-              <p>สลับฟัง Original/Cleaned ที่ตำแหน่งเดียวกัน แล้วบันทึกหรือแชร์ผลลัพธ์เป็น M4A (AAC) หรือ WAV (16-bit)</p>
+              <p>สลับฟัง Original กับ Cleaned ที่ตำแหน่งเดียวกัน แล้วบันทึกหรือแชร์ผลลัพธ์เป็น M4A (AAC) ใน Pro ยังบันทึกเป็น WAV แบบไม่สูญเสียคุณภาพ หรือบันทึกเป็นวิดีโอที่ทำความสะอาดแล้วได้</p>
             </div>
           </div>
         </div>
@@ -534,7 +563,7 @@
           </article>
           <article class="card">
             <h3>เสียงในวิดีโอ</h3>
-            <p>ดึงเสียงจากไฟล์วิดีโอที่รองรับ ลบเสียงรบกวน แล้วบันทึกเป็นไฟล์เสียง</p>
+            <p>วางไฟล์ MP4 หรือ MOV แล้วเสียงจะถูกทำความสะอาดในเครื่อง ใน Pro จะได้คลิปเดิมกลับมาเป็นวิดีโอ ถ้าไม่มี Pro ก็เก็บเสียงที่ทำความสะอาดแล้วเป็นไฟล์เสียงได้</p>
           </article>
         </div>
       </div>
@@ -584,11 +613,11 @@
         </details>
         <details>
           <summary>ต้องสมัครสมาชิกรายเดือนไหม</summary>
-          <p>ไม่ ฟีเจอร์ลบเสียงรบกวนใช้ฟรีและไม่มีค่าสมาชิกรายเดือน การปรับมาตรฐานความดังเป็นฟีเจอร์ Pro ที่ปลดล็อกด้วยการซื้อในแอปครั้งเดียว ไม่ใช่การสมัครสมาชิก</p>
+          <p>ไม่ ฟีเจอร์ลบเสียงรบกวนใช้ฟรีและไม่มีการสมัครสมาชิก Pro เป็นการซื้อในแอปครั้งเดียว ที่เพิ่มการส่งออกวิดีโอที่ทำความสะอาดแล้ว การประมวลผลเป็นชุด การปรับมาตรฐานความดัง การส่งออก WAV แบบไม่สูญเสียคุณภาพ และการตัดช่วงก่อนทำความสะอาด</p>
         </details>
         <details>
           <summary>รองรับไฟล์รูปแบบใดบ้าง</summary>
-          <p>อินพุต: WAV, MP3, M4A, FLAC, MP4, MOV, M4V ส่วน Android รองรับ OGG, Opus, 3GP, 3GPP เพิ่มเติม เอาต์พุต: M4A (AAC) และ WAV (16-bit)</p>
+          <p>รองรับไฟล์นำเข้า WAV, MP3, M4A, FLAC, MP4, MOV และ M4V และบน Android ยังรองรับ OGG, Opus, 3GP และ 3GPP เสียงที่ทำความสะอาดแล้วจะบันทึกเป็น M4A (AAC) และใน Pro ยังส่งออก WAV แบบไม่สูญเสียคุณภาพ (16-bit) และวิดีโอที่ทำความสะอาดแล้วได้</p>
         </details>
         <details>
           <summary>ไม่เก็บข้อมูลส่วนตัวหรือข้อมูลวินิจฉัยเลยใช่ไหม</summary>
@@ -637,5 +666,29 @@
       <span>&copy; 2026 grayforge</span>
     </div>
   </footer>
+  <script>
+    (() => {
+      const video = document.querySelector("video[data-visible-autoplay]");
+      if (!video) return;
+      const wide = window.matchMedia("(min-width: 900px)").matches;
+      video.poster = wide ? video.dataset.posterWide : video.dataset.posterNarrow;
+      let userPaused = false, automated = false, visible = false;
+      const play = () => {
+        if (!visible || document.hidden || userPaused) return;
+        automated = true;
+        Promise.resolve(video.play()).catch(() => {}).finally(() => { automated = false; });
+      };
+      const pause = () => { if (!video.paused) { automated = true; video.pause(); setTimeout(() => { automated = false; }, 150); } };
+      video.addEventListener("pause", () => { if (!automated && visible) userPaused = true; });
+      video.addEventListener("play", () => { if (!automated) userPaused = false; });
+      document.addEventListener("visibilitychange", () => (document.hidden ? pause() : play()));
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(([e]) => {
+          visible = e.isIntersecting && e.intersectionRatio >= 0.55;
+          visible ? play() : pause();
+        }, { threshold: [0, 0.25, 0.55, 0.8] }).observe(video);
+      } else { visible = true; play(); }
+    })();
+  </script>
 </body>
 </html>

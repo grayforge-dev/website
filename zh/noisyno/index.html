@@ -67,9 +67,9 @@
       "url": "https://grayforge.app/noisyno/",
       "image": "https://grayforge.app/noisyno/assets/og-image.png",
       "isAccessibleForFree": true,
-      "softwareVersion": "1.4.0",
+      "softwareVersion": "1.6.2",
       "datePublished": "2026-06-02",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-09-28",
       "contentRating": "4+",
       "availableLanguage": [
         "en",
@@ -91,7 +91,9 @@
         "支持会议录音、采访、讲座录音和视频音频",
         "对比原始音频与处理后音频",
         "响度标准化",
-        "输出 M4A 和 WAV",
+        "导出降噪后的视频（Pro）",
+        "批量处理（Pro）",
+        "M4A 输出，Pro 支持无损 WAV",
         "无需账号",
         "没有订阅"
       ],
@@ -123,7 +125,7 @@
       "name": "NoisyNo：人声降噪 App — 离线录音降噪",
       "description": "NoisyNo 中文产品页。一款在手机本地去除录音和视频音频背景噪音的应用。",
       "inLanguage": "zh",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-09-29",
       "about": {
         "@id": "https://grayforge.app/noisyno/#app"
       },
@@ -165,7 +167,7 @@
           "name": "需要订阅吗？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "不需要。降噪功能免费使用，没有订阅。响度标准化是 Pro 功能，通过一次性内购解锁，而不是订阅。"
+            "text": "不需要。降噪功能免费，没有订阅。Pro 是一次性内购，增加导出降噪后的视频、批量处理、响度标准化、无损 WAV 导出，以及处理前裁剪。"
           }
         },
         {
@@ -173,7 +175,7 @@
           "name": "支持哪些文件格式？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "输入支持 WAV、MP3、M4A、FLAC、MP4、MOV、M4V；Android 还支持 OGG、Opus、3GP、3GPP。输出支持 M4A（AAC）和 WAV（16-bit）。"
+            "text": "输入支持 WAV、MP3、M4A、FLAC、MP4、MOV、M4V，Android 还支持 OGG、Opus、3GP、3GPP。降噪后的音频保存为 M4A（AAC），Pro 还可导出无损 WAV（16-bit）和降噪后的视频。"
           }
         },
         {
@@ -369,7 +371,7 @@
       padding: 14px;
       box-shadow: var(--shadow);
     }
-    .phone img { width: 100%; display: block; border-radius: 25px; }
+    .phone img { width: 100%; height: auto; display: block; border-radius: 25px; }
     details {
       background: var(--surface);
       border: 1px solid var(--hairline);
@@ -404,6 +406,16 @@
       .wrap, .nav-inner { width: min(100% - 28px, 1120px); }
       .step { grid-template-columns: 1fr; }
     }
+    /* 15 s preview film: portrait iPhone cut on phones, landscape Mac cut on
+       wide screens. <source media> picks once at load, the box follows. */
+    .preview { text-align: center; }
+    .preview-inner { display: flex; flex-direction: column; align-items: center; }
+    .preview h2 { margin-bottom: 28px; }
+    .preview-video { width: 100%; max-width: 340px; aspect-ratio: 886 / 1920; border-radius: 28px;
+      overflow: hidden; background: #15100b; border: 1px solid var(--hairline); box-shadow: var(--shadow); }
+    .preview-video video { width: 100%; height: 100%; display: block; object-fit: cover; }
+    @media (min-width: 900px) { .preview-video { max-width: 960px; aspect-ratio: 16 / 9; border-radius: 22px; } }
+    .preview-hint { margin: 14px 0 0; color: var(--muted); font-size: 14px; }
   </style>
 </head>
 <body>
@@ -434,13 +446,30 @@
           <a class="btn primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web_zh&amp;mt=8" rel="noopener">在 App Store 下载</a>
           <a class="btn" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dreferral%26utm_campaign%3Dnoisyno_zh_landing" rel="noopener">在 Google Play 下载</a>
         </div>
-        <p class="micro">免费下载 · 降噪免费 · 没有订阅 · Pro 响度标准化为一次性内购</p>
+        <p class="micro">免费下载 · 降噪免费 · 没有订阅 · Pro 为一次性内购</p>
         <div class="trust" aria-label="NoisyNo 核心优势">
           <div class="pill">支持离线使用</div>
           <div class="pill">不上传文件</div>
           <div class="pill">无需账号/登录</div>
           <div class="pill">支持 iOS、macOS 和 Android</div>
         </div>
+      </div>
+    </section>
+
+    <section class="preview">
+      <div class="wrap preview-inner">
+        <span class="eyebrow">15 秒预览</span>
+        <h2>噪音消失，人声完整。</h2>
+        <div class="preview-video">
+          <video muted loop playsinline preload="metadata" controls data-visible-autoplay
+                 data-poster-wide="../../noisyno/assets/preview/noisyno-preview-mac.jpg"
+                 data-poster-narrow="../../noisyno/assets/preview/noisyno-preview-iphone.jpg"
+                 aria-label="NoisyNo 预览视频">
+            <source src="../../noisyno/assets/preview/noisyno-preview-mac.mp4" type="video/mp4" media="(min-width: 900px)" />
+            <source src="../../noisyno/assets/preview/noisyno-preview-iphone.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <p class="preview-hint">打开声音，就能听到咖啡馆的嘈杂声消失。</p>
       </div>
     </section>
 
@@ -464,7 +493,7 @@
           </article>
           <article class="card">
             <h3>没有订阅</h3>
-            <p>降噪功能免费使用，没有订阅。需要响度标准化时，可通过一次性内购解锁 Pro。</p>
+            <p>降噪功能免费，没有订阅。通过一次性内购解锁 Pro 后，可以导出降噪后的视频、批量处理，并使用响度标准化。</p>
           </article>
         </div>
       </div>
@@ -480,7 +509,7 @@
           </p>
         </div>
         <div class="phone">
-          <img src="../../noisyno/assets/screenshots/04_compare.png" alt="在 NoisyNo 中对比原始音频与处理后音频的界面" loading="lazy" />
+          <img src="../../noisyno/assets/screenshots/app/zh/01_compare.webp" width="660" height="1434" alt="NoisyNo 在波形上切换 Original / Cleaned，对比原始音频与降噪后音频的界面" loading="lazy" />
         </div>
       </div>
     </section>
@@ -507,7 +536,7 @@
           <div class="step">
             <div>
               <h3>对比原始与结果后保存</h3>
-              <p>可在同一位置切换收听 Original/Cleaned，并把结果保存或分享为 M4A（AAC）或 WAV（16-bit）。</p>
+              <p>在同一位置切换 Original/Cleaned 对比收听，然后把结果保存为 M4A（AAC）或分享。Pro 还可保存无损 WAV，或直接保存降噪后的视频。</p>
             </div>
           </div>
         </div>
@@ -534,7 +563,7 @@
           </article>
           <article class="card">
             <h3>视频音频</h3>
-            <p>从支持的视频文件中提取音频，降噪后保存为音频文件。</p>
+            <p>放入 MP4 或 MOV，声音在设备上完成降噪。有 Pro 可以拿回同一段视频；没有 Pro 也能把降噪后的音频单独保存。</p>
           </article>
         </div>
       </div>
@@ -584,11 +613,11 @@
         </details>
         <details>
           <summary>需要订阅吗？</summary>
-          <p>不需要。降噪功能免费使用，没有订阅。响度标准化是 Pro 功能，通过一次性内购解锁，而不是订阅。</p>
+          <p>不需要。降噪功能免费，没有订阅。Pro 是一次性内购，增加导出降噪后的视频、批量处理、响度标准化、无损 WAV 导出，以及处理前裁剪。</p>
         </details>
         <details>
           <summary>支持哪些文件格式？</summary>
-          <p>输入支持 WAV、MP3、M4A、FLAC、MP4、MOV、M4V；Android 还支持 OGG、Opus、3GP、3GPP。输出支持 M4A（AAC）和 WAV（16-bit）。</p>
+          <p>输入支持 WAV、MP3、M4A、FLAC、MP4、MOV、M4V，Android 还支持 OGG、Opus、3GP、3GPP。降噪后的音频保存为 M4A（AAC），Pro 还可导出无损 WAV（16-bit）和降噪后的视频。</p>
         </details>
         <details>
           <summary>完全不收集个人信息或诊断数据吗？</summary>
@@ -637,5 +666,29 @@
       <span>&copy; 2026 grayforge</span>
     </div>
   </footer>
+  <script>
+    (() => {
+      const video = document.querySelector("video[data-visible-autoplay]");
+      if (!video) return;
+      const wide = window.matchMedia("(min-width: 900px)").matches;
+      video.poster = wide ? video.dataset.posterWide : video.dataset.posterNarrow;
+      let userPaused = false, automated = false, visible = false;
+      const play = () => {
+        if (!visible || document.hidden || userPaused) return;
+        automated = true;
+        Promise.resolve(video.play()).catch(() => {}).finally(() => { automated = false; });
+      };
+      const pause = () => { if (!video.paused) { automated = true; video.pause(); setTimeout(() => { automated = false; }, 150); } };
+      video.addEventListener("pause", () => { if (!automated && visible) userPaused = true; });
+      video.addEventListener("play", () => { if (!automated) userPaused = false; });
+      document.addEventListener("visibilitychange", () => (document.hidden ? pause() : play()));
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(([e]) => {
+          visible = e.isIntersecting && e.intersectionRatio >= 0.55;
+          visible ? play() : pause();
+        }, { threshold: [0, 0.25, 0.55, 0.8] }).observe(video);
+      } else { visible = true; play(); }
+    })();
+  </script>
 </body>
 </html>
