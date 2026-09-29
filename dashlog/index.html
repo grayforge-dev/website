@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary SEO -->
-  <title>DashLog: GPS Drive Tracker — Mileage Logbook & Trip Stats</title>
-  <meta name="description" content="Tap once to start. Tap once to stop. DashLog automatically records your GPS route, distance, time, speed, and driving stats into a clean mileage logbook. No account needed." />
-  <meta name="keywords" content="GPS drive tracker, drive tracking app, mileage logbook, trip stats, drive journal, driving log, route tracker, distance tracker, odometer, commute tracker, road trip app, car log, carlog, journey log, speed tracker" />
+  <title>DashLog: GPS Drive Tracker — Auto-Record &amp; Replay Every Drive</title>
+  <meta name="description" content="DashLog records every drive on its own with CarPlay or your car's Bluetooth: GPS route, distance, speed, and stats. Replay the road and export GPX or CSV. No account needed." />
+  <meta name="keywords" content="GPS drive tracker, drive journal, auto record drives, CarPlay drive log, Bluetooth trip tracker, route replay, road trip app, route tracker, trip stats, driving log, GPX export, motorcycle ride tracker, speed tracker" />
   <meta name="author" content="DashLog" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://grayforge.app/dashlog/" />
@@ -21,17 +21,19 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://grayforge.app/dashlog/" />
-  <meta property="og:title" content="DashLog: GPS Drive Tracker — Mileage Logbook & Trip Stats" />
-  <meta property="og:description" content="Tap once to start. Tap once to stop. GPS route, distance, speed, and driving stats saved automatically as a clean logbook." />
+  <meta property="og:title" content="DashLog: GPS Drive Tracker — Auto-Record &amp; Replay Every Drive" />
+  <meta property="og:description" content="Every drive, remembered. DashLog records your route, speed, and distance on its own, then lets you replay the road. No account needed." />
   <meta property="og:image" content="https://grayforge.app/dashlog/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:video" content="https://grayforge.app/dashlog/assets/preview/dashlog-preview-iphone.mp4" />
+  <meta property="og:video:secure_url" content="https://grayforge.app/dashlog/assets/preview/dashlog-preview-iphone.mp4" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://grayforge.app/dashlog/" />
-  <meta name="twitter:title" content="DashLog: GPS Drive Tracker — Mileage Logbook & Trip Stats" />
-  <meta name="twitter:description" content="Tap once to start. Tap once to stop. GPS route, distance, speed, and driving stats saved automatically as a clean logbook." />
+  <meta name="twitter:title" content="DashLog: GPS Drive Tracker — Auto-Record &amp; Replay Every Drive" />
+  <meta name="twitter:description" content="Every drive, remembered. DashLog records your route, speed, and distance on its own, then lets you replay the road. No account needed." />
   <meta name="twitter:image" content="https://grayforge.app/dashlog/og-image.png" />
 
   <!-- Structured Data -->
@@ -46,15 +48,18 @@
         "alternateName": "DashLog",
         "url": "https://grayforge.app/dashlog/",
         "image": "https://grayforge.app/dashlog/og-image.png",
-        "description": "DashLog records GPS route, distance, time, speed, altitude, and driving statistics in a local mileage logbook. No account is required.",
+        "description": "DashLog is a GPS drive journal that records route, distance, time, speed, altitude, and driving statistics automatically when the phone connects to CarPlay or the car's Bluetooth, or with one tap. Records stay on the device and no account is required.",
         "applicationCategory": "TravelApplication",
         "operatingSystem": ["iOS", "Android"],
         "isAccessibleForFree": true,
         "featureList": [
-          "One-tap GPS drive recording",
+          "Automatic recording with CarPlay or car Bluetooth after a one-time setup",
+          "One-tap manual start and stop",
           "Route, distance, time, speed, and altitude logging",
-          "Drive history and route replay",
-          "Weekly, monthly, and all-time driving statistics",
+          "Drive logbook and route replay",
+          "Daily, weekly, monthly, yearly, and all-time driving statistics",
+          "GPX and CSV export, GPX import",
+          "Light and dark themes",
           "Local data storage",
           "No account required",
           "No subscription required"
@@ -83,9 +88,9 @@
         "@type": "WebPage",
         "@id": "https://grayforge.app/dashlog/#webpage",
         "url": "https://grayforge.app/dashlog/",
-        "name": "DashLog: GPS Drive Tracker — Mileage Logbook & Trip Stats",
-        "description": "Official product page for DashLog, a free GPS drive tracker and mileage logbook.",
-        "dateModified": "2026-06-12",
+        "name": "DashLog: GPS Drive Tracker — Auto-Record & Replay Every Drive",
+        "description": "Official product page for DashLog, a free GPS drive tracker and drive journal.",
+        "dateModified": "2026-09-29",
         "about": {"@id": "https://grayforge.app/dashlog/#app"},
         "publisher": {"@id": "https://grayforge.app/#organization"}
       },
@@ -98,7 +103,7 @@
             "name": "What is DashLog?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "DashLog is a free GPS drive tracker and mileage logbook for iOS and Android. It records a drive after the user taps Start and saves the route and driving statistics after the user taps Stop."
+              "text": "DashLog is a free GPS drive tracker and drive journal for iOS and Android. It records the route, distance, speed, and driving statistics automatically when the phone connects to CarPlay or the car's Bluetooth, or when the user taps Start."
             }
           },
           {
@@ -127,10 +132,18 @@
           },
           {
             "@type": "Question",
-            "name": "Does DashLog automatically detect every drive?",
+            "name": "Does DashLog record drives automatically?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. Recording begins when the user taps Start and ends when the user taps Stop."
+              "text": "Yes, after a one-time setup. Recording starts when the phone connects to CarPlay or the car's Bluetooth and stops when it disconnects. On iPhone this is set up once as a Shortcuts automation; on Android the car's Bluetooth is paired once in the app. Location access must be set to Always. Drives can also be started and stopped manually with one tap."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I export my drives?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A single drive can be exported as GPX or CSV, or a whole period (today, this week, this month, last month, or this year) can be exported as one report. GPX files from other apps can also be imported."
             }
           },
           {
@@ -429,36 +442,27 @@
       pointer-events: none;
     }
 
-    .phone-frame {
+    /* 15 s preview film (the App Store app preview, re-encoded for the web) */
+    .hero-video {
       position: relative;
-      width: 280px;
-      background: #13131f;
-      border-radius: 42px;
-      border: 1.5px solid rgba(255,255,255,0.12);
-      padding: 14px;
+      width: 320px;
+      max-width: 100%;
+      margin: 0 auto;
+      aspect-ratio: 886 / 1920;
+      border-radius: 28px;
+      overflow: hidden;
+      background: var(--bg);
+      border: 1px solid rgba(255,255,255,0.12);
       box-shadow:
         0 0 0 1px rgba(0,0,0,0.5),
-        0 40px 100px rgba(0,0,0,0.6),
-        inset 0 1px 0 rgba(255,255,255,0.08);
-      margin: 0 auto;
+        0 40px 100px rgba(0,0,0,0.6);
     }
 
-    .phone-screen {
-      background: var(--bg);
-      border-radius: 30px;
-      overflow: hidden;
-      aspect-ratio: 375/812;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .phone-screen > img {
+    .hero-video video {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: top;
       display: block;
+      object-fit: cover;
     }
 
     /* Animated phone screen content */
@@ -1330,8 +1334,8 @@
     </h1>
 
     <p class="hero-sub">
-      One tap starts GPS logging. Route, speed, distance, and stats
-      are saved the moment you stop — no manual entry, ever.
+      Connect CarPlay or your car's Bluetooth and DashLog starts and stops
+      on its own. Route, speed, distance, and stats are saved for every drive.
     </p>
 
     <div class="hero-cta-group">
@@ -1343,13 +1347,22 @@
       </a>
     </div>
 
-    <!-- Phone mockup with real driving screenshot -->
+    <!-- 15 s preview film -->
     <div class="hero-mockup-wrap reveal">
       <div class="hero-mockup-glow"></div>
-      <div class="phone-frame">
-        <div class="phone-screen">
-          <img src="assets/screenshots/03_driving.png" alt="DashLog live driving HUD" />
-        </div>
+      <div class="hero-video">
+        <video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          controls
+          data-visible-autoplay
+          poster="assets/preview/dashlog-preview-iphone.jpg"
+          aria-label="DashLog preview: a drive records itself, the route replays on the map, weekly stats count up, and the app switches between light and dark"
+        >
+          <source src="assets/preview/dashlog-preview-iphone.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
   </section>
@@ -1357,13 +1370,13 @@
   <!-- ===== TRUST BAR ===== -->
   <div class="trust-bar">
     <div class="trust-item">
-      <div class="trust-num">1-tap</div>
-      <div class="trust-label">Recording Start</div>
+      <div class="trust-num">Hands-free</div>
+      <div class="trust-label">Auto Recording</div>
     </div>
     <div class="trust-divider"></div>
     <div class="trust-item">
-      <div class="trust-num">Auto</div>
-      <div class="trust-label">Stats &amp; Summary</div>
+      <div class="trust-num">GPX · CSV</div>
+      <div class="trust-label">Export &amp; Import</div>
     </div>
     <div class="trust-divider"></div>
     <div class="trust-item">
@@ -1390,75 +1403,99 @@
 
     <div class="features-grid">
 
-      <!-- 1. Home -->
+      <!-- 1. Records every drive on its own -->
       <div class="feature-card reveal">
         <div class="feat-phone">
-          <img src="assets/screenshots/01_home.png" alt="DashLog home screen — total distance and recent drives" loading="lazy" />
-        </div>
-        <div class="feat-content">
-          <div class="feature-icon purple">🏠</div>
-          <h3>Your drives at a glance</h3>
-          <p>Total distance, weekly activity, and recent drives in one clean view. Open the app and instantly see how much you've driven and where you went last.</p>
-        </div>
-      </div>
-
-      <!-- 2. Logbook -->
-      <div class="feature-card reveal">
-        <div class="feat-phone">
-          <img src="assets/screenshots/02_logbook.png" alt="DashLog logbook — every drive listed by date" loading="lazy" />
-        </div>
-        <div class="feat-content">
-          <div class="feature-icon green">📋</div>
-          <h3>Trips, neatly logged</h3>
-          <p>Browse every trip by date with distance, time, speed, and route previews. Tap any entry to dive into the full details and route map.</p>
-        </div>
-      </div>
-
-      <!-- 3. Live Drive -->
-      <div class="feature-card reveal">
-        <div class="feat-phone">
-          <img src="assets/screenshots/03_driving.png" alt="DashLog live driving HUD with speed, GPS, and compass" loading="lazy" />
+          <img src="assets/screenshots/02_driving.webp" alt="DashLog recording a drive, with live speed, distance, and the route on the map" width="660" height="1434" loading="lazy" />
         </div>
         <div class="feat-content">
           <div class="feature-icon purple">📡</div>
-          <h3>Live tracking, built for driving</h3>
-          <p>Keep speed, GPS status, distance, and direction visible while you drive. Large digits, screen stay-awake, and a compass dial — designed to glance and go.</p>
+          <h3>Records every drive on its own</h3>
+          <p>Connect CarPlay or your car's Bluetooth and recording starts and stops hands-free. Set it up once — a Shortcuts automation on iPhone, or pair your car on Android. Prefer to decide yourself? Start and stop with a single tap.</p>
         </div>
       </div>
 
-      <!-- 4. Drive Detail -->
+      <!-- 2. Replay the road -->
       <div class="feature-card reveal">
         <div class="feat-phone">
-          <img src="assets/screenshots/04_drive_detail.png" alt="DashLog drive detail — full route map and stats" loading="lazy" />
-        </div>
-        <div class="feat-content">
-          <div class="feature-icon amber">🗺️</div>
-          <h3>Every route, clearly saved</h3>
-          <p>Review your route, duration, average speed, and key drive stats. Each trip becomes a complete record — generated automatically the moment you stop.</p>
-        </div>
-      </div>
-
-      <!-- 5. Replay -->
-      <div class="feature-card reveal">
-        <div class="feat-phone">
-          <img src="assets/screenshots/05_drive_replay.png" alt="DashLog route replay — scrub through the drive timeline" loading="lazy" />
+          <img src="assets/screenshots/05_drive_replay.webp" alt="DashLog route replay — the drive plays back on the map with a speed chart" width="660" height="1434" loading="lazy" />
         </div>
         <div class="feat-content">
           <div class="feature-icon purple">⏯️</div>
           <h3>Replay the road</h3>
-          <p>Watch the route again with speed changes shown along the way. A timeline scrubber lets you jump to any moment of the drive — perfect for reviewing scenic routes or tough sections.</p>
+          <p>Watch the route again with speed and time along the way. Scrub the timeline to jump to any moment — the scenic stretch, the twisty bit, the long way home.</p>
         </div>
       </div>
 
-      <!-- 6. Stats -->
+      <!-- 3. Every route, clearly saved -->
       <div class="feature-card reveal">
         <div class="feat-phone">
-          <img src="assets/screenshots/06_stats.png" alt="DashLog statistics — weekly, monthly, all-time charts" loading="lazy" />
+          <img src="assets/screenshots/04_drive_detail.webp" alt="DashLog drive detail — route map, distance, duration, and speed" width="660" height="1434" loading="lazy" />
+        </div>
+        <div class="feat-content">
+          <div class="feature-icon amber">🗺️</div>
+          <h3>Every route, clearly saved</h3>
+          <p>Distance, duration, average and top speed, and where you went, all on one screen. Each drive becomes a complete record the moment it ends.</p>
+        </div>
+      </div>
+
+      <!-- 4. Trips, neatly logged -->
+      <div class="feature-card reveal">
+        <div class="feat-phone">
+          <img src="assets/screenshots/07_logbook.webp" alt="DashLog logbook — every drive listed by date with a route preview" width="660" height="1434" loading="lazy" />
+        </div>
+        <div class="feat-content">
+          <div class="feature-icon green">📋</div>
+          <h3>Trips, neatly logged</h3>
+          <p>Browse every drive by date with distance, time, and a route preview. Narrow it to today, this week, or a month, and tap any entry for the full details.</p>
+        </div>
+      </div>
+
+      <!-- 5. Your driving, in numbers -->
+      <div class="feature-card reveal">
+        <div class="feat-phone">
+          <img src="assets/screenshots/06_stats.webp" alt="DashLog statistics — this week's distance with a daily chart" width="660" height="1434" loading="lazy" />
         </div>
         <div class="feat-content">
           <div class="feature-icon amber">📊</div>
-          <h3>Your drive patterns</h3>
-          <p>Weekly, monthly, and all-time stats help you understand every drive. Spot trends, set records, and watch your kilometers add up over time.</p>
+          <h3>Your driving, in numbers</h3>
+          <p>Today, this week, this month, this year, or all time: distance, drives, time, and speed with clear charts and the change from the previous period.</p>
+        </div>
+      </div>
+
+      <!-- 6. Export GPX or CSV -->
+      <div class="feature-card reveal">
+        <div class="feat-phone">
+          <img src="assets/screenshots/09_report_export.webp" alt="DashLog drive report — pick a period and export it as CSV or GPX" width="660" height="1434" loading="lazy" />
+        </div>
+        <div class="feat-content">
+          <div class="feature-icon green">📤</div>
+          <h3>Export GPX or CSV</h3>
+          <p>Export a single drive, or pick a period — today, this week, this month, last month, this year — and save it as one report. GPX tracks from other apps can be imported too.</p>
+        </div>
+      </div>
+
+      <!-- 7. Your drives at a glance -->
+      <div class="feature-card reveal">
+        <div class="feat-phone">
+          <img src="assets/screenshots/01_home.webp" alt="DashLog home screen — total distance, highlights, and recent drives" width="660" height="1434" loading="lazy" />
+        </div>
+        <div class="feat-content">
+          <div class="feature-icon purple">🏠</div>
+          <h3>Your drives at a glance</h3>
+          <p>Total distance, all-time highlights, this week's activity, and recent drives in one clean view. Open the app and see how far you've come.</p>
+        </div>
+      </div>
+
+      <!-- 8. Light or dark, day or night -->
+      <div class="feature-card reveal">
+        <div class="feat-phone">
+          <img src="assets/screenshots/11_home_dark.webp" alt="DashLog home screen in dark mode" width="660" height="1434" loading="lazy" />
+        </div>
+        <div class="feat-content">
+          <div class="feature-icon purple">🌙</div>
+          <h3>Light or dark, day or night</h3>
+          <p>DashLog follows your system appearance, or pick light or dark in Settings.</p>
         </div>
       </div>
 
@@ -1469,23 +1506,23 @@
   <section id="how-it-works" style="text-align:center;">
     <div class="section-label" style="text-align:center;">How It Works</div>
     <h2 class="section-title" style="margin:0 auto 16px;">Three steps. That's it.</h2>
-    <p class="section-sub" style="margin:0 auto 64px;">No setup, no account. Open the app and go.</p>
+    <p class="section-sub" style="margin:0 auto 64px;">No account. Set it up once, and every drive logs itself.</p>
 
     <div class="steps-wrap reveal">
       <div class="step">
         <div class="step-num">1</div>
-        <h3>Tap Start</h3>
-        <p>Hit the big button on the home screen. GPS logging begins immediately and the screen stays awake.</p>
+        <h3>Set It Up Once</h3>
+        <p>Pair your car's Bluetooth on Android, or add a CarPlay or Bluetooth automation in Shortcuts on iPhone. The in-app guide walks you through it.</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <h3>Drive Normally</h3>
-        <p>Speed, route, and stats update live on your dashboard. No interaction needed while driving.</p>
+        <h3>Just Drive</h3>
+        <p>Recording starts when your phone connects to the car and stops when it disconnects. No taps needed.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <h3>Stop & Review</h3>
-        <p>Tap stop. A full summary card with map, stats, and speed chart is saved to your logbook instantly.</p>
+        <h3>Replay &amp; Review</h3>
+        <p>Each drive lands in your logbook with its map, stats, and speed chart, ready to replay or export.</p>
       </div>
     </div>
   </section>
@@ -1499,7 +1536,11 @@
     <dl class="facts-grid">
       <div class="fact">
         <dt>Core purpose</dt>
-        <dd>GPS drive tracking and a mileage logbook for recorded trips.</dd>
+        <dd>A GPS drive journal that records the route, distance, speed, and stats of every drive.</dd>
+      </div>
+      <div class="fact">
+        <dt>Recording</dt>
+        <dd>Automatic with CarPlay or car Bluetooth after a one-time setup, or start and stop with one tap.</dd>
       </div>
       <div class="fact">
         <dt>Platforms</dt>
@@ -1521,6 +1562,14 @@
         <dt>Storage</dt>
         <dd>Drive records are stored locally on the device.</dd>
       </div>
+      <div class="fact">
+        <dt>Export</dt>
+        <dd>GPX or CSV, per drive or for a whole period. GPX files can be imported.</dd>
+      </div>
+      <div class="fact">
+        <dt>Appearance</dt>
+        <dd>Light and dark themes that follow the system setting, or pick one in Settings.</dd>
+      </div>
     </dl>
   </section>
 
@@ -1533,7 +1582,7 @@
     <div class="faq-list">
       <details>
         <summary>What is DashLog?</summary>
-        <p>DashLog is a free GPS drive tracker and mileage logbook for iOS and Android. Tap Start before a drive and Stop afterward to save the route and driving statistics.</p>
+        <p>DashLog is a free GPS drive tracker and drive journal for iOS and Android. It records your route, distance, speed, and stats automatically when your phone connects to CarPlay or your car's Bluetooth, or when you tap Start.</p>
       </details>
       <details>
         <summary>Does DashLog require an account?</summary>
@@ -1548,8 +1597,12 @@
         <p>Drive records are stored locally on your device. Read the <a href="privacy_policy.html">DashLog Privacy Policy</a> for details about app data and diagnostics.</p>
       </details>
       <details>
-        <summary>Does DashLog automatically detect every drive?</summary>
-        <p>No. Recording begins when you tap Start and ends when you tap Stop, so you control which drives are added to the logbook.</p>
+        <summary>Does DashLog record drives automatically?</summary>
+        <p>Yes, after a one-time setup. Recording starts when your phone connects to CarPlay or your car's Bluetooth and stops when it disconnects. On iPhone you set this up once as a Shortcuts automation (the app includes a guide); on Android you pair your car's Bluetooth once in the app. Location access must be set to Always. You can also start and stop a drive yourself with one tap.</p>
+      </details>
+      <details>
+        <summary>Can I export my drives?</summary>
+        <p>Yes. Export a single drive as GPX or CSV, or export a whole period (today, this week, this month, last month, or this year) as one report. You can also import GPX files from other apps.</p>
       </details>
       <details>
         <summary>Is DashLog available for iPhone and Android?</summary>
@@ -1581,7 +1634,7 @@
   <!-- ===== CTA BANNER ===== -->
   <div class="cta-banner reveal" id="download">
     <h2>Start logging your drives today.</h2>
-    <p>No account. No setup. Just drive.</p>
+    <p>No account. Set it up once. Just drive.</p>
     <div class="store-badges">
       <a href="https://apps.apple.com/app/id6769706684" class="store-badge" target="_blank" rel="noopener">
         <div class="store-badge-icon">🍎</div>
@@ -1605,7 +1658,7 @@
     <div style="display:flex;align-items:center;gap:10px;">
       <div style="width:26px;height:26px;border-radius:7px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="assets/icons/AppIcon.png" alt="DashLog app icon" style="width:100%;height:100%;object-fit:cover;" /></div>
       <span style="font-weight:700;font-size:0.95rem;color:var(--txt2);">DashLog</span>
-      <span>· © 2025</span>
+      <span>· © 2026</span>
     </div>
     <ul class="footer-links">
       <li><a href="../">GrayForge</a></li>
@@ -1643,6 +1696,58 @@
           : '';
       });
     });
+
+    // Preview film: play only while mostly on screen, and respect a manual pause.
+    (() => {
+      const video = document.querySelector("video[data-visible-autoplay]");
+      if (!video) return;
+
+      let visible = false;
+      let userPaused = false;
+      let automated = false;
+
+      const runAutomated = (action) => {
+        automated = true;
+        action();
+        window.setTimeout(() => { automated = false; }, 150);
+      };
+
+      const pauseVideo = () => {
+        if (!video.paused) runAutomated(() => video.pause());
+      };
+
+      const playVideo = () => {
+        if (!visible || document.hidden || userPaused) return;
+        automated = true;
+        const playPromise = video.play();
+        if (playPromise && typeof playPromise.finally === "function") {
+          playPromise.finally(() => { automated = false; }).catch(() => {});
+        } else {
+          window.setTimeout(() => { automated = false; }, 150);
+        }
+      };
+
+      video.addEventListener("pause", () => {
+        if (!automated && visible) userPaused = true;
+      });
+      video.addEventListener("play", () => {
+        if (!automated) userPaused = false;
+      });
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) pauseVideo(); else playVideo();
+      });
+
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver((entries) => {
+          const entry = entries[0];
+          visible = entry.isIntersecting && entry.intersectionRatio >= 0.55;
+          if (visible) playVideo(); else pauseVideo();
+        }, { threshold: [0, 0.25, 0.55, 0.8] }).observe(video);
+      } else {
+        visible = true;
+        playVideo();
+      }
+    })();
   </script>
 
 </body>
