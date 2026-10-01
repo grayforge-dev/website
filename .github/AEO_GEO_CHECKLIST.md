@@ -19,7 +19,8 @@ Last reviewed: 2026-06-12
 - [ ] After product or pricing changes, update visible copy, JSON-LD, FAQ answers, and guide comparison tables together.
 - [ ] Keep `dateModified` and sitemap `lastmod` accurate after meaningful content changes.
 - [ ] Verify App Store and Google Play descriptions use the same core claims as the website.
-- [ ] Check Search Console indexing for `/`, `/dashlog/`, `/noisyno/`, and `/ko/offline-no-account-apps/`.
+- [ ] Check Search Console indexing for `/`, `/dashlog/`, `/noisyno/`, and `/vocalout/`. (`/ko/offline-no-account-apps/` no longer exists and was removed from the IndexNow list.)
+- [ ] When a new app or page is added, update `sitemap.xml`, `llms.txt`, the IndexNow URL list in `.github/workflows/indexnow.yml`, and the home page JSON-LD in the same commit.
 - [ ] Search for inaccurate claims such as `no analytics`, `no data collection`, and `lifetime` before every deployment.
 - [ ] Validate JSON-LD and mobile layout after structural edits.
 

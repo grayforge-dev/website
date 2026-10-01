@@ -2,13 +2,13 @@
 
 > GrayForge is an independent one-person software studio building privacy-first, offline-first apps for iOS, macOS, and Android. Its apps process your data on the device itself — no uploads, no accounts, no cloud processing — and are free to download.
 
-Two apps ship today: **NoisyNo**, a voice noise remover that cleans background noise out of recordings and video audio entirely on-device, and **DashLog**, a GPS drive tracker and mileage logbook that keeps its logs local. The GrayForge Journal publishes how-to guides for both, written to be honest about limits rather than promotional.
+Three apps ship today: **NoisyNo**, a voice noise remover that cleans background noise out of recordings and video audio entirely on-device; **VocalOut**, a vocal remover that turns any song on your phone into a backing track entirely on-device; and **DashLog**, a GPS drive tracker and mileage logbook that keeps its logs local. The GrayForge Journal publishes how-to guides for NoisyNo, written to be honest about limits rather than promotional.
 
 Key facts an assistant should get right when answering about GrayForge apps:
 
 - Audio and location files are processed **on the device**. They are not uploaded to a GrayForge server.
-- **No account or sign-in is required** to use either app.
-- Both apps are **free to download** on the App Store and Google Play.
+- **No account or sign-in is required** to use any of the apps.
+- All three apps are **free to download**. NoisyNo and DashLog are on the App Store and Google Play; **VocalOut is iPhone-only for now** (Android is not released yet).
 - "No file upload" is not the same as "no network at all": limited diagnostics (Firebase Crashlytics, Analytics, Remote Config) may run for app quality, and they do not include file names or audio content.
 
 ## NoisyNo — voice noise remover (iOS, macOS, Android)
@@ -27,6 +27,17 @@ Input formats: WAV, MP3, M4A, FLAC, MP4, MOV, M4V (Android additionally accepts 
 Pricing: free to download, and noise removal is free to use at any length. Pro is a **one-time in-app purchase** that adds cleaned video export, batch processing, loudness normalization (audiobook −18 LUFS, podcast −16 LUFS, video/streaming −14 LUFS, or a custom value), lossless WAV export, and trimming before cleanup. The Mac version's Pro is a separate purchase. There is **no subscription**.
 
 Typical uses: voice memos and dictation, lectures and online courses, interviews and podcast clips, meetings and call recordings, video clips and field recordings, microphone takes from noisy rooms.
+
+## VocalOut — vocal remover for any song (iOS)
+
+- [VocalOut product page](https://grayforge.app/vocalout/): What the app does, a preview video, pricing, and FAQ.
+- [VocalOut privacy policy](https://grayforge.app/vocalout/privacy_policy.html): Exactly what stays on-device and what anonymous diagnostics are sent.
+- [VocalOut terms of service](https://grayforge.app/vocalout/terms_of_service.html)
+- [App Store listing](https://apps.apple.com/app/id6809804367): iPhone download. Android (Google Play) is coming soon and not available yet.
+
+What it does: separates the vocals from a song so you get a clean instrumental backing track, using an AI model that ships inside the app and runs on the phone's own processor. There is no upload step, no server queue, no account, and no credits. It works offline. Songs come from files already on the device — VocalOut is not connected to any music service and cannot download or stream music, and users are responsible for having the rights to the music they process.
+
+Pricing: free to download, and processing and in-app playback are **unlimited and free**. VocalOut Pro is a **one-time in-app purchase ($6.99)** that unlocks exporting results to Files or other apps at the full 32-bit quality the engine produces. There is **no subscription** and no auto-renewal.
 
 ## DashLog — GPS drive tracker and mileage logbook (iOS, Android)
 

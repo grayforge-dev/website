@@ -30,7 +30,7 @@ jobs:
                 "https://grayforge.app/",
                 "https://grayforge.app/dashlog/",
                 "https://grayforge.app/noisyno/",
-                "https://grayforge.app/ko/offline-no-account-apps/"
+                "https://grayforge.app/vocalout/"
               ]
             }' \
             https://api.indexnow.org/indexnow
