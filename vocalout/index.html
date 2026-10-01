@@ -8,7 +8,7 @@
 <meta property="og:title" content="VocalOut — Remove vocals from any song">
 <meta property="og:description" content="Everything runs on your device. No upload, no account, unlimited free processing.">
 <meta property="og:type" content="website">
-<meta name="apple-itunes-app" content="app-id=PLACEHOLDER">
+<meta name="apple-itunes-app" content="app-id=6809804367">
 <link rel="canonical" href="https://grayforge.app/vocalout/">
 <meta property="og:url" content="https://grayforge.app/vocalout/">
 <meta property="og:site_name" content="VocalOut">
@@ -89,12 +89,19 @@ h1 em{font-style:normal;color:var(--accent)}
   background:var(--surface);border:1px solid var(--line-2);text-decoration:none;color:var(--text);
 }
 button.store{appearance:none;font:inherit;text-align:left;cursor:pointer}
-button.store:hover{border-color:rgba(233,169,58,.45)}
-button.store:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.store:hover{border-color:rgba(233,169,58,.45)}
+.store:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .store .small{display:block;font-size:10.5px;color:var(--text-3);line-height:1.15}
 .store .big{display:block;font-size:15.5px;font-weight:600;line-height:1.25}
 .free-line{margin-top:16px;font-size:13.5px;color:var(--text-3)}
-.hero .device{width:100%}
+/* 886x1920은 기기 프레임의 9:19.5와 사실상 같은 비율이다. 영상이 이미 폰
+   목업을 품고 있어서 프레임에 다시 넣으면 폰 속의 폰이 된다. */
+.hero-video{
+  width:100%;aspect-ratio:9/19.5;border-radius:34px;overflow:hidden;
+  background:#000;border:1px solid var(--line-2);
+  box-shadow:0 44px 90px -34px rgba(0,0,0,.95);
+}
+.hero-video video{width:100%;height:100%;object-fit:cover;display:block}
 
 /* ------------------------------------------------------------- 오프라인 */
 .claim{margin-top:88px;border-top:1px solid var(--line);padding-top:56px;padding-bottom:56px}
@@ -168,7 +175,7 @@ footer .fine{margin-top:22px;max-width:68ch;line-height:1.75}
 
 @media (max-width:880px){
   .hero{grid-template-columns:1fr;gap:44px}
-  .hero .device{max-width:270px;margin:0 auto}
+  .hero-video{max-width:270px;margin:0 auto}
   h1{max-width:none}
   .feature,.feature:nth-child(even){grid-template-columns:1fr;gap:32px}
   .feature .device{max-width:240px;margin:0 auto}
@@ -200,20 +207,20 @@ footer .fine{margin-top:22px;max-width:68ch;line-height:1.75}
 <header>
   <div class="wrap hero">
     <div>
-      <p class="eyebrow">iPhone · Android</p>
+      <p class="eyebrow">iPhone · Android coming soon</p>
       <h1>Remove vocals from <em>any song</em></h1>
       <p class="lede">
         The AI runs on your phone. No upload, no account, no sign-up — and no
         limit on how many songs you run.
       </p>
-      <!-- 아직 갈 곳이 없으므로 링크가 아니라 버튼이다. href="#"로 두면
-           눌렀을 때 페이지 맨 위로 튀고, 사용자는 무엇이 잘못됐는지 모른다.
-           심사를 통과하면 이 둘을 스토어 URL을 가진 <a>로 되돌린다. -->
+      <!-- App Store는 출시됐으므로 링크다. Google Play는 아직 갈 곳이 없어 버튼으로
+           남긴다. href="#"로 두면 눌렀을 때 페이지 맨 위로 튀고, 사용자는 무엇이
+           잘못됐는지 모른다. 출시되면 스토어 URL을 가진 <a>로 바꾼다. -->
       <div class="badges" id="get">
-        <button type="button" class="store" data-store="the App Store" aria-label="Download on the App Store (coming soon)">
+        <a class="store" href="https://apps.apple.com/app/id6809804367" aria-label="Download on the App Store">
           <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.5 2.1-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.1 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1 2.6-2.1.8-1.2 1.2-2.4 1.2-2.4s-2.3-.9-2.3-3.2zM14.2 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.6-.9 2.6 1 .1 2-.5 2.6-1.2z"/></svg>
-          <span><span class="small">Coming soon to</span><span class="big">App Store</span></span>
-        </button>
+          <span><span class="small">Download on the</span><span class="big">App Store</span></span>
+        </a>
         <button type="button" class="store" data-store="Google Play" aria-label="Get it on Google Play (coming soon)">
           <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.7 2.2l-.1.1zm12.5 6.2L13.6 6l-9 5.1v.1l9 5.1 2.5-2.5-2.4-2.7 2.4-2.6zm1 1L14 12l3.1 2.5 3.1-1.8c.9-.5.9-1.4 0-1.9l-3.1-1.8z"/></svg>
           <span><span class="small">Coming soon to</span><span class="big">Google Play</span></span>
@@ -222,10 +229,12 @@ footer .fine{margin-top:22px;max-width:68ch;line-height:1.75}
       <p class="free-line">Free with no song limit · In-app purchase to export</p>
     </div>
 
-    <div class="device">
-      <div class="notch"></div>
-      <div class="shot"><img src="assets/screenshots/01-home.png" alt="The VocalOut home screen: a recently separated song and a Choose a song button."
-             width="303" height="660" loading="lazy" decoding="async"></div>
+    <div class="hero-video">
+      <video muted loop playsinline preload="metadata" controls data-visible-autoplay
+             poster="assets/preview/vocalout-preview.jpg"
+             aria-label="VocalOut preview: any song, minus the vocals, separated on the phone and played back before you pay.">
+        <source src="assets/preview/vocalout-preview.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 
@@ -339,10 +348,10 @@ footer .fine{margin-top:22px;max-width:68ch;line-height:1.75}
   <div class="wrap">
     <h2>Try it on a song you already have</h2>
     <div class="badges">
-      <button type="button" class="store" data-store="the App Store" aria-label="Download on the App Store (coming soon)">
+      <a class="store" href="https://apps.apple.com/app/id6809804367" aria-label="Download on the App Store">
         <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.5 2.1-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.1 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1 2.6-2.1.8-1.2 1.2-2.4 1.2-2.4s-2.3-.9-2.3-3.2zM14.2 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.6-.9 2.6 1 .1 2-.5 2.6-1.2z"/></svg>
-        <span><span class="small">Coming soon to</span><span class="big">App Store</span></span>
-      </button>
+        <span><span class="small">Download on the</span><span class="big">App Store</span></span>
+      </a>
       <button type="button" class="store" data-store="Google Play" aria-label="Get it on Google Play (coming soon)">
         <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.7 2.2l-.1.1zm12.5 6.2L13.6 6l-9 5.1v.1l9 5.1 2.5-2.5-2.4-2.7 2.4-2.6zm1 1L14 12l3.1 2.5 3.1-1.8c.9-.5.9-1.4 0-1.9l-3.1-1.8z"/></svg>
         <span><span class="small">Coming soon to</span><span class="big">Google Play</span></span>
@@ -393,6 +402,35 @@ footer .fine{margin-top:22px;max-width:68ch;line-height:1.75}
   toast.addEventListener('transitionend', function(){
     if (!toast.classList.contains('on')) toast.hidden = true;
   });
+})();
+
+/* 영상은 화면에 절반 이상 보일 때만 돈다. 보는 사람이 직접 멈췄다면 다시
+   틀지 않고, 모션 줄이기를 켠 사람에게는 자동재생을 하지 않는다. */
+(function(){
+  var v = document.querySelector('video[data-visible-autoplay]');
+  if (!v) return;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var visible = false, userPaused = false, scriptPaused = false;
+  function play(){
+    if (reduce || !visible || document.hidden || userPaused) return;
+    var p = v.play();
+    if (p && p.catch) p.catch(function(){});
+  }
+  function stop(){
+    if (!v.paused){ scriptPaused = true; v.pause(); }
+  }
+  v.addEventListener('pause', function(){
+    if (scriptPaused){ scriptPaused = false; return; }
+    if (visible) userPaused = true;
+  });
+  v.addEventListener('play', function(){ userPaused = false; });
+  document.addEventListener('visibilitychange', function(){ document.hidden ? stop() : play(); });
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(entries){
+      visible = entries[0].isIntersecting;
+      visible ? play() : stop();
+    }, {threshold:0.5}).observe(v);
+  }
 })();
 
 /* 앱과 같은 시드 고정 PRNG. 새로고침해도 같은 파형이 나온다. */
