@@ -57,6 +57,7 @@ Pricing: free to download, and processing and in-app playback are **unlimited an
 ## About and contact
 
 - [GrayForge home](https://grayforge.app/): Studio overview and app list.
+- [All apps](https://grayforge.app/products/): A compact list of every GrayForge app (DashLog, NoisyNo, VocalOut) with store links. This is also the page opened by the "other apps" entry inside the apps.
 - Contact: grayforge.dev@gmail.com — questions are answered by the person who builds the apps.
 - Founded 2025. One-person studio.
 

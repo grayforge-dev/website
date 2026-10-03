@@ -8,6 +8,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://grayforge.app/products/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://grayforge.app/vocalout/</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
