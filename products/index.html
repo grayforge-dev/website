@@ -149,12 +149,31 @@
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 20px;
-      padding: 26px;
+      overflow: hidden;
     }
     @media (hover: hover) {
       .card { transition: border-color .2s ease, transform .2s ease; }
       .card:hover { border-color: var(--line-2); transform: translateY(-2px); }
     }
+
+    /* screenshot strip: three phones rising from the bottom edge, cropped */
+    .stage {
+      display: flex; justify-content: center; align-items: flex-start; gap: 10px;
+      height: 196px; padding: 20px 22px 0; overflow: hidden;
+    }
+    .stage img {
+      flex: none; width: calc((100% - 20px) / 3); max-width: 116px; height: auto;
+      border-radius: 14px 14px 0 0;
+      border: 1px solid rgba(255,255,255,.18); border-bottom: 0;
+      box-shadow: 0 14px 28px -10px rgba(0,0,0,.55);
+      background: #1b1e21;
+    }
+    .stage img:nth-child(2) { margin-top: -8px; }
+    .s-dashlog  { background: radial-gradient(120% 90% at 50% 0%, #2f6bd6 0%, #123a7a 55%, #0a1a38 100%); }
+    .s-noisyno  { background: radial-gradient(120% 90% at 50% 0%, #e0a13d 0%, #a8691a 55%, #3b2810 100%); }
+    .s-vocalout { background: radial-gradient(120% 90% at 50% 0%, #5a4616 0%, #25200f 55%, #0c0e11 100%); }
+
+    .body { display: flex; flex-direction: column; flex: 1; padding: 24px 26px 26px; }
 
     .head { display: flex; align-items: center; gap: 16px; }
     .icon {
@@ -231,7 +250,10 @@
     @media (max-width: 480px) {
       .intro { padding-top: 32px; padding-bottom: 24px; }
       .grid { gap: 14px; padding-bottom: 28px; }
-      .card { padding: 20px; border-radius: 18px; }
+      .card { border-radius: 18px; }
+      .stage { height: 178px; padding: 16px 16px 0; gap: 8px; }
+      .stage img { width: calc((100% - 16px) / 3); }
+      .body { padding: 20px; }
       .icon { width: 56px; height: 56px; }
       h2 { font-size: 1.4rem; }
     }
@@ -253,64 +275,85 @@
 
       <!-- DashLog -->
       <li class="card">
-        <div class="head">
-          <div class="icon"><img src="../dashlog/assets/icons/favicon-180.png" alt="" width="64" height="64" /></div>
-          <div>
-            <h2>DashLog</h2>
-            <span class="cat">GPS Drive Tracker</span>
-          </div>
+        <div class="stage s-dashlog">
+          <img src="assets/dashlog-1.webp" alt="DashLog home screen with total distance and a weekly summary" width="660" height="1434" decoding="async" fetchpriority="high" />
+          <img src="assets/dashlog-2.webp" alt="DashLog route replay drawn on a map" width="660" height="1434" decoding="async" />
+          <img src="assets/dashlog-3.webp" alt="DashLog statistics screen with weekly distance bars" width="660" height="1434" decoding="async" />
         </div>
-        <p class="desc">Connect CarPlay or your car's Bluetooth and every drive records itself. Route, distance, speed, and stats land in a drive journal you can replay and export — no account, with your data kept on-device.</p>
-        <ul class="tags"><li>Auto recording</li><li>No account</li><li>Local data</li></ul>
-        <p class="platforms"><strong>iPhone</strong> · <strong>Android</strong></p>
-        <div class="actions">
-          <div class="stores">
-            <a class="btn ios" href="https://apps.apple.com/app/id6769706684" aria-label="DashLog on the App Store">App Store</a>
-            <a class="btn play" href="https://play.google.com/store/apps/details?id=com.grayforge.dashlog" aria-label="DashLog on Google Play">Google Play</a>
+        <div class="body">
+          <div class="head">
+            <div class="icon"><img src="../dashlog/assets/icons/favicon-180.png" alt="" width="64" height="64" /></div>
+            <div>
+              <h2>DashLog</h2>
+              <span class="cat">GPS Drive Tracker</span>
+            </div>
           </div>
-          <a class="more" href="../dashlog/">Learn more <span class="arrow" aria-hidden="true">→</span></a>
+          <p class="desc">Connect CarPlay or your car's Bluetooth and every drive records itself. Route, distance, speed, and stats land in a drive journal you can replay and export — no account, with your data kept on-device.</p>
+          <ul class="tags"><li>Auto recording</li><li>No account</li><li>Local data</li></ul>
+          <p class="platforms"><strong>iPhone</strong> · <strong>Android</strong></p>
+          <div class="actions">
+            <div class="stores">
+              <a class="btn ios" href="https://apps.apple.com/app/id6769706684" aria-label="DashLog on the App Store">App Store</a>
+              <a class="btn play" href="https://play.google.com/store/apps/details?id=com.grayforge.dashlog" aria-label="DashLog on Google Play">Google Play</a>
+            </div>
+            <a class="more" href="../dashlog/">Learn more <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
         </div>
       </li>
 
       <!-- NoisyNo -->
       <li class="card">
-        <div class="head">
-          <div class="icon"><img src="../noisyno/assets/app-icon-180.png" alt="" width="64" height="64" /></div>
-          <div>
-            <h2>NoisyNo</h2>
-            <span class="cat">Voice Noise Remover</span>
-          </div>
+        <div class="stage s-noisyno">
+          <img src="assets/noisyno-1.webp" alt="NoisyNo list of cleaned recordings" width="660" height="1434" loading="lazy" decoding="async" />
+          <img src="assets/noisyno-2.webp" alt="NoisyNo Original and Cleaned comparison with a waveform" width="660" height="1434" loading="lazy" decoding="async" />
+          <img src="assets/noisyno-3.webp" alt="NoisyNo cleaning the sound of a video clip" width="660" height="1434" loading="lazy" decoding="async" />
         </div>
-        <p class="desc">Remove hum, hiss, fan noise, wind, and room tone from voice recordings and video audio without leaving your phone. No uploads, no accounts, no cloud processing.</p>
-        <ul class="tags"><li>Offline</li><li>No uploads</li><li>Voice &amp; video</li></ul>
-        <p class="platforms"><strong>iPhone</strong> · <strong>Mac</strong> · <strong>Android</strong></p>
-        <div class="actions">
-          <div class="stores">
-            <a class="btn ios" href="https://apps.apple.com/app/id6772728543" aria-label="NoisyNo on the App Store">App Store</a>
-            <a class="btn play" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno" aria-label="NoisyNo on Google Play">Google Play</a>
+        <div class="body">
+          <div class="head">
+            <div class="icon"><img src="../noisyno/assets/app-icon-180.png" alt="" width="64" height="64" /></div>
+            <div>
+              <h2>NoisyNo</h2>
+              <span class="cat">Voice Noise Remover</span>
+            </div>
           </div>
-          <a class="more" href="../noisyno/">Learn more <span class="arrow" aria-hidden="true">→</span></a>
+          <p class="desc">Remove hum, hiss, fan noise, wind, and room tone from voice recordings and video audio without leaving your phone. No uploads, no accounts, no cloud processing.</p>
+          <ul class="tags"><li>Offline</li><li>No uploads</li><li>Voice &amp; video</li></ul>
+          <p class="platforms"><strong>iPhone</strong> · <strong>Mac</strong> · <strong>Android</strong></p>
+          <div class="actions">
+            <div class="stores">
+              <a class="btn ios" href="https://apps.apple.com/app/id6772728543" aria-label="NoisyNo on the App Store">App Store</a>
+              <a class="btn play" href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno" aria-label="NoisyNo on Google Play">Google Play</a>
+            </div>
+            <a class="more" href="../noisyno/">Learn more <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
         </div>
       </li>
 
       <!-- VocalOut -->
       <li class="card">
-        <div class="head">
-          <div class="icon"><img src="../vocalout/assets/app-icon-180.png" alt="" width="64" height="64" /></div>
-          <div>
-            <h2>VocalOut</h2>
-            <span class="cat">Vocal Remover</span>
-          </div>
+        <div class="stage s-vocalout">
+          <img src="assets/vocalout-1.webp" alt="VocalOut home screen with a Choose a song button" width="660" height="1434" loading="lazy" decoding="async" />
+          <img src="assets/vocalout-2.webp" alt="VocalOut separation mode picker for a song file" width="660" height="1434" loading="lazy" decoding="async" />
+          <img src="assets/vocalout-3.webp" alt="VocalOut playing the finished instrumental" width="660" height="1434" loading="lazy" decoding="async" />
         </div>
-        <p class="desc">Turn any song on your phone into a clean backing track. The separation model runs on your device — no upload, no account. Processing and playback are free; a one-time purchase unlocks export.</p>
-        <ul class="tags"><li>Offline</li><li>No uploads</li><li>No subscription</li></ul>
-        <p class="platforms"><strong>iPhone</strong> · Android coming soon</p>
-        <div class="actions">
-          <div class="stores">
-            <a class="btn ios" href="https://apps.apple.com/app/id6809804367" aria-label="VocalOut on the App Store">App Store</a>
-            <span class="btn soon" aria-label="Google Play version coming soon">Google Play<small>coming soon</small></span>
+        <div class="body">
+          <div class="head">
+            <div class="icon"><img src="../vocalout/assets/app-icon-180.png" alt="" width="64" height="64" /></div>
+            <div>
+              <h2>VocalOut</h2>
+              <span class="cat">Vocal Remover</span>
+            </div>
           </div>
-          <a class="more" href="../vocalout/">Learn more <span class="arrow" aria-hidden="true">→</span></a>
+          <p class="desc">Turn any song on your phone into a clean backing track. The separation model runs on your device — no upload, no account. Processing and playback are free; a one-time purchase unlocks export.</p>
+          <ul class="tags"><li>Offline</li><li>No uploads</li><li>No subscription</li></ul>
+          <p class="platforms"><strong>iPhone</strong> · Android coming soon</p>
+          <div class="actions">
+            <div class="stores">
+              <a class="btn ios" href="https://apps.apple.com/app/id6809804367" aria-label="VocalOut on the App Store">App Store</a>
+              <span class="btn soon" aria-label="Google Play version coming soon">Google Play<small>coming soon</small></span>
+            </div>
+            <a class="more" href="../vocalout/">Learn more <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
         </div>
       </li>
 
