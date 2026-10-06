@@ -34,7 +34,7 @@
         "url": "https://grayforge.app/products/",
         "name": "GrayForge Apps",
         "description": "List of every app made by GrayForge: DashLog, NoisyNo and VocalOut.",
-        "dateModified": "2026-10-04",
+        "dateModified": "2026-10-05",
         "isPartOf": {"@id": "https://grayforge.app/#website"},
         "publisher": {"@id": "https://grayforge.app/#organization"},
         "mainEntity": {"@id": "https://grayforge.app/products/#list"}
@@ -221,8 +221,6 @@
     /* the store matching the visitor's device gets the filled style */
     .apple   .btn.ios,
     .android .btn.play { background: var(--ink); border-color: var(--ink); color: var(--on-ink); }
-    .btn.soon { color: var(--muted); border-style: dashed; cursor: default; flex-direction: column; line-height: 1.2; }
-    .btn.soon small { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.04em; }
     .more {
       display: inline-flex; align-items: center; justify-content: center; gap: 6px;
       min-height: 44px;
@@ -346,11 +344,11 @@
           </div>
           <p class="desc">Turn any song on your phone into a clean backing track. The separation model runs on your device — no upload, no account. Processing and playback are free; a one-time purchase unlocks export.</p>
           <ul class="tags"><li>Offline</li><li>No uploads</li><li>No subscription</li></ul>
-          <p class="platforms"><strong>iPhone</strong> · Android coming soon</p>
+          <p class="platforms"><strong>iPhone</strong> · <strong>Android</strong></p>
           <div class="actions">
             <div class="stores">
               <a class="btn ios" href="https://apps.apple.com/app/id6809804367" aria-label="VocalOut on the App Store">App Store</a>
-              <span class="btn soon" aria-label="Google Play version coming soon">Google Play<small>coming soon</small></span>
+              <a class="btn play" href="https://play.google.com/store/apps/details?id=com.grayforge.vocalout" aria-label="VocalOut on Google Play">Google Play</a>
             </div>
             <a class="more" href="../vocalout/">Learn more <span class="arrow" aria-hidden="true">→</span></a>
           </div>

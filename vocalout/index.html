@@ -31,7 +31,7 @@
       "@id": "https://grayforge.app/vocalout/#app",
       "name": "VocalOut",
       "alternateName": "VocalOut — Vocal Remover",
-      "operatingSystem": "iOS",
+      "operatingSystem": ["iOS", "Android"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "Music",
       "description": "VocalOut removes the vocals from any song on your phone and leaves a clean instrumental backing track. The AI model runs on the device, so there is no upload, no account, and no limit on how many songs you process.",
@@ -57,16 +57,22 @@
         "price": "0",
         "priceCurrency": "USD"
       },
-      "downloadUrl": "https://apps.apple.com/app/id6809804367",
-      "sameAs": ["https://apps.apple.com/app/id6809804367"]
+      "downloadUrl": [
+        "https://apps.apple.com/app/id6809804367",
+        "https://play.google.com/store/apps/details?id=com.grayforge.vocalout"
+      ],
+      "sameAs": [
+        "https://apps.apple.com/app/id6809804367",
+        "https://play.google.com/store/apps/details?id=com.grayforge.vocalout"
+      ]
     },
     {
       "@type": "WebPage",
       "@id": "https://grayforge.app/vocalout/#webpage",
       "url": "https://grayforge.app/vocalout/",
       "name": "VocalOut — Remove vocals from any song, fully offline",
-      "description": "Official product page for VocalOut, an offline vocal remover for iPhone.",
-      "dateModified": "2026-10-01",
+      "description": "Official product page for VocalOut, an offline vocal remover for iPhone and Android.",
+      "dateModified": "2026-10-05",
       "about": {"@id": "https://grayforge.app/vocalout/#app"},
       "publisher": {"@id": "https://grayforge.app/#organization"}
     },
@@ -171,7 +177,6 @@ h1 em{font-style:normal;color:var(--accent)}
   display:flex;align-items:center;gap:10px;height:54px;padding:0 20px;border-radius:12px;
   background:var(--surface);border:1px solid var(--line-2);text-decoration:none;color:var(--text);
 }
-button.store{appearance:none;font:inherit;text-align:left;cursor:pointer}
 .store:hover{border-color:rgba(233,169,58,.45)}
 .store:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .store .small{display:block;font-size:10.5px;color:var(--text-3);line-height:1.15}
@@ -243,19 +248,6 @@ footer a{color:var(--text-2);text-decoration:none}
 footer a:hover{color:var(--text)}
 footer .fine{margin-top:22px;max-width:68ch;line-height:1.75}
 
-/* ------------------------------------------------------- 출시 예정 안내 */
-.toast{
-  position:fixed;left:50%;bottom:28px;translate:-50% 0;z-index:20;
-  max-width:min(92vw,430px);padding:13px 18px;border-radius:12px;
-  background:var(--surface-2);border:1px solid var(--line-2);
-  color:var(--text);font-size:14px;line-height:1.5;text-align:center;
-  box-shadow:0 14px 34px rgba(0,0,0,.5);
-  opacity:0;transform:translateY(8px);
-  transition:opacity .18s ease,transform .18s ease;
-}
-.toast.on{opacity:1;transform:translateY(0)}
-@media (prefers-reduced-motion:reduce){.toast{transition-duration:0s}}
-
 @media (max-width:880px){
   .hero{grid-template-columns:1fr;gap:44px}
   .hero-video{max-width:270px;margin:0 auto}
@@ -290,24 +282,21 @@ footer .fine{margin-top:22px;max-width:68ch;line-height:1.75}
 <header>
   <div class="wrap hero">
     <div>
-      <p class="eyebrow">iPhone · Android coming soon</p>
+      <p class="eyebrow">iPhone · Android</p>
       <h1>Remove vocals from <em>any song</em></h1>
       <p class="lede">
         The AI runs on your phone. No upload, no account, no sign-up — and no
         limit on how many songs you run.
       </p>
-      <!-- App Store는 출시됐으므로 링크다. Google Play는 아직 갈 곳이 없어 버튼으로
-           남긴다. href="#"로 두면 눌렀을 때 페이지 맨 위로 튀고, 사용자는 무엇이
-           잘못됐는지 모른다. 출시되면 스토어 URL을 가진 <a>로 바꾼다. -->
       <div class="badges" id="get">
         <a class="store" href="https://apps.apple.com/app/id6809804367" aria-label="Download on the App Store">
           <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.5 2.1-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.1 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1 2.6-2.1.8-1.2 1.2-2.4 1.2-2.4s-2.3-.9-2.3-3.2zM14.2 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.6-.9 2.6 1 .1 2-.5 2.6-1.2z"/></svg>
           <span><span class="small">Download on the</span><span class="big">App Store</span></span>
         </a>
-        <button type="button" class="store" data-store="Google Play" aria-label="Get it on Google Play (coming soon)">
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.grayforge.vocalout" aria-label="Get it on Google Play">
           <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.7 2.2l-.1.1zm12.5 6.2L13.6 6l-9 5.1v.1l9 5.1 2.5-2.5-2.4-2.7 2.4-2.6zm1 1L14 12l3.1 2.5 3.1-1.8c.9-.5.9-1.4 0-1.9l-3.1-1.8z"/></svg>
-          <span><span class="small">Coming soon to</span><span class="big">Google Play</span></span>
-        </button>
+          <span><span class="small">Get it on</span><span class="big">Google Play</span></span>
+        </a>
       </div>
       <p class="free-line">Free with no song limit · In-app purchase to export</p>
     </div>
@@ -435,15 +424,13 @@ footer .fine{margin-top:22px;max-width:68ch;line-height:1.75}
         <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.5 2.1-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.1 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1 2.6-2.1.8-1.2 1.2-2.4 1.2-2.4s-2.3-.9-2.3-3.2zM14.2 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.6-.9 2.6 1 .1 2-.5 2.6-1.2z"/></svg>
         <span><span class="small">Download on the</span><span class="big">App Store</span></span>
       </a>
-      <button type="button" class="store" data-store="Google Play" aria-label="Get it on Google Play (coming soon)">
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.grayforge.vocalout" aria-label="Get it on Google Play">
         <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.7 2.2l-.1.1zm12.5 6.2L13.6 6l-9 5.1v.1l9 5.1 2.5-2.5-2.4-2.7 2.4-2.6zm1 1L14 12l3.1 2.5 3.1-1.8c.9-.5.9-1.4 0-1.9l-3.1-1.8z"/></svg>
-        <span><span class="small">Coming soon to</span><span class="big">Google Play</span></span>
-      </button>
+        <span><span class="small">Get it on</span><span class="big">Google Play</span></span>
+      </a>
     </div>
   </div>
 </div>
-
-<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <footer>
   <div class="wrap">
@@ -464,29 +451,6 @@ footer .fine{margin-top:22px;max-width:68ch;line-height:1.75}
 </footer>
 
 <script>
-/* 스토어 배지를 누르면 왜 아무 일도 일어나지 않는지 말해 준다.
-   누를 수 있게 생긴 것이 눌러도 조용하면, 사용자는 앱이 아니라 이 페이지가
-   고장 났다고 생각한다. */
-(function(){
-  var toast = document.getElementById('toast');
-  var hide;
-  document.querySelectorAll('[data-store]').forEach(function(button){
-    button.addEventListener('click', function(){
-      toast.textContent = 'Not on ' + button.dataset.store +
-        ' yet — VocalOut is coming soon.';
-      toast.hidden = false;
-      /* 이미 떠 있는 상태에서 다시 눌러도 나타나는 동작이 보이도록
-         클래스는 다음 프레임에 붙인다. */
-      requestAnimationFrame(function(){ toast.classList.add('on'); });
-      clearTimeout(hide);
-      hide = setTimeout(function(){ toast.classList.remove('on'); }, 3400);
-    });
-  });
-  toast.addEventListener('transitionend', function(){
-    if (!toast.classList.contains('on')) toast.hidden = true;
-  });
-})();
-
 /* 영상은 화면에 절반 이상 보일 때만 돈다. 보는 사람이 직접 멈췄다면 다시
    틀지 않고, 모션 줄이기를 켠 사람에게는 자동재생을 하지 않는다. */
 (function(){
