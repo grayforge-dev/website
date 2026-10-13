@@ -307,4 +307,34 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
   </url>
+  <url>
+    <loc>https://grayforge.app/blog/dashlog/log-every-drive-automatically/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+  </url>
 </urlset>

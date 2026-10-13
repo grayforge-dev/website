@@ -30,7 +30,14 @@ jobs:
                 "https://grayforge.app/",
                 "https://grayforge.app/dashlog/",
                 "https://grayforge.app/noisyno/",
-                "https://grayforge.app/vocalout/"
+                "https://grayforge.app/vocalout/",
+                "https://grayforge.app/blog/",
+                "https://grayforge.app/blog/dashlog/log-every-drive-automatically/",
+                "https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/",
+                "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/",
+                "https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/",
+                "https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/",
+                "https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/"
               ]
             }' \
             https://api.indexnow.org/indexnow

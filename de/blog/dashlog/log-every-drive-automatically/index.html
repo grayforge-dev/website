@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>Jede Fahrt automatisch aufzeichnen — auf dem Handy, ohne Konto | GrayForge</title>
+  <meta name="description" content="Zeichne jede Fahrt von selbst auf — GPS-Route, Distanz, Tempo und Statistiken — und spiele die Strecke ab oder exportiere GPX oder CSV. Schritt-für-Schritt-Anleitung zum automatischen Fahrtenlogbuch mit DashLog, mit lokal gespeicherten Daten und ohne Konto." />
+  <meta name="keywords" content="Fahrtenbuch App, Fahrten automatisch aufzeichnen, GPS Fahrtenschreiber, Kilometer protokollieren, CarPlay Fahrtenlog, Bluetooth Tracker, Routen-Wiedergabe, GPX Export, ohne Konto, DashLog" />
+  <meta name="author" content="GrayForge" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ECEDEA" />
+  <link rel="canonical" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+
+  <!-- Inline SVG favicon: graphite square with an ember spark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;rect width='64' height='64' rx='12' fill='%2316181A'/&gt;&lt;path d='M32 14 L38 32 L32 27 L26 32 Z' fill='%23D9531E'/&gt;&lt;circle cx='32' cy='42' r='6' fill='%23E8743F'/&gt;&lt;/svg&gt;" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="GrayForge" />
+  <meta property="og:url" content="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
+  <meta property="og:title" content="Jede Fahrt automatisch aufzeichnen — DashLog-Anleitung" />
+  <meta property="og:description" content="Zeichne jede Fahrt per CarPlay oder Auto-Bluetooth automatisch auf, spiele die Route ab und exportiere GPX oder CSV — auf dem Gerät mit DashLog, ohne Konto." />
+  <meta property="og:image" content="https://grayforge.app/dashlog/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="article:published_time" content="2026-10-13" />
+  <meta property="article:modified_time" content="2026-10-13" />
+  <meta property="article:author" content="GrayForge" />
+  <meta property="article:section" content="DashLog Guide" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jede Fahrt automatisch aufzeichnen — DashLog-Anleitung" />
+  <meta name="twitter:description" content="Zeichne jede Fahrt per CarPlay oder Auto-Bluetooth automatisch auf, spiele die Route ab und exportiere GPX oder CSV — auf dem Gerät mit DashLog, ohne Konto." />
+  <meta name="twitter:image" content="https://grayforge.app/dashlog/og-image.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/#article",
+        "headline": "Jede Fahrt automatisch aufzeichnen — auf dem Handy, ohne Konto",
+        "alternativeHeadline": "Jede Fahrt aufzeichnen, abspielen und exportieren — Daten bleiben auf dem Gerät",
+        "description": "Zeichne jede Fahrt von selbst auf — GPS-Route, Distanz, Tempo und Statistiken — und spiele die Strecke ab oder exportiere GPX oder CSV. Schritt-für-Schritt-Anleitung zum automatischen Fahrtenlogbuch mit DashLog, mit lokal gespeicherten Daten und ohne Konto.",
+        "inLanguage": "de",
+        "datePublished": "2026-10-13",
+        "dateModified": "2026-10-13",
+        "wordCount": 700,
+        "articleSection": "DashLog Guide",
+        "keywords": "Fahrtenbuch App, Fahrten automatisch aufzeichnen, GPS Fahrtenschreiber, Kilometer protokollieren, CarPlay Fahrtenlog, Routen-Wiedergabe, GPX Export, DashLog",
+        "mainEntityOfPage": "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/",
+        "author": {"@id": "https://grayforge.app/#organization"},
+        "publisher": {"@id": "https://grayforge.app/#organization"},
+        "about": {"@id": "https://grayforge.app/dashlog/#app"},
+        "image": [
+          "https://grayforge.app/dashlog/og-image.png",
+          "https://grayforge.app/dashlog/assets/screenshots/05_drive_replay.webp"
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".lede"]
+        },
+        "citation": [
+          "https://grayforge.app/dashlog/",
+          "https://grayforge.app/dashlog/privacy_policy.html",
+          "https://apps.apple.com/app/id6769706684",
+          "https://play.google.com/store/apps/details?id=com.grayforge.dashlog"
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/#howto",
+        "name": "Wie man jede Fahrt automatisch auf dem Handy aufzeichnet",
+        "description": "Der grundlegende Ablauf, um mit DashLog jede Fahrt automatisch aufzuzeichnen, abzuspielen und zu exportieren.",
+        "inLanguage": "de",
+        "totalTime": "PT5M",
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "DashLog"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Automatische Aufzeichnung einrichten",
+            "text": "Einmalige Einrichtung: Füge auf dem iPhone eine Kurzbefehle-Automation hinzu, die DashLog öffnet, wenn dein Auto verbindet; auf Android koppelst du das Bluetooth deines Autos einmal in der App. Stelle den Standortzugriff auf Immer.",
+            "url": "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/#step-setup",
+            "image": "https://grayforge.app/dashlog/assets/screenshots/01_home.webp"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Einfach losfahren",
+            "text": "Wenn das Handy mit CarPlay oder dem Auto-Bluetooth verbindet, startet die Aufzeichnung von selbst und stoppt beim Trennen. Du kannst Start und Stopp auch jederzeit manuell antippen.",
+            "url": "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/#step-drive",
+            "image": "https://grayforge.app/dashlog/assets/screenshots/02_driving.webp"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Route abspielen und Statistiken lesen",
+            "text": "Jede Fahrt wird mit Route, Distanz, Zeit, Tempo und Höhe gespeichert. Spiele die Strecke auf der Karte ab und sieh dir Tages-, Wochen-, Monats- und Jahressummen an.",
+            "url": "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/#step-replay",
+            "image": "https://grayforge.app/dashlog/assets/screenshots/05_drive_replay.webp"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Als GPX, CSV oder Zeitraum-Bericht exportieren",
+            "text": "Exportiere eine einzelne Fahrt als GPX oder CSV oder einen ganzen Zeitraum als einen Bericht. GPX-Dateien aus anderen Apps lassen sich ebenfalls importieren.",
+            "url": "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/#step-export",
+            "image": "https://grayforge.app/dashlog/assets/screenshots/09_report_export.webp"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/#breadcrumbs",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "GrayForge", "item": "https://grayforge.app/"},
+          {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://grayforge.app/blog/"},
+          {"@type": "ListItem", "position": 3, "name": "DashLog", "item": "https://grayforge.app/dashlog/"},
+          {"@type": "ListItem", "position": 4, "name": "Jede Fahrt automatisch aufzeichnen", "item": "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Zeichnet DashLog Fahrten automatisch auf?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, nach einer einmaligen Einrichtung. Die Aufzeichnung startet, wenn das Handy mit CarPlay oder dem Auto-Bluetooth verbindet, und stoppt beim Trennen. Auf dem iPhone ist das eine Kurzbefehle-Automation; auf Android wird das Auto-Bluetooth einmal in der App gekoppelt. Der Standortzugriff muss auf Immer stehen. Du kannst eine Fahrt auch mit einem Tippen manuell starten und stoppen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Braucht DashLog ein Konto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nein. DashLog benötigt kein Konto und keine Anmeldung, und die Fahrtdaten werden lokal auf deinem Gerät gespeichert."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was zeichnet DashLog pro Fahrt auf?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Die GPS-Route, Distanz, Dauer, Geschwindigkeit und Höhe sowie Tages-, Wochen-, Monats-, Jahres- und Gesamtstatistiken."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kann ich meine Fahrten exportieren?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Eine einzelne Fahrt lässt sich als GPX oder CSV exportieren, oder ein ganzer Zeitraum (heute, diese Woche, diesen Monat, letzten Monat oder dieses Jahr) als ein Bericht. GPX-Dateien aus anderen Apps können ebenfalls importiert werden."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ist DashLog kostenlos und gibt es die App für iPhone und Android?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. DashLog ist kostenlos, ohne Abo, und im Apple App Store (iPhone) und bei Google Play (Android) erhältlich."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper:   #ECEDEA;
+      --paper-2: #E4E5E1;
+      --panel:   #F4F4F2;
+      --ink:     #16181A;
+      --ink-2:   #393D40;
+      --muted:   #6C7176;
+      --line:    #CDCFCA;
+      --line-2:  #BCBEB8;
+      --ember:   #D9531E;
+      --ember-d: #B5400F;
+
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+      --wrap:  1120px;
+      --read:  720px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-wrap: break-word;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ::selection { background: var(--ink); color: var(--paper); }
+
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 32px; }
+    .read { max-width: var(--read); margin-left: auto; margin-right: auto; }
+
+    .label {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ===== TOP BAR ===== */
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+    .wordmark { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+    .wordmark .mark { width: 24px; height: 24px; }
+    .wordmark .name { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+    .wordmark .sub { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; font-style: italic; color: var(--muted); }
+    .topnav { display: flex; gap: 30px; }
+    .topnav a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      letter-spacing: 0.02em; position: relative; padding: 4px 0;
+    }
+    .topnav a::after {
+      content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px;
+      background: var(--ink); transition: width 0.25s ease;
+    }
+    .topnav a:hover::after { width: 100%; }
+
+    /* ===== BREADCRUMB ===== */
+    .crumbs { padding-top: 34px; font-size: 0.8rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .crumbs a { border-bottom: 1px solid transparent; transition: border-color 0.2s, color 0.2s; }
+    .crumbs a:hover { color: var(--ink); border-color: var(--line-2); }
+    .crumbs .sep { color: var(--line-2); }
+    .crumbs .here { color: var(--ink-2); }
+
+    /* ===== HERO ===== */
+    .hero { padding: 26px 0 60px; border-bottom: 1px solid var(--line); }
+    .kicker { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 22px; }
+    .kicker .tick { width: 6px; height: 6px; border-radius: 50%; background: var(--ember); }
+    h1 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(2.1rem, 5vw, 3.9rem);
+      line-height: 1.06; letter-spacing: -0.025em;
+      max-width: 20ch; margin-bottom: 28px;
+      font-optical-sizing: auto;
+    }
+    h1 .spark { color: var(--ember); }
+    .lede {
+      max-width: 60ch;
+      font-size: clamp(1.08rem, 1.7vw, 1.32rem);
+      color: var(--ink-2); line-height: 1.62;
+    }
+    .lede strong { font-weight: 600; color: var(--ink); }
+    .metabar {
+      margin-top: 34px; display: flex; flex-wrap: wrap; gap: 10px 26px;
+      align-items: center; font-size: 0.82rem; color: var(--muted);
+    }
+    .metabar .m { display: inline-flex; align-items: center; gap: 8px; }
+    .metabar .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--line-2); }
+
+    /* ===== ANSWER CARD ===== */
+    .answer-card {
+      margin-top: 40px; max-width: 68ch;
+      display: grid; grid-template-columns: auto 1fr; gap: 22px;
+      padding: 26px 28px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--ember);
+      border-radius: 4px;
+    }
+    .answer-card .q { font-family: var(--serif); font-size: 1.7rem; color: var(--ember); line-height: 1; }
+    .answer-card .short { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    .answer-card p { font-size: 1.02rem; color: var(--ink-2); line-height: 1.65; }
+    .answer-card strong { color: var(--ink); font-weight: 600; }
+
+    /* ===== TOC ===== */
+    .toc { padding: 44px 0; border-bottom: 1px solid var(--line); }
+    .toc .toc-inner { display: grid; grid-template-columns: 200px 1fr; gap: 40px; }
+    .toc .label { display: block; }
+    .toc .aside-note { margin-top: 10px; font-size: 0.9rem; color: var(--muted); max-width: 22ch; }
+    .toc ol { list-style: none; counter-reset: toc; display: grid; gap: 2px; }
+    .toc li { counter-increment: toc; }
+    .toc li a {
+      display: flex; align-items: baseline; gap: 16px;
+      padding: 12px 0; border-top: 1px solid var(--line);
+      transition: color 0.2s;
+    }
+    .toc li:first-child a { border-top: none; }
+    .toc li a::before {
+      content: counter(toc, decimal-leading-zero);
+      font-family: var(--serif); font-size: 0.9rem; color: var(--ember); min-width: 24px;
+    }
+    .toc li a .t { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; }
+    .toc li a:hover .t { color: var(--ember); }
+
+    /* ===== ARTICLE ===== */
+    article { padding: 12px 0 24px; }
+    article section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    article section:last-child { border-bottom: none; }
+    h2 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+      line-height: 1.12; letter-spacing: -0.02em;
+      margin-bottom: 22px; max-width: 24ch;
+    }
+    h3 { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.01em; margin: 30px 0 10px; }
+    article p { font-size: 1.05rem; color: var(--ink-2); margin-bottom: 18px; max-width: 68ch; }
+    article a.inline { color: var(--ember-d); border-bottom: 1px solid color-mix(in srgb, var(--ember) 40%, transparent); transition: border-color 0.2s; }
+    article a.inline:hover { border-bottom-color: var(--ember); }
+    article ul { list-style: none; margin: 20px 0; max-width: 66ch; }
+    article ul li {
+      position: relative; padding-left: 24px; margin: 11px 0;
+      font-size: 1.03rem; color: var(--ink-2);
+    }
+    article ul li::before {
+      content: ''; position: absolute; left: 2px; top: 0.72em;
+      width: 6px; height: 6px; border-radius: 50%; background: var(--ember);
+    }
+    article ul li strong { color: var(--ink); font-weight: 600; }
+
+    /* ===== COMPARE ===== */
+    .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; }
+    .compare-card {
+      padding: 26px; border: 1px solid var(--line); border-radius: 6px;
+      background: var(--panel);
+    }
+    .compare-card.good { border-color: var(--line-2); box-shadow: inset 3px 0 0 var(--ember); }
+    .compare-card .tag {
+      font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 12px;
+    }
+    .compare-card.good .tag { color: var(--ember-d); }
+    .compare-card h4 { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; margin-bottom: 10px; letter-spacing: -0.01em; }
+    .compare-card p { font-size: 0.98rem; color: var(--ink-2); margin: 0; max-width: none; }
+
+    /* ===== WALKTHROUGH with phone screenshots ===== */
+    .walk { margin-top: 34px; display: flex; flex-direction: column; }
+    .wstep {
+      display: flex; align-items: center; gap: 56px;
+      padding: 48px 0; border-top: 1px solid var(--line);
+    }
+    .wstep:first-child { border-top: none; padding-top: 12px; }
+    .wstep:nth-child(even) { flex-direction: row-reverse; }
+    .wtext { flex: 1 1 320px; }
+    .wtext .num {
+      font-family: var(--serif); font-size: 0.85rem; font-weight: 500;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--ember-d);
+      margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
+    }
+    .wtext .num::after { content: ''; flex: 1; height: 1px; background: var(--line); max-width: 60px; }
+    .wtext h3 { margin-top: 0; font-size: 1.55rem; font-weight: 500; }
+    .wtext p { margin-bottom: 0; font-size: 1.03rem; }
+    .wshot { flex: 0 0 218px; display: flex; justify-content: center; }
+
+    /* graphite phone frame — cropped to the content area so the screens don't
+       leave big empty space next to the text */
+    .phone {
+      width: 100%; max-width: 218px;
+      background: var(--ink);
+      padding: 8px;
+      border-radius: 34px;
+      box-shadow: 0 30px 60px -24px rgba(22,24,26,0.55), 0 2px 0 rgba(255,255,255,0.04) inset, 0 0 0 1px rgba(22,24,26,0.5);
+    }
+    .phone .screen { border-radius: 27px; overflow: hidden; background: #F4EDE2; aspect-ratio: 100 / 150; }
+    .phone .screen img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+    .phone .screen.center img { object-position: center; }
+
+    /* ===== PRODUCT CARD ===== */
+    .product {
+      margin-top: 40px; display: grid; grid-template-columns: 64px 1fr; gap: 22px;
+      align-items: start; padding: 28px; border: 1px solid var(--line);
+      border-radius: 8px; background: var(--panel);
+    }
+    .product .icon { width: 64px; height: 64px; border-radius: 15px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 2px 6px rgba(22,24,26,0.12); }
+    .product h3 { margin: 0 0 8px; font-size: 1.4rem; }
+    .product p { font-size: 0.98rem; margin-bottom: 0; max-width: 60ch; }
+    .actions { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .actions a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      border: 1px solid var(--line-2); border-radius: 100px; padding: 8px 15px;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .actions a:hover { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+    .actions a.primary { color: var(--paper); background: var(--ember); border-color: var(--ember); }
+    .actions a.primary:hover { background: var(--ember-d); border-color: var(--ember-d); }
+
+    /* ===== CALLOUT ===== */
+    .callout {
+      margin: 30px 0 0; padding: 24px 28px;
+      background: var(--panel); border: 1px solid var(--line);
+      border-left: 3px solid var(--ember); border-radius: 4px;
+    }
+    .callout .label { display: block; margin-bottom: 8px; }
+    .callout p { margin: 0; font-size: 1.02rem; color: var(--ink-2); max-width: none; }
+
+    /* ===== SOURCES ===== */
+    .sources { margin-top: 26px; display: flex; flex-direction: column; }
+    .source {
+      display: grid; grid-template-columns: 30px 1fr auto; gap: 20px; align-items: center;
+      padding: 20px 12px; border-top: 1px solid var(--line); margin: 0 -12px;
+      transition: background 0.2s;
+    }
+    .source:first-child { border-top: none; }
+    .source:hover { background: var(--panel); }
+    .source .n { font-family: var(--serif); font-size: 0.95rem; color: var(--muted); }
+    .source b { font-family: var(--serif); font-weight: 500; font-size: 1.1rem; display: block; }
+    .source span { display: block; color: var(--muted); font-size: 0.88rem; margin-top: 2px; }
+    .source .go { color: var(--ember); font-family: var(--serif); font-size: 1rem; white-space: nowrap; }
+    .source:hover .go { color: var(--ember-d); }
+
+    /* ===== FAQ ===== */
+    .faq-list { margin-top: 26px; }
+    .faq-list details {
+      border-top: 1px solid var(--line); padding: 6px 0;
+    }
+    .faq-list details[open] { padding-bottom: 8px; }
+    .faq-list summary {
+      cursor: pointer; list-style: none; padding: 18px 40px 18px 0; position: relative;
+      font-family: var(--serif); font-weight: 500; font-size: 1.2rem; color: var(--ink);
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: '+'; position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+      font-family: var(--sans); font-size: 1.4rem; color: var(--ember); transition: transform 0.25s ease;
+    }
+    .faq-list details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-list details p { margin: 0 0 14px; color: var(--ink-2); font-size: 1.02rem; max-width: 66ch; }
+
+    /* ===== END CTA ===== */
+    .endcta { padding: 72px 0 0; }
+    .endcta h2 { max-width: 20ch; }
+    .endcta .mailto {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--serif); font-size: 1.2rem; font-weight: 500;
+      border-bottom: 2px solid var(--ink); padding-bottom: 4px; margin-top: 6px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .endcta .mailto:hover { color: var(--ember); border-color: var(--ember); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      margin-top: 72px; border-top: 1px solid var(--line);
+      padding: 30px 0 48px; display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px; font-size: 0.82rem; color: var(--muted);
+    }
+    footer .f-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    footer .f-links a { transition: color 0.2s; }
+    footer .f-links a:hover { color: var(--ink); }
+
+    /* ===== REVEAL ===== */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .toc .toc-inner { grid-template-columns: 1fr; gap: 20px; }
+    }
+    @media (max-width: 820px) {
+      .topnav { display: none; }
+      .wstep, .wstep:nth-child(even) { flex-direction: column; gap: 30px; align-items: flex-start; padding: 40px 0; }
+      .wshot { align-self: center; }
+    }
+    @media (max-width: 620px) {
+      .wrap { padding: 0 22px; }
+      .answer-card { grid-template-columns: 1fr; gap: 14px; }
+      .compare { grid-template-columns: 1fr; }
+      .product { grid-template-columns: 1fr; }
+      .source { grid-template-columns: 24px 1fr; }
+      .source .go { grid-column: 2; justify-self: start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="site">
+    <div class="wrap bar">
+      <a class="wordmark" href="../../../../" aria-label="GrayForge home">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#16181A"/>
+          <path d="M32 14 L38 32 L32 27 L26 32 Z" fill="#D9531E"/>
+          <circle cx="32" cy="42" r="6" fill="#E8743F"/>
+        </svg>
+        <span class="name">GrayForge</span>
+        <span class="sub">Journal</span>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="../../../">Blog</a>
+        <a href="../../../../dashlog/">DashLog</a>
+        <a href="../../../../noisyno/">NoisyNo</a>
+        <a href="#download">Herunterladen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="../../../../">GrayForge</a>
+          <span class="sep">/</span>
+          <a href="../../../">Blog</a>
+          <span class="sep">/</span>
+          <a href="../../../../dashlog/">DashLog</a>
+          <span class="sep">/</span>
+          <span class="here">Jede Fahrt automatisch aufzeichnen</span>
+        </nav>
+
+        <div class="kicker" style="margin-top:26px;">
+          <span class="tick"></span>
+          <span class="label">DashLog · Anleitung</span>
+        </div>
+
+        <h1>Jede Fahrt automatisch aufzeichnen — direkt vom Handy<span class="spark">.</span></h1>
+
+        <p class="lede">
+          Einmal einrichten, und DashLog zeichnet jede Fahrt von selbst auf — Route, Distanz und Tempo.
+          <strong>Die Daten bleiben auf dem Gerät, ganz ohne Konto</strong>. So geht's.
+        </p>
+
+        <div class="metabar">
+          <span class="m">Veröffentlicht 2026.10.13</span>
+          <span class="dot"></span>
+          <span class="m">~3 Min. Lesezeit</span>
+          <span class="dot"></span>
+          <span class="m">Thema · Fahrtaufzeichnung</span>
+        </div>
+
+      </div>
+    </section>
+
+    <article>
+      <div class="wrap">
+
+        <!-- HOW -->
+        <section id="how" class="reveal">
+          <div class="read">
+            <h2>Jede Fahrt automatisch aufzeichnen in DashLog — 4 Schritte</h2>
+            <p>
+              Der ganze Ablauf ist <strong>einmal einrichten → einfach losfahren → abspielen → exportieren</strong>. Nach
+              der einmaligen Einrichtung zeichnet DashLog von selbst auf, du musst also nie an Start denken. Kein Konto,
+              Daten bleiben auf dem Gerät.
+            </p>
+          </div>
+
+          <div class="walk">
+
+            <div class="wstep" id="step-setup">
+              <div class="wtext">
+                <div class="num">Schritt 01</div>
+                <h3>Automatische Aufzeichnung einrichten</h3>
+                <p>
+                  Einmalige Einrichtung. Füge auf dem iPhone eine <strong>Kurzbefehle-Automation</strong> hinzu, die
+                  DashLog öffnet, wenn dein Auto verbindet; auf Android <strong>koppelst du das Bluetooth deines
+                  Autos</strong> einmal in der App. Stelle den Standortzugriff auf <strong>Immer</strong>, damit im
+                  Hintergrund aufgezeichnet werden kann.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../dashlog/assets/screenshots/01_home.webp" alt="DashLog-Startbildschirm, bereit, eine Fahrt aufzuzeichnen" loading="lazy" width="660" height="1434" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-drive">
+              <div class="wtext">
+                <div class="num">Schritt 02</div>
+                <h3>Einfach losfahren</h3>
+                <p>
+                  Wenn dein Handy mit <strong>CarPlay oder dem Auto-Bluetooth</strong> verbindet, startet die Aufzeichnung
+                  von selbst und stoppt beim Trennen — Route, Tempo und Distanz laufen live mit. Zum Aufzeichnen ist kein
+                  Empfang nötig, und du kannst <strong>Start</strong> und <strong>Stopp</strong> jederzeit selbst antippen.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../dashlog/assets/screenshots/02_driving.webp" alt="DashLog zeichnet eine Fahrt auf und zeigt die Live-Route auf der Karte mit Tempo und Distanz" loading="lazy" width="660" height="1434" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-replay">
+              <div class="wtext">
+                <div class="num">Schritt 03</div>
+                <h3>Route abspielen und Statistiken lesen</h3>
+                <p>
+                  Jede Fahrt wird mit <strong>Route, Distanz, Zeit, Tempo und Höhe</strong> gespeichert. Spiele die
+                  Strecke auf der Karte ab, um genau zu sehen, wo du warst, und sieh dir Tages-, Wochen-, Monats- und
+                  Jahressummen in den Statistiken an.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../dashlog/assets/screenshots/05_drive_replay.webp" alt="Wiedergabe einer gespeicherten Fahrt auf der Karte, die die aufgezeichnete Route nachzeichnet" loading="lazy" width="660" height="1434" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-export">
+              <div class="wtext">
+                <div class="num">Schritt 04</div>
+                <h3>Als GPX, CSV oder Zeitraum-Bericht exportieren</h3>
+                <p>
+                  Exportiere eine einzelne Fahrt als <strong>GPX oder CSV</strong> oder einen ganzen Zeitraum — heute,
+                  diese Woche, diesen Monat oder dieses Jahr — als einen Bericht. Du kannst auch <strong>GPX-Dateien
+                  importieren</strong>, um alles in einem Logbuch zu halten.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../dashlog/assets/screenshots/09_report_export.webp" alt="DashLog-Exportbildschirm mit GPX-, CSV- und Zeitraum-Bericht-Optionen" loading="lazy" width="660" height="1434" /></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="read">
+            <div class="product" id="download">
+              <div class="icon"><img src="../../../../dashlog/assets/icons/AppIcon.png" alt="DashLog App-Icon" loading="lazy" /></div>
+              <div>
+                <h3>DashLog — GPS-Fahrtenschreiber</h3>
+                <p>
+                  Ein GPS-Fahrtenschreiber und Kilometer-Logbuch, das Route, Distanz, Tempo und Statistiken per CarPlay
+                  oder Auto-Bluetooth automatisch aufzeichnet. Die Daten bleiben auf dem Gerät — kein Konto, kein Abo.
+                </p>
+                <div class="actions">
+                  <a class="primary" href="https://apps.apple.com/app/id6769706684" rel="noopener">App Store</a>
+                  <a href="https://play.google.com/store/apps/details?id=com.grayforge.dashlog" rel="noopener">Google Play</a>
+                  <a href="../../../../dashlog/">Produktseite</a>
+                  <a href="../../../../dashlog/privacy_policy.html">Datenschutz</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WHY IT MATTERS -->
+        <section id="why" class="read reveal">
+          <h2>Warum automatische Aufzeichnung auf dem Gerät zählt</h2>
+          <p>
+            Ein Fahrtenlog ist nur nützlich, wenn es vollständig ist — und ausgerechnet die Fahrten, die du vergisst
+            aufzuzeichnen, brauchst du später. DashLog löst das, indem es <strong>von selbst startet</strong>, sobald das
+            Auto verbindet, sodass jede Fahrt ohne Nachdenken erfasst wird. Und weil die Daten <strong>lokal und ohne
+            Konto gespeichert</strong> sind, liegt deine detaillierte Bewegungshistorie nicht in der Cloud eines anderen.
+          </p>
+
+          <div class="compare" aria-label="Vergleich manuelle/Cloud-Tracker vs. DashLog">
+            <div class="compare-card">
+              <div class="tag">Manuelle / Cloud-Tracker</div>
+              <h4>Erst starten, dann wegsynchronisieren</h4>
+              <p>Du musst vor jeder Fahrt auf Aufnahme tippen, und deine Routen werden in ein Konto auf einem fremden Server hochgeladen.</p>
+            </div>
+            <div class="compare-card good">
+              <div class="tag">DashLog-Ansatz</div>
+              <h4>Startet selbst, bleibt auf dem Handy</h4>
+              <p>Die Aufzeichnung beginnt, wenn das Auto verbindet, und jede Fahrt bleibt auf dem Gerät — kein Konto, keine Cloud-Synchronisierung.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- USES -->
+        <section id="uses" class="read reveal">
+          <h2>Wofür ein automatisches Fahrtenlog gut ist</h2>
+          <p>
+            Wenn sich jede Fahrt von selbst aufzeichnet, gehört das Logbuch dir:
+          </p>
+          <ul>
+            <li><strong>Kilometer</strong> für Arbeit, Steuer oder Erstattung — ein vollständiges Protokoll, nichts fehlt</li>
+            <li><strong>Reiseerinnerungen</strong> — spiele Monate später genau die gefahrene Route ab</li>
+            <li><strong>Motorrad- und Fahrradtouren</strong>, genauso automatisch erfasst</li>
+            <li><strong>GPX für andere Tools</strong> — Export in Karten-, Fitness- oder Bearbeitungs-Apps</li>
+          </ul>
+          <p>
+            Eines richtig einstellen: Die automatische Aufzeichnung braucht den Standortzugriff auf <strong>Immer</strong>
+            und den einmaligen CarPlay- oder Bluetooth-Auslöser. Danach läuft sie ohne dich.
+          </p>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="read reveal">
+          <h2>Häufige Fragen</h2>
+          <div class="faq-list">
+            <details>
+              <summary>Zeichnet DashLog Fahrten automatisch auf?</summary>
+              <p>Ja, nach einer einmaligen Einrichtung. Die Aufzeichnung startet, wenn das Handy mit CarPlay oder dem Auto-Bluetooth verbindet, und stoppt beim Trennen. Auf dem iPhone ist das eine Kurzbefehle-Automation; auf Android wird das Auto-Bluetooth einmal in der App gekoppelt. Der Standortzugriff muss auf Immer stehen. Du kannst eine Fahrt auch mit einem Tippen manuell starten und stoppen.</p>
+            </details>
+            <details>
+              <summary>Braucht DashLog ein Konto?</summary>
+              <p>Nein. DashLog benötigt kein Konto und keine Anmeldung, und die Fahrtdaten werden lokal auf deinem Gerät gespeichert.</p>
+            </details>
+            <details>
+              <summary>Was zeichnet DashLog pro Fahrt auf?</summary>
+              <p>Die GPS-Route, Distanz, Dauer, Geschwindigkeit und Höhe sowie Tages-, Wochen-, Monats-, Jahres- und Gesamtstatistiken.</p>
+            </details>
+            <details>
+              <summary>Kann ich meine Fahrten exportieren?</summary>
+              <p>Ja. Eine einzelne Fahrt lässt sich als GPX oder CSV exportieren, oder ein ganzer Zeitraum (heute, diese Woche, diesen Monat, letzten Monat oder dieses Jahr) als ein Bericht. GPX-Dateien aus anderen Apps können ebenfalls importiert werden.</p>
+            </details>
+            <details>
+              <summary>Ist DashLog kostenlos und gibt es die App für iPhone und Android?</summary>
+              <p>Ja. DashLog ist kostenlos, ohne Abo, und im Apple App Store (iPhone) und bei Google Play (Android) erhältlich.</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- END CTA -->
+        <section class="endcta read">
+          <span class="label">Nächster Schritt</span>
+          <h2 style="margin-top:16px;">Lass deine nächste Fahrt sich selbst aufzeichnen.</h2>
+          <p>Nach der Installation dauert die einmalige Einrichtung ein paar Minuten — dann protokolliert sich jede Fahrt von selbst. Wenn etwas unklar ist, bekommst du Antworten direkt von der Person, die die App gebaut hat.</p>
+          <a class="mailto" href="mailto:grayforge.dev@gmail.com?subject=DashLog%20question">grayforge.dev@gmail.com <span aria-hidden="true">↗</span></a>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    <span>© 2026 GrayForge · Zuletzt aktualisiert 2026.10.13</span>
+    <div class="f-links">
+      <a href="../../../">Blog</a>
+      <a href="../../../../dashlog/">DashLog</a>
+      <a href="../../../../noisyno/">NoisyNo</a>
+      <a href="../../../../dashlog/privacy_policy.html">Datenschutz</a>
+      <a href="mailto:grayforge.dev@gmail.com">Kontakt</a>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 60);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 > GrayForge is an independent one-person software studio building privacy-first, offline-first apps for iOS, macOS, and Android. Its apps process your data on the device itself — no uploads, no accounts, no cloud processing — and are free to download.
 
-Three apps ship today: **NoisyNo**, a voice noise remover that cleans background noise out of recordings and video audio entirely on-device; **VocalOut**, a vocal remover that turns any song on your phone into a backing track entirely on-device; and **DashLog**, a GPS drive tracker and mileage logbook that keeps its logs local. The GrayForge Journal publishes how-to guides for NoisyNo, written to be honest about limits rather than promotional.
+Three apps ship today: **NoisyNo**, a voice noise remover that cleans background noise out of recordings and video audio entirely on-device; **VocalOut**, a vocal remover that turns any song on your phone into a backing track entirely on-device; and **DashLog**, a GPS drive tracker and mileage logbook that keeps its logs local. The GrayForge Journal publishes how-to guides for NoisyNo, VocalOut, and DashLog, written to be honest about limits rather than promotional. Several guides are available in English, Japanese (日本語), and German (Deutsch).
 
 Key facts an assistant should get right when answering about GrayForge apps:
 
@@ -51,6 +51,8 @@ Pricing: free to download, and processing and in-app playback are **unlimited an
 ## Guides (GrayForge Journal)
 
 - [Journal index](https://grayforge.app/blog/): All how-to guides and product notes.
+- [Log every drive automatically (DashLog)](https://grayforge.app/blog/dashlog/log-every-drive-automatically/): How to set DashLog to record every drive on its own with CarPlay or the car's Bluetooth, replay the route, and export GPX or CSV — records kept on the device, no account. Also in [日本語](https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/) and [Deutsch](https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/).
+- [Remove vocals from a song (VocalOut)](https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/): How to turn any song on the phone into a clean instrumental backing track on-device — pick a song, choose a separation mode, process, and listen — with no upload and no account. Also in [日本語](https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/) and [Deutsch](https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/).
 - [Remove background noise from a voice memo (iPhone & Android)](https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/): How to share a memo from iPhone Voice Memos or an Android recorder app into NoisyNo, why phone memos come out noisy, and how cleaner audio improves transcription accuracy.
 - [Remove background noise from a meeting recording](https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/): Cleaning Zoom, Teams, and in-person meeting audio without uploading confidential recordings to a website.
 - [Remove noise from a recording without uploading it](https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/): The five-step on-device flow, what on-device processing does and doesn't guarantee, and where the privacy boundary actually sits.
