@@ -255,7 +255,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/blog/</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -276,5 +276,35 @@
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
   </url>
 </urlset>
