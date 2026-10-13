@@ -282,18 +282,30 @@
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
   </url>
   <url>
     <loc>https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
   </url>
   <url>
     <loc>https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
   </url>
   <url>
     <loc>https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/</loc>
@@ -354,5 +366,65 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
   </url>
 </urlset>

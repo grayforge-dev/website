@@ -40,7 +40,16 @@ jobs:
                 "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/",
                 "https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/",
                 "https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/",
-                "https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/"
+                "https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/",
+                "https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/",
+                "https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/",
+                "https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/",
+                "https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/",
+                "https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/",
+                "https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/",
+                "https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/",
+                "https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/",
+                "https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/"
               ]
             }' \
             https://api.indexnow.org/indexnow
