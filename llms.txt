@@ -45,6 +45,7 @@ Pricing: free to download, and processing and in-app playback are **unlimited an
 - [DashLog product page](https://grayforge.app/dashlog/): Drive logging, mileage records, and local-only storage.
 - [DashLog privacy policy](https://grayforge.app/dashlog/privacy_policy.html)
 - [DashLog terms of service](https://grayforge.app/dashlog/terms_of_service.html)
+- [DashLog FAQ](https://grayforge.app/dashlog/faq/): Answers about automatic recording with CarPlay or car Bluetooth, permissions and battery settings, GPX import and export, widgets, and privacy. Available in 46 languages at https://grayforge.app/<language>/dashlog/faq/ (for example /ko/, /ja/, /de/).
 - [App Store listing](https://apps.apple.com/app/id6769706684)
 - [Google Play listing](https://play.google.com/store/apps/details?id=com.grayforge.dashlog)
 
