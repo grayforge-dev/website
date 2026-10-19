@@ -23,6 +23,7 @@ Last reviewed: 2026-06-12
 - [ ] When a new app or page is added, update `sitemap.xml`, `llms.txt`, the IndexNow URL list in `.github/workflows/indexnow.yml`, and the home page JSON-LD in the same commit.
 - [ ] Search for inaccurate claims such as `no analytics`, `no data collection`, and `lifetime` before every deployment.
 - [ ] Validate JSON-LD and mobile layout after structural edits.
+- [ ] ZapBlur launch: it is listed as *coming soon* (home card and JSON-LD without `sameAs`, `llms.txt`, `sitemap.xml`, IndexNow, the status line of `zapblur/` and `ko/zapblur/`). At launch replace the coming-soon wording everywhere with the store links, add `sameAs` to the home JSON-LD, add the ZapBlur privacy policy page to `sitemap.xml` (it is left out until the policy is final), add ZapBlur to `/products/`, and re-read the pages for claims that were true only before release.
 
 ## External Authority Gaps
 
@@ -35,4 +36,5 @@ Last reviewed: 2026-06-12
 
 - NoisyNo and DashLog are currently free and require no subscription. They are not lifetime-purchase products.
 - NoisyNo processes user audio and video files on-device, but limited Firebase analytics and diagnostics may be used.
+- ZapBlur is not released yet: do not describe it as available, free or priced until its store listings exist. Photos are processed on-device and never leave it; Firebase usage and crash data are sent only after the user allows it; on Android, Google ML Kit may send device and performance information regardless of that choice.
 - DashLog stores personal drive records locally and does not upload the drive archive to a DashLog server, but limited Firebase analytics and diagnostics may be used.

@@ -6,7 +6,7 @@
 
   <!-- Primary SEO -->
   <title>GrayForge — Independent software studio</title>
-  <meta name="description" content="GrayForge is an independent one-person software studio. We forge small, sharp, privacy-first and offline-first tools for people the software industry overlooks. Makers of DashLog, NoisyNo and VocalOut." />
+  <meta name="description" content="GrayForge is an independent one-person software studio. We forge small, sharp, privacy-first and offline-first tools for people the software industry overlooks. Makers of DashLog, NoisyNo and VocalOut. ZapBlur is coming soon." />
   <meta name="keywords" content="GrayForge, independent software studio, indie developer, privacy-first apps, offline apps, on-device, niche software, DashLog, NoisyNo, VocalOut" />
   <meta name="author" content="GrayForge" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -21,7 +21,7 @@
   <meta property="og:site_name" content="GrayForge" />
   <meta property="og:url" content="https://grayforge.app/" />
   <meta property="og:title" content="GrayForge — Independent software studio" />
-  <meta property="og:description" content="An independent one-person studio forging small, sharp, privacy-first and offline-first tools. Makers of DashLog, NoisyNo and VocalOut." />
+  <meta property="og:description" content="An independent one-person studio forging small, sharp, privacy-first and offline-first tools. Makers of DashLog, NoisyNo and VocalOut. ZapBlur is coming soon." />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="GrayForge — Independent software studio" />
@@ -46,7 +46,8 @@
           "On-device processing",
           "GPS drive logging",
           "On-device audio noise removal",
-          "On-device vocal removal"
+          "On-device vocal removal",
+          "On-device face blurring"
         ]
       },
       {
@@ -60,7 +61,8 @@
         "about": [
           {"@id": "https://grayforge.app/dashlog/#app"},
           {"@id": "https://grayforge.app/noisyno/#app"},
-          {"@id": "https://grayforge.app/vocalout/#app"}
+          {"@id": "https://grayforge.app/vocalout/#app"},
+          {"@id": "https://grayforge.app/zapblur/#app"}
         ]
       },
       {
@@ -104,6 +106,16 @@
           "https://apps.apple.com/app/id6809804367",
           "https://play.google.com/store/apps/details?id=com.grayforge.vocalout"
         ]
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://grayforge.app/zapblur/#app",
+        "name": "ZapBlur",
+        "url": "https://grayforge.app/zapblur/",
+        "description": "A face blur app for iOS and Android, coming soon. It finds bystanders' faces in a photo and covers them automatically; you cover anything else by hand. Photos are processed on your device.",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": ["iOS", "Android"],
+        "publisher": {"@id": "https://grayforge.app/#organization"}
       }
     ]
   }
@@ -275,6 +287,7 @@
     .work .links .stores { display: flex; gap: 14px; }
     .work .links .stores a { font-size: 0.78rem; color: var(--muted); transition: color 0.2s; }
     .work .links .stores a:hover { color: var(--ink); }
+    .work .links .stores .soon { font-size: 0.78rem; color: var(--muted); }
 
     /* ===== CONTACT / COLOPHON ===== */
     .colophon { padding: 96px 0 64px; }
@@ -426,7 +439,7 @@
         <div class="aside">
           <span class="label">Work</span>
           <div class="aside-title">Products</div>
-          <p class="aside-note">On the App Store and Google Play.</p>
+          <p class="aside-note">On the App Store and Google Play. ZapBlur is coming soon.</p>
         </div>
 
         <div class="ledger">
@@ -494,6 +507,24 @@
             </div>
           </article>
 
+          <!-- ZapBlur (coming soon: no store links yet) -->
+          <article class="work reveal">
+            <div class="idx">04</div>
+            <div class="icon"><img src="zapblur/assets/icon-192.png" alt="ZapBlur app icon" loading="lazy" /></div>
+            <div class="body">
+              <div class="title-line">
+                <h3>ZapBlur</h3>
+                <span class="cat">Face Blur App · Coming soon</span>
+              </div>
+              <p>Cover bystanders' faces before you post. ZapBlur finds the faces in a photo and pixelates them automatically; you cover anything else by hand. Photos are processed on your device.</p>
+              <div class="tags"><span>On-device</span><span>No ads</span><span>No account</span></div>
+            </div>
+            <div class="links">
+              <a class="open" href="zapblur/">Visit <span class="arrow">↗</span></a>
+              <div class="stores"><span class="soon">Coming soon to the App Store and Google Play</span></div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -521,7 +552,9 @@
       <a href="dashlog/">DashLog</a>
       <a href="noisyno/">NoisyNo</a>
       <a href="vocalout/">VocalOut</a>
+      <a href="zapblur/">ZapBlur</a>
       <a href="ko/noisyno/" hreflang="ko">NoisyNo 한국어</a>
+      <a href="ko/zapblur/" hreflang="ko">ZapBlur 한국어</a>
       <a href="mailto:grayforge.dev@gmail.com">Contact</a>
     </div>
   </footer>

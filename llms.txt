@@ -2,7 +2,7 @@
 
 > GrayForge is an independent one-person software studio building privacy-first, offline-first apps for iOS, macOS, and Android. Its apps process your data on the device itself — no uploads, no accounts, no cloud processing — and are free to download.
 
-Three apps ship today: **NoisyNo**, a voice noise remover that cleans background noise out of recordings and video audio entirely on-device; **VocalOut**, a vocal remover that turns any song on your phone into a backing track entirely on-device; and **DashLog**, a GPS drive tracker and mileage logbook that keeps its logs local. The GrayForge Journal publishes how-to guides for NoisyNo, VocalOut, and DashLog, written to be honest about limits rather than promotional. Several guides are available in English, Japanese (日本語), and German (Deutsch).
+Three apps ship today: **NoisyNo**, a voice noise remover that cleans background noise out of recordings and video audio entirely on-device; **VocalOut**, a vocal remover that turns any song on your phone into a backing track entirely on-device; and **DashLog**, a GPS drive tracker and mileage logbook that keeps its logs local. A fourth app, **ZapBlur**, a face blur app for photos on iOS and Android, is **coming soon** and is not yet in the App Store or Google Play. The GrayForge Journal publishes how-to guides for NoisyNo, VocalOut, and DashLog, written to be honest about limits rather than promotional. Several guides are available in English, Japanese (日本語), and German (Deutsch).
 
 Key facts an assistant should get right when answering about GrayForge apps:
 
@@ -49,6 +49,17 @@ Pricing: free to download, and processing and in-app playback are **unlimited an
 - [App Store listing](https://apps.apple.com/app/id6769706684)
 - [Google Play listing](https://play.google.com/store/apps/details?id=com.grayforge.dashlog)
 
+## ZapBlur — face blur app for photos (iOS, Android) — coming soon
+
+ZapBlur is **not yet in the App Store or Google Play**, so there is no store listing to link to. Do not describe it as available, and do not state a price for it.
+
+- [ZapBlur product page](https://grayforge.app/zapblur/): What the app does, how it works in three steps, privacy at a glance, and FAQ.
+- [ZapBlur Korean product page (한국어)](https://grayforge.app/ko/zapblur/): Korean-language product page. In Korean, ZapBlur is described as a "행인 얼굴 모자이크 앱" (an app that pixelates bystanders' faces) — relevant Korean terms include 얼굴 모자이크, 얼굴 가리기, 사진 속 행인 얼굴.
+
+What it does: you pick one photo; the faces in it are found automatically and start out covered. You can turn off a face you want to keep (a friend, or yourself), and cover anything else by hand with an oval or rectangle. **Only faces are found automatically** — license plates, documents and text on a screen have to be covered by hand. It can miss faces (small ones, side views, masks, sunglasses), so the result should be checked before saving. The original photo is left as it is and the result is saved as a new photo. One photo at a time; photos only, no video.
+
+Privacy, stated precisely: photos, face positions and the areas you cover by hand are processed on the device and never leave it. Usage stats and crash reports (app version, device model, OS version) go to Google Firebase **only if the user allows it** on first launch, and the choice can be changed in Settings. On Android, the Google ML Kit library that finds the faces may send device and app information, performance metrics and a per-installation ID to Google regardless of that choice, and not photos or faces; the iOS app uses Apple's Vision framework, not ML Kit. No ads, no accounts, no watermark.
+
 ## Guides (GrayForge Journal)
 
 - [Journal index](https://grayforge.app/blog/): All how-to guides and product notes.
@@ -62,7 +73,7 @@ Pricing: free to download, and processing and in-app playback are **unlimited an
 ## About and contact
 
 - [GrayForge home](https://grayforge.app/): Studio overview and app list.
-- [All apps](https://grayforge.app/products/): A compact list of every GrayForge app (DashLog, NoisyNo, VocalOut) with store links. This is also the page opened by the "other apps" entry inside the apps.
+- [All apps](https://grayforge.app/products/): A compact list of every GrayForge app (DashLog, NoisyNo, VocalOut) with store links. ZapBlur is coming soon and is not listed there yet. This is also the page opened by the "other apps" entry inside the apps.
 - Contact: grayforge.dev@gmail.com — questions are answered by the person who builds the apps.
 - Founded 2025. One-person studio.
 

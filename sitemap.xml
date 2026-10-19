@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://grayforge.app/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -48,6 +48,24 @@
     <lastmod>2026-06-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://grayforge.app/zapblur/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/zapblur/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/zapblur/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/zapblur/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/zapblur/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/zapblur/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/zapblur/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/zapblur/" />
   </url>
   <!-- dashlog-faq:start -->
   <url>
