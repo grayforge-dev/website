@@ -30,7 +30,7 @@
 <div class="wrap">
 <div class="measure">
 <h1>ZapBlur Privacy Policy</h1>
-<p class="meta">Developer: grayforge · Contact: <a href="mailto:grayforge.dev+zapblur@gmail.com">grayforge.dev+zapblur@gmail.com</a> · Last updated and effective: October 20, 2026 (version 1.0)</p>
+<p class="meta">Developer: grayforge · Contact: <a href="mailto:grayforge.dev+zapblur@gmail.com">grayforge.dev+zapblur@gmail.com</a> · Last updated and effective: October 23, 2026 (version 1.0)</p>
 <nav class="toc" aria-label="Contents">
 <h2>Contents</h2>
 <ol>
@@ -41,7 +41,7 @@
 <li><a href="#s4">4. Retention and deletion</a></li>
 <li><a href="#s5">5. Processors and international transfers</a></li>
 <li><a href="#s6">6. Identifiers</a></li>
-<li><a href="#s7">7. Withdrawing consent and your rights</a></li>
+<li><a href="#s7">7. Stopping it and your rights</a></li>
 <li><a href="#s8">8. Children</a></li>
 <li><a href="#s9">9. Security</a></li>
 <li><a href="#s10">10. How to contact us</a></li>
@@ -54,12 +54,12 @@
 <h2>0. Plain-language summary</h2>
 <dl class="glance">
 <div><dt>Stays on your device</dt><dd>Photos, face positions, areas you cover by hand and your other edits. They never leave your device.</dd></div>
-<div><dt>Sent only if you allow it</dt><dd>Usage stats and crash reports (app version, device model, OS version, etc.) go to Google Firebase. They do not include photos, faces or location.</dd></div>
-<div><dt>Sent regardless (Android)</dt><dd>Google ML Kit, which finds the faces, may send device and app information, performance metrics and a per-installation ID to Google on its own. The app cannot turn this off.</dd></div>
+<div><dt>Sent to Google Firebase</dt><dd>Usage stats and crash reports (app version, device model, OS version, etc.) go to Google Firebase. They do not include photos, faces or location.</dd></div>
+<div><dt>Sent by ML Kit (Android)</dt><dd>Google ML Kit, which finds the faces, may send device and app information, performance metrics and a per-installation ID to Google on its own. The app cannot turn this off.</dd></div>
 <div><dt>Not used</dt><dd>Ads, accounts, watermarks, advertising identifiers</dd></div>
 </dl>
-<p>Your photos and face data never leave your device. Only if you allow it, usage stats and crash reports (app version, device model, OS version) are sent to Google Firebase. Areas you cover by hand, and what is inside them, are not sent to a server either. You choose on first launch and can change it in Settings. Every feature works the same either way.</p>
-<p>On Android, the face detection library (Google ML Kit) may send device information, app information, performance metrics and per-installation identifiers to Google on its own, whatever you choose above. The app cannot turn this off. According to Google's public documentation, photos and face data are not part of it. The iOS app does not use this library.</p>
+<p>Your photos and face data never leave your device. Usage stats and crash reports (app version, device model, OS version) are sent to Google Firebase. Areas you cover by hand, and what is inside them, are not sent to a server either.</p>
+<p>On Android, the face detection library (Google ML Kit) may send device information, app information, performance metrics and per-installation identifiers to Google on its own. The app cannot turn this off. According to Google's public documentation, photos and face data are not part of it. The iOS app does not use this library.</p>
 </section>
 <section id="s1">
 <h2>1. Who we are</h2>
@@ -67,36 +67,37 @@
 </section>
 <section id="s2">
 <h2>2. What we process</h2>
-<p>a. On your device only: the photos you pick, the faces found in them, the areas you cover by hand (their position, size and the content inside them), your other edits (effect, strength) and temporary working copies. We do not receive them. App settings (default effect, what is found automatically, your choice about stats and crash reports) also stay on your device.</p>
+<p>a. On your device only: the photos you pick, the faces found in them, the areas you cover by hand (their position, size and the content inside them), your other edits (effect, strength) and temporary working copies. We do not receive them. App settings (such as the default effect) also stay on your device.</p>
 <p>Picking and saving: you pick photos with your phone's own photo picker, so the app gets only the photos you select and does not ask for access to your whole library. On iPhone and iPad the app asks only for permission to add the finished photo to your library. If a photo you pick is kept in iCloud Photos, iOS may download it to your device first; Apple does that under your iCloud settings, not us. The saved photo is a new file and your original is not changed. It is written afresh from the pixels and carries no location, camera or other shooting information. If you tap Share, your phone's share sheet sends the photo wherever you choose, and that app's own policy applies; ZapBlur sends it nowhere.</p>
-<p>b. Only if you allow it, sent to Google Firebase (Analytics and Crashlytics): an install ID that the Firebase SDKs create (Firebase app instance ID, Crashlytics installation ID); feature-use records in coarse form, such as a range for the number of faces, the effect type and how long an edit took, plus the standard events Firebase records itself, such as first open and session start; crash information (the crash and its stack information, the app version, the step the app was on, and the same coarse traits of the photo, such as its format and size and resolution ranges); device information (device model, OS version, language and region, memory class, thermal state, low-power mode, and on Android a free-storage range); and the approximate country that Google works out from your IP address. Not included: photos, faces, location, coordinates, the position or content of areas you cover by hand, names or contact details. The app cannot tell what you cover by hand (a face, a license plate, a document, text) and does not record it. Only how you added an area (tap detect or shape), its shape (oval or rectangle) and whether tap detect found a face (yes or no) may be included. The Firebase SDKs are not started until you allow it.</p>
-<p>c. May be sent regardless of your choice (Android app only): device information (manufacturer, model, OS version), app information (package name, app version), per-installation identifiers, and performance and usage metrics (processing time, settings such as image format and resolution, error codes), sent by Google ML Kit. According to Google's public information, photos and the faces it finds are not part of it. The app cannot turn this off. The iOS app does not use ML Kit; it finds faces with Apple's on-device Vision framework.</p>
-<p>d. Information you send: the sender address and body of a support email. Tapping &quot;Contact us&quot; opens a draft with four items pre-filled (app version, OS, device model, language) that you can read, edit or delete before sending. No photos, location or analytics IDs are attached.</p>
-<p>e. Web pages: no cookies, analytics or requests to other sites. The pages are hosted on GitHub Pages, which may keep ordinary server logs (such as IP address and time of request) under GitHub's own privacy statement.</p>
-<p>f. Not processed: name, contact details (apart from an email you send us), accounts, precise location (GPS), advertising identifiers (IDFA, Android advertising ID) and payment information. Version 1.0 has no purchases and shows no ads.</p>
+<p>b. Sent to Google Firebase (Analytics and Crashlytics): an install ID that the Firebase SDKs create (Firebase app instance ID, Crashlytics installation ID); feature-use records in coarse form, such as a range for the number of faces, the effect type and how long an edit took, plus the standard events Firebase records itself, such as first open and session start; crash information (the crash and its stack information, the app version, the step the app was on, and the same coarse traits of the photo, such as its format and size and resolution ranges); device information (device model, OS version, language and region, memory class, thermal state, low-power mode, and on Android a free-storage range); and the approximate country that Google works out from your IP address. Not included: photos, faces, location, coordinates, the position or content of areas you cover by hand, names or contact details. The app cannot tell what you cover by hand (a face, a license plate, a document, text) and does not record it. Only how you added an area (tap detect or shape), its shape (oval or rectangle) and whether tap detect found a face (yes or no) may be included.</p>
+<p>c. May be sent (Android app only): device information (manufacturer, model, OS version), app information (package name, app version), per-installation identifiers, and performance and usage metrics (processing time, settings such as image format and resolution, error codes), sent by Google ML Kit. According to Google's public information, photos and the faces it finds are not part of it. The app cannot turn this off. The iOS app does not use ML Kit; it finds faces with Apple's on-device Vision framework.</p>
+<p>d. Information you send: the sender address and body of an email. Settings &gt; Contact / feedback opens a sheet where you choose Bug report, Question, Suggestion or Other, and then an email draft. A bug report's draft ends with items pre-filled (app version and build, OS, device model, language, memory size, remaining storage space, and whether the phone was hot or in battery saver) that you can read, edit or delete before sending; the other kinds add nothing. No photos, location or analytics IDs are attached. The sheet also has a button that copies our email address.</p>
+<p>e. The &quot;More apps&quot; page: Settings &gt; More apps shows grayforge's page of apps (grayforge.app/products/) inside the app. Opening it makes ordinary web requests to grayforge.app, which GitHub Pages hosts, and to Google Fonts, which serves the page's fonts, so those services see your IP address and device type as they do for any web page, under their own privacy statements. Scripts are turned off in this view, and the app sends no photo, face data or install ID with the request. Links on that page to a store open in the store app or your browser, not in the app.</p>
+<p>f. Web pages: no cookies, analytics or requests to other sites. The pages are hosted on GitHub Pages, which may keep ordinary server logs (such as IP address and time of request) under GitHub's own privacy statement.</p>
+<p>g. Not processed: name, contact details (apart from an email you send us), accounts, precise location (GPS), advertising identifiers (IDFA, Android advertising ID) and payment information. Version 1.0 has no purchases and shows no ads.</p>
 </section>
 <section id="s3">
 <h2>3. Purposes and legal basis</h2>
-<p>Purposes: understand feature use to improve the app, diagnose and fix crashes, answer your messages. Basis: your consent (Korean PIPA Art. 15(1)1; GDPR Art. 6(1)(a)) for item 2b, which you give or refuse on first launch and can withdraw in Settings. Item 2c is sent by Google itself as part of providing the library and does not depend on your choice; Google's own policies govern it. Support emails are processed because you sent them. The app works the same if you decline.</p>
+<p>Purposes: understand feature use to improve the app, diagnose and fix crashes, answer your messages. Basis for item 2b: our legitimate interest in diagnosing crashes and improving the app, weighed against your privacy: the data is coarse, tied to a random install ID and never includes photos, faces or location, and you can object at any time by emailing us (section 10). Item 2c is sent by Google itself as part of providing the library; Google's own policies govern it. Support emails are processed because you sent them. The app works the same if you decline.</p>
 </section>
 <section id="s4">
 <h2>4. Retention and deletion</h2>
 <p>On device: until you delete the app. Temporary files are deleted when you save or exit, and any left over on the next launch. Firebase Analytics events: up to 14 months. Crashlytics crash data: 90 days. After that, Google deletes it from its systems. Support emails: kept only as long as needed to deal with your message, then deleted. Electronic files are deleted so they cannot be recovered or reproduced; where the law requires us to keep something, we keep it for that period.</p>
-<p>Turning the setting off in Settings stops usage stats at once and resets the analytics ID on your device; crash reporting stops from the next launch, and Settings says so. Data already sent is deleted when its retention period ends. The data is tied to a random install ID, not to your name or email, and the app does not show you that ID, so we usually cannot tell which data is yours. If you want to ask about deletion anyway, email us (section 10) and we will tell you what is possible.</p>
+<p>The app has no setting to stop usage stats and crash reports at the moment. Deleting the app ends use of the install ID on the device, and you can ask us to stop or delete by email (section 10). Data already sent is deleted when its retention period ends. The data is tied to a random install ID, not to your name or email, and the app does not show you that ID, so we usually cannot tell which data is yours. If you want to ask about deletion anyway, email us (section 10) and we will tell you what is possible.</p>
 </section>
 <section id="s5">
 <h2>5. Processors and international transfers</h2>
-<p>Google LLC (Firebase Analytics, Crashlytics) processes the items in 2b for us. Data may be processed in the United States and other countries where Google operates. It is sent over the network, encrypted in transit, while you use the app after allowing it. Purpose: usage stats and crash diagnosis. Retention: section 4. Opt out: Settings. <span class="url">https://firebase.google.com/support/privacy</span></p>
+<p>Google LLC (Firebase Analytics, Crashlytics) processes the items in 2b for us. Data may be processed in the United States and other countries where Google operates. It is sent over the network, encrypted in transit, while you use the app. Purpose: usage stats and crash diagnosis. Retention: section 4. To stop it, see section 7. <span class="url">https://firebase.google.com/support/privacy</span></p>
 <p>Google ML Kit (Android only) is described in 2c: <span class="url">https://developers.google.com/ml-kit/android-data-disclosure</span></p>
-<p>Transfer basis: your consent, and disclosed processing and storage by a processor (Korean PIPA Art. 28-8). For EU/EEA/UK residents, see Appendix B. We do not sell personal information, and we do not provide it to third parties except as the law requires.</p>
+<p>Transfer basis: disclosed processing and storage by a processor (Korean PIPA Art. 28-8). For EU/EEA/UK residents, see Appendix B. We do not sell personal information, and we do not provide it to third parties except as the law requires.</p>
 </section>
 <section id="s6">
 <h2>6. Identifiers</h2>
-<p>If you allow it, the app creates an install ID and sends it with events and crashes. No web cookies. Turning the setting off or deleting the app ends use of the ID on the device. We do not use advertising identifiers and do not show an App Tracking Transparency prompt.</p>
+<p>The app creates an install ID and sends it with events and crashes. No web cookies. Deleting the app ends use of the ID on the device. We do not use advertising identifiers and do not show an App Tracking Transparency prompt.</p>
 </section>
 <section id="s7">
-<h2>7. Withdrawing consent and your rights</h2>
-<p>Withdraw: Settings &gt; Send usage and error data, turn off (usage stats stop at once, crash reporting from the next launch). You may request access, correction, deletion, restriction or withdrawal by email (see section 10); a legal guardian may do so too. We answer within the period the law requires (10 days under Korean law). Because there are no accounts, we usually cannot match data to a person; we will tell you what we can find and what we need from you to check it is yours. Korean remedies: Personal Information Infringement Report Center privacy.kisa.or.kr (118), Personal Information Dispute Mediation Committee kopico.go.kr (1833-6972).</p>
+<h2>7. Stopping it and your rights</h2>
+<p>Stopping: the app has no setting for usage stats and crash reports at the moment; deleting the app ends use of the install ID on the device. You may request access, correction, deletion, restriction or objection by email (see section 10); a legal guardian may do so too. We answer within the period the law requires (10 days under Korean law). Because there are no accounts, we usually cannot match data to a person; we will tell you what we can find and what we need from you to check it is yours. Korean remedies: Personal Information Infringement Report Center privacy.kisa.or.kr (118), Personal Information Dispute Mediation Committee kopico.go.kr (1833-6972).</p>
 </section>
 <section id="s8">
 <h2>8. Children</h2>
@@ -104,15 +105,15 @@
 </section>
 <section id="s9">
 <h2>9. Security</h2>
-<p>Photos and faces are processed on the device. The app's own code makes no network calls; only the Firebase and ML Kit libraries described above do, and Firebase traffic is encrypted in transit. Photos, faces, location, coordinates and areas you cover by hand are never put into analytics or crash data; the project's automated checks look for this. One person handles personal information and has access to the Firebase project. No method of transmission or storage is completely secure, so we cannot promise absolute security.</p>
+<p>Photos and faces are processed on the device, and the app never uploads them by itself. The app uses the network only for: the Firebase and ML Kit libraries described above; iOS downloading a photo you picked from iCloud Photos (item 2a); the &quot;More apps&quot; page (item 2e); and the links you tap (this policy, a store page, an email draft), which open in your browser or email app. Firebase traffic is encrypted in transit. Photos, faces, location, coordinates and areas you cover by hand are never put into analytics or crash data; the project's automated checks look for this. One person handles personal information and has access to the Firebase project. No method of transmission or storage is completely secure, so we cannot promise absolute security.</p>
 </section>
 <section id="s10">
 <h2>10. How to contact us</h2>
-<p>To: <a href="mailto:grayforge.dev+zapblur@gmail.com">grayforge.dev+zapblur@gmail.com</a>. General - subject &quot;[ZapBlur] Support&quot;, body pre-filled with app version, OS, device model, language. Privacy request - subject &quot;[ZapBlur] Privacy request&quot;, body: request type (access, correction, deletion, restriction, withdrawal), app version and OS, details. You do not need to send photos.</p>
+<p>To: <a href="mailto:grayforge.dev+zapblur@gmail.com">grayforge.dev+zapblur@gmail.com</a>. Feedback - Settings &gt; Contact / feedback, subject &quot;[ZapBlur] [Bug]&quot;, &quot;[ZapBlur] [Question]&quot;, &quot;[ZapBlur] [Suggestion]&quot; or &quot;[ZapBlur] [Other]&quot;; a bug report's body ends with app version, OS, device model, language and the phone's memory, remaining storage, heat and battery saver state. Privacy request - subject &quot;[ZapBlur] Privacy request&quot;, body: request type (access, correction, deletion, restriction, objection), app version and OS, details. You do not need to send photos.</p>
 </section>
 <section id="s11">
 <h2>11. Changes</h2>
-<p>This is version 1.0, effective October 20, 2026. We post changes at the top of this page with the effective date, and announce important changes, such as a new kind of information being collected, at least 7 days before they take effect.</p>
+<p>This is version 1.0, effective October 23, 2026. We post changes at the top of this page with the effective date, and announce important changes, such as a new kind of information being collected, at least 7 days before they take effect.</p>
 </section>
 <section id="appendix">
 <h2>Appendix. Features that will not become paid (as of 2026-10-09)</h2>
@@ -120,7 +121,7 @@
 </section>
 <section id="appendix-b">
 <h2>Appendix B. EU/EEA/UK residents</h2>
-<p>Controller and contact: section 1. Legal basis: your consent (GDPR Art. 6(1)(a)), which you can withdraw at any time. Recipient: Google LLC as processor. Transfer to the United States and other countries: Google relies on the European Commission's Standard Contractual Clauses and, where it applies, its certification under the EU-U.S. Data Privacy Framework. Rights: access, rectification, erasure, restriction, objection, portability, withdrawal of consent at any time; you may lodge a complaint with your supervisory authority. Providing data is optional and not required to use the app. No automated decision-making.</p>
+<p>Controller and contact: section 1. Legal basis: our legitimate interest (GDPR Art. 6(1)(f)) in diagnosing crashes and improving the app; you can object at any time by emailing us (section 10). Recipient: Google LLC as processor. Transfer to the United States and other countries: Google relies on the European Commission's Standard Contractual Clauses and, where it applies, its certification under the EU-U.S. Data Privacy Framework. Rights: access, rectification, erasure, restriction, objection, portability; you may lodge a complaint with your supervisory authority. The data in item 2b is collected automatically while you use the app; it is not required by law or by a contract with you. No automated decision-making.</p>
 </section>
 </div>
 </div>
