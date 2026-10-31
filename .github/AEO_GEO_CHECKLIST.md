@@ -1,6 +1,6 @@
 # AEO / GEO Maintenance Checklist
 
-Last reviewed: 2026-06-12
+Last reviewed: 2026-10-30
 
 ## Completed
 
@@ -13,6 +13,12 @@ Last reviewed: 2026-06-12
 - [x] Korean intent guide answers offline, no-account, and no-subscription queries.
 - [x] Privacy claims distinguish core user data from limited Firebase diagnostics.
 - [x] Product and guide pages link to privacy policies and store listings.
+- [x] Home Organization JSON-LD has `logo` (`/assets/grayforge-logo-512.png`) and `sameAs` for the Google Play developer page. The App Store developer page is under a personal name and is left out on purpose.
+- [x] BlogPosting `author`/`publisher` are inline Organization nodes; deprecated HowTo markup is removed from all guides.
+- [x] BreadcrumbList on app pages, all DashLog FAQ locales, `/products/` and `/blog/`.
+- [x] Home, `/blog/` and `/products/` share `/assets/og-grayforge.png` (1200×630) with `summary_large_image` cards.
+- [x] Custom `404.html` (noindex) links back to home, apps and the Journal.
+- [x] Inter loads with `display=optional` so the font swap no longer shifts layout; Fraunces stays `display=swap`.
 
 ## Recurring Checks
 
@@ -23,6 +29,8 @@ Last reviewed: 2026-06-12
 - [ ] When a new app or page is added, update `sitemap.xml`, `llms.txt`, the IndexNow URL list in `.github/workflows/indexnow.yml`, and the home page JSON-LD in the same commit.
 - [ ] Search for inaccurate claims such as `no analytics`, `no data collection`, and `lifetime` before every deployment.
 - [ ] Validate JSON-LD and mobile layout after structural edits.
+- [ ] When a guide gets a translation, add the language link to the metabar of every language version, and point the matching localized product page at the localized guide.
+- [ ] Keep `<title>` within about 60 characters (CJK characters count double) and meta descriptions within about 155 characters.
 - [ ] ZapBlur launch: it is listed as *coming soon* (home card and JSON-LD without `sameAs`, `llms.txt`, `sitemap.xml`, IndexNow, the status line of `zapblur/` and `ko/zapblur/`). At launch replace the coming-soon wording everywhere with the store links, add `sameAs` to the home JSON-LD, add the ZapBlur privacy policy page to `sitemap.xml` (it is left out until the policy is final), add ZapBlur to `/products/`, and re-read the pages for claims that were true only before release.
 
 ## External Authority Gaps
@@ -38,3 +46,4 @@ Last reviewed: 2026-06-12
 - NoisyNo processes user audio and video files on-device, but limited Firebase analytics and diagnostics may be used.
 - ZapBlur is not released yet: do not describe it as available, free or priced until its store listings exist. Photos are processed on-device and never leave it; Firebase usage and crash data are sent only after the user allows it; on Android, Google ML Kit may send device and performance information regardless of that choice.
 - DashLog stores personal drive records locally and does not upload the drive archive to a DashLog server, but limited Firebase analytics and diagnostics may be used.
+- DashLog is a drive logbook, not a tax-ready mileage log: drives export as CSV or GPX, with no tax formats or business/personal categories. Do not pitch it for work mileage, taxes or reimbursement (in German, avoid "Fahrtenbuch").

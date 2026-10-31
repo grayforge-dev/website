@@ -54,13 +54,13 @@
         "description": "すべてのドライブを自動で記録 — GPSルート・距離・速度・統計。ルートを再生し、GPX / CSV で書き出し。DashLog で走行を自動記録する手順。記録は端末内に保存、アカウント不要。",
         "inLanguage": "ja",
         "datePublished": "2026-10-13",
-        "dateModified": "2026-10-13",
+        "dateModified": "2026-10-30",
         "wordCount": 700,
-        "articleSection": "DashLog Guide",
+        "articleSection": "DashLog ガイド",
         "keywords": "自動 走行記録, ドライブ記録 アプリ, GPS 走行ロガー, 走行距離 記録, CarPlay ドライブログ, ルート再生, GPX 書き出し, DashLog",
         "mainEntityOfPage": "https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/",
-        "author": {"@id": "https://grayforge.app/#organization"},
-        "publisher": {"@id": "https://grayforge.app/#organization"},
+        "author": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/"},
+        "publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}},
         "about": {"@id": "https://grayforge.app/dashlog/#app"},
         "image": [
           "https://grayforge.app/dashlog/og-image.png",
@@ -75,54 +75,6 @@
           "https://grayforge.app/dashlog/privacy_policy.html",
           "https://apps.apple.com/app/id6769706684",
           "https://play.google.com/store/apps/details?id=com.grayforge.dashlog"
-        ]
-      },
-      {
-        "@type": "HowTo",
-        "@id": "https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/#howto",
-        "name": "スマホで走行記録を自動で残す方法",
-        "description": "DashLog で、すべてのドライブを自動で記録・再生・書き出しする基本的な流れ。",
-        "inLanguage": "ja",
-        "totalTime": "PT5M",
-        "tool": [
-          {
-            "@type": "HowToTool",
-            "name": "DashLog"
-          }
-        ],
-        "step": [
-          {
-            "@type": "HowToStep",
-            "position": 1,
-            "name": "自動で記録するように設定する",
-            "text": "最初に一度だけ設定します。iPhone では車と接続したときに DashLog を開く『ショートカットの自動化』を追加、Android ではアプリで車の Bluetooth を一度ペアリングします。位置情報は『常に許可』にします。",
-            "url": "https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/#step-setup",
-            "image": "https://grayforge.app/dashlog/assets/screenshots/01_home.webp"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 2,
-            "name": "あとは運転するだけ",
-            "text": "スマホが CarPlay や車の Bluetooth に接続すると自動で記録が始まり、切断すると止まります。手動で開始・停止することもできます。",
-            "url": "https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/#step-drive",
-            "image": "https://grayforge.app/dashlog/assets/screenshots/02_driving.webp"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 3,
-            "name": "ルートを再生して統計を見る",
-            "text": "各ドライブはルート・距離・時間・速度・標高とともに保存されます。地図でルートを再生し、日・週・月・年の合計を確認できます。",
-            "url": "https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/#step-replay",
-            "image": "https://grayforge.app/dashlog/assets/screenshots/05_drive_replay.webp"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 4,
-            "name": "GPX・CSV・期間レポートで書き出す",
-            "text": "1件のドライブを GPX / CSV で、または期間まるごとを1つのレポートとして書き出せます。他アプリの GPX を取り込むこともできます。",
-            "url": "https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/#step-export",
-            "image": "https://grayforge.app/dashlog/assets/screenshots/09_report_export.webp"
-          }
         ]
       },
       {
@@ -187,7 +139,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -557,6 +510,8 @@
           <span class="m">約3分で読めます</span>
           <span class="dot"></span>
           <span class="m">トピック · 走行記録</span>
+          <span class="dot"></span>
+          <span class="m" data-lang-links>他の言語：<a href="../../../../blog/dashlog/log-every-drive-automatically/" hreflang="en" lang="en" style="text-decoration:underline;text-underline-offset:3px;">English</a> · <a href="../../../../de/blog/dashlog/log-every-drive-automatically/" hreflang="de" lang="de" style="text-decoration:underline;text-underline-offset:3px;">Deutsch</a></span>
         </div>
 
       </div>
@@ -649,7 +604,7 @@
 
           <div class="read">
             <div class="product" id="download">
-              <div class="icon"><img src="../../../../dashlog/assets/icons/AppIcon.png" alt="DashLog アプリアイコン" loading="lazy" /></div>
+              <div class="icon"><img src="../../../../dashlog/assets/icons/favicon-180.png" alt="DashLog アプリアイコン" loading="lazy" /></div>
               <div>
                 <h3>DashLog — GPS ドライブトラッカー</h3>
                 <p>
@@ -698,7 +653,7 @@
             すべてのドライブが自動で残れば、ログブックは自由に使えます：
           </p>
           <ul>
-            <li><strong>走行距離</strong> — 業務・税務・経費精算に、漏れのない記録として</li>
+            <li><strong>走行距離</strong> — 自分の記録として。CSV で書き出せますが、税務向けの形式や自動分類には対応していません</li>
             <li><strong>旅の記録</strong> — 数か月後でも、走った道をそのまま再生</li>
             <li><strong>バイクや自転車</strong>の走行も、同じように自動で記録</li>
             <li><strong>他ツール用の GPX</strong> — 地図・フィットネス・編集アプリへ書き出し</li>

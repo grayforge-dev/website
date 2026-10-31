@@ -6,7 +6,7 @@
 
   <!-- Primary SEO -->
   <title>GrayForge — Independent software studio</title>
-  <meta name="description" content="GrayForge is an independent one-person software studio. We forge small, sharp, privacy-first and offline-first tools for people the software industry overlooks. Makers of DashLog, NoisyNo and VocalOut. ZapBlur is coming soon." />
+  <meta name="description" content="GrayForge is a one-person software studio making small, privacy-first, offline-first apps: DashLog, NoisyNo and VocalOut. ZapBlur is coming soon." />
   <meta name="keywords" content="GrayForge, independent software studio, indie developer, privacy-first apps, offline apps, on-device, niche software, DashLog, NoisyNo, VocalOut" />
   <meta name="author" content="GrayForge" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -22,8 +22,12 @@
   <meta property="og:url" content="https://grayforge.app/" />
   <meta property="og:title" content="GrayForge — Independent software studio" />
   <meta property="og:description" content="An independent one-person studio forging small, sharp, privacy-first and offline-first tools. Makers of DashLog, NoisyNo and VocalOut. ZapBlur is coming soon." />
+  <meta property="og:image" content="https://grayforge.app/assets/og-grayforge.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="GrayForge — We forge small, sharp tools for the people software forgets. Makers of DashLog, NoisyNo and VocalOut." />
 
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="GrayForge — Independent software studio" />
   <meta name="twitter:description" content="An independent one-person studio forging small, sharp, privacy-first and offline-first tools." />
 
@@ -38,8 +42,18 @@
         "name": "GrayForge",
         "description": "Independent one-person software studio building privacy-first, offline-first mobile apps.",
         "url": "https://grayforge.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grayforge.app/assets/grayforge-logo-512.png",
+          "width": 512,
+          "height": 512
+        },
+        "image": "https://grayforge.app/assets/og-grayforge.png",
         "email": "grayforge.dev@gmail.com",
         "foundingDate": "2025",
+        "sameAs": [
+          "https://play.google.com/store/apps/developer?id=Grayforge"
+        ],
         "knowsAbout": [
           "Privacy-first mobile apps",
           "Offline-first mobile apps",
@@ -123,7 +137,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -223,6 +238,8 @@
     }
     .cred .item .k { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
     .cred .item .v { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; }
+    .cred .item .v a { border-bottom: 1px solid var(--line-2); transition: border-color .2s; }
+    .cred .item .v a:hover { border-color: var(--ember); }
 
     /* ===== SECTION SCAFFOLD (two-column editorial) ===== */
     .row {
@@ -389,7 +406,7 @@
           </div>
           <div class="item">
             <div class="k">Released</div>
-            <div class="v">3 products</div>
+            <div class="v"><a href="#work">3 products ↓</a></div>
           </div>
           <div class="item">
             <div class="k">Platforms</div>
@@ -447,7 +464,7 @@
           <!-- DashLog -->
           <article class="work reveal">
             <div class="idx">01</div>
-            <div class="icon"><img src="dashlog/assets/icons/AppIcon.png" alt="DashLog app icon" loading="lazy" /></div>
+            <div class="icon"><img src="dashlog/assets/icons/favicon-180.png" alt="DashLog app icon" loading="lazy" /></div>
             <div class="body">
               <div class="title-line">
                 <h3>DashLog</h3>
@@ -549,6 +566,7 @@
       <a href="#approach">Approach</a>
       <a href="#work">Work</a>
       <a href="blog/">Blog</a>
+      <a href="products/">All apps</a>
       <a href="dashlog/">DashLog</a>
       <a href="noisyno/">NoisyNo</a>
       <a href="vocalout/">VocalOut</a>

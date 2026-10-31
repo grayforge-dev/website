@@ -101,8 +101,7 @@
           "@type": "Organization",
           "@id": "https://grayforge.app/#organization",
           "name": "GrayForge",
-          "url": "https://grayforge.app/",
-          "email": "grayforge.dev+noisyno@gmail.com"
+          "url": "https://grayforge.app/"
         },
         "offers": {
           "@type": "Offer",
@@ -126,7 +125,7 @@
         "description": "Official product page for NoisyNo, a free offline voice noise remover for recordings and video audio.",
         "dateModified": "2026-09-29",
         "about": {"@id": "https://grayforge.app/noisyno/#app"},
-        "publisher": {"@id": "https://grayforge.app/#organization"}
+        "publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}}
       },
       {
         "@type": "FAQPage",
@@ -213,6 +212,27 @@
             }
           }
         ]
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://grayforge.app/noisyno/#breadcrumbs",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "GrayForge",
+        "item": "https://grayforge.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "NoisyNo",
+        "item": "https://grayforge.app/noisyno/"
       }
     ]
   }
@@ -1245,6 +1265,35 @@
           <strong>Quick answers</strong>
           <span>Jump to FAQ</span>
           <p>Check offline use, supported formats, video input, languages, and subscription status.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GUIDES ─────────────────────────────────────────── -->
+  <section class="section section--soft" id="guides">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">Guides</span>
+        <h2>Step-by-step guides</h2>
+        <p>Honest how-tos from the GrayForge Journal, including when NoisyNo is not the tool you need. <a href="../blog/noisyno/">All NoisyNo guides →</a></p>
+      </div>
+
+      <div class="support-grid">
+        <a class="support-card" href="../blog/noisyno/remove-background-noise-from-voice-memo/">
+          <strong>Clean up a voice memo</strong>
+          <span>iPhone &amp; Android</span>
+          <p>Try the phone's built-in fix first, then share the memo to NoisyNo, clean it, and compare.</p>
+        </a>
+        <a class="support-card" href="../blog/noisyno/clean-up-meeting-recording-audio/">
+          <strong>Clean a meeting recording</strong>
+          <span>Zoom, Teams, in person</span>
+          <p>Remove fan, air-conditioning, and room noise from confidential meeting audio without uploading it.</p>
+        </a>
+        <a class="support-card" href="../blog/noisyno/remove-audio-noise-without-upload/">
+          <strong>Denoise without uploading</strong>
+          <span>Five-step walkthrough</span>
+          <p>The on-device flow with real screenshots, and what on-device processing does and doesn't guarantee.</p>
         </a>
       </div>
     </div>

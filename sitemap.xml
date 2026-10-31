@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://grayforge.app/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/vocalout/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/dashlog/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2509,7 +2509,7 @@
   <!-- dashlog-faq:end -->
   <url>
     <loc>https://grayforge.app/noisyno/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -2731,13 +2731,13 @@
   </url>
   <url>
     <loc>https://grayforge.app/blog/dashlog/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
@@ -2797,7 +2797,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/blog/dashlog/log-every-drive-automatically/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
@@ -2807,7 +2807,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
@@ -2817,7 +2817,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
@@ -2827,7 +2827,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
@@ -2837,7 +2837,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />

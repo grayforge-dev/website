@@ -92,7 +92,7 @@
         "description": "Official product page for DashLog, a free GPS drive tracker and drive journal.",
         "dateModified": "2026-10-16",
         "about": {"@id": "https://grayforge.app/dashlog/#app"},
-        "publisher": {"@id": "https://grayforge.app/#organization"}
+        "publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}}
       },
       {
         "@type": "FAQPage",
@@ -167,11 +167,32 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://grayforge.app/dashlog/#breadcrumbs",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "GrayForge",
+        "item": "https://grayforge.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "DashLog",
+        "item": "https://grayforge.app/dashlog/"
+      }
+    ]
+  }
+  </script>
 
   <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=optional" rel="stylesheet" />
 
   <style>
     /* ===== RESET & BASE ===== */
@@ -1308,7 +1329,7 @@
   <!-- ===== NAVBAR ===== -->
   <nav>
     <div class="nav-logo">
-      <div class="dot"><img src="assets/icons/AppIcon.png" alt="DashLog app icon" /></div>
+      <div class="dot"><img src="assets/icons/favicon-180.png" alt="DashLog app icon" /></div>
       DashLog
     </div>
     <ul class="nav-links">
@@ -1617,6 +1638,7 @@
     </div>
     <!-- faq-more -->
     <p class="faq-more"><a href="faq/">See all questions and answers →</a></p>
+    <p class="faq-more" style="margin-top:12px;"><a href="../blog/dashlog/log-every-drive-automatically/">Guide: how to log every drive automatically →</a></p>
   </section>
 
   <!-- ===== SUPPORT ===== -->
@@ -1660,12 +1682,14 @@
   <!-- ===== FOOTER ===== -->
   <footer>
     <div style="display:flex;align-items:center;gap:10px;">
-      <div style="width:26px;height:26px;border-radius:7px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="assets/icons/AppIcon.png" alt="DashLog app icon" style="width:100%;height:100%;object-fit:cover;" /></div>
+      <div style="width:26px;height:26px;border-radius:7px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="assets/icons/favicon-180.png" alt="DashLog app icon" style="width:100%;height:100%;object-fit:cover;" /></div>
       <span style="font-weight:700;font-size:0.95rem;color:var(--txt2);">DashLog</span>
       <span>· © 2026</span>
     </div>
     <ul class="footer-links">
       <li><a href="../">GrayForge</a></li>
+      <li><a href="../blog/dashlog/">Guides</a></li>
+      <li><a href="../products/">All apps</a></li>
       <li><a href="privacy_policy.html">Privacy Policy</a></li>
       <li><a href="terms_of_service.html">Terms of Service</a></li>
       <li><a href="mailto:grayforge.dev+dashlog@gmail.com">Contact</a></li>

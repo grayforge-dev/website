@@ -20,7 +20,11 @@
   <meta property="og:url" content="https://grayforge.app/products/" />
   <meta property="og:title" content="GrayForge Apps — DashLog, NoisyNo, VocalOut" />
   <meta property="og:description" content="Small, sharp, privacy-first and offline-first apps from an independent one-person studio." />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://grayforge.app/assets/og-grayforge.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="GrayForge — independent software studio. Makers of DashLog, NoisyNo and VocalOut." />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="GrayForge Apps" />
   <meta name="twitter:description" content="DashLog, NoisyNo and VocalOut — privacy-first, offline-first apps with no accounts." />
 
@@ -36,7 +40,7 @@
         "description": "List of every app made by GrayForge: DashLog, NoisyNo and VocalOut.",
         "dateModified": "2026-10-05",
         "isPartOf": {"@id": "https://grayforge.app/#website"},
-        "publisher": {"@id": "https://grayforge.app/#organization"},
+        "publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}},
         "mainEntity": {"@id": "https://grayforge.app/products/#list"}
       },
       {
@@ -53,10 +57,32 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://grayforge.app/products/#breadcrumbs",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "GrayForge",
+        "item": "https://grayforge.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Apps",
+        "item": "https://grayforge.app/products/"
+      }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=optional" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

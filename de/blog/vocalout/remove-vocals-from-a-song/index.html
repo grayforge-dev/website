@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Primary SEO -->
-  <title>Gesang aus einem Song entfernen — auf dem Handy, komplett offline | GrayForge</title>
-  <meta name="description" content="Verwandle jeden Song auf deinem Handy in eine saubere Instrumental-Version. Schritt-für-Schritt-Anleitung zum Entfernen von Gesang direkt auf dem Gerät mit VocalOut — kein Upload, kein Konto, und deine Musik verlässt dein Handy nie." />
+  <title>Gesang aus einem Song entfernen, offline am Handy | GrayForge</title>
+  <meta name="description" content="Verwandle jeden Song auf deinem Handy in eine Instrumental-Version. Gesang direkt auf dem Gerät entfernen mit VocalOut — kein Upload, kein Konto." />
   <meta name="keywords" content="Gesang aus Song entfernen, Karaoke-Version erstellen, Instrumental-Version, Vocal Remover App, Offline Vocal Remover, KI auf dem Gerät, Gesang isolieren, VocalOut, kein Upload, kostenlos" />
   <meta name="author" content="GrayForge" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -56,11 +56,11 @@
         "datePublished": "2026-10-13",
         "dateModified": "2026-10-13",
         "wordCount": 650,
-        "articleSection": "VocalOut Guide",
+        "articleSection": "VocalOut-Anleitung",
         "keywords": "Gesang aus Song entfernen, Karaoke-Version erstellen, Instrumental-Version, Vocal Remover App, Offline, KI auf dem Gerät, VocalOut",
         "mainEntityOfPage": "https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/",
-        "author": {"@id": "https://grayforge.app/#organization"},
-        "publisher": {"@id": "https://grayforge.app/#organization"},
+        "author": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/"},
+        "publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}},
         "about": {"@id": "https://grayforge.app/vocalout/#app"},
         "image": [
           "https://grayforge.app/vocalout/assets/og-image.png",
@@ -75,54 +75,6 @@
           "https://grayforge.app/vocalout/privacy_policy.html",
           "https://apps.apple.com/app/id6809804367",
           "https://play.google.com/store/apps/details?id=com.grayforge.vocalout"
-        ]
-      },
-      {
-        "@type": "HowTo",
-        "@id": "https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/#howto",
-        "name": "So entfernst du Gesang aus einem Song auf dem Handy",
-        "description": "Der grundlegende Ablauf, um mit VocalOut einen Song direkt auf dem Handy in eine saubere Instrumental-Version zu verwandeln.",
-        "inLanguage": "de",
-        "totalTime": "PT2M",
-        "tool": [
-          {
-            "@type": "HowToTool",
-            "name": "VocalOut"
-          }
-        ],
-        "step": [
-          {
-            "@type": "HowToStep",
-            "position": 1,
-            "name": "Song auswählen",
-            "text": "Öffne VocalOut und wähle einen Song, der bereits auf deinem Handy ist.",
-            "url": "https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/#step-pick",
-            "image": "https://grayforge.app/vocalout/assets/screenshots/01-home.png"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 2,
-            "name": "Trennmodus wählen",
-            "text": "Wähle, was du behalten willst — eine saubere Instrumental-Version ohne Gesang oder die isolierte Gesangsspur.",
-            "url": "https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/#step-mode",
-            "image": "https://grayforge.app/vocalout/assets/screenshots/02-file-mode.png"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 3,
-            "name": "Auf dem Gerät verarbeiten lassen",
-            "text": "Das KI-Modell läuft auf dem Prozessor deines Handys — nichts wird hochgeladen und es gibt keine Server-Warteschlange.",
-            "url": "https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/#step-process",
-            "image": "https://grayforge.app/vocalout/assets/screenshots/03-processing.png"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 4,
-            "name": "Ergebnis anhören",
-            "text": "Das fertige Ergebnis landet in deiner Bibliothek und spielt sofort ab, du kannst es also anhören, bevor du etwas bezahlst.",
-            "url": "https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/#step-listen",
-            "image": "https://grayforge.app/vocalout/assets/screenshots/04-result.png"
-          }
         ]
       },
       {
@@ -187,7 +139,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -557,6 +510,8 @@
           <span class="m">~3 Min. Lesezeit</span>
           <span class="dot"></span>
           <span class="m">Thema · Gesang entfernen</span>
+          <span class="dot"></span>
+          <span class="m" data-lang-links>Auch auf: <a href="../../../../blog/vocalout/remove-vocals-from-a-song/" hreflang="en" lang="en" style="text-decoration:underline;text-underline-offset:3px;">English</a> · <a href="../../../../ja/blog/vocalout/remove-vocals-from-a-song/" hreflang="ja" lang="ja" style="text-decoration:underline;text-underline-offset:3px;">日本語</a></span>
         </div>
 
       </div>

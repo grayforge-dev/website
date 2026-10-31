@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VocalOut — Remove vocals from any song, fully offline</title>
-<meta name="description" content="Turn any song on your phone into a clean backing track. The AI runs on your device — no upload, no account, no sign-up. Your music never leaves your phone. Unlimited free processing.">
+<meta name="description" content="Turn any song on your phone into a clean backing track. The AI runs on your device: no upload, no account. Unlimited free processing.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="GrayForge">
 <meta property="og:title" content="VocalOut — Remove vocals from any song">
@@ -37,7 +37,6 @@
       "description": "VocalOut removes the vocals from any song on your phone and leaves a clean instrumental backing track. The AI model runs on the device, so there is no upload, no account, and no limit on how many songs you process.",
       "url": "https://grayforge.app/vocalout/",
       "image": "https://grayforge.app/vocalout/assets/og-image.png",
-      "isAccessibleForFree": true,
       "featureList": [
         "Vocal removal from any song file on the device",
         "On-device AI, runs offline",
@@ -72,9 +71,9 @@
       "url": "https://grayforge.app/vocalout/",
       "name": "VocalOut — Remove vocals from any song, fully offline",
       "description": "Official product page for VocalOut, an offline vocal remover for iPhone and Android.",
-      "dateModified": "2026-10-05",
+      "dateModified": "2026-10-30",
       "about": {"@id": "https://grayforge.app/vocalout/#app"},
-      "publisher": {"@id": "https://grayforge.app/#organization"}
+      "publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}}
     },
     {
       "@type": "FAQPage",
@@ -99,16 +98,47 @@
           "@type": "Question",
           "name": "Where do the songs come from?",
           "acceptedAnswer": {"@type": "Answer", "text": "Files already on your device. VocalOut is not connected to any music service and cannot download or stream music."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can I keep only the vocals instead?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. When you pick a separation mode, choose the isolated vocal track instead of the instrumental."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work without an internet connection?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. The model runs on your phone, so separation works the same on a plane or anywhere without signal."}
         }
       ]
     }
   ]
 }
 </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://grayforge.app/vocalout/#breadcrumbs",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "GrayForge",
+        "item": "https://grayforge.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "VocalOut",
+        "item": "https://grayforge.app/vocalout/"
+      }
+    ]
+  }
+  </script>
 <meta name="theme-color" content="#0C0E11">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet">
 <style>
 /* 앱의 토큰을 그대로 쓴다. 랜딩과 첫 실행 화면이 다른 물건처럼 보이면
    안 된다. 원본은 docs/design-tokens.html. */
@@ -413,6 +443,28 @@ footer .fine{margin-top:22px;max-width:68ch;line-height:1.75}
       <h4>Where do the songs come from?</h4>
       <p>Files already on your device. VocalOut is not connected to any music service and cannot download or stream music.</p>
     </div>
+    <div>
+      <h4>Can I keep only the vocals instead?</h4>
+      <p>Yes. When you pick a separation mode, choose the isolated vocal track instead of the instrumental.</p>
+    </div>
+    <div>
+      <h4>Does it work without an internet connection?</h4>
+      <p>Yes. The model runs on your phone, so separation works the same on a plane or anywhere without signal.</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap faq">
+  <h2>Guides</h2>
+  <div class="qa">
+    <div>
+      <h4><a href="../blog/vocalout/remove-vocals-from-a-song/">How to remove vocals from a song on your phone</a></h4>
+      <p>Step by step: pick a song, choose a separation mode, let it run on the device, and listen before you export. Also in <a href="../ja/blog/vocalout/remove-vocals-from-a-song/" hreflang="ja" lang="ja">日本語</a> and <a href="../de/blog/vocalout/remove-vocals-from-a-song/" hreflang="de" lang="de">Deutsch</a>.</p>
+    </div>
+    <div>
+      <h4><a href="../blog/vocalout/">All VocalOut guides</a></h4>
+      <p>How-tos for VocalOut in the GrayForge Journal, plus guides for the studio's other on-device apps, <a href="../noisyno/">NoisyNo</a> and <a href="../dashlog/">DashLog</a>.</p>
+    </div>
   </div>
 </div>
 
@@ -437,6 +489,9 @@ footer .fine{margin-top:22px;max-width:68ch;line-height:1.75}
     <div class="row">
       <span class="wordmark" style="font-size:14.5px">VocalOut</span>
       <span style="flex:1"></span>
+      <a href="../">GrayForge</a>
+      <a href="../blog/vocalout/">Guides</a>
+      <a href="../products/">All apps</a>
       <a href="privacy_policy.html">Privacy</a>
       <a href="terms_of_service.html">Terms</a>
       <!-- TODO: 지원 이메일이 정해지면 채운다. -->
