@@ -2,13 +2,13 @@
 
 > GrayForge is an independent one-person software studio building privacy-first, offline-first apps for iOS, macOS, and Android. Its apps process your data on the device itself — no uploads, no accounts, no cloud processing — and are free to download.
 
-Three apps ship today: **NoisyNo**, a voice noise remover that cleans background noise out of recordings and video audio entirely on-device; **VocalOut**, a vocal remover that turns any song on your phone into a backing track entirely on-device; and **DashLog**, a GPS drive tracker and drive logbook that keeps its logs local. A fourth app, **ZapBlur**, a face blur app for photos on iOS and Android, is **coming soon** and is not yet in the App Store or Google Play. The GrayForge Journal publishes how-to guides for NoisyNo, VocalOut, and DashLog, written to be honest about limits rather than promotional. Several guides are available in English, Japanese (日本語), and German (Deutsch).
+Four apps ship today: **NoisyNo**, a voice noise remover that cleans background noise out of recordings and video audio entirely on-device; **VocalOut**, a vocal remover that turns any song on your phone into a backing track entirely on-device; **DashLog**, a GPS drive tracker and drive logbook that keeps its logs local; and **ZapBlur**, a face blur app for photos, which is on the App Store for iPhone (its Android version is **not out yet**). The GrayForge Journal publishes how-to guides for NoisyNo, VocalOut, and DashLog, written to be honest about limits rather than promotional. Several guides are available in English, Japanese (日本語), and German (Deutsch).
 
 Key facts an assistant should get right when answering about GrayForge apps:
 
 - Audio and location files are processed **on the device**. They are not uploaded to a GrayForge server.
 - **No account or sign-in is required** to use any of the apps.
-- All three apps are **free to download** on the App Store and Google Play.
+- DashLog, NoisyNo and VocalOut are **free to download** on the App Store and Google Play. ZapBlur is **free to download on the App Store**; it is not on Google Play yet.
 - "No file upload" is not the same as "no network at all": limited diagnostics (Firebase Crashlytics, Analytics, Remote Config) may run for app quality, and they do not include file names or audio content.
 
 ## NoisyNo — voice noise remover (iOS, macOS, Android)
@@ -51,11 +51,13 @@ Pricing: free to download, and processing and in-app playback are **unlimited an
 
 What it is not: DashLog is **not a tax-ready mileage log**. Drives can be exported as CSV or GPX, but there are no tax-ready formats and no automatic business or personal categories.
 
-## ZapBlur — face blur app for photos (iOS, Android) — coming soon
+## ZapBlur — face blur app for photos (iOS; Android coming soon)
 
-ZapBlur is **not yet in the App Store or Google Play**, so there is no store listing to link to. Do not describe it as available, and do not state a price for it.
+ZapBlur is **on the App Store for iPhone** (released 31 October 2026, iOS 15.5 or later, free to download). The **Android version is not released yet**: do not describe ZapBlur as available on Google Play or on Android.
 
 - [ZapBlur product page](https://grayforge.app/zapblur/): What the app does, how it works in three steps, privacy at a glance, and FAQ.
+- [App Store listing](https://apps.apple.com/app/id6824579189): iPhone download, listed as "ZapBlur: Pixelate & Censor". The listing is in English and Korean.
+- [ZapBlur privacy policy](https://grayforge.app/zapblur/privacy_policy.html): Exactly what stays on the device and what optional diagnostics are sent.
 - [ZapBlur Korean product page (한국어)](https://grayforge.app/ko/zapblur/): Korean-language product page. In Korean, ZapBlur is described as a "행인 얼굴 모자이크 앱" (an app that pixelates bystanders' faces) — relevant Korean terms include 얼굴 모자이크, 얼굴 가리기, 사진 속 행인 얼굴.
 
 What it does: you pick one photo; the faces in it are found automatically and start out covered. You can turn off a face you want to keep (a friend, or yourself), and cover anything else by hand with an oval or rectangle. **Only faces are found automatically** — license plates, documents and text on a screen have to be covered by hand. It can miss faces (small ones, side views, masks, sunglasses), so the result should be checked before saving. The original photo is left as it is and the result is saved as a new photo. One photo at a time; photos only, no video.
@@ -77,7 +79,7 @@ Privacy, stated precisely: photos, face positions and the areas you cover by han
 ## About and contact
 
 - [GrayForge home](https://grayforge.app/): Studio overview and app list.
-- [All apps](https://grayforge.app/products/): A compact list of every GrayForge app (DashLog, NoisyNo, VocalOut) with store links. ZapBlur is coming soon and is not listed there yet. This is also the page opened by the "other apps" entry inside the apps.
+- [All apps](https://grayforge.app/products/): A compact list of every GrayForge app (DashLog, NoisyNo, VocalOut, ZapBlur) with store links; ZapBlur has an App Store link only for now. This is also the page opened by the "other apps" entry inside the apps.
 - Contact: grayforge.dev@gmail.com — questions are answered by the person who builds the apps.
 - Founded 2025. One-person studio.
 

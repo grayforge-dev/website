@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#ECEDEA" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#131517" media="(prefers-color-scheme: dark)" />
 
-  <title>GrayForge Apps — DashLog, NoisyNo, VocalOut</title>
-  <meta name="description" content="Every app from GrayForge in one list: DashLog (GPS drive tracker), NoisyNo (voice noise remover) and VocalOut (vocal remover). Privacy-first, offline-first, no accounts." />
+  <title>GrayForge Apps — DashLog, NoisyNo, VocalOut, ZapBlur</title>
+  <meta name="description" content="Every GrayForge app in one list: DashLog, NoisyNo, VocalOut and ZapBlur — drive tracker, noise remover, vocal remover, face blur. No accounts." />
   <meta name="author" content="GrayForge" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://grayforge.app/products/" />
@@ -18,15 +18,15 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="GrayForge" />
   <meta property="og:url" content="https://grayforge.app/products/" />
-  <meta property="og:title" content="GrayForge Apps — DashLog, NoisyNo, VocalOut" />
+  <meta property="og:title" content="GrayForge Apps — DashLog, NoisyNo, VocalOut, ZapBlur" />
   <meta property="og:description" content="Small, sharp, privacy-first and offline-first apps from an independent one-person studio." />
   <meta property="og:image" content="https://grayforge.app/assets/og-grayforge.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="GrayForge — independent software studio. Makers of DashLog, NoisyNo and VocalOut." />
+  <meta property="og:image:alt" content="GrayForge — independent software studio. Makers of DashLog, NoisyNo, VocalOut and ZapBlur." />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="GrayForge Apps" />
-  <meta name="twitter:description" content="DashLog, NoisyNo and VocalOut — privacy-first, offline-first apps with no accounts." />
+  <meta name="twitter:description" content="DashLog, NoisyNo, VocalOut and ZapBlur — privacy-first, offline-first apps with no accounts." />
 
   <script type="application/ld+json">
   {
@@ -47,11 +47,12 @@
         "@type": "ItemList",
         "@id": "https://grayforge.app/products/#list",
         "name": "GrayForge apps",
-        "numberOfItems": 3,
+        "numberOfItems": 4,
         "itemListElement": [
           {"@type": "ListItem", "position": 1, "item": {"@id": "https://grayforge.app/dashlog/#app", "name": "DashLog", "url": "https://grayforge.app/dashlog/"}},
           {"@type": "ListItem", "position": 2, "item": {"@id": "https://grayforge.app/noisyno/#app", "name": "NoisyNo", "url": "https://grayforge.app/noisyno/"}},
-          {"@type": "ListItem", "position": 3, "item": {"@id": "https://grayforge.app/vocalout/#app", "name": "VocalOut", "url": "https://grayforge.app/vocalout/"}}
+          {"@type": "ListItem", "position": 3, "item": {"@id": "https://grayforge.app/vocalout/#app", "name": "VocalOut", "url": "https://grayforge.app/vocalout/"}},
+          {"@type": "ListItem", "position": 4, "item": {"@id": "https://grayforge.app/zapblur/#app", "name": "ZapBlur", "url": "https://grayforge.app/zapblur/"}}
         ]
       }
     ]
@@ -198,6 +199,7 @@
     .s-dashlog  { background: radial-gradient(120% 90% at 50% 0%, #2f6bd6 0%, #123a7a 55%, #0a1a38 100%); }
     .s-noisyno  { background: radial-gradient(120% 90% at 50% 0%, #e0a13d 0%, #a8691a 55%, #3b2810 100%); }
     .s-vocalout { background: radial-gradient(120% 90% at 50% 0%, #5a4616 0%, #25200f 55%, #0c0e11 100%); }
+    .s-zapblur  { background: radial-gradient(120% 90% at 50% 0%, #ff2d8b 0%, #b00058 55%, #2a0c1a 100%); }
 
     .body { display: flex; flex-direction: column; flex: 1; padding: 24px 26px 26px; }
 
@@ -377,6 +379,33 @@
               <a class="btn play" href="https://play.google.com/store/apps/details?id=com.grayforge.vocalout" aria-label="VocalOut on Google Play">Google Play</a>
             </div>
             <a class="more" href="../vocalout/">Learn more <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </li>
+
+      <!-- ZapBlur (iOS released 2026-10-31; Android coming soon) -->
+      <li class="card">
+        <div class="stage s-zapblur">
+          <img src="assets/zapblur-1.webp" alt="ZapBlur covering the faces it found in a group photo" width="660" height="1434" loading="lazy" decoding="async" />
+          <img src="assets/zapblur-2.webp" alt="ZapBlur covering a license plate by hand with a rectangle" width="660" height="1434" loading="lazy" decoding="async" />
+          <img src="assets/zapblur-3.webp" alt="ZapBlur leaving one face visible and the others covered" width="660" height="1434" loading="lazy" decoding="async" />
+        </div>
+        <div class="body">
+          <div class="head">
+            <div class="icon"><img src="../zapblur/assets/icon-192.png" alt="" width="64" height="64" /></div>
+            <div>
+              <h2>ZapBlur</h2>
+              <span class="cat">Face Blur</span>
+            </div>
+          </div>
+          <p class="desc">Cover bystanders' faces before you post. ZapBlur finds the faces in a photo and covers them automatically; you cover anything else by hand. Photos are processed on your device.</p>
+          <ul class="tags"><li>On-device</li><li>No ads</li><li>No account</li></ul>
+          <p class="platforms"><strong>iPhone</strong> · Android coming soon</p>
+          <div class="actions">
+            <div class="stores">
+              <a class="btn ios" href="https://apps.apple.com/app/id6824579189" aria-label="ZapBlur on the App Store">App Store</a>
+            </div>
+            <a class="more" href="../zapblur/">Learn more <span class="arrow" aria-hidden="true">→</span></a>
           </div>
         </div>
       </li>
