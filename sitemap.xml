@@ -3,19 +3,19 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://grayforge.app/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://grayforge.app/products/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://grayforge.app/vocalout/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/dashlog/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/zapblur/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/zapblur/" />
@@ -60,7 +60,7 @@
   </url>
   <url>
     <loc>https://grayforge.app/ko/zapblur/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/zapblur/" />
@@ -2509,7 +2509,7 @@
   <!-- dashlog-faq:end -->
   <url>
     <loc>https://grayforge.app/noisyno/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/noisyno/" />
@@ -2716,10 +2716,12 @@
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/zapblur/privacy_policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/zapblur/privacy_policy.html" />
   </url>
   <url>
     <loc>https://grayforge.app/blog/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2776,12 +2778,16 @@
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
   </url>
   <url>
     <loc>https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
   </url>
   <url>
     <loc>https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/</loc>
@@ -2902,5 +2908,10 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/vocalout/ffmpeg.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 </urlset>

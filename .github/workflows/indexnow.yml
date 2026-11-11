@@ -5,10 +5,44 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate sitemap and page metadata
+        run: python scripts/check_seo.py
+
+      - name: Generate IndexNow payload from the sitemap
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from xml.etree import ElementTree as ET
+
+          host = Path('CNAME').read_text().strip()
+          key = 'grayforge-indexnow-20260612'
+          namespace = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+          sitemap = ET.parse('sitemap.xml')
+          urls = [node.text for node in sitemap.findall('s:url/s:loc', namespace)]
+          payload = {
+              'host': host,
+              'key': key,
+              'keyLocation': f'https://{host}/{key}.txt',
+              'urlList': urls,
+          }
+          Path('/tmp/indexnow.json').write_text(json.dumps(payload))
+          print(f'Prepared {len(urls)} sitemap URLs for IndexNow.')
+          PY
+
       - name: Wait for IndexNow key deployment
         run: |
           curl --fail \
@@ -17,89 +51,10 @@ jobs:
             --retry-delay 10 \
             https://grayforge.app/grayforge-indexnow-20260612.txt
 
-      - name: Submit primary pages to IndexNow
+      - name: Submit sitemap pages to IndexNow
         run: |
           curl --fail-with-body \
             --request POST \
             --header "Content-Type: application/json; charset=utf-8" \
-            --data '{
-              "host": "grayforge.app",
-              "key": "grayforge-indexnow-20260612",
-              "keyLocation": "https://grayforge.app/grayforge-indexnow-20260612.txt",
-              "urlList": [
-                "https://grayforge.app/",
-                "https://grayforge.app/dashlog/",
-                "https://grayforge.app/dashlog/faq/",
-                "https://grayforge.app/af/dashlog/faq/",
-                "https://grayforge.app/ar/dashlog/faq/",
-                "https://grayforge.app/bg/dashlog/faq/",
-                "https://grayforge.app/bn/dashlog/faq/",
-                "https://grayforge.app/cs/dashlog/faq/",
-                "https://grayforge.app/da/dashlog/faq/",
-                "https://grayforge.app/de/dashlog/faq/",
-                "https://grayforge.app/el/dashlog/faq/",
-                "https://grayforge.app/es/dashlog/faq/",
-                "https://grayforge.app/et/dashlog/faq/",
-                "https://grayforge.app/fi/dashlog/faq/",
-                "https://grayforge.app/fil/dashlog/faq/",
-                "https://grayforge.app/fr/dashlog/faq/",
-                "https://grayforge.app/gu/dashlog/faq/",
-                "https://grayforge.app/he/dashlog/faq/",
-                "https://grayforge.app/hi/dashlog/faq/",
-                "https://grayforge.app/hr/dashlog/faq/",
-                "https://grayforge.app/hu/dashlog/faq/",
-                "https://grayforge.app/id/dashlog/faq/",
-                "https://grayforge.app/it/dashlog/faq/",
-                "https://grayforge.app/ja/dashlog/faq/",
-                "https://grayforge.app/ko/dashlog/faq/",
-                "https://grayforge.app/lt/dashlog/faq/",
-                "https://grayforge.app/lv/dashlog/faq/",
-                "https://grayforge.app/mr/dashlog/faq/",
-                "https://grayforge.app/ms/dashlog/faq/",
-                "https://grayforge.app/nl/dashlog/faq/",
-                "https://grayforge.app/no/dashlog/faq/",
-                "https://grayforge.app/pl/dashlog/faq/",
-                "https://grayforge.app/pt/dashlog/faq/",
-                "https://grayforge.app/ro/dashlog/faq/",
-                "https://grayforge.app/ru/dashlog/faq/",
-                "https://grayforge.app/sk/dashlog/faq/",
-                "https://grayforge.app/sl/dashlog/faq/",
-                "https://grayforge.app/sv/dashlog/faq/",
-                "https://grayforge.app/sw/dashlog/faq/",
-                "https://grayforge.app/ta/dashlog/faq/",
-                "https://grayforge.app/te/dashlog/faq/",
-                "https://grayforge.app/th/dashlog/faq/",
-                "https://grayforge.app/tr/dashlog/faq/",
-                "https://grayforge.app/uk/dashlog/faq/",
-                "https://grayforge.app/ur/dashlog/faq/",
-                "https://grayforge.app/vi/dashlog/faq/",
-                "https://grayforge.app/zh/dashlog/faq/",
-                "https://grayforge.app/zh-tw/dashlog/faq/",
-                "https://grayforge.app/noisyno/",
-                "https://grayforge.app/vocalout/",
-                "https://grayforge.app/zapblur/",
-                "https://grayforge.app/ko/zapblur/",
-                "https://grayforge.app/blog/",
-                "https://grayforge.app/blog/noisyno/",
-                "https://grayforge.app/blog/vocalout/",
-                "https://grayforge.app/blog/dashlog/",
-                "https://grayforge.app/blog/dashlog/log-every-drive-automatically/",
-                "https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/",
-                "https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/",
-                "https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/",
-                "https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/",
-                "https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/",
-                "https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/",
-                "https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/",
-                "https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/",
-                "https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/",
-                "https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/",
-                "https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/",
-                "https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/",
-                "https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/",
-                "https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/",
-                "https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/",
-                "https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/"
-              ]
-            }' \
+            --data-binary @/tmp/indexnow.json \
             https://api.indexnow.org/indexnow

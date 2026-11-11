@@ -1,6 +1,6 @@
 # AEO / GEO Maintenance Checklist
 
-Last reviewed: 2026-10-30
+Last reviewed: 2026-11-11
 
 ## Completed
 
@@ -19,6 +19,12 @@ Last reviewed: 2026-10-30
 - [x] Home, `/blog/` and `/products/` share `/assets/og-grayforge.png` (1200×630) with `summary_large_image` cards.
 - [x] Custom `404.html` (noindex) links back to home, apps and the Journal.
 - [x] Inter loads with `display=optional` so the font swap no longer shifts layout; Fraunces stays `display=swap`.
+- [x] Main search titles and descriptions identify each app's purpose and supported platforms; VocalOut's description distinguishes free processing from Pro export.
+- [x] WebPage metadata matches main-page titles and descriptions; the app collection includes ZapBlur.
+- [x] Existing social cards have explicit Twitter images, and all content images reserve their aspect ratio with width and height.
+- [x] Sitemap covers every indexable HTML page, including the VocalOut LGPL source page, and matches HTML hreflang annotations.
+- [x] IndexNow builds its URL list from the validated sitemap, including `/products/` and localized NoisyNo pages.
+- [x] `python scripts/check_seo.py` checks canonical URLs, sitemap coverage, reciprocal hreflang, JSON-LD syntax, local links, share images and image dimensions. GitHub Actions runs it on pull requests and pushes to `main`.
 
 ## Recurring Checks
 
@@ -26,7 +32,7 @@ Last reviewed: 2026-10-30
 - [ ] Keep `dateModified` and sitemap `lastmod` accurate after meaningful content changes.
 - [ ] Verify App Store and Google Play descriptions use the same core claims as the website.
 - [ ] Check Search Console indexing for `/`, `/dashlog/`, `/noisyno/`, and `/vocalout/`. (`/ko/offline-no-account-apps/` no longer exists and was removed from the IndexNow list.)
-- [ ] When a new app or page is added, update `sitemap.xml`, `llms.txt`, the IndexNow URL list in `.github/workflows/indexnow.yml`, and the home page JSON-LD in the same commit.
+- [ ] When a new app or page is added, update `sitemap.xml`, `llms.txt`, and the home page JSON-LD in the same commit. IndexNow reads its URL list from the sitemap. Run `python scripts/check_seo.py` before deployment.
 - [ ] Search for inaccurate claims such as `no analytics`, `no data collection`, and `lifetime` before every deployment.
 - [ ] Validate JSON-LD and mobile layout after structural edits.
 - [ ] When a guide gets a translation, add the language link to the metabar of every language version, and point the matching localized product page at the localized guide.
