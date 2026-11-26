@@ -29,7 +29,7 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="en_US" />
   <meta property="article:published_time" content="2026-11-01" />
-  <meta property="article:modified_time" content="2026-11-01" />
+  <meta property="article:modified_time" content="2026-11-26" />
   <meta property="article:author" content="GrayForge" />
   <meta property="article:section" content="VocalOut Guide" />
 
@@ -50,8 +50,8 @@
         "description": "VocalOut and five other on-device vocal removers compared with Moises and LALAL.AI: whether audio is uploaded, whether an account is required, price model, platforms, export limits and offline use, taken from each vendor's own store listing or website.",
         "inLanguage": "en",
         "datePublished": "2026-11-01",
-        "dateModified": "2026-11-01",
-        "wordCount": 2700,
+        "dateModified": "2026-11-26",
+        "wordCount": 2100,
         "articleSection": "VocalOut Guide",
         "keywords": "offline vocal remover app, on-device vocal remover, vocal remover without upload, Moises alternative, LALAL.AI alternative, stem splitter, VocalOut",
         "mainEntityOfPage": "https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/",
@@ -121,7 +121,7 @@
             "name": "Which vocal remover apps work offline?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Of the apps checked on 1 November 2026, VocalOut, Stem Splitter - Vocal Remover, Vocal Remover AI : Split Music and Vocal Remover · Stem Splitter on iPhone, and VocalOut and Stemify on Android, say they separate songs on the device without an internet connection. StemLab says separation runs on the device with nothing uploaded but does not use the word offline. The Moises and LALAL.AI phone apps process songs in the cloud."
+              "text": "VocalOut, Stem Splitter – Vocal Remover, Vocal Remover AI : Split Music and Vocal Remover · Stem Splitter on iPhone, and VocalOut and Stemify on Android, say they separate songs on the device without an internet connection. StemLab says separation runs on the device but doesn't use the word offline. The Moises and LALAL.AI phone apps process songs in the cloud."
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "Do Moises and LALAL.AI upload my song?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "LALAL.AI's iOS and Android pages say all separation runs on LALAL.AI's cloud servers and that processing requires an account; its desktop app has a local mode for Pro subscribers. Moises describes uploading songs to your Moises library, which is stored in the cloud."
+              "text": "Yes. LALAL.AI's iOS and Android pages say all separation runs on its cloud servers and requires an account, and Moises describes uploading songs to your Moises library in the cloud. LALAL.AI's desktop app has a local mode for Pro subscribers."
             }
           },
           {
@@ -137,7 +137,7 @@
             "name": "Is VocalOut free?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "VocalOut is free to download, and processing and in-app playback are unlimited and free. Exporting results to Files or other apps needs VocalOut Pro, a one-time $6.99 purchase. There is no subscription and no account."
+              "text": "Separating songs and listening in the app are unlimited and free, with no account. Exporting results to Files or other apps needs VocalOut Pro, a one-time $6.99 purchase with no subscription."
             }
           },
           {
@@ -145,15 +145,7 @@
             "name": "Can VocalOut split drums, bass and other instruments?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. VocalOut has two modes: a clean instrumental with the vocals removed, or the isolated vocal track. If you need drums, bass or other stems, apps such as StemLab, Stem Splitter - Vocal Remover, Vocal Remover · Stem Splitter, Stemify, Moises or LALAL.AI split songs into four or more parts."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How can I check whether a vocal remover really works offline?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Turn on Airplane Mode with Wi-Fi off, open the app and separate a short song. If it finishes, the separation ran on your phone. Then read the App Privacy section on the App Store or the Data safety section on Google Play, keeping in mind that both are filled in by the developer."
+              "text": "VocalOut has two modes: an instrumental with the vocals removed, or the vocals on their own. For separate drums, bass or other stems, StemLab, Stem Splitter – Vocal Remover, Vocal Remover · Stem Splitter, Stemify, Moises and LALAL.AI split songs into four or more parts."
             }
           }
         ]
@@ -470,6 +462,43 @@
       table.cmp th[scope="row"], table.cmp thead th:first-child { min-width: 118px; max-width: 128px; }
       table.cmp th[scope="row"] { font-size: 0.92rem; }
     }
+    /* At-a-glance table */
+    table.glance { width: 100%; border-collapse: collapse; font-size: 0.92rem; line-height: 1.35; margin-top: 18px; }
+    table.glance caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    table.glance th, table.glance td { padding: 12px 8px; border-bottom: 1px solid var(--line); text-align: center; vertical-align: middle; color: var(--ink-2); }
+    table.glance thead th { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); vertical-align: bottom; }
+    table.glance thead th:first-child, table.glance th[scope="row"] { text-align: left; padding-left: 12px; }
+    table.glance th[scope="row"] { font-family: var(--serif); font-weight: 500; font-size: 1rem; color: var(--ink); }
+    table.glance tr.ours th, table.glance tr.ours td { background: #F7EDE6; }
+    table.glance .y { font-size: 1.1rem; font-weight: 600; color: var(--ink); }
+    table.glance .n { font-size: 1.05rem; color: var(--muted); }
+    table.glance .p { font-size: 0.8rem; font-weight: 500; color: var(--ink-2); }
+    table.glance .u { color: var(--muted); }
+    .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .glance-legend { margin-top: 12px; font-size: 0.82rem; color: var(--muted); }
+
+    /* Screenshots */
+    .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 26px 0 6px; }
+    .shots figure { margin: 0; }
+    .shots img { width: 100%; height: auto; border-radius: 22px; border: 1px solid var(--line); background: var(--panel); }
+    .shots figcaption { margin-top: 10px; font-size: 0.84rem; line-height: 1.45; color: var(--muted); }
+
+    /* Short notes */
+    ul.notes { list-style: none; padding: 0; margin: 18px 0 0; }
+    article ul.notes li { padding: 14px 0; margin: 0; border-bottom: 1px solid var(--line); }
+    article ul.notes li::before { display: none; }
+    ul.notes li:last-child { border-bottom: none; }
+    ul.notes strong { font-family: var(--serif); font-weight: 600; color: var(--ink); }
+
+    @media (max-width: 560px) {
+      table.glance { font-size: 0.86rem; }
+      table.glance th, table.glance td { padding: 10px 4px; }
+      table.glance thead th { font-size: 0.6rem; letter-spacing: 0.04em; }
+      table.glance th[scope="row"] { font-size: 0.9rem; padding-left: 6px; }
+      table.glance .p { font-size: 0.72rem; }
+      .shots { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 64%; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; padding-bottom: 6px; }
+      .shots figure { scroll-snap-align: start; }
+    }
   </style>
 </head>
 <body>
@@ -519,14 +548,13 @@
 
         <p class="lede">
           VocalOut and five other apps that separate songs <strong>on the phone itself</strong>, next to the two cloud
-          services they usually get compared with. Uploads, accounts, prices, export limits and offline use, taken
-          from each vendor's own listing.
+          services they usually get compared with.
         </p>
 
         <div class="metabar">
           <span class="m">Published 2026.11.01</span>
           <span class="dot"></span>
-          <span class="m">~10 min read</span>
+          <span class="m">~7 min read</span>
           <span class="dot"></span>
           <span class="m">Facts checked 2026.11.01</span>
         </div>
@@ -536,11 +564,10 @@
           <div>
             <div class="short">Short answer</div>
             <p>
-              If you want vocals removed <strong>without your music leaving the phone</strong>, use an app that separates
-              on the device. On iPhone that's VocalOut, Stem Splitter – Vocal Remover, Vocal Remover AI : Split Music,
-              Vocal Remover · Stem Splitter or StemLab; on Android, VocalOut or Stemify. Moises and LALAL.AI do the
-              work on their own servers and need an account. The on-device apps differ mainly in how you pay
-              (subscription, one-time or ads) and in how many parts they split a song into.
+              To remove vocals <strong>without your music leaving the phone</strong>, use an app that separates on the
+              device. VocalOut does it on iPhone and Android with no account: separating and listening are unlimited and
+              free, and exporting is a one-time $6.99. Most other on-device apps charge by subscription, and Stemify on
+              Android is free with ads. Moises and LALAL.AI upload your song and need an account.
             </p>
           </div>
         </div>
@@ -556,10 +583,10 @@
           <p class="aside-note">Every table cell links to its source.</p>
         </div>
         <ol>
-          <li><a href="#table"><span class="t">The comparison table</span></a></li>
-          <li><a href="#method"><span class="t">How we checked</span></a></li>
-          <li><a href="#apps"><span class="t">App by app</span></a></li>
-          <li><a href="#weaker"><span class="t">Where VocalOut is weaker</span></a></li>
+          <li><a href="#glance"><span class="t">At a glance</span></a></li>
+          <li><a href="#table"><span class="t">The full table</span></a></li>
+          <li><a href="#pro"><span class="t">VocalOut, free and Pro</span></a></li>
+          <li><a href="#apps"><span class="t">What the table doesn't show</span></a></li>
           <li><a href="#check"><span class="t">Check an offline claim yourself</span></a></li>
           <li><a href="#faq"><span class="t">FAQ</span></a></li>
           <li><a href="#sources"><span class="t">Sources</span></a></li>
@@ -570,14 +597,43 @@
     <article>
       <div class="wrap">
 
+        <!-- GLANCE -->
+        <section id="glance" class="read reveal">
+          <h2>At a glance</h2>
+          <p>The four things most people want to know first. Every detail, with its source, is in the <a class="inline" href="#table">full table</a> below.</p>
+          <table class="glance">
+            <caption>Vocal remover apps at a glance, checked 1 November 2026.</caption>
+            <thead>
+              <tr>
+                <th scope="col">App</th>
+                <th scope="col">No upload</th>
+                <th scope="col">No account</th>
+                <th scope="col">Works offline</th>
+                <th scope="col">How you pay</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr class="ours"><th scope="row">VocalOut</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">$6.99 once</span></td></tr>
+                <tr><th scope="row">StemLab</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="p">Subscription or lifetime</span></td></tr>
+                <tr><th scope="row">Stem Splitter – Vocal Remover</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">Subscription</span></td></tr>
+                <tr><th scope="row">Vocal Remover AI : Split Music</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">Subscription or lifetime</span></td></tr>
+                <tr><th scope="row">Vocal Remover · Stem Splitter</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">Subscription</span></td></tr>
+                <tr><th scope="row">Stemify</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">Free with ads</span></td></tr>
+                <tr><th scope="row">Moises</th><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="p">Subscription</span></td></tr>
+                <tr><th scope="row">LALAL.AI</th><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="p">Desktop Pro only</span></td><td><span class="p">Subscription or minute packs</span></td></tr>
+            </tbody>
+          </table>
+          <p class="glance-legend">✓ yes · ✗ no · – not stated by the vendor</p>
+        </section>
+
         <!-- TABLE -->
         <section id="table" class="reveal">
           <div class="read">
-            <h2>Eight vocal removers side by side</h2>
+            <h2>The full table</h2>
             <p>
-              The first six run the separation on the phone. The last two are cloud services: you upload a song and
-              their servers do the work. Prices are US App Store or vendor prices. Where a vendor doesn't say
-              something, the cell says <em>not stated</em> rather than guessing.
+              The same eight apps with the details behind each answer. The first six separate on the phone; the last two
+              are cloud services. Prices are US App Store or vendor prices, and where a vendor doesn't say something, the
+              cell says <em>not stated</em>.
             </p>
             <p class="table-hint">Scroll the table sideways to see every column →</p>
           </div>
@@ -696,113 +752,65 @@
         <section id="method" class="read reveal">
           <h2>How we checked</h2>
           <p>
-            GrayForge makes VocalOut, so read this page knowing that. To keep it useful even if you pick something else,
-            every fact about another app comes from that app's own App Store or Google Play listing, or from the vendor's
-            own website, read on 1 November 2026. Nothing comes from review sites or our own guesses. If a listing
-            doesn't say whether an account is needed or whether the app works offline, the table says <em>not
-            stated</em>.
-          </p>
-          <p>
-            We haven't tested the other apps' sound quality, so this page doesn't rank them on how clean the separation
-            is. Separation quality depends a lot on the song, and every app here is free to download, so you can hear
-            the difference on your own music.
+            GrayForge makes VocalOut, so weigh this page with that in mind. Every fact about another app comes from its own
+            App Store or Google Play listing or the vendor's website, read on 1 November 2026; nothing comes from review
+            sites or our own guesses. We haven't compared sound quality, which depends a lot on the song, so the page
+            doesn't rank the apps on it. Every app here is free to download, so you can hear the difference on your own music.
           </p>
         </section>
 
-        <!-- APP BY APP -->
+        <!-- PRO -->
+        <section id="pro" class="read reveal">
+          <h2>VocalOut, free and Pro</h2>
+          <p>
+            Separating songs and listening to the results in the app are unlimited and free, with no account. VocalOut Pro
+            is a <strong>one-time $6.99 purchase</strong>, with no subscription, that unlocks exporting results to Files or
+            other apps at the full 32-bit quality the engine produces.<a class="ref" href="#s1">1</a><a class="ref" href="#s2">2</a>
+          </p>
+          <div class="shots">
+            <figure>
+              <img src="../../../vocalout/assets/screenshots/02-file-mode.png" alt="VocalOut file screen: a song's waveform, length and format, with the separation modes to pick from" width="303" height="660" loading="lazy" />
+              <figcaption>Pick a song file and a separation mode.</figcaption>
+            </figure>
+            <figure>
+              <img src="../../../vocalout/assets/screenshots/03-processing.png" alt="VocalOut removing vocals on the device, with the waveform filling in behind a 71 percent counter" width="303" height="660" loading="lazy" />
+              <figcaption>Separation runs on the phone; nothing is uploaded.</figcaption>
+            </figure>
+            <figure>
+              <img src="../../../vocalout/assets/screenshots/04-result.png" alt="VocalOut result screen: the finished instrumental saved to the library and playing in the app" width="303" height="660" loading="lazy" />
+              <figcaption>Listening is free. Exporting the result is Pro.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- NOTES -->
         <section id="apps" class="read reveal">
-          <h2>App by app</h2>
-
-          <h3>VocalOut</h3>
-          <p>
-            Our app. It does one job: an instrumental with the vocals removed, or the vocals on their own. The model runs
-            on the phone, there's no account and no limit on songs, and you can listen to every result in the app for
-            free. Taking a result out of the app (to Files or another app, at the full 32-bit quality) is the paid part:
-            <strong>$6.99 once</strong>, not a subscription. Songs have to be files already on the phone; VocalOut isn't
-            connected to any music service. The <a class="inline" href="../remove-vocals-from-a-song/">step-by-step
-            guide</a> shows the whole flow.
-          </p>
-
-          <h3>StemLab</h3>
-          <p>
-            The most stems of the on-device iPhone apps here: a 4-stem or a 6-stem model, with export to WAV, FLAC or M4A.
-            It needs iOS 26.2 or later. The listing says no subscription is required and also offers weekly, monthly and
-            yearly plans next to a $59.99 lifetime purchase, so read the purchase screen to see which one you're choosing.
-          </p>
-
-          <h3>Stem Splitter – Vocal Remover</h3>
-          <p>
-            Of the other iPhone apps, the only one that spells out its free tier: three separations a month with all four
-            stems and MP3 export. Beyond that it's a subscription. It needs an iPhone 12 or newer.
-          </p>
-
-          <h3>Vocal Remover AI : Split Music</h3>
-          <p>
-            Like VocalOut, it splits a song into vocals and instrumental rather than separate instruments, and it can save
-            video as well as audio. Its App Privacy label says the developer collects no data (as reported by the developer). There's
-            a lifetime option next to the subscriptions.
-          </p>
-
-          <h3>Vocal Remover · Stem Splitter</h3>
-          <p>
-            Four stems from the open-source Demucs model, no account, and WAV export. The listing mentions importing from a
-            link but doesn't explain how that works, and its description says there are no subscriptions while the
-            in-app purchases are weekly and yearly Pro plans.
-          </p>
-
-          <h3>Stemify</h3>
-          <p>
-            The only app here with no paid tier at all: free with ads, four stems, WAV export, no account. Its listing
-            says processing takes about 2 to 8 minutes and recommends a phone with 4 GB of RAM or more. Its Data safety
-            section says the app may share location data with third parties.
-          </p>
-
-          <h3>Moises</h3>
-          <p>
-            A full practice and production suite rather than just a vocal remover, and it runs almost everywhere:
-            phones, tablets, Mac, Windows, the web and Apple TV. Songs are uploaded to your Moises library, which is
-            stored in the cloud; Moises's pricing page says it will never train on your data. The free tier covers
-            vocals, drums and bass with a limited number of uploads a month.
-          </p>
-
-          <h3>LALAL.AI</h3>
-          <p>
-            On phones, all separation runs on LALAL.AI's servers and you need an account. The free plan lets you preview
-            results, but downloading the full output needs a paid plan. You can pay by subscription or with one-time
-            minute packs. The desktop app has a local, offline mode for Pro subscribers.
-          </p>
-
-          <h3>Also worth knowing</h3>
-          <p>
-            <strong>Logic Pro for iPad</strong> includes Stem Splitter, which separates drums, bass, vocals, guitar,
-            piano and other instruments. It needs an iPad with the A17 Pro chip or later, it isn't on iPhone, and it's
-            sold through Apple Creator Studio at $12.99 a month or $129 a year after a 30-day trial. Apple's pages don't
-            say whether Stem Splitter works offline. <strong>djay</strong> isolates vocals, drums and instrumentals in
-            real time while you DJ (not with Apple Music or Spotify streams). It's built for performing rather than for
-            saving a backing track, so it isn't in the table.
-          </p>
-        </section>
-
-        <!-- WEAKER -->
-        <section id="weaker" class="read reveal">
-          <h2>Where VocalOut is weaker</h2>
-          <ul>
-            <li><strong>Two outputs only.</strong> VocalOut gives you the instrumental or the vocals. If you want drums, bass or piano on their own tracks, StemLab, Stem Splitter, Vocal Remover · Stem Splitter, Stemify, Moises and LALAL.AI all split songs into four or more parts.</li>
-            <li><strong>Exporting costs money.</strong> Listening is free, but saving a result outside the app needs the $6.99 Pro purchase. Stemify exports WAV for free (with ads), and Stem Splitter's free tier gives you three separations a month with MP3 export.</li>
-            <li><strong>Phones only.</strong> VocalOut is made for iPhone and Android phones. If you'd rather work on a computer or in a browser, Moises and LALAL.AI have desktop and web versions.</li>
-            <li><strong>Speed depends on your phone.</strong> The work happens on your device, so an older phone takes longer. A cloud service does the work on its own servers instead.</li>
-            <li><strong>Files only.</strong> VocalOut can't pull a song from a streaming service or a link. The song has to be saved on the phone first.</li>
+          <h2>What the table doesn't show</h2>
+          <ul class="notes">
+            <li><strong>VocalOut</strong> does one job: an instrumental with the vocals removed, or the vocals on their own. It works on song files saved on the phone and isn't connected to any music service.<a class="ref" href="#s1">1</a><a class="ref" href="#s2">2</a> The <a class="inline" href="../remove-vocals-from-a-song/">step-by-step guide</a> shows the whole flow.</li>
+            <li><strong>StemLab</strong>'s listing says no subscription is required, yet it offers weekly, monthly and yearly plans next to a $59.99 lifetime purchase, so check the purchase screen before you pay.<a class="ref" href="#s3">3</a></li>
+            <li><strong>Stem Splitter – Vocal Remover</strong>'s free tier includes all four stems, not just the vocals.<a class="ref" href="#s4">4</a></li>
+            <li><strong>Vocal Remover AI : Split Music</strong> can save video as well as audio, and its privacy label says the developer collects no data.<a class="ref" href="#s5">5</a></li>
+            <li><strong>Vocal Remover · Stem Splitter</strong> uses the open-source Demucs model. Its description says there are no subscriptions, while its in-app purchases are weekly and yearly Pro plans.<a class="ref" href="#s6">6</a></li>
+            <li><strong>Stemify</strong> says processing takes about 2 to 8 minutes and recommends a phone with 4 GB of RAM or more. Its Data safety section says it may share location data with third parties.<a class="ref" href="#s7">7</a></li>
+            <li><strong>Moises</strong> is a full practice and production suite rather than just a vocal remover, and its pricing page says it will never train on your data.<a class="ref" href="#s8">8</a><a class="ref" href="#s9">9</a></li>
           </ul>
+          <p>
+            <strong>Also worth a look:</strong> Logic Pro for iPad includes Stem Splitter for drums, bass, vocals, guitar,
+            piano and other instruments; it needs an iPad with the A17 Pro chip or later and is sold through Apple Creator
+            Studio at $12.99 a month or $129 a year.<a class="ref" href="#s16">16</a><a class="ref" href="#s17">17</a> djay isolates vocals, drums and instrumentals in real time
+            while you DJ, but it's built for performing rather than saving a backing track.<a class="ref" href="#s18">18</a>
+          </p>
         </section>
 
         <!-- CHECK -->
         <section id="check" class="read reveal">
           <h2>Check an offline claim yourself</h2>
-          <p>Listings are written by the people selling the app, ours included. A two-minute test tells you more:</p>
+          <p>Listings are written by the people selling the app, ours included. Two minutes tell you more:</p>
           <ol class="steps">
-            <li><strong>Turn on Airplane Mode and make sure Wi-Fi is off.</strong> Then open the app and separate a short song. If it finishes, the separation ran on your phone.</li>
-            <li><strong>Watch for a sign-in screen.</strong> If an app asks you to sign in before it will process anything, read its privacy policy to see what happens to your files.</li>
-            <li><strong>Read the privacy section.</strong> On the App Store it's “App Privacy”, on Google Play it's “Data safety”. Both are filled in by the developer, so read them together with the airplane-mode test.</li>
+            <li><strong>Turn on Airplane Mode with Wi-Fi off</strong>, then separate a short song. If it finishes, the work ran on your phone.</li>
+            <li><strong>A sign-in screen before processing</strong> means your songs are tied to an account. Read the privacy policy to see what happens to them.</li>
+            <li><strong>Read the privacy section</strong> (App Privacy on the App Store, Data safety on Google Play), keeping in mind that both are filled in by the developer.</li>
           </ol>
           <div class="callout">
             <span class="label">Rights</span>
@@ -816,23 +824,19 @@
           <div class="faq-list">
             <details>
               <summary>Which vocal remover apps work offline?</summary>
-              <p>Of the apps checked on 1 November 2026, VocalOut, Stem Splitter – Vocal Remover, Vocal Remover AI : Split Music and Vocal Remover · Stem Splitter on iPhone, and VocalOut and Stemify on Android, say they separate songs on the device without an internet connection. StemLab says separation runs on the device with nothing uploaded but doesn't use the word offline. The Moises and LALAL.AI phone apps process songs in the cloud.</p>
+              <p>VocalOut, Stem Splitter – Vocal Remover, Vocal Remover AI : Split Music and Vocal Remover · Stem Splitter on iPhone, and VocalOut and Stemify on Android, say they separate songs on the device without an internet connection. StemLab says separation runs on the device but doesn't use the word offline. The Moises and LALAL.AI phone apps process songs in the cloud.</p>
             </details>
             <details>
               <summary>Do Moises and LALAL.AI upload my song?</summary>
-              <p>LALAL.AI's iOS and Android pages say all separation runs on LALAL.AI's cloud servers and that processing requires an account; its desktop app has a local mode for Pro subscribers. Moises describes uploading songs to your Moises library, which is stored in the cloud.</p>
+              <p>Yes. LALAL.AI's iOS and Android pages say all separation runs on its cloud servers and requires an account, and Moises describes uploading songs to your Moises library in the cloud. LALAL.AI's desktop app has a local mode for Pro subscribers.</p>
             </details>
             <details>
               <summary>Is VocalOut free?</summary>
-              <p>VocalOut is free to download, and processing and in-app playback are unlimited and free. Exporting results to Files or other apps needs VocalOut Pro, a one-time $6.99 purchase. There is no subscription and no account.</p>
+              <p>Separating songs and listening in the app are unlimited and free, with no account. Exporting results to Files or other apps needs VocalOut Pro, a one-time $6.99 purchase with no subscription.</p>
             </details>
             <details>
               <summary>Can VocalOut split drums, bass and other instruments?</summary>
-              <p>No. VocalOut has two modes: a clean instrumental with the vocals removed, or the isolated vocal track. If you need drums, bass or other stems, apps such as StemLab, Stem Splitter - Vocal Remover, Vocal Remover · Stem Splitter, Stemify, Moises or LALAL.AI split songs into four or more parts.</p>
-            </details>
-            <details>
-              <summary>How can I check whether a vocal remover really works offline?</summary>
-              <p>Turn on Airplane Mode with Wi-Fi off, open the app and separate a short song. If it finishes, the separation ran on your phone. Then read the App Privacy section on the App Store or the Data safety section on Google Play, keeping in mind that both are filled in by the developer.</p>
+              <p>VocalOut has two modes: an instrumental with the vocals removed, or the vocals on their own. For separate drums, bass or other stems, StemLab, Stem Splitter – Vocal Remover, Vocal Remover · Stem Splitter, Stemify, Moises and LALAL.AI split songs into four or more parts.</p>
             </details>
           </div>
         </section>

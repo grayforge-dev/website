@@ -51,7 +51,7 @@
         "inLanguage": "en",
         "datePublished": "2026-11-26",
         "dateModified": "2026-11-26",
-        "wordCount": 3500,
+        "wordCount": 2700,
         "articleSection": "NoisyNo Guide",
         "keywords": "offline noise remover app, remove background noise app, on-device noise reduction, Adobe Podcast alternative, Denoise alternative, NoisyNo",
         "mainEntityOfPage": "https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/",
@@ -125,7 +125,7 @@
             "name": "Which noise remover apps work offline?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Of the apps checked on 26 November 2026, NoisyNo, Denoise.FX and Noise Reducer, PureVoice on iPhone, and NoisyNo, NoiseKill, Offline AI Video Noise Remover and PureVoice on Android, say they clean recordings without an internet connection. Denoise and Audio Cleaner: AI Denoise say processing runs on the device with nothing uploaded but don't use the word offline. Adobe Podcast Enhance Speech runs on the web, and the LALAL.AI phone apps need an internet connection because processing runs on LALAL.AI's servers."
+              "text": "NoisyNo, Denoise.FX and PureVoice on iPhone, and NoisyNo, NoiseKill, Offline AI Video Noise Remover and PureVoice on Android, say they clean recordings without an internet connection. Denoise and Audio Cleaner say everything runs on the device but don't use the word offline. Adobe Podcast and the LALAL.AI phone apps process files on their own servers."
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "Is there a free noise remover app without a watermark or save limit?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "NoisyNo saves cleaned audio as M4A for free at any length, with no account; cleaned video and WAV need its one-time Pro. On Android, NoiseKill is free with ads and says there is no watermark, and Offline AI Video Noise Remover saves two files a day for free without a watermark. Denoise lets you clean and listen for free, but saving the result needs a purchase. Adobe Podcast's free plan takes audio files up to 30 minutes, 1 hour a day, and LALAL.AI's free plan only previews results."
+              "text": "NoisyNo saves cleaned audio as M4A for free at any length, with no account. On Android, NoiseKill is free with ads and no watermark, and Offline AI Video Noise Remover saves two files a day for free. Denoise charges to save, Adobe Podcast's free plan allows 1 hour of audio a day, and LALAL.AI's free plan only previews results."
             }
           },
           {
@@ -141,7 +141,7 @@
             "name": "Do Adobe Podcast and LALAL.AI upload my recording?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Adobe Podcast Enhance Speech works on files you upload to the web app, and its free plan starts with signing up for an account. LALAL.AI's iOS and Android pages say all processing runs on LALAL.AI's cloud servers and that processing requires an account; its web Voice Cleaner also works on uploaded files."
+              "text": "Yes. Adobe Podcast Enhance Speech works on files you upload after signing up, and LALAL.AI's iOS and Android pages say all processing runs on its cloud servers and requires an account."
             }
           },
           {
@@ -149,15 +149,7 @@
             "name": "Is NoisyNo free?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "NoisyNo is free to download, and noise removal is free at any length, saved as M4A. Pro is a one-time in-app purchase that adds cleaned video export, batch processing, loudness normalization, lossless WAV export and trimming. It costs $5.99 on iPhone, iPad and Android and $7.99 for the Mac version, which is bought separately. There is no subscription and no account."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How can I check whether a noise remover really works offline?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Turn on Airplane Mode with Wi-Fi off, open the app and clean a short recording. If it finishes, the processing ran on your phone. Then read the App Privacy section on the App Store or the Data safety section on Google Play, keeping in mind that both are filled in by the developer."
+              "text": "Yes. Noise removal is free at any length, saved as M4A, with no account. Pro is a one-time purchase, $5.99 on iPhone, iPad and Android and $7.99 for the Mac version, that adds video export, WAV, batch processing, loudness normalization and trimming."
             }
           }
         ]
@@ -474,6 +466,44 @@
       table.cmp th[scope="row"], table.cmp thead th:first-child { min-width: 118px; max-width: 128px; }
       table.cmp th[scope="row"] { font-size: 0.92rem; }
     }
+    /* At-a-glance table */
+    table.glance { width: 100%; border-collapse: collapse; font-size: 0.92rem; line-height: 1.35; margin-top: 18px; }
+    table.glance caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    table.glance th, table.glance td { padding: 12px 8px; border-bottom: 1px solid var(--line); text-align: center; vertical-align: middle; color: var(--ink-2); }
+    table.glance thead th { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); vertical-align: bottom; }
+    table.glance thead th:first-child, table.glance th[scope="row"] { text-align: left; padding-left: 12px; }
+    table.glance th[scope="row"] { font-family: var(--serif); font-weight: 500; font-size: 1rem; color: var(--ink); }
+    table.glance tr.ours th, table.glance tr.ours td { background: #F7EDE6; }
+    table.glance .y { font-size: 1.1rem; font-weight: 600; color: var(--ink); }
+    table.glance .n { font-size: 1.05rem; color: var(--muted); }
+    table.glance .p { font-size: 0.8rem; font-weight: 500; color: var(--ink-2); }
+    table.glance .u { color: var(--muted); }
+    .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .glance-legend { margin-top: 12px; font-size: 0.82rem; color: var(--muted); }
+
+    /* Screenshots */
+    .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 26px 0 6px; }
+    .shots figure { margin: 0; }
+    .shots img { width: 100%; height: auto; border-radius: 22px; border: 1px solid var(--line); background: var(--panel); }
+    .shots figcaption { margin-top: 10px; font-size: 0.84rem; line-height: 1.45; color: var(--muted); }
+    .shots + p { margin-top: 26px; }
+
+    /* Short notes */
+    ul.notes { list-style: none; padding: 0; margin: 18px 0 0; }
+    article ul.notes li { padding: 14px 0; margin: 0; border-bottom: 1px solid var(--line); }
+    article ul.notes li::before { display: none; }
+    ul.notes li:last-child { border-bottom: none; }
+    ul.notes strong { font-family: var(--serif); font-weight: 600; color: var(--ink); }
+
+    @media (max-width: 560px) {
+      table.glance { font-size: 0.86rem; }
+      table.glance th, table.glance td { padding: 10px 4px; }
+      table.glance thead th { font-size: 0.6rem; letter-spacing: 0.04em; }
+      table.glance th[scope="row"] { font-size: 0.9rem; padding-left: 6px; }
+      table.glance .p { font-size: 0.72rem; }
+      .shots { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 64%; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; padding-bottom: 6px; }
+      .shots figure { scroll-snap-align: start; }
+    }
   </style>
 </head>
 <body>
@@ -522,15 +552,14 @@
         <h1>Offline noise remover apps for iPhone and Android, compared<span class="spark">.</span></h1>
 
         <p class="lede">
-          NoisyNo and six other apps that clean background noise out of recordings <strong>on the phone itself</strong>,
-          next to the two cloud services they usually get compared with. Uploads, accounts, prices, export limits, video
-          and offline use, taken from each vendor's own listing.
+          NoisyNo next to six other apps that clean background noise out of recordings <strong>on the phone itself</strong>,
+          and the two cloud services they usually get compared with.
         </p>
 
         <div class="metabar">
           <span class="m">Published 2026.11.26</span>
           <span class="dot"></span>
-          <span class="m">~12 min read</span>
+          <span class="m">~9 min read</span>
           <span class="dot"></span>
           <span class="m">Facts checked 2026.11.26</span>
         </div>
@@ -540,12 +569,10 @@
           <div>
             <div class="short">Short answer</div>
             <p>
-              If you want background noise removed <strong>without the recording leaving your phone</strong>, use an app
-              that cleans on the device. On iPhone that's NoisyNo, Denoise, Denoise.FX, Audio Cleaner: AI Denoise or
-              PureVoice; on Android, NoisyNo, NoiseKill, Offline AI Video Noise Remover or PureVoice. Adobe Podcast
-              Enhance Speech and LALAL.AI do the work on their own servers and need an account. The on-device apps differ
-              mostly in what you can save for free: NoisyNo saves cleaned audio free at any length, Denoise lets you
-              clean and listen for free but charges to save, and NoiseKill is free with ads.
+              To clean a recording <strong>without it leaving your phone</strong>, use an app that works on the device.
+              NoisyNo does it for free at any length on iPhone, iPad, Mac and Android, with no account. Denoise lets you
+              clean and listen for free but charges to save, and on Android NoiseKill is free with ads. Adobe Podcast and
+              LALAL.AI upload your file and need an account.
             </p>
           </div>
         </div>
@@ -561,11 +588,11 @@
           <p class="aside-note">Every table cell links to its source.</p>
         </div>
         <ol>
-          <li><a href="#table"><span class="t">The comparison table</span></a></li>
-          <li><a href="#method"><span class="t">How we checked</span></a></li>
-          <li><a href="#apps"><span class="t">App by app</span></a></li>
+          <li><a href="#glance"><span class="t">At a glance</span></a></li>
+          <li><a href="#table"><span class="t">The full table</span></a></li>
+          <li><a href="#pro"><span class="t">NoisyNo, free and Pro</span></a></li>
+          <li><a href="#apps"><span class="t">What the table doesn't show</span></a></li>
           <li><a href="#which"><span class="t">Which one to use when</span></a></li>
-          <li><a href="#pro"><span class="t">What NoisyNo Pro adds</span></a></li>
           <li><a href="#check"><span class="t">Check an offline claim yourself</span></a></li>
           <li><a href="#faq"><span class="t">FAQ</span></a></li>
           <li><a href="#sources"><span class="t">Sources</span></a></li>
@@ -576,14 +603,44 @@
     <article>
       <div class="wrap">
 
+        <!-- GLANCE -->
+        <section id="glance" class="read reveal">
+          <h2>At a glance</h2>
+          <p>The four things most people want to know first. Every detail, with its source, is in the <a class="inline" href="#table">full table</a> below.</p>
+          <table class="glance">
+            <caption>Noise remover apps at a glance, checked 26 November 2026.</caption>
+            <thead>
+              <tr>
+                <th scope="col">App</th>
+                <th scope="col">No upload</th>
+                <th scope="col">No account</th>
+                <th scope="col">Works offline</th>
+                <th scope="col">Saves for free</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr class="ours"><th scope="row">NoisyNo</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td></tr>
+                <tr><th scope="row">Denoise</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="p">Paid</span></td></tr>
+                <tr><th scope="row">Denoise.FX</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td></tr>
+                <tr><th scope="row">Audio Cleaner</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td></tr>
+                <tr><th scope="row">PureVoice</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">Listed as free</span></td></tr>
+                <tr><th scope="row">NoiseKill</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">With ads</span></td></tr>
+                <tr><th scope="row">Offline AI Video Noise Remover</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">2 a day</span></td></tr>
+                <tr><th scope="row">Adobe Podcast</th><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="p">1 hour a day</span></td></tr>
+                <tr><th scope="row">LALAL.AI</th><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="p">Not on phones</span></td><td><span class="p">Previews only</span></td></tr>
+            </tbody>
+          </table>
+          <p class="glance-legend">✓ yes · ✗ no · – not stated by the vendor</p>
+        </section>
+
         <!-- TABLE -->
         <section id="table" class="reveal">
           <div class="read">
-            <h2>Nine noise removers side by side</h2>
+            <h2>The full table</h2>
             <p>
-              The first seven clean the recording on the phone. The last two are cloud services: you upload a file and
-              their servers do the work. Prices are US App Store, Google Play or vendor prices. Where a vendor doesn't say
-              something, the cell says <em>not stated</em> rather than guessing.
+              The same nine apps with the details behind each answer. The first seven clean on the phone; the last two are
+              cloud services. Prices are US App Store, Google Play or vendor prices, and where a vendor doesn't say
+              something, the cell says <em>not stated</em>.
             </p>
             <p class="table-hint">Scroll the table sideways to see every column →</p>
           </div>
@@ -712,123 +769,61 @@
         <section id="method" class="read reveal">
           <h2>How we checked</h2>
           <p>
-            GrayForge makes NoisyNo, so read this page knowing that. To keep it useful even if you pick something else,
-            every fact about another app comes from that app's own US App Store or Google Play listing, or from the
-            vendor's own website, read on 26 November 2026. Nothing comes from review sites, user reviews or our own
-            guesses. If a listing doesn't say whether an account is needed, what's free, or whether the app works offline,
-            the table says <em>not stated</em>.
-          </p>
-          <p>
-            We picked on-device apps that say plainly that nothing is uploaded and that have been updated in the past
-            year or are on both stores, and the two cloud services people most often weigh against them. We haven't run
-            the same recording through every app, so this page doesn't rank them on how clean the result sounds. Noise
-            removal depends a lot on the recording, and every app here is free to download or try, so you can hear the
-            difference on your own audio.
+            GrayForge makes NoisyNo, so weigh this page with that in mind. Every fact about another app comes from its own
+            US App Store or Google Play listing or the vendor's website, read on 26 November 2026; nothing comes from review
+            sites or user reviews. We didn't run the same recording through every app, so the page doesn't rank them on how
+            clean the result sounds. Every app here is free to download or try, so you can hear the difference yourself.
           </p>
         </section>
 
-        <!-- APP BY APP -->
+        <!-- PRO -->
+        <section id="pro" class="read reveal">
+          <h2>NoisyNo, free and Pro</h2>
+          <p>
+            Noise removal is free at any length, with no account, and the cleaned audio is saved as M4A (AAC). Pro is a
+            <strong>one-time purchase</strong> with no subscription: $5.99 on iPhone, iPad and Android, and $7.99 for the
+            Mac version, which is bought separately.<a class="ref" href="#s2">2</a><a class="ref" href="#s3">3</a>
+          </p>
+          <div class="shots">
+            <figure>
+              <img src="../../../noisyno/assets/screenshots/app/en/01_compare.webp" alt="NoisyNo detail screen with an Original / Cleaned toggle over the waveform of a coffee shop interview" width="660" height="1434" loading="lazy" />
+              <figcaption>Switch between the original and the cleaned audio before you save.</figcaption>
+            </figure>
+            <figure>
+              <img src="../../../noisyno/assets/screenshots/app/en/03_video.webp" alt="NoisyNo cleaning a street interview video, with Share and Save to Photos buttons marked Pro" width="660" height="1434" loading="lazy" />
+              <figcaption>Video is cleaned too. Saving it back as a video is Pro.</figcaption>
+            </figure>
+            <figure>
+              <img src="../../../noisyno/assets/screenshots/app/en/04_batch.webp" alt="NoisyNo batch processing screen with five files of different formats, all done" width="660" height="1434" loading="lazy" />
+              <figcaption>Batch: several files at once, with Pro.</figcaption>
+            </figure>
+          </div>
+          <p>
+            Pro adds cleaned video export, lossless 16-bit WAV, batch processing, loudness normalization to audiobook
+            (−18 LUFS), podcast (−16 LUFS) or video and streaming (−14 LUFS) targets, and trimming before cleanup.<a class="ref" href="#s2">2</a>
+          </p>
+        </section>
+
+        <!-- NOTES -->
         <section id="apps" class="read reveal">
-          <h2>App by app</h2>
-
-          <h3>NoisyNo</h3>
+          <h2>What the table doesn't show</h2>
+          <ul class="notes">
+            <li><strong>NoisyNo</strong> takes the steady layer of noise out from under a voice (hum, hiss, fans, air conditioning, wind, room tone, traffic) and is tuned for speech, not music. Of the on-device apps here, only NoisyNo and PureVoice are on both the App Store and Google Play.<a class="ref" href="#s1">1</a><a class="ref" href="#s2">2</a> The <a class="inline" href="../remove-audio-noise-without-upload/">on-device walkthrough</a> shows the whole flow.</li>
+            <li><strong>Denoise</strong> has the biggest toolkit: it also reduces room echo, evens out the volume, cleans as you record, edits, shortens long pauses, splits voice from music and sells transcription time.<a class="ref" href="#s5">5</a></li>
+            <li><strong>Denoise.FX</strong> is the most-rated of the on-device iPhone apps here (4.5 stars from 435 US ratings). You can tune the algorithm by hand and add frequency filters, and its privacy label lists purchase history and a user ID as data linked to you.<a class="ref" href="#s6">6</a></li>
+            <li><strong>Audio Cleaner</strong> has a strength control with a before-and-after comparison, plus EQ, effects and presets, and can take files from a computer over Wi-Fi.<a class="ref" href="#s7">7</a></li>
+            <li><strong>PureVoice</strong> says no data is collected on both stores, but both listings were last updated in August 2025.<a class="ref" href="#s8">8</a><a class="ref" href="#s9">9</a></li>
+            <li><strong>NoiseKill</strong> plays a short A/B preview before cleaning the whole file, with Gentle, Balanced and Strong settings. It's a small app, with 100+ downloads.<a class="ref" href="#s10">10</a></li>
+            <li><strong>Offline AI Video Noise Remover</strong> lets you hold to hear the original while it plays and has a voice boost for quiet speech. It's new: the current version is its first release.<a class="ref" href="#s11">11</a></li>
+            <li><strong>Adobe Podcast</strong>'s paid tier comes with Adobe's Firefly Pro plan and adds video, bulk upload and a strength setting. Our <a class="inline" href="../voice-memo-enhance-vs-noisyno/">Voice Memos comparison</a> covers it alongside Kapwing.<a class="ref" href="#s12">12</a></li>
+            <li><strong>LALAL.AI</strong> Voice Cleaner also removes background music, mic rumble and plosives, and has a De-Echo setting.<a class="ref" href="#s15">15</a></li>
+          </ul>
           <p>
-            Our app. It does one job: it takes the steady layer of noise (hum, hiss, fan, air conditioning, wind, room
-            tone, traffic) out from under a voice, in audio files and in video. It's tuned for speech, not music. There's
-            no account and no length limit, and the cleaned audio is saved as M4A <strong>for free</strong>. The one-time
-            Pro purchase adds cleaned video export, lossless WAV, batch processing, loudness normalization to audiobook,
-            podcast or streaming targets, and trimming. Of the on-device apps here, only NoisyNo and PureVoice are on both
-            the App Store and Google Play. The <a class="inline" href="../remove-audio-noise-without-upload/">on-device
-            walkthrough</a> shows the whole flow.
-          </p>
-
-          <h3>Denoise: AI Noise Remover</h3>
-          <p>
-            The biggest toolkit of the on-device apps. Besides noise removal it reduces room echo, evens out the volume
-            (−16 LUFS for podcasts), cleans as you record, edits (cut, trim, merge, fade, speed), shortens long pauses,
-            splits voice from music and sells transcription time. Cleaning and listening are free, so you hear the result
-            before you pay; saving it needs three exports for $1.99, lifetime Pro for $14.99, or a monthly subscription.
-          </p>
-
-          <h3>Denoise.FX for Audio &amp; Video</h3>
-          <p>
-            The most-rated of the on-device iPhone apps here (4.5 stars from 435 US ratings on 26 November). You can
-            use automatic mode or tune the algorithm by hand, add frequency filters, boost the volume and save cleaned
-            videos back to Photos, and version 3.0 added Optimal, Best quality and Fast modes. It's iPhone-only, plus
-            Apple-silicon Macs. The listing doesn't say what's free, and each Premium item appears at two prices. Its App
-            Privacy label lists purchase history and a user ID as data linked to you (as reported by the developer).
-          </p>
-
-          <h3>Audio Cleaner: AI Denoise</h3>
-          <p>
-            Noise removal with a strength control and before-and-after comparison, plus voice enhancement, volume, EQ,
-            effects and presets for podcasts, short videos and narration. It can also take files from a computer over
-            Wi-Fi. It needs iOS 18 or later and isn't listed for iPad. The listing doesn't say what's free; Premium is sold
-            by the week, by the year or for life.
-          </p>
-
-          <h3>Noise Reducer, PureVoice</h3>
-          <p>
-            One-tap cleaning on both stores, and both its App Privacy label and its Data safety section say no data is
-            collected. The listing says all features are free to use, while the App Store also offers a $19.99 lifetime
-            purchase without saying what it unlocks. Both listings were last updated in August 2025, more than a year
-            before this check.
-          </p>
-
-          <h3>NoiseKill: AI Noise Remover</h3>
-          <p>
-            Free with ads, with no account and no watermark, for video as well as audio. It plays a short A/B preview
-            before cleaning the whole file and offers Gentle, Balanced and Strong settings. It runs on Android phones,
-            tablets, Chromebooks and Android TV. It's a small app (100+ downloads on 26 November), and its Data safety
-            section says it may collect app activity, performance data and device IDs, shared with no third parties.
-          </p>
-
-          <h3>Offline AI Video Noise Remover</h3>
-          <p>
-            Built around video: the picture is copied as it was and only the sound is replaced. You hold to hear the
-            original while it plays, and a voice boost makes quiet speech louder. The free version saves two files a day
-            at full length with no watermark; a one-time Pro purchase removes the cap. The listing says the app has no
-            internet permission, which on Android means it can't send your files anywhere. It's new: the current version
-            is described as the first release.
-          </p>
-
-          <h3>Adobe Podcast Enhance Speech</h3>
-          <p>
-            The best-known web tool for cleaning up speech. It needs an account and an upload, and the free plan takes
-            audio only, one file at a time, up to 30 minutes per file and 1 hour a day. The paid tier comes with Adobe's
-            Firefly Pro plan and adds video, bulk upload and strength adjustment. Our
-            <a class="inline" href="../voice-memo-enhance-vs-noisyno/">Voice Memos comparison</a> covers it alongside
-            Kapwing.
-          </p>
-
-          <h3>LALAL.AI Voice Cleaner</h3>
-          <p>
-            Best known for splitting songs into stems, LALAL.AI also has a Voice Cleaner that removes background noise,
-            background music, mic rumble and plosives, with a De-Echo setting, on speech or singing. On iPhone and Android
-            all processing runs on LALAL.AI's servers and needs an account. The free plan lets you preview results but not
-            download them.
-          </p>
-
-          <h3>Also worth knowing</h3>
-          <p>
-            <strong>Auphonic</strong> is a web service for podcasters that reduces noise and reverb alongside leveling and
-            loudness normalization. You upload in the browser or point it at a link or a storage service, and its help
-            pages say audio files are kept only for a limited number of days.<a class="ref" href="#s18">18</a> It's free for
-            2 hours of processed audio a month, with an Auphonic jingle on free productions; paid credits start at $11 a
-            month billed yearly, or $12 once for 5 hours.<a class="ref" href="#s17">17</a>
-          </p>
-          <p>
-            <strong>Audio Noise Remover &amp; Reducer</strong> on iPhone is free with no in-app purchases shown, needs no
-            account, cleans video and audio, and has a “Data Not Collected” privacy label, but it requires iOS 26 or
-            later.<a class="ref" href="#s19">19</a> On Android, <strong>Noise Reducer: Clean Audio</strong> is free with no
-            ads or account and declares no permissions at all; it writes WAV and handles steady noise
-            only.<a class="ref" href="#s20">20</a> <strong>NoiseFix</strong> is another offline Android option with a
-            one-time purchase option and a Data safety section that says no data is collected.<a class="ref" href="#s21">21</a>
-          </p>
-          <p>
-            On iPhone, the Voice Memos app has its own <strong>Enhance Recording</strong> switch, and Voice Isolation can
-            filter background sound while you record. Our <a class="inline" href="../voice-memo-enhance-vs-noisyno/">Voice
-            Memos Enhance vs NoisyNo</a> page explains what each one actually does.
+            <strong>Also worth a look:</strong> Auphonic, a web service for podcasters that reduces noise and reverb, free for
+            2 hours a month with a jingle<a class="ref" href="#s17">17</a><a class="ref" href="#s18">18</a>; Audio Noise Remover &amp; Reducer on iPhone, free with a “Data Not
+            Collected” label but iOS 26 only<a class="ref" href="#s19">19</a>; and on Android, Noise Reducer: Clean Audio, which declares no
+            permissions at all<a class="ref" href="#s20">20</a>, and NoiseFix<a class="ref" href="#s21">21</a>. On iPhone, the Voice Memos app's own Enhance Recording switch
+            is covered in our <a class="inline" href="../voice-memo-enhance-vs-noisyno/">Voice Memos Enhance vs NoisyNo</a> page.
           </p>
         </section>
 
@@ -845,32 +840,14 @@
           </ul>
         </section>
 
-        <!-- PRO -->
-        <section id="pro" class="read reveal">
-          <h2>What NoisyNo Pro adds</h2>
-          <p>
-            Noise removal in NoisyNo is free at any length, with no account, and the cleaned audio is saved as M4A
-            (AAC). Pro is a <strong>one-time purchase</strong> with no subscription: $5.99 on iPhone, iPad and Android,
-            and $7.99 for the Mac version, which is bought separately.<a class="ref" href="#s2">2</a><a class="ref" href="#s3">3</a>
-            It adds:
-          </p>
-          <ul>
-            <li><strong>Cleaned video export.</strong> A video comes back as the same clip with only the sound replaced. Without Pro, the cleaned audio is saved as its own file.</li>
-            <li><strong>Lossless WAV export</strong> (16-bit), for editing in other apps.</li>
-            <li><strong>Batch processing</strong> of several files at once.</li>
-            <li><strong>Loudness normalization</strong> to audiobook (−18 LUFS), podcast (−16 LUFS) or video and streaming (−14 LUFS) targets, or a custom value.</li>
-            <li><strong>Trimming</strong> before cleanup.</li>
-          </ul>
-        </section>
-
         <!-- CHECK -->
         <section id="check" class="read reveal">
           <h2>Check an offline claim yourself</h2>
-          <p>Listings are written by the people selling the app, ours included. A two-minute test tells you more:</p>
+          <p>Listings are written by the people selling the app, ours included. Two minutes tell you more:</p>
           <ol class="steps">
-            <li><strong>Turn on Airplane Mode and make sure Wi-Fi is off.</strong> Then open the app and clean a short recording. If it finishes, the processing ran on your phone.</li>
-            <li><strong>Watch for a sign-in screen.</strong> If an app asks you to sign in before it will process anything, read its privacy policy to see what happens to your files.</li>
-            <li><strong>Read the privacy section.</strong> On the App Store it's “App Privacy”, on Google Play it's “Data safety”. Both are filled in by the developer, so read them together with the airplane-mode test.</li>
+            <li><strong>Turn on Airplane Mode with Wi-Fi off</strong>, then clean a short recording. If it finishes, the work ran on your phone.</li>
+            <li><strong>A sign-in screen before processing</strong> means your files are tied to an account. Read the privacy policy to see what happens to them.</li>
+            <li><strong>Read the privacy section</strong> (App Privacy on the App Store, Data safety on Google Play), keeping in mind that both are filled in by the developer.</li>
           </ol>
           <div class="callout">
             <span class="label">Before you record next time</span>
@@ -884,23 +861,19 @@
           <div class="faq-list">
             <details>
               <summary>Which noise remover apps work offline?</summary>
-              <p>Of the apps checked on 26 November 2026, NoisyNo, Denoise.FX and Noise Reducer, PureVoice on iPhone, and NoisyNo, NoiseKill, Offline AI Video Noise Remover and PureVoice on Android, say they clean recordings without an internet connection. Denoise and Audio Cleaner: AI Denoise say processing runs on the device with nothing uploaded but don't use the word offline. Adobe Podcast Enhance Speech runs on the web, and the LALAL.AI phone apps need an internet connection because processing runs on LALAL.AI's servers.</p>
+              <p>NoisyNo, Denoise.FX and PureVoice on iPhone, and NoisyNo, NoiseKill, Offline AI Video Noise Remover and PureVoice on Android, say they clean recordings without an internet connection. Denoise and Audio Cleaner say everything runs on the device but don't use the word offline. Adobe Podcast and the LALAL.AI phone apps process files on their own servers.</p>
             </details>
             <details>
               <summary>Is there a free noise remover app without a watermark or save limit?</summary>
-              <p>NoisyNo saves cleaned audio as M4A for free at any length, with no account; cleaned video and WAV need its one-time Pro. On Android, NoiseKill is free with ads and says there is no watermark, and Offline AI Video Noise Remover saves two files a day for free without a watermark. Denoise lets you clean and listen for free, but saving the result needs a purchase. Adobe Podcast's free plan takes audio files up to 30 minutes, 1 hour a day, and LALAL.AI's free plan only previews results.</p>
+              <p>NoisyNo saves cleaned audio as M4A for free at any length, with no account. On Android, NoiseKill is free with ads and no watermark, and Offline AI Video Noise Remover saves two files a day for free. Denoise charges to save, Adobe Podcast's free plan allows 1 hour of audio a day, and LALAL.AI's free plan only previews results.</p>
             </details>
             <details>
               <summary>Do Adobe Podcast and LALAL.AI upload my recording?</summary>
-              <p>Yes. Adobe Podcast Enhance Speech works on files you upload to the web app, and its free plan starts with signing up for an account. LALAL.AI's iOS and Android pages say all processing runs on LALAL.AI's cloud servers and that processing requires an account; its web Voice Cleaner also works on uploaded files.</p>
+              <p>Yes. Adobe Podcast Enhance Speech works on files you upload after signing up, and LALAL.AI's iOS and Android pages say all processing runs on its cloud servers and requires an account.</p>
             </details>
             <details>
               <summary>Is NoisyNo free?</summary>
-              <p>NoisyNo is free to download, and noise removal is free at any length, saved as M4A. Pro is a one-time in-app purchase that adds cleaned video export, batch processing, loudness normalization, lossless WAV export and trimming. It costs $5.99 on iPhone, iPad and Android and $7.99 for the Mac version, which is bought separately. There is no subscription and no account.</p>
-            </details>
-            <details>
-              <summary>How can I check whether a noise remover really works offline?</summary>
-              <p>Turn on Airplane Mode with Wi-Fi off, open the app and clean a short recording. If it finishes, the processing ran on your phone. Then read the App Privacy section on the App Store or the Data safety section on Google Play, keeping in mind that both are filled in by the developer.</p>
+              <p>Yes. Noise removal is free at any length, saved as M4A, with no account. Pro is a one-time purchase, $5.99 on iPhone, iPad and Android and $7.99 for the Mac version, that adds video export, WAV, batch processing, loudness normalization and trimming.</p>
             </details>
           </div>
         </section>
