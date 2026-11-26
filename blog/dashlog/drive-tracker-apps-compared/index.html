@@ -51,7 +51,7 @@
         "inLanguage": "en",
         "datePublished": "2026-11-26",
         "dateModified": "2026-11-26",
-        "wordCount": 4000,
+        "wordCount": 2900,
         "articleSection": "DashLog Guide",
         "keywords": "drive tracker app, drive log app, automatic drive tracker, Google Maps Timeline alternative, GPX drive export, DashLog",
         "mainEntityOfPage": "https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/",
@@ -136,7 +136,7 @@
             "name": "Which drive tracker apps work without an account?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Of the apps checked on 26 November 2026, DashLog on iPhone and Android, myTracks on iPhone and Driving Tracker: GPS Trip Log on Android say they need no account and keep your drives on the phone, and Geo Tracker on Android says its tracks are stored locally and never sent to a server. Enroad says it can be used without creating an account, though its leaderboards use one. MileIQ and Driversnote start with signing up, and Wheelz's privacy policy describes accounts created with Sign in with Apple or Google."
+              "text": "DashLog on iPhone and Android, myTracks on iPhone and Driving Tracker on Android say they need no account and keep drives on the phone, and Geo Tracker on Android says its tracks never go to a server. Enroad works without an account but uses one for leaderboards. Wheelz, MileIQ and Driversnote use accounts."
             }
           },
           {
@@ -144,7 +144,7 @@
             "name": "Is there a free app that logs every drive automatically?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "DashLog is free and records each drive on its own when your phone connects to CarPlay or your car's Bluetooth, after a one-time setup, with no account. Enroad is free to record every drive with automatic start, and charges for Pro features such as Ride Replay and advanced driving stats. MileIQ's free plan covers 40 drives a month and Driversnote's 15 trips a month. Driving Tracker's automatic trip detection is part of its Premium subscription, and myTracks' Diary Mode records one track per day rather than separate drives."
+              "text": "DashLog is free and starts recording by itself when your phone connects to CarPlay or your car's Bluetooth, with no account. Enroad also records every drive for free, with Pro for replay and advanced stats. MileIQ is free for 40 drives a month and Driversnote for 15 trips a month."
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "Does Google Maps Timeline record my drives?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Once you turn it on in Google Maps while signed in to a Google account, Timeline saves your visits and routes and shows how you traveled, such as walking, biking, driving or public transport. Google's help pages say the data is saved on each signed-in device, with an optional encrypted backup on Google's servers, and that you can export it as a JSON file. They don't describe speed or per-drive statistics."
+              "text": "Once you turn it on with a Google account, Timeline saves your visits and routes and shows how you traveled, including driving. It's stored on each device unless you turn on an encrypted backup, and it can be exported as a JSON file. Google's help pages don't describe speed or per-drive statistics."
             }
           },
           {
@@ -160,15 +160,7 @@
             "name": "Is DashLog free?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. DashLog is currently free to download and use, with no subscription and no account. Automatic recording, route replay, statistics and GPX or CSV export are all part of the free app."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How can I check where a drive tracker stores my trips?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "See whether the app asks you to sign in before it records, then read its App Privacy section on the App Store or its Data safety section on Google Play and look for location data linked to you. Recording a short drive in Airplane Mode shows whether recording depends on a server, and exporting a drive as GPX or CSV gives you a copy that stays yours whatever happens to the app."
+              "text": "Yes. DashLog is currently free to download and use, with no subscription and no account. Automatic recording, route replay, statistics and GPX or CSV export are all included."
             }
           }
         ]
@@ -485,6 +477,43 @@
       table.cmp th[scope="row"], table.cmp thead th:first-child { min-width: 118px; max-width: 128px; }
       table.cmp th[scope="row"] { font-size: 0.92rem; }
     }
+    /* At-a-glance table */
+    table.glance { width: 100%; border-collapse: collapse; font-size: 0.92rem; line-height: 1.35; margin-top: 18px; }
+    table.glance caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    table.glance th, table.glance td { padding: 12px 8px; border-bottom: 1px solid var(--line); text-align: center; vertical-align: middle; color: var(--ink-2); }
+    table.glance thead th { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); vertical-align: bottom; }
+    table.glance thead th:first-child, table.glance th[scope="row"] { text-align: left; padding-left: 12px; }
+    table.glance th[scope="row"] { font-family: var(--serif); font-weight: 500; font-size: 1rem; color: var(--ink); }
+    table.glance tr.ours th, table.glance tr.ours td { background: #F7EDE6; }
+    table.glance .y { font-size: 1.1rem; font-weight: 600; color: var(--ink); }
+    table.glance .n { font-size: 1.05rem; color: var(--muted); }
+    table.glance .p { font-size: 0.8rem; font-weight: 500; color: var(--ink-2); }
+    table.glance .u { color: var(--muted); }
+    .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .glance-legend { margin-top: 12px; font-size: 0.82rem; color: var(--muted); }
+
+    /* Screenshots */
+    .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 26px 0 6px; }
+    .shots figure { margin: 0; }
+    .shots img { width: 100%; height: auto; border-radius: 22px; border: 1px solid var(--line); background: var(--panel); }
+    .shots figcaption { margin-top: 10px; font-size: 0.84rem; line-height: 1.45; color: var(--muted); }
+
+    /* Short notes */
+    ul.notes { list-style: none; padding: 0; margin: 18px 0 0; }
+    article ul.notes li { padding: 14px 0; margin: 0; border-bottom: 1px solid var(--line); }
+    article ul.notes li::before { display: none; }
+    ul.notes li:last-child { border-bottom: none; }
+    ul.notes strong { font-family: var(--serif); font-weight: 600; color: var(--ink); }
+
+    @media (max-width: 560px) {
+      table.glance { font-size: 0.86rem; }
+      table.glance th, table.glance td { padding: 10px 4px; }
+      table.glance thead th { font-size: 0.6rem; letter-spacing: 0.04em; }
+      table.glance th[scope="row"] { font-size: 0.9rem; padding-left: 6px; }
+      table.glance .p { font-size: 0.72rem; }
+      .shots { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 64%; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; padding-bottom: 6px; }
+      .shots figure { scroll-snap-align: start; }
+    }
   </style>
 </head>
 <body>
@@ -533,16 +562,15 @@
         <h1>Drive tracker and drive log apps for iPhone and Android, compared<span class="spark">.</span></h1>
 
         <p class="lede">
-          DashLog next to nine other ways to keep a record of where and how you drive: GPS loggers that keep everything
+          DashLog next to nine other ways to keep a record of your drives: GPS loggers that keep everything
           <strong>on the phone</strong>, the location history built into Google Maps and Apple Maps, social drive trackers
-          and mileage apps. Where your drives are kept, accounts, prices, automatic recording and export, taken from each
-          vendor's own listing.
+          and mileage apps.
         </p>
 
         <div class="metabar">
           <span class="m">Published 2026.11.26</span>
           <span class="dot"></span>
-          <span class="m">~14 min read</span>
+          <span class="m">~9 min read</span>
           <span class="dot"></span>
           <span class="m">Facts checked 2026.11.26</span>
         </div>
@@ -552,12 +580,10 @@
           <div>
             <div class="short">Short answer</div>
             <p>
-              If you want every drive recorded <strong>without an account and without your routes going to a
-              server</strong>, use a logger that keeps drives on the phone. DashLog does that on iPhone and Android and
-              starts recording by itself when the phone connects to CarPlay or the car's Bluetooth, for free. myTracks
-              (iPhone), Driving Tracker and Geo Tracker (Android) also keep tracks on the device. Google Maps Timeline and
-              Apple Maps Visited Places remember where you've been rather than logging drives. Enroad and Wheelz add
-              leaderboards and accounts, and MileIQ and Driversnote are built for tax and reimbursement mileage logs.
+              For every drive recorded <strong>with no account and nothing sent to a server</strong>, DashLog does it for
+              free on iPhone and Android, starting by itself when the phone connects to CarPlay or the car's Bluetooth.
+              If you only want to see where you've been, Google Maps Timeline or Apple Maps Visited Places may be enough.
+              For tax and reimbursement mileage logs, MileIQ or Driversnote.
             </p>
           </div>
         </div>
@@ -573,9 +599,10 @@
           <p class="aside-note">Every table cell links to its source.</p>
         </div>
         <ol>
-          <li><a href="#table"><span class="t">The comparison table</span></a></li>
-          <li><a href="#method"><span class="t">How we checked</span></a></li>
-          <li><a href="#apps"><span class="t">App by app</span></a></li>
+          <li><a href="#glance"><span class="t">At a glance</span></a></li>
+          <li><a href="#table"><span class="t">The full table</span></a></li>
+          <li><a href="#dashlog"><span class="t">What DashLog keeps from a drive</span></a></li>
+          <li><a href="#apps"><span class="t">What the table doesn't show</span></a></li>
           <li><a href="#which"><span class="t">Which one to use when</span></a></li>
           <li><a href="#check"><span class="t">Check where your drives go</span></a></li>
           <li><a href="#faq"><span class="t">FAQ</span></a></li>
@@ -587,15 +614,44 @@
     <article>
       <div class="wrap">
 
+        <!-- GLANCE -->
+        <section id="glance" class="read reveal">
+          <h2>At a glance</h2>
+          <p>The four things most people want to know first. Every detail, with its source, is in the <a class="inline" href="#table">full table</a> below.</p>
+          <table class="glance">
+            <caption>Drive tracker apps at a glance, checked 26 November 2026.</caption>
+            <thead>
+              <tr>
+                <th scope="col">App</th>
+                <th scope="col">No account</th>
+                <th scope="col">Drives stay on the phone</th>
+                <th scope="col">Records on its own</th>
+                <th scope="col">Free</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr class="ours"><th scope="row">DashLog</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td></tr>
+                <tr><th scope="row">myTracks</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">Daily track</span></td><td><span class="p">Partly</span></td></tr>
+                <tr><th scope="row">Driving Tracker</th><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">Premium</span></td><td><span class="p">Partly</span></td></tr>
+                <tr><th scope="row">Geo Tracker</th><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td></tr>
+                <tr><th scope="row">Google Maps Timeline</th><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="p">By default</span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td></tr>
+                <tr><th scope="row">Apple Maps Visited Places</th><td><span class="u">–<span class="sr">Not stated</span></span></td><td><span class="p">Encrypted sync</span></td><td><span class="p">Places only</span></td><td><span class="y">✓<span class="sr">Yes</span></span></td></tr>
+                <tr><th scope="row">Enroad</th><td><span class="p">Optional</span></td><td><span class="p">With a setting</span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">Partly</span></td></tr>
+                <tr><th scope="row">Wheelz</th><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">Partly</span></td></tr>
+                <tr><th scope="row">MileIQ</th><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">40 drives a month</span></td></tr>
+                <tr><th scope="row">Driversnote</th><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="n">✗<span class="sr">No</span></span></td><td><span class="y">✓<span class="sr">Yes</span></span></td><td><span class="p">15 trips a month</span></td></tr>
+            </tbody>
+          </table>
+          <p class="glance-legend">✓ yes · ✗ no · – not stated by the vendor</p>
+        </section>
+
         <!-- TABLE -->
         <section id="table" class="reveal">
           <div class="read">
-            <h2>Ten drive trackers side by side</h2>
+            <h2>The full table</h2>
             <p>
-              The first four keep your drives on the phone with no account. Then come the two location histories built
-              into Google Maps and Apple Maps, two social drive trackers, and two mileage trackers made for tax and
-              reimbursement logs. Prices are US App Store, Google Play or vendor prices. Where a vendor doesn't say
-              something, the cell says <em>not stated</em> rather than guessing.
+              The same ten apps with the details behind each answer. Prices are US App Store, Google Play or vendor prices,
+              and where a vendor doesn't say something, the cell says <em>not stated</em>.
             </p>
             <p class="table-hint">Scroll the table sideways to see every column →</p>
           </div>
@@ -737,139 +793,57 @@
         <section id="method" class="read reveal">
           <h2>How we checked</h2>
           <p>
-            GrayForge makes DashLog, so read this page knowing that. To keep it useful even if you pick something else,
-            every fact about another app comes from that app's own US App Store or Google Play listing, or from the
-            vendor's own website, privacy policy or help pages, read on 26 November 2026. Nothing comes from review sites,
-            user reviews or our own guesses. If a vendor doesn't say whether an account is needed, what's free, or how
-            drives can be exported, the table says <em>not stated</em>.
-          </p>
-          <p>
-            We picked apps that record drives or routes with the phone's GPS and either keep them on the device or are
-            among the most-rated drive trackers on the stores, plus the location history already built into Google Maps
-            and Apple Maps. We haven't driven the same route with every app, so this page doesn't rank them on accuracy or
-            battery use. Both depend a lot on the phone and its settings, and every app here is free to download or try.
+            GrayForge makes DashLog, so weigh this page with that in mind. Every fact about another app comes from its own
+            US App Store or Google Play listing, website, privacy policy or help pages, read on 26 November 2026; nothing
+            comes from review sites or user reviews. We didn't drive the same route with every app, so the page doesn't
+            rank them on accuracy or battery use.
           </p>
         </section>
 
-        <!-- APP BY APP -->
+        <!-- DASHLOG SCREENS -->
+        <section id="dashlog" class="read reveal">
+          <h2>What DashLog keeps from a drive</h2>
+          <p>
+            Each drive is saved on the phone with its route, time and speeds. You can replay it with the speed along the
+            way, and export a single drive or a whole period as CSV or GPX.<a class="ref" href="#s1">1</a><a class="ref" href="#s3">3</a>
+          </p>
+          <div class="shots">
+            <figure>
+              <img src="../../../dashlog/assets/screenshots/04_drive_detail.webp" alt="DashLog drive detail: a 30.6-mile drive from Santa Monica to Malibu on a map, with duration, average speed and top speed" width="660" height="1434" loading="lazy" />
+              <figcaption>One drive: route, duration, average and top speed.</figcaption>
+            </figure>
+            <figure>
+              <img src="../../../dashlog/assets/screenshots/05_drive_replay.webp" alt="DashLog route replay: the drive plays back on the map above a speed chart with play controls" width="660" height="1434" loading="lazy" />
+              <figcaption>Replay, with the speed at each point of the drive.</figcaption>
+            </figure>
+            <figure>
+              <img src="../../../dashlog/assets/screenshots/09_report_export.webp" alt="DashLog drive report: choosing this month and exporting nine drives as CSV or GPX" width="660" height="1434" loading="lazy" />
+              <figcaption>Export a day, week, month or year as CSV or GPX.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- NOTES -->
         <section id="apps" class="read reveal">
-          <h2>App by app</h2>
-
-          <h3>DashLog</h3>
+          <h2>What the table doesn't show</h2>
+          <ul class="notes">
+            <li><strong>DashLog</strong> logs motorcycle rides and bike routes as well as car trips. On iPhone it can save each drive's GPX file to a folder you choose, and Apple Watch and Wear OS apps start and end a drive from your wrist.<a class="ref" href="#s3">3</a><a class="ref" href="#s4">4</a> The <a class="inline" href="../log-every-drive-automatically/">automatic logging guide</a> walks through the one-time setup.</li>
+            <li><strong>myTracks</strong> is made for any trip, not just driving, with waypoints, photos linked to a track and offline OpenStreetMap maps.<a class="ref" href="#s5">5</a></li>
+            <li><strong>Driving Tracker</strong> adds the phone's motion sensors, so each drive gets G-force readings and harsh braking, acceleration and cornering events.<a class="ref" href="#s6">6</a></li>
+            <li><strong>Geo Tracker</strong> has 10M+ downloads and is built for outdoor trips as much as driving. A navigation mode turns the map with your direction of travel.<a class="ref" href="#s8">8</a></li>
+            <li><strong>Google Maps Timeline</strong> is the quickest answer to “where was I that day?”, with Places, Cities and World tabs for where you've been. You can edit it or delete any part of it.<a class="ref" href="#s9">9</a><a class="ref" href="#s10">10</a></li>
+            <li><strong>Apple Maps Visited Places</strong> lets you search past visits by name, category, address or notes, and choose how long they're kept.<a class="ref" href="#s11">11</a></li>
+            <li><strong>Enroad</strong> has 6.7K App Store ratings and 25K Google Play reviews, and adds share cards, clubs and a territory game on top of drive stats.<a class="ref" href="#s12">12</a><a class="ref" href="#s13">13</a><a class="ref" href="#s14">14</a></li>
+            <li><strong>Wheelz</strong> keeps a garage of your cars and ranks you against other drivers on leaderboards.<a class="ref" href="#s17">17</a><a class="ref" href="#s18">18</a></li>
+            <li><strong>MileIQ</strong> has you swipe each drive into business or personal before it goes into a report.<a class="ref" href="#s20">20</a></li>
+            <li><strong>Driversnote</strong> has a web app for editing trips and a Teams plan where managers approve mileage claims.<a class="ref" href="#s25">25</a></li>
+          </ul>
           <p>
-            Our app. It's a logbook for car trips, motorcycle rides and bike routes. Set it up once and recording starts
-            when your phone connects to CarPlay or your car's Bluetooth and stops when it disconnects: on iPhone that's a
-            Shortcuts automation the app walks you through, and on Android you pair the car in the app. Each drive saves
-            its route, distance, time, speed, altitude and stats, and you can replay the route with the speed changes
-            along the way. Drives export as GPX or CSV, one at a time or for a whole period, and GPX files from other
-            apps can be imported. On iPhone it can also save each drive's GPX file to a folder you choose when the drive
-            ends.<a class="ref" href="#s3">3</a> There's an Apple Watch app on iPhone and a Wear OS app on Android to
-            start and end a drive from your wrist. It's free, with no account and no subscription. The
-            <a class="inline" href="../log-every-drive-automatically/">automatic logging guide</a> shows the setup step by
-            step.
-          </p>
-
-          <h3>myTracks</h3>
-          <p>
-            A GPS logger for iPhone, iPad and Apple Watch, for any kind of trip rather than driving in
-            particular. It needs no account, shows no ads, and its privacy label says the developer collects no data;
-            tracks stay on the device and sync through iCloud to your other Apple devices, including a Mac. Diary Mode
-            runs in the background and creates one track per day, so you get a full daily record without pressing start,
-            but drives aren't split out on their own. Tracks export as GPX, KML, KMZ or ZIP, and OpenStreetMap maps can be
-            downloaded for offline use. It's free with optional Premium features, and it needs iOS 18.6 or later.
-          </p>
-
-          <h3>Driving Tracker: GPS Trip Log</h3>
-          <p>
-            An Android drive logger that records GPS along with the phone's motion sensors, so each drive gets G-force
-            readings and harsh braking, acceleration and cornering events as well as route, speed and altitude. It says
-            it needs no account and keeps every drive on the device, with internet used only for maps and place names.
-            You start and stop drives yourself in the free version; automatic trip detection, a heatmap of all drives,
-            GPX export and ZIP backups are part of a monthly or yearly Premium subscription. Its Data safety section lists
-            financial info, app activity and app performance data as collected and shared.
-          </p>
-
-          <h3>Geo Tracker</h3>
-          <p>
-            A GPS tracker with 10M+ downloads on Google Play, made for outdoor trips and travel as much as driving. You start a recording and it keeps going in the background, with distance, speed, altitude and slope
-            statistics and charts. A navigation mode rotates the map with your direction of travel while you drive. Tracks
-            are stored on the phone and the description says they're not sent to any server; they export as GPX, KML or
-            KMZ. It's free, without ads, and funded by optional donations.
-          </p>
-
-          <h3>Google Maps Timeline</h3>
-          <p>
-            Already on many phones. Once you turn it on in Google Maps, Timeline saves your visits and routes and shows how
-            you traveled, such as walking, biking, driving or on public transport. Google's help pages say the data is
-            saved on each of your signed-in devices, and you can turn on an encrypted backup to Google's servers, separately
-            for each device, so you can move it to a new phone. You can export it as a JSON file. It's the easiest way to
-            answer “where was I that day?”, but the help pages don't describe per-drive speed or statistics, and it needs
-            a Google account.
-          </p>
-
-          <h3>Apple Maps Visited Places</h3>
-          <p>
-            Apple's equivalent in the Maps app on iPhone, from iOS 26. It keeps track of places you've been, so you can
-            search them by name, category, address or notes and filter by date or city. Apple says visits are end-to-end
-            encrypted, can't be read by Apple, and appear on all your synced devices. It records places rather than
-            routes or drives, and it isn't available in every country or region.
-          </p>
-
-          <h3>Enroad – Drive Tracker</h3>
-          <p>
-            With 6.7K ratings on the App Store and 25K reviews on Google Play, it's built around driving stats and
-            competition. It detects
-            drives in the background, makes a share card after each one, and adds leaderboards, clubs and a territory game.
-            Its website says each trip is a file on the phone and the cloud backup is a mirror, and a “Keep Everything on
-            This Device” setting stops backups and leaderboard data from leaving the phone. Recording every drive is free;
-            Pro, at $23.99 a year or $9.99 a month, adds Ride Replay, braking, turn and lane-change stats, and the city,
-            country and worldwide leaderboards. Its App Store privacy label lists identifiers and usage data that may be
-            used to track you across other companies' apps and websites.
-          </p>
-
-          <h3>Wheelz</h3>
-          <p>
-            A social drive tracker that starts a trip when it detects you moving and ends it when you stop, with a live
-            speed view, a timeline of drives, a garage of your cars and leaderboards. Its privacy policy describes accounts
-            created with Sign in with Apple or Google, and lists saved drives and precise location among the data it
-            keeps, with cloud providers such as Google Firebase. Pro costs $4.99 a week, $9.99 a month or $49.99 a year and
-            unlocks unlimited driving history.
-          </p>
-
-          <h3>MileIQ</h3>
-          <p>
-            An automatic mileage tracker with over 116,000 App Store ratings. It logs drives in the background so you can swipe each one into
-            business or personal, then produces IRS-compliant reports for deductions and reimbursement. You sign up with an
-            email and password, and drives sit in your MileIQ account, which you can also open on the web. The free plan
-            covers 40 drives a month; Unlimited costs $13.99 a month, or $11.66 a month billed yearly.
-          </p>
-
-          <h3>Driversnote</h3>
-          <p>
-            A mileage logbook for people who drive for work. Trips start automatically once you reach a certain speed, or
-            when you get in the car if you use its optional iBeacon. Each trip can be marked business, personal, medical
-            or charity, and logbooks export as PDF or Excel. The free plan starts with signing up and covers 15 trips a
-            month; Pro is $11 a month before tax, and a yearly plan bought on the web includes the iBeacon.
-          </p>
-
-          <h3>Also worth knowing</h3>
-          <p>
-            <strong>Open Road: Drive Tracker</strong> records every drive, works with CarPlay and fills in a map of every
-            road you've driven, with friends on a live map and convoy voice chat; Pro unlocks the community map, live
-            friends and deeper stats, and drives save and sync.<a class="ref" href="#s27">27</a> It's on iPhone (iOS 18+)
-            and Android.<a class="ref" href="#s28">28</a>
-          </p>
-          <p>
-            For a plain route file, <strong>Open GPX Tracker</strong> on iPhone is free with no ads or in-app purchases,
-            keeps tracks on the phone and says it collects no data; you start each recording
-            yourself.<a class="ref" href="#s29">29</a> On Android, <strong>GPS Logger</strong> by BasicAirData is free and
-            open source, records offline without built-in maps, exports KML, GPX or TXT, and declares no data
-            collected.<a class="ref" href="#s30">30</a>
-          </p>
-          <p>
-            <strong>Vehicle Trip Logbook Tracker</strong> on Android can start, pause and resume trips when a Bluetooth
-            device connects or disconnects, and makes PDF, XLS or CSV mileage reports with a subscription paid every six
-            months.<a class="ref" href="#s31">31</a>
+            <strong>Also worth a look:</strong> Open Road, which records every drive, works with CarPlay and maps every road
+            you've driven, with Pro for community features<a class="ref" href="#s27">27</a><a class="ref" href="#s28">28</a>; Open GPX Tracker on iPhone, free with no in-app
+            purchases and no data collected<a class="ref" href="#s29">29</a>; GPS Logger by BasicAirData on Android, free, open source and
+            offline<a class="ref" href="#s30">30</a>; and Vehicle Trip Logbook Tracker on Android, which starts trips when a Bluetooth device
+            connects and sells reports by subscription.<a class="ref" href="#s31">31</a>
           </p>
         </section>
 
@@ -889,17 +863,12 @@
         <!-- CHECK -->
         <section id="check" class="read reveal">
           <h2>Check where your drives go</h2>
-          <p>A location history is about as personal as data gets. Listings are written by the people selling the app, ours included, so a few minutes of checking is worth it:</p>
+          <p>A location history is about as personal as data gets, and listings are written by the people selling the app, ours included.</p>
           <ol class="steps">
-            <li><strong>Watch for a sign-in screen.</strong> If an app wants an account before it records, your drives are tied to that account. Its privacy policy should say where they're stored and how to delete them.</li>
-            <li><strong>Read the privacy section.</strong> On the App Store it's “App Privacy”, on Google Play it's “Data safety”. Look for location under “Data Linked to You” or “Data Used to Track You”. Both are filled in by the developer.</li>
-            <li><strong>Record a short drive in Airplane Mode.</strong> On most phones GPS keeps working without a data connection. The map may not load, but if the drive still saves with its route, recording doesn't depend on a server.</li>
-            <li><strong>Export a drive.</strong> A GPX or CSV file is a copy you keep, whatever happens to the app or the company behind it.</li>
+            <li><strong>A sign-in screen before the first drive</strong> means your drives are tied to an account. The privacy policy should say where they're kept and how to delete them.</li>
+            <li><strong>In the privacy section</strong> (App Privacy on the App Store, Data safety on Google Play), look for location under “Data Linked to You” or “Data Used to Track You”.</li>
+            <li><strong>Export one drive.</strong> A GPX or CSV file is a copy you keep, whatever happens to the app.</li>
           </ol>
-          <div class="callout">
-            <span class="label">Location access</span>
-            <p>An app that records drives on its own needs background location access (“Always” on iPhone, “Allow all the time” on Android) so it can work while it isn't open. Give that permission only to apps you trust with the result.</p>
-          </div>
         </section>
 
         <!-- FAQ -->
@@ -908,23 +877,19 @@
           <div class="faq-list">
             <details>
               <summary>Which drive tracker apps work without an account?</summary>
-              <p>Of the apps checked on 26 November 2026, DashLog on iPhone and Android, myTracks on iPhone and Driving Tracker: GPS Trip Log on Android say they need no account and keep your drives on the phone, and Geo Tracker on Android says its tracks are stored locally and never sent to a server. Enroad says it can be used without creating an account, though its leaderboards use one. MileIQ and Driversnote start with signing up, and Wheelz's privacy policy describes accounts created with Sign in with Apple or Google.</p>
+              <p>DashLog on iPhone and Android, myTracks on iPhone and Driving Tracker on Android say they need no account and keep drives on the phone, and Geo Tracker on Android says its tracks never go to a server. Enroad works without an account but uses one for leaderboards. Wheelz, MileIQ and Driversnote use accounts.</p>
             </details>
             <details>
               <summary>Is there a free app that logs every drive automatically?</summary>
-              <p>DashLog is free and records each drive on its own when your phone connects to CarPlay or your car's Bluetooth, after a one-time setup, with no account. Enroad is free to record every drive with automatic start, and charges for Pro features such as Ride Replay and advanced driving stats. MileIQ's free plan covers 40 drives a month and Driversnote's 15 trips a month. Driving Tracker's automatic trip detection is part of its Premium subscription, and myTracks' Diary Mode records one track per day rather than separate drives.</p>
+              <p>DashLog is free and starts recording by itself when your phone connects to CarPlay or your car's Bluetooth, with no account. Enroad also records every drive for free, with Pro for replay and advanced stats. MileIQ is free for 40 drives a month and Driversnote for 15 trips a month.</p>
             </details>
             <details>
               <summary>Does Google Maps Timeline record my drives?</summary>
-              <p>Once you turn it on in Google Maps while signed in to a Google account, Timeline saves your visits and routes and shows how you traveled, such as walking, biking, driving or public transport. Google's help pages say the data is saved on each signed-in device, with an optional encrypted backup on Google's servers, and that you can export it as a JSON file. They don't describe speed or per-drive statistics.</p>
+              <p>Once you turn it on with a Google account, Timeline saves your visits and routes and shows how you traveled, including driving. It's stored on each device unless you turn on an encrypted backup, and it can be exported as a JSON file. Google's help pages don't describe speed or per-drive statistics.</p>
             </details>
             <details>
               <summary>Is DashLog free?</summary>
-              <p>Yes. DashLog is currently free to download and use, with no subscription and no account. Automatic recording, route replay, statistics and GPX or CSV export are all part of the free app.</p>
-            </details>
-            <details>
-              <summary>How can I check where a drive tracker stores my trips?</summary>
-              <p>See whether the app asks you to sign in before it records, then read its App Privacy section on the App Store or its Data safety section on Google Play and look for location data linked to you. Recording a short drive in Airplane Mode shows whether recording depends on a server, and exporting a drive as GPX or CSV gives you a copy that stays yours whatever happens to the app.</p>
+              <p>Yes. DashLog is currently free to download and use, with no subscription and no account. Automatic recording, route replay, statistics and GPX or CSV export are all included.</p>
             </details>
           </div>
         </section>
