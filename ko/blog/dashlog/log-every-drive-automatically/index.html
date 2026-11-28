@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>폰으로 모든 주행 자동 기록하기 — 운행 기록 앱 | GrayForge</title>
+  <meta name="description" content="CarPlay나 차량 블루투스로 모든 주행을 자동 기록하세요. 경로, 거리, 속도를 남기고 다시 보거나 GPX·CSV로 내보낼 수 있습니다. 기기 안에 저장, 계정 없음." />
+  <meta name="keywords" content="운행 기록 앱, 주행 기록 앱, 자동 주행 기록, 주행 기록, 차량 운행 기록, GPS 주행 기록, CarPlay 주행 기록, 블루투스 자동 기록, 경로 다시 보기, GPX 내보내기, 운전 기록, 계정 없음, DashLog" />
+  <meta name="author" content="GrayForge" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ECEDEA" />
+  <link rel="canonical" href="https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
+  <link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+
+  <!-- Inline SVG favicon: graphite square with an ember spark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;rect width='64' height='64' rx='12' fill='%2316181A'/&gt;&lt;path d='M32 14 L38 32 L32 27 L26 32 Z' fill='%23D9531E'/&gt;&lt;circle cx='32' cy='42' r='6' fill='%23E8743F'/&gt;&lt;/svg&gt;" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="GrayForge" />
+  <meta property="og:url" content="https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/" />
+  <meta property="og:title" content="폰으로 모든 주행을 자동 기록하는 방법 — DashLog 가이드" />
+  <meta property="og:description" content="CarPlay나 차량 블루투스로 모든 주행을 저절로 기록하고, 경로를 다시 보고, GPX나 CSV로 내보내세요. DashLog로 기기 안에서, 계정 없이." />
+  <meta property="og:image" content="https://grayforge.app/dashlog/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="article:published_time" content="2026-11-27" />
+  <meta property="article:modified_time" content="2026-11-27" />
+  <meta property="article:author" content="GrayForge" />
+  <meta property="article:section" content="DashLog 가이드" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="폰으로 모든 주행을 자동 기록하는 방법 — DashLog 가이드" />
+  <meta name="twitter:description" content="CarPlay나 차량 블루투스로 모든 주행을 저절로 기록하고, 경로를 다시 보고, GPX나 CSV로 내보내세요. DashLog로 기기 안에서, 계정 없이." />
+  <meta name="twitter:image" content="https://grayforge.app/dashlog/og-image.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/#article",
+        "headline": "폰으로 모든 주행을 자동 기록하는 방법 — 계정 없이",
+        "alternativeHeadline": "모든 주행을 기록하고, 다시 보고, 내보내기. 기록은 기기 안에",
+        "description": "GPS 경로, 거리, 속도, 통계까지 모든 주행을 저절로 기록하고, 지나온 길을 다시 보고, GPX나 CSV로 내보내세요. 기록을 기기 안에 두고 계정 없이 쓰는 DashLog 자동 주행 기록 단계별 가이드입니다.",
+        "inLanguage": "ko",
+        "datePublished": "2026-11-27",
+        "dateModified": "2026-11-27",
+        "wordCount": 700,
+        "articleSection": "DashLog 가이드",
+        "keywords": "운행 기록 앱, 주행 기록 앱, 자동 주행 기록, GPS 주행 기록, CarPlay 주행 기록, 블루투스 자동 기록, 경로 다시 보기, GPX 내보내기, DashLog",
+        "mainEntityOfPage": "https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/",
+        "author": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/"},
+        "publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}},
+        "about": {"@id": "https://grayforge.app/dashlog/#app"},
+        "image": [
+          "https://grayforge.app/dashlog/og-image.png",
+          "https://grayforge.app/dashlog/assets/screenshots/05_drive_replay.webp"
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".lede"]
+        },
+        "citation": [
+          "https://grayforge.app/dashlog/",
+          "https://grayforge.app/dashlog/privacy_policy.html",
+          "https://apps.apple.com/app/id6769706684",
+          "https://play.google.com/store/apps/details?id=com.grayforge.dashlog"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/#breadcrumbs",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "GrayForge", "item": "https://grayforge.app/"},
+          {"@type": "ListItem", "position": 2, "name": "블로그", "item": "https://grayforge.app/ko/blog/"},
+          {"@type": "ListItem", "position": 3, "name": "DashLog", "item": "https://grayforge.app/ko/blog/dashlog/"},
+          {"@type": "ListItem", "position": 4, "name": "모든 주행 자동 기록하기", "item": "https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "DashLog는 주행을 자동으로 기록하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "네, 한 번만 설정하면 됩니다. 폰이 CarPlay나 차량 블루투스에 연결되면 기록이 시작되고, 연결이 끊기면 멈춥니다. iPhone에서는 단축어 자동화로, Android에서는 앱에서 차량 블루투스를 한 번 페어링해 설정합니다. 위치 접근은 항상 허용으로 설정해야 합니다. 버튼 한 번으로 직접 주행을 시작하고 멈출 수도 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "DashLog는 계정이 필요한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "아니요. DashLog는 계정이나 회원가입이 필요 없으며, 주행 기록은 기기에 저장됩니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "DashLog는 주행마다 무엇을 기록하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GPS 경로, 거리, 시간, 속도, 고도를 기록하며, 일별·주별·월별·연별·전체 주행 통계도 보여 줍니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "주행 기록을 내보낼 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "네. 주행 하나를 GPX나 CSV로 내보내거나, 기간 전체(오늘, 이번 주, 이번 달, 지난달, 올해)를 보고서 하나로 내보낼 수 있습니다. 다른 앱의 GPX 파일을 가져올 수도 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "DashLog는 무료인가요? iPhone과 Android에서 쓸 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "네. DashLog는 구독 없이 무료로 다운로드하고 사용할 수 있으며, iPhone은 Apple App Store, Android는 Google Play에서 받을 수 있습니다."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper:   #ECEDEA;
+      --paper-2: #E4E5E1;
+      --panel:   #F4F4F2;
+      --ink:     #16181A;
+      --ink-2:   #393D40;
+      --muted:   #6C7176;
+      --line:    #CDCFCA;
+      --line-2:  #BCBEB8;
+      --ember:   #D9531E;
+      --ember-d: #B5400F;
+
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+      --wrap:  1120px;
+      --read:  720px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-wrap: break-word;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ::selection { background: var(--ink); color: var(--paper); }
+
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 32px; }
+    .read { max-width: var(--read); margin-left: auto; margin-right: auto; }
+
+    .label {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ===== TOP BAR ===== */
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+    .wordmark { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+    .wordmark .mark { width: 24px; height: 24px; }
+    .wordmark .name { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+    .wordmark .sub { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; font-style: italic; color: var(--muted); }
+    .topnav { display: flex; gap: 30px; }
+    .topnav a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      letter-spacing: 0.02em; position: relative; padding: 4px 0;
+    }
+    .topnav a::after {
+      content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px;
+      background: var(--ink); transition: width 0.25s ease;
+    }
+    .topnav a:hover::after { width: 100%; }
+
+    /* ===== BREADCRUMB ===== */
+    .crumbs { padding-top: 34px; font-size: 0.8rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .crumbs a { border-bottom: 1px solid transparent; transition: border-color 0.2s, color 0.2s; }
+    .crumbs a:hover { color: var(--ink); border-color: var(--line-2); }
+    .crumbs .sep { color: var(--line-2); }
+    .crumbs .here { color: var(--ink-2); }
+
+    /* ===== HERO ===== */
+    .hero { padding: 26px 0 60px; border-bottom: 1px solid var(--line); }
+    .kicker { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 22px; }
+    .kicker .tick { width: 6px; height: 6px; border-radius: 50%; background: var(--ember); }
+    h1 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(2.1rem, 5vw, 3.9rem);
+      line-height: 1.06; letter-spacing: -0.025em;
+      max-width: 20ch; margin-bottom: 28px;
+      font-optical-sizing: auto;
+    }
+    h1 .spark { color: var(--ember); }
+    .lede {
+      max-width: 60ch;
+      font-size: clamp(1.08rem, 1.7vw, 1.32rem);
+      color: var(--ink-2); line-height: 1.62;
+    }
+    .lede strong { font-weight: 600; color: var(--ink); }
+    .metabar {
+      margin-top: 34px; display: flex; flex-wrap: wrap; gap: 10px 26px;
+      align-items: center; font-size: 0.82rem; color: var(--muted);
+    }
+    .metabar .m { display: inline-flex; align-items: center; gap: 8px; }
+    .metabar .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--line-2); }
+
+    /* ===== ANSWER CARD ===== */
+    .answer-card {
+      margin-top: 40px; max-width: 68ch;
+      display: grid; grid-template-columns: auto 1fr; gap: 22px;
+      padding: 26px 28px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--ember);
+      border-radius: 4px;
+    }
+    .answer-card .q { font-family: var(--serif); font-size: 1.7rem; color: var(--ember); line-height: 1; }
+    .answer-card .short { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    .answer-card p { font-size: 1.02rem; color: var(--ink-2); line-height: 1.65; }
+    .answer-card strong { color: var(--ink); font-weight: 600; }
+
+    /* ===== TOC ===== */
+    .toc { padding: 44px 0; border-bottom: 1px solid var(--line); }
+    .toc .toc-inner { display: grid; grid-template-columns: 200px 1fr; gap: 40px; }
+    .toc .label { display: block; }
+    .toc .aside-note { margin-top: 10px; font-size: 0.9rem; color: var(--muted); max-width: 22ch; }
+    .toc ol { list-style: none; counter-reset: toc; display: grid; gap: 2px; }
+    .toc li { counter-increment: toc; }
+    .toc li a {
+      display: flex; align-items: baseline; gap: 16px;
+      padding: 12px 0; border-top: 1px solid var(--line);
+      transition: color 0.2s;
+    }
+    .toc li:first-child a { border-top: none; }
+    .toc li a::before {
+      content: counter(toc, decimal-leading-zero);
+      font-family: var(--serif); font-size: 0.9rem; color: var(--ember); min-width: 24px;
+    }
+    .toc li a .t { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; }
+    .toc li a:hover .t { color: var(--ember); }
+
+    /* ===== ARTICLE ===== */
+    article { padding: 12px 0 24px; }
+    article section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    article section:last-child { border-bottom: none; }
+    h2 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+      line-height: 1.12; letter-spacing: -0.02em;
+      margin-bottom: 22px; max-width: 24ch;
+    }
+    h3 { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.01em; margin: 30px 0 10px; }
+    article p { font-size: 1.05rem; color: var(--ink-2); margin-bottom: 18px; max-width: 68ch; }
+    article a.inline { color: var(--ember-d); border-bottom: 1px solid color-mix(in srgb, var(--ember) 40%, transparent); transition: border-color 0.2s; }
+    article a.inline:hover { border-bottom-color: var(--ember); }
+    article ul { list-style: none; margin: 20px 0; max-width: 66ch; }
+    article ul li {
+      position: relative; padding-left: 24px; margin: 11px 0;
+      font-size: 1.03rem; color: var(--ink-2);
+    }
+    article ul li::before {
+      content: ''; position: absolute; left: 2px; top: 0.72em;
+      width: 6px; height: 6px; border-radius: 50%; background: var(--ember);
+    }
+    article ul li strong { color: var(--ink); font-weight: 600; }
+
+    /* ===== COMPARE ===== */
+    .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; }
+    .compare-card {
+      padding: 26px; border: 1px solid var(--line); border-radius: 6px;
+      background: var(--panel);
+    }
+    .compare-card.good { border-color: var(--line-2); box-shadow: inset 3px 0 0 var(--ember); }
+    .compare-card .tag {
+      font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 12px;
+    }
+    .compare-card.good .tag { color: var(--ember-d); }
+    .compare-card h4 { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; margin-bottom: 10px; letter-spacing: -0.01em; }
+    .compare-card p { font-size: 0.98rem; color: var(--ink-2); margin: 0; max-width: none; }
+
+    /* ===== WALKTHROUGH with phone screenshots ===== */
+    .walk { margin-top: 34px; display: flex; flex-direction: column; }
+    .wstep {
+      display: flex; align-items: center; gap: 56px;
+      padding: 48px 0; border-top: 1px solid var(--line);
+    }
+    .wstep:first-child { border-top: none; padding-top: 12px; }
+    .wstep:nth-child(even) { flex-direction: row-reverse; }
+    .wtext { flex: 1 1 320px; }
+    .wtext .num {
+      font-family: var(--serif); font-size: 0.85rem; font-weight: 500;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--ember-d);
+      margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
+    }
+    .wtext .num::after { content: ''; flex: 1; height: 1px; background: var(--line); max-width: 60px; }
+    .wtext h3 { margin-top: 0; font-size: 1.55rem; font-weight: 500; }
+    .wtext p { margin-bottom: 0; font-size: 1.03rem; }
+    .wshot { flex: 0 0 218px; display: flex; justify-content: center; }
+
+    /* graphite phone frame — cropped to the content area so the screens don't
+       leave big empty space next to the text */
+    .phone {
+      width: 100%; max-width: 218px;
+      background: var(--ink);
+      padding: 8px;
+      border-radius: 34px;
+      box-shadow: 0 30px 60px -24px rgba(22,24,26,0.55), 0 2px 0 rgba(255,255,255,0.04) inset, 0 0 0 1px rgba(22,24,26,0.5);
+    }
+    .phone .screen { border-radius: 27px; overflow: hidden; background: #F4EDE2; aspect-ratio: 100 / 150; }
+    .phone .screen img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+    .phone .screen.center img { object-position: center; }
+
+    /* ===== PRODUCT CARD ===== */
+    .product {
+      margin-top: 40px; display: grid; grid-template-columns: 64px 1fr; gap: 22px;
+      align-items: start; padding: 28px; border: 1px solid var(--line);
+      border-radius: 8px; background: var(--panel);
+    }
+    .product .icon { width: 64px; height: 64px; border-radius: 15px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 2px 6px rgba(22,24,26,0.12); }
+    .product h3 { margin: 0 0 8px; font-size: 1.4rem; }
+    .product p { font-size: 0.98rem; margin-bottom: 0; max-width: 60ch; }
+    .actions { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .actions a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      border: 1px solid var(--line-2); border-radius: 100px; padding: 8px 15px;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .actions a:hover { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+    .actions a.primary { color: var(--paper); background: var(--ember); border-color: var(--ember); }
+    .actions a.primary:hover { background: var(--ember-d); border-color: var(--ember-d); }
+
+    /* ===== CALLOUT ===== */
+    .callout {
+      margin: 30px 0 0; padding: 24px 28px;
+      background: var(--panel); border: 1px solid var(--line);
+      border-left: 3px solid var(--ember); border-radius: 4px;
+    }
+    .callout .label { display: block; margin-bottom: 8px; }
+    .callout p { margin: 0; font-size: 1.02rem; color: var(--ink-2); max-width: none; }
+
+    /* ===== SOURCES ===== */
+    .sources { margin-top: 26px; display: flex; flex-direction: column; }
+    .source {
+      display: grid; grid-template-columns: 30px 1fr auto; gap: 20px; align-items: center;
+      padding: 20px 12px; border-top: 1px solid var(--line); margin: 0 -12px;
+      transition: background 0.2s;
+    }
+    .source:first-child { border-top: none; }
+    .source:hover { background: var(--panel); }
+    .source .n { font-family: var(--serif); font-size: 0.95rem; color: var(--muted); }
+    .source b { font-family: var(--serif); font-weight: 500; font-size: 1.1rem; display: block; }
+    .source span { display: block; color: var(--muted); font-size: 0.88rem; margin-top: 2px; }
+    .source .go { color: var(--ember); font-family: var(--serif); font-size: 1rem; white-space: nowrap; }
+    .source:hover .go { color: var(--ember-d); }
+
+    /* ===== FAQ ===== */
+    .faq-list { margin-top: 26px; }
+    .faq-list details {
+      border-top: 1px solid var(--line); padding: 6px 0;
+    }
+    .faq-list details[open] { padding-bottom: 8px; }
+    .faq-list summary {
+      cursor: pointer; list-style: none; padding: 18px 40px 18px 0; position: relative;
+      font-family: var(--serif); font-weight: 500; font-size: 1.2rem; color: var(--ink);
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: '+'; position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+      font-family: var(--sans); font-size: 1.4rem; color: var(--ember); transition: transform 0.25s ease;
+    }
+    .faq-list details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-list details p { margin: 0 0 14px; color: var(--ink-2); font-size: 1.02rem; max-width: 66ch; }
+
+    /* ===== END CTA ===== */
+    .endcta { padding: 72px 0 0; }
+    .endcta h2 { max-width: 20ch; }
+    .endcta .mailto {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--serif); font-size: 1.2rem; font-weight: 500;
+      border-bottom: 2px solid var(--ink); padding-bottom: 4px; margin-top: 6px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .endcta .mailto:hover { color: var(--ember); border-color: var(--ember); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      margin-top: 72px; border-top: 1px solid var(--line);
+      padding: 30px 0 48px; display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px; font-size: 0.82rem; color: var(--muted);
+    }
+    footer .f-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    footer .f-links a { transition: color 0.2s; }
+    footer .f-links a:hover { color: var(--ink); }
+
+    /* ===== REVEAL ===== */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .toc .toc-inner { grid-template-columns: 1fr; gap: 20px; }
+    }
+    @media (max-width: 820px) {
+      .topnav { display: none; }
+      .wstep, .wstep:nth-child(even) { flex-direction: column; gap: 30px; align-items: flex-start; padding: 40px 0; }
+      .wshot { align-self: center; }
+    }
+    @media (max-width: 620px) {
+      .wrap { padding: 0 22px; }
+      .answer-card { grid-template-columns: 1fr; gap: 14px; }
+      .compare { grid-template-columns: 1fr; }
+      .product { grid-template-columns: 1fr; }
+      .source { grid-template-columns: 24px 1fr; }
+      .source .go { grid-column: 2; justify-self: start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="site">
+    <div class="wrap bar">
+      <a class="wordmark" href="../../../../" aria-label="GrayForge 홈">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#16181A"/>
+          <path d="M32 14 L38 32 L32 27 L26 32 Z" fill="#D9531E"/>
+          <circle cx="32" cy="42" r="6" fill="#E8743F"/>
+        </svg>
+        <span class="name">GrayForge</span>
+        <span class="sub">저널</span>
+      </a>
+      <nav class="topnav" aria-label="주 메뉴">
+        <a href="../../">블로그</a>
+        <a href="../../../../dashlog/">DashLog</a>
+        <a href="../../../noisyno/">NoisyNo</a>
+        <a href="#download">다운로드</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="탐색 경로">
+          <a href="../../../../">GrayForge</a>
+          <span class="sep">/</span>
+          <a href="../../">블로그</a>
+          <span class="sep">/</span>
+          <a href="../">DashLog</a>
+          <span class="sep">/</span>
+          <span class="here">모든 주행 자동 기록하기</span>
+        </nav>
+
+        <div class="kicker" style="margin-top:26px;">
+          <span class="tick"></span>
+          <span class="label">DashLog · 사용 가이드</span>
+        </div>
+
+        <h1>모든 주행을 폰에서 바로 자동 기록하는 방법<span class="spark">.</span></h1>
+
+        <p class="lede">
+          한 번만 설정하면 DashLog가 주행마다 경로, 거리, 속도를 저절로 기록합니다.
+          <strong>기록은 기기 안에 남고, 계정도 필요 없습니다</strong>. 방법은 다음과 같습니다.
+        </p>
+
+        <div class="metabar">
+          <span class="m">게시 2026.11.27</span>
+          <span class="dot"></span>
+          <span class="m">읽는 시간 약 3분</span>
+          <span class="dot"></span>
+          <span class="m">주제 · 주행 기록</span>
+          <span class="dot"></span>
+          <span class="m" data-lang-links style="display:inline-block;max-width:100%;line-height:1.8;">다른 언어: <a href="../../../../blog/dashlog/log-every-drive-automatically/" hreflang="en" lang="en" style="text-decoration:underline;text-underline-offset:3px;">English</a> · <a href="../../../../ja/blog/dashlog/log-every-drive-automatically/" hreflang="ja" lang="ja" style="text-decoration:underline;text-underline-offset:3px;">日本語</a> · <a href="../../../../zh/blog/dashlog/log-every-drive-automatically/" hreflang="zh" lang="zh" style="text-decoration:underline;text-underline-offset:3px;">中文</a> · <a href="../../../../es/blog/dashlog/log-every-drive-automatically/" hreflang="es" lang="es" style="text-decoration:underline;text-underline-offset:3px;">Español</a> · <a href="../../../../pt/blog/dashlog/log-every-drive-automatically/" hreflang="pt" lang="pt" style="text-decoration:underline;text-underline-offset:3px;">Português</a> · <a href="../../../../fr/blog/dashlog/log-every-drive-automatically/" hreflang="fr" lang="fr" style="text-decoration:underline;text-underline-offset:3px;">Français</a> · <a href="../../../../de/blog/dashlog/log-every-drive-automatically/" hreflang="de" lang="de" style="text-decoration:underline;text-underline-offset:3px;">Deutsch</a></span>
+        </div>
+
+      </div>
+    </section>
+
+    <article>
+      <div class="wrap">
+
+        <!-- HOW -->
+        <section id="how" class="reveal">
+          <div class="read">
+            <h2>DashLog로 모든 주행 자동 기록하기 — 4단계</h2>
+            <p>
+              전체 흐름은 <strong>한 번 설정 → 그냥 운전 → 다시 보기 → 내보내기</strong>입니다. 처음 한 번만 설정하면
+              DashLog가 알아서 기록하므로, 시작 버튼 누르는 것을 기억할 필요가 없습니다. 계정 없이, 기록은 기기 안에
+              남습니다.
+            </p>
+          </div>
+
+          <div class="walk">
+
+            <div class="wstep" id="step-setup">
+              <div class="wtext">
+                <div class="num">1단계</div>
+                <h3>저절로 기록되도록 설정하기</h3>
+                <p>
+                  처음 한 번만 설정하세요. iPhone에서는 차가 연결되면 DashLog를 여는 <strong>단축어 자동화</strong>를
+                  추가하고, Android에서는 앱에서 <strong>차량 블루투스를 한 번 페어링</strong>합니다. 백그라운드에서도
+                  기록할 수 있도록 위치 접근을 <strong>항상</strong>으로 설정하세요.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../dashlog/assets/screenshots/01_home.webp" alt="주행을 기록할 준비가 된 DashLog 홈 화면" loading="lazy" width="660" height="1434" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-drive">
+              <div class="wtext">
+                <div class="num">2단계</div>
+                <h3>그냥 운전하기</h3>
+                <p>
+                  폰이 <strong>CarPlay나 차량 블루투스</strong>에 연결되면 기록이 저절로 시작되고, 연결이 끊기면
+                  멈춥니다. 달리는 동안 실시간 경로, 속도, 거리가 올라갑니다. 기록에는 통신 신호가 필요 없고, 언제든
+                  <strong>시작</strong>과 <strong>정지</strong>를 직접 누를 수도 있습니다.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../dashlog/assets/screenshots/02_driving.webp" alt="지도에 실시간 경로와 속도, 거리를 보여 주며 주행을 기록 중인 DashLog" loading="lazy" width="660" height="1434" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-replay">
+              <div class="wtext">
+                <div class="num">3단계</div>
+                <h3>경로 다시 보고 통계 확인하기</h3>
+                <p>
+                  모든 주행은 <strong>경로, 거리, 시간, 속도, 고도</strong>와 함께 저장됩니다. 지도에서 지나온 길을 다시
+                  재생해 정확히 어디를 갔는지 확인하고, 통계에서 일별·주별·월별·연별 합계를 살펴보세요.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../dashlog/assets/screenshots/05_drive_replay.webp" alt="저장된 주행을 지도에서 다시 재생하며 기록된 경로를 따라가는 화면" loading="lazy" width="660" height="1434" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-export">
+              <div class="wtext">
+                <div class="num">4단계</div>
+                <h3>GPX, CSV, 기간 보고서로 내보내기</h3>
+                <p>
+                  주행 하나를 <strong>GPX나 CSV</strong>로 내보내거나, 오늘, 이번 주, 이번 달, 올해처럼 기간 전체를 보고서
+                  하나로 내보낼 수 있습니다. 다른 앱의 <strong>GPX 파일을 가져와</strong> 모든 기록을 한 운행 기록부에
+                  모을 수도 있습니다.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../dashlog/assets/screenshots/09_report_export.webp" alt="GPX, CSV, 기간 보고서 옵션을 제공하는 DashLog 내보내기 화면" loading="lazy" width="660" height="1434" /></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="read">
+            <div class="product" id="download">
+              <div class="icon"><img src="../../../../dashlog/assets/icons/favicon-180.png" alt="DashLog 앱 아이콘" loading="lazy" width="180" height="180" /></div>
+              <div>
+                <h3>DashLog — GPS 운행 기록 앱</h3>
+                <p>
+                  CarPlay나 차량 블루투스로 경로, 거리, 속도, 통계를 자동으로 기록하는 GPS 주행 기록·운행 기록 앱입니다.
+                  기록은 기기 안에 남으며, 계정도 구독도 없습니다.
+                </p>
+                <div class="actions">
+                  <a class="primary" href="https://apps.apple.com/app/id6769706684" rel="noopener">App Store</a>
+                  <a href="https://play.google.com/store/apps/details?id=com.grayforge.dashlog" rel="noopener">Google Play</a>
+                  <a href="../../../../dashlog/">제품 페이지</a>
+                  <a href="../../../../dashlog/privacy_policy.html">개인정보 처리방침</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WHY IT MATTERS -->
+        <section id="why" class="read reveal">
+          <h2>자동 기록과 기기 내 저장이 왜 중요한가</h2>
+          <p>
+            주행 기록은 빠짐없이 남아 있어야 쓸모가 있습니다. 그리고 꼭 기록을 깜빡한 주행이 나중에 필요해지곤 하죠.
+            DashLog는 차가 연결되면 <strong>저절로 시작</strong>하는 방식으로 이 문제를 해결합니다. 신경 쓰지 않아도 모든
+            이동이 기록됩니다. 또 기록이 <strong>계정 없이 기기에 저장되므로</strong>, 자세한 이동 기록이 남의 클라우드에
+            쌓이지 않습니다.
+          </p>
+
+          <div class="compare" aria-label="수동·클라우드 기록 앱과 DashLog 비교">
+            <div class="compare-card">
+              <div class="tag">수동·클라우드 기록 앱</div>
+              <h4>시작을 기억해야 하고, 기록은 동기화되어 나감</h4>
+              <p>주행할 때마다 기록 버튼을 눌러야 하고, 경로는 남의 서버에 있는 계정으로 업로드됩니다.</p>
+            </div>
+            <div class="compare-card good">
+              <div class="tag">DashLog 방식</div>
+              <h4>저절로 시작하고, 폰에 남음</h4>
+              <p>차가 연결되면 기록이 시작되고, 모든 주행은 기기 안에 보관됩니다. 계정도, 클라우드 동기화도 없습니다.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- USES -->
+        <section id="uses" class="read reveal">
+          <h2>자동 주행 기록은 어디에 쓸까</h2>
+          <p>
+            모든 주행이 저절로 기록되면, 운행 기록부는 이렇게 활용할 수 있습니다.
+          </p>
+          <ul>
+            <li><strong>개인 기록용 주행 거리</strong> — 직접 주행 거리 기록을 관리한다면 CSV로 내보내세요(DashLog는 세무용으로 바로 제출할 수 있는 운행 기록부가 아닙니다)</li>
+            <li><strong>여행의 추억</strong> — 몇 달 뒤에도 다녀온 경로를 그대로 다시 재생</li>
+            <li><strong>오토바이와 자전거 라이딩</strong>도 같은 방식으로 자동 기록</li>
+            <li><strong>다른 도구용 GPX</strong> — 지도, 피트니스, 편집 앱으로 내보내기</li>
+          </ul>
+          <p>
+            한 가지는 꼭 제대로 설정하세요. 자동 기록에는 위치 접근 <strong>항상</strong> 허용과, 한 번만 하면 되는 CarPlay나
+            블루투스 트리거 설정이 필요합니다. 그다음부터는 알아서 작동합니다.
+          </p>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="read reveal">
+          <h2>자주 묻는 질문</h2>
+          <div class="faq-list">
+            <details>
+              <summary>DashLog는 주행을 자동으로 기록하나요?</summary>
+              <p>네, 한 번만 설정하면 됩니다. 폰이 CarPlay나 차량 블루투스에 연결되면 기록이 시작되고, 연결이 끊기면 멈춥니다. iPhone에서는 단축어 자동화로, Android에서는 앱에서 차량 블루투스를 한 번 페어링해 설정합니다. 위치 접근은 항상 허용으로 설정해야 합니다. 버튼 한 번으로 직접 주행을 시작하고 멈출 수도 있습니다.</p>
+            </details>
+            <details>
+              <summary>DashLog는 계정이 필요한가요?</summary>
+              <p>아니요. DashLog는 계정이나 회원가입이 필요 없으며, 주행 기록은 기기에 저장됩니다.</p>
+            </details>
+            <details>
+              <summary>DashLog는 주행마다 무엇을 기록하나요?</summary>
+              <p>GPS 경로, 거리, 시간, 속도, 고도를 기록하며, 일별·주별·월별·연별·전체 주행 통계도 보여 줍니다.</p>
+            </details>
+            <details>
+              <summary>주행 기록을 내보낼 수 있나요?</summary>
+              <p>네. 주행 하나를 GPX나 CSV로 내보내거나, 기간 전체(오늘, 이번 주, 이번 달, 지난달, 올해)를 보고서 하나로 내보낼 수 있습니다. 다른 앱의 GPX 파일을 가져올 수도 있습니다.</p>
+            </details>
+            <details>
+              <summary>DashLog는 무료인가요? iPhone과 Android에서 쓸 수 있나요?</summary>
+              <p>네. DashLog는 구독 없이 무료로 다운로드하고 사용할 수 있으며, iPhone은 Apple App Store, Android는 Google Play에서 받을 수 있습니다.</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- END CTA -->
+        <section class="endcta read">
+          <span class="label">다음 단계</span>
+          <h2 style="margin-top:16px;">다음 주행은 저절로 기록되게.</h2>
+          <p>설치한 뒤 한 번만 하는 설정은 몇 분이면 끝나고, 그다음부터는 모든 주행이 알아서 기록됩니다. 궁금한 점이 있으면 앱을 만든 사람이 직접 답해 드립니다.</p>
+          <a class="mailto" href="mailto:grayforge.dev@gmail.com?subject=DashLog%20question">grayforge.dev@gmail.com <span aria-hidden="true">↗</span></a>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    <span>© 2026 GrayForge · 최종 업데이트 2026.11.27</span>
+    <div class="f-links">
+      <a href="../../">블로그</a>
+      <a href="../../../../dashlog/">DashLog</a>
+      <a href="../../../noisyno/">NoisyNo</a>
+      <a href="../../../../dashlog/privacy_policy.html">개인정보</a>
+      <a href="mailto:grayforge.dev@gmail.com">문의</a>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 60);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>

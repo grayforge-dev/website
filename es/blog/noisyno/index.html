@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>Guías de NoisyNo: quitar ruido en el dispositivo | GrayForge</title>
+  <meta name="description" content="Guías de NoisyNo, la app para quitar ruido de la voz en el dispositivo: limpia notas de voz, reuniones grabadas y cualquier grabación sin subirla. Sin cuenta y sin subir archivos." />
+  <meta name="keywords" content="guías de NoisyNo, app para quitar ruido, eliminar ruido de fondo de un audio, limpiar nota de voz, limpiar reunión grabada, eliminar ruido sin conexión, audio en el dispositivo, sin subir archivos" />
+  <meta name="author" content="GrayForge" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ECEDEA" />
+  <link rel="canonical" href="https://grayforge.app/es/blog/noisyno/" />
+  <link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/" />
+  <link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/" />
+  <link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/" />
+  <link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/" />
+  <link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/" />
+  <link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/" />
+  <link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/" />
+  <link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/" />
+  <link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/" />
+
+  <!-- Inline SVG favicon: graphite square with an ember spark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;rect width='64' height='64' rx='12' fill='%2316181A'/&gt;&lt;path d='M32 14 L38 32 L32 27 L26 32 Z' fill='%23D9531E'/&gt;&lt;circle cx='32' cy='42' r='6' fill='%23E8743F'/&gt;&lt;/svg&gt;" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GrayForge" />
+  <meta property="og:url" content="https://grayforge.app/es/blog/noisyno/" />
+  <meta property="og:title" content="Guías de NoisyNo: cómo quitar el ruido de la voz en el dispositivo" />
+  <meta property="og:description" content="Todas las guías de NoisyNo en un solo lugar: limpia notas de voz, reuniones y cualquier grabación en el dispositivo, sin subir nada y sin cuenta." />
+  <meta property="og:image" content="https://grayforge.app/noisyno/assets/og-image.png" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Guías de NoisyNo — Diario de GrayForge" />
+  <meta name="twitter:description" content="Todas las guías de NoisyNo en un solo lugar: limpia notas de voz, reuniones y cualquier grabación en el dispositivo." />
+  <meta name="twitter:image" content="https://grayforge.app/noisyno/assets/og-image.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://grayforge.app/es/blog/noisyno/#webpage",
+        "url": "https://grayforge.app/es/blog/noisyno/",
+        "name": "Guías de NoisyNo: cómo quitar el ruido de la voz en el dispositivo",
+        "description": "Guías de NoisyNo, la app para quitar ruido de la voz en el dispositivo.",
+        "inLanguage": "es",
+        "isPartOf": {"@id": "https://grayforge.app/es/blog/#blog"},
+        "about": {"@id": "https://grayforge.app/noisyno/#app"},
+        "publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://grayforge.app/es/blog/noisyno/#breadcrumbs",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "GrayForge", "item": "https://grayforge.app/"},
+          {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://grayforge.app/es/blog/"},
+          {"@type": "ListItem", "position": 3, "name": "NoisyNo", "item": "https://grayforge.app/es/blog/noisyno/"}
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://grayforge.app/es/blog/noisyno/#guides",
+        "name": "Guías de NoisyNo",
+        "numberOfItems": 5,
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Apps para quitar ruido sin conexión en iPhone y Android, comparadas", "url": "https://grayforge.app/es/blog/noisyno/offline-noise-remover-apps-compared/"},
+          {"@type": "ListItem", "position": 2, "name": "Mejorar grabación de Notas de Voz vs NoisyNo vs limpiadores de ruido en el navegador", "url": "https://grayforge.app/es/blog/noisyno/voice-memo-enhance-vs-noisyno/"},
+          {"@type": "ListItem", "position": 3, "name": "Cómo quitar el ruido de fondo de una nota de voz (iPhone y Android)", "url": "https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/"},
+          {"@type": "ListItem", "position": 4, "name": "Cómo quitar el ruido de fondo de una reunión grabada", "url": "https://grayforge.app/es/blog/noisyno/clean-up-meeting-recording-audio/"},
+          {"@type": "ListItem", "position": 5, "name": "Cómo eliminar el ruido de una grabación sin subirla", "url": "https://grayforge.app/es/blog/noisyno/remove-audio-noise-without-upload/"}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper:   #ECEDEA;
+      --paper-2: #E4E5E1;
+      --panel:   #F4F4F2;
+      --ink:     #16181A;
+      --ink-2:   #393D40;
+      --muted:   #6C7176;
+      --line:    #CDCFCA;
+      --line-2:  #BCBEB8;
+      --ember:   #D9531E;
+      --ember-d: #B5400F;
+
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+      --wrap:  1120px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-wrap: break-word;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ::selection { background: var(--ink); color: var(--paper); }
+
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 32px; }
+
+    .label {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ===== TOP BAR ===== */
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+    .wordmark { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+    .wordmark .mark { width: 24px; height: 24px; }
+    .wordmark .name { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+    .wordmark .sub { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; font-style: italic; color: var(--muted); }
+    .topnav { display: flex; gap: 30px; }
+    .topnav a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      letter-spacing: 0.02em; position: relative; padding: 4px 0;
+    }
+    .topnav a::after {
+      content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px;
+      background: var(--ink); transition: width 0.25s ease;
+    }
+    .topnav a:hover::after { width: 100%; }
+
+    /* ===== MASTHEAD ===== */
+    .masthead { padding: 92px 0 78px; border-bottom: 1px solid var(--line); }
+    .masthead .meta-row { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; margin-bottom: 38px; }
+    .masthead .meta-row .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--line-2); }
+    .masthead .meta-row a.label { transition: color 0.2s; }
+    .masthead .meta-row a.label:hover { color: var(--ink); }
+    .masthead h1 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(2.4rem, 6vw, 4.8rem);
+      line-height: 1.04; letter-spacing: -0.025em;
+      max-width: 15ch; margin-bottom: 30px; font-optical-sizing: auto;
+    }
+    .masthead h1 em { font-style: italic; }
+    .masthead h1 .spark { color: var(--ember); font-style: normal; }
+    .lede { max-width: 58ch; font-size: clamp(1.05rem, 1.7vw, 1.28rem); color: var(--ink-2); line-height: 1.6; }
+    .lede strong { font-weight: 600; color: var(--ink); }
+
+    /* ===== SECTION SCAFFOLD ===== */
+    .row {
+      display: grid; grid-template-columns: 220px 1fr; gap: 48px;
+      padding: 80px 0; border-bottom: 1px solid var(--line);
+    }
+    .row > .aside .label { display: block; margin-bottom: 10px; }
+    .row > .aside .aside-title { font-family: var(--serif); font-size: 1.5rem; font-weight: 500; letter-spacing: -0.01em; line-height: 1.15; }
+    .row > .aside .aside-note { margin-top: 14px; font-size: 0.9rem; color: var(--muted); max-width: 22ch; }
+
+    /* ===== POST LEDGER ===== */
+    .ledger { display: flex; flex-direction: column; }
+    .post {
+      display: grid; grid-template-columns: 40px 1fr auto; gap: 26px; align-items: baseline;
+      padding: 30px 12px; margin: 0 -12px; border-top: 1px solid var(--line);
+      transition: background 0.25s ease;
+    }
+    .ledger .post:first-child { border-top: none; }
+    .post:hover { background: var(--panel); }
+    .post .idx { font-family: var(--serif); font-size: 0.95rem; color: var(--muted); }
+    .post .body .cat-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-bottom: 10px; }
+    .post .body .cat { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ember-d); font-weight: 600; }
+    .post .body .date { font-size: 0.72rem; letter-spacing: 0.06em; color: var(--muted); }
+    .post .body h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.5rem, 2.6vw, 2rem); letter-spacing: -0.02em; line-height: 1.14; transition: color 0.2s; }
+    .post:hover .body h2 { color: var(--ember); }
+    .post .body p { font-size: 0.98rem; color: var(--ink-2); margin-top: 10px; max-width: 62ch; }
+    .post .body .tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 7px; }
+    .post .body .tags span { font-size: 0.72rem; font-weight: 500; color: var(--ink-2); border: 1px solid var(--line-2); border-radius: 100px; padding: 3px 11px; }
+    .post .go { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; white-space: nowrap; align-self: center; }
+    .post .go .arrow { color: var(--ember); display: inline-block; transition: transform 0.25s ease; }
+    .post:hover .go .arrow { transform: translate(3px, -3px); }
+
+    /* ===== PRODUCT CTA ===== */
+    .product {
+      display: grid; grid-template-columns: 64px 1fr; gap: 22px; align-items: start;
+      padding: 28px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel);
+    }
+    .product .icon { width: 64px; height: 64px; border-radius: 15px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 2px 6px rgba(22,24,26,0.12); }
+    .product h3 { font-family: var(--serif); font-weight: 500; font-size: 1.5rem; letter-spacing: -0.01em; margin-bottom: 8px; }
+    .product p { font-size: 0.96rem; color: var(--ink-2); max-width: 60ch; }
+    .product .plinks { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .product .plinks a {
+      font-size: 0.8rem; font-weight: 500; color: var(--ink-2);
+      border: 1px solid var(--line-2); border-radius: 100px; padding: 8px 15px;
+      transition: color 0.2s, background 0.2s, border-color 0.2s;
+    }
+    .product .plinks a:hover { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+    .product .plinks a.primary { color: var(--paper); background: var(--ember); border-color: var(--ember); }
+    .product .plinks a.primary:hover { background: var(--ember-d); border-color: var(--ember-d); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      border-top: 1px solid var(--line); padding: 30px 0 48px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px; font-size: 0.82rem; color: var(--muted);
+    }
+    footer .f-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    footer .f-links a { transition: color 0.2s; }
+    footer .f-links a:hover { color: var(--ink); }
+
+    /* ===== REVEAL ===== */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 820px) {
+      .topnav { display: none; }
+      .row { grid-template-columns: 1fr; gap: 28px; padding: 56px 0; }
+      .masthead { padding: 64px 0 54px; }
+    }
+    @media (max-width: 620px) {
+      .wrap { padding: 0 22px; }
+      .post { grid-template-columns: 1fr; gap: 6px; }
+      .post .idx { display: none; }
+      .post .go { align-self: start; margin-top: 8px; }
+      .product { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="site">
+    <div class="wrap bar">
+      <a class="wordmark" href="../../../" aria-label="Inicio de GrayForge">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#16181A"/>
+          <path d="M32 14 L38 32 L32 27 L26 32 Z" fill="#D9531E"/>
+          <circle cx="32" cy="42" r="6" fill="#E8743F"/>
+        </svg>
+        <span class="name">GrayForge</span>
+        <span class="sub">Diario</span>
+      </a>
+      <nav class="topnav" aria-label="Principal">
+        <a href="../">Blog</a>
+        <a href="../../noisyno/">NoisyNo</a>
+        <a href="../../../dashlog/">DashLog</a>
+        <a href="../../../vocalout/">VocalOut</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== MASTHEAD ===== -->
+    <section class="masthead">
+      <div class="wrap">
+        <nav class="meta-row" aria-label="Ruta de navegación">
+          <a class="label" href="../">&larr; Diario de GrayForge</a>
+          <span class="dot"></span>
+          <span class="label">Guías de NoisyNo</span>
+        </nav>
+        <h1>Guías de NoisyNo<span class="spark">.</span></h1>
+        <p class="lede">
+          Guías de <strong>NoisyNo</strong>, la app para quitar ruido de la voz en el dispositivo: limpiar notas de
+          voz, reuniones grabadas y cualquier audio sin subirlo. Con honestidad sobre los límites, sin lenguaje de
+          marketing.
+        </p>
+        <p class="lang-links" data-lang-links style="margin-top:16px;font-size:0.9rem;color:var(--muted);">También en: <a href="../../../blog/noisyno/" hreflang="en" lang="en" style="text-decoration:underline;text-underline-offset:3px;">English</a> · <a href="../../../ko/blog/noisyno/" hreflang="ko" lang="ko" style="text-decoration:underline;text-underline-offset:3px;">한국어</a> · <a href="../../../ja/blog/noisyno/" hreflang="ja" lang="ja" style="text-decoration:underline;text-underline-offset:3px;">日本語</a> · <a href="../../../zh/blog/noisyno/" hreflang="zh" lang="zh" style="text-decoration:underline;text-underline-offset:3px;">中文</a> · <a href="../../../pt/blog/noisyno/" hreflang="pt" lang="pt" style="text-decoration:underline;text-underline-offset:3px;">Português</a> · <a href="../../../fr/blog/noisyno/" hreflang="fr" lang="fr" style="text-decoration:underline;text-underline-offset:3px;">Français</a> · <a href="../../../de/blog/noisyno/" hreflang="de" lang="de" style="text-decoration:underline;text-underline-offset:3px;">Deutsch</a></p>
+      </div>
+    </section>
+
+    <!-- ===== GUIDES ===== -->
+    <section class="wrap">
+      <div class="row">
+        <div class="aside">
+          <span class="label">Guías</span>
+          <div class="aside-title">Más recientes primero</div>
+          <p class="aside-note">Todas las guías de NoisyNo, con la más reciente arriba.</p>
+        </div>
+        <div class="ledger">
+          <a class="post reveal" href="offline-noise-remover-apps-compared/">
+            <div class="idx">01</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">Guía de NoisyNo</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>Apps para quitar ruido sin conexión en iPhone y Android, comparadas</h2>
+              <p>NoisyNo junto a otras seis apps que limpian grabaciones en el teléfono y dos servicios en la nube. Subidas, cuentas, precios, límites de exportación, vídeo y uso sin conexión, con una fuente para cada celda y lo que añade NoisyNo Pro.</p>
+              <div class="tags"><span>Comparativa</span><span>Sin conexión</span><span>Sin subir archivos</span></div>
+            </div>
+            <div class="go">Leer <span class="arrow">↗</span></div>
+          </a>
+          <a class="post reveal" href="voice-memo-enhance-vs-noisyno/">
+            <div class="idx">02</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">Guía de NoisyNo</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>Mejorar grabación de Notas de Voz vs NoisyNo vs limpiadores de ruido en el navegador</h2>
+              <p>Mejorar grabación, integrada en el iPhone, NoisyNo y dos herramientas web que requieren subir el archivo, una al lado de otra: qué hace cada una con tu audio, si se sube, cuentas, precios y límites, con una fuente para cada celda y dónde NoisyNo se queda corta.</p>
+              <div class="tags"><span>Comparativa</span><span>Notas de voz</span><span>Sin subir archivos</span></div>
+            </div>
+            <div class="go">Leer <span class="arrow">↗</span></div>
+          </a>
+          <a class="post reveal" href="remove-background-noise-from-voice-memo/">
+            <div class="idx">03</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">Guía de NoisyNo</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>Cómo quitar el ruido de fondo de una nota de voz (iPhone y Android)</h2>
+              <p>Por qué las notas de voz del teléfono salen con ruido, cómo limpiar una nota en M4A o WAV en el propio dispositivo y qué ganas con una nota más limpia al transcribirla.</p>
+              <div class="tags"><span>Notas de voz</span><span>iPhone y Android</span><span>En el dispositivo</span></div>
+            </div>
+            <div class="go">Leer <span class="arrow">↗</span></div>
+          </a>
+          <a class="post reveal" href="clean-up-meeting-recording-audio/">
+            <div class="idx">04</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">Guía de NoisyNo</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>Cómo quitar el ruido de fondo de una reunión grabada</h2>
+              <p>Limpia una reunión de Zoom, Teams o presencial en tu teléfono en lugar de subir audio confidencial, y cómo un audio más limpio mejora las transcripciones.</p>
+              <div class="tags"><span>Audio de reuniones</span><span>Confidencial</span><span>En el dispositivo</span></div>
+            </div>
+            <div class="go">Leer <span class="arrow">↗</span></div>
+          </a>
+          <a class="post reveal" href="remove-audio-noise-without-upload/">
+            <div class="idx">05</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">Guía de NoisyNo</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>Cómo eliminar el ruido de una grabación sin subirla</h2>
+              <p>El proceso en cinco pasos en el dispositivo, con pantallas reales, y dónde empiezan y terminan exactamente el procesamiento y la privacidad de NoisyNo.</p>
+              <div class="tags"><span>Eliminar ruido sin conexión</span><span>Sin cuenta</span><span>Sin subir archivos</span></div>
+            </div>
+            <div class="go">Leer <span class="arrow">↗</span></div>
+          </a>
+        </div>
+        <p class="aside-note" style="margin-top:22px;">Todas las guías también están disponibles en otros idiomas.</p>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCT CTA ===== -->
+    <section class="wrap">
+      <div class="row" style="border-bottom:none;">
+        <div class="aside">
+          <span class="label">La app</span>
+          <div class="aside-title">NoisyNo</div>
+          <p class="aside-note">Prueba la app de la que tratan estas guías.</p>
+        </div>
+        <div class="product reveal">
+          <div class="icon"><img src="../../../noisyno/assets/app-icon-180.png" alt="Icono de la app NoisyNo" loading="lazy" width="180" height="180" /></div>
+          <div>
+            <h3>NoisyNo — Voice Noise Remover</h3>
+            <p>
+              Una app para quitar ruido de la voz sin conexión, que reduce el zumbido del ventilador, el siseo, el
+              viento, el aire acondicionado y el ruido ambiente en grabaciones y en el audio de vídeos. Procesa dentro
+              de tu teléfono, sin subir archivos y sin cuenta.
+            </p>
+            <div class="plinks">
+              <a class="primary" href="../../noisyno/">Ver el producto</a>
+              <a href="https://apps.apple.com/app/id6772728543" rel="noopener">App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno" rel="noopener">Google Play</a>
+              <a href="../../../noisyno/privacy_policy.html">Privacidad</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wrap">
+    <span>© 2026 GrayForge — Estudio de software independiente.</span>
+    <div class="f-links">
+      <a href="../">Blog</a>
+      <a href="../../noisyno/">NoisyNo</a>
+      <a href="../../../dashlog/">DashLog</a>
+      <a href="../../../vocalout/">VocalOut</a>
+      <a href="mailto:grayforge.dev@gmail.com">Contacto</a>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 70);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>

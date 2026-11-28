@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>Supprimer la voix d’une chanson, hors ligne | GrayForge</title>
+  <meta name="description" content="Transformez une chanson de votre téléphone en version instrumentale ou karaoké. Supprimez la voix sur l’appareil avec VocalOut, étape par étape — sans envoi, sans compte." />
+  <meta name="keywords" content="supprimer la voix d’une chanson, enlever la voix d’une musique, créer une version karaoké, version instrumentale, application pour supprimer la voix, supprimer la voix hors ligne, séparation voix musique IA, isoler la voix, VocalOut, sans envoi, gratuit" />
+  <meta name="author" content="GrayForge" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ECEDEA" />
+  <link rel="canonical" href="https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/" />
+  <link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+  <link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/remove-vocals-from-a-song/" />
+  <link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/" />
+  <link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/remove-vocals-from-a-song/" />
+  <link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/remove-vocals-from-a-song/" />
+  <link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/remove-vocals-from-a-song/" />
+  <link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/" />
+  <link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
+  <link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+
+  <!-- Inline SVG favicon: graphite square with an ember spark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;rect width='64' height='64' rx='12' fill='%2316181A'/&gt;&lt;path d='M32 14 L38 32 L32 27 L26 32 Z' fill='%23D9531E'/&gt;&lt;circle cx='32' cy='42' r='6' fill='%23E8743F'/&gt;&lt;/svg&gt;" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="GrayForge" />
+  <meta property="og:url" content="https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/" />
+  <meta property="og:title" content="Supprimer la voix d’une chanson sur votre téléphone — guide VocalOut" />
+  <meta property="og:description" content="Transformez n’importe quelle chanson en version instrumentale propre, sur l’appareil avec VocalOut — sans envoi, sans compte, traitement gratuit et illimité." />
+  <meta property="og:image" content="https://grayforge.app/vocalout/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="article:published_time" content="2026-11-27" />
+  <meta property="article:modified_time" content="2026-11-27" />
+  <meta property="article:author" content="GrayForge" />
+  <meta property="article:section" content="Guide VocalOut" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Supprimer la voix d’une chanson sur votre téléphone — guide VocalOut" />
+  <meta name="twitter:description" content="Transformez n’importe quelle chanson en version instrumentale propre, sur l’appareil avec VocalOut — sans envoi, sans compte, traitement gratuit et illimité." />
+  <meta name="twitter:image" content="https://grayforge.app/vocalout/assets/og-image.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/#article",
+        "headline": "Supprimer la voix d’une chanson sur votre téléphone, entièrement hors ligne",
+        "alternativeHeadline": "Transformez n’importe quelle chanson en version instrumentale propre, sur l’appareil",
+        "description": "Transformez n’importe quelle chanson de votre téléphone en version instrumentale propre. Un guide pas à pas pour supprimer la voix sur l’appareil avec VocalOut — sans envoi, sans compte, et votre musique ne quitte jamais votre téléphone.",
+        "inLanguage": "fr",
+        "datePublished": "2026-11-27",
+        "dateModified": "2026-11-27",
+        "wordCount": 710,
+        "articleSection": "Guide VocalOut",
+        "keywords": "supprimer la voix d’une chanson, créer une version karaoké, version instrumentale, application pour supprimer la voix, supprimer la voix hors ligne, IA sur l’appareil, VocalOut",
+        "mainEntityOfPage": "https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/",
+        "author": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/"},
+        "publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}},
+        "about": {"@id": "https://grayforge.app/vocalout/#app"},
+        "image": [
+          "https://grayforge.app/vocalout/assets/og-image.png",
+          "https://grayforge.app/vocalout/assets/screenshots/04-result.png"
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".lede"]
+        },
+        "citation": [
+          "https://grayforge.app/vocalout/",
+          "https://grayforge.app/vocalout/privacy_policy.html",
+          "https://apps.apple.com/app/id6809804367",
+          "https://play.google.com/store/apps/details?id=com.grayforge.vocalout"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/#breadcrumbs",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "GrayForge", "item": "https://grayforge.app/"},
+          {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://grayforge.app/fr/blog/"},
+          {"@type": "ListItem", "position": 3, "name": "VocalOut", "item": "https://grayforge.app/fr/blog/vocalout/"},
+          {"@type": "ListItem", "position": 4, "name": "Supprimer la voix d’une chanson", "item": "https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Ma musique est-elle envoyée en ligne ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. Le modèle d’IA est intégré à l’application et tourne sur votre téléphone : il n’y a aucune étape sur un serveur. Votre musique ne quitte jamais votre appareil."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Le nombre de chansons que je peux traiter est-il limité ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. Le traitement et la lecture sont gratuits et illimités, pour toujours. Pro sert uniquement à exporter le résultat hors de l’application."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Combien de temps faut-il pour une chanson ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cela dépend de votre appareil, car il s’agit d’un vrai calcul effectué sur votre téléphone, pas d’un téléchargement. La progression s’affiche pendant le traitement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "D’où viennent les chansons ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Des fichiers déjà présents sur votre appareil. VocalOut n’est relié à aucun service musical et ne peut ni télécharger ni lire de musique en streaming : la chanson doit d’abord être enregistrée sur votre téléphone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "VocalOut est-il gratuit, et existe-t-il sur iPhone et Android ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VocalOut se télécharge gratuitement, sans compte ni crédits, et le traitement comme la lecture sont gratuits et illimités. VocalOut Pro est un achat unique qui débloque l’export des résultats en pleine qualité 32 bits ; ce n’est pas un abonnement. L’application est disponible sur l’App Store pour iPhone et sur Google Play pour Android."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper:   #ECEDEA;
+      --paper-2: #E4E5E1;
+      --panel:   #F4F4F2;
+      --ink:     #16181A;
+      --ink-2:   #393D40;
+      --muted:   #6C7176;
+      --line:    #CDCFCA;
+      --line-2:  #BCBEB8;
+      --ember:   #D9531E;
+      --ember-d: #B5400F;
+
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+      --wrap:  1120px;
+      --read:  720px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-wrap: break-word;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ::selection { background: var(--ink); color: var(--paper); }
+
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 32px; }
+    .read { max-width: var(--read); margin-left: auto; margin-right: auto; }
+
+    .label {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ===== TOP BAR ===== */
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+    .wordmark { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+    .wordmark .mark { width: 24px; height: 24px; }
+    .wordmark .name { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+    .wordmark .sub { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; font-style: italic; color: var(--muted); }
+    .topnav { display: flex; gap: 30px; }
+    .topnav a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      letter-spacing: 0.02em; position: relative; padding: 4px 0;
+    }
+    .topnav a::after {
+      content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px;
+      background: var(--ink); transition: width 0.25s ease;
+    }
+    .topnav a:hover::after { width: 100%; }
+
+    /* ===== BREADCRUMB ===== */
+    .crumbs { padding-top: 34px; font-size: 0.8rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .crumbs a { border-bottom: 1px solid transparent; transition: border-color 0.2s, color 0.2s; }
+    .crumbs a:hover { color: var(--ink); border-color: var(--line-2); }
+    .crumbs .sep { color: var(--line-2); }
+    .crumbs .here { color: var(--ink-2); }
+
+    /* ===== HERO ===== */
+    .hero { padding: 26px 0 60px; border-bottom: 1px solid var(--line); }
+    .kicker { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 22px; }
+    .kicker .tick { width: 6px; height: 6px; border-radius: 50%; background: var(--ember); }
+    h1 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(2.1rem, 5vw, 3.9rem);
+      line-height: 1.06; letter-spacing: -0.025em;
+      max-width: 20ch; margin-bottom: 28px;
+      font-optical-sizing: auto;
+    }
+    h1 .spark { color: var(--ember); }
+    .lede {
+      max-width: 60ch;
+      font-size: clamp(1.08rem, 1.7vw, 1.32rem);
+      color: var(--ink-2); line-height: 1.62;
+    }
+    .lede strong { font-weight: 600; color: var(--ink); }
+    .metabar {
+      margin-top: 34px; display: flex; flex-wrap: wrap; gap: 10px 26px;
+      align-items: center; font-size: 0.82rem; color: var(--muted);
+    }
+    .metabar .m { display: inline-flex; align-items: center; gap: 8px; }
+    .metabar .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--line-2); }
+
+    /* ===== ANSWER CARD ===== */
+    .answer-card {
+      margin-top: 40px; max-width: 68ch;
+      display: grid; grid-template-columns: auto 1fr; gap: 22px;
+      padding: 26px 28px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--ember);
+      border-radius: 4px;
+    }
+    .answer-card .q { font-family: var(--serif); font-size: 1.7rem; color: var(--ember); line-height: 1; }
+    .answer-card .short { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    .answer-card p { font-size: 1.02rem; color: var(--ink-2); line-height: 1.65; }
+    .answer-card strong { color: var(--ink); font-weight: 600; }
+
+    /* ===== TOC ===== */
+    .toc { padding: 44px 0; border-bottom: 1px solid var(--line); }
+    .toc .toc-inner { display: grid; grid-template-columns: 200px 1fr; gap: 40px; }
+    .toc .label { display: block; }
+    .toc .aside-note { margin-top: 10px; font-size: 0.9rem; color: var(--muted); max-width: 22ch; }
+    .toc ol { list-style: none; counter-reset: toc; display: grid; gap: 2px; }
+    .toc li { counter-increment: toc; }
+    .toc li a {
+      display: flex; align-items: baseline; gap: 16px;
+      padding: 12px 0; border-top: 1px solid var(--line);
+      transition: color 0.2s;
+    }
+    .toc li:first-child a { border-top: none; }
+    .toc li a::before {
+      content: counter(toc, decimal-leading-zero);
+      font-family: var(--serif); font-size: 0.9rem; color: var(--ember); min-width: 24px;
+    }
+    .toc li a .t { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; }
+    .toc li a:hover .t { color: var(--ember); }
+
+    /* ===== ARTICLE ===== */
+    article { padding: 12px 0 24px; }
+    article section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    article section:last-child { border-bottom: none; }
+    h2 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+      line-height: 1.12; letter-spacing: -0.02em;
+      margin-bottom: 22px; max-width: 24ch;
+    }
+    h3 { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.01em; margin: 30px 0 10px; }
+    article p { font-size: 1.05rem; color: var(--ink-2); margin-bottom: 18px; max-width: 68ch; }
+    article a.inline { color: var(--ember-d); border-bottom: 1px solid color-mix(in srgb, var(--ember) 40%, transparent); transition: border-color 0.2s; }
+    article a.inline:hover { border-bottom-color: var(--ember); }
+    article ul { list-style: none; margin: 20px 0; max-width: 66ch; }
+    article ul li {
+      position: relative; padding-left: 24px; margin: 11px 0;
+      font-size: 1.03rem; color: var(--ink-2);
+    }
+    article ul li::before {
+      content: ''; position: absolute; left: 2px; top: 0.72em;
+      width: 6px; height: 6px; border-radius: 50%; background: var(--ember);
+    }
+    article ul li strong { color: var(--ink); font-weight: 600; }
+
+    /* ===== COMPARE ===== */
+    .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; }
+    .compare-card {
+      padding: 26px; border: 1px solid var(--line); border-radius: 6px;
+      background: var(--panel);
+    }
+    .compare-card.good { border-color: var(--line-2); box-shadow: inset 3px 0 0 var(--ember); }
+    .compare-card .tag {
+      font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 12px;
+    }
+    .compare-card.good .tag { color: var(--ember-d); }
+    .compare-card h4 { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; margin-bottom: 10px; letter-spacing: -0.01em; }
+    .compare-card p { font-size: 0.98rem; color: var(--ink-2); margin: 0; max-width: none; }
+
+    /* ===== WALKTHROUGH with phone screenshots ===== */
+    .walk { margin-top: 34px; display: flex; flex-direction: column; }
+    .wstep {
+      display: flex; align-items: center; gap: 56px;
+      padding: 48px 0; border-top: 1px solid var(--line);
+    }
+    .wstep:first-child { border-top: none; padding-top: 12px; }
+    .wstep:nth-child(even) { flex-direction: row-reverse; }
+    .wtext { flex: 1 1 320px; }
+    .wtext .num {
+      font-family: var(--serif); font-size: 0.85rem; font-weight: 500;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--ember-d);
+      margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
+    }
+    .wtext .num::after { content: ''; flex: 1; height: 1px; background: var(--line); max-width: 60px; }
+    .wtext h3 { margin-top: 0; font-size: 1.55rem; font-weight: 500; }
+    .wtext p { margin-bottom: 0; font-size: 1.03rem; }
+    .wshot { flex: 0 0 218px; display: flex; justify-content: center; }
+
+    /* graphite phone frame — cropped to the content area so the screens don't
+       leave big empty space next to the text */
+    .phone {
+      width: 100%; max-width: 218px;
+      background: var(--ink);
+      padding: 8px;
+      border-radius: 34px;
+      box-shadow: 0 30px 60px -24px rgba(22,24,26,0.55), 0 2px 0 rgba(255,255,255,0.04) inset, 0 0 0 1px rgba(22,24,26,0.5);
+    }
+    .phone .screen { border-radius: 27px; overflow: hidden; background: #F4EDE2; aspect-ratio: 100 / 150; }
+    .phone .screen img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+    .phone .screen.center img { object-position: center; }
+
+    /* ===== PRODUCT CARD ===== */
+    .product {
+      margin-top: 40px; display: grid; grid-template-columns: 64px 1fr; gap: 22px;
+      align-items: start; padding: 28px; border: 1px solid var(--line);
+      border-radius: 8px; background: var(--panel);
+    }
+    .product .icon { width: 64px; height: 64px; border-radius: 15px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 2px 6px rgba(22,24,26,0.12); }
+    .product h3 { margin: 0 0 8px; font-size: 1.4rem; }
+    .product p { font-size: 0.98rem; margin-bottom: 0; max-width: 60ch; }
+    .actions { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .actions a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      border: 1px solid var(--line-2); border-radius: 100px; padding: 8px 15px;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .actions a:hover { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+    .actions a.primary { color: var(--paper); background: var(--ember); border-color: var(--ember); }
+    .actions a.primary:hover { background: var(--ember-d); border-color: var(--ember-d); }
+
+    /* ===== CALLOUT ===== */
+    .callout {
+      margin: 30px 0 0; padding: 24px 28px;
+      background: var(--panel); border: 1px solid var(--line);
+      border-left: 3px solid var(--ember); border-radius: 4px;
+    }
+    .callout .label { display: block; margin-bottom: 8px; }
+    .callout p { margin: 0; font-size: 1.02rem; color: var(--ink-2); max-width: none; }
+
+    /* ===== SOURCES ===== */
+    .sources { margin-top: 26px; display: flex; flex-direction: column; }
+    .source {
+      display: grid; grid-template-columns: 30px 1fr auto; gap: 20px; align-items: center;
+      padding: 20px 12px; border-top: 1px solid var(--line); margin: 0 -12px;
+      transition: background 0.2s;
+    }
+    .source:first-child { border-top: none; }
+    .source:hover { background: var(--panel); }
+    .source .n { font-family: var(--serif); font-size: 0.95rem; color: var(--muted); }
+    .source b { font-family: var(--serif); font-weight: 500; font-size: 1.1rem; display: block; }
+    .source span { display: block; color: var(--muted); font-size: 0.88rem; margin-top: 2px; }
+    .source .go { color: var(--ember); font-family: var(--serif); font-size: 1rem; white-space: nowrap; }
+    .source:hover .go { color: var(--ember-d); }
+
+    /* ===== FAQ ===== */
+    .faq-list { margin-top: 26px; }
+    .faq-list details {
+      border-top: 1px solid var(--line); padding: 6px 0;
+    }
+    .faq-list details[open] { padding-bottom: 8px; }
+    .faq-list summary {
+      cursor: pointer; list-style: none; padding: 18px 40px 18px 0; position: relative;
+      font-family: var(--serif); font-weight: 500; font-size: 1.2rem; color: var(--ink);
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: '+'; position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+      font-family: var(--sans); font-size: 1.4rem; color: var(--ember); transition: transform 0.25s ease;
+    }
+    .faq-list details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-list details p { margin: 0 0 14px; color: var(--ink-2); font-size: 1.02rem; max-width: 66ch; }
+
+    /* ===== END CTA ===== */
+    .endcta { padding: 72px 0 0; }
+    .endcta h2 { max-width: 20ch; }
+    .endcta .mailto {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--serif); font-size: 1.2rem; font-weight: 500;
+      border-bottom: 2px solid var(--ink); padding-bottom: 4px; margin-top: 6px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .endcta .mailto:hover { color: var(--ember); border-color: var(--ember); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      margin-top: 72px; border-top: 1px solid var(--line);
+      padding: 30px 0 48px; display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px; font-size: 0.82rem; color: var(--muted);
+    }
+    footer .f-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    footer .f-links a { transition: color 0.2s; }
+    footer .f-links a:hover { color: var(--ink); }
+
+    /* ===== REVEAL ===== */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .toc .toc-inner { grid-template-columns: 1fr; gap: 20px; }
+    }
+    @media (max-width: 820px) {
+      .topnav { display: none; }
+      .wstep, .wstep:nth-child(even) { flex-direction: column; gap: 30px; align-items: flex-start; padding: 40px 0; }
+      .wshot { align-self: center; }
+    }
+    @media (max-width: 620px) {
+      .wrap { padding: 0 22px; }
+      .answer-card { grid-template-columns: 1fr; gap: 14px; }
+      .compare { grid-template-columns: 1fr; }
+      .product { grid-template-columns: 1fr; }
+      .source { grid-template-columns: 24px 1fr; }
+      .source .go { grid-column: 2; justify-self: start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="site">
+    <div class="wrap bar">
+      <a class="wordmark" href="../../../../" aria-label="Accueil GrayForge">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#16181A"/>
+          <path d="M32 14 L38 32 L32 27 L26 32 Z" fill="#D9531E"/>
+          <circle cx="32" cy="42" r="6" fill="#E8743F"/>
+        </svg>
+        <span class="name">GrayForge</span>
+        <span class="sub">Journal</span>
+      </a>
+      <nav class="topnav" aria-label="Navigation principale">
+        <a href="../../">Blog</a>
+        <a href="../../../../vocalout/">VocalOut</a>
+        <a href="../../../noisyno/">NoisyNo</a>
+        <a href="#download">Télécharger</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Fil d’Ariane">
+          <a href="../../../../">GrayForge</a>
+          <span class="sep">/</span>
+          <a href="../../">Blog</a>
+          <span class="sep">/</span>
+          <a href="../">VocalOut</a>
+          <span class="sep">/</span>
+          <span class="here">Supprimer la voix d’une chanson</span>
+        </nav>
+
+        <div class="kicker" style="margin-top:26px;">
+          <span class="tick"></span>
+          <span class="label">VocalOut · Guide pratique</span>
+        </div>
+
+        <h1>Supprimez la voix de n’importe quelle chanson, directement sur votre téléphone<span class="spark">.</span></h1>
+
+        <p class="lede">
+          Transformez un morceau que vous avez déjà en version instrumentale propre —
+          <strong>sur votre appareil, sans envoi en ligne et sans compte</strong>. Voici comment faire.
+        </p>
+
+        <div class="metabar">
+          <span class="m">Publié le 2026.11.27</span>
+          <span class="dot"></span>
+          <span class="m">~3 min de lecture</span>
+          <span class="dot"></span>
+          <span class="m">Sujet · Suppression de la voix</span>
+          <span class="dot"></span>
+          <span class="m" data-lang-links style="display:inline-block;max-width:100%;line-height:1.8;">Aussi en : <a href="../../../../blog/vocalout/remove-vocals-from-a-song/" hreflang="en" lang="en" style="text-decoration:underline;text-underline-offset:3px;">English</a> · <a href="../../../../ko/blog/vocalout/remove-vocals-from-a-song/" hreflang="ko" lang="ko" style="text-decoration:underline;text-underline-offset:3px;">한국어</a> · <a href="../../../../ja/blog/vocalout/remove-vocals-from-a-song/" hreflang="ja" lang="ja" style="text-decoration:underline;text-underline-offset:3px;">日本語</a> · <a href="../../../../zh/blog/vocalout/remove-vocals-from-a-song/" hreflang="zh" lang="zh" style="text-decoration:underline;text-underline-offset:3px;">中文</a> · <a href="../../../../es/blog/vocalout/remove-vocals-from-a-song/" hreflang="es" lang="es" style="text-decoration:underline;text-underline-offset:3px;">Español</a> · <a href="../../../../pt/blog/vocalout/remove-vocals-from-a-song/" hreflang="pt" lang="pt" style="text-decoration:underline;text-underline-offset:3px;">Português</a> · <a href="../../../../de/blog/vocalout/remove-vocals-from-a-song/" hreflang="de" lang="de" style="text-decoration:underline;text-underline-offset:3px;">Deutsch</a></span>
+        </div>
+
+      </div>
+    </section>
+
+    <article>
+      <div class="wrap">
+
+        <!-- HOW -->
+        <section id="how" class="reveal">
+          <div class="read">
+            <h2>Supprimer la voix d’une chanson avec VocalOut — 4 étapes</h2>
+            <p>
+              Tout se résume à <strong>choisir → sélectionner un mode → traiter → écouter</strong>. Pas de compte, pas
+              d’envoi, et aucune limite au nombre de chansons traitées.
+            </p>
+          </div>
+
+          <div class="walk">
+
+            <div class="wstep" id="step-pick">
+              <div class="wtext">
+                <div class="num">Étape 01</div>
+                <h3>Choisissez une chanson</h3>
+                <p>
+                  Ouvrez VocalOut et choisissez une chanson déjà présente sur votre téléphone. L’application n’est reliée
+                  à aucun service de streaming&nbsp;: le morceau doit donc être <strong>enregistré sur l’appareil au
+                  préalable</strong> — un téléchargement, un export ou un fichier qu’on vous a envoyé.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../vocalout/assets/screenshots/01-home.png" alt="Écran d’accueil de VocalOut, prêt à choisir un fichier audio sur l’appareil" loading="lazy" width="303" height="660" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-mode">
+              <div class="wtext">
+                <div class="num">Étape 02</div>
+                <h3>Choisissez ce que vous gardez</h3>
+                <p>
+                  VocalOut affiche le fichier importé avec sa forme d’onde, sa durée et son format, ainsi que deux modes
+                  de séparation&nbsp;: extraire une <strong>version instrumentale propre</strong>, sans la voix, ou isoler la
+                  <strong>piste vocale</strong>. Pas de curseurs, pas de nombre de pistes à régler&nbsp;: choisissez un mode
+                  et lancez.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../vocalout/assets/screenshots/02-file-mode.png" alt="Le fichier importé avec sa forme d’onde, sa durée et son format, et les deux modes de séparation au choix" loading="lazy" width="303" height="660" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-process">
+              <div class="wtext">
+                <div class="num">Étape 03</div>
+                <h3>Laissez le traitement se faire sur l’appareil</h3>
+                <p>
+                  La séparation s’effectue sur le processeur de votre téléphone&nbsp;: <strong>rien à envoyer, aucune file
+                  d’attente sur un serveur</strong>. En avion, en salle de répétition ou dans un sous-sol sans réseau,
+                  cela fonctionne exactement de la même façon. La durée dépend de votre appareil&nbsp;; un compteur indique
+                  la progression.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen center"><img src="../../../../vocalout/assets/screenshots/03-processing.png" alt="Séparation en cours sur l’appareil, la forme d’onde se remplit derrière un grand compteur en pourcentage" loading="lazy" width="303" height="660" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-listen">
+              <div class="wtext">
+                <div class="num">Étape 04</div>
+                <h3>Écoutez le résultat</h3>
+                <p>
+                  Le morceau terminé arrive dans votre bibliothèque et se lit sur place&nbsp;: parcourez la forme d’onde,
+                  passez d’un endroit à l’autre, réécoutez autant que vous le voulez. Le traitement et la lecture sont
+                  <strong>gratuits et illimités</strong>&nbsp;: vous savez si le résultat vous convient bien avant qu’on vous
+                  demande quoi que ce soit.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../vocalout/assets/screenshots/04-result.png" alt="Le morceau instrumental terminé, enregistré dans la bibliothèque et en cours de lecture dans l’application" loading="lazy" width="303" height="660" /></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="read">
+            <div class="product" id="download">
+              <div class="icon"><img src="../../../../vocalout/assets/app-icon-180.png" alt="Icône de l’application VocalOut" loading="lazy" width="180" height="180" /></div>
+              <div>
+                <h3>VocalOut — Vocal Remover</h3>
+                <p>
+                  Une application hors ligne pour supprimer la voix, qui transforme n’importe quelle chanson de votre
+                  téléphone en version instrumentale propre. L’IA tourne sur votre appareil&nbsp;: sans envoi, sans compte,
+                  avec un traitement gratuit et illimité.
+                </p>
+                <div class="actions">
+                  <a class="primary" href="https://apps.apple.com/app/id6809804367" rel="noopener">App Store</a>
+                  <a href="https://play.google.com/store/apps/details?id=com.grayforge.vocalout" rel="noopener">Google Play</a>
+                  <a href="../../../../vocalout/">Page du produit</a>
+                  <a href="../../../../vocalout/privacy_policy.html">Politique de confidentialité</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WHY IT MATTERS -->
+        <section id="why" class="read reveal">
+          <h2>Pourquoi le traitement sur l’appareil compte</h2>
+          <p>
+            La plupart des outils en ligne pour supprimer la voix envoient votre chanson entière sur un serveur, la
+            traitent là-bas et vous renvoient un fichier. VocalOut ne fait jamais cela&nbsp;: le modèle d’IA <strong>est
+            intégré à l’application et tourne sur votre téléphone</strong>. Votre musique ne quitte donc jamais
+            l’appareil, et il n’y a aucun serveur à attendre. C’est aussi pour cela qu’il n’y a ni compte, ni crédits,
+            ni limite par chanson.
+          </p>
+
+          <div class="compare" aria-label="Comparaison entre traitement en ligne et sur l’appareil">
+            <div class="compare-card">
+              <div class="tag">Outil en ligne classique</div>
+              <h4>On envoie la chanson entière</h4>
+              <p>Votre morceau est envoyé sur un site avant d’être traité, souvent derrière une inscription, un système de crédits ou une attente dans la file du serveur.</p>
+            </div>
+            <div class="compare-card good">
+              <div class="tag">Traitement sur l’appareil</div>
+              <h4>Tout se passe dans votre téléphone</h4>
+              <p>VocalOut effectue la séparation en local. La chanson choisie et le résultat ne quittent jamais votre appareil, et vous pouvez en traiter autant que vous voulez.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- USES -->
+        <section id="uses" class="read reveal">
+          <h2>À quoi sert une version instrumentale propre</h2>
+          <p>
+            Une fois la voix retirée, la piste d’accompagnement est à vous&nbsp;:
+          </p>
+          <ul>
+            <li><strong>Travail et interprétation</strong> — chanter ou jouer d’un instrument sur l’accompagnement original</li>
+            <li><strong>Karaoké</strong> à la maison, avec le vrai morceau plutôt qu’une version MIDI</li>
+            <li><strong>Reprises et vidéos</strong> qui ont besoin d’un fond instrumental</li>
+            <li><strong>Remix, mashups et samples</strong> à partir d’une piste propre</li>
+          </ul>
+          <p>
+            Un point à garder en tête&nbsp;: c’est à vous de disposer des droits sur la musique que vous traitez. VocalOut
+            fonctionne avec des fichiers que vous possédez déjà sur votre appareil.
+          </p>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="read reveal">
+          <h2>Questions fréquentes</h2>
+          <div class="faq-list">
+            <details>
+              <summary>Ma musique est-elle envoyée en ligne&nbsp;?</summary>
+              <p>Non. Le modèle d’IA est intégré à l’application et tourne sur votre téléphone&nbsp;: il n’y a aucune étape sur un serveur. Votre musique ne quitte jamais votre appareil.</p>
+            </details>
+            <details>
+              <summary>Le nombre de chansons que je peux traiter est-il limité&nbsp;?</summary>
+              <p>Non. Le traitement et la lecture sont gratuits et illimités, pour toujours. Pro sert uniquement à exporter le résultat hors de l’application.</p>
+            </details>
+            <details>
+              <summary>Combien de temps faut-il pour une chanson&nbsp;?</summary>
+              <p>Cela dépend de votre appareil, car il s’agit d’un vrai calcul effectué sur votre téléphone, pas d’un téléchargement. La progression s’affiche pendant le traitement.</p>
+            </details>
+            <details>
+              <summary>D’où viennent les chansons&nbsp;?</summary>
+              <p>Des fichiers déjà présents sur votre appareil. VocalOut n’est relié à aucun service musical et ne peut ni télécharger ni lire de musique en streaming&nbsp;: la chanson doit d’abord être enregistrée sur votre téléphone.</p>
+            </details>
+            <details>
+              <summary>VocalOut est-il gratuit, et existe-t-il sur iPhone et Android&nbsp;?</summary>
+              <p>VocalOut se télécharge gratuitement, sans compte ni crédits, et le traitement comme la lecture sont gratuits et illimités. VocalOut Pro est un achat unique qui débloque l’export des résultats en pleine qualité 32 bits&nbsp;; ce n’est pas un abonnement. L’application est disponible sur l’App Store pour iPhone et sur Google Play pour Android.</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- END CTA -->
+        <section class="endcta read">
+          <span class="label">Étape suivante</span>
+          <h2 style="margin-top:16px;">Transformez une chanson en piste d’accompagnement.</h2>
+          <p>Une fois l’application installée, séparer votre première chanson prend quelques minutes, et l’écouter ne coûte rien. Si quelque chose n’est pas clair, c’est la personne qui l’a conçue qui vous répond directement.</p>
+          <a class="mailto" href="mailto:grayforge.dev@gmail.com?subject=VocalOut%20question">grayforge.dev@gmail.com <span aria-hidden="true">↗</span></a>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    <span>© 2026 GrayForge · Dernière mise à jour 2026.11.27</span>
+    <div class="f-links">
+      <a href="../../">Blog</a>
+      <a href="../../../../vocalout/">VocalOut</a>
+      <a href="../../../noisyno/">NoisyNo</a>
+      <a href="../../../../vocalout/privacy_policy.html">Confidentialité</a>
+      <a href="mailto:grayforge.dev@gmail.com">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 60);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>

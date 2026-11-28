@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Primary SEO -->
+<title>语音备忘录去除背景噪音（iPhone/安卓） | GrayForge</title>
+<meta name="description" content="语音备忘录里满是咖啡馆人声、风扇声或街道噪音？先试试 iPhone 自带的“增强录音”，不够再用 NoisyNo 在手机本地降噪。无需上传。" />
+<meta name="keywords" content="语音备忘录去除背景噪音, 语音备忘录降噪, 录音去噪, 清理语音备忘录, iPhone 录音降噪, 安卓录音降噪, 录音噪音太大, 去除背景噪音, 降噪 App, NoisyNo" />
+<meta name="author" content="GrayForge" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#ECEDEA" />
+<link rel="canonical" href="https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+
+<!-- Inline SVG favicon: graphite square with an ember spark -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;rect width='64' height='64' rx='12' fill='%2316181A'/&gt;&lt;path d='M32 14 L38 32 L32 27 L26 32 Z' fill='%23D9531E'/&gt;&lt;circle cx='32' cy='42' r='6' fill='%23E8743F'/&gt;&lt;/svg&gt;" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="GrayForge" />
+<meta property="og:url" content="https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/" />
+<meta property="og:title" content="如何去除语音备忘录中的背景噪音（iPhone 和安卓）" />
+<meta property="og:description" content="在手机上去掉语音备忘录里的咖啡馆人声、风扇声和街道噪音——无需上传，无需账号，大约三分钟。" />
+<meta property="og:image" content="https://grayforge.app/noisyno/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="article:published_time" content="2026-11-27" />
+<meta property="article:modified_time" content="2026-11-27" />
+<meta property="article:author" content="GrayForge" />
+<meta property="article:section" content="NoisyNo 指南" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="如何去除语音备忘录中的背景噪音（iPhone 和安卓）" />
+<meta name="twitter:description" content="在手机上去掉语音备忘录里的咖啡馆人声、风扇声和街道噪音——无需上传，无需账号，大约三分钟。" />
+<meta name="twitter:image" content="https://grayforge.app/noisyno/assets/og-image.png" />
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@graph": [
+{
+"@type": "BlogPosting",
+"@id": "https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/#article",
+"headline": "如何去除语音备忘录中的背景噪音（iPhone 和安卓）",
+"alternativeHeadline": "在手机上去掉语音备忘录里的咖啡馆人声、风扇声和街道噪音",
+"description": "语音备忘录里满是咖啡馆人声、风扇声或街道噪音？在手机上大约三分钟就能清理干净——无需上传，无需账号。适用于 iPhone 语音备忘录和安卓录音的分步教程。",
+"inLanguage": "zh",
+"datePublished": "2026-11-27",
+"dateModified": "2026-11-27",
+"wordCount": 1050,
+"articleSection": "NoisyNo 指南",
+"keywords": "语音备忘录去除背景噪音, 语音备忘录降噪, 录音去噪, 清理语音备忘录, iPhone 录音降噪, 安卓录音降噪, NoisyNo",
+"mainEntityOfPage": "https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/",
+"author": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/"},
+"publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}},
+"about": {"@id": "https://grayforge.app/noisyno/#app"},
+"image": [
+"https://grayforge.app/noisyno/assets/og-image.png",
+"https://grayforge.app/noisyno/assets/screenshots/04_compare.png"
+],
+"speakable": {
+"@type": "SpeakableSpecification",
+"cssSelector": [".lede"]
+},
+"citation": [
+"https://grayforge.app/noisyno/",
+"https://grayforge.app/noisyno/privacy_policy.html",
+"https://apps.apple.com/app/id6772728543",
+"https://play.google.com/store/apps/details?id=com.grayforge.noisyno"
+]
+},
+{
+"@type": "BreadcrumbList",
+"@id": "https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/#breadcrumbs",
+"itemListElement": [
+{"@type": "ListItem", "position": 1, "name": "GrayForge", "item": "https://grayforge.app/"},
+{"@type": "ListItem", "position": 2, "name": "博客", "item": "https://grayforge.app/zh/blog/"},
+{"@type": "ListItem", "position": 3, "name": "NoisyNo", "item": "https://grayforge.app/zh/blog/noisyno/"},
+{"@type": "ListItem", "position": 4, "name": "语音备忘录去除背景噪音", "item": "https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/"}
+]
+},
+{
+"@type": "FAQPage",
+"@id": "https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/#faq",
+"mainEntity": [
+        {
+          "@type": "Question",
+          "name": "如何去除 iPhone 语音备忘录中的背景噪音？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "在“语音备忘录”App 中打开录音，点按更多（…）按钮，选择“共享”，再选择 NoisyNo。然后点按 Clean 并对比结果——整个流程在手机上大约三分钟完成，无需上传，无需账号。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "怎样把录音从“语音备忘录”App 里导出来？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "使用共享表单：打开备忘录，点按更多（…）按钮，再点按“共享”。在这里你可以直接发送到 NoisyNo，也可以选择“存储到‘文件’”，把 M4A 文件放到任何 App 都能访问的位置。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "不上传到网站，也能清理语音备忘录吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。NoisyNo 在手机内部处理文件。备忘录不会上传到 GrayForge 服务器；当录音里有会议、采访或私人笔记时，这一点很重要。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "清理语音备忘录会覆盖原始录音吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。NoisyNo 会把降噪后的音频生成一个新的结果，供你保存或分享。原始备忘录保持不变，你随时可以回到原版。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "支持安卓录音 App 的文件吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "支持。安卓录音 App 通常保存为 M4A 或 WAV 文件，两种都能直接在 NoisyNo 中使用——MP3、AAC 和 CAF 也可以。无需转换。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "降噪能让语音备忘录更容易转写吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通常可以。持续的背景噪音是转写出错的常见原因，所以在把备忘录交给语音转文字 App 之前先降噪，得到的文字往往更干净。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "NoisyNo 免费吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NoisyNo 可免费下载，无需账号、没有广告、不上传文件，降噪功能免费使用。响度标准化是 Pro 功能，通过一次性内购解锁。没有订阅。"
+          }
+        }
+      ]
+}
+]
+}
+</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper:   #ECEDEA;
+      --paper-2: #E4E5E1;
+      --panel:   #F4F4F2;
+      --ink:     #16181A;
+      --ink-2:   #393D40;
+      --muted:   #6C7176;
+      --line:    #CDCFCA;
+      --line-2:  #BCBEB8;
+      --ember:   #D9531E;
+      --ember-d: #B5400F;
+
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+      --wrap:  1120px;
+      --read:  720px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-wrap: break-word;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ::selection { background: var(--ink); color: var(--paper); }
+
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 32px; }
+    .read { max-width: var(--read); margin-left: auto; margin-right: auto; }
+
+    .label {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ===== TOP BAR ===== */
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+    .wordmark { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+    .wordmark .mark { width: 24px; height: 24px; }
+    .wordmark .name { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+    .wordmark .sub { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; font-style: italic; color: var(--muted); }
+    .topnav { display: flex; gap: 30px; }
+    .topnav a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      letter-spacing: 0.02em; position: relative; padding: 4px 0;
+    }
+    .topnav a::after {
+      content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px;
+      background: var(--ink); transition: width 0.25s ease;
+    }
+    .topnav a:hover::after { width: 100%; }
+
+    /* ===== BREADCRUMB ===== */
+    .crumbs { padding-top: 34px; font-size: 0.8rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .crumbs a { border-bottom: 1px solid transparent; transition: border-color 0.2s, color 0.2s; }
+    .crumbs a:hover { color: var(--ink); border-color: var(--line-2); }
+    .crumbs .sep { color: var(--line-2); }
+    .crumbs .here { color: var(--ink-2); }
+
+    /* ===== HERO ===== */
+    .hero { padding: 26px 0 60px; border-bottom: 1px solid var(--line); }
+    .kicker { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 22px; }
+    .kicker .tick { width: 6px; height: 6px; border-radius: 50%; background: var(--ember); }
+    h1 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(2.1rem, 5vw, 3.9rem);
+      line-height: 1.06; letter-spacing: -0.025em;
+      max-width: 20ch; margin-bottom: 28px;
+      font-optical-sizing: auto;
+    }
+    h1 .spark { color: var(--ember); }
+    .lede {
+      max-width: 60ch;
+      font-size: clamp(1.08rem, 1.7vw, 1.32rem);
+      color: var(--ink-2); line-height: 1.62;
+    }
+    .lede strong { font-weight: 600; color: var(--ink); }
+    .metabar {
+      margin-top: 34px; display: flex; flex-wrap: wrap; gap: 10px 26px;
+      align-items: center; font-size: 0.82rem; color: var(--muted);
+    }
+    .metabar .m { display: inline-flex; align-items: center; gap: 8px; }
+    .metabar .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--line-2); }
+
+    /* ===== ARTICLE ===== */
+    article { padding: 12px 0 24px; }
+    article section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    article section:last-child { border-bottom: none; }
+    h2 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+      line-height: 1.12; letter-spacing: -0.02em;
+      margin-bottom: 22px; max-width: 24ch;
+    }
+    h3 { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.01em; margin: 30px 0 10px; }
+    article p { font-size: 1.05rem; color: var(--ink-2); margin-bottom: 18px; max-width: 68ch; }
+    article a.inline { color: var(--ember-d); border-bottom: 1px solid color-mix(in srgb, var(--ember) 40%, transparent); transition: border-color 0.2s; }
+    article a.inline:hover { border-bottom-color: var(--ember); }
+    article ul { list-style: none; margin: 20px 0; max-width: 66ch; }
+    article ul li {
+      position: relative; padding-left: 24px; margin: 11px 0;
+      font-size: 1.03rem; color: var(--ink-2);
+    }
+    article ul li::before {
+      content: ''; position: absolute; left: 2px; top: 0.72em;
+      width: 6px; height: 6px; border-radius: 50%; background: var(--ember);
+    }
+    article ul li strong { color: var(--ink); font-weight: 600; }
+
+    /* ===== COMPARE ===== */
+    .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; }
+    .compare-card {
+      padding: 26px; border: 1px solid var(--line); border-radius: 6px;
+      background: var(--panel);
+    }
+    .compare-card.good { border-color: var(--line-2); box-shadow: inset 3px 0 0 var(--ember); }
+    .compare-card .tag {
+      font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 12px;
+    }
+    .compare-card.good .tag { color: var(--ember-d); }
+    .compare-card h4 { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; margin-bottom: 10px; letter-spacing: -0.01em; }
+    .compare-card p { font-size: 0.98rem; color: var(--ink-2); margin: 0; max-width: none; }
+
+    /* ===== WALKTHROUGH with phone screenshots ===== */
+    .walk { margin-top: 34px; display: flex; flex-direction: column; }
+    .wstep {
+      display: flex; align-items: center; gap: 56px;
+      padding: 48px 0; border-top: 1px solid var(--line);
+    }
+    .wstep:first-child { border-top: none; padding-top: 12px; }
+    .wstep:nth-child(even) { flex-direction: row-reverse; }
+    .wtext { flex: 1 1 320px; }
+    .wtext .num {
+      font-family: var(--serif); font-size: 0.85rem; font-weight: 500;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--ember-d);
+      margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
+    }
+    .wtext .num::after { content: ''; flex: 1; height: 1px; background: var(--line); max-width: 60px; }
+    .wtext h3 { margin-top: 0; font-size: 1.55rem; font-weight: 500; }
+    .wtext p { margin-bottom: 0; font-size: 1.03rem; }
+    .wshot { flex: 0 0 218px; display: flex; justify-content: center; }
+
+    /* graphite phone frame — cropped to the content area so the screens don't
+       leave big empty space next to the text */
+    .phone {
+      width: 100%; max-width: 218px;
+      background: var(--ink);
+      padding: 8px;
+      border-radius: 34px;
+      box-shadow: 0 30px 60px -24px rgba(22,24,26,0.55), 0 2px 0 rgba(255,255,255,0.04) inset, 0 0 0 1px rgba(22,24,26,0.5);
+    }
+    .phone .screen { border-radius: 27px; overflow: hidden; background: #F4EDE2; aspect-ratio: 100 / 150; }
+    .phone .screen img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+    .phone .screen.center img { object-position: center; }
+
+    /* ===== PRODUCT CARD ===== */
+    .product {
+      margin-top: 40px; display: grid; grid-template-columns: 64px 1fr; gap: 22px;
+      align-items: start; padding: 28px; border: 1px solid var(--line);
+      border-radius: 8px; background: var(--panel);
+    }
+    .product .icon { width: 64px; height: 64px; border-radius: 15px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 2px 6px rgba(22,24,26,0.12); }
+    .product h3 { margin: 0 0 8px; font-size: 1.4rem; }
+    .product p { font-size: 0.98rem; margin-bottom: 0; max-width: 60ch; }
+    .actions { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .actions a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      border: 1px solid var(--line-2); border-radius: 100px; padding: 8px 15px;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .actions a:hover { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+    .actions a.primary { color: var(--paper); background: var(--ember); border-color: var(--ember); }
+    .actions a.primary:hover { background: var(--ember-d); border-color: var(--ember-d); }
+
+    /* ===== CALLOUT ===== */
+    .callout {
+      margin: 30px 0 0; padding: 24px 28px;
+      background: var(--panel); border: 1px solid var(--line);
+      border-left: 3px solid var(--ember); border-radius: 4px;
+    }
+    .callout .label { display: block; margin-bottom: 8px; }
+    .callout p { margin: 0; font-size: 1.02rem; color: var(--ink-2); max-width: none; }
+
+    /* ===== FAQ ===== */
+    .faq-list { margin-top: 26px; }
+    .faq-list details {
+      border-top: 1px solid var(--line); padding: 6px 0;
+    }
+    .faq-list details[open] { padding-bottom: 8px; }
+    .faq-list summary {
+      cursor: pointer; list-style: none; padding: 18px 40px 18px 0; position: relative;
+      font-family: var(--serif); font-weight: 500; font-size: 1.2rem; color: var(--ink);
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: '+'; position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+      font-family: var(--sans); font-size: 1.4rem; color: var(--ember); transition: transform 0.25s ease;
+    }
+    .faq-list details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-list details p { margin: 0 0 14px; color: var(--ink-2); font-size: 1.02rem; max-width: 66ch; }
+
+    /* ===== END CTA ===== */
+    .endcta { padding: 72px 0 0; }
+    .endcta h2 { max-width: 20ch; }
+    .endcta .mailto {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--serif); font-size: 1.2rem; font-weight: 500;
+      border-bottom: 2px solid var(--ink); padding-bottom: 4px; margin-top: 6px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .endcta .mailto:hover { color: var(--ember); border-color: var(--ember); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      margin-top: 72px; border-top: 1px solid var(--line);
+      padding: 30px 0 48px; display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px; font-size: 0.82rem; color: var(--muted);
+    }
+    footer .f-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    footer .f-links a { transition: color 0.2s; }
+    footer .f-links a:hover { color: var(--ink); }
+
+    /* ===== REVEAL ===== */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 820px) {
+      .topnav { display: none; }
+      .wstep, .wstep:nth-child(even) { flex-direction: column; gap: 30px; align-items: flex-start; padding: 40px 0; }
+      .wshot { align-self: center; }
+    }
+    @media (max-width: 620px) {
+      .wrap { padding: 0 22px; }
+      .compare { grid-template-columns: 1fr; }
+      .product { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<header class="site">
+<div class="wrap bar">
+<a class="wordmark" href="../../../../" aria-label="GrayForge 首页">
+<svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#16181A"/>
+          <path d="M32 14 L38 32 L32 27 L26 32 Z" fill="#D9531E"/>
+          <circle cx="32" cy="42" r="6" fill="#E8743F"/>
+        </svg>
+<span class="name">GrayForge</span>
+<span class="sub">手记</span>
+</a>
+<nav class="topnav" aria-label="主导航">
+<a href="../../">博客</a>
+<a href="../../../noisyno/">NoisyNo</a>
+<a href="../../../../dashlog/">DashLog</a>
+<a href="#download">下载</a>
+</nav>
+</div>
+</header>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+<div class="wrap">
+<nav class="crumbs" aria-label="面包屑导航">
+<a href="../../../../">GrayForge</a>
+<span class="sep">/</span>
+<a href="../../">博客</a>
+<span class="sep">/</span>
+<a href="../">NoisyNo</a>
+<span class="sep">/</span>
+<span class="here">语音备忘录背景噪音</span>
+</nav>
+
+<div class="kicker" style="margin-top:26px;">
+<span class="tick"></span>
+<span class="label">NoisyNo · 使用教程</span>
+</div>
+
+<h1>语音备忘录记下了灵感，也记下了整个咖啡馆<span class="spark">。</span></h1>
+
+<p class="lede">
+咖啡机、车流、桌上的风扇——语音备忘录什么都录得进去。下面介绍如何<strong>直接在手机上去除 iPhone 或安卓语音备忘录中的背景噪音</strong>，大约只要三分钟。
+</p>
+
+<div class="metabar">
+<span class="m">发布于 2026.11.27</span>
+<span class="dot"></span>
+<span class="m">约 4 分钟读完</span>
+<span class="dot"></span>
+<span class="m">主题 · 语音备忘录降噪</span>
+<span class="dot"></span>
+<span class="m" data-lang-links style="display:inline-block;max-width:100%;line-height:1.8;">其他语言： <a href="../../../../blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="en" lang="en" style="text-decoration:underline;text-underline-offset:3px;">English</a> · <a href="../../../../ko/blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="ko" lang="ko" style="text-decoration:underline;text-underline-offset:3px;">한국어</a> · <a href="../../../../ja/blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="ja" lang="ja" style="text-decoration:underline;text-underline-offset:3px;">日本語</a> · <a href="../../../../es/blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="es" lang="es" style="text-decoration:underline;text-underline-offset:3px;">Español</a> · <a href="../../../../pt/blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="pt" lang="pt" style="text-decoration:underline;text-underline-offset:3px;">Português</a> · <a href="../../../../fr/blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="fr" lang="fr" style="text-decoration:underline;text-underline-offset:3px;">Français</a> · <a href="../../../../de/blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="de" lang="de" style="text-decoration:underline;text-underline-offset:3px;">Deutsch</a></span>
+</div>
+
+</div>
+</section>
+
+<article>
+<div class="wrap">
+
+<!-- BUILT-IN FIRST -->
+<section id="built-in" class="read reveal">
+<h2>先试试手机自带的功能</h2>
+<p>
+在 iPhone 上，“语音备忘录”App 自带降噪功能。打开那条备忘录，点按选项按钮，打开<strong>“增强录音”</strong>（Enhance Recording）。它能降低持续的背景噪音和房间回声，完全免费；如果备忘录只是有点吵，这可能就够了。部分安卓录音 App 也有类似设置，所以先看看你的录音 App 的选项。
+</p>
+<p>以下情况，自带功能不够用或用不上，这时 NoisyNo 就值得一试：</p>
+<ul>
+<li>打开“增强录音”后<strong>噪音仍然存在</strong>，而你想把原始音频和降噪后的音频放在一起对比（<a class="inline" href="#step-compare">第 4 步中的 A/B 切换</a>）。</li>
+<li><strong>你的安卓录音 App 没有降噪选项</strong>，或者备忘录是用别的 App 录的。</li>
+<li><strong>人声在视频里。</strong>NoisyNo 也能清理 MP4 和 MOV 文件的声音。导出降噪后的视频需要 Pro；没有 Pro 时，降噪后的音频会单独保存为一个文件。</li>
+<li><strong>备忘录很多。</strong>批量处理是 NoisyNo Pro 的功能。</li>
+</ul>
+</section>
+
+<!-- HOW -->
+<section id="how" class="reveal">
+<div class="read">
+<h2>用 NoisyNo 清理语音备忘录——5 个步骤</h2>
+<p>
+语音备忘录本身就是普通的音频文件——iPhone 的“语音备忘录”录制的是 <strong>M4A</strong>，大多数安卓录音 App 保存为 <strong>M4A 或 WAV</strong>。把它导入 NoisyNo 最快的方法，是<strong>直接用录音 App 里的分享按钮</strong>，所以流程是：<strong>把备忘录分享到 NoisyNo → 清理 → 对比 → 分享结果</strong>。无需转换，无需账号，无需上传。下面第 1、2 步分别介绍 iPhone 和安卓；从第 3 步开始，两者完全相同。
+</p>
+</div>
+
+<div class="walk">
+
+<div class="wstep" id="step-iphone">
+<div class="wtext">
+<div class="num">第 01 步 · iPhone</div>
+<h3>直接从“语音备忘录”共享出去</h3>
+<p>
+在<strong>“语音备忘录”</strong>App 中点按那条录音，点按<strong>更多（…）按钮</strong>，选择<strong>“共享”</strong>。在共享表单中选择 <strong>NoisyNo</strong>——备忘录会在 App 中打开，随时可以清理。如果 App 那一行里没有 NoisyNo，向右滑动并点按<strong>“更多”</strong>就能找到。不想用共享表单？也可以选择<strong>“存储到‘文件’”</strong>，然后在 NoisyNo 的“文件”标签页中选择这条备忘录——每条“语音备忘录”录音都是普通的 M4A 文件。
+</p>
+</div>
+</div>
+
+<div class="wstep" id="step-android">
+<div class="wtext">
+<div class="num">第 02 步 · 安卓</div>
+<h3>从录音 App 分享出去</h3>
+<p>
+不同厂商的录音 App 各不相同，但分享的思路都一样。在<strong>三星录音机</strong>（Samsung Voice Recorder）中，长按录音并点按<strong>“分享”</strong>；在 <strong>Google 录音机</strong>（Google Recorder）中，打开录音，点按右上角的三点菜单，选择<strong>“分享 → 音频 (.m4a)”</strong>。然后在分享面板中选择 <strong>NoisyNo</strong>。如果你的录音 App 只能导出到存储空间，就先把文件保存到那里，再从 NoisyNo 的<strong>“文件”</strong>标签页中找到它——最近的录音排在最上面。
+</p>
+</div>
+</div>
+
+<div class="wstep" id="step-clean">
+<div class="wtext">
+<div class="num">第 03 步</div>
+<h3>开始清理（100% 在手机本地）</h3>
+<p>
+点按 <strong>Clean</strong>。内置模型会降低你声音周围的持续噪音——<strong>备忘录从不上传</strong>，没有网络也能用。一条几分钟的备忘录通常几秒到一分钟就能处理完；处理期间请保持 App 打开，锁屏或切换 App 可能会让处理暂停。
+</p>
+</div>
+<div class="wshot">
+<div class="phone">
+<div class="screen center"><img src="../../../../noisyno/assets/screenshots/06_processing.png" alt="处理界面显示降噪进度为 47%，并标明 100% 在设备上运行" loading="lazy" width="1320" height="2868" /></div>
+</div>
+</div>
+</div>
+
+<div class="wstep" id="step-compare">
+<div class="wtext">
+<div class="num">第 04 步</div>
+<h3>对比原始音频和处理结果</h3>
+<p>
+<strong>Original / Cleaned</strong>（原始 / 降噪后）切换键可以在同一时刻即时切换。注意听两点：底噪是否降下来了，你的声音是否依然自然——过度降噪会让语音变薄或像在水下说话。如果降噪版本损失太多，也没有任何损失：<strong>你的原始备忘录永远不会被覆盖</strong>。
+</p>
+</div>
+<div class="wshot">
+<div class="phone">
+<div class="screen"><img src="../../../../noisyno/assets/screenshots/04_compare.png" alt="“Coffee shop interview.m4a”的详情界面，可通过切换键对比 Original 和 Cleaned，并显示波形、播放按钮和播放速度" loading="lazy" width="1320" height="2868" /></div>
+</div>
+</div>
+</div>
+
+<div class="wstep" id="step-share">
+<div class="wtext">
+<div class="num">第 05 步</div>
+<h3>保存或分享干净的备忘录</h3>
+<p>
+把结果分享到这条备忘录原本要去的地方——笔记 App、聊天对话、语音转写 App、编辑器。因为没有账号，也没有存放在别人服务器上的资料库，<strong>降噪后的文件只存在于你放它的地方</strong>。
+</p>
+</div>
+<div class="wshot">
+<div class="phone">
+<div class="screen"><img src="../../../../noisyno/assets/screenshots/07_detail.png" alt="降噪完成的录音结果界面，可以保存或分享到其他 App" loading="lazy" width="1320" height="2868" /></div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="read">
+<div class="product" id="download">
+<div class="icon"><img src="../../../../noisyno/assets/app-icon-180.png" alt="NoisyNo App 图标" loading="lazy" width="180" height="180" /></div>
+<div>
+<h3>NoisyNo — Voice Noise Remover</h3>
+<p>
+一款离线人声降噪 App，可以降低录音和视频音频中的风扇声、嘶嘶声、风噪、空调声和室内底噪。处理在手机内部完成，不上传文件。
+</p>
+<div class="actions">
+<a class="primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web&amp;mt=8" rel="noopener">App Store</a>
+<a href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dblog%26utm_campaign%3Dblog_voice_memo" rel="noopener">Google Play</a>
+<a href="../../../noisyno/">产品页</a>
+<a href="../../../../noisyno/privacy_policy.html">隐私政策</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHY MEMOS ARE NOISY -->
+<section id="why" class="read reveal">
+<h2>为什么语音备忘录总是比想象中更吵</h2>
+<p>
+在你拥有的所有音频里，语音备忘录的录制环境是最差的。你之所以掏出手机录音，<em>正是因为</em>你身处一个不方便的地方——咖啡馆、车里、散步途中、阶梯教室的最后一排。有三件事一起跟你作对：
+</p>
+<ul>
+<li><strong>手机麦克风是全指向的。</strong>它的设计是从任何角度收录人声，这也意味着它会从各个角度把整个房间的声音都收进来。</li>
+<li><strong>自动增益会放大安静的部分。</strong>你在句子之间停顿时，手机会调高增益——咖啡机的声音也跟着变大了。</li>
+<li><strong>你控制不了环境。</strong>录音棚的录音可以重录；而你用备忘录捕捉到的那一刻，通常无法重来。</li>
+</ul>
+<p>
+正是最后这一点，让“事后清理”成为处理备忘录的正确方式：录音无法替代，所以要修好你手上的这个文件。
+</p>
+
+<div class="compare" aria-label="重录与事后清理对比">
+<div class="compare-card">
+<div class="tag">方案 A</div>
+<h4>重新录一遍</h4>
+<p>只适用于有稿子的录音。采访中的回答、你随口哼出的旋律、会议上做出的决定——这些都只发生一次。一个瞬间没有第二条。</p>
+</div>
+<div class="compare-card good">
+<div class="tag">方案 B</div>
+<h4>清理你手上的文件</h4>
+<p>本地降噪会降低人声下方那层持续的背景噪音。备忘录留在你的手机上，原始文件原封不动地保存在降噪结果旁边。</p>
+</div>
+</div>
+</section>
+
+<!-- WHAT IT HELPS -->
+<section id="what" class="read reveal">
+<h2>干净的备忘录实际能带来什么</h2>
+<p>
+去除噪音不只是为了听着舒服。人们愿意花时间清理的备忘录，往往还要拿去别处用：
+</p>
+<ul>
+<li><strong>更好的转写结果。</strong>持续的背景噪音是转写出错的常见原因。先清理备忘录再交给语音转文字 App，得到的文字通常明显更干净——听错的词更少，漏掉的句子更少。</li>
+<li><strong>可用的采访引语。</strong>一段每个回答下面都垫着咖啡机嘶嘶声的咖啡馆采访，会变成可以直接引用的音频，而不是一听再听的苦差事。</li>
+<li><strong>真正会回听的学习资料。</strong>在最后一排录下的讲座，去掉空调的低鸣后，用 1.5 倍速复习要轻松得多。</li>
+<li><strong>值得分享的语音消息。</strong>一条你本想道歉的备忘录（“不好意思有点吵——”）变成可以直接发出去的消息。</li>
+</ul>
+<p>
+现实的局限：降噪对<strong>持续的那层噪音</strong>最有效——嗡嗡声、嘶嘶声、低鸣、人声嘈杂、车流声。正好压在某个字上的摔门声或狗叫声是另一回事；深埋在噪音之下的人声能得到改善，但没法完全救回来。第 4 步的 A/B 切换，就是让你如实判断每一条备忘录效果的方法。
+</p>
+</section>
+
+<!-- LIMITS -->
+<section id="limits" class="read reveal">
+<h2>值得了解：备忘录可能很私密——处理在本地完成</h2>
+<p>
+语音备忘录是手机里最私人的文件之一：尚未成形的想法、私人提醒，还有别人出于信任让你录下的声音。所以清理<strong>在哪里</strong>进行很重要。根据 NoisyNo 的<a class="inline" href="../../../../noisyno/privacy_policy.html">隐私政策</a>，你选择的文件和降噪后的结果都在设备上处理，不会上传到 GrayForge 服务器。为了保证 App 质量，可能会运行有限的诊断功能（Firebase Crashlytics、Analytics、Remote Config），这些数据不包含文件名或音频内容。
+</p>
+<div class="callout">
+<span class="label">简而言之</span>
+<p>
+备忘录本身从不会为了处理而离开你的手机。请把<strong>文件处理</strong>（本地）和<strong>诊断数据</strong>（有限，不含音频内容）看作两个不同的范围。
+</p>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="read reveal">
+<h2>常见问题</h2>
+<div class="faq-list">
+<details>
+<summary>如何去除 iPhone 语音备忘录中的背景噪音？</summary>
+<p>在“语音备忘录”App 中打开录音，点按更多（…）按钮，选择“共享”，再选择 NoisyNo。然后点按 Clean 并对比结果——整个流程在手机上大约三分钟完成，无需上传，无需账号。</p>
+</details>
+<details>
+<summary>怎样把录音从“语音备忘录”App 里导出来？</summary>
+<p>使用共享表单：打开备忘录，点按更多（…）按钮，再点按“共享”。在这里你可以直接发送到 NoisyNo，也可以选择“存储到‘文件’”，把 M4A 文件放到任何 App 都能访问的位置。</p>
+</details>
+<details>
+<summary>不上传到网站，也能清理语音备忘录吗？</summary>
+<p>可以。NoisyNo 在手机内部处理文件。备忘录不会上传到 GrayForge 服务器；当录音里有会议、采访或私人笔记时，这一点很重要。</p>
+</details>
+<details>
+<summary>清理语音备忘录会覆盖原始录音吗？</summary>
+<p>不会。NoisyNo 会把降噪后的音频生成一个新的结果，供你保存或分享。原始备忘录保持不变，你随时可以回到原版。</p>
+</details>
+<details>
+<summary>支持安卓录音 App 的文件吗？</summary>
+<p>支持。安卓录音 App 通常保存为 M4A 或 WAV 文件，两种都能直接在 NoisyNo 中使用——MP3、AAC 和 CAF 也可以。无需转换。</p>
+</details>
+<details>
+<summary>降噪能让语音备忘录更容易转写吗？</summary>
+<p>通常可以。持续的背景噪音是转写出错的常见原因，所以在把备忘录交给语音转文字 App 之前先降噪，得到的文字往往更干净。</p>
+</details>
+<details>
+<summary>NoisyNo 免费吗？</summary>
+<p>NoisyNo 可免费下载，无需账号、没有广告、不上传文件，降噪功能免费使用。响度标准化是 Pro 功能，通过一次性内购解锁。没有订阅。</p>
+</details>
+</div>
+</section>
+
+<!-- END CTA -->
+<section class="endcta read">
+<span class="label">下一步</span>
+<h2 style="margin-top:16px;">救回那条你差点删掉的备忘录。</h2>
+<p>安装后，清理第一条语音备忘录大约只需三分钟。有任何不清楚的地方，都由开发者本人直接解答。</p>
+<a class="mailto" href="mailto:grayforge.dev@gmail.com?subject=NoisyNo%20question">grayforge.dev@gmail.com <span aria-hidden="true">↗</span></a>
+</section>
+
+</div>
+</article>
+</main>
+
+<footer class="wrap">
+<span>© 2026 GrayForge · 最后更新 2026.11.27</span>
+<div class="f-links">
+<a href="../../">博客</a>
+<a href="../../../noisyno/">NoisyNo</a>
+<a href="../../../../dashlog/">DashLog</a>
+<a href="../../../../noisyno/privacy_policy.html">隐私</a>
+<a href="mailto:grayforge.dev@gmail.com">联系我们</a>
+</div>
+</footer>
+
+<script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 60);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>

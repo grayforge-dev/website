@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>GrayForge 가이드 — 노이즈 제거, 보컬 제거, 운행 기록</title>
+  <meta name="description" content="NoisyNo, VocalOut, DashLog 가이드로 녹음 잡음 제거, 보컬 제거와 MR 만들기, 자동 주행 기록 방법을 알아보세요. 업로드 없이, 계정 없이 쓰는 앱들입니다." />
+  <meta name="keywords" content="GrayForge, 저널, 블로그, NoisyNo, VocalOut, DashLog, 노이즈 제거 앱, 녹음 잡음 제거, 보컬 제거 앱, MR 만들기, 운행 기록 앱, 주행 기록, 오프라인 앱, 계정 없는 앱, 온디바이스 처리, 앱 사용 가이드" />
+  <meta name="author" content="GrayForge" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ECEDEA" />
+  <link rel="canonical" href="https://grayforge.app/ko/blog/" />
+  <link rel="alternate" hreflang="en" href="https://grayforge.app/blog/" />
+  <link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/" />
+  <link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/" />
+  <link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/" />
+  <link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/" />
+  <link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/" />
+  <link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/" />
+  <link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/" />
+  <link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/" />
+
+  <!-- Inline SVG favicon: graphite square with an ember spark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;rect width='64' height='64' rx='12' fill='%2316181A'/&gt;&lt;path d='M32 14 L38 32 L32 27 L26 32 Z' fill='%23D9531E'/&gt;&lt;circle cx='32' cy='42' r='6' fill='%23E8743F'/&gt;&lt;/svg&gt;" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GrayForge" />
+  <meta property="og:url" content="https://grayforge.app/ko/blog/" />
+  <meta property="og:title" content="GrayForge 가이드 — 노이즈 제거, 보컬 제거, 운행 기록" />
+  <meta property="og:description" content="NoisyNo, VocalOut, DashLog 가이드로 녹음 잡음 제거, 보컬 제거와 MR 만들기, 자동 주행 기록 방법을 알아보세요." />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:image" content="https://grayforge.app/assets/og-grayforge.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="GrayForge — 독립 소프트웨어 스튜디오. DashLog, NoisyNo, VocalOut, ZapBlur를 만듭니다." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://grayforge.app/assets/og-grayforge.png" />
+  <meta name="twitter:image:alt" content="GrayForge — 독립 소프트웨어 스튜디오. DashLog, NoisyNo, VocalOut, ZapBlur를 만듭니다." />
+  <meta name="twitter:title" content="GrayForge 가이드 — 노이즈 제거, 보컬 제거, 운행 기록" />
+  <meta name="twitter:description" content="NoisyNo, VocalOut, DashLog 가이드로 녹음 잡음 제거, 보컬 제거와 MR 만들기, 자동 주행 기록 방법을 알아보세요." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "@id": "https://grayforge.app/ko/blog/#blog",
+        "name": "GrayForge 저널",
+        "description": "NoisyNo, DashLog 등 개인정보를 우선하고 오프라인에서 먼저 작동하는 도구들의 사용 가이드와 제품 노트.",
+        "url": "https://grayforge.app/ko/blog/",
+        "inLanguage": "ko",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://grayforge.app/#organization",
+          "name": "GrayForge",
+          "url": "https://grayforge.app/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://grayforge.app/assets/grayforge-logo-512.png",
+            "width": 512,
+            "height": 512
+          }
+        },
+        "blogPost": [
+          {"@id": "https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/#article"},
+          {"@id": "https://grayforge.app/ko/blog/noisyno/offline-noise-remover-apps-compared/#article"},
+          {"@id": "https://grayforge.app/ko/blog/vocalout/offline-vocal-remover-apps-compared/#article"},
+          {"@id": "https://grayforge.app/ko/blog/noisyno/voice-memo-enhance-vs-noisyno/#article"},
+          {"@id": "https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/#article"},
+          {"@id": "https://grayforge.app/ko/blog/vocalout/remove-vocals-from-a-song/#article"},
+          {"@id": "https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/#article"},
+          {"@id": "https://grayforge.app/ko/blog/noisyno/clean-up-meeting-recording-audio/#article"},
+          {"@id": "https://grayforge.app/ko/blog/noisyno/remove-audio-noise-without-upload/#article"}
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://grayforge.app/ko/blog/#webpage",
+        "url": "https://grayforge.app/ko/blog/",
+        "name": "GrayForge 가이드 — 노이즈 제거, 보컬 제거, 운행 기록",
+        "description": "NoisyNo, VocalOut, DashLog 가이드로 녹음 잡음 제거, 보컬 제거와 MR 만들기, 자동 주행 기록 방법을 알아보세요.",
+        "inLanguage": "ko",
+        "isPartOf": {
+          "@id": "https://grayforge.app/#website"
+        },
+        "about": [
+          {"@id": "https://grayforge.app/noisyno/#app"},
+          {"@id": "https://grayforge.app/vocalout/#app"},
+          {"@id": "https://grayforge.app/dashlog/#app"}
+        ],
+        "dateModified": "2026-11-27"
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://grayforge.app/ko/blog/#posts",
+        "name": "GrayForge 저널 글",
+        "numberOfItems": 9,
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "iPhone·Android 주행 기록·운행 기록 앱 비교", "url": "https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/"},
+          {"@type": "ListItem", "position": 2, "name": "iPhone·Android 오프라인 노이즈 제거 앱 비교", "url": "https://grayforge.app/ko/blog/noisyno/offline-noise-remover-apps-compared/"},
+          {"@type": "ListItem", "position": 3, "name": "iPhone·Android 오프라인 보컬 제거 앱 비교", "url": "https://grayforge.app/ko/blog/vocalout/offline-vocal-remover-apps-compared/"},
+          {"@type": "ListItem", "position": 4, "name": "음성 메모 녹음 향상 vs NoisyNo vs 브라우저 노이즈 제거 도구", "url": "https://grayforge.app/ko/blog/noisyno/voice-memo-enhance-vs-noisyno/"},
+          {"@type": "ListItem", "position": 5, "name": "폰으로 모든 주행을 자동 기록하는 방법", "url": "https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/"},
+          {"@type": "ListItem", "position": 6, "name": "스마트폰으로 노래 보컬 제거하는 방법", "url": "https://grayforge.app/ko/blog/vocalout/remove-vocals-from-a-song/"},
+          {"@type": "ListItem", "position": 7, "name": "음성 메모 배경 소음 제거하는 방법 (iPhone·Android)", "url": "https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/"},
+          {"@type": "ListItem", "position": 8, "name": "회의 녹음의 배경 소음 제거하는 방법", "url": "https://grayforge.app/ko/blog/noisyno/clean-up-meeting-recording-audio/"},
+          {"@type": "ListItem", "position": 9, "name": "녹음 파일을 업로드하지 않고 잡음 제거하는 방법", "url": "https://grayforge.app/ko/blog/noisyno/remove-audio-noise-without-upload/"}
+        ]
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://grayforge.app/ko/blog/#breadcrumbs",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "GrayForge", "item": "https://grayforge.app/"},
+      {"@type": "ListItem", "position": 2, "name": "블로그", "item": "https://grayforge.app/ko/blog/"}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper:   #ECEDEA;
+      --paper-2: #E4E5E1;
+      --panel:   #F4F4F2;
+      --ink:     #16181A;
+      --ink-2:   #393D40;
+      --muted:   #6C7176;
+      --line:    #CDCFCA;
+      --line-2:  #BCBEB8;
+      --ember:   #D9531E;
+      --ember-d: #B5400F;
+
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+      --wrap:  1120px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-wrap: break-word;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ::selection { background: var(--ink); color: var(--paper); }
+
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 32px; }
+
+    .label {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ===== TOP BAR ===== */
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+    .wordmark { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+    .wordmark .mark { width: 24px; height: 24px; }
+    .wordmark .name { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+    .wordmark .sub { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; font-style: italic; color: var(--muted); }
+    .topnav { display: flex; gap: 30px; }
+    .topnav a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      letter-spacing: 0.02em; position: relative; padding: 4px 0;
+    }
+    .topnav a::after {
+      content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px;
+      background: var(--ink); transition: width 0.25s ease;
+    }
+    .topnav a:hover::after { width: 100%; }
+
+    /* ===== MASTHEAD ===== */
+    .masthead { padding: 92px 0 78px; border-bottom: 1px solid var(--line); }
+    .masthead .meta-row { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; margin-bottom: 38px; }
+    .masthead .meta-row .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--line-2); }
+    .masthead h1 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(2.4rem, 6vw, 4.8rem);
+      line-height: 1.04; letter-spacing: -0.025em;
+      max-width: 15ch; margin-bottom: 30px; font-optical-sizing: auto;
+    }
+    .masthead h1 em { font-style: italic; }
+    .masthead h1 .spark { color: var(--ember); font-style: normal; }
+    .lede { max-width: 58ch; font-size: clamp(1.05rem, 1.7vw, 1.28rem); color: var(--ink-2); line-height: 1.6; }
+    .lede strong { font-weight: 600; color: var(--ink); }
+
+    /* ===== SECTION SCAFFOLD ===== */
+    .row {
+      display: grid; grid-template-columns: 220px 1fr; gap: 48px;
+      padding: 80px 0; border-bottom: 1px solid var(--line);
+    }
+    .row > .aside .label { display: block; margin-bottom: 10px; }
+    .row > .aside .aside-title { font-family: var(--serif); font-size: 1.5rem; font-weight: 500; letter-spacing: -0.01em; line-height: 1.15; }
+    .row > .aside .aside-note { margin-top: 14px; font-size: 0.9rem; color: var(--muted); max-width: 22ch; }
+
+    /* ===== POST LEDGER ===== */
+    .ledger { display: flex; flex-direction: column; }
+    .post {
+      display: grid; grid-template-columns: 40px 1fr auto; gap: 26px; align-items: baseline;
+      padding: 30px 12px; margin: 0 -12px; border-top: 1px solid var(--line);
+      transition: background 0.25s ease;
+    }
+    .ledger .post:first-child { border-top: none; }
+    .post:hover { background: var(--panel); }
+    .post .idx { font-family: var(--serif); font-size: 0.95rem; color: var(--muted); }
+    .post .body .cat-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-bottom: 10px; }
+    .post .body .cat { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ember-d); font-weight: 600; }
+    .post .body .date { font-size: 0.72rem; letter-spacing: 0.06em; color: var(--muted); }
+    .post .body h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.5rem, 2.6vw, 2rem); letter-spacing: -0.02em; line-height: 1.14; transition: color 0.2s; }
+    .post:hover .body h2 { color: var(--ember); }
+    .post .body p { font-size: 0.98rem; color: var(--ink-2); margin-top: 10px; max-width: 62ch; }
+    .post .body .tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 7px; }
+    .post .body .tags span { font-size: 0.72rem; font-weight: 500; color: var(--ink-2); border: 1px solid var(--line-2); border-radius: 100px; padding: 3px 11px; }
+    .post .go { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; white-space: nowrap; align-self: center; }
+    .post .go .arrow { color: var(--ember); display: inline-block; transition: transform 0.25s ease; }
+    .post:hover .go .arrow { transform: translate(3px, -3px); }
+
+    /* ===== PRODUCTS ===== */
+    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .pcard { padding: 28px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); display: flex; flex-direction: column; }
+    .pcard .top { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+    .pcard .top .icon { width: 44px; height: 44px; border-radius: 11px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 2px 6px rgba(22,24,26,0.12); }
+    .pcard h3 { font-family: var(--serif); font-weight: 500; font-size: 1.5rem; letter-spacing: -0.01em; }
+    .pcard p { font-size: 0.96rem; color: var(--ink-2); flex: 1; }
+    .pcard .plinks { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .pcard .plinks a {
+      font-size: 0.8rem; font-weight: 500; color: var(--ink-2);
+      border: 1px solid var(--line-2); border-radius: 100px; padding: 7px 14px;
+      transition: color 0.2s, background 0.2s, border-color 0.2s;
+    }
+    .pcard .plinks a:hover { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+    .pcard .soon { font-size: 0.78rem; color: var(--muted); font-style: italic; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      border-top: 1px solid var(--line); padding: 30px 0 48px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px; font-size: 0.82rem; color: var(--muted);
+    }
+    footer .f-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    footer .f-links a { transition: color 0.2s; }
+    footer .f-links a:hover { color: var(--ink); }
+
+    /* ===== REVEAL ===== */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 820px) {
+      .topnav { display: none; }
+      .row { grid-template-columns: 1fr; gap: 28px; padding: 56px 0; }
+      .masthead { padding: 64px 0 54px; }
+      .cards { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      .wrap { padding: 0 22px; }
+      .post { grid-template-columns: 1fr; gap: 6px; }
+      .post .idx { display: none; }
+      .post .go { align-self: start; margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="site">
+    <div class="wrap bar">
+      <a class="wordmark" href="../../" aria-label="GrayForge 홈">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#16181A"/>
+          <path d="M32 14 L38 32 L32 27 L26 32 Z" fill="#D9531E"/>
+          <circle cx="32" cy="42" r="6" fill="#E8743F"/>
+        </svg>
+        <span class="name">GrayForge</span>
+        <span class="sub">저널</span>
+      </a>
+      <nav class="topnav" aria-label="주 메뉴">
+        <a href="../../#work">제품</a>
+        <a href="../noisyno/">NoisyNo</a>
+        <a href="../../dashlog/">DashLog</a>
+        <a href="../../#contact">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== MASTHEAD ===== -->
+    <section class="masthead">
+      <div class="wrap">
+        <div class="meta-row">
+          <span class="label">GrayForge 저널</span>
+          <span class="dot"></span>
+          <span class="label">현장 노트</span>
+          <span class="dot"></span>
+          <span class="label">개인정보 우선</span>
+        </div>
+
+        <h1>작고 날카로운 도구를 위한 현장 가이드<span class="spark">.</span></h1>
+
+        <p class="lede">
+          NoisyNo와 DashLog에 관한 노트입니다. <strong>실제로 어떻게 쓰는지</strong>, 그리고 솔직한 한계까지 적었습니다.
+          무엇이 오프라인으로 작동하는지, 무엇이 계정 없이 되는지, 데이터가 어디로 가는지.
+          광고 문구가 아니라, 사용법과 그 한계입니다.
+        </p>
+        <p class="lang-links" data-lang-links style="margin-top:16px;font-size:0.9rem;color:var(--muted);">다른 언어: <a href="../../blog/" hreflang="en" lang="en" style="text-decoration:underline;text-underline-offset:3px;">English</a> · <a href="../../ja/blog/" hreflang="ja" lang="ja" style="text-decoration:underline;text-underline-offset:3px;">日本語</a> · <a href="../../zh/blog/" hreflang="zh" lang="zh" style="text-decoration:underline;text-underline-offset:3px;">中文</a> · <a href="../../es/blog/" hreflang="es" lang="es" style="text-decoration:underline;text-underline-offset:3px;">Español</a> · <a href="../../pt/blog/" hreflang="pt" lang="pt" style="text-decoration:underline;text-underline-offset:3px;">Português</a> · <a href="../../fr/blog/" hreflang="fr" lang="fr" style="text-decoration:underline;text-underline-offset:3px;">Français</a> · <a href="../../de/blog/" hreflang="de" lang="de" style="text-decoration:underline;text-underline-offset:3px;">Deutsch</a></p>
+      </div>
+    </section>
+
+    <!-- ===== LATEST ===== -->
+    <section class="wrap">
+      <div class="row">
+        <div class="aside">
+          <span class="label">최신 글</span>
+          <div class="aside-title">최신순</div>
+          <p class="aside-note">가장 최근 가이드부터 보여 드립니다.</p>
+        </div>
+
+        <div class="ledger">
+          <a class="post reveal" href="dashlog/drive-tracker-apps-compared/">
+            <div class="idx">01</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">DashLog 가이드</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>iPhone·Android 주행 기록·운행 기록 앱 비교</h2>
+              <p>온디바이스 GPS 기록 앱, Google 지도 타임라인과 Apple 지도 방문한 장소, 소셜 주행 기록 앱, 주행 거리 기록 앱과 DashLog를 나란히 비교했습니다. 주행 기록 보관 위치, 계정, 가격, 자동 기록, 내보내기를 모든 칸의 출처와 함께 정리했습니다.</p>
+              <div class="tags"><span>비교</span><span>계정 없음</span><span>온디바이스</span></div>
+            </div>
+            <div class="go">읽기 <span class="arrow">↗</span></div>
+          </a>
+          <a class="post reveal" href="noisyno/offline-noise-remover-apps-compared/">
+            <div class="idx">02</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">NoisyNo 가이드</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>iPhone·Android 오프라인 노이즈 제거 앱 비교</h2>
+              <p>폰에서 녹음을 정리하는 다른 앱 6종, 클라우드 서비스 2종과 NoisyNo를 나란히 비교했습니다. 업로드, 계정, 가격, 내보내기 제한, 영상 지원, 오프라인 사용을 모든 칸의 출처와 함께 정리하고, NoisyNo Pro로 무엇이 추가되는지도 설명합니다.</p>
+              <div class="tags"><span>비교</span><span>오프라인</span><span>업로드 없음</span></div>
+            </div>
+            <div class="go">읽기 <span class="arrow">↗</span></div>
+          </a>
+          <a class="post reveal" href="vocalout/offline-vocal-remover-apps-compared/">
+            <div class="idx">03</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">VocalOut 가이드</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>iPhone·Android 오프라인 보컬 제거 앱 비교</h2>
+              <p>폰에서 곡을 분리하는 다른 앱 5종, 클라우드 서비스 2종과 VocalOut을 나란히 비교했습니다. 업로드, 계정, 가격, 내보내기 제한, 오프라인 사용을 모든 칸의 출처와 함께 정리하고, VocalOut Pro로 무엇이 추가되는지도 설명합니다.</p>
+              <div class="tags"><span>비교</span><span>오프라인</span><span>업로드 없음</span></div>
+            </div>
+            <div class="go">읽기 <span class="arrow">↗</span></div>
+          </a>
+          <a class="post reveal" href="noisyno/voice-memo-enhance-vs-noisyno/">
+            <div class="idx">04</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">NoisyNo 가이드</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>음성 메모 녹음 향상 vs NoisyNo vs 브라우저 노이즈 제거 도구</h2>
+              <p>iPhone 기본 기능인 녹음 향상, NoisyNo, 업로드 방식의 웹 도구 두 가지를 나란히 비교했습니다. 각각 오디오를 어떻게 다루는지, 업로드되는지, 계정, 가격, 제한, 그리고 NoisyNo가 부족한 점까지 정리했습니다.</p>
+              <div class="tags"><span>비교</span><span>음성 메모</span><span>업로드 없음</span></div>
+            </div>
+            <div class="go">읽기 <span class="arrow">↗</span></div>
+          </a>
+          <a class="post reveal" href="dashlog/log-every-drive-automatically/">
+            <div class="idx">05</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">DashLog 가이드</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>폰으로 모든 주행을 자동 기록하는 방법</h2>
+              <p>한 번만 설정하면 DashLog가 CarPlay나 차량 블루투스로 모든 주행의 경로, 거리, 속도를 저절로 기록합니다. 4단계 사용법, 기기 안에 자동 기록하는 것이 왜 중요한지, 다시 보기와 GPX/CSV 내보내기를 정리했습니다.</p>
+              <div class="tags"><span>주행 기록</span><span>계정 없음</span><span>온디바이스</span></div>
+            </div>
+            <div class="go">읽기 <span class="arrow">↗</span></div>
+          </a>
+          <a class="post reveal" href="vocalout/remove-vocals-from-a-song/">
+            <div class="idx">06</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">VocalOut 가이드</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>스마트폰으로 노래 보컬 제거하는 방법</h2>
+              <p>이미 가지고 있는 곡을 업로드나 계정 없이 폰에서 깔끔한 반주 MR로 바꿉니다. 4단계 사용법, 기기 안에서 처리하는 것이 왜 중요한지, 깔끔한 반주를 어디에 쓸 수 있는지 정리했습니다.</p>
+              <div class="tags"><span>보컬 제거</span><span>반주 MR</span><span>온디바이스</span></div>
+            </div>
+            <div class="go">읽기 <span class="arrow">↗</span></div>
+          </a>
+          <a class="post reveal" href="noisyno/remove-background-noise-from-voice-memo/">
+            <div class="idx">07</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">NoisyNo 가이드</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>음성 메모 배경 소음 제거하는 방법 (iPhone·Android)</h2>
+              <p>음성 메모는 카페, 차 안, 강의실처럼 음향이 가장 나쁜 곳에서 녹음됩니다. M4A나 WAV 메모에서 꾸준한 소음을 폰 안에서 걷어내는 방법, 메모가 생각보다 시끄럽게 녹음되는 이유, 깔끔한 메모가 받아쓰기에서 어떤 도움이 되는지 정리했습니다.</p>
+              <div class="tags"><span>음성 메모</span><span>iPhone·Android</span><span>온디바이스</span></div>
+            </div>
+            <div class="go">읽기 <span class="arrow">↗</span></div>
+          </a>
+          <a class="post reveal" href="noisyno/clean-up-meeting-recording-audio/">
+            <div class="idx">08</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">NoisyNo 가이드</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>회의 녹음의 배경 소음 제거하는 방법</h2>
+              <p>기밀 오디오를 웹사이트에 올리는 대신 Zoom, Teams, 대면 회의 녹음을 폰에서 정리하세요. 5단계 사용법, 지울 수 있는 소음과 지울 수 없는 소음, 깔끔한 오디오가 받아쓰기를 어떻게 개선하는지 설명합니다.</p>
+              <div class="tags"><span>회의 오디오</span><span>기밀</span><span>온디바이스</span></div>
+            </div>
+            <div class="go">읽기 <span class="arrow">↗</span></div>
+          </a>
+          <a class="post reveal" href="noisyno/remove-audio-noise-without-upload/">
+            <div class="idx">09</div>
+            <div class="body">
+              <div class="cat-line">
+                <span class="cat">NoisyNo 가이드</span>
+                <span class="date">2026.11.27</span>
+              </div>
+              <h2>녹음 파일을 업로드하지 않고 잡음 제거하는 방법</h2>
+              <p>회의, 강의, 인터뷰, 영상 오디오를 클라우드 편집기 대신 폰 안에서 정리하세요. 실제 화면으로 보는 5단계 사용법과, NoisyNo의 처리와 개인정보 보호가 정확히 어디서 시작되고 어디서 끝나는지 정리했습니다.</p>
+              <div class="tags"><span>오프라인 노이즈 제거</span><span>계정 없음</span><span>파일 업로드 없음</span></div>
+            </div>
+            <div class="go">읽기 <span class="arrow">↗</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BY PRODUCT ===== -->
+    <section class="wrap">
+      <div class="row">
+        <div class="aside">
+          <span class="label">제품별</span>
+          <div class="aside-title">앱별 가이드</div>
+          <p class="aside-note">각 앱이 어떻게 작동하고 데이터가 어디로 가는지.</p>
+        </div>
+
+        <div class="cards">
+          <div class="pcard reveal">
+            <div class="top">
+              <div class="icon"><img src="../../vocalout/assets/app-icon-180.png" alt="VocalOut 앱 아이콘" loading="lazy" width="180" height="180" /></div>
+              <h3>VocalOut</h3>
+            </div>
+            <p>온디바이스 보컬 제거. 어떤 노래든 업로드나 계정 없이 깔끔한 반주 MR로 만듭니다.</p>
+            <div class="plinks">
+              <a href="vocalout/">전체 가이드</a>
+              <a href="../../vocalout/">제품 보기</a>
+            </div>
+          </div>
+
+          <div class="pcard reveal">
+            <div class="top">
+              <div class="icon"><img src="../../noisyno/assets/app-icon-180.png" alt="NoisyNo 앱 아이콘" loading="lazy" width="180" height="180" /></div>
+              <h3>NoisyNo</h3>
+            </div>
+            <p>음성 노이즈 제거, 온디바이스 처리, 파일 업로드 없이 오디오 정리하기.</p>
+            <div class="plinks">
+              <a href="noisyno/">전체 가이드</a>
+              <a href="../noisyno/">제품 보기</a>
+            </div>
+          </div>
+
+          <div class="pcard reveal">
+            <div class="top">
+              <div class="icon"><img src="../../dashlog/assets/icons/favicon-180.png" alt="DashLog 앱 아이콘" loading="lazy" width="180" height="180" /></div>
+              <h3>DashLog</h3>
+            </div>
+            <p>GPS 주행 기록, 계정 없는 운행 기록, 자동 기록, 기기 안에만 저장.</p>
+            <div class="plinks">
+              <a href="dashlog/">전체 가이드</a>
+              <a href="../../dashlog/">제품 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wrap">
+    <span>© 2026 GrayForge — 독립 소프트웨어 스튜디오.</span>
+    <div class="f-links">
+      <a href="../../">홈</a>
+      <a href="../noisyno/">NoisyNo</a>
+      <a href="../../dashlog/">DashLog</a>
+      <a href="mailto:grayforge.dev@gmail.com">문의</a>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 70);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>

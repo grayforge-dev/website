@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>운행 기록 앱 비교: iPhone·Android 주행 기록 | GrayForge</title>
+  <meta name="description" content="DashLog vs myTracks, Google 지도 타임라인, Enroad, Wheelz, MileIQ 등 비교. 주행 기록 저장 위치, 계정, 가격, 자동 기록, 내보내기를 개발사 자료로 정리했습니다." />
+  <meta name="keywords" content="운행 기록 앱, 주행 기록 앱, 자동 주행 기록, 주행 기록, 계정 없는 운행 기록, 구글 지도 타임라인 대안, Enroad 대안, GPS 운행 기록부, GPX 주행 기록 내보내기, 차량 운행일지 앱, DashLog" />
+  <meta name="author" content="GrayForge" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ECEDEA" />
+  <link rel="canonical" href="https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/" />
+  <link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+  <link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/" />
+  <link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/drive-tracker-apps-compared/" />
+  <link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/drive-tracker-apps-compared/" />
+  <link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/drive-tracker-apps-compared/" />
+  <link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/drive-tracker-apps-compared/" />
+  <link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/drive-tracker-apps-compared/" />
+  <link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/drive-tracker-apps-compared/" />
+  <link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+
+  <!-- Inline SVG favicon: graphite square with an ember spark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;rect width='64' height='64' rx='12' fill='%2316181A'/&gt;&lt;path d='M32 14 L38 32 L32 27 L26 32 Z' fill='%23D9531E'/&gt;&lt;circle cx='32' cy='42' r='6' fill='%23E8743F'/&gt;&lt;/svg&gt;" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="GrayForge" />
+  <meta property="og:url" content="https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/" />
+  <meta property="og:title" content="iPhone·Android 주행 기록·운행 기록 앱 비교" />
+  <meta property="og:description" content="주행 기록을 폰에 두는 앱, 계정이 필요한 앱, 저절로 기록하는 앱은 어느 것일까요? 주행 기록 앱 10종을 각 개발사의 스토어 정보로 나란히 비교했습니다." />
+  <meta property="og:image" content="https://grayforge.app/dashlog/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="article:published_time" content="2026-11-27" />
+  <meta property="article:modified_time" content="2026-11-27" />
+  <meta property="article:author" content="GrayForge" />
+  <meta property="article:section" content="DashLog 가이드" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="iPhone·Android 주행 기록·운행 기록 앱 비교" />
+  <meta name="twitter:description" content="주행 기록을 폰에 두는 앱, 계정이 필요한 앱, 저절로 기록하는 앱은 어느 것일까요? 주행 기록 앱 10종을 각 개발사의 스토어 정보로 나란히 비교했습니다." />
+  <meta name="twitter:image" content="https://grayforge.app/dashlog/og-image.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/#article",
+        "headline": "iPhone·Android 주행 기록·운행 기록 앱 비교",
+        "alternativeHeadline": "DashLog, myTracks, Driving Tracker, Geo Tracker, Google 지도 타임라인, Apple 지도 방문한 장소, Enroad, Wheelz, MileIQ, Driversnote 한눈에 비교",
+        "description": "DashLog를 다른 주행 기록·운행 기록 앱, 그리고 Google 지도와 Apple 지도에 내장된 위치 기록과 비교했습니다. 주행 기록이 어디에 보관되는지, 계정이 필요한지, 가격, 플랫폼, 자동 기록, 내보내기를 각 개발사의 스토어 정보, 웹사이트, 도움말 페이지에서 그대로 옮겼습니다.",
+        "inLanguage": "ko",
+        "datePublished": "2026-11-27",
+        "dateModified": "2026-11-27",
+        "wordCount": 2900,
+        "articleSection": "DashLog 가이드",
+        "keywords": "운행 기록 앱, 주행 기록 앱, 자동 주행 기록, 구글 지도 타임라인 대안, GPX 주행 기록 내보내기, DashLog",
+        "mainEntityOfPage": "https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/",
+        "author": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/"},
+        "publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}},
+        "about": {"@id": "https://grayforge.app/dashlog/#app"},
+        "image": [
+          "https://grayforge.app/dashlog/og-image.png"
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".lede", ".answer-card p"]
+        },
+        "citation": [
+          "https://grayforge.app/dashlog/",
+          "https://grayforge.app/dashlog/privacy_policy.html",
+          "https://apps.apple.com/us/app/id6769706684",
+          "https://play.google.com/store/apps/details?id=com.grayforge.dashlog",
+          "https://apps.apple.com/us/app/id358697908",
+          "https://play.google.com/store/apps/details?id=com.richardblaha.drivingtracker",
+          "https://drivingtrackerapp.com/",
+          "https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker",
+          "https://support.google.com/maps/answer/6258979?hl=en&co=GENIE.Platform%3DAndroid",
+          "https://support.google.com/maps/answer/6258979?hl=en&co=GENIE.Platform%3DiOS",
+          "https://support.apple.com/guide/iphone/view-and-manage-visited-places-iph0c2597c4f/ios",
+          "https://apps.apple.com/us/app/id6757245082",
+          "https://play.google.com/store/apps/details?id=io.uros.triprank",
+          "https://enroad.app/",
+          "https://enroad.app/pricing",
+          "https://enroad.app/privacy",
+          "https://apps.apple.com/us/app/id6774287184",
+          "https://play.google.com/store/apps/details?id=com.gigamow.wheelz",
+          "https://vortac.io/wheelz/privacy",
+          "https://apps.apple.com/us/app/id578830929",
+          "https://play.google.com/store/apps/details?id=com.mobiledatalabs.mileiq",
+          "https://mileiq.com/pricing",
+          "https://support.mileiq.com/hc/en-us/articles/204237125-Installing-MileIQ-and-account-signup",
+          "https://apps.apple.com/us/app/id924418916",
+          "https://play.google.com/store/apps/details?id=com.driversnote.driversnote",
+          "https://www.driversnote.com/pricing",
+          "https://apps.apple.com/us/app/id6755834573",
+          "https://play.google.com/store/apps/details?id=com.mikita.openroad",
+          "https://apps.apple.com/us/app/id984503772",
+          "https://play.google.com/store/apps/details?id=eu.basicairdata.graziano.gpslogger",
+          "https://play.google.com/store/apps/details?id=ee.prey.triplog"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/#breadcrumbs",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "GrayForge", "item": "https://grayforge.app/"},
+          {"@type": "ListItem", "position": 2, "name": "블로그", "item": "https://grayforge.app/ko/blog/"},
+          {"@type": "ListItem", "position": 3, "name": "DashLog", "item": "https://grayforge.app/ko/blog/dashlog/"},
+          {"@type": "ListItem", "position": 4, "name": "운행 기록 앱 비교", "item": "https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/"}
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/#apps",
+        "name": "비교한 주행 기록 앱",
+        "numberOfItems": 10,
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "DashLog GPS Drive Tracker", "url": "https://grayforge.app/dashlog/"},
+          {"@type": "ListItem", "position": 2, "name": "myTracks - The GPS-Logger", "url": "https://apps.apple.com/us/app/id358697908"},
+          {"@type": "ListItem", "position": 3, "name": "Driving Tracker: GPS Trip Log", "url": "https://play.google.com/store/apps/details?id=com.richardblaha.drivingtracker"},
+          {"@type": "ListItem", "position": 4, "name": "Geo Tracker - GPS tracker", "url": "https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker"},
+          {"@type": "ListItem", "position": 5, "name": "Google 지도 타임라인", "url": "https://support.google.com/maps/answer/6258979"},
+          {"@type": "ListItem", "position": 6, "name": "Apple 지도 방문한 장소", "url": "https://support.apple.com/guide/iphone/view-and-manage-visited-places-iph0c2597c4f/ios"},
+          {"@type": "ListItem", "position": 7, "name": "Enroad – Drive Tracker", "url": "https://apps.apple.com/us/app/id6757245082"},
+          {"@type": "ListItem", "position": 8, "name": "Wheelz - Social Drive Tracker", "url": "https://apps.apple.com/us/app/id6774287184"},
+          {"@type": "ListItem", "position": 9, "name": "MileIQ: Mileage Tracker & Log", "url": "https://apps.apple.com/us/app/id578830929"},
+          {"@type": "ListItem", "position": 10, "name": "Mileage Tracker by Driversnote", "url": "https://apps.apple.com/us/app/id924418916"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "계정 없이 쓸 수 있는 주행 기록 앱은 무엇인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "iPhone과 Android의 DashLog, iPhone의 myTracks, Android의 Driving Tracker는 계정이 필요 없고 주행 기록을 폰에 보관한다고 밝히고 있으며, Android의 Geo Tracker는 트랙이 서버로 가지 않는다고 설명합니다. Enroad는 계정 없이도 쓸 수 있지만 리더보드에는 계정을 씁니다. Wheelz, MileIQ, Driversnote는 계정을 사용합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "모든 주행을 자동으로 기록하는 무료 앱이 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DashLog는 무료이며, 폰이 CarPlay나 차량 블루투스에 연결되면 계정 없이 저절로 기록을 시작합니다. Enroad도 모든 주행을 무료로 기록하며, 다시 보기와 고급 통계는 Pro입니다. MileIQ는 월 40회 주행, Driversnote는 월 15회 이동까지 무료입니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Google 지도 타임라인은 주행을 기록하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Google 계정으로 켜면 타임라인이 방문한 곳과 경로를 저장하고, 운전을 포함해 어떤 방법으로 이동했는지 보여 줍니다. 암호화된 백업을 켜지 않으면 각 기기에 저장되며, JSON 파일로 내보낼 수 있습니다. Google 도움말에는 속도나 주행별 통계에 대한 설명이 없습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "DashLog는 무료인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "네. DashLog는 현재 구독도 계정도 없이 무료로 다운로드하고 사용할 수 있습니다. 자동 기록, 경로 다시 보기, 통계, GPX·CSV 내보내기가 모두 포함됩니다."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper:   #ECEDEA;
+      --paper-2: #E4E5E1;
+      --panel:   #F4F4F2;
+      --ink:     #16181A;
+      --ink-2:   #393D40;
+      --muted:   #6C7176;
+      --line:    #CDCFCA;
+      --line-2:  #BCBEB8;
+      --ember:   #D9531E;
+      --ember-d: #B5400F;
+
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+      --wrap:  1120px;
+      --read:  720px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-wrap: break-word;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ::selection { background: var(--ink); color: var(--paper); }
+
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 32px; }
+    .read { max-width: var(--read); margin-left: auto; margin-right: auto; }
+
+    .label {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ===== TOP BAR ===== */
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+    .wordmark { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+    .wordmark .mark { width: 24px; height: 24px; }
+    .wordmark .name { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+    .wordmark .sub { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; font-style: italic; color: var(--muted); }
+    .topnav { display: flex; gap: 30px; }
+    .topnav a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      letter-spacing: 0.02em; position: relative; padding: 4px 0;
+    }
+    .topnav a::after {
+      content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px;
+      background: var(--ink); transition: width 0.25s ease;
+    }
+    .topnav a:hover::after { width: 100%; }
+
+    /* ===== BREADCRUMB ===== */
+    .crumbs { padding-top: 34px; font-size: 0.8rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .crumbs a { border-bottom: 1px solid transparent; transition: border-color 0.2s, color 0.2s; }
+    .crumbs a:hover { color: var(--ink); border-color: var(--line-2); }
+    .crumbs .sep { color: var(--line-2); }
+    .crumbs .here { color: var(--ink-2); }
+
+    /* ===== HERO ===== */
+    .hero { padding: 26px 0 60px; border-bottom: 1px solid var(--line); }
+    .kicker { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 22px; }
+    .kicker .tick { width: 6px; height: 6px; border-radius: 50%; background: var(--ember); }
+    h1 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(2.1rem, 5vw, 3.9rem);
+      line-height: 1.06; letter-spacing: -0.025em;
+      max-width: 20ch; margin-bottom: 28px;
+      font-optical-sizing: auto;
+    }
+    h1 .spark { color: var(--ember); }
+    .lede {
+      max-width: 60ch;
+      font-size: clamp(1.08rem, 1.7vw, 1.32rem);
+      color: var(--ink-2); line-height: 1.62;
+    }
+    .lede strong { font-weight: 600; color: var(--ink); }
+    .metabar {
+      margin-top: 34px; display: flex; flex-wrap: wrap; gap: 10px 26px;
+      align-items: center; font-size: 0.82rem; color: var(--muted);
+    }
+    .metabar .m { display: inline-flex; align-items: center; gap: 8px; }
+    .metabar .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--line-2); }
+
+    /* ===== ANSWER CARD ===== */
+    .answer-card {
+      margin-top: 40px; max-width: 68ch;
+      display: grid; grid-template-columns: auto 1fr; gap: 22px;
+      padding: 26px 28px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--ember);
+      border-radius: 4px;
+    }
+    .answer-card .q { font-family: var(--serif); font-size: 1.7rem; color: var(--ember); line-height: 1; }
+    .answer-card .short { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    .answer-card p { font-size: 1.02rem; color: var(--ink-2); line-height: 1.65; }
+    .answer-card strong { color: var(--ink); font-weight: 600; }
+
+    /* ===== TOC ===== */
+    .toc { padding: 44px 0; border-bottom: 1px solid var(--line); }
+    .toc .toc-inner { display: grid; grid-template-columns: 200px 1fr; gap: 40px; }
+    .toc .label { display: block; }
+    .toc .aside-note { margin-top: 10px; font-size: 0.9rem; color: var(--muted); max-width: 22ch; }
+    .toc ol { list-style: none; counter-reset: toc; display: grid; gap: 2px; }
+    .toc li { counter-increment: toc; }
+    .toc li a {
+      display: flex; align-items: baseline; gap: 16px;
+      padding: 12px 0; border-top: 1px solid var(--line);
+      transition: color 0.2s;
+    }
+    .toc li:first-child a { border-top: none; }
+    .toc li a::before {
+      content: counter(toc, decimal-leading-zero);
+      font-family: var(--serif); font-size: 0.9rem; color: var(--ember); min-width: 24px;
+    }
+    .toc li a .t { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; }
+    .toc li a:hover .t { color: var(--ember); }
+
+    /* ===== ARTICLE ===== */
+    article { padding: 12px 0 24px; }
+    article section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    article section:last-child { border-bottom: none; }
+    h2 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+      line-height: 1.12; letter-spacing: -0.02em;
+      margin-bottom: 22px; max-width: 24ch;
+    }
+    h3 { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.01em; margin: 30px 0 10px; }
+    article p { font-size: 1.05rem; color: var(--ink-2); margin-bottom: 18px; max-width: 68ch; }
+    article a.inline { color: var(--ember-d); border-bottom: 1px solid color-mix(in srgb, var(--ember) 40%, transparent); transition: border-color 0.2s; }
+    article a.inline:hover { border-bottom-color: var(--ember); }
+    article ul, article ol.steps { list-style: none; margin: 20px 0; max-width: 66ch; }
+    article ul li, article ol.steps li {
+      position: relative; padding-left: 24px; margin: 11px 0;
+      font-size: 1.03rem; color: var(--ink-2);
+    }
+    article ul li::before {
+      content: ''; position: absolute; left: 2px; top: 0.72em;
+      width: 6px; height: 6px; border-radius: 50%; background: var(--ember);
+    }
+    article ol.steps { counter-reset: step; }
+    article ol.steps li { counter-increment: step; padding-left: 34px; }
+    article ol.steps li::before {
+      content: counter(step); position: absolute; left: 0; top: 0;
+      font-family: var(--serif); font-weight: 500; color: var(--ember);
+    }
+    article ul li strong, article ol.steps li strong { color: var(--ink); font-weight: 600; }
+
+    /* ===== COMPARISON TABLE ===== */
+    .table-wrap {
+      margin: 30px 0 12px; overflow-x: auto; -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--line); border-radius: 6px; background: var(--panel);
+    }
+    table.cmp { border-collapse: separate; border-spacing: 0; width: 100%; min-width: 1000px; font-size: 0.9rem; line-height: 1.5; }
+    table.cmp caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .table-cap { margin: 30px 0 0; font-size: 0.84rem; color: var(--muted); max-width: none; }
+    .table-cap + .table-wrap { margin-top: 12px; }
+    table.cmp th, table.cmp td { padding: 14px 16px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); color: var(--ink-2); }
+    table.cmp tbody tr:last-child th, table.cmp tbody tr:last-child td { border-bottom: none; }
+    table.cmp thead th {
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--muted); background: var(--paper-2); min-width: 120px;
+    }
+    table.cmp th[scope="row"], table.cmp thead th:first-child {
+      position: sticky; left: 0; z-index: 1; min-width: 150px; max-width: 170px;
+      box-shadow: 1px 0 0 var(--line);
+    }
+    table.cmp th[scope="row"] { background: var(--panel); font-family: var(--serif); font-weight: 500; font-size: 1rem; color: var(--ink); }
+    table.cmp th[scope="row"] small { display: block; margin-top: 4px; font-family: var(--sans); font-size: 0.74rem; font-weight: 400; color: var(--muted); }
+    table.cmp tr.ours th, table.cmp tr.ours td { background: #F7EDE6; }
+    table.cmp tr.group th span { position: sticky; left: 16px; }
+    table.cmp tr.group th {
+      position: static; background: var(--paper-2); font-family: var(--sans); font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); padding: 10px 16px; box-shadow: none;
+    }
+    table.cmp .v { font-weight: 600; color: var(--ink); }
+    table.cmp .v.unk { font-weight: 500; font-style: italic; color: var(--muted); }
+    a.ref {
+      font-size: 0.68rem; font-weight: 600; vertical-align: super; line-height: 0;
+      color: var(--ember-d); margin-left: 2px; white-space: nowrap;
+    }
+    a.ref:hover { color: var(--ember); }
+    .table-note { font-size: 0.88rem; color: var(--muted); max-width: 80ch; }
+    .table-hint { display: none; font-size: 0.82rem; color: var(--muted); margin-top: 22px; }
+
+    /* ===== PRODUCT CARD ===== */
+    .product {
+      margin-top: 40px; display: grid; grid-template-columns: 64px 1fr; gap: 22px;
+      align-items: start; padding: 28px; border: 1px solid var(--line);
+      border-radius: 8px; background: var(--panel);
+    }
+    .product .icon { width: 64px; height: 64px; border-radius: 15px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 2px 6px rgba(22,24,26,0.12); }
+    .product h3 { margin: 0 0 8px; font-size: 1.4rem; }
+    .product p { font-size: 0.98rem; margin-bottom: 0; max-width: 60ch; }
+    .actions { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .actions a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      border: 1px solid var(--line-2); border-radius: 100px; padding: 8px 15px;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .actions a:hover { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+    .actions a.primary { color: var(--paper); background: var(--ember); border-color: var(--ember); }
+    .actions a.primary:hover { background: var(--ember-d); border-color: var(--ember-d); }
+
+    /* ===== CALLOUT ===== */
+    .callout {
+      margin: 30px 0 0; padding: 24px 28px;
+      background: var(--panel); border: 1px solid var(--line);
+      border-left: 3px solid var(--ember); border-radius: 4px;
+    }
+    .callout .label { display: block; margin-bottom: 8px; }
+    .callout p { margin: 0; font-size: 1.02rem; color: var(--ink-2); max-width: none; }
+
+    /* ===== SOURCE LIST ===== */
+    ol.srclist { list-style: none; counter-reset: src; margin-top: 26px; max-width: none; }
+    ol.srclist li {
+      counter-increment: src; display: grid; grid-template-columns: 34px 1fr; gap: 6px 14px;
+      padding: 14px 0; border-top: 1px solid var(--line); font-size: 0.92rem; color: var(--ink-2);
+      scroll-margin-top: 90px;
+    }
+    ol.srclist li:first-child { border-top: none; }
+    ol.srclist li::before { content: counter(src); font-family: var(--serif); color: var(--ember); font-size: 1rem; }
+    ol.srclist li:target { background: var(--panel); }
+    ol.srclist b { font-family: var(--serif); font-weight: 500; font-size: 1.02rem; color: var(--ink); }
+    ol.srclist a { color: var(--ember-d); word-break: break-all; }
+    ol.srclist span { display: block; color: var(--muted); font-size: 0.84rem; }
+
+    /* ===== FAQ ===== */
+    .faq-list { margin-top: 26px; }
+    .faq-list details {
+      border-top: 1px solid var(--line); padding: 6px 0;
+    }
+    .faq-list details[open] { padding-bottom: 8px; }
+    .faq-list summary {
+      cursor: pointer; list-style: none; padding: 18px 40px 18px 0; position: relative;
+      font-family: var(--serif); font-weight: 500; font-size: 1.2rem; color: var(--ink);
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: '+'; position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+      font-family: var(--sans); font-size: 1.4rem; color: var(--ember); transition: transform 0.25s ease;
+    }
+    .faq-list details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-list details p { margin: 0 0 14px; color: var(--ink-2); font-size: 1.02rem; max-width: 66ch; }
+
+    /* ===== END CTA ===== */
+    .endcta { padding: 72px 0 0; }
+    .endcta h2 { max-width: 20ch; }
+    .endcta .mailto {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--serif); font-size: 1.2rem; font-weight: 500;
+      border-bottom: 2px solid var(--ink); padding-bottom: 4px; margin-top: 6px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .endcta .mailto:hover { color: var(--ember); border-color: var(--ember); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      margin-top: 72px; border-top: 1px solid var(--line);
+      padding: 30px 0 48px; display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px; font-size: 0.82rem; color: var(--muted);
+    }
+    footer .f-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    footer .f-links a { transition: color 0.2s; }
+    footer .f-links a:hover { color: var(--ink); }
+
+    /* ===== REVEAL ===== */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .toc .toc-inner { grid-template-columns: 1fr; gap: 20px; }
+    }
+    @media (max-width: 820px) {
+      .topnav { display: none; }
+      .table-hint { display: block; }
+    }
+    @media (max-width: 620px) {
+      .wrap { padding: 0 22px; }
+      .answer-card { grid-template-columns: 1fr; gap: 14px; }
+      .product { grid-template-columns: 1fr; }
+      table.cmp th[scope="row"], table.cmp thead th:first-child { min-width: 118px; max-width: 128px; }
+      table.cmp th[scope="row"] { font-size: 0.92rem; }
+    }
+    /* At-a-glance table */
+    table.glance { width: 100%; border-collapse: collapse; font-size: 0.92rem; line-height: 1.35; margin-top: 18px; }
+    table.glance caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    table.glance th, table.glance td { padding: 12px 8px; border-bottom: 1px solid var(--line); text-align: center; vertical-align: middle; color: var(--ink-2); }
+    table.glance thead th { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); vertical-align: bottom; }
+    table.glance thead th:first-child, table.glance th[scope="row"] { text-align: left; padding-left: 12px; }
+    table.glance th[scope="row"] { font-family: var(--serif); font-weight: 500; font-size: 1rem; color: var(--ink); }
+    table.glance tr.ours th, table.glance tr.ours td { background: #F7EDE6; }
+    table.glance th, table.glance td { overflow-wrap: anywhere; hyphens: auto; }
+    table.glance .y { font-size: 1.1rem; font-weight: 600; color: var(--ink); }
+    table.glance .n { font-size: 1.05rem; color: var(--muted); }
+    table.glance .p { font-size: 0.8rem; font-weight: 500; color: var(--ink-2); }
+    table.glance .u { color: var(--muted); }
+    .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .glance-legend { margin-top: 12px; font-size: 0.82rem; color: var(--muted); }
+
+    /* Screenshots */
+    .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 26px 0 6px; }
+    .shots figure { margin: 0; }
+    .shots img { width: 100%; height: auto; border-radius: 22px; border: 1px solid var(--line); background: var(--panel); }
+    .shots figcaption { margin-top: 10px; font-size: 0.84rem; line-height: 1.45; color: var(--muted); }
+
+    /* Short notes */
+    ul.notes { list-style: none; padding: 0; margin: 18px 0 0; }
+    article ul.notes li { padding: 14px 0; margin: 0; border-bottom: 1px solid var(--line); }
+    article ul.notes li::before { display: none; }
+    ul.notes li:last-child { border-bottom: none; }
+    ul.notes strong { font-family: var(--serif); font-weight: 600; color: var(--ink); }
+
+    @media (max-width: 560px) {
+      table.glance { font-size: 0.86rem; }
+      table.glance th, table.glance td { padding: 10px 4px; }
+      table.glance thead th { font-size: 0.6rem; letter-spacing: 0.04em; }
+      table.glance th[scope="row"] { font-size: 0.9rem; padding-left: 6px; }
+      table.glance .p { font-size: 0.72rem; }
+      .shots { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 64%; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; padding-bottom: 6px; }
+      .shots figure { scroll-snap-align: start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="site">
+    <div class="wrap bar">
+      <a class="wordmark" href="../../../../" aria-label="GrayForge 홈">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#16181A"/>
+          <path d="M32 14 L38 32 L32 27 L26 32 Z" fill="#D9531E"/>
+          <circle cx="32" cy="42" r="6" fill="#E8743F"/>
+        </svg>
+        <span class="name">GrayForge</span>
+        <span class="sub">저널</span>
+      </a>
+      <nav class="topnav" aria-label="주 메뉴">
+        <a href="../../">블로그</a>
+        <a href="../../../../dashlog/">DashLog</a>
+        <a href="../../../noisyno/">NoisyNo</a>
+        <a href="#download">다운로드</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="탐색 경로">
+          <a href="../../../../">GrayForge</a>
+          <span class="sep">/</span>
+          <a href="../../">블로그</a>
+          <span class="sep">/</span>
+          <a href="../">DashLog</a>
+          <span class="sep">/</span>
+          <span class="here">운행 기록 앱 비교</span>
+        </nav>
+
+        <div class="kicker" style="margin-top:26px;">
+          <span class="tick"></span>
+          <span class="label">DashLog · 비교</span>
+        </div>
+
+        <h1>iPhone·Android 주행 기록·운행 기록 앱 비교<span class="spark">.</span></h1>
+
+        <p class="lede">
+          DashLog를 주행 기록을 남기는 다른 방법 9가지와 나란히 놓았습니다. 모든 기록을 <strong>폰에</strong> 두는 GPS
+          기록 앱, Google 지도와 Apple 지도에 내장된 위치 기록, 소셜 주행 기록 앱, 주행 거리 기록 앱입니다.
+        </p>
+
+        <div class="metabar">
+          <span class="m">게시 2026.11.27</span>
+          <span class="dot"></span>
+          <span class="m">읽는 시간 약 9분</span>
+          <span class="dot"></span>
+          <span class="m">팩트 확인 2026.11.26</span>
+          <span class="dot"></span>
+          <span class="m" data-lang-links style="display:inline-block;max-width:100%;line-height:1.8;">다른 언어: <a href="../../../../blog/dashlog/drive-tracker-apps-compared/" hreflang="en" lang="en" style="text-decoration:underline;text-underline-offset:3px;">English</a> · <a href="../../../../ja/blog/dashlog/drive-tracker-apps-compared/" hreflang="ja" lang="ja" style="text-decoration:underline;text-underline-offset:3px;">日本語</a> · <a href="../../../../zh/blog/dashlog/drive-tracker-apps-compared/" hreflang="zh" lang="zh" style="text-decoration:underline;text-underline-offset:3px;">中文</a> · <a href="../../../../es/blog/dashlog/drive-tracker-apps-compared/" hreflang="es" lang="es" style="text-decoration:underline;text-underline-offset:3px;">Español</a> · <a href="../../../../pt/blog/dashlog/drive-tracker-apps-compared/" hreflang="pt" lang="pt" style="text-decoration:underline;text-underline-offset:3px;">Português</a> · <a href="../../../../fr/blog/dashlog/drive-tracker-apps-compared/" hreflang="fr" lang="fr" style="text-decoration:underline;text-underline-offset:3px;">Français</a> · <a href="../../../../de/blog/dashlog/drive-tracker-apps-compared/" hreflang="de" lang="de" style="text-decoration:underline;text-underline-offset:3px;">Deutsch</a></span>
+        </div>
+
+        <div class="answer-card">
+          <div class="q">“</div>
+          <div>
+            <div class="short">짧은 답</div>
+            <p>
+              <strong>계정 없이, 서버로 아무것도 보내지 않고</strong> 모든 주행을 기록하고 싶다면 DashLog가 iPhone과
+              Android에서 무료로 해 줍니다. 폰이 CarPlay나 차량 블루투스에 연결되면 저절로 시작합니다. 어디를 다녀왔는지만
+              보고 싶다면 Google 지도 타임라인이나 Apple 지도의 방문한 장소로 충분할 수 있습니다. 세금·경비 정산용 주행 거리
+              기록이라면 MileIQ나 Driversnote가 맞습니다.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== TOC ===== -->
+    <section class="toc">
+      <div class="wrap toc-inner">
+        <div>
+          <span class="label">이 페이지의 내용</span>
+          <p class="aside-note">표의 모든 칸은 출처와 연결되어 있습니다.</p>
+        </div>
+        <ol>
+          <li><a href="#glance"><span class="t">한눈에 보기</span></a></li>
+          <li><a href="#table"><span class="t">전체 비교표</span></a></li>
+          <li><a href="#dashlog"><span class="t">DashLog가 주행에서 남기는 것</span></a></li>
+          <li><a href="#apps"><span class="t">표에 담지 못한 내용</span></a></li>
+          <li><a href="#which"><span class="t">언제 무엇을 쓸까</span></a></li>
+          <li><a href="#check"><span class="t">주행 기록이 어디로 가는지 확인하기</span></a></li>
+          <li><a href="#faq"><span class="t">자주 묻는 질문</span></a></li>
+          <li><a href="#sources"><span class="t">출처</span></a></li>
+        </ol>
+      </div>
+    </section>
+
+    <article>
+      <div class="wrap">
+
+        <!-- GLANCE -->
+        <section id="glance" class="read reveal">
+          <h2>한눈에 보기</h2>
+          <p>대부분의 사람이 가장 먼저 궁금해하는 네 가지입니다. 세부 내용과 출처는 아래 <a class="inline" href="#table">전체 비교표</a>에 있습니다.</p>
+          <table class="glance">
+            <caption>주행 기록 앱 한눈에 보기, 2026년 11월 26일 확인.</caption>
+            <thead>
+              <tr>
+                <th scope="col">앱</th>
+                <th scope="col">계정 불필요</th>
+                <th scope="col">기록이 폰에 남음</th>
+                <th scope="col">자동 기록</th>
+                <th scope="col">무료</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr class="ours"><th scope="row">DashLog</th><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="y">✓<span class="sr">예</span></span></td></tr>
+                <tr><th scope="row">myTracks</th><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="p">하루 단위 트랙</span></td><td><span class="p">일부</span></td></tr>
+                <tr><th scope="row">Driving Tracker</th><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="p">Premium</span></td><td><span class="p">일부</span></td></tr>
+                <tr><th scope="row">Geo Tracker</th><td><span class="u">–<span class="sr">언급 없음</span></span></td><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="n">✗<span class="sr">아니요</span></span></td><td><span class="y">✓<span class="sr">예</span></span></td></tr>
+                <tr><th scope="row">Google 지도 타임라인</th><td><span class="n">✗<span class="sr">아니요</span></span></td><td><span class="p">기본 설정</span></td><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="y">✓<span class="sr">예</span></span></td></tr>
+                <tr><th scope="row">Apple 지도 방문한 장소</th><td><span class="u">–<span class="sr">언급 없음</span></span></td><td><span class="p">암호화 동기화</span></td><td><span class="p">장소만</span></td><td><span class="y">✓<span class="sr">예</span></span></td></tr>
+                <tr><th scope="row">Enroad</th><td><span class="p">선택</span></td><td><span class="p">설정 시</span></td><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="p">일부</span></td></tr>
+                <tr><th scope="row">Wheelz</th><td><span class="n">✗<span class="sr">아니요</span></span></td><td><span class="n">✗<span class="sr">아니요</span></span></td><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="p">일부</span></td></tr>
+                <tr><th scope="row">MileIQ</th><td><span class="n">✗<span class="sr">아니요</span></span></td><td><span class="n">✗<span class="sr">아니요</span></span></td><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="p">월 40회 주행</span></td></tr>
+                <tr><th scope="row">Driversnote</th><td><span class="n">✗<span class="sr">아니요</span></span></td><td><span class="n">✗<span class="sr">아니요</span></span></td><td><span class="y">✓<span class="sr">예</span></span></td><td><span class="p">월 15회 이동</span></td></tr>
+            </tbody>
+          </table>
+          <p class="glance-legend">✓ 예 · ✗ 아니요 · – 개발사 언급 없음</p>
+        </section>
+
+        <!-- TABLE -->
+        <section id="table" class="reveal">
+          <div class="read">
+            <h2>전체 비교표</h2>
+            <p>
+              같은 앱 10종을 각 답의 근거와 함께 정리했습니다. 가격은 미국 App Store, Google Play 또는 개발사 기준
+              가격이며, 개발사가 밝히지 않은 항목은 <em>언급 없음</em>으로 표시했습니다.
+            </p>
+            <p class="table-hint">표를 옆으로 밀면 모든 열을 볼 수 있습니다 →</p>
+          </div>
+
+          <p class="table-cap">개발사가 설명하는 주행 기록 앱, 2026년 11월 26일 확인. 위 첨자 숫자는 <a class="inline" href="#sources">출처</a>로 연결됩니다.</p>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="table-caption">
+            <table class="cmp">
+              <caption id="table-caption">개발사가 설명하는 주행 기록 앱, 2026년 11월 26일 확인.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">앱</th>
+                  <th scope="col">주행 기록 보관 위치</th>
+                  <th scope="col">계정 필요?</th>
+                  <th scope="col">가격 방식</th>
+                  <th scope="col">플랫폼</th>
+                  <th scope="col">자동으로 기록?</th>
+                  <th scope="col">내보내기</th>
+                  <th scope="col">무료 범위</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="group"><th colspan="8" scope="rowgroup"><span>기록이 폰에 남고 계정 불필요</span></th></tr>
+                <tr class="ours">
+                  <th scope="row">DashLog<small>GrayForge (이 사이트)</small></th>
+                  <td><span class="v">기기 안.</span> DashLog 서버는 경로를 받지 않으며, 앱 분석과 크래시 보고에도 경로는 포함되지 않습니다.<a class="ref" href="#s1">1</a><a class="ref" href="#s2">2</a></td>
+                  <td><span class="v">아니요.</span><a class="ref" href="#s1">1</a><a class="ref" href="#s3">3</a></td>
+                  <td>무료, <span class="v">구독 없음</span>.<a class="ref" href="#s1">1</a></td>
+                  <td>iPhone (iOS 16.2+)과 Apple Watch 앱, Android와 Wear OS<a class="ref" href="#s3">3</a><a class="ref" href="#s4">4</a></td>
+                  <td>한 번 설정하면 폰이 CarPlay나 차량 블루투스에 연결될 때 <span class="v">예</span>. 버튼 한 번으로 시작할 수도 있음.<a class="ref" href="#s1">1</a><a class="ref" href="#s3">3</a></td>
+                  <td>주행 하나 또는 기간 전체를 GPX나 CSV로. GPX 가져오기.<a class="ref" href="#s1">1</a><a class="ref" href="#s3">3</a></td>
+                  <td>전부: 자동 기록, 경로 다시 보기, 통계, 내보내기.<a class="ref" href="#s1">1</a><a class="ref" href="#s3">3</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">myTracks<small>Dirk Stichling</small></th>
+                  <td><span class="v">기기 안</span>, iCloud로 Apple 기기 간 동기화. 개인정보 보호 라벨: 데이터가 수집되지 않음.<a class="ref" href="#s5">5</a></td>
+                  <td><span class="v">아니요.</span><a class="ref" href="#s5">5</a></td>
+                  <td>무료, 선택형 Premium. 스토어 정보에 가격 표시 없음.<a class="ref" href="#s5">5</a></td>
+                  <td>iPhone, iPad, Apple Watch (iOS 18.6+), Mac과 iCloud 동기화<a class="ref" href="#s5">5</a></td>
+                  <td>다이어리 모드가 백그라운드에서 <span class="v">하루에 트랙 하나</span>를 기록하며, 주행별로 나누지 않음.<a class="ref" href="#s5">5</a></td>
+                  <td>GPX, KML, KMZ, ZIP<a class="ref" href="#s5">5</a></td>
+                  <td>어떤 기능이 Premium인지 언급 없음.<a class="ref" href="#s5">5</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Driving Tracker: GPS Trip Log<small>Richard Bláha</small></th>
+                  <td><span class="v">기기 안</span>, “계정도 클라우드도 없음”. 데이터 보안 섹션에는 금융 정보, 앱 활동, 앱 성능 데이터가 표시됨.<a class="ref" href="#s6">6</a><a class="ref" href="#s7">7</a></td>
+                  <td><span class="v">아니요.</span><a class="ref" href="#s6">6</a><a class="ref" href="#s7">7</a></td>
+                  <td>무료, Premium 월간 또는 연간 구독(7일 체험). 가격 표시 없음.<a class="ref" href="#s6">6</a></td>
+                  <td>Android<a class="ref" href="#s6">6</a><a class="ref" href="#s7">7</a></td>
+                  <td><span class="v">Premium만.</span> 무료 버전은 버튼으로 시작하고 멈춤.<a class="ref" href="#s6">6</a></td>
+                  <td>Premium: GPX 또는 ZIP 백업<a class="ref" href="#s6">6</a></td>
+                  <td>수동 기록, 지도, 속도·센서 차트, 카테고리 2개.<a class="ref" href="#s6">6</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Geo Tracker<small>Ilya Bogdanovich</small></th>
+                  <td><span class="v">기기 안.</span> 트랙은 “어떤 서버로도 전송되지 않음”.<a class="ref" href="#s8">8</a></td>
+                  <td><em>언급 없음</em><a class="ref" href="#s8">8</a></td>
+                  <td>무료, 앱 안에서 선택적 후원.<a class="ref" href="#s8">8</a></td>
+                  <td>Android<a class="ref" href="#s8">8</a></td>
+                  <td><span class="v">아니요.</span> 직접 기록을 시작하면 백그라운드에서 계속 기록.<a class="ref" href="#s8">8</a></td>
+                  <td>GPX, KML, KMZ<a class="ref" href="#s8">8</a></td>
+                  <td>무료, 광고 없음, 후원으로 운영.<a class="ref" href="#s8">8</a></td>
+                </tr>
+
+                <tr class="group"><th colspan="8" scope="rowgroup"><span>폰의 지도 앱에 내장</span></th></tr>
+                <tr>
+                  <th scope="row">Google 지도 타임라인<small>Google</small></th>
+                  <td><span class="v">로그인한 각 기기</span>, Google 서버에 암호화된 백업 선택 가능.<a class="ref" href="#s9">9</a></td>
+                  <td><span class="v">예</span>, Google 계정. 타임라인은 직접 켜기 전까지 꺼져 있음.<a class="ref" href="#s9">9</a></td>
+                  <td>무료<a class="ref" href="#s9">9</a></td>
+                  <td>Android, iPhone, iPad의 Google 지도<a class="ref" href="#s9">9</a><a class="ref" href="#s10">10</a></td>
+                  <td><span class="v">예</span>: 방문한 곳과 경로, 이동 수단(걷기, 자전거, 운전, 대중교통)까지.<a class="ref" href="#s9">9</a></td>
+                  <td>JSON 파일(location-history.json)<a class="ref" href="#s9">9</a><a class="ref" href="#s10">10</a></td>
+                  <td>전부. 속도와 주행 통계에 대한 설명은 없음.<a class="ref" href="#s9">9</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Apple 지도 방문한 장소<small>Apple</small></th>
+                  <td><span class="v">종단간 암호화</span>, Apple도 읽을 수 없으며 기기 간 동기화.<a class="ref" href="#s11">11</a></td>
+                  <td><em>언급 없음</em><a class="ref" href="#s11">11</a></td>
+                  <td>무료, iOS에 포함<a class="ref" href="#s11">11</a></td>
+                  <td>iPhone (iOS 26 이상), 일부 국가 또는 지역에서는 제공되지 않음<a class="ref" href="#s11">11</a></td>
+                  <td><span class="v">방문한 장소</span>를 저장. 경로와 주행에 대한 언급은 없음.<a class="ref" href="#s11">11</a></td>
+                  <td>내보내기 설명 없음. 장소 하나씩 공유 가능.<a class="ref" href="#s11">11</a></td>
+                  <td>전부<a class="ref" href="#s11">11</a></td>
+                </tr>
+
+                <tr class="group"><th colspan="8" scope="rowgroup"><span>소셜 주행 기록 앱</span></th></tr>
+                <tr>
+                  <th scope="row">Enroad – Drive Tracker<small>11X Studio</small></th>
+                  <td><span class="v">폰에 저장되고 클라우드 백업에 미러링</span>, “Keep Everything on This Device”(모든 데이터를 이 기기에 보관)를 켜지 않는 한. 개인정보 보호 라벨에는 사용자를 추적하는 데 쓰이는 식별자와 사용 데이터가 표시됨.<a class="ref" href="#s12">12</a><a class="ref" href="#s14">14</a></td>
+                  <td><span class="v">선택.</span> 리더보드에는 계정을 쓰며, 처리방침에는 계정 없이 쓰는 경우도 언급됨.<a class="ref" href="#s16">16</a></td>
+                  <td>무료, Pro <span class="v">연 $23.99 또는 월 $9.99</span>.<a class="ref" href="#s15">15</a></td>
+                  <td>iPhone (iOS 15+), Android<a class="ref" href="#s12">12</a><a class="ref" href="#s13">13</a></td>
+                  <td><span class="v">예</span>, 백그라운드에서 주행을 감지.<a class="ref" href="#s14">14</a></td>
+                  <td><em>언급 없음.</em> 계정 데이터 사본을 JSON으로 요청 가능.<a class="ref" href="#s16">16</a></td>
+                  <td>모든 주행 기록. Ride Replay, 고급 주행 통계, 도시·국가·전 세계 리더보드는 Pro.<a class="ref" href="#s14">14</a><a class="ref" href="#s15">15</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Wheelz<small>Vortac Labs</small></th>
+                  <td><span class="v">계정에 연결</span>: 처리방침에 저장된 주행과 정밀 위치가 명시되어 있으며, 클라우드 업체에 보관됨.<a class="ref" href="#s19">19</a></td>
+                  <td><span class="v">예</span>, 계정 필요. Apple 또는 Google로 로그인.<a class="ref" href="#s19">19</a></td>
+                  <td>무료, Pro <span class="v">주 $4.99, 월 $9.99, 연 $49.99</span>.<a class="ref" href="#s17">17</a></td>
+                  <td>iPhone (iOS 18+), Android<a class="ref" href="#s17">17</a><a class="ref" href="#s18">18</a></td>
+                  <td><span class="v">예</span>, 움직이기 시작하면 이동 기록 시작.<a class="ref" href="#s17">17</a><a class="ref" href="#s18">18</a></td>
+                  <td><em>언급 없음</em><a class="ref" href="#s17">17</a></td>
+                  <td>Pro는 무제한 주행 기록을 포함한 모든 기능을 엶. 무료 한도는 언급 없음.<a class="ref" href="#s17">17</a></td>
+                </tr>
+
+                <tr class="group"><th colspan="8" scope="rowgroup"><span>세금·경비 정산용 주행 거리 기록 앱</span></th></tr>
+                <tr>
+                  <th scope="row">MileIQ<small>MileIQ Inc.</small></th>
+                  <td><span class="v">MileIQ 클라우드</span>, 웹 대시보드 제공.<a class="ref" href="#s21">21</a><a class="ref" href="#s23">23</a></td>
+                  <td><span class="v">예</span>, 이메일과 비밀번호, 이메일 인증.<a class="ref" href="#s23">23</a></td>
+                  <td>무료 플랜, Unlimited <span class="v">월 $13.99 또는 연간 결제 시 월 $11.66</span>.<a class="ref" href="#s22">22</a></td>
+                  <td>iPhone (iOS 16+), Android, 웹<a class="ref" href="#s20">20</a><a class="ref" href="#s23">23</a></td>
+                  <td><span class="v">예</span>, 백그라운드에서.<a class="ref" href="#s20">20</a><a class="ref" href="#s21">21</a></td>
+                  <td>IRS(미국 국세청) 기준 주행 거리 보고서<a class="ref" href="#s20">20</a><a class="ref" href="#s21">21</a></td>
+                  <td>월 40회 주행<a class="ref" href="#s22">22</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Driversnote<small>Driversnote ApS</small></th>
+                  <td><span class="v">Driversnote 계정</span>에 “안전하게 저장”, 웹에서도 볼 수 있음.<a class="ref" href="#s24">24</a><a class="ref" href="#s26">26</a></td>
+                  <td><span class="v">예</span>. 무료 플랜도 가입부터 시작.<a class="ref" href="#s26">26</a></td>
+                  <td>무료 플랜, Pro <span class="v">월 $11</span>(세금 별도). 웹에서 연간 플랜 구매 시 iBeacon 무료.<a class="ref" href="#s26">26</a></td>
+                  <td>iPhone (iOS 16.4+), Android, 웹<a class="ref" href="#s24">24</a><a class="ref" href="#s26">26</a></td>
+                  <td><span class="v">예</span>, 일정 속도에 도달하면. 선택형 iBeacon으로 차량 한 대로 한정 가능.<a class="ref" href="#s24">24</a><a class="ref" href="#s25">25</a></td>
+                  <td>PDF·Excel 운행 기록부, IRS 기준 보고서<a class="ref" href="#s25">25</a></td>
+                  <td>월 15회 이동, 보고서 포함<a class="ref" href="#s26">26</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">
+            스토어 정보는 자주 바뀝니다. App Store의 앱 개인정보 보호 라벨과 Google Play의 데이터 보안 섹션은
+            개발자가 직접 작성하며, Apple은 자사 라벨이 검증된 것이 아니라고 밝히고 있습니다.
+          </p>
+        </section>
+
+        <!-- METHOD -->
+        <section id="method" class="read reveal">
+          <h2>확인 방법</h2>
+          <p>
+            GrayForge는 DashLog를 만든 곳이므로, 이 점을 감안해 읽어 주세요. 다른 앱에 대한 모든 사실은 2026년 11월
+            26일에 확인한 해당 앱의 미국 App Store·Google Play 정보, 웹사이트, 개인정보 처리방침, 도움말 페이지에서
+            가져왔으며, 리뷰 사이트나 사용자 리뷰는 쓰지 않았습니다. 같은 경로를 모든 앱으로 달려 보지는 않았으므로,
+            정확도나 배터리 사용량으로 순위를 매기지 않았습니다.
+          </p>
+        </section>
+
+        <!-- DASHLOG SCREENS -->
+        <section id="dashlog" class="read reveal">
+          <h2>DashLog가 주행에서 남기는 것</h2>
+          <p>
+            각 주행은 경로, 시간, 속도와 함께 폰에 저장됩니다. 구간별 속도와 함께 다시 재생할 수 있고, 주행 하나나 기간
+            전체를 CSV나 GPX로 내보낼 수 있습니다.<a class="ref" href="#s1">1</a><a class="ref" href="#s3">3</a>
+          </p>
+          <div class="shots">
+            <figure>
+              <img src="../../../../dashlog/assets/screenshots/04_drive_detail.webp" alt="DashLog 주행 상세: 산타모니카에서 말리부까지 30.6마일 주행이 지도에 표시되고, 소요 시간, 평균 속도, 최고 속도가 함께 나온 화면" width="660" height="1434" loading="lazy" />
+              <figcaption>주행 하나: 경로, 소요 시간, 평균·최고 속도.</figcaption>
+            </figure>
+            <figure>
+              <img src="../../../../dashlog/assets/screenshots/05_drive_replay.webp" alt="DashLog 경로 다시 보기: 속도 차트와 재생 컨트롤 위로 지도에서 주행이 재생되는 화면" width="660" height="1434" loading="lazy" />
+              <figcaption>주행의 지점마다 속도를 보여 주는 다시 보기.</figcaption>
+            </figure>
+            <figure>
+              <img src="../../../../dashlog/assets/screenshots/09_report_export.webp" alt="DashLog 주행 보고서: 이번 달을 선택해 주행 9건을 CSV나 GPX로 내보내는 화면" width="660" height="1434" loading="lazy" />
+              <figcaption>하루, 한 주, 한 달, 한 해를 CSV나 GPX로 내보내기.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- NOTES -->
+        <section id="apps" class="read reveal">
+          <h2>표에 담지 못한 내용</h2>
+          <ul class="notes">
+            <li><strong>DashLog</strong>는 자동차 이동뿐 아니라 오토바이 라이딩과 자전거 경로도 기록합니다. iPhone에서는 주행마다 GPX 파일을 원하는 폴더에 저장할 수 있고, Apple Watch와 Wear OS 앱으로 손목에서 주행을 시작하고 끝낼 수 있습니다.<a class="ref" href="#s3">3</a><a class="ref" href="#s4">4</a> 한 번만 하면 되는 설정은 <a class="inline" href="../log-every-drive-automatically/">자동 기록 가이드</a>에서 안내합니다.</li>
+            <li><strong>myTracks</strong>는 운전만이 아니라 모든 이동을 위한 앱으로, 웨이포인트, 트랙에 연결된 사진, 오프라인 OpenStreetMap 지도를 지원합니다.<a class="ref" href="#s5">5</a></li>
+            <li><strong>Driving Tracker</strong>는 폰의 모션 센서를 활용해 주행마다 G-포스 수치와 급제동, 급가속, 급회전 이벤트를 기록합니다.<a class="ref" href="#s6">6</a></li>
+            <li><strong>Geo Tracker</strong>는 다운로드 1,000만 회 이상이며, 운전만큼 야외 활동에도 맞춰져 있습니다. 내비게이션 모드에서는 진행 방향에 맞춰 지도가 회전합니다.<a class="ref" href="#s8">8</a></li>
+            <li><strong>Google 지도 타임라인</strong>은 “그날 어디 있었지?”에 가장 빨리 답해 주며, 장소·도시·세계 탭으로 다녀온 곳을 보여 줍니다. 수정하거나 원하는 부분을 삭제할 수 있습니다.<a class="ref" href="#s9">9</a><a class="ref" href="#s10">10</a></li>
+            <li><strong>Apple 지도 방문한 장소</strong>는 이름, 카테고리, 주소, 메모로 지난 방문을 검색할 수 있고, 보관 기간도 고를 수 있습니다.<a class="ref" href="#s11">11</a></li>
+            <li><strong>Enroad</strong>는 App Store 평가 6.7천 개, Google Play 리뷰 2.5만 개를 보유하고 있으며, 주행 통계에 더해 공유 카드, 클럽, 영역 게임을 제공합니다.<a class="ref" href="#s12">12</a><a class="ref" href="#s13">13</a><a class="ref" href="#s14">14</a></li>
+            <li><strong>Wheelz</strong>는 내 차들을 모아 두는 차고 기능이 있고, 리더보드에서 다른 운전자와 순위를 겨룹니다.<a class="ref" href="#s17">17</a><a class="ref" href="#s18">18</a></li>
+            <li><strong>MileIQ</strong>에서는 보고서에 들어가기 전에 주행마다 밀어서 업무용·개인용으로 분류합니다.<a class="ref" href="#s20">20</a></li>
+            <li><strong>Driversnote</strong>에는 이동 기록을 편집하는 웹 앱과, 관리자가 주행 거리 청구를 승인하는 Teams 플랜이 있습니다.<a class="ref" href="#s25">25</a></li>
+          </ul>
+          <p>
+            <strong>함께 볼 만한 앱:</strong> 모든 주행을 기록하고 CarPlay와 연동되며 달려 본 모든 도로를 지도에 표시하는
+            Open Road(커뮤니티 기능은 Pro)<a class="ref" href="#s27">27</a><a class="ref" href="#s28">28</a>, 인앱 구매가 없고 데이터를 수집하지 않는 무료
+            iPhone 앱 Open GPX Tracker<a class="ref" href="#s29">29</a>, 무료 오픈소스 오프라인 Android 앱인 BasicAirData의 GPS
+            Logger<a class="ref" href="#s30">30</a>, 그리고 블루투스 기기가 연결되면 이동 기록을 시작하고 보고서를 구독으로 판매하는
+            Android 앱 Vehicle Trip Logbook Tracker<a class="ref" href="#s31">31</a>가 있습니다.
+          </p>
+        </section>
+
+        <!-- WHICH -->
+        <section id="which" class="read reveal">
+          <h2>언제 무엇을 쓸까</h2>
+          <ul>
+            <li><strong>가입할 필요 없이 모든 주행이 저절로 기록되길 원한다면.</strong> DashLog는 폰이 CarPlay나 차량 블루투스에 연결될 때마다 주행을 무료로, 계정 없이 기록합니다. Android에서는 Driving Tracker도 Premium으로 가능합니다.</li>
+            <li><strong>주행 통계가 아니라 다녀온 곳을 보고 싶다면.</strong> 이미 폰에 있는 Google 지도 타임라인이나 Apple 지도 방문한 장소를 쓰세요.</li>
+            <li><strong>다른 앱에서 쓸 경로 파일이 필요하다면.</strong> DashLog, myTracks, Geo Tracker, Open GPX Tracker, GPS Logger 모두 GPX로 내보냅니다. DashLog는 주행 하나 또는 한 달 전체를 한 번에 내보낼 수 있고, iPhone에서는 주행마다 파일을 폴더에 자동 저장할 수 있습니다.</li>
+            <li><strong>운전뿐 아니라 라이딩도 한다면.</strong> DashLog는 오토바이 라이딩과 자전거 경로를 자동차 이동과 똑같이 기록하고, myTracks와 Geo Tracker는 모든 종류의 이동에 맞춰져 있습니다.</li>
+            <li><strong>친구와 주행을 비교하고 싶다면.</strong> Enroad, Wheelz, Open Road에는 리더보드, 친구, 클럽 기능이 있으며 계정을 사용합니다.</li>
+            <li><strong>세금이나 경비 정산용 주행 거리 기록이 필요하다면.</strong> MileIQ와 Driversnote는 업무용·개인용 이동을 분류하고 IRS 기준 보고서를 만듭니다. 바로 그 용도로 만든 앱입니다.</li>
+          </ul>
+        </section>
+
+        <!-- CHECK -->
+        <section id="check" class="read reveal">
+          <h2>주행 기록이 어디로 가는지 확인하기</h2>
+          <p>위치 기록은 가장 개인적인 데이터에 속하며, 스토어 설명은 앱을 파는 사람이 씁니다. 저희 앱도 마찬가지입니다.</p>
+          <ol class="steps">
+            <li><strong>첫 주행 전에 로그인 화면이 나온다면</strong> 주행 기록이 계정에 연결된다는 뜻입니다. 개인정보 처리방침에 기록이 어디에 보관되고 어떻게 삭제하는지 나와 있어야 합니다.</li>
+            <li><strong>개인정보 섹션에서</strong>(App Store의 앱 개인정보 보호, Google Play의 데이터 보안) 위치가 “사용자에게 연결된 데이터”나 “사용자를 추적하는 데 사용되는 데이터”에 있는지 확인하세요.</li>
+            <li><strong>주행 하나를 내보내 보세요.</strong> GPX나 CSV 파일은 앱이 어떻게 되든 내가 가지고 있는 사본입니다.</li>
+          </ol>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="read reveal">
+          <h2>자주 묻는 질문</h2>
+          <div class="faq-list">
+            <details>
+              <summary>계정 없이 쓸 수 있는 주행 기록 앱은 무엇인가요?</summary>
+              <p>iPhone과 Android의 DashLog, iPhone의 myTracks, Android의 Driving Tracker는 계정이 필요 없고 주행 기록을 폰에 보관한다고 밝히고 있으며, Android의 Geo Tracker는 트랙이 서버로 가지 않는다고 설명합니다. Enroad는 계정 없이도 쓸 수 있지만 리더보드에는 계정을 씁니다. Wheelz, MileIQ, Driversnote는 계정을 사용합니다.</p>
+            </details>
+            <details>
+              <summary>모든 주행을 자동으로 기록하는 무료 앱이 있나요?</summary>
+              <p>DashLog는 무료이며, 폰이 CarPlay나 차량 블루투스에 연결되면 계정 없이 저절로 기록을 시작합니다. Enroad도 모든 주행을 무료로 기록하며, 다시 보기와 고급 통계는 Pro입니다. MileIQ는 월 40회 주행, Driversnote는 월 15회 이동까지 무료입니다.</p>
+            </details>
+            <details>
+              <summary>Google 지도 타임라인은 주행을 기록하나요?</summary>
+              <p>Google 계정으로 켜면 타임라인이 방문한 곳과 경로를 저장하고, 운전을 포함해 어떤 방법으로 이동했는지 보여 줍니다. 암호화된 백업을 켜지 않으면 각 기기에 저장되며, JSON 파일로 내보낼 수 있습니다. Google 도움말에는 속도나 주행별 통계에 대한 설명이 없습니다.</p>
+            </details>
+            <details>
+              <summary>DashLog는 무료인가요?</summary>
+              <p>네. DashLog는 현재 구독도 계정도 없이 무료로 다운로드하고 사용할 수 있습니다. 자동 기록, 경로 다시 보기, 통계, GPX·CSV 내보내기가 모두 포함됩니다.</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- SOURCES -->
+        <section id="sources" class="read reveal">
+          <h2>출처</h2>
+          <p>모든 페이지는 2026년 11월 26일에 확인했습니다. 가격은 그날 해당 페이지에 표시된 미국 가격입니다.</p>
+          <ol class="srclist">
+            <li id="s1"><div><b>DashLog product page</b> (GrayForge) · <a href="../../../../dashlog/">https://grayforge.app/dashlog/</a><span>한 번 설정 후 CarPlay·차량 블루투스로 자동 기록, 계정 없음, 구독 없는 무료, 기록 항목, 기기 내 저장, GPX·CSV 내보내기와 GPX 가져오기. 2026-11-26 확인.</span></div></li>
+            <li id="s2"><div><b>DashLog privacy policy</b> (GrayForge) · <a href="../../../../dashlog/privacy_policy.html">https://grayforge.app/dashlog/privacy_policy.html</a><span>주행 기록은 기기에 저장, 경로를 받는 DashLog 서버 없음, 정밀 경로가 포함되지 않는 Firebase 분석·크래시 보고·원격 구성. 2026-11-26 확인.</span></div></li>
+            <li id="s3"><div><b>DashLog GPS Drive Tracker</b>, App Store (US) · <a href="https://apps.apple.com/us/app/id6769706684" rel="noopener">https://apps.apple.com/us/app/id6769706684</a><span>자동차·오토바이·자전거 기록, CarPlay·블루투스 자동 기록, 다시 보기, 내보내기와 가져오기, Apple Watch 앱, 폴더에 GPX 자동 저장(버전 1.4.7), iOS 16.2 요구 사항, 개인정보 보호 라벨(사용 데이터와 진단, 사용자와 연결되지 않음). 2026-11-26 확인.</span></div></li>
+            <li id="s4"><div><b>DashLog GPS Drive Tracker</b>, Google Play (US) · <a href="https://play.google.com/store/apps/details?id=com.grayforge.dashlog" rel="noopener">https://play.google.com/store/apps/details?id=com.grayforge.dashlog</a><span>블루투스 자동 기록, Wear OS 워치 앱, 내보내기와 가져오기, 계정 없음. 2026-11-26 확인.</span></div></li>
+            <li id="s5"><div><b>myTracks - The GPS-Logger</b>, App Store (US) · <a href="https://apps.apple.com/us/app/id358697908" rel="noopener">https://apps.apple.com/us/app/id358697908</a><span>계정 없음, iCloud 동기화와 함께 기기에 데이터 저장, 다이어리 모드, 내보내기 형식, 선택형 Premium, iOS 18.6 요구 사항, 데이터가 수집되지 않음 라벨. 2026-11-26 확인.</span></div></li>
+            <li id="s6"><div><b>Driving Tracker: GPS Trip Log</b>, Google Play (US) · <a href="https://play.google.com/store/apps/details?id=com.richardblaha.drivingtracker" rel="noopener">https://play.google.com/store/apps/details?id=com.richardblaha.drivingtracker</a><span>가입 없음, 기기 내 오프라인 저장, 센서 데이터, Premium 기능(자동 이동 감지, 히트맵, GPX·ZIP 내보내기, 카테고리), 구독 플랜, 데이터 보안 섹션. 2026-11-26 확인.</span></div></li>
+            <li id="s7"><div><b>DrivingTracker website</b> · <a href="https://drivingtrackerapp.com/" rel="noopener">https://drivingtrackerapp.com/</a><span>“계정도 클라우드도 없음”, 주행 기록은 서버에 업로드되지 않음, Android 앱. 2026-11-26 확인.</span></div></li>
+            <li id="s8"><div><b>Geo Tracker - GPS tracker</b>, Google Play (US) · <a href="https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker" rel="noopener">https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker</a><span>백그라운드 기록, 통계, 내비게이션 모드, GPX·KML·KMZ, 트랙은 기기에 저장되고 서버로 전송되지 않음, 자발적 후원, 다운로드 1,000만 회 이상. 2026-11-26 확인.</span></div></li>
+            <li id="s9"><div><b>Manage your Google Maps Timeline</b> (Android), Google Maps Help · <a href="https://support.google.com/maps/answer/6258979?hl=en&amp;co=GENIE.Platform%3DAndroid" rel="noopener">https://support.google.com/maps/answer/6258979</a><span>로그인한 각 기기에 타임라인 저장, 기본값은 꺼짐, 기기별 암호화 백업, 이동 수단, 타임라인 데이터 내보내기. 2026-11-26 확인.</span></div></li>
+            <li id="s10"><div><b>Manage your Google Maps Timeline</b> (iPhone &amp; iPad), Google Maps Help · <a href="https://support.google.com/maps/answer/6258979?hl=en&amp;co=GENIE.Platform%3DiOS" rel="noopener">https://support.google.com/maps/answer/6258979</a><span>iOS용 Google 지도에서 타임라인 켜기, location-history.json으로 내보내기. 2026-11-26 확인.</span></div></li>
+            <li id="s11"><div><b>View Visited Places in Maps on iPhone</b>, Apple Support · <a href="https://support.apple.com/guide/iphone/view-and-manage-visited-places-iph0c2597c4f/ios" rel="noopener">https://support.apple.com/guide/iphone/view-and-manage-visited-places-iph0c2597c4f/ios</a><span>종단간 암호화된 방문 기록, 기기 간 동기화, 검색과 필터, 방문 기록 보관 기간과 기록 지우기, 지역별 제공 여부, iOS 26·iOS 27 설명서. 2026-11-26 확인.</span></div></li>
+            <li id="s12"><div><b>Enroad – Drive Tracker</b>, App Store (US) · <a href="https://apps.apple.com/us/app/id6757245082" rel="noopener">https://apps.apple.com/us/app/id6757245082</a><span>자동 이동 기록, 고급 통계용 Pro 구독, iOS 15 요구 사항, iPhone 전용, 앱 개인정보 보호 라벨(사용자를 추적하는 데 쓰이는 식별자와 사용 데이터), 평가. 2026-11-26 확인.</span></div></li>
+            <li id="s13"><div><b>Enroad - Drive Tracker</b>, Google Play (US) · <a href="https://play.google.com/store/apps/details?id=io.uros.triprank" rel="noopener">https://play.google.com/store/apps/details?id=io.uros.triprank</a><span>Android 스토어 정보, 인앱 구매, 데이터 보안 섹션. 2026-11-26 확인.</span></div></li>
+            <li id="s14"><div><b>Enroad website</b> · <a href="https://enroad.app/" rel="noopener">https://enroad.app/</a><span>백그라운드 주행 감지, 이동 기록은 폰에 파일로 저장되고 클라우드 백업에 미러링, “Keep Everything on This Device” 설정, 무료 기록, Pro에 포함되는 리더보드와 기능. 2026-11-26 확인.</span></div></li>
+            <li id="s15"><div><b>Enroad pricing</b> · <a href="https://enroad.app/pricing" rel="noopener">https://enroad.app/pricing</a><span>Pro 연 $23.99 또는 월 $9.99와 포함 내용. 2026-11-26 확인.</span></div></li>
+            <li id="s16"><div><b>Enroad privacy policy</b> · <a href="https://enroad.app/privacy" rel="noopener">https://enroad.app/privacy</a><span>로그인과 리더보드용 계정 데이터, 백업된 주행과 GPS 경로, 계정 없이 사용, JSON 데이터 사본. 2026-11-26 확인.</span></div></li>
+            <li id="s17"><div><b>Wheelz - Social Drive Tracker</b>, App Store (US) · <a href="https://apps.apple.com/us/app/id6774287184" rel="noopener">https://apps.apple.com/us/app/id6774287184</a><span>자동 이동 감지, 구독 가격, Pro의 무제한 기록, iOS 18 요구 사항. 2026-11-26 확인.</span></div></li>
+            <li id="s18"><div><b>Wheelz - Social Drive Tracker</b>, Google Play (US) · <a href="https://play.google.com/store/apps/details?id=com.gigamow.wheelz" rel="noopener">https://play.google.com/store/apps/details?id=com.gigamow.wheelz</a><span>Android 스토어 정보, 자동 기록, 리더보드, 데이터 보안 섹션. 2026-11-26 확인.</span></div></li>
+            <li id="s19"><div><b>Wheelz privacy policy</b> (Vortac Labs) · <a href="https://vortac.io/wheelz/privacy" rel="noopener">https://vortac.io/wheelz/privacy</a><span>계정 정보와 Apple·Google 로그인, 저장된 주행, 정밀 위치, 클라우드 인프라 업체, 보관 기간. 2026-11-26 확인.</span></div></li>
+            <li id="s20"><div><b>MileIQ: Mileage Tracker &amp; Log</b>, App Store (US) · <a href="https://apps.apple.com/us/app/id578830929" rel="noopener">https://apps.apple.com/us/app/id578830929</a><span>백그라운드 자동 기록, 업무용·개인용 분류, IRS 기준 보고서, iOS 16 요구 사항. 2026-11-26 확인.</span></div></li>
+            <li id="s21"><div><b>Mileage Tracker &amp; Log - MileIQ</b>, Google Play (US) · <a href="https://play.google.com/store/apps/details?id=com.mobiledatalabs.mileiq" rel="noopener">https://play.google.com/store/apps/details?id=com.mobiledatalabs.mileiq</a><span>GPS 자동 기록, IRS 기준 보고서, 안전한 클라우드 저장, 월 40회 주행 무료. 2026-11-26 확인.</span></div></li>
+            <li id="s22"><div><b>MileIQ pricing</b> · <a href="https://mileiq.com/pricing" rel="noopener">https://mileiq.com/pricing</a><span>월 40회 주행 무료 플랜, Unlimited 월 $13.99 또는 연간 결제 시 월 $11.66. 2026-11-26 확인.</span></div></li>
+            <li id="s23"><div><b>Installing MileIQ and account signup</b>, MileIQ Help · <a href="https://support.mileiq.com/hc/en-us/articles/204237125-Installing-MileIQ-and-account-signup" rel="noopener">https://support.mileiq.com/hc/en-us/articles/204237125-Installing-MileIQ-and-account-signup</a><span>이메일·비밀번호 계정, 이메일 인증, 웹 대시보드, 폰 앱 로그인. 2026-11-26 확인.</span></div></li>
+            <li id="s24"><div><b>Mileage Tracker by Driversnote</b>, App Store (US) · <a href="https://apps.apple.com/us/app/id924418916" rel="noopener">https://apps.apple.com/us/app/id924418916</a><span>일정 속도 도달 시 자동 기록, 카테고리, IRS 기준 기록부, 안전한 기록 저장, iOS 16.4 요구 사항. 2026-11-26 확인.</span></div></li>
+            <li id="s25"><div><b>Mileage Tracker by Driversnote</b>, Google Play (US) · <a href="https://play.google.com/store/apps/details?id=com.driversnote.driversnote" rel="noopener">https://play.google.com/store/apps/details?id=com.driversnote.driversnote</a><span>PDF·Excel 운행 기록부 내보내기, 웹 앱, iBeacon, IRS 기준 보고서. 2026-11-26 확인.</span></div></li>
+            <li id="s26"><div><b>Driversnote pricing</b> · <a href="https://www.driversnote.com/pricing" rel="noopener">https://www.driversnote.com/pricing</a><span>무료 플랜(가입, 월 15회 이동), Pro 월 11 USD(세금 별도), 웹에서 연간 플랜 구매 시 iBeacon 무료, iOS·Android·웹. 2026-11-26 확인.</span></div></li>
+            <li id="s27"><div><b>Open Road: Drive Tracker GPS</b>, App Store (US) · <a href="https://apps.apple.com/us/app/id6755834573" rel="noopener">https://apps.apple.com/us/app/id6755834573</a><span>모든 주행 기록, CarPlay, 달린 도로 지도, 친구와 컨보이, Pro 기능, 주행 저장과 동기화, iOS 18 요구 사항. 2026-11-26 확인.</span></div></li>
+            <li id="s28"><div><b>Open Road: Drive Tracker</b>, Google Play (US) · <a href="https://play.google.com/store/apps/details?id=com.mikita.openroad" rel="noopener">https://play.google.com/store/apps/details?id=com.mikita.openroad</a><span>Android 스토어 정보, 주행 기록, 기본 비공개 공유. 2026-11-26 확인.</span></div></li>
+            <li id="s29"><div><b>Open GPX Tracker</b>, App Store (US) · <a href="https://apps.apple.com/us/app/id984503772" rel="noopener">https://apps.apple.com/us/app/id984503772</a><span>무료, 광고 없음, 인앱 구매 없음, 데이터는 폰에 비공개로 보관, GPX 공유. 2026-11-26 확인.</span></div></li>
+            <li id="s30"><div><b>GPS Logger</b> (BasicAirData), Google Play (US) · <a href="https://play.google.com/store/apps/details?id=eu.basicairdata.graziano.gpslogger" rel="noopener">https://play.google.com/store/apps/details?id=eu.basicairdata.graziano.gpslogger</a><span>무료 오픈소스, 오프라인 기록, KML·GPX·TXT 내보내기, 데이터 수집 없음. 2026-11-26 확인.</span></div></li>
+            <li id="s31"><div><b>Vehicle Trip Logbook Tracker</b>, Google Play (US) · <a href="https://play.google.com/store/apps/details?id=ee.prey.triplog" rel="noopener">https://play.google.com/store/apps/details?id=ee.prey.triplog</a><span>블루투스 연결·해제 시 이동 자동 시작·일시 정지·재개, 6개월마다 결제하는 구독으로 PDF·XLS·CSV 보고서. 2026-11-26 확인.</span></div></li>
+          </ol>
+        </section>
+
+        <!-- PRODUCT -->
+        <section class="read reveal" style="border-bottom:none;padding-bottom:0;">
+          <div class="product" id="download">
+            <div class="icon"><img src="../../../../dashlog/assets/icons/favicon-180.png" alt="DashLog 앱 아이콘" loading="lazy" width="64" height="64" /></div>
+            <div>
+              <h3>DashLog — GPS 운행 기록 앱</h3>
+              <p>
+                폰이 CarPlay나 차량 블루투스에 연결되면 모든 주행을 저절로 기록합니다. 경로, 거리, 속도, 통계가 기기 안에
+                남습니다. 무료이며 계정도 구독도 없습니다.
+              </p>
+              <div class="actions">
+                <a class="primary" href="https://apps.apple.com/app/id6769706684" rel="noopener">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.grayforge.dashlog" rel="noopener">Google Play</a>
+                <a href="../../../../dashlog/">제품 페이지</a>
+                <a href="../../../../dashlog/privacy_policy.html">개인정보 처리방침</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- END CTA -->
+        <section class="endcta read">
+          <span class="label">잘못된 내용이 있나요?</span>
+          <h2 style="margin-top:16px;">알려 주시면 표를 고치겠습니다.</h2>
+          <p>스토어 정보는 바뀝니다. 위의 가격, 플랫폼, 제한 중 DashLog에 관한 것을 포함해 오래된 내용이 있다면 링크와 함께 알려 주세요. 표를 바로잡겠습니다.</p>
+          <a class="mailto" href="mailto:grayforge.dev@gmail.com?subject=Drive%20tracker%20comparison">grayforge.dev@gmail.com <span aria-hidden="true">↗</span></a>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    <span>© 2026 GrayForge · 최종 업데이트 2026.11.27</span>
+    <div class="f-links">
+      <a href="../../">블로그</a>
+      <a href="../../../../dashlog/">DashLog</a>
+      <a href="../../../noisyno/">NoisyNo</a>
+      <a href="../../../../dashlog/privacy_policy.html">개인정보</a>
+      <a href="mailto:grayforge.dev@gmail.com">문의</a>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 60);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>

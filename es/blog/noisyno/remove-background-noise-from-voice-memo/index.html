@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>Quitar el ruido de fondo de una nota de voz | GrayForge</title>
+  <meta name="description" content="¿Tu nota de voz tiene ruido de cafetería, de un ventilador o de la calle? Prueba primero la mejora integrada del iPhone y luego límpiala en el dispositivo con NoisyNo. Sin subir nada." />
+  <meta name="keywords" content="quitar ruido de fondo de una nota de voz, ruido de fondo en notas de voz, limpiar nota de voz, ruido en Notas de Voz del iPhone, ruido en grabación de voz Android, eliminar ruido de una nota de voz, nota de voz con mucho ruido, app para quitar ruido, NoisyNo" />
+  <meta name="author" content="GrayForge" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ECEDEA" />
+  <link rel="canonical" href="https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+
+  <!-- Inline SVG favicon: graphite square with an ember spark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;rect width='64' height='64' rx='12' fill='%2316181A'/&gt;&lt;path d='M32 14 L38 32 L32 27 L26 32 Z' fill='%23D9531E'/&gt;&lt;circle cx='32' cy='42' r='6' fill='%23E8743F'/&gt;&lt;/svg&gt;" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="GrayForge" />
+  <meta property="og:url" content="https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  <meta property="og:title" content="Cómo quitar el ruido de fondo de una nota de voz (iPhone y Android)" />
+  <meta property="og:description" content="Quita el ruido de cafetería, el zumbido del ventilador y el ruido de la calle de una nota de voz en tu teléfono: sin subir nada, sin cuenta y en unos tres minutos." />
+  <meta property="og:image" content="https://grayforge.app/noisyno/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="article:published_time" content="2026-11-27" />
+  <meta property="article:modified_time" content="2026-11-27" />
+  <meta property="article:author" content="GrayForge" />
+  <meta property="article:section" content="Guía de NoisyNo" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cómo quitar el ruido de fondo de una nota de voz (iPhone y Android)" />
+  <meta name="twitter:description" content="Quita el ruido de cafetería, el zumbido del ventilador y el ruido de la calle de una nota de voz en tu teléfono: sin subir nada, sin cuenta y en unos tres minutos." />
+  <meta name="twitter:image" content="https://grayforge.app/noisyno/assets/og-image.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/#article",
+        "headline": "Cómo quitar el ruido de fondo de una nota de voz (iPhone y Android)",
+        "alternativeHeadline": "Quita el ruido de cafetería, el zumbido del ventilador y el ruido de la calle de una nota de voz en tu teléfono",
+        "description": "¿Tu nota de voz tiene ruido de cafetería, de un ventilador o de la calle? Límpiala en tu teléfono en unos tres minutos, sin subir nada y sin cuenta. Guía paso a paso para Notas de Voz del iPhone y grabaciones de Android.",
+        "inLanguage": "es",
+        "datePublished": "2026-11-27",
+        "dateModified": "2026-11-27",
+        "wordCount": 1200,
+        "articleSection": "Guía de NoisyNo",
+        "keywords": "quitar ruido de fondo de una nota de voz, ruido de fondo en notas de voz, limpiar nota de voz, ruido en Notas de Voz del iPhone, ruido en grabación de voz Android, NoisyNo",
+        "mainEntityOfPage": "https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/",
+        "author": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/"},
+        "publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}},
+        "about": {"@id": "https://grayforge.app/noisyno/#app"},
+        "image": [
+          "https://grayforge.app/noisyno/assets/og-image.png",
+          "https://grayforge.app/noisyno/assets/screenshots/04_compare.png"
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".lede"]
+        },
+        "citation": [
+          "https://grayforge.app/noisyno/",
+          "https://grayforge.app/noisyno/privacy_policy.html",
+          "https://apps.apple.com/app/id6772728543",
+          "https://play.google.com/store/apps/details?id=com.grayforge.noisyno"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/#breadcrumbs",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "GrayForge", "item": "https://grayforge.app/"},
+          {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://grayforge.app/es/blog/"},
+          {"@type": "ListItem", "position": 3, "name": "NoisyNo", "item": "https://grayforge.app/es/blog/noisyno/"},
+          {"@type": "ListItem", "position": 4, "name": "Quitar el ruido de fondo de una nota de voz", "item": "https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cómo quito el ruido de fondo de una nota de voz del iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En la app Notas de Voz, abre la grabación, toca el botón Más (…), elige Compartir y selecciona NoisyNo. Después toca Clean y compara el resultado: todo el proceso se hace en el teléfono en unos tres minutos, sin subir nada y sin cuenta."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo saco una nota de voz de la app Notas de Voz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usa la hoja para compartir: abre la nota, toca el botón Más (…) y luego Compartir. Desde ahí puedes enviarla directamente a NoisyNo, o elegir Guardar en Archivos para dejar el archivo M4A en un lugar al que pueda acceder cualquier app."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo limpiar una nota de voz sin subirla a un sitio web?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. NoisyNo procesa el archivo dentro de tu teléfono. La nota no se sube a ningún servidor de GrayForge, algo importante cuando la grabación contiene reuniones, entrevistas o notas personales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Limpiar una nota de voz sobrescribe la grabación original?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. NoisyNo guarda el audio limpio como un resultado nuevo que puedes guardar o compartir. La nota original queda intacta, así que siempre puedes volver a ella."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Funciona con archivos de las grabadoras de voz de Android?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Las apps de grabación de Android suelen guardar archivos M4A o WAV, y ambos funcionan directamente en NoisyNo, igual que MP3, AAC y CAF. No hace falta convertir nada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Quitar el ruido hará que mi nota de voz sea más fácil de transcribir?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Normalmente, sí. El ruido de fondo constante es una causa habitual de errores de transcripción, así que reducirlo antes de pasar una nota por una app de transcripción suele dar un texto más limpio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿NoisyNo es gratis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NoisyNo se descarga gratis, sin cuentas, sin anuncios y sin subir archivos, y la eliminación de ruido es gratuita. La normalización de volumen es una función Pro que se desbloquea con una compra única dentro de la app. No hay suscripción."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper:   #ECEDEA;
+      --paper-2: #E4E5E1;
+      --panel:   #F4F4F2;
+      --ink:     #16181A;
+      --ink-2:   #393D40;
+      --muted:   #6C7176;
+      --line:    #CDCFCA;
+      --line-2:  #BCBEB8;
+      --ember:   #D9531E;
+      --ember-d: #B5400F;
+
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+      --wrap:  1120px;
+      --read:  720px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-wrap: break-word;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ::selection { background: var(--ink); color: var(--paper); }
+
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 32px; }
+    .read { max-width: var(--read); margin-left: auto; margin-right: auto; }
+
+    .label {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ===== TOP BAR ===== */
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+    .wordmark { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+    .wordmark .mark { width: 24px; height: 24px; }
+    .wordmark .name { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+    .wordmark .sub { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; font-style: italic; color: var(--muted); }
+    .topnav { display: flex; gap: 30px; }
+    .topnav a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      letter-spacing: 0.02em; position: relative; padding: 4px 0;
+    }
+    .topnav a::after {
+      content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px;
+      background: var(--ink); transition: width 0.25s ease;
+    }
+    .topnav a:hover::after { width: 100%; }
+
+    /* ===== BREADCRUMB ===== */
+    .crumbs { padding-top: 34px; font-size: 0.8rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .crumbs a { border-bottom: 1px solid transparent; transition: border-color 0.2s, color 0.2s; }
+    .crumbs a:hover { color: var(--ink); border-color: var(--line-2); }
+    .crumbs .sep { color: var(--line-2); }
+    .crumbs .here { color: var(--ink-2); }
+
+    /* ===== HERO ===== */
+    .hero { padding: 26px 0 60px; border-bottom: 1px solid var(--line); }
+    .kicker { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 22px; }
+    .kicker .tick { width: 6px; height: 6px; border-radius: 50%; background: var(--ember); }
+    h1 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(2.1rem, 5vw, 3.9rem);
+      line-height: 1.06; letter-spacing: -0.025em;
+      max-width: 20ch; margin-bottom: 28px;
+      font-optical-sizing: auto;
+    }
+    h1 .spark { color: var(--ember); }
+    .lede {
+      max-width: 60ch;
+      font-size: clamp(1.08rem, 1.7vw, 1.32rem);
+      color: var(--ink-2); line-height: 1.62;
+    }
+    .lede strong { font-weight: 600; color: var(--ink); }
+    .metabar {
+      margin-top: 34px; display: flex; flex-wrap: wrap; gap: 10px 26px;
+      align-items: center; font-size: 0.82rem; color: var(--muted);
+    }
+    .metabar .m { display: inline-flex; align-items: center; gap: 8px; }
+    .metabar .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--line-2); }
+
+    /* ===== ARTICLE ===== */
+    article { padding: 12px 0 24px; }
+    article section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    article section:last-child { border-bottom: none; }
+    h2 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+      line-height: 1.12; letter-spacing: -0.02em;
+      margin-bottom: 22px; max-width: 24ch;
+    }
+    h3 { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.01em; margin: 30px 0 10px; }
+    article p { font-size: 1.05rem; color: var(--ink-2); margin-bottom: 18px; max-width: 68ch; }
+    article a.inline { color: var(--ember-d); border-bottom: 1px solid color-mix(in srgb, var(--ember) 40%, transparent); transition: border-color 0.2s; }
+    article a.inline:hover { border-bottom-color: var(--ember); }
+    article ul { list-style: none; margin: 20px 0; max-width: 66ch; }
+    article ul li {
+      position: relative; padding-left: 24px; margin: 11px 0;
+      font-size: 1.03rem; color: var(--ink-2);
+    }
+    article ul li::before {
+      content: ''; position: absolute; left: 2px; top: 0.72em;
+      width: 6px; height: 6px; border-radius: 50%; background: var(--ember);
+    }
+    article ul li strong { color: var(--ink); font-weight: 600; }
+
+    /* ===== COMPARE ===== */
+    .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; }
+    .compare-card {
+      padding: 26px; border: 1px solid var(--line); border-radius: 6px;
+      background: var(--panel);
+    }
+    .compare-card.good { border-color: var(--line-2); box-shadow: inset 3px 0 0 var(--ember); }
+    .compare-card .tag {
+      font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 12px;
+    }
+    .compare-card.good .tag { color: var(--ember-d); }
+    .compare-card h4 { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; margin-bottom: 10px; letter-spacing: -0.01em; }
+    .compare-card p { font-size: 0.98rem; color: var(--ink-2); margin: 0; max-width: none; }
+
+    /* ===== WALKTHROUGH with phone screenshots ===== */
+    .walk { margin-top: 34px; display: flex; flex-direction: column; }
+    .wstep {
+      display: flex; align-items: center; gap: 56px;
+      padding: 48px 0; border-top: 1px solid var(--line);
+    }
+    .wstep:first-child { border-top: none; padding-top: 12px; }
+    .wstep:nth-child(even) { flex-direction: row-reverse; }
+    .wtext { flex: 1 1 320px; }
+    .wtext .num {
+      font-family: var(--serif); font-size: 0.85rem; font-weight: 500;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--ember-d);
+      margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
+    }
+    .wtext .num::after { content: ''; flex: 1; height: 1px; background: var(--line); max-width: 60px; }
+    .wtext h3 { margin-top: 0; font-size: 1.55rem; font-weight: 500; }
+    .wtext p { margin-bottom: 0; font-size: 1.03rem; }
+    .wshot { flex: 0 0 218px; display: flex; justify-content: center; }
+
+    /* graphite phone frame — cropped to the content area so the screens don't
+       leave big empty space next to the text */
+    .phone {
+      width: 100%; max-width: 218px;
+      background: var(--ink);
+      padding: 8px;
+      border-radius: 34px;
+      box-shadow: 0 30px 60px -24px rgba(22,24,26,0.55), 0 2px 0 rgba(255,255,255,0.04) inset, 0 0 0 1px rgba(22,24,26,0.5);
+    }
+    .phone .screen { border-radius: 27px; overflow: hidden; background: #F4EDE2; aspect-ratio: 100 / 150; }
+    .phone .screen img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+    .phone .screen.center img { object-position: center; }
+
+    /* ===== PRODUCT CARD ===== */
+    .product {
+      margin-top: 40px; display: grid; grid-template-columns: 64px 1fr; gap: 22px;
+      align-items: start; padding: 28px; border: 1px solid var(--line);
+      border-radius: 8px; background: var(--panel);
+    }
+    .product .icon { width: 64px; height: 64px; border-radius: 15px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 2px 6px rgba(22,24,26,0.12); }
+    .product h3 { margin: 0 0 8px; font-size: 1.4rem; }
+    .product p { font-size: 0.98rem; margin-bottom: 0; max-width: 60ch; }
+    .actions { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .actions a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      border: 1px solid var(--line-2); border-radius: 100px; padding: 8px 15px;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .actions a:hover { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+    .actions a.primary { color: var(--paper); background: var(--ember); border-color: var(--ember); }
+    .actions a.primary:hover { background: var(--ember-d); border-color: var(--ember-d); }
+
+    /* ===== CALLOUT ===== */
+    .callout {
+      margin: 30px 0 0; padding: 24px 28px;
+      background: var(--panel); border: 1px solid var(--line);
+      border-left: 3px solid var(--ember); border-radius: 4px;
+    }
+    .callout .label { display: block; margin-bottom: 8px; }
+    .callout p { margin: 0; font-size: 1.02rem; color: var(--ink-2); max-width: none; }
+
+    /* ===== FAQ ===== */
+    .faq-list { margin-top: 26px; }
+    .faq-list details {
+      border-top: 1px solid var(--line); padding: 6px 0;
+    }
+    .faq-list details[open] { padding-bottom: 8px; }
+    .faq-list summary {
+      cursor: pointer; list-style: none; padding: 18px 40px 18px 0; position: relative;
+      font-family: var(--serif); font-weight: 500; font-size: 1.2rem; color: var(--ink);
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: '+'; position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+      font-family: var(--sans); font-size: 1.4rem; color: var(--ember); transition: transform 0.25s ease;
+    }
+    .faq-list details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-list details p { margin: 0 0 14px; color: var(--ink-2); font-size: 1.02rem; max-width: 66ch; }
+
+    /* ===== END CTA ===== */
+    .endcta { padding: 72px 0 0; }
+    .endcta h2 { max-width: 20ch; }
+    .endcta .mailto {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--serif); font-size: 1.2rem; font-weight: 500;
+      border-bottom: 2px solid var(--ink); padding-bottom: 4px; margin-top: 6px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .endcta .mailto:hover { color: var(--ember); border-color: var(--ember); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      margin-top: 72px; border-top: 1px solid var(--line);
+      padding: 30px 0 48px; display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px; font-size: 0.82rem; color: var(--muted);
+    }
+    footer .f-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    footer .f-links a { transition: color 0.2s; }
+    footer .f-links a:hover { color: var(--ink); }
+
+    /* ===== REVEAL ===== */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 820px) {
+      .topnav { display: none; }
+      .wstep, .wstep:nth-child(even) { flex-direction: column; gap: 30px; align-items: flex-start; padding: 40px 0; }
+      .wshot { align-self: center; }
+    }
+    @media (max-width: 620px) {
+      .wrap { padding: 0 22px; }
+      .compare { grid-template-columns: 1fr; }
+      .product { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="site">
+    <div class="wrap bar">
+      <a class="wordmark" href="../../../../" aria-label="Inicio de GrayForge">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#16181A"/>
+          <path d="M32 14 L38 32 L32 27 L26 32 Z" fill="#D9531E"/>
+          <circle cx="32" cy="42" r="6" fill="#E8743F"/>
+        </svg>
+        <span class="name">GrayForge</span>
+        <span class="sub">Diario</span>
+      </a>
+      <nav class="topnav" aria-label="Principal">
+        <a href="../../">Blog</a>
+        <a href="../../../noisyno/">NoisyNo</a>
+        <a href="../../../../dashlog/">DashLog</a>
+        <a href="#download">Descargar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Ruta de navegación">
+          <a href="../../../../">GrayForge</a>
+          <span class="sep">/</span>
+          <a href="../../">Blog</a>
+          <span class="sep">/</span>
+          <a href="../">NoisyNo</a>
+          <span class="sep">/</span>
+          <span class="here">Ruido de fondo en notas de voz</span>
+        </nav>
+
+        <div class="kicker" style="margin-top:26px;">
+          <span class="tick"></span>
+          <span class="label">NoisyNo · Guía práctica</span>
+        </div>
+
+        <h1>Tu nota de voz captó la idea. Y también la cafetería<span class="spark">.</span></h1>
+
+        <p class="lede">
+          La cafetera, el tráfico, el ventilador sobre tu mesa: las notas de voz lo captan todo.
+          Así puedes <strong>quitar el ruido de fondo de una nota de voz del iPhone o de Android,
+          en el propio teléfono</strong>, en unos tres minutos.
+        </p>
+
+        <div class="metabar">
+          <span class="m">Publicado 2026.11.27</span>
+          <span class="dot"></span>
+          <span class="m">~5 min de lectura</span>
+          <span class="dot"></span>
+          <span class="m">Tema · Limpiar notas de voz</span>
+          <span class="dot"></span>
+          <span class="m" data-lang-links style="display:inline-block;max-width:100%;line-height:1.8;">También en: <a href="../../../../blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="en" lang="en" style="text-decoration:underline;text-underline-offset:3px;">English</a> · <a href="../../../../ko/blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="ko" lang="ko" style="text-decoration:underline;text-underline-offset:3px;">한국어</a> · <a href="../../../../ja/blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="ja" lang="ja" style="text-decoration:underline;text-underline-offset:3px;">日本語</a> · <a href="../../../../zh/blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="zh" lang="zh" style="text-decoration:underline;text-underline-offset:3px;">中文</a> · <a href="../../../../pt/blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="pt" lang="pt" style="text-decoration:underline;text-underline-offset:3px;">Português</a> · <a href="../../../../fr/blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="fr" lang="fr" style="text-decoration:underline;text-underline-offset:3px;">Français</a> · <a href="../../../../de/blog/noisyno/remove-background-noise-from-voice-memo/" hreflang="de" lang="de" style="text-decoration:underline;text-underline-offset:3px;">Deutsch</a></span>
+        </div>
+
+      </div>
+    </section>
+
+    <article>
+      <div class="wrap">
+
+        <!-- BUILT-IN FIRST -->
+        <section id="built-in" class="read reveal">
+          <h2>Primero, prueba la solución que ya trae tu teléfono</h2>
+          <p>
+            En el iPhone, la app Notas de Voz tiene su propia reducción de ruido. Abre la nota, toca el botón de opciones
+            y activa <strong>Mejorar grabación</strong>. Reduce el ruido de fondo constante y el eco de la sala, no cuesta
+            nada y, si la nota tiene poco ruido, puede que sea todo lo que necesitas. Algunas apps de grabación de Android
+            tienen un ajuste parecido, así que revisa primero las opciones de tu grabadora.
+          </p>
+          <p>NoisyNo merece la pena cuando la opción integrada no basta o no se puede usar:</p>
+          <ul>
+            <li><strong>El ruido sigue ahí</strong> después de Mejorar grabación, y quieres comparar el audio original y el limpio uno al lado del otro (el <a class="inline" href="#step-compare">selector A/B del paso 4</a>).</li>
+            <li><strong>Tu grabadora de Android no tiene opción de ruido</strong>, o grabaste la nota con otra app.</li>
+            <li><strong>La voz está en un vídeo.</strong> NoisyNo también limpia el sonido de archivos MP4 y MOV. Exportar el vídeo limpio requiere Pro; sin Pro, el audio limpio se guarda como un archivo aparte.</li>
+            <li><strong>Tienes muchas notas.</strong> El procesamiento por lotes forma parte de NoisyNo Pro.</li>
+          </ul>
+        </section>
+
+        <!-- HOW -->
+        <section id="how" class="reveal">
+          <div class="read">
+            <h2>Cómo limpiar una nota de voz con NoisyNo, en 5 pasos</h2>
+            <p>
+              Una nota de voz ya es un archivo de audio normal: Notas de Voz del iPhone graba en <strong>M4A</strong>, y la
+              mayoría de las apps de grabación de Android guardan en <strong>M4A o WAV</strong>. La forma más rápida de
+              llevarla a NoisyNo es el <strong>botón de compartir de la propia app de grabación</strong>, así que el
+              proceso es: <strong>compartir la nota con NoisyNo → limpiar → comparar → compartir el resultado</strong>. Sin
+              conversiones, sin cuenta y sin subir nada. Los pasos 1 y 2 cubren iPhone y Android; a partir del paso 3, los
+              dos son iguales.
+            </p>
+          </div>
+
+          <div class="walk">
+
+            <div class="wstep" id="step-iphone">
+              <div class="wtext">
+                <div class="num">Paso 01 · iPhone</div>
+                <h3>Compártela directamente desde Notas de Voz</h3>
+                <p>
+                  En la app <strong>Notas de Voz</strong>, toca la grabación, toca el <strong>botón Más (…)</strong> y
+                  elige <strong>Compartir</strong>. En la hoja para compartir, selecciona <strong>NoisyNo</strong>: la nota
+                  se abre en la app, lista para limpiar. Si NoisyNo no aparece en la fila de apps, desliza hacia la derecha
+                  y toca <strong>Más</strong> para encontrarla. ¿Prefieres no usar la hoja para compartir? Elige
+                  <strong>Guardar en Archivos</strong> y luego selecciona la nota desde la pestaña Files de NoisyNo: cada
+                  grabación de Notas de Voz es un simple archivo M4A.
+                </p>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-android">
+              <div class="wtext">
+                <div class="num">Paso 02 · Android</div>
+                <h3>Compártela desde tu app de grabación</h3>
+                <p>
+                  Las apps de grabación cambian según el fabricante, pero la idea de compartir es la misma en todas. En la
+                  <strong>Grabadora de voz de Samsung</strong>, mantén presionada la grabación y toca
+                  <strong>Compartir</strong>; en la <strong>Grabadora de Google</strong>, abre la grabación, toca el menú
+                  de tres puntos y elige <strong>Compartir → Audio (.m4a)</strong>. Selecciona <strong>NoisyNo</strong> en
+                  la hoja para compartir. Si tu grabadora solo exporta al almacenamiento, guarda el archivo ahí y ábrelo
+                  desde la pestaña <strong>Files</strong> de NoisyNo: las grabaciones recientes aparecen arriba.
+                </p>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-clean">
+              <div class="wtext">
+                <div class="num">Paso 03</div>
+                <h3>Lanza la limpieza (100&nbsp;% en el dispositivo)</h3>
+                <p>
+                  Toca <strong>Clean</strong>. El modelo incluido en la app reduce el ruido constante alrededor de tu voz:
+                  <strong>la nota nunca se sube</strong> y funciona sin internet. Una nota típica de unos minutos tarda
+                  entre unos segundos y un minuto; mantén la app abierta mientras trabaja, porque bloquear la pantalla o
+                  cambiar de app puede pausar el procesamiento.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen center"><img src="../../../../noisyno/assets/screenshots/06_processing.png" alt="Pantalla de procesamiento con la eliminación de ruido al 47&nbsp;%, que indica que se ejecuta al 100&nbsp;% en el dispositivo" loading="lazy" width="1320" height="2868" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-compare">
+              <div class="wtext">
+                <div class="num">Paso 04</div>
+                <h3>Compara el original con el resultado</h3>
+                <p>
+                  El selector <strong>Original / Cleaned</strong> cambia al instante en el mismo momento. Fíjate en dos
+                  cosas: que el ruido de fondo baje y que tu voz siga sonando natural, porque una eliminación demasiado
+                  agresiva puede dejar la voz fina o como bajo el agua. Si la versión limpia pierde demasiado, no pierdes
+                  nada: <strong>tu nota original nunca se sobrescribe</strong>.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../noisyno/assets/screenshots/04_compare.png" alt="Pantalla de detalle que compara Original y Cleaned de 'Coffee shop interview.m4a' con un selector, la forma de onda, el botón de reproducción y la velocidad de reproducción" loading="lazy" width="1320" height="2868" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wstep" id="step-share">
+              <div class="wtext">
+                <div class="num">Paso 05</div>
+                <h3>Guarda o comparte la nota limpia</h3>
+                <p>
+                  Comparte el resultado allí adonde iba a ir la nota de todos modos: una app de notas, una conversación,
+                  una app de transcripción, un editor. Como no hay cuenta ni biblioteca en el servidor de nadie,
+                  <strong>el archivo limpio solo está donde tú lo pongas</strong>.
+                </p>
+              </div>
+              <div class="wshot">
+                <div class="phone">
+                  <div class="screen"><img src="../../../../noisyno/assets/screenshots/07_detail.png" alt="Pantalla de resultado de una grabación limpia, lista para guardarla o compartirla con otra app" loading="lazy" width="1320" height="2868" /></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="read">
+            <div class="product" id="download">
+              <div class="icon"><img src="../../../../noisyno/assets/app-icon-180.png" alt="Icono de la app NoisyNo" loading="lazy" width="180" height="180" /></div>
+              <div>
+                <h3>NoisyNo — Voice Noise Remover</h3>
+                <p>
+                  Una app para quitar ruido de la voz sin conexión, que reduce el zumbido del ventilador, el siseo, el
+                  viento, el aire acondicionado y el ruido ambiente de interiores en grabaciones y en el audio de vídeos.
+                  Procesa dentro de tu teléfono, sin subir archivos.
+                </p>
+                <div class="actions">
+                  <a class="primary" href="https://apps.apple.com/app/apple-store/id6772728543?pt=128909216&amp;ct=web&amp;mt=8" rel="noopener">App Store</a>
+                  <a href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dblog%26utm_campaign%3Dblog_voice_memo" rel="noopener">Google Play</a>
+                  <a href="../../../noisyno/">Página del producto</a>
+                  <a href="../../../../noisyno/privacy_policy.html">Política de privacidad</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WHY MEMOS ARE NOISY -->
+        <section id="why" class="read reveal">
+          <h2>Por qué las notas de voz salen con más ruido de lo que esperas</h2>
+          <p>
+            Las notas de voz se graban en las peores condiciones acústicas de todo el audio que tienes. Sacas la grabadora
+            <em>precisamente</em> porque estás en un sitio poco práctico: una cafetería, el coche, un paseo, el fondo de un
+            aula. Hay tres cosas en tu contra:
+          </p>
+          <ul>
+            <li><strong>Los micrófonos del teléfono son omnidireccionales.</strong> Están hechos para captar una voz desde cualquier ángulo, lo que significa que también captan la sala desde todos los ángulos.</li>
+            <li><strong>El control automático de ganancia amplifica las partes tranquilas.</strong> Cuando haces una pausa entre frases, el teléfono sube la ganancia, y la cafetera sube con ella.</li>
+            <li><strong>No puedes controlar el lugar.</strong> Una toma de estudio se puede repetir; el momento que captaste en una nota normalmente no.</li>
+          </ul>
+          <p>
+            Ese último punto es lo que hace que limpiar a posteriori sea la herramienta adecuada para las notas: la
+            grabación es irrepetible, así que arreglas el archivo que tienes.
+          </p>
+
+          <div class="compare" aria-label="Comparación entre volver a grabar y limpiar">
+            <div class="compare-card">
+              <div class="tag">Opción A</div>
+              <h4>Volver a grabarla</h4>
+              <p>Solo sirve para audio con guion. La respuesta de una entrevista, la melodía que tarareaste, la decisión de la reunión: eso pasó una vez. Un momento no tiene segunda toma.</p>
+            </div>
+            <div class="compare-card good">
+              <div class="tag">Opción B</div>
+              <h4>Limpiar el archivo que tienes</h4>
+              <p>La eliminación de ruido en el dispositivo reduce la capa de fondo constante bajo la voz. La nota se queda en tu teléfono, y el original se conserva intacto junto al resultado limpio.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- WHAT IT HELPS -->
+        <section id="what" class="read reveal">
+          <h2>Qué ganas de verdad con una nota más limpia</h2>
+          <p>
+            Quitar el ruido no es solo cuestión de comodidad al escuchar. Las notas que la gente se molesta en limpiar son
+            las que van a acabar en otro sitio:
+          </p>
+          <ul>
+            <li><strong>Mejores transcripciones.</strong> El ruido de fondo constante es una causa habitual de errores de transcripción. Limpiar una nota antes de pasarla por una app de transcripción suele dar un texto bastante más limpio: menos palabras mal entendidas y menos frases que se pierden.</li>
+            <li><strong>Citas de entrevista que puedes usar.</strong> Una entrevista en una cafetería con el siseo de la máquina debajo de cada respuesta se convierte en audio citable en lugar de una pesadez de volver a escuchar.</li>
+            <li><strong>Material de estudio que de verdad volverás a escuchar.</strong> Una clase grabada desde la última fila, sin el ruido sordo de la climatización, es mucho más fácil de repasar a 1.5×.</li>
+            <li><strong>Notas de voz que merece la pena compartir.</strong> Una nota por la que pedirías perdón («perdona el ruido…») pasa a ser una que simplemente envías.</li>
+          </ul>
+          <p>
+            El límite realista: la eliminación de ruido funciona mejor con la <strong>capa constante</strong> (zumbido,
+            siseo, ruido sordo, murmullo de conversaciones, rumor del tráfico). Un portazo o un ladrido justo encima de una
+            palabra es otro problema, y una voz enterrada muy por debajo del ruido mejora, pero no se rescata. El selector
+            A/B del paso 4 es cómo juzgas con honestidad cada nota.
+          </p>
+        </section>
+
+        <!-- LIMITS -->
+        <section id="limits" class="read reveal">
+          <h2>Conviene saberlo: tus notas pueden ser personales, y el procesamiento es local</h2>
+          <p>
+            Las notas de voz están entre los archivos más personales de un teléfono: ideas a medio formar, recordatorios
+            privados, voces de otras personas grabadas con su confianza. Por eso importa <strong>dónde</strong> se hace la
+            limpieza. Según la <a class="inline" href="../../../../noisyno/privacy_policy.html">política de privacidad</a> de
+            NoisyNo, el archivo que eliges y el resultado limpio se procesan en el dispositivo y no se suben a un servidor
+            de GrayForge. Pueden ejecutarse diagnósticos limitados (Firebase Crashlytics, Analytics, Remote Config) para la
+            calidad de la app, y no incluyen nombres de archivo ni contenido de audio.
+          </p>
+
+          <div class="callout">
+            <span class="label">En resumen</span>
+            <p>
+              La nota en sí nunca sale de tu teléfono para procesarse. Considera el <strong>procesamiento de
+              archivos</strong> (local) y los <strong>datos de diagnóstico</strong> (limitados, sin contenido de audio)
+              como dos ámbitos separados.
+            </p>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="read reveal">
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details>
+              <summary>¿Cómo quito el ruido de fondo de una nota de voz del iPhone?</summary>
+              <p>En la app Notas de Voz, abre la grabación, toca el botón Más (…), elige Compartir y selecciona NoisyNo. Después toca Clean y compara el resultado: todo el proceso se hace en el teléfono en unos tres minutos, sin subir nada y sin cuenta.</p>
+            </details>
+            <details>
+              <summary>¿Cómo saco una nota de voz de la app Notas de Voz?</summary>
+              <p>Usa la hoja para compartir: abre la nota, toca el botón Más (…) y luego Compartir. Desde ahí puedes enviarla directamente a NoisyNo, o elegir Guardar en Archivos para dejar el archivo M4A en un lugar al que pueda acceder cualquier app.</p>
+            </details>
+            <details>
+              <summary>¿Puedo limpiar una nota de voz sin subirla a un sitio web?</summary>
+              <p>Sí. NoisyNo procesa el archivo dentro de tu teléfono. La nota no se sube a ningún servidor de GrayForge, algo importante cuando la grabación contiene reuniones, entrevistas o notas personales.</p>
+            </details>
+            <details>
+              <summary>¿Limpiar una nota de voz sobrescribe la grabación original?</summary>
+              <p>No. NoisyNo guarda el audio limpio como un resultado nuevo que puedes guardar o compartir. La nota original queda intacta, así que siempre puedes volver a ella.</p>
+            </details>
+            <details>
+              <summary>¿Funciona con archivos de las grabadoras de voz de Android?</summary>
+              <p>Sí. Las apps de grabación de Android suelen guardar archivos M4A o WAV, y ambos funcionan directamente en NoisyNo, igual que MP3, AAC y CAF. No hace falta convertir nada.</p>
+            </details>
+            <details>
+              <summary>¿Quitar el ruido hará que mi nota de voz sea más fácil de transcribir?</summary>
+              <p>Normalmente, sí. El ruido de fondo constante es una causa habitual de errores de transcripción, así que reducirlo antes de pasar una nota por una app de transcripción suele dar un texto más limpio.</p>
+            </details>
+            <details>
+              <summary>¿NoisyNo es gratis?</summary>
+              <p>NoisyNo se descarga gratis, sin cuentas, sin anuncios y sin subir archivos, y la eliminación de ruido es gratuita. La normalización de volumen es una función Pro que se desbloquea con una compra única dentro de la app. No hay suscripción.</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- END CTA -->
+        <section class="endcta read">
+          <span class="label">Siguiente paso</span>
+          <h2 style="margin-top:16px;">Rescata la nota que casi borras.</h2>
+          <p>Después de instalarla, limpiar tu primera nota de voz lleva unos tres minutos. Si algo no queda claro, te responde directamente la persona que la creó.</p>
+          <a class="mailto" href="mailto:grayforge.dev@gmail.com?subject=NoisyNo%20question">grayforge.dev@gmail.com <span aria-hidden="true">↗</span></a>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    <span>© 2026 GrayForge · Última actualización 2026.11.27</span>
+    <div class="f-links">
+      <a href="../../">Blog</a>
+      <a href="../../../noisyno/">NoisyNo</a>
+      <a href="../../../../dashlog/">DashLog</a>
+      <a href="../../../../noisyno/privacy_policy.html">Privacidad</a>
+      <a href="mailto:grayforge.dev@gmail.com">Contacto</a>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 60);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>ボイスメモ「録音の補正」vs NoisyNo vs ウェブツール | GrayForge</title>
+  <meta name="description" content="iPhone ボイスメモの「録音の補正」、NoisyNo、Adobe Podcast、Kapwing を比較。音声に何をするか、アップロード、アカウント、料金、制限を各社の公式情報から整理しました。" />
+  <meta name="keywords" content="ボイスメモ 録音の補正, ボイスメモ ノイズ除去, iPhone 録音 雑音 消す, ボイスメモ 雑音, 録音補正 iPhone, NoisyNo Adobe Podcast 比較, Adobe Podcast Enhance Speech 代わり, Kapwing ノイズ除去, オフライン ノイズ除去, アップロード不要" />
+  <meta name="author" content="GrayForge" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ECEDEA" />
+  <link rel="canonical" href="https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  <link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  <link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  <link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  <link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  <link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  <link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  <link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  <link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  <link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+
+  <!-- Inline SVG favicon: graphite square with an ember spark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;rect width='64' height='64' rx='12' fill='%2316181A'/&gt;&lt;path d='M32 14 L38 32 L32 27 L26 32 Z' fill='%23D9531E'/&gt;&lt;circle cx='32' cy='42' r='6' fill='%23E8743F'/&gt;&lt;/svg&gt;" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="GrayForge" />
+  <meta property="og:url" content="https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  <meta property="og:title" content="ボイスメモの「録音の補正」vs NoisyNo vs ブラウザのノイズ除去ツール" />
+  <meta property="og:description" content="iPhone に最初からある機能、端末内で処理するアプリ、アップロード型のウェブツール2つを比較。音声に何をするか、費用はいくらか、それぞれどこが弱いのか。" />
+  <meta property="og:image" content="https://grayforge.app/noisyno/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="article:published_time" content="2026-11-27" />
+  <meta property="article:modified_time" content="2026-11-27" />
+  <meta property="article:author" content="GrayForge" />
+  <meta property="article:section" content="NoisyNo ガイド" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ボイスメモの「録音の補正」vs NoisyNo vs ブラウザのノイズ除去ツール" />
+  <meta name="twitter:description" content="iPhone に最初からある機能、端末内で処理するアプリ、アップロード型のウェブツール2つを比較。音声に何をするか、費用はいくらか、それぞれどこが弱いのか。" />
+  <meta name="twitter:image" content="https://grayforge.app/noisyno/assets/og-image.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/#article",
+        "headline": "ボイスメモの「録音の補正」vs NoisyNo vs ブラウザのノイズ除去ツール",
+        "alternativeHeadline": "iPhone に最初からある機能、端末内アプリ、アップロード型のウェブツールを比較",
+        "description": "iPhone のボイスメモの「録音の補正」と、NoisyNo、ブラウザツールの Adobe Podcast Enhance Speech・Kapwing を比較。音声に何をするか、アップロードの有無、アカウントの要否、料金体系、対応プラットフォーム、書き出しの制限、オフライン対応を、各社の公式ドキュメントから整理しました。",
+        "inLanguage": "ja",
+        "datePublished": "2026-11-27",
+        "dateModified": "2026-11-27",
+        "wordCount": 2000,
+        "articleSection": "NoisyNo ガイド",
+        "keywords": "ボイスメモ 録音の補正, ボイスメモ ノイズ除去, NoisyNo, Adobe Podcast Enhance Speech, Kapwing Clean Audio, オフライン ノイズ除去",
+        "mainEntityOfPage": "https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/",
+        "author": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/"},
+        "publisher": {"@type": "Organization", "@id": "https://grayforge.app/#organization", "name": "GrayForge", "url": "https://grayforge.app/", "logo": {"@type": "ImageObject", "url": "https://grayforge.app/assets/grayforge-logo-512.png", "width": 512, "height": 512}},
+        "about": {"@id": "https://grayforge.app/noisyno/#app"},
+        "image": [
+          "https://grayforge.app/noisyno/assets/og-image.png"
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".lede", ".answer-card p"]
+        },
+        "citation": [
+          "https://support.apple.com/en-gb/guide/iphone/iphebbd067ce/ios",
+          "https://support.apple.com/en-gb/guide/iphone/iph3d6dc359/ios",
+          "https://support.apple.com/en-gb/guide/iphone/iph38b91c7af/ios",
+          "https://support.apple.com/en-gb/guide/iphone/iph4d2a39a3b/ios",
+          "https://grayforge.app/noisyno/",
+          "https://grayforge.app/llms.txt",
+          "https://podcast.adobe.com/en/plans",
+          "https://podcast.adobe.com/en/enhance",
+          "https://helpx.adobe.com/podcast/adobe-podcast-faq.html",
+          "https://www.kapwing.com/tools/remove-background/noise",
+          "https://www.kapwing.com/pricing",
+          "https://www.kapwing.com/help/subscription-faq/"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/#breadcrumbs",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "GrayForge", "item": "https://grayforge.app/"},
+          {"@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://grayforge.app/ja/blog/"},
+          {"@type": "ListItem", "position": 3, "name": "NoisyNo", "item": "https://grayforge.app/ja/blog/noisyno/"},
+          {"@type": "ListItem", "position": 4, "name": "ボイスメモの録音の補正 vs NoisyNo", "item": "https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/"}
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/#tools",
+        "name": "比較したノイズ除去の方法",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Voice Memos Enhance Recording (iPhone)", "url": "https://support.apple.com/en-gb/guide/iphone/iphebbd067ce/ios"},
+          {"@type": "ListItem", "position": 2, "name": "NoisyNo", "url": "https://grayforge.app/noisyno/"},
+          {"@type": "ListItem", "position": 3, "name": "Adobe Podcast Enhance Speech", "url": "https://podcast.adobe.com/en/enhance"},
+          {"@type": "ListItem", "position": 4, "name": "Kapwing Clean Audio", "url": "https://www.kapwing.com/tools/remove-background/noise"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "「録音の補正」をオンにすると、元のボイスメモは変わりますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Apple の iPhone ユーザガイドでは、「録音の補正」は再生オプションのひとつとして説明されています。モノラルとステレオの録音を再生するときに背景ノイズと反響を抑えるもので、これらのオプションを変更しても録音そのものには影響しない、と Apple は書いています。共有したコピーに効果が含まれるかどうかは書かれていないため、頼る前に共有したファイルを再生して確かめてください。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ボイスメモをきれいにするには「録音の補正」で十分ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "軽い一定のノイズが入ったメモを iPhone で聴くだけなら、多くの場合は十分です。しかも最初から iPhone に入っています。きれいにしたファイルを保存・共有したいとき、Android を使っているとき、声が動画の中にあるときは、NoisyNo のような専用ツールのほうが向いています。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ブラウザのノイズ除去ツールは録音をアップロードしますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい。Adobe Podcast Enhance Speech と Kapwing はどちらもアップロードしたファイルを処理し、どちらもアカウントが必要です（Kapwing は書き出し時）。Adobe の無料プランは1ファイル30分まで・1日1時間まで、Kapwing の無料プランは Clean Audio が5分までで、書き出しにはウォーターマークが入ります。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "NoisyNo は無料ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NoisyNo は無料でダウンロードでき、ノイズ除去はどんな長さでも無料です。Pro は買い切りのアプリ内課金で、処理済み動画の書き出し、一括処理、ラウドネスの正規化、ロスレス WAV の書き出し、トリミングが加わります。サブスクはありません。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "NoisyNo は音声をアップロードしますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "いいえ。音声・動画ファイルは端末上で処理されます。アプリの品質のために限定的な Firebase の診断が動くことがありますが、ファイル名や音声の内容は含まれません。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper:   #ECEDEA;
+      --paper-2: #E4E5E1;
+      --panel:   #F4F4F2;
+      --ink:     #16181A;
+      --ink-2:   #393D40;
+      --muted:   #6C7176;
+      --line:    #CDCFCA;
+      --line-2:  #BCBEB8;
+      --ember:   #D9531E;
+      --ember-d: #B5400F;
+
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+      --wrap:  1120px;
+      --read:  720px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-wrap: break-word;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ::selection { background: var(--ink); color: var(--paper); }
+
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 32px; }
+    .read { max-width: var(--read); margin-left: auto; margin-right: auto; }
+
+    .label {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ===== TOP BAR ===== */
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+    .wordmark { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+    .wordmark .mark { width: 24px; height: 24px; }
+    .wordmark .name { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+    .wordmark .sub { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; font-style: italic; color: var(--muted); }
+    .topnav { display: flex; gap: 30px; }
+    .topnav a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      letter-spacing: 0.02em; position: relative; padding: 4px 0;
+    }
+    .topnav a::after {
+      content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px;
+      background: var(--ink); transition: width 0.25s ease;
+    }
+    .topnav a:hover::after { width: 100%; }
+
+    /* ===== BREADCRUMB ===== */
+    .crumbs { padding-top: 34px; font-size: 0.8rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .crumbs a { border-bottom: 1px solid transparent; transition: border-color 0.2s, color 0.2s; }
+    .crumbs a:hover { color: var(--ink); border-color: var(--line-2); }
+    .crumbs .sep { color: var(--line-2); }
+    .crumbs .here { color: var(--ink-2); }
+
+    /* ===== HERO ===== */
+    .hero { padding: 26px 0 60px; border-bottom: 1px solid var(--line); }
+    .kicker { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 22px; }
+    .kicker .tick { width: 6px; height: 6px; border-radius: 50%; background: var(--ember); }
+    h1 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(2.1rem, 5vw, 3.9rem);
+      line-height: 1.06; letter-spacing: -0.025em;
+      max-width: 20ch; margin-bottom: 28px;
+      font-optical-sizing: auto;
+    }
+    h1 .spark { color: var(--ember); }
+    .lede {
+      max-width: 60ch;
+      font-size: clamp(1.08rem, 1.7vw, 1.32rem);
+      color: var(--ink-2); line-height: 1.62;
+    }
+    .lede strong { font-weight: 600; color: var(--ink); }
+    .metabar {
+      margin-top: 34px; display: flex; flex-wrap: wrap; gap: 10px 26px;
+      align-items: center; font-size: 0.82rem; color: var(--muted);
+    }
+    .metabar .m { display: inline-flex; align-items: center; gap: 8px; }
+    .metabar .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--line-2); }
+
+    /* ===== ANSWER CARD ===== */
+    .answer-card {
+      margin-top: 40px; max-width: 68ch;
+      display: grid; grid-template-columns: auto 1fr; gap: 22px;
+      padding: 26px 28px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--ember);
+      border-radius: 4px;
+    }
+    .answer-card .q { font-family: var(--serif); font-size: 1.7rem; color: var(--ember); line-height: 1; }
+    .answer-card .short { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    .answer-card p { font-size: 1.02rem; color: var(--ink-2); line-height: 1.65; }
+    .answer-card strong { color: var(--ink); font-weight: 600; }
+
+    /* ===== TOC ===== */
+    .toc { padding: 44px 0; border-bottom: 1px solid var(--line); }
+    .toc .toc-inner { display: grid; grid-template-columns: 200px 1fr; gap: 40px; }
+    .toc .label { display: block; }
+    .toc .aside-note { margin-top: 10px; font-size: 0.9rem; color: var(--muted); max-width: 22ch; }
+    .toc ol { list-style: none; counter-reset: toc; display: grid; gap: 2px; }
+    .toc li { counter-increment: toc; }
+    .toc li a {
+      display: flex; align-items: baseline; gap: 16px;
+      padding: 12px 0; border-top: 1px solid var(--line);
+      transition: color 0.2s;
+    }
+    .toc li:first-child a { border-top: none; }
+    .toc li a::before {
+      content: counter(toc, decimal-leading-zero);
+      font-family: var(--serif); font-size: 0.9rem; color: var(--ember); min-width: 24px;
+    }
+    .toc li a .t { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; }
+    .toc li a:hover .t { color: var(--ember); }
+
+    /* ===== ARTICLE ===== */
+    article { padding: 12px 0 24px; }
+    article section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    article section:last-child { border-bottom: none; }
+    h2 {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+      line-height: 1.12; letter-spacing: -0.02em;
+      margin-bottom: 22px; max-width: 24ch;
+    }
+    h3 { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.01em; margin: 30px 0 10px; }
+    article p { font-size: 1.05rem; color: var(--ink-2); margin-bottom: 18px; max-width: 68ch; }
+    article a.inline { color: var(--ember-d); border-bottom: 1px solid color-mix(in srgb, var(--ember) 40%, transparent); transition: border-color 0.2s; }
+    article a.inline:hover { border-bottom-color: var(--ember); }
+    article ul, article ol.steps { list-style: none; margin: 20px 0; max-width: 66ch; }
+    article ul li, article ol.steps li {
+      position: relative; padding-left: 24px; margin: 11px 0;
+      font-size: 1.03rem; color: var(--ink-2);
+    }
+    article ul li::before {
+      content: ''; position: absolute; left: 2px; top: 0.72em;
+      width: 6px; height: 6px; border-radius: 50%; background: var(--ember);
+    }
+    article ol.steps { counter-reset: step; }
+    article ol.steps li { counter-increment: step; padding-left: 34px; }
+    article ol.steps li::before {
+      content: counter(step); position: absolute; left: 0; top: 0;
+      font-family: var(--serif); font-weight: 500; color: var(--ember);
+    }
+    article ul li strong, article ol.steps li strong { color: var(--ink); font-weight: 600; }
+
+    /* ===== COMPARISON TABLE ===== */
+    .table-wrap {
+      margin: 30px 0 12px; overflow-x: auto; -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--line); border-radius: 6px; background: var(--panel);
+    }
+    table.cmp { border-collapse: separate; border-spacing: 0; width: 100%; min-width: 1000px; font-size: 0.9rem; line-height: 1.5; }
+    table.cmp caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .table-cap { margin: 30px 0 0; font-size: 0.84rem; color: var(--muted); max-width: none; }
+    .table-cap + .table-wrap { margin-top: 12px; }
+    table.cmp th, table.cmp td { padding: 14px 16px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); color: var(--ink-2); }
+    table.cmp tbody tr:last-child th, table.cmp tbody tr:last-child td { border-bottom: none; }
+    table.cmp thead th {
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--muted); background: var(--paper-2); min-width: 120px;
+    }
+    table.cmp th[scope="row"], table.cmp thead th:first-child {
+      position: sticky; left: 0; z-index: 1; min-width: 150px; max-width: 170px;
+      box-shadow: 1px 0 0 var(--line);
+    }
+    table.cmp th[scope="row"] { background: var(--panel); font-family: var(--serif); font-weight: 500; font-size: 1rem; color: var(--ink); }
+    table.cmp th[scope="row"] small { display: block; margin-top: 4px; font-family: var(--sans); font-size: 0.74rem; font-weight: 400; color: var(--muted); }
+    table.cmp tr.ours th, table.cmp tr.ours td { background: #F7EDE6; }
+    table.cmp tr.group th span { position: sticky; left: 16px; }
+    table.cmp tr.group th {
+      position: static; background: var(--paper-2); font-family: var(--sans); font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); padding: 10px 16px; box-shadow: none;
+    }
+    table.cmp .v { font-weight: 600; color: var(--ink); }
+    table.cmp .v.unk { font-weight: 500; font-style: italic; color: var(--muted); }
+    a.ref {
+      font-size: 0.68rem; font-weight: 600; vertical-align: super; line-height: 0;
+      color: var(--ember-d); margin-left: 2px; white-space: nowrap;
+    }
+    a.ref:hover { color: var(--ember); }
+    .table-note { font-size: 0.88rem; color: var(--muted); max-width: 80ch; }
+    .table-hint { display: none; font-size: 0.82rem; color: var(--muted); margin-top: 22px; }
+
+    /* ===== PRODUCT CARD ===== */
+    .product {
+      margin-top: 40px; display: grid; grid-template-columns: 64px 1fr; gap: 22px;
+      align-items: start; padding: 28px; border: 1px solid var(--line);
+      border-radius: 8px; background: var(--panel);
+    }
+    .product .icon { width: 64px; height: 64px; border-radius: 15px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 2px 6px rgba(22,24,26,0.12); }
+    .product h3 { margin: 0 0 8px; font-size: 1.4rem; }
+    .product p { font-size: 0.98rem; margin-bottom: 0; max-width: 60ch; }
+    .actions { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .actions a {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-2);
+      border: 1px solid var(--line-2); border-radius: 100px; padding: 8px 15px;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .actions a:hover { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+    .actions a.primary { color: var(--paper); background: var(--ember); border-color: var(--ember); }
+    .actions a.primary:hover { background: var(--ember-d); border-color: var(--ember-d); }
+
+    /* ===== CALLOUT ===== */
+    .callout {
+      margin: 30px 0 0; padding: 24px 28px;
+      background: var(--panel); border: 1px solid var(--line);
+      border-left: 3px solid var(--ember); border-radius: 4px;
+    }
+    .callout .label { display: block; margin-bottom: 8px; }
+    .callout p { margin: 0; font-size: 1.02rem; color: var(--ink-2); max-width: none; }
+
+    /* ===== SOURCE LIST ===== */
+    ol.srclist { list-style: none; counter-reset: src; margin-top: 26px; max-width: none; }
+    ol.srclist li {
+      counter-increment: src; display: grid; grid-template-columns: 34px 1fr; gap: 6px 14px;
+      padding: 14px 0; border-top: 1px solid var(--line); font-size: 0.92rem; color: var(--ink-2);
+      scroll-margin-top: 90px;
+    }
+    ol.srclist li:first-child { border-top: none; }
+    ol.srclist li::before { content: counter(src); font-family: var(--serif); color: var(--ember); font-size: 1rem; }
+    ol.srclist li:target { background: var(--panel); }
+    ol.srclist b { font-family: var(--serif); font-weight: 500; font-size: 1.02rem; color: var(--ink); }
+    ol.srclist a { color: var(--ember-d); word-break: break-all; }
+    ol.srclist span { display: block; color: var(--muted); font-size: 0.84rem; }
+
+    /* ===== FAQ ===== */
+    .faq-list { margin-top: 26px; }
+    .faq-list details {
+      border-top: 1px solid var(--line); padding: 6px 0;
+    }
+    .faq-list details[open] { padding-bottom: 8px; }
+    .faq-list summary {
+      cursor: pointer; list-style: none; padding: 18px 40px 18px 0; position: relative;
+      font-family: var(--serif); font-weight: 500; font-size: 1.2rem; color: var(--ink);
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: '+'; position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+      font-family: var(--sans); font-size: 1.4rem; color: var(--ember); transition: transform 0.25s ease;
+    }
+    .faq-list details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-list details p { margin: 0 0 14px; color: var(--ink-2); font-size: 1.02rem; max-width: 66ch; }
+
+    /* ===== END CTA ===== */
+    .endcta { padding: 72px 0 0; }
+    .endcta h2 { max-width: 20ch; }
+    .endcta .mailto {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--serif); font-size: 1.2rem; font-weight: 500;
+      border-bottom: 2px solid var(--ink); padding-bottom: 4px; margin-top: 6px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .endcta .mailto:hover { color: var(--ember); border-color: var(--ember); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      margin-top: 72px; border-top: 1px solid var(--line);
+      padding: 30px 0 48px; display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px; font-size: 0.82rem; color: var(--muted);
+    }
+    footer .f-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    footer .f-links a { transition: color 0.2s; }
+    footer .f-links a:hover { color: var(--ink); }
+
+    /* ===== REVEAL ===== */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .toc .toc-inner { grid-template-columns: 1fr; gap: 20px; }
+    }
+    @media (max-width: 820px) {
+      .topnav { display: none; }
+      .table-hint { display: block; }
+    }
+    @media (max-width: 620px) {
+      .wrap { padding: 0 22px; }
+      .answer-card { grid-template-columns: 1fr; gap: 14px; }
+      .product { grid-template-columns: 1fr; }
+      table.cmp th[scope="row"], table.cmp thead th:first-child { min-width: 118px; max-width: 128px; }
+      table.cmp th[scope="row"] { font-size: 0.92rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="site">
+    <div class="wrap bar">
+      <a class="wordmark" href="../../../../" aria-label="GrayForge ホーム">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#16181A"/>
+          <path d="M32 14 L38 32 L32 27 L26 32 Z" fill="#D9531E"/>
+          <circle cx="32" cy="42" r="6" fill="#E8743F"/>
+        </svg>
+        <span class="name">GrayForge</span>
+        <span class="sub">Journal</span>
+      </a>
+      <nav class="topnav" aria-label="メインメニュー">
+        <a href="../../">ブログ</a>
+        <a href="../../../noisyno/">NoisyNo</a>
+        <a href="../../../../vocalout/">VocalOut</a>
+        <a href="#download">ダウンロード</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="パンくずリスト">
+          <a href="../../../../">GrayForge</a>
+          <span class="sep">/</span>
+          <a href="../../">ブログ</a>
+          <span class="sep">/</span>
+          <a href="../">NoisyNo</a>
+          <span class="sep">/</span>
+          <span class="here">ボイスメモの録音の補正 vs NoisyNo</span>
+        </nav>
+
+        <div class="kicker" style="margin-top:26px;">
+          <span class="tick"></span>
+          <span class="label">NoisyNo · 比較</span>
+        </div>
+
+        <h1>ボイスメモの「録音の補正」vs NoisyNo vs ブラウザのノイズ除去ツール<span class="spark">。</span></h1>
+
+        <p class="lede">
+          声の録音から背景ノイズを取り除く3つの方法 — iPhone のボイスメモアプリに最初からあるスイッチ、ファイルを<strong>端末内で</strong>きれいにするアプリ、そしてファイルをアップロードするウェブサイト。それぞれが音声をどう扱うか、費用はいくらか、どこが弱いのかをまとめました。
+        </p>
+
+        <div class="metabar">
+          <span class="m">公開 2026.11.27</span>
+          <span class="dot"></span>
+          <span class="m">約8分で読めます</span>
+          <span class="dot"></span>
+          <span class="m">情報確認日 2026.11.01</span>
+          <span class="dot"></span>
+          <span class="m" data-lang-links style="display:inline-block;max-width:100%;line-height:1.8;">他の言語： <a href="../../../../blog/noisyno/voice-memo-enhance-vs-noisyno/" hreflang="en" lang="en" style="text-decoration:underline;text-underline-offset:3px;">English</a> · <a href="../../../../ko/blog/noisyno/voice-memo-enhance-vs-noisyno/" hreflang="ko" lang="ko" style="text-decoration:underline;text-underline-offset:3px;">한국어</a> · <a href="../../../../zh/blog/noisyno/voice-memo-enhance-vs-noisyno/" hreflang="zh" lang="zh" style="text-decoration:underline;text-underline-offset:3px;">中文</a> · <a href="../../../../es/blog/noisyno/voice-memo-enhance-vs-noisyno/" hreflang="es" lang="es" style="text-decoration:underline;text-underline-offset:3px;">Español</a> · <a href="../../../../pt/blog/noisyno/voice-memo-enhance-vs-noisyno/" hreflang="pt" lang="pt" style="text-decoration:underline;text-underline-offset:3px;">Português</a> · <a href="../../../../fr/blog/noisyno/voice-memo-enhance-vs-noisyno/" hreflang="fr" lang="fr" style="text-decoration:underline;text-underline-offset:3px;">Français</a> · <a href="../../../../de/blog/noisyno/voice-memo-enhance-vs-noisyno/" hreflang="de" lang="de" style="text-decoration:underline;text-underline-offset:3px;">Deutsch</a></span>
+        </div>
+
+        <div class="answer-card">
+          <div class="q">“</div>
+          <div>
+            <div class="short">結論から</div>
+            <p>
+              iPhone でメモを聴くだけなら、まず<strong>録音の補正</strong>を試してください。最初から入っていますが、
+              Apple はこれを、録音そのものは変えない再生設定として説明しています。きれいにしたファイルを保存・共有したいとき、Android を使っているとき、声が動画の中にあるときは、何もアップロードせずに済む<strong>NoisyNo</strong> を。<strong>Adobe Podcast Enhance Speech</strong> や <strong>Kapwing</strong>のようなブラウザツールはどのパソコンでも使えますが、アカウントとアップロードが必要で、無料プランには
+              1日あたりや1ファイルあたりの制限があります。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== TOC ===== -->
+    <section class="toc">
+      <div class="wrap toc-inner">
+        <div>
+          <span class="label">このページの内容</span>
+          <p class="aside-note">表の各セルから出典にリンクしています。</p>
+        </div>
+        <ol>
+          <li><a href="#table"><span class="t">比較表</span></a></li>
+          <li><a href="#enhance"><span class="t">「録音の補正」が実際にしていること</span></a></li>
+          <li><a href="#method"><span class="t">調べ方</span></a></li>
+          <li><a href="#which"><span class="t">どれをいつ使うか</span></a></li>
+          <li><a href="#weaker"><span class="t">NoisyNo が弱いところ</span></a></li>
+          <li><a href="#faq"><span class="t">よくある質問</span></a></li>
+          <li><a href="#sources"><span class="t">出典</span></a></li>
+        </ol>
+      </div>
+    </section>
+
+    <article>
+      <div class="wrap">
+
+        <!-- TABLE -->
+        <section id="table" class="reveal">
+          <div class="read">
+            <h2>4つの方法を並べて比較</h2>
+            <p>
+              「録音の補正」は Apple の機能、NoisyNo は私たちのアプリです。Adobe Podcast Enhance Speech と Kapwing は、アップロードした音声をきれいにする、よく知られたブラウザツールです。価格は米国の価格です。提供元が明らかにしていない点は、推測せずに<em>記載なし</em>としています。
+            </p>
+            <p class="table-hint">表を横にスクロールすると、すべての列を見られます →</p>
+          </div>
+
+          <p class="table-cap">各提供元の説明に基づくノイズ除去の方法（2026年11月1日確認）。上付きの数字は<a class="inline" href="#sources">出典</a>へのリンクです。</p>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="table-caption">
+            <table class="cmp">
+              <caption id="table-caption">各提供元の説明に基づくノイズ除去の方法（2026年11月1日確認）。</caption>
+              <thead>
+                <tr>
+                  <th scope="col">方法</th>
+                  <th scope="col">何をするか</th>
+                  <th scope="col">音声をサーバーにアップロード？</th>
+                  <th scope="col">アカウントは必要？</th>
+                  <th scope="col">料金体系</th>
+                  <th scope="col">対応プラットフォーム</th>
+                  <th scope="col">書き出しの費用・制限</th>
+                  <th scope="col">オフラインで使える？</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">ボイスメモ：録音の補正<small>Apple、iPhone に標準搭載</small></th>
+                  <td>モノラルとステレオの録音を再生するときに、背景ノイズと反響を抑えます。<a class="ref" href="#s1">1</a></td>
+                  <td>録音の補正については<span class="v unk">記載なし</span>。録音が iCloud に同期されるのは、iCloud 設定でボイスメモをオンにしている場合だけです。<a class="ref" href="#s1">1</a><a class="ref" href="#s3">3</a></td>
+                  <td>録音の補正については<span class="v unk">記載なし</span>。iCloud 同期には Apple アカウントを使います。<a class="ref" href="#s3">3</a></td>
+                  <td>標準のボイスメモアプリの機能のひとつ。<a class="ref" href="#s1">1</a></td>
+                  <td>iPhone。ボイスメモアプリは iPad と Mac にもあります。<a class="ref" href="#s1">1</a><a class="ref" href="#s3">3</a></td>
+                  <td>再生設定で、Apple は録音を変更しないと説明しています。共有するとオーディオエフェクトをミックスした .m4a ファイルが1つ作られますが、そこに録音の補正が含まれるかは書かれていません。<a class="ref" href="#s1">1</a><a class="ref" href="#s2">2</a></td>
+                  <td><span class="v unk">記載なし</span><a class="ref" href="#s1">1</a></td>
+                </tr>
+                <tr class="ours">
+                  <th scope="row">NoisyNo<small>GrayForge（当サイト）</small></th>
+                  <td>声の録音や動画の音声から、一定した背景ノイズ（ハム、ヒス、ファン、エアコン、風、室内の反響、車の音）を取り除きます。音楽ではなく話し声向けに調整されています。<a class="ref" href="#s5">5</a><a class="ref" href="#s6">6</a></td>
+                  <td><span class="v">いいえ。</span>ファイルは端末上で処理され、限定的な診断にファイル名や音声は含まれません。<a class="ref" href="#s5">5</a><a class="ref" href="#s6">6</a></td>
+                  <td><span class="v">いいえ。</span><a class="ref" href="#s5">5</a><a class="ref" href="#s6">6</a></td>
+                  <td>無料ダウンロード。ノイズ除去はどんな長さでも無料。Pro：<span class="v">買い切り</span>のアプリ内課金、サブスクなし（Mac 版の Pro は別途購入）。<a class="ref" href="#s5">5</a><a class="ref" href="#s6">6</a></td>
+                  <td>iPhone、iPad、Mac、Android<a class="ref" href="#s5">5</a><a class="ref" href="#s6">6</a></td>
+                  <td>きれいにした音声は M4A（AAC）で無料。ロスレス WAV、処理済み動画の書き出し、一括処理、ラウドネスの正規化は Pro が必要です。<a class="ref" href="#s5">5</a><a class="ref" href="#s6">6</a></td>
+                  <td><span class="v">はい</span>（アプリのインストール後）。<a class="ref" href="#s5">5</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Adobe Podcast Enhance Speech<small>Adobe、ウェブアプリ</small></th>
+                  <td>録音後の話し声をきれいにします。強さの調整は有料プランで。<a class="ref" href="#s7">7</a><a class="ref" href="#s8">8</a></td>
+                  <td><span class="v">はい。</span>ウェブアプリにファイルをアップロードします。<a class="ref" href="#s7">7</a><a class="ref" href="#s9">9</a></td>
+                  <td><span class="v">はい</span>、無料の Adobe アカウント。<a class="ref" href="#s8">8</a></td>
+                  <td>無料プランあり。Firefly Pro プラン（Adobe Podcast Premium を含む）：月額 $19.99。<a class="ref" href="#s7">7</a></td>
+                  <td>ウェブブラウザ<a class="ref" href="#s7">7</a></td>
+                  <td>無料：音声のみ、1度に1ファイル、1ファイル30分・500 MB まで、1日1時間まで。有料：動画、一括アップロード、1ファイル2時間・1 GB まで、1日4時間まで。<a class="ref" href="#s7">7</a></td>
+                  <td><span class="v">いいえ</span>。ウェブ上で動作します。<a class="ref" href="#s7">7</a><a class="ref" href="#s9">9</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Kapwing Clean Audio<small>Kapwing、ウェブアプリ</small></th>
+                  <td>アップロードした音声や動画の背景ノイズを抑えます。<a class="ref" href="#s10">10</a></td>
+                  <td><span class="v">はい。</span>Kapwing はクラウド型です。<a class="ref" href="#s10">10</a></td>
+                  <td><span class="v">はい</span>（書き出し時）。<a class="ref" href="#s10">10</a><a class="ref" href="#s12">12</a></td>
+                  <td>無料プランあり。Pro は月額 $24、年払いなら月額 $16。<a class="ref" href="#s11">11</a></td>
+                  <td>ウェブブラウザ（スマホのブラウザを含む）<a class="ref" href="#s10">10</a></td>
+                  <td>無料：Clean Audio は5分まで。書き出しにはウォーターマークが入り、720p までです。Pro：月500分まで。ノイズ除去には Pro が必要と書かれた Kapwing のページもあります。<a class="ref" href="#s10">10</a><a class="ref" href="#s11">11</a><a class="ref" href="#s12">12</a></td>
+                  <td><span class="v">いいえ</span>。クラウド型です。<a class="ref" href="#s10">10</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">
+            提供元のページは頻繁に変わり、Kapwing のページ同士でも無料プランの制限の記載が食い違っている箇所があります。数字に頼る前に、最新のページを確認してください。
+          </p>
+        </section>
+
+        <!-- ENHANCE -->
+        <section id="enhance" class="read reveal">
+          <h2>「録音の補正」が実際にしていること</h2>
+          <p>
+            Apple の最新の iPhone ユーザガイドでは、「録音の補正」は<strong>再生オプション</strong>のひとつとして、再生速度や「無音部分をスキップ」と並んでいます。使うには、ボイスメモアプリで録音をタップし、その他ボタンをタップして<strong>オプション</strong>をタップし、<strong>録音の補正</strong>をオンにします。<a class="ref" href="#s1">1</a>
+          </p>
+          <p>
+            Apple によると、この機能はモノラルとステレオの録音を<em>再生する</em>ときに背景ノイズと反響を抑えるもので、これらの再生オプションを変えても録音そのものには影響しません。設定はそのメモにだけ保存され、再生するたびに適用されます。<a class="ref" href="#s1">1</a> メモを共有するとき、ボイスメモはオーディオエフェクトやレイヤーをミックスした .m4a ファイルを1つ作れますが、録音の補正がそのエフェクトに含まれるかどうかは Apple のガイドに書かれていません。<a class="ref" href="#s2">2</a> きれいにした状態をファイルとして使いたいなら、共有してから共有したコピーを再生し、頼る前に耳で確かめてください。
+          </p>
+          <div class="callout">
+            <span class="label">次に録音する前に</span>
+            <p>
+              ボイスメモは録音中に背景音を抑えることもできます。ボイスメモを開いた状態でコントロールセンターを開き、上部の「ボイスメモ」をタップして<strong>声を分離</strong>を選びます。<a class="ref" href="#s4">4</a> 最初から録音されなかったノイズは、後で取り除く必要がありません。
+            </p>
+          </div>
+        </section>
+
+        <!-- METHOD -->
+        <section id="method" class="read reveal">
+          <h2>調べ方</h2>
+          <p>
+            NoisyNo を作っているのは GrayForge です。その点を踏まえてお読みください。Apple、Adobe、Kapwing についての事実はすべて、レビューサイトではなく、各社自身のサポートページ、プランのページ、ツールのページで2026年11月1日に確認したものです。NoisyNo についての事実は、製品ページと GrayForge の llms.txt によります。同じ録音を4つすべてで処理したわけではないため、このページでは音質の採点はしていません。
+          </p>
+        </section>
+
+        <!-- WHICH -->
+        <section id="which" class="read reveal">
+          <h2>どれをいつ使うか</h2>
+          <ul>
+            <li><strong>メモを iPhone で聴くだけで、ノイズも軽い。</strong>録音の補正をオンにしましょう。最初から iPhone に入っています。</li>
+            <li><strong>これから録音する。</strong>先にコントロールセンターで「声を分離」を選びます。</li>
+            <li><strong>きれいにしたファイルが必要</strong>（送る、文字起こしする、公開する）、または Android を使っている、声が動画の中にある：NoisyNo なら端末上で処理し、新しいファイルとして保存します。手順は<a class="inline" href="../remove-background-noise-from-voice-memo/">ボイスメモの手順ガイド</a>で紹介しています。</li>
+            <li><strong>録音が機密</strong>（会議、取材、診察など）：端末内で処理するツールなら、他社のサーバーに置かずに済みます。ウェブツールを使う場合は、先にプライバシーポリシーを読んでください。詳しくは<a class="inline" href="../remove-audio-noise-without-upload/">アップロードせずにノイズを消す方法</a>で。</li>
+            <li><strong>アプリをインストールできないパソコンで</strong>、クリップも機密ではない：Adobe Podcast の無料プランは1ファイル30分まで・1日1時間まで、Kapwing の無料プランは Clean Audio 5分までで、書き出しにはウォーターマークが入ります。</li>
+          </ul>
+        </section>
+
+        <!-- WEAKER -->
+        <section id="weaker" class="read reveal">
+          <h2>NoisyNo が弱いところ</h2>
+          <ul>
+            <li><strong>ひと手間増えます。</strong>録音の補正はボイスメモの中のスイッチです。NoisyNo では、メモを別のアプリに共有して、新しいファイルを受け取ります。</li>
+            <li><strong>音楽ではなく話し声向け。</strong>NoisyNo は声に合わせて調整されています。言葉に重なるドアの音、咳、犬の鳴き声のような突発的な音は、どのノイズ除去でもずっと難しく、ノイズの奥深くに埋もれた声は、改善はしても救い出せるわけではありません。</li>
+            <li><strong>インストールが必要です。</strong>NoisyNo は iPhone、iPad、Mac、Android で動きます。Windows のパソコンや、アプリをインストールできないパソコンでは、ブラウザツールが現実的な選択肢です。</li>
+            <li><strong>有料の書き出しもあります。</strong>きれいにした M4A 音声は無料ですが、ロスレス WAV、処理済み動画の書き出し、一括処理は買い切りの Pro に含まれます。</li>
+            <li><strong>速度は端末次第です。</strong>処理が端末上で行われるため、端末の性能とクリップの長さによって変わります。</li>
+          </ul>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="read reveal">
+          <h2>よくある質問</h2>
+          <div class="faq-list">
+            <details>
+              <summary>「録音の補正」をオンにすると、元のボイスメモは変わりますか？</summary>
+              <p>Apple の iPhone ユーザガイドでは、「録音の補正」は再生オプションのひとつとして説明されています。モノラルとステレオの録音を再生するときに背景ノイズと反響を抑えるもので、これらのオプションを変更しても録音そのものには影響しない、と Apple は書いています。共有したコピーに効果が含まれるかどうかは書かれていないため、頼る前に共有したファイルを再生して確かめてください。</p>
+            </details>
+            <details>
+              <summary>ボイスメモをきれいにするには「録音の補正」で十分ですか？</summary>
+              <p>軽い一定のノイズが入ったメモを iPhone で聴くだけなら、多くの場合は十分です。しかも最初から iPhone に入っています。きれいにしたファイルを保存・共有したいとき、Android を使っているとき、声が動画の中にあるときは、NoisyNo のような専用ツールのほうが向いています。</p>
+            </details>
+            <details>
+              <summary>ブラウザのノイズ除去ツールは録音をアップロードしますか？</summary>
+              <p>はい。Adobe Podcast Enhance Speech と Kapwing はどちらもアップロードしたファイルを処理し、どちらもアカウントが必要です（Kapwing は書き出し時）。Adobe の無料プランは1ファイル30分まで・1日1時間まで、Kapwing の無料プランは Clean Audio が5分までで、書き出しにはウォーターマークが入ります。</p>
+            </details>
+            <details>
+              <summary>NoisyNo は無料ですか？</summary>
+              <p>NoisyNo は無料でダウンロードでき、ノイズ除去はどんな長さでも無料です。Pro は買い切りのアプリ内課金で、処理済み動画の書き出し、一括処理、ラウドネスの正規化、ロスレス WAV の書き出し、トリミングが加わります。サブスクはありません。</p>
+            </details>
+            <details>
+              <summary>NoisyNo は音声をアップロードしますか？</summary>
+              <p>いいえ。音声・動画ファイルは端末上で処理されます。アプリの品質のために限定的な Firebase の診断が動くことがありますが、ファイル名や音声の内容は含まれません。</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- SOURCES -->
+        <section id="sources" class="read reveal">
+          <h2>出典</h2>
+          <p>すべてのページは2026年11月1日に確認しました。価格は、その日にページに表示されていた米国の価格です。</p>
+          <ol class="srclist">
+            <li id="s1"><div><b>Play a recording in Voice Memos on iPhone</b>、Apple iPhone ユーザガイド（iOS 27）· <a href="https://support.apple.com/en-gb/guide/iphone/iphebbd067ce/ios" rel="noopener">https://support.apple.com/en-gb/guide/iphone/iphebbd067ce/ios</a><span>録音の補正の手順、モノラル・ステレオ録音の再生時に背景ノイズと反響を抑えること、再生オプションが録音そのものに影響しないこと。2026-11-01 確認。</span></div></li>
+            <li id="s2"><div><b>Share a recording in Voice Memos on iPhone</b>、Apple iPhone ユーザガイド · <a href="https://support.apple.com/en-gb/guide/iphone/iph3d6dc359/ios" rel="noopener">https://support.apple.com/en-gb/guide/iphone/iph3d6dc359/ios</a><span>レンダリングのオプションで、オーディオエフェクトとレイヤーをミックスした .m4a ファイルが1つ作られること。2026-11-01 確認。</span></div></li>
+            <li id="s3"><div><b>Keep recordings up to date in Voice Memos on iPhone</b>、Apple iPhone ユーザガイド · <a href="https://support.apple.com/en-gb/guide/iphone/iph38b91c7af/ios" rel="noopener">https://support.apple.com/en-gb/guide/iphone/iph38b91c7af/ios</a><span>同じ Apple アカウントで、iCloud 設定のボイスメモをオンにした iPhone・iPad・Mac 間の iCloud 同期。2026-11-01 確認。</span></div></li>
+            <li id="s4"><div><b>Make a recording in Voice Memos on iPhone</b>、Apple iPhone ユーザガイド · <a href="https://support.apple.com/en-gb/guide/iphone/iph4d2a39a3b/ios" rel="noopener">https://support.apple.com/en-gb/guide/iphone/iph4d2a39a3b/ios</a><span>コントロールセンターの「声を分離」で背景音を除去すること。2026-11-01 確認。</span></div></li>
+            <li id="s5"><div><b>NoisyNo product page</b>（GrayForge）· <a href="../../../../noisyno/">https://grayforge.app/noisyno/</a><span>端末内処理、アカウント不要、インストール後はオフラインで動作、対応形式、Pro の機能、サブスクなし、対応プラットフォーム。2026-11-01 確認。</span></div></li>
+            <li id="s6"><div><b>GrayForge llms.txt, NoisyNo section</b> · <a href="../../../../llms.txt">https://grayforge.app/llms.txt</a><span>取り除けるノイズ、音楽ではなく話し声向けの調整、突発的な音に対する限界、出力形式、買い切りの Pro、Mac 版 Pro の別途購入、限定的な診断。2026-11-01 確認。</span></div></li>
+            <li id="s7"><div><b>Adobe Podcast plans</b> · <a href="https://podcast.adobe.com/en/plans" rel="noopener">https://podcast.adobe.com/en/plans</a><span>Enhance Speech の無料プランと Firefly Pro プランの制限、月額 $19.99、ウェブアプリ。2026-11-01 確認。</span></div></li>
+            <li id="s8"><div><b>Enhance Speech from Adobe</b> · <a href="https://podcast.adobe.com/en/enhance" rel="noopener">https://podcast.adobe.com/en/enhance</a><span>始めるには無料アカウントの登録が必要なこと、Enhance Speech の用途。2026-11-01 確認。</span></div></li>
+            <li id="s9"><div><b>Adobe Podcast FAQ</b> · <a href="https://helpx.adobe.com/podcast/adobe-podcast-faq.html" rel="noopener">https://helpx.adobe.com/podcast/adobe-podcast-faq.html</a><span>Enhance Speech への音声のアップロード、トラブルシューティングはインターネット接続の確認から始まること。2026-11-01 確認。</span></div></li>
+            <li id="s10"><div><b>Kapwing background noise remover</b> · <a href="https://www.kapwing.com/tools/remove-background/noise" rel="noopener">https://www.kapwing.com/tools/remove-background/noise</a><span>クラウド型、書き出しには登録が必要、スマホのブラウザでも動作、FAQ ではノイズ除去に Pro アカウントが必要とされていること。2026-11-01 確認。</span></div></li>
+            <li id="s11"><div><b>Kapwing pricing</b> · <a href="https://www.kapwing.com/pricing" rel="noopener">https://www.kapwing.com/pricing</a><span>無料プラン（ウォーターマーク、Clean Audio は5分まで）、Pro は月額 $24 または年払いで月額 $16、プランごとの Clean Audio の分数。2026-11-01 確認。</span></div></li>
+            <li id="s12"><div><b>Kapwing pricing and subscription FAQ</b> · <a href="https://www.kapwing.com/help/subscription-faq/" rel="noopener">https://www.kapwing.com/help/subscription-faq/</a><span>利用開始にはアカウント作成が必要なこと、無料プランの書き出しは 720p までであること。2026-11-01 確認。</span></div></li>
+          </ol>
+        </section>
+
+        <!-- PRODUCT -->
+        <section class="read reveal" style="border-bottom:none;padding-bottom:0;">
+          <div class="product" id="download">
+            <div class="icon"><img src="../../../../noisyno/assets/app-icon-180.png" alt="NoisyNo アプリアイコン" loading="lazy" width="64" height="64" /></div>
+            <div>
+              <h3>NoisyNo — ボイスノイズリムーバー</h3>
+              <p>
+                声の録音や動画の音声から、ハム、ヒス、ファンの音、風、室内の反響を端末上で取り除きます。アップロードなし、アカウントなし、ノイズ除去はどんな長さでも無料です。
+              </p>
+              <div class="actions">
+                <a class="primary" href="https://apps.apple.com/app/id6772728543" rel="noopener">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.grayforge.noisyno" rel="noopener">Google Play</a>
+                <a href="../../../noisyno/">製品ページ</a>
+                <a href="../../../../noisyno/privacy_policy.html">プライバシーポリシー</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- END CTA -->
+        <section class="endcta read">
+          <span class="label">誤りを見つけたら</span>
+          <h2 style="margin-top:16px;">お知らせください。表を修正します。</h2>
+          <p>プランやメニューは変わります。上の価格・制限・手順が古くなっていたら（NoisyNo に関するものも含めて）、リンクを添えてご連絡ください。表を修正します。</p>
+          <a class="mailto" href="mailto:grayforge.dev@gmail.com?subject=Noise%20removal%20comparison">grayforge.dev@gmail.com <span aria-hidden="true">↗</span></a>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    <span>© 2026 GrayForge · 最終更新 2026.11.27</span>
+    <div class="f-links">
+      <a href="../../">ブログ</a>
+      <a href="../../../noisyno/">NoisyNo</a>
+      <a href="../../../../vocalout/">VocalOut</a>
+      <a href="../../../../noisyno/privacy_policy.html">プライバシー</a>
+      <a href="mailto:grayforge.dev@gmail.com">お問い合わせ</a>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 60);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>

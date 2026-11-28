@@ -2724,24 +2724,480 @@
     <lastmod>2026-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/" />
   </url>
   <url>
     <loc>https://grayforge.app/blog/noisyno/</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/" />
   </url>
   <url>
     <loc>https://grayforge.app/blog/vocalout/</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/vocalout/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/vocalout/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/vocalout/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/vocalout/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/vocalout/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/vocalout/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/vocalout/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/" />
   </url>
   <url>
     <loc>https://grayforge.app/blog/dashlog/</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/dashlog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/dashlog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/dashlog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/dashlog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/dashlog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/dashlog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/dashlog/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/" />
   </url>
   <url>
     <loc>https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
@@ -2749,7 +3205,117 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-background-noise-from-voice-memo/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-background-noise-from-voice-memo/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
   </url>
@@ -2759,7 +3325,117 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/clean-up-meeting-recording-audio/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/noisyno/clean-up-meeting-recording-audio/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/noisyno/clean-up-meeting-recording-audio/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/noisyno/clean-up-meeting-recording-audio/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/noisyno/clean-up-meeting-recording-audio/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/noisyno/clean-up-meeting-recording-audio/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/clean-up-meeting-recording-audio/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/clean-up-meeting-recording-audio/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
   </url>
@@ -2769,7 +3445,117 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-audio-noise-without-upload/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/noisyno/remove-audio-noise-without-upload/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/noisyno/remove-audio-noise-without-upload/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/noisyno/remove-audio-noise-without-upload/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/noisyno/remove-audio-noise-without-upload/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/noisyno/remove-audio-noise-without-upload/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/remove-audio-noise-without-upload/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/remove-audio-noise-without-upload/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
   </url>
@@ -2779,6 +3565,118 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/vocalout/offline-vocal-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/vocalout/offline-vocal-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/vocalout/offline-vocal-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/vocalout/offline-vocal-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/vocalout/offline-vocal-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/vocalout/offline-vocal-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/vocalout/offline-vocal-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/offline-vocal-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/offline-vocal-remover-apps-compared/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/offline-vocal-remover-apps-compared/" />
   </url>
   <url>
@@ -2787,6 +3685,118 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/noisyno/offline-noise-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/noisyno/offline-noise-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/noisyno/offline-noise-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/noisyno/offline-noise-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/noisyno/offline-noise-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/noisyno/offline-noise-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/noisyno/offline-noise-remover-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/offline-noise-remover-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/offline-noise-remover-apps-compared/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/offline-noise-remover-apps-compared/" />
   </url>
   <url>
@@ -2795,6 +3805,118 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/noisyno/voice-memo-enhance-vs-noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/noisyno/voice-memo-enhance-vs-noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/noisyno/voice-memo-enhance-vs-noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/noisyno/voice-memo-enhance-vs-noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/noisyno/voice-memo-enhance-vs-noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/noisyno/voice-memo-enhance-vs-noisyno/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/voice-memo-enhance-vs-noisyno/" />
   </url>
   <url>
@@ -2803,27 +3925,117 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/remove-vocals-from-a-song/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/vocalout/remove-vocals-from-a-song/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
   </url>
   <url>
     <loc>https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/remove-vocals-from-a-song/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/vocalout/remove-vocals-from-a-song/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/vocalout/remove-vocals-from-a-song/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/vocalout/remove-vocals-from-a-song/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
   </url>
   <url>
     <loc>https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/vocalout/remove-vocals-from-a-song/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/vocalout/remove-vocals-from-a-song/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/vocalout/remove-vocals-from-a-song/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/vocalout/remove-vocals-from-a-song/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/vocalout/remove-vocals-from-a-song/" />
   </url>
@@ -2833,6 +4045,118 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ja/blog/dashlog/drive-tracker-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/dashlog/drive-tracker-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/dashlog/drive-tracker-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/dashlog/drive-tracker-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/dashlog/drive-tracker-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/de/blog/dashlog/drive-tracker-apps-compared/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/drive-tracker-apps-compared/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/drive-tracker-apps-compared/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/drive-tracker-apps-compared/" />
   </url>
   <url>
@@ -2841,89 +4165,119 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/log-every-drive-automatically/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
   </url>
   <url>
     <loc>https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/zh/blog/dashlog/log-every-drive-automatically/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/es/blog/dashlog/log-every-drive-automatically/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/pt/blog/dashlog/log-every-drive-automatically/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+  </url>
+  <url>
+    <loc>https://grayforge.app/fr/blog/dashlog/log-every-drive-automatically/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/log-every-drive-automatically/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
   </url>
   <url>
     <loc>https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://grayforge.app/ko/blog/dashlog/log-every-drive-automatically/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://grayforge.app/zh/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://grayforge.app/es/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grayforge.app/pt/blog/dashlog/log-every-drive-automatically/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grayforge.app/fr/blog/dashlog/log-every-drive-automatically/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/dashlog/log-every-drive-automatically/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/dashlog/log-every-drive-automatically/" />
-  </url>
-  <url>
-    <loc>https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
-  </url>
-  <url>
-    <loc>https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-background-noise-from-voice-memo/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-background-noise-from-voice-memo/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-background-noise-from-voice-memo/" />
-  </url>
-  <url>
-    <loc>https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
-  </url>
-  <url>
-    <loc>https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/clean-up-meeting-recording-audio/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/clean-up-meeting-recording-audio/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/clean-up-meeting-recording-audio/" />
-  </url>
-  <url>
-    <loc>https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
-  </url>
-  <url>
-    <loc>https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://grayforge.app/ja/blog/noisyno/remove-audio-noise-without-upload/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://grayforge.app/de/blog/noisyno/remove-audio-noise-without-upload/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://grayforge.app/blog/noisyno/remove-audio-noise-without-upload/" />
   </url>
   <url>
     <loc>https://grayforge.app/vocalout/ffmpeg.html</loc>
